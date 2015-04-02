@@ -1,0 +1,945 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/door_lock/doorLock_break_key" itemID="546c6fd6-0000011a" symbolType="graphic" lastModified="1416394746">
+  <timeline>
+    <DOMTimeline name="doorLock_break_key" currentFrame="54">
+      <layers>
+        <DOMLayer name="key part 2" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.40216064453125" d="-0.40216064453125" tx="-3.5" ty="-63.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.1" y="7.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="7" tweenType="motion" useSingleEaseCurve="false" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="position">
+                  <Point/>
+                  <Point y="0.7466"/>
+                  <Point x="0.5813" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.311538696289063" b="-0.254318237304688" c="0.254318237304688" d="-0.311538696289063" tx="-13.4" ty="-75.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.15" y="7.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" duration="9" tweenType="motion" useSingleEaseCurve="false" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="position">
+                  <Point/>
+                  <Point x="0.5488"/>
+                  <Point x="1" y="0.5"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+                <CustomEase target="rotation">
+                  <Point/>
+                  <Point x="0.3333" y="0.3333"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.3907470703125" b="0.0952301025390625" c="-0.09521484375" d="0.3907470703125" tx="-32.1" ty="-100.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.2" y="7.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="33" duration="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.365966796875" b="0.166763305664063" c="-0.166763305664063" d="-0.365966796875" tx="-55.45" ty="-52.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.25" y="7.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.3436279296875" b="-0.208984375" c="0.208984375" d="0.3436279296875" tx="-63.85" ty="-28.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.2" y="7.4"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="key" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.40216064453125" d="-0.40216064453125" tx="-3.5" ty="-28.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.25" y="0.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.40216064453125" d="-0.40216064453125" tx="-3.5" ty="-28.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.25" y="0.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017" acceleration="100">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.3" y="0.0582"/>
+                  <Point x="0.5268" y="0.01"/>
+                  <Point x="0.7175" y="0.1"/>
+                  <Point x="0.8046" y="0.1411"/>
+                  <Point x="0.85" y="0.4623"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.40216064453125" d="-0.40216064453125" tx="-3.5" ty="-28.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.25" y="0.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.40216064453125" d="-0.40216064453125" tx="-3.5" ty="-63.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.25" y="0.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part2" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.40216064453125" d="-0.40216064453125" tx="-3.5" ty="-63.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.75" y="5.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="7" tweenType="motion" useSingleEaseCurve="false" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="position">
+                  <Point/>
+                  <Point y="0.9"/>
+                  <Point x="0.5854" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part2" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.284378051757813" b="0.28436279296875" c="-0.28436279296875" d="-0.284378051757813" tx="1.5" ty="-67.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.75" y="5.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" duration="9" tweenType="motion" useSingleEaseCurve="false" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="position">
+                  <Point/>
+                  <Point x="0.6423"/>
+                  <Point x="1" y="0.4349"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part2" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="0.36663818359375" b="0.165237426757813" c="-0.165237426757813" d="0.36663818359375" tx="21.5" ty="-90.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.65" y="5.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="33" duration="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part2" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.04022216796875" b="-0.400131225585938" c="0.400131225585938" d="-0.04022216796875" tx="29" ty="-42.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.7" y="5.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_part2" symbolType="graphic" firstFrame="6" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.376083374023438" b="0.142425537109375" c="-0.142425537109375" d="-0.376083374023438" tx="42.45" ty="-4.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.55" y="5.8"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="lock" color="#FF4F4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/lock" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix d="0.855514526367188" tx="-3.4" ty="-73.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/lock" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix d="0.855514526367188" tx="-3.4" ty="-73.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/lock" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix d="0.855514526367188" tx="-4.25" ty="-79.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/lock" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix d="0.855514526367188" tx="-3.6" ty="-71.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="25" duration="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/lock" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix d="0.855514526367188" tx="-3.4" ty="-73.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="hook top" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="55" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#A8A7AF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#76767E"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!2515 -3160[2496 -3167 2490 -3188!2490 -3188[2487 -3195 2488 -3204!2488 -3204[2490 -3217 2493 -3227!2493 -3227|2492 -3226!2492 -3226[2491 -3225 2490 -3225!2490 -3225|2490 -3224!2490 -3224[2489 -3224 2489 -3223!2489 -3223[2486 -3213 2484
+ -3203"/>
+                    <Edge fillStyle0="2" edges="
+!2484 -3203[2482 -3195 2482 -3186!2482 -3186[2482 -3171 2494 -3161!2494 -3161[2507 -3149 2525 -3153!2525 -3153[2530 -3152 2536 -3152!2536 -3152[2550 -3152 2561 -3160!2561 -3160[2564 -3162 2567 -3164!2567 -3164[2597 -3143 2591 -3105!2591
+ -3105[#A1C.A #FFF3EA.DF 2583 -3085.5!2583 -3085.5[#A19.E7 #FFF3FB.8A 2577 -3064!2577 -3064[#A09.C7 #FFF411.1F 2561.5 -3051"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2561.5 -3051[#A08.46 #FFF414.2A 2575 -3056"/>
+                    <Edge fillStyle0="2" edges="
+!2575 -3056[#A11.17 #FFF40D.F 2580 -3060"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2580 -3060[2584 -3063 2588 -3068!2588 -3068[2619 -3104 2603 -3149!2603 -3149[2599 -3160 2591 -3168!2591 -3168[2583 -3176 2570 -3180!2570 -3180[2567 -3180 2564 -3179!2564 -3179[2556 -3177 2549 -3171!2549 -3171[2540 -3164 2528 -3163!2528
+ -3163[2522 -3162 2517 -3160"/>
+                    <Edge fillStyle0="2" edges="
+!2517 -3160|2516 -3159!2516 -3159|2515 -3160"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2584 -3225[2580 -3225 2576 -3225!2576 -3225[2574 -3224 2572 -3222!2572 -3222[2585 -3226 2594 -3217!2594 -3217[2605 -3207 2610 -3194!2610 -3194[2614 -3181 2622 -3171!2622 -3171[2620 -3176 2618 -3181!2618 -3181[2615 -3190 2611 -3199!2611
+ -3199[2605 -3215 2590 -3223!2590 -3223[2587 -3224 2584 -3225"/>
+                    <Edge fillStyle1="1" edges="
+!2484 -3203[2487 -3249 2529 -3263!2529 -3263[2538 -3264 2545 -3261!2545 -3261[2547 -3262 2548 -3262!2548 -3262[2612 -3250 2648 -3187!2648 -3187[2678 -3134 2659 -3075!2659 -3075[2638 -3007 2581 -2991!2581 -2991[#9F9.2D #FFF462.09 2525
+ -2982.5!2525 -2982.5[#9DC.9C #FFF457.5 2524 -2987!2524 -2987[#9D7.47 #FFF441.28 2524.5 -3022!2524.5 -3022[#9E3.3 #FFF429.86 2539 -3038!2539 -3038[2545 -3043 2551 -3046!2551 -3046[#9F9.DB #FFF418.5E 2556 -3049!2556 -3049[#9FE.E2 #FFF416.1F
+ 2561.5 -3051!2517 -3160[2516 -3160 2515 -3160"/>
+                    <Edge fillStyle0="1" edges="
+!2465 -3032[#9A0.65 #FFF428.81 2464 -3031!2464 -3031[#9A4.51 #FFF430.51 2476 -3016!2476 -3016[2479 -3013 2482 -3010!2482 -3010[#9B2.6E #FFF43E.6C 2483 -3009!2483 -3009[#9B5.83 #FFF434.3F 2490 -3029.5!2490 -3029.5[#9B9.A5 #FFF429.45 2489.5
+ -3032!2489.5 -3032[#9B8.C9 #FFF428.82 2488 -3031!2488 -3031[2476 -3023 2469 -3035!2469 -3035[2467 -3034 2465 -3032"/>
+                    <Edge fillStyle1="1" edges="
+!2575 -3056[#A10.1 -3057 2577 -3057!2577 -3057[2578 -3058 2580 -3060"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2588 -3031[2578 -3024 2565 -3021!2565 -3021[2601 -3026 2617 -3058!2617 -3058[2627 -3076 2634 -3095!2634 -3095[2637 -3103 2635 -3110!2635 -3110[2633 -3087 2620 -3066!2620 -3066[2608 -3045 2588 -3031"/>
+                    <Edge fillStyle0="2" edges="
+!2016.5 -278.5[#7E4.2C #FFFEE0.7B 2028.5 -293.5!2028.5 -293.5[#7E6.4 #FFFEDB.CB 2017 -286!2017 -286[#7DA.1 #FFFEEA.54 2011.5 -270!2011.5 -270[#7DD.91 #FFFEED.5B 2016.5 -278.5"/>
+                    <Edge fillStyle1="1" edges="
+!2029 -349[2030 -374 2053 -381!2053 -381[2058 -382 2062 -380!2062 -380[2063 -381 2064 -381!2064 -381[2098 -374 2118 -340!2118 -340[2134 -311 2124 -279!2124 -279[#840.6F #FFFF0C.AA 2083 -234.5!2083 -234.5[#823.B7 -236.15625 2084 -238!2084
+ -238[#825.0C -245.34375 2084.5 -252.5!2084.5 -252.5|2085 -253.5"/>
+                    <Edge fillStyle1="2" edges="
+!2085 -253.5[#825.46 #FFFF01.8C 2085.5 -255.5"/>
+                    <Edge fillStyle1="1" edges="
+!2085.5 -255.5[#826.C8 #FFFEFC.43 2088 -264!2088 -264[#82A.8E #FFFEEF.C4 2090.5 -279!2090.5 -279[#82B.E7 #FFFEE4.EA 2092.5 -287"/>
+                    <Edge fillStyle1="2" edges="
+!2092.5 -287[#82F.2C #FFFED2.07 2086 -312!2086 -312[#822.ED #FFFEBE.B2 2074 -328!2074 -328[2072 -327 2071 -325!2071 -325[2065 -321 2057 -321!2057 -321[2054 -321 2051 -322!2051 -322[2041 -319 2034 -326!2034 -326[2028 -331 2028 -340!2028
+ -340[2028 -344 2029 -349"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2086 -360[2085 -360 2083 -361!2083 -361[2081 -361 2079 -361!2079 -361[2078 -360 2077 -359!2077 -359[2084 -361 2088 -356!2088 -356[2094 -351 2097 -344!2097 -344[2099 -337 2104 -331!2104 -331[2103 -334 2101 -337!2101 -337[2100 -342 2098
+ -347!2098 -347[2094 -355 2086 -360!2092.5 -287[#833.7E #FFFED2.4F 2093 -319!2093 -319[2091 -325 2087 -330!2087 -330[2083 -334 2075 -336!2075 -336[2074 -336 2072 -336!2072 -336[2068 -335 2064 -331!2064 -331[2059 -328 2053 -327!2053 -327
+[2049 -327 2047 -325!2047 -325|2046 -325!2046 -325[2035 -329 2032 -341!2032 -341[2030 -344 2031 -349!2031 -349[2032 -356 2034 -362!2034 -362|2033 -361!2033 -361|2032 -361!2032 -361|2032 -360!2032 -360[2030 -354 2029 -349!2085 -253.5[#82F.19
+ #FFFEFD.26 2101 -270!2101 -270[2102 -272 2103 -274!2103 -274[#830.2C #FFFEF8.BA 2085.5 -255.5"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2654.5 -3160[-2635.125 #FFF3A0.AE -2629 -3188!-2629 -3188[-2626 -3195 -2627 -3204!-2627 -3204[-2629 -3217 -2632 -3227!-2632 -3227|-2631 -3226!-2631 -3226[-2630 -3225 -2629 -3225!-2629 -3225|-2629 -3224!-2629 -3224[-2628 -3224 -2628
+ -3223!-2628 -3223[#FFF5BF.2D #FFF372.88 -2623 -3203.5"/>
+                    <Edge fillStyle0="1" edges="
+!-2623 -3203.5[#FFF5BD.FB #FFF34E.FE -2668 -3263!-2668 -3263[-2677 -3264 -2684 -3261!-2684 -3261[-2686 -3262 -2687 -3262!-2687 -3262[-2751 -3250 -2787 -3187!-2787 -3187[-2817 -3134 -2798 -3075!-2798 -3075[-2777 -3007 -2720 -2991!-2720
+ -2991[#FFF572.7A #FFF45C.51 -2683 -2979.5!-2683 -2979.5|-2683 -2980.5!-2683 -2980.5[#FFF583.67 -2982 -2684 -2985!-2684 -2985[-2683 -3018 -2693 -3049!-2693 -3049[#FFF57A.9C #FFF415.B7 -2693.5 -3051.5"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2693.5 -3051.5[#FFF56F.DD #FFF415.A3 -2714 -3056.5"/>
+                    <Edge fillStyle0="1" edges="
+!-2714 -3056.5[#FFF564.E4 #FFF40F.2A -2716 -3057!-2716 -3057[#FFF562.8B #FFF40D.8B -2719 -3060"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2719 -3060[#FFF55C.F8 #FFF408.8F -2727 -3068!-2727 -3068[-2758 -3104 -2742 -3149!-2742 -3149[#FFF54E.3F #FFF3A7.AC -2730 -3168!-2730 -3168[#FFF55E.54 #FFF397.B2 -2709 -3180!-2709 -3180[#FFF56E.0F #FFF394.41 -2703 -3179!-2703 -3179[#FFF579.4C
+ #FFF397.0A -2688 -3171!-2688 -3171[-2679 -3164 -2667 -3163!-2667 -3163[#FFF59A.EA #FFF3A5.D8 -2656 -3160"/>
+                    <Edge fillStyle0="1" edges="
+!-2656 -3160[#FFF5A0.E1 #FFF3A8.0E -2654.5 -3160"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2715 -3225[-2713 -3224 -2711 -3222!-2711 -3222[-2724 -3226 -2733 -3217!-2733 -3217[-2744 -3207 -2749 -3194!-2749 -3194[-2753 -3181 -2761 -3171!-2761 -3171[-2759 -3176 -2757 -3181!-2757 -3181[-2754 -3190 -2750 -3199!-2750 -3199[-2744
+ -3215 -2729 -3223!-2729 -3223[-2726 -3224 -2723 -3225!-2723 -3225[-2719 -3225 -2715 -3225"/>
+                    <Edge fillStyle1="2" edges="
+!-2656 -3160|-2655.5 -3159.5!-2655.5 -3159.5|-2654.5 -3160!-2623 -3203.5[#FFF5C2.88 #FFF385.1 -2621 -3186!-2621 -3186[-2621 -3171 -2633 -3161!-2633 -3161[-2646 -3149 -2664 -3153!-2664 -3153[#FFF593.18 #FFF3B0.78 -2675 -3152!-2675 -3152
+[-2689 -3152 -2700 -3160!-2700 -3160[-2703 -3162 -2706 -3164!-2706 -3164[-2736 -3143 -2730 -3105!-2730 -3105[#FFF55A.7F #FFF3F5.79 -2710 -3075!-2710 -3075[#FFF56C.C1 -3070.75 -2702 -3070!-2702 -3070[#FFF575.D7 #FFF408.2D -2695 -3057.5
+!-2695 -3057.5[#FFF579.AC #FFF411.74 -2693.5 -3051.5"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2774 -3110[-2772 -3087 -2759 -3066!-2759 -3066[-2747 -3045 -2727 -3031!-2727 -3031[-2717 -3024 -2704 -3021!-2704 -3021[-2740 -3026 -2756 -3058!-2756 -3058[-2766 -3076 -2773 -3095!-2773 -3095[-2776 -3103 -2774 -3110"/>
+                    <Edge fillStyle1="2" edges="
+!-2714 -3056.5[#FFF563.86 #FFF40D.EC -2719 -3060"/>
+                    <Edge fillStyle0="1" edges="
+!-2647.5 -3006[#FFF5AB.C5 #FFF448.25 -2646 -2990.5!-2646 -2990.5[#FFF5B6.9 #FFF44A.3 -2621 -3010!-2621 -3010[-2620.5 -3010.5 -2620 -3011!-2620 -3011|-2620 -3012!-2620 -3012[-2620 -3014 -2620 -3015!-2620 -3015[-2620 -3017 -2620 -3019!-2620
+ -3019[-2621 -3019 -2622 -3020!-2622 -3020[-2623 -3020 -2625 -3021!-2625 -3021[-2627 -3022 -2630 -3023!-2630 -3023[-2631 -3022 -2632 -3020!-2632 -3020[-2632 -3016 -2635 -3014!-2635 -3014[-2639 -3012 -2643 -3011!-2643 -3011[-2644 -3011
+ -2645 -3011!-2645 -3011|-2645 -3010!-2645 -3010[-2646 -3008 -2646 -3007!-2646 -3007[#FFF5A9.5B #FFF441.A5 -2647.5 -3006"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2333 -274[-2326 -263 -2315 -255!-2315 -255[-2310 -252 -2303 -250!-2303 -250[-2322 -253 -2331 -270!-2331 -270[-2332 -272 -2333 -274"/>
+                    <Edge fillStyle0="1" edges="
+!-2325 -294[#FFF6E5.AC #FFFED4.14 -2333.5 -307!-2333.5 -307[#FFF6E0.83 -310.03125 -2337 -314!-2337 -314[#FFF6DE.95 #FFFEC4.AA -2338 -316.5!-2338 -316.5[#FFF6D4.EA #FFFEC7.B7 -2354 -326!-2354 -326[#FFF6C6.63 #FFFED0.A2 -2354 -279!-2354
+ -279[-2342 -242 -2311 -234!-2311 -234[-2285 -218 -2258 -244!-2258 -244[-2256 -246 -2255 -247!-2255 -247[-2247 -254 -2245 -261"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2245 -261[-2246 -273 -2255 -283!-2255 -283[-2262 -292 -2272 -284!-2272 -284[-2278 -278 -2284 -273!-2284 -273[-2297 -262 -2308 -269!-2308 -269|-2309 -270!-2309 -270[-2310 -270 -2311 -271!-2311 -271[-2313 -273 -2315 -276!-2315 -276[#FFF6ED.5C
+ #FFFEE3.76 -2325 -294"/>
+                    <Edge fillStyle0="2" edges="
+!-2245 -261|-2244 -263!-2244 -263[-2237 -274 -2247 -286!-2247 -286[-2258 -299 -2273 -291!-2273 -291[-2283 -285 -2291 -279!-2291 -279[-2293 -277 -2295 -277!-2295 -277[#FFF6FC.43 -277 -2313.5 -286.5!-2313.5 -286.5[#FFF6F3.44 #FFFEE1.B9
+ -2320 -289!-2320 -289[-2322.75 -291.40625 -2325 -294"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2264 -262[-2266 -259 -2269 -255!-2269 -255[-2272 -252 -2275 -249!-2275 -249[-2277 -247 -2279 -247!-2279 -247[-2276 -250 -2273 -253!-2273 -253[-2270 -256 -2267 -259!-2267 -259[-2265 -261 -2264 -262"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="chains" color="#808080" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="55" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.310714721679688" b="-0.468673706054688" c="0.468673706054688" d="0.310714721679688" tx="-128.85" ty="-148.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.365127563476563" b="-0.322555541992188" c="0.322555541992188" d="0.365127563476563" tx="-118.3" ty="-140.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.310714721679688" b="-0.468673706054688" c="0.468673706054688" d="0.310714721679688" tx="-107.05" ty="-135.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.365127563476563" b="-0.322555541992188" c="0.322555541992188" d="0.365127563476563" tx="-96.5" ty="-126.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.310714721679688" b="-0.468673706054688" c="0.468673706054688" d="0.310714721679688" tx="-86.5" ty="-120.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.365127563476563" b="-0.322555541992188" c="0.322555541992188" d="0.365127563476563" tx="-75.95" ty="-112.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.310714721679688" b="-0.468673706054688" c="0.468673706054688" d="0.310714721679688" tx="-64.95" ty="-106.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.365127563476563" b="-0.322555541992188" c="0.322555541992188" d="0.365127563476563" tx="-54.45" ty="-98.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.310714721679688" b="-0.468673706054688" c="0.468673706054688" d="0.310714721679688" tx="-41.85" ty="-92.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.365127563476563" b="-0.322555541992188" c="0.322555541992188" d="0.365127563476563" tx="-31.35" ty="-84.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.310714721679688" b="-0.468673706054688" c="-0.468673706054688" d="0.310714721679688" tx="122.2" ty="-148.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.365127563476563" b="-0.322555541992188" c="-0.322555541992188" d="0.365127563476563" tx="111.65" ty="-140.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.310714721679688" b="-0.468673706054688" c="-0.468673706054688" d="0.310714721679688" tx="100.4" ty="-135.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.365127563476563" b="-0.322555541992188" c="-0.322555541992188" d="0.365127563476563" tx="89.85" ty="-126.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.310714721679688" b="-0.468673706054688" c="-0.468673706054688" d="0.310714721679688" tx="79.85" ty="-120.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.365127563476563" b="-0.322555541992188" c="-0.322555541992188" d="0.365127563476563" tx="69.3" ty="-112.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.310714721679688" b="-0.468673706054688" c="-0.468673706054688" d="0.310714721679688" tx="58.3" ty="-106.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.365127563476563" b="-0.322555541992188" c="-0.322555541992188" d="0.365127563476563" tx="47.8" ty="-98.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.310714721679688" b="-0.468673706054688" c="-0.468673706054688" d="0.310714721679688" tx="35.2" ty="-92.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.365127563476563" b="-0.322555541992188" c="-0.322555541992188" d="0.365127563476563" tx="24.7" ty="-84.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.257553100585938" b="0.391738891601563" c="-0.314300537109375" d="-0.220474243164063" tx="98.95" ty="-16.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.302642822265625" b="0.269607543945313" c="-0.267364501953125" d="-0.305191040039063" tx="91.55" ty="-22.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.257553100585938" b="0.391738891601563" c="-0.388473510742188" d="-0.25970458984375" tx="82.2" ty="-27.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.302642822265625" b="0.269607543945313" c="-0.267364501953125" d="-0.305191040039063" tx="73.5" ty="-34.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.257553100585938" b="0.391738891601563" c="-0.388473510742188" d="-0.25970458984375" tx="65.15" ty="-39.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.302642822265625" b="0.269607543945313" c="-0.267364501953125" d="-0.305191040039063" tx="56.45" ty="-46.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.257553100585938" b="0.391738891601563" c="-0.388473510742188" d="-0.25970458984375" tx="47.35" ty="-51.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.302642822265625" b="0.269607543945313" c="-0.267364501953125" d="-0.305191040039063" tx="38.65" ty="-58.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.257553100585938" b="0.391738891601563" c="-0.388473510742188" d="-0.25970458984375" tx="28.15" ty="-63.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.302642822265625" b="0.269607543945313" c="-0.267364501953125" d="-0.305191040039063" tx="19.4" ty="-70.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.257553100585938" b="0.391738891601563" c="0.388473510742188" d="-0.25970458984375" tx="-107.75" ty="-16"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.302642822265625" b="0.269607543945313" c="0.267364501953125" d="-0.305191040039063" tx="-99.05" ty="-22.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.257553100585938" b="0.391738891601563" c="0.388473510742188" d="-0.25970458984375" tx="-89.75" ty="-27.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.302642822265625" b="0.269607543945313" c="0.267364501953125" d="-0.305191040039063" tx="-81" ty="-34.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.257553100585938" b="0.391738891601563" c="0.388473510742188" d="-0.25970458984375" tx="-72.75" ty="-39.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.302642822265625" b="0.269607543945313" c="0.267364501953125" d="-0.305191040039063" tx="-64" ty="-46.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.257553100585938" b="0.391738891601563" c="0.388473510742188" d="-0.25970458984375" tx="-54.85" ty="-51.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.302642822265625" b="0.269607543945313" c="0.267364501953125" d="-0.305191040039063" tx="-46.15" ty="-58.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_front" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.257553100585938" b="0.391738891601563" c="0.388473510742188" d="-0.25970458984375" tx="-35.7" ty="-63.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/chain_side" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.302642822265625" b="0.269607543945313" c="0.267364501953125" d="-0.305191040039063" tx="-27" ty="-70.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="hooks" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="55" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#A8A7AF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#76767E"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2515 -3160[2496 -3167 2490 -3188!2490 -3188[2487 -3195 2488 -3204!2488 -3204[2490 -3217 2493 -3227!2493 -3227|2492 -3226!2492 -3226[2491 -3225 2490 -3225!2490 -3225|2490 -3224!2490 -3224[2489 -3224 2489 -3223!2489 -3223[2486 -3213 2484
+ -3203"/>
+                    <Edge fillStyle0="2" edges="
+!2484 -3203[2482 -3195 2482 -3186!2482 -3186[2482 -3171 2494 -3161!2494 -3161[2507 -3149 2525 -3153!2525 -3153[2530 -3152 2536 -3152!2536 -3152[2550 -3152 2561 -3160!2561 -3160[2564 -3162 2567 -3164!2567 -3164[2597 -3143 2591 -3105!2591
+ -3105[2584 -3070 2551 -3071!2551 -3071[2547 -3071 2543 -3074!2543 -3074[2528 -3086 2510 -3096!2510 -3096[2483 -3111 2463 -3088!2463 -3088[2444 -3066 2457 -3044!2457 -3044[2458 -3041 2459 -3041"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2459 -3041[2461 -3064 2476 -3082!2476 -3082[2490 -3099 2508 -3083!2508 -3083[2519 -3073 2530 -3064!2530 -3064[2554 -3043 2575 -3056"/>
+                    <Edge fillStyle0="2" edges="
+!2575 -3056[#A11.17 #FFF40D.F 2580 -3060"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2580 -3060[2584 -3063 2588 -3068!2588 -3068[2619 -3104 2603 -3149!2603 -3149[2599 -3160 2591 -3168!2591 -3168[2583 -3176 2570 -3180!2570 -3180[2567 -3180 2564 -3179!2564 -3179[2556 -3177 2549 -3171!2549 -3171[2540 -3164 2528 -3163!2528
+ -3163[2522 -3162 2517 -3160"/>
+                    <Edge fillStyle0="2" edges="
+!2517 -3160|2516 -3159!2516 -3159|2515 -3160"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2572 -3222[2585 -3226 2594 -3217!2594 -3217[2605 -3207 2610 -3194!2610 -3194[2614 -3181 2622 -3171!2622 -3171[2620 -3176 2618 -3181!2618 -3181[2615 -3190 2611 -3199!2611 -3199[2605 -3215 2590 -3223!2590 -3223[2587 -3224 2584 -3225!2584
+ -3225[2580 -3225 2576 -3225!2576 -3225[2574 -3224 2572 -3222"/>
+                    <Edge fillStyle1="1" edges="
+!2484 -3203[2487 -3249 2529 -3263!2529 -3263[2538 -3264 2545 -3261!2545 -3261[2547 -3262 2548 -3262!2548 -3262[2612 -3250 2648 -3187!2648 -3187[2678 -3134 2659 -3075!2659 -3075[2638 -3007 2581 -2991!2581 -2991[2532 -2961 2482 -3010!2482
+ -3010[2479 -3013 2476 -3016!2476 -3016[2463 -3029 2459 -3041!2517 -3160[2516 -3160 2515 -3160"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2493 -3043[2497 -3037 2502 -3031!2502 -3031[2508 -3025 2513 -3019!2513 -3019[2517 -3015 2521 -3015!2521 -3015[2515 -3020 2510 -3026!2510 -3026[2505 -3032 2499 -3038!2499 -3038[2496 -3041 2493 -3043!2617 -3058[2627 -3076 2634 -3095!2634
+ -3095[2637 -3103 2635 -3110!2635 -3110[2633 -3087 2620 -3066!2620 -3066[2608 -3045 2588 -3031!2588 -3031[2578 -3024 2565 -3021!2565 -3021[2601 -3026 2617 -3058"/>
+                    <Edge fillStyle1="1" edges="
+!2575 -3056[#A10.1 -3057 2577 -3057!2577 -3057[2578 -3058 2580 -3060"/>
+                    <Edge fillStyle0="2" edges="
+!2029 -349[2028 -344 2028 -340!2028 -340[2028 -331 2034 -326!2034 -326[2041 -319 2051 -322!2051 -322[2054 -321 2057 -321!2057 -321[2065 -321 2071 -325!2071 -325[2072 -327 2074 -328!2074 -328[2090 -316 2087 -296!2087 -296[2083 -277 2065
+ -277!2065 -277[2063 -277 2061 -279!2061 -279[2053 -285 2043 -291!2043 -291[2028 -299 2017 -286!2017 -286[2007 -274 2014 -263!2014 -263|2015 -261"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2015 -261[2016 -273 2025 -283!2025 -283[2032 -292 2042 -284!2042 -284[2048 -278 2054 -273!2054 -273[2067 -262 2078 -269!2078 -269|2079 -270!2079 -270[2080 -270 2081 -271!2081 -271[2083 -273 2085 -276!2085 -276[2102 -295 2093 -319!2093
+ -319[2091 -325 2087 -330!2087 -330[2083 -334 2075 -336!2075 -336[2074 -336 2072 -336!2072 -336[2068 -335 2064 -331!2064 -331[2059 -328 2053 -327!2053 -327[2049 -327 2047 -325!2047 -325|2046 -325!2046 -325[2035 -329 2032 -341!2032 -341
+[2030 -344 2031 -349!2031 -349[2032 -356 2034 -362!2034 -362|2033 -361!2033 -361|2032 -361!2032 -361|2032 -360!2032 -360[2030 -354 2029 -349"/>
+                    <Edge fillStyle1="1" edges="
+!2029 -349[2030 -374 2053 -381!2053 -381[2058 -382 2062 -380!2062 -380[2063 -381 2064 -381!2064 -381[2098 -374 2118 -340!2118 -340[2134 -311 2124 -279!2124 -279[2112 -242 2081 -234!2081 -234[2055 -218 2028 -244!2028 -244[2026 -246 2025
+ -247!2025 -247[2017 -254 2015 -261"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2079 -361[2078 -360 2077 -359!2077 -359[2084 -361 2088 -356!2088 -356[2094 -351 2097 -344!2097 -344[2099 -337 2104 -331!2104 -331[2103 -334 2101 -337!2101 -337[2100 -342 2098 -347!2098 -347[2094 -355 2086 -360!2086 -360[2085 -360 2083
+ -361!2083 -361[2081 -361 2079 -361!2034 -262[2036 -259 2039 -255!2039 -255[2042 -252 2045 -249!2045 -249[2047 -247 2049 -247!2049 -247[2046 -250 2043 -253!2043 -253[2040 -256 2037 -259!2037 -259[2035 -261 2034 -262!2085 -255[2080 -252
+ 2073 -250!2073 -250[2092 -253 2101 -270!2101 -270[2102 -272 2103 -274!2103 -274[2096 -263 2085 -255"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2654.5 -3160[-2635.125 #FFF3A0.AE -2629 -3188!-2629 -3188[-2626 -3195 -2627 -3204!-2627 -3204[-2629 -3217 -2632 -3227!-2632 -3227|-2631 -3226!-2631 -3226[-2630 -3225 -2629 -3225!-2629 -3225|-2629 -3224!-2629 -3224[-2628 -3224 -2628
+ -3223!-2628 -3223[#FFF5BF.2D #FFF372.88 -2623 -3203.5"/>
+                    <Edge fillStyle0="1" edges="
+!-2623 -3203.5[#FFF5BD.FB #FFF34E.FE -2668 -3263!-2668 -3263[-2677 -3264 -2684 -3261!-2684 -3261[-2686 -3262 -2687 -3262!-2687 -3262[-2751 -3250 -2787 -3187!-2787 -3187[-2817 -3134 -2798 -3075!-2798 -3075[-2777 -3007 -2720 -2991!-2720
+ -2991[-2671 -2961 -2621 -3010!-2621 -3010[-2618 -3013 -2615 -3016!-2615 -3016[#FFF5D5.F2 #FFF42B.63 -2598 -3041.5"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2598 -3041.5[#FFF5D7.DA #FFF407.D3 -2615 -3082!-2615 -3082[-2629 -3099 -2647 -3083!-2647 -3083[-2658 -3073 -2669 -3064!-2669 -3064[#FFF57B.3A #FFF41C.B5 -2714 -3056.5"/>
+                    <Edge fillStyle0="1" edges="
+!-2714 -3056.5[#FFF564.E4 #FFF40F.2A -2716 -3057!-2716 -3057[#FFF562.8B #FFF40D.8B -2719 -3060"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2719 -3060[#FFF55C.F8 #FFF408.8F -2727 -3068!-2727 -3068[-2758 -3104 -2742 -3149!-2742 -3149[#FFF54E.3F #FFF3A7.AC -2730 -3168!-2730 -3168[#FFF55E.54 #FFF397.B2 -2709 -3180!-2709 -3180[#FFF56E.0F #FFF394.41 -2703 -3179!-2703 -3179[#FFF579.4C
+ #FFF397.0A -2688 -3171!-2688 -3171[-2679 -3164 -2667 -3163!-2667 -3163[#FFF59A.EA #FFF3A5.D8 -2656 -3160"/>
+                    <Edge fillStyle0="1" edges="
+!-2656 -3160[#FFF5A0.E1 #FFF3A8.0E -2654.5 -3160"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2715 -3225[-2713 -3224 -2711 -3222!-2711 -3222[-2724 -3226 -2733 -3217!-2733 -3217[-2744 -3207 -2749 -3194!-2749 -3194[-2753 -3181 -2761 -3171!-2761 -3171[-2759 -3176 -2757 -3181!-2757 -3181[-2754 -3190 -2750 -3199!-2750 -3199[-2744
+ -3215 -2729 -3223!-2729 -3223[-2726 -3224 -2723 -3225!-2723 -3225[-2719 -3225 -2715 -3225"/>
+                    <Edge fillStyle1="2" edges="
+!-2656 -3160|-2655.5 -3159.5!-2655.5 -3159.5|-2654.5 -3160!-2623 -3203.5[#FFF5C2.88 #FFF385.1 -2621 -3186!-2621 -3186[-2621 -3171 -2633 -3161!-2633 -3161[-2646 -3149 -2664 -3153!-2664 -3153[#FFF593.18 #FFF3B0.78 -2675 -3152!-2675 -3152
+[-2689 -3152 -2700 -3160!-2700 -3160[-2703 -3162 -2706 -3164!-2706 -3164[-2736 -3143 -2730 -3105!-2730 -3105[-2723 -3070 -2690 -3071!-2690 -3071[-2686 -3071 -2682 -3074!-2682 -3074[-2667 -3086 -2649 -3096!-2649 -3096[-2622 -3111 -2602
+ -3088!-2602 -3088[-2583 -3066 -2596 -3044!-2596 -3044[-2597 -3041 -2598 -3041!-2598 -3041|-2598 -3041.5"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2774 -3110[-2772 -3087 -2759 -3066!-2759 -3066[-2747 -3045 -2727 -3031!-2727 -3031[-2717 -3024 -2704 -3021!-2704 -3021[-2740 -3026 -2756 -3058!-2756 -3058[-2766 -3076 -2773 -3095!-2773 -3095[-2776 -3103 -2774 -3110"/>
+                    <Edge fillStyle1="2" edges="
+!-2714 -3056.5[#FFF563.86 #FFF40D.EC -2719 -3060"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2652 -3019[-2656 -3015 -2660 -3015!-2660 -3015[-2654 -3020 -2649 -3026!-2649 -3026[-2644 -3032 -2638 -3038!-2638 -3038[-2635 -3041 -2632 -3043!-2632 -3043[-2636 -3037 -2641 -3031!-2641 -3031[-2647 -3025 -2652 -3019"/>
+                    <Edge fillStyle0="1" edges="
+!-2259 -349[-2260 -374 -2283 -381!-2283 -381[-2288 -382 -2292 -380!-2292 -380[-2293 -381 -2294 -381!-2294 -381[-2328 -374 -2348 -340!-2348 -340[-2364 -311 -2354 -279!-2354 -279[-2342 -242 -2311 -234!-2311 -234[-2285 -218 -2258 -244!-2258
+ -244[-2256 -246 -2255 -247!-2255 -247[-2247 -254 -2245 -261"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2245 -261[-2246 -273 -2255 -283!-2255 -283[-2262 -292 -2272 -284!-2272 -284[-2278 -278 -2284 -273!-2284 -273[-2297 -262 -2308 -269!-2308 -269|-2309 -270!-2309 -270[-2310 -270 -2311 -271!-2311 -271[-2313 -273 -2315 -276!-2315 -276[-2332
+ -295 -2323 -319!-2323 -319[-2321 -325 -2317 -330!-2317 -330[-2313 -334 -2305 -336!-2305 -336[-2304 -336 -2302 -336!-2302 -336[-2298 -335 -2294 -331!-2294 -331[-2289 -328 -2283 -327!-2283 -327[-2279 -327 -2277 -325!-2277 -325|-2276 -325
+!-2276 -325[-2265 -329 -2262 -341!-2262 -341[-2260 -344 -2261 -349!-2261 -349[-2262 -356 -2264 -362!-2264 -362|-2263 -361!-2263 -361|-2262 -361!-2262 -361|-2262 -360!-2262 -360[-2260 -354 -2259 -349!-2331 -337[-2330 -342 -2328 -347!-2328
+ -347[-2324 -355 -2316 -360!-2316 -360[-2315 -360 -2313 -361!-2313 -361[-2311 -361 -2309 -361!-2309 -361[-2308 -360 -2307 -359!-2307 -359[-2314 -361 -2318 -356!-2318 -356[-2324 -351 -2327 -344!-2327 -344[-2329 -337 -2334 -331!-2334 -331
+[-2333 -334 -2331 -337!-2333 -274[-2326 -263 -2315 -255!-2315 -255[-2310 -252 -2303 -250!-2303 -250[-2322 -253 -2331 -270!-2331 -270[-2332 -272 -2333 -274"/>
+                    <Edge fillStyle1="2" edges="
+!-2259 -349[-2258 -344 -2258 -340!-2258 -340[-2258 -331 -2264 -326!-2264 -326[-2271 -319 -2281 -322!-2281 -322[-2284 -321 -2287 -321!-2287 -321[-2295 -321 -2301 -325!-2301 -325[-2302 -327 -2304 -328!-2304 -328[-2320 -316 -2317 -296!-2317
+ -296[-2313 -277 -2295 -277!-2295 -277[-2293 -277 -2291 -279!-2291 -279[-2283 -285 -2273 -291!-2273 -291[-2258 -299 -2247 -286!-2247 -286[-2237 -274 -2244 -263!-2244 -263|-2245 -261"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2267 -259[-2265 -261 -2264 -262!-2264 -262[-2266 -259 -2269 -255!-2269 -255[-2272 -252 -2275 -249!-2275 -249[-2277 -247 -2279 -247!-2279 -247[-2276 -250 -2273 -253!-2273 -253[-2270 -256 -2267 -259"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="shadow" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="55" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.301960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!2506 -3229[2507 -3219 2506 -3208!2506 -3208|2507 -3208!2507 -3208[2510 -3205 2510 -3200!2510 -3200[2511 -3197 2509 -3193!2509 -3193[2506 -3188 2499 -3188!2499 -3188[2496 -3188 2493 -3190!2493 -3190|2491 -3189!2491 -3189[2486 -3185 2478
+ -3183!2478 -3183[2467 -3181 2457 -3181!2457 -3181|2454 -3181!2454 -3181[2435 -3134 2448 -3088!2448 -3088[2451 -3075 2464 -3065!2464 -3065[2479 -3053 2490 -3038!2490 -3038[2496 -3045 2503 -3051!2503 -3051[2511 -3060 2524 -3059!2524 -3059
+[2524 -3058 2524 -3057!2524 -3057[2529 -3057 2529 -3053!2529 -3053[2529 -3049 2525 -3042!2525 -3042[2512 -3026 2496 -3014!2496 -3014[2494 -3012 2495 -3011!2495 -3011[2491 -3000 2479 -3000!2479 -3000[2470 -2996 2459 -2994!2459 -2994[2451
+ -2993 2445 -2993!2445 -2993[2434 -2992 2423 -2991!2423 -2991[2401 -2991 2380 -2996!2380 -2996[2367 -3000 2362 -3013!2362 -3013[2354 -3040 2352 -3067!2352 -3067[2349 -3078 2349 -3089!2349 -3089[2349 -3098 2351 -3106!2351 -3106[2356 -3145
+ 2372 -3182!2372 -3182[2381 -3205 2400 -3219!2400 -3219[2407 -3237 2421 -3251!2421 -3251[2432 -3261 2446 -3263!2446 -3263[2450 -3264 2455 -3264!2455 -3264[2470 -3265 2485 -3257!2485 -3257[2503 -3248 2506 -3229!2439 -3043[2440 -3041 2441
+ -3038!2441 -3038[2450 -3041 2458 -3041!2458 -3041|2458 -3042!2458 -3042[2448 -3041 2439 -3043!-2709 -3238[-2690 -3241 -2674 -3231!-2674 -3231[-2657 -3221 -2655 -3202!-2655 -3202[-2654 -3192 -2655 -3181!-2655 -3181|-2654 -3181!-2654 -3181
+[-2651 -3177 -2651 -3173!-2651 -3173[-2650 -3169 -2652 -3166!-2652 -3166[-2655 -3161 -2661 -3161!-2661 -3161[-2664 -3161 -2667 -3163!-2667 -3163|-2668 -3163!-2668 -3163[-2673 -3158 -2680 -3157!-2680 -3157[-2690 -3155 -2699 -3156!-2699
+ -3156[-2701 -3156 -2702 -3156!-2702 -3156[-2719 -3109 -2707 -3063!-2707 -3063[-2704 -3049 -2693 -3039!-2693 -3039[#FFF588.82 #FFF42C.94 -2669.5 -3012!-2669.5 -3012[#FFF598.4E #FFF436.44 -2658 -3024!-2658 -3024[-2650 -3033 -2639 -3031
+!-2639 -3031[#FFF5B0.D1 #FFF429.DA -2639.5 -3029.5!-2639.5 -3029.5[#FFF5BB.5F #FFF42B.F2 -2638 -3014!-2638 -3014[#FFF5A6.B8 #FFF44A.4B -2664.5 -2987!-2664.5 -2987[#FFF597.5 #FFF456.8A -2665 -2984!-2665 -2984[#FFF594.43 #FFF462.F2 -2679.5
+ -2974!-2679.5 -2974[#FFF581.3A #FFF465.CC -2697 -2969!-2697 -2969[#FFF570.3E #FFF467.D3 -2710 -2968.5!-2710 -2968.5[#FFF54D.02 #FFF46C.AB -2768 -2973!-2768 -2973[-2780 -2977 -2784 -2991!-2784 -2991[#FFF518.8D #FFF435.FF -2793 -3045.5
+!-2793 -3045.5[#FFF513.43 #FFF408.5A -2794 -3084!-2794 -3084[-2789 -3123 -2775 -3160!-2775 -3160[#FFF531.11 #FFF391.AA -2750.5 -3196!-2750.5 -3196[#FFF548.3A #FFF372.EF -2731 -3227!-2731 -3227[-2721 -3236 -2709 -3238!-2698.5 -3017[#FFF56C.FD
+ #FFF438.6A -2715 -3018!-2715 -3018[#FFF565.C2 #FFF438.76 -2713 -3013.5!-2713 -3013.5[#FFF56F.18 #FFF437.CA -2698.5 -3016.5!-2698.5 -3016.5|-2698.5 -3017"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="pedestals" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="55" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#9594A3"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#2F2F33"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#49484F"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!2265 -3398|2805 -3398!2805 -3398|2845 -3361"/>
+                    <Edge fillStyle1="3" edges="
+!2845 -3361|2746 -2887!2746 -2887|2238 -2887"/>
+                    <Edge fillStyle1="2" edges="
+!2238 -2887|2198 -2923!2198 -2923|2265 -3398"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!2305 -3361|2265 -3398"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="
+!2305 -3361|2238 -2887"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="
+!2845 -3361|2305 -3361"/>
+                    <Edge fillStyle1="2" edges="
+!1870 -151|1849 -173!1849 -173|1911 -499"/>
+                    <Edge fillStyle1="1" edges="
+!1911 -499|2234 -499!2234 -499|2254 -472"/>
+                    <Edge fillStyle1="3" edges="
+!2254 -472|2148 -151!2148 -151|1870 -151"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="
+!1932 -472|1870 -151"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="
+!2254 -472|1932 -472"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!1932 -472|1911 -499"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-2414 -3361|-2374 -3398"/>
+                    <Edge fillStyle0="1" edges="
+!-2374 -3398|-2914 -3398!-2914 -3398|-2954 -3361"/>
+                    <Edge fillStyle0="1" fillStyle1="3" edges="
+!-2954 -3361|-2414 -3361"/>
+                    <Edge fillStyle0="2" edges="
+!-2347 -2887|-2307 -2923!-2307 -2923|-2374 -3398"/>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="
+!-2414 -3361|-2347 -2887"/>
+                    <Edge fillStyle1="3" edges="
+!-2347 -2887|-2855 -2887!-2855 -2887|-2954 -3361"/>
+                    <Edge fillStyle1="1" edges="
+!-2453 -472|-2430 -499!-2430 -499|-2107 -499"/>
+                    <Edge fillStyle1="2" edges="
+!-2107 -499|-2080 -173!-2080 -173|-2103 -151"/>
+                    <Edge fillStyle1="3" edges="
+!-2103 -151|-2381 -151!-2381 -151|-2453 -472"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!-2107 -499|-2131 -472"/>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="
+!-2131 -472|-2103 -151"/>
+                    <Edge fillStyle0="1" fillStyle1="3" edges="
+!-2453 -472|-2131 -472"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

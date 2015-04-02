@@ -1,0 +1,66 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/scrollBar" itemID="5470b8a9-000001e0" symbolType="graphic" lastModified="1416673597">
+  <timeline>
+    <DOMTimeline name="scrollBar">
+      <layers>
+        <DOMLayer name="txt_darkest" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#8A7600"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!144 423[144 422 145 421!145 421[147 420 148 420!148 420[149 419 150 419!150 419[172 423 198 422!198 422[242 419 287 419!287 419[303 418 317 425!317 425[313 431 304 431!304 431[301 431 298 432!298 432[214 443 142 425!142 425[142 424 144
+ 423!148 344|148 343!148 343[188 334 228 336!228 336[264 336 301 336!301 336[310 336 311 344!311 344[311 345 310 345!310 345[237 359 158 349!158 349[156 349 155 349!155 349[149 348 148 344!316 594[249 601 181 603!181 603[156 603 142 592
+!142 592|142 591!142 591|143 590!143 590[147 588 152 587!152 587[163 587 175 586!175 586[178 586 181 586!181 586[215 586 248 586!248 586[272 587 296 589!296 589[308 590 317 593!317 593|316 594!291 506[307 510 323 511!323 511[308 513 294
+ 515!294 515[219 524 144 518!144 518[138 518 135 512!135 512[135 511 135 510!135 510[136 507 139 507!139 507[145 506 151 505!151 505[169 503 187 502!187 502[201 502 216 502!216 502[232 502 249 502!249 502[270 502 291 506!253 669[271 669
+ 289 672!289 672[303 674 315 677!315 677[307 677 299 679!299 679[236 690 172 686!172 686[154 685 144 677!144 677|146 677!146 677|146 678!146 678[147 678 149 678!149 678|149 677!149 677[149 676 150 676!150 676[151 675 151 674!151 674|152
+ 674!152 674[153 674 154 674!154 674[165 672 176 671!176 671[190 670 203 669!203 669[228 669 253 669"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="dark_txt" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E7CE35"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#BFA400"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="
+!456 0|456 996!456 996|0 996!0 996|0 0!0 0|456 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

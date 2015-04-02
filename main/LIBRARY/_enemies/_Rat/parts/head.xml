@@ -1,0 +1,157 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Rat/parts/head" itemID="5421a68f-0000010f" symbolType="graphic" lastModified="1411495556" lastUniqueIdentifier="2">
+  <timeline>
+    <DOMTimeline name="head">
+      <layers>
+        <DOMLayer name="nose" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#852D2C"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!939.5 563.5[#37E.7F #252.D2 701 537!701 537[#2AF.21 #213.9B 677 515!677 515[#2A5.97 #1D5.9D 709 429.5!709 429.5[#2E4.6F #185.68 796.5 355.5!796.5 355.5[#354.7E #141.A3 884 338!884 338[#393.5A #162.48 933 377!933 377[#3B6.B3 #18F.BD 967.5
+ 466!967.5 466[#3D8.4F #214.3C 939.5 563.5"/>
+                    <Edge cubics="!709 430(;730,403 759,378 797,356q709 430Q740 389q797 356);"/>
+                    <Edge cubics="!677 515(;678,485 688,457 709,430q677 515Q678 470q709 430);"/>
+                    <Edge cubics="!968 466(;979,510 969,543 940,564q968 466Q984 532q940 564);"/>
+                    <Edge cubics="!884 338(;905,349 921,362 933,377q884 338Q915 354q933 377);"/>
+                    <Edge cubics="!933 377(;945,392 957,422 968,466q933 377Q951 400q968 466);"/>
+                    <Edge cubics="!701 537(;692,534 684,526 677,515q701 537Q687 532q677 515);"/>
+                    <Edge cubics="!940 564(;909,585 830,576 701,537q940 564Q894 595q701 537);"/>
+                    <Edge cubics="!797 356(797,356;834,333 863,327 884,338q797 356Q852 322q884 338);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="nose hair" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#D4D4D4"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!439 420[400 498 372 585!372 585[344 671 333 761!333 761[327 809 327 859!327 859[320 779 334 696!334 696[349 606 382 520!382 520[402 469 429 423!429 423|430 423!430 423[432 422 433 422!433 422[435 421 436 420!436 420[437 420 438 420!438
+ 420|439 420!494 378[492 372 498 372!498 372[506 375 500 381!500 381[495 385 494 378!630 423[633 426 630 430!630 430[628 432 626 434!626 434[621 438 621 434!621 434[622 432 623 430!623 430[624 428 625 427!625 427[625 426 625 425!625 425
+[625 424 626 424!626 424[627 423 629 423!629 423|630 423!192 443[193 443 195 444!195 444[196 444 197 445!197 445[194 448 192 451!192 451[191 453 190 454!190 454[187 456 184 455!184 455[182 455 180 454!180 454[178 452 177 450!177 450[176
+ 449 177 447!177 447[177 445 178 443!178 443[180 440 184 441!184 441|184 440!184 440[185 440 186 441!186 441[188 441 190 442!190 442[191 442 192 443!338 338[335 334 338 330!338 330[340 327 339 323!339 323[338 318 342 316!342 316[343 316
+ 345 315!345 315[353 317 350 323!350 323[347 328 345 334!345 334[343 338 338 338!229 303[237 315 212 334!212 334[160 372 111 414!111 414[-16 526 -135 647!-135 647[-256 769 -343 913!-343 913[-346 917 -351 919!-351 919[-295 792 -194 691
+!-194 691[-135 631 -76 571!-76 571[60 432 213 312!213 312[221 306 229 303!45 761[27 810 15 861!15 861[23 783 57 707!57 707[96 616 149 532!149 532[187 471 244 435!244 435[179 503 129 587!129 587[80 670 45 761!423 510[422 511 419 512!419
+ 512[415 513 412 512!412 512[413 510 414 509!414 509[416 507 417 507!417 507[418 506 420 506!420 506|421 506!421 506[423 509 423 510!507 523[542 457 607 423!607 423[574 453 542 501!542 501[485 583 465 681!465 681[445 778 456 876!456 876
+[444 797 450 717!450 717[458 614 507 523"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="blright" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0.4"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-82 -57[-67 -11 -116 -15!-116 -15[-134 -16 -150 -25!-150 -25[-216 -63 -225 -134!-225 -134[-225 -142 -218 -144!-218 -144[-216 -145 -214 -145!-214 -145[-111 -150 -82 -57"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="eye" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#852D2C"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-230.5 -2[#FFFF83.52 #40.D5 -52 42!-52 42[20.75 #13.4B 27 2!27 2[#FFFF82.86 #FFFF27.C5 -389 -260!-389 -260[#FFFE84.1A #FFFF22.0E -358 -145.5!-358 -145.5[#FFFEAF.AB -69.078125 -230.5 -2"/>
+                    <Edge cubics="!-389 -260(;-389,-260 -355,-109 -248,-19q-389 -260Q-380 -222q-359 -173Q-315 -75q-248 -19);"/>
+                    <Edge cubics="!-248 -19(;-141,71 31,-7 31,-7q-248 -19Q-181 37q-68 21Q-12 13q31 -7);"/>
+                    <Edge cubics="!31 -7(;-87,-140 -227,-225 -389,-260q31 -7Q-146 -207q-389 -260);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ear right" color="#FF0000" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/ear right" centerPoint3DX="-37.4" centerPoint3DY="-35">
+                  <matrix>
+                    <Matrix tx="-37.35" ty="-34.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#3A443B"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!240 -179[267 -112 282 -54!282 -54[642 30 894 338!894 338|887 392!887 392[874 453 841 486!841 486[809 519 739 519!739 519[141 588 -378 355!-378 355[-468 358 -635 336!-635 336[-803 314 -859 234!-859 234[-915 154 -882 32!-882 32[-849 -91
+ -826 -159!-826 -159|-748 -535!-748 -535|-337 -526!-337 -526[#FFFF40.CC #FFFDFB.5F -63 -475!-63 -475[77 -408 132 -361!132 -361[187 -314 240 -179"/>
+                    <Edge cubics="!-192 -532(;-192,-532 44,-436 132,-361q-192 -532Q-192 -532q-63 -475Q77 -408q132 -361);"/>
+                    <Edge cubics="!132 -361(;220,-286 282,-54 282,-54q132 -361Q187 -314q240 -179Q267 -112q282 -54);"/>
+                    <Edge cubics="!-826 -159(;-826,-159 -748,-535 -748,-535q-826 -159 -748 -535);"/>
+                    <Edge cubics="!-748 -535(;-748,-535 -192,-532 -192,-532q-748 -535 -192 -532);"/>
+                    <Edge cubics="!894 338(;894,338 893,433 841,486q894 338Q894 338q887 392Q874 453q841 486);"/>
+                    <Edge cubics="!282 -54(;522,2 726,133 894,338q282 -54Q642 30q894 338);"/>
+                    <Edge cubics="!841 486(;820,508 786,519 739,519q841 486Q809 519q739 519);"/>
+                    <Edge cubics="!739 519(;340,565 -32,510 -378,355q739 519Q141 588q-378 355);"/>
+                    <Edge cubics="!-882 32(;-860,-50 -841,-114 -826,-159q-882 32Q-849 -91q-826 -159);"/>
+                    <Edge cubics="!-635 336(;-747,321 -822,287 -859,234q-635 336Q-803 314q-859 234);"/>
+                    <Edge cubics="!-378 355(-378,355;-438,357 -524,351 -635,336q-378 355Q-468 358q-635 336);"/>
+                    <Edge cubics="!-859 234(-859,234;-896,181 -904,113 -882,32q-859 234Q-915 154q-882 32);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ear left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

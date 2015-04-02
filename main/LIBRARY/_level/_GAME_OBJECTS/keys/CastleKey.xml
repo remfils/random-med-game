@@ -1,0 +1,203 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/keys/CastleKey" itemID="5467322a-000001af" linkageExportForAS="true" linkageBaseClass="src.objects.Key" linkageClassName="CastleKey" lastModified="1427389897" lastUniqueIdentifier="3">
+  <timeline>
+    <DOMTimeline name="CastleKey" currentFrame="9">
+      <layers>
+        <DOMLayer name="label" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" name="show" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="21" name="hide" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="action" color="#9933CC" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="16" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="25" duration="15" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[changePlace();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="tintObject" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/tintObj" name="tintObject_mc" centerPoint3DX="-0.4" centerPoint3DY="-11.85">
+                  <matrix>
+                    <Matrix tx="-0.4" ty="-11.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="key" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" symbolType="graphic" loop="play once">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" symbolType="graphic" firstFrame="6" loop="play once">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" selected="true" symbolType="graphic" firstFrame="5" loop="play once">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" selected="true" symbolType="graphic" firstFrame="4" loop="play once">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" symbolType="graphic" firstFrame="3" loop="play once">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="23" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" selected="true" symbolType="graphic" firstFrame="2" loop="play once">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" symbolType="graphic" firstFrame="1" loop="play once">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="25" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr_appear" symbolType="graphic" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.261886596679688" d="0.261886596679688" tx="-0.25" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001" centerPoint3DX="9.15" centerPoint3DY="9.15">
+                  <matrix>
+                    <Matrix a="0.895599365234375" d="1.45993041992188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="activeArea" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="activeArea" centerPoint3DX="-30.55" centerPoint3DY="-31.35">
+                  <matrix>
+                    <Matrix a="2.99711608886719" d="2.76205444335938"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="1" tintColor="#00FF00"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

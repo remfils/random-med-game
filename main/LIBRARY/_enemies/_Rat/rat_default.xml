@@ -1,0 +1,138 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Rat/rat_default" itemID="5421a554-00000109" lastModified="1411495455">
+  <timeline>
+    <DOMTimeline name="rat_default">
+      <layers>
+        <DOMLayer name="arm1 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="23.4" ty="6.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm2 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.997528076171875" b="-0.07025146484375" c="0.07025146484375" d="0.997528076171875" tx="46.6" ty="30.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg2 right" color="#FF0000" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-46.6" ty="34.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg1 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-45.65" ty="4.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="head" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/head" centerPoint3DX="104.6" centerPoint3DY="-4.35">
+                  <matrix>
+                    <Matrix tx="104.6" ty="-4.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="base" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/body" centerPoint3DX="-13.75" centerPoint3DY="-10.7">
+                  <matrix>
+                    <Matrix tx="-13.7" ty="-10.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="tail" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E4CCC8"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor color="#CBC585"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!-1825 -15[-1923 60 -2033 124!-2033 124[-2386 331 -2735 350!-2735 350[-3293 381 -4149 423!-4149 423[-3866 441 -3537 455!-3537 455[#FFF4C0.E1 483 -2594.5 464!-2594.5 464[#FFF6FA.5C 445 -1903 312!-1903 312|-1468 47!-1468 47|-1583 -83!-1583
+ -83|-1750 -78!-1750 -78|-1825 -15"/>
+                    <Edge cubics="!-1750 -78(;-1750,-78 -2177,319 -2735,350q-1750 -78Q-1750 -78q-1825 -15Q-1923 60q-2033 124Q-2386 331q-2735 350);"/>
+                    <Edge cubics="!-2735 350(;-3293,381 -4149,423 -4149,423q-2735 350Q-3293 381q-4149 423);"/>
+                    <Edge cubics="!-4149 423(;-4149,423 -3018,495 -2647,464q-4149 423Q-3866 441q-3537 455Q-2879 483q-2647 464);"/>
+                    <Edge cubics="!-2647 464(;-2276,433 -1468,47 -1468,47q-2647 464Q-2415 445q-1918 244Q-1468 47q-1468 47);"/>
+                    <Edge cubics="!-1468 47(;-1468,47 -1583,-83 -1583,-83q-1468 47 -1583 -83);"/>
+                    <Edge cubics="!-1583 -83(;-1583,-83 -1750,-78 -1750,-78q-1583 -83 -1750 -78);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,1176 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/obstacles/_Barell/Barell" itemID="5406cba1-000002bd" linkageExportForAS="true" linkageBaseClass="src.objects.ExtrudedDynamicObject" linkageClassName="Barell" lastModified="1427979249" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="Barell">
+      <layers>
+        <DOMLayer name="actions" color="#FF4FFF" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="15" name="break" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="20" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001" centerPoint3DX="-16.55" centerPoint3DY="-5">
+                  <matrix>
+                    <Matrix a="2.5650634765625" d="1.12139892578125" ty="0.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#FF4F4F" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#808080"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#9C9C9C"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="2" edges="!-412 -933[-394 -958 -362 -974!-362 -974[-268 -1019 -166 -1043!-166 -1043[-109 -1056 -51 -1063!-51 -1063[59 -1060 168 -1053!168 -1053[248 -1048 321 -1013!321 -1013[380 -985 430 -945!430 -945[439 -938 444 -929"/>
+                    <Edge fillStyle1="1" edges="!444 -929[446 -924 447 -919!447 -919[448 -918 448 -916!448 -916[459 -903 463 -887!463 -887[457 -857 457 -826!457 -826[442 -806 426 -786!426 -786[420 -780 414 -776!414 -776[345 -736 270 -706!270 -706[176 -695 80 -686!80 -686[-39 -674 -154
+ -695!-154 -695[-156 -695 -157 -695!-157 -695[-166 -697 -174 -698!-174 -698[-247 -712 -313 -736!-313 -736[-329 -742 -341 -749!-341 -749[-359 -759 -371 -772!-371 -772[-375 -776 -379 -781!-379 -781[-383 -784 -387 -790!-387 -790[-403 -813
+ -416 -837!-416 -837[-418 -850 -420 -862!-420 -862[-423 -889 -420 -916!-420 -916[-420 -918 -420 -919!-420 -919[-416 -927 -412 -933"/>
+                    <Edge fillStyle1="2" edges="
+!429 -862[429 -864 429 -866!429 -866[429 -868 429 -869!429 -869[428 -871 428 -872!428 -872[419 -890 408 -906!408 -906[400 -918 390 -927!390 -927[384 -930 377 -934!377 -934[365 -940 354 -946!354 -946[352 -947 351 -947!351 -947[330 -958
+ 308 -969!308 -969[294 -975 285 -983!285 -983|283 -981!283 -981[281 -981 279 -981!279 -981|278 -982!278 -982|278 -986!278 -986[248 -999 217 -1007!217 -1007[213 -1008 209 -1009!209 -1009[195 -1013 183 -1015!183 -1015[177 -1017 172 -1017
+!172 -1017[142 -1022 113 -1026!113 -1026[47 -1034 -17 -1030!-17 -1030[-22 -1030 -28 -1029!-28 -1029[-78 -1025 -126 -1013!-126 -1013[-195 -995 -259 -971!-259 -971[-263 -969 -267 -968!-267 -968[-283 -962 -297 -956!-297 -956[-302 -954 -306
+ -952!-306 -952[-313 -949 -320 -946!-320 -946[-341 -937 -356 -924!-356 -924[-379 -905 -381 -881!-381 -881[-382 -881 -381 -879!-381 -879[-381 -875 -381 -870!-381 -870[-381 -868 -380 -865"/>
+                    <Edge fillStyle1="1" edges="
+!-380 -865[-380 -863 -380 -862!-380 -862[-380 -858 -379 -853!-379 -853[-376 -841 -372 -828!-372 -828[-368 -817 -358 -806!-358 -806[-360 -806 -361 -807!-361 -807[-345 -780 -313 -762!-313 -762[-311 -761 -310 -760!-310 -760[-287 -747 -256
+ -739!-256 -739[-188 -722 -116 -713!-116 -713[-111 -712 -105 -711!-105 -711[-74 -708 -42 -706!-42 -706[4 -703 50 -706!50 -706[167 -716 284 -730!284 -730[302 -745 328 -756!328 -756[388 -783 422 -823!422 -823[422 -827 422 -831!422 -831
+[423 -838 425 -844!425 -844[426 -845 426 -846!426 -846[428 -854 429 -862"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!429 -862|444 -929"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-380 -865|-412 -933"/>
+                    <Edge cubics="!447 -919(447,-919;447,-918 448,-917 448,-916q447 -919Q448 -918q448 -916);"/>
+                    <Edge cubics="!390 -927(;386,-929 382,-931 377,-934q390 -927Q384 -930q377 -934);"/>
+                    <Edge cubics="!429 -866(;429,-867 429,-868 429,-869q429 -866Q429 -868q429 -869);"/>
+                    <Edge cubics="!428 -872(;422,-884 415,-895 408,-906q428 -872Q419 -890q408 -906);"/>
+                    <Edge cubics="!429 -869(;428,-870 428,-872 428,-872q429 -869Q428 -871q428 -872);"/>
+                    <Edge cubics="!414 -776(;418,-779 422,-782 426,-786q414 -776Q420 -780q426 -786);"/>
+                    <Edge cubics="!457 -826(;457,-847 459,-867 463,-887q457 -826Q457 -857q463 -887);"/>
+                    <Edge cubics="!426 -786(;437,-799 447,-813 457,-826q426 -786Q442 -806q457 -826);"/>
+                    <Edge cubics="!217 -1007(;214,-1008 211,-1009 209,-1009q217 -1007Q213 -1008q209 -1009);"/>
+                    <Edge cubics="!279 -981(;279,-981 279,-982 278,-982q279 -981Q279 -981q278 -982);"/>
+                    <Edge cubics="!283 -981(;282,-981 280,-981 279,-981q283 -981Q281 -981q279 -981);"/>
+                    <Edge cubics="!308 -969(;299,-973 291,-978 285,-983q308 -969Q294 -975q285 -983);"/>
+                    <Edge cubics="!278 -986(;258,-995 237,-1002 217,-1007q278 -986Q248 -999q217 -1007);"/>
+                    <Edge cubics="!183 -1015(;179,-1017 175,-1017 172,-1017q183 -1015Q177 -1017q172 -1017);"/>
+                    <Edge cubics="!172 -1017(;152,-1020 132,-1023 113,-1026q172 -1017Q142 -1022q113 -1026);"/>
+                    <Edge cubics="!354 -946(;353,-947 352,-947 351,-947q354 -946Q352 -947q351 -947);"/>
+                    <Edge cubics="!168 -1053(;222,-1049 273,-1036 321,-1013q168 -1053Q248 -1048q321 -1013);"/>
+                    <Edge cubics="!351 -947(;337,-954 323,-962 308,-969q351 -947Q330 -958q308 -969);"/>
+                    <Edge cubics="!209 -1009(;200,-1012 191,-1014 183,-1015q209 -1009Q195 -1013q183 -1015);"/>
+                    <Edge cubics="!80 -686(;144,-692 207,-699 270,-706q80 -686Q176 -695q270 -706);"/>
+                    <Edge cubics="!50 -706(;128,-713 206,-721 284,-730q50 -706Q167 -716q284 -730);"/>
+                    <Edge cubics="!284 -730(;296,-740 311,-748 328,-756q284 -730Q302 -745q328 -756);"/>
+                    <Edge cubics="!321 -1013(;360,-994 397,-971 430,-945q321 -1013Q380 -985q430 -945);"/>
+                    <Edge cubics="!270 -706(;320,-726 368,-749 414,-776q270 -706Q345 -736q414 -776);"/>
+                    <Edge cubics="!377 -934(;369,-938 361,-942 354,-946q377 -934Q365 -940q354 -946);"/>
+                    <Edge cubics="!328 -756(;368,-774 400,-796 422,-823q328 -756Q388 -783q422 -823);"/>
+                    <Edge cubics="!-17 -1030(;-20,-1030 -24,-1030 -28,-1029q-17 -1030Q-22 -1030q-28 -1029);"/>
+                    <Edge cubics="!-28 -1029(;-62,-1026 -94,-1021 -126,-1013q-28 -1029Q-78 -1025q-126 -1013);"/>
+                    <Edge cubics="!-259 -971(;-262,-970 -265,-969 -267,-968q-259 -971Q-263 -969q-267 -968);"/>
+                    <Edge cubics="!-166 -1043(;-128,-1051 -90,-1058 -51,-1063q-166 -1043Q-109 -1056q-51 -1063);"/>
+                    <Edge cubics="!-126 -1013(;-172,-1001 -216,-987 -259,-971q-126 -1013Q-195 -995q-259 -971);"/>
+                    <Edge cubics="!-267 -968(;-278,-964 -288,-960 -297,-956q-267 -968Q-283 -962q-297 -956);"/>
+                    <Edge cubics="!-306 -952(;-311,-950 -316,-948 -320,-946q-306 -952Q-313 -949q-320 -946);"/>
+                    <Edge cubics="!-381 -879(;-381,-877 -381,-874 -381,-870q-381 -879Q-381 -875q-381 -870);"/>
+                    <Edge cubics="!-381 -881(;-382,-881 -382,-880 -381,-879q-381 -881Q-382 -881q-381 -879);"/>
+                    <Edge cubics="!-320 -946(;-334,-940 -346,-933 -356,-924q-320 -946Q-341 -937q-356 -924);"/>
+                    <Edge cubics="!-420 -916(;-422,-898 -422,-880 -420,-862q-420 -916Q-423 -889q-420 -862);"/>
+                    <Edge cubics="!-420 -919(;-420,-918 -420,-917 -420,-916q-420 -919Q-420 -918q-420 -916);"/>
+                    <Edge cubics="!-387 -790(;-397,-806 -407,-822 -416,-837q-387 -790Q-403 -813q-416 -837);"/>
+                    <Edge cubics="!-379 -781(;-376,-778 -374,-775 -371,-772q-379 -781Q-375 -776q-371 -772);"/>
+                    <Edge cubics="!-379 -853(;-377,-845 -374,-837 -372,-828q-379 -853Q-376 -841q-372 -828);"/>
+                    <Edge cubics="!-372 -828(;-369,-821 -364,-813 -358,-806q-372 -828Q-368 -817q-358 -806);"/>
+                    <Edge cubics="!-358 -806(;-359,-806 -360,-807 -361,-807q-358 -806Q-360 -806q-361 -807);"/>
+                    <Edge cubics="!-361 -807(;-350,-789 -334,-774 -313,-762q-361 -807Q-345 -780q-313 -762);"/>
+                    <Edge cubics="!-379 -781(;-381,-783 -384,-786 -387,-790q-379 -781Q-383 -784q-387 -790);"/>
+                    <Edge cubics="!-380 -862(;-380,-859 -379,-857 -379,-853q-380 -862Q-380 -858q-379 -853);"/>
+                    <Edge cubics="!-341 -749(;-333,-744 -324,-740 -313,-736q-341 -749Q-329 -742q-313 -736);"/>
+                    <Edge cubics="!-256 -739(;-211,-728 -164,-719 -116,-713q-256 -739Q-188 -722q-116 -713);"/>
+                    <Edge cubics="!-116 -713(;-113,-712 -109,-712 -105,-711q-116 -713Q-111 -712q-105 -711);"/>
+                    <Edge cubics="!-105 -711(;-84,-709 -63,-707 -42,-706q-105 -711Q-74 -708q-42 -706);"/>
+                    <Edge cubics="!-174 -698(;-168,-697 -163,-696 -157,-695q-174 -698Q-166 -697q-157 -695);"/>
+                    <Edge cubics="!-157 -695(;-156,-695 -155,-695 -154,-695q-157 -695Q-156 -695q-154 -695);"/>
+                    <Edge cubics="!-362 -974(;-300,-1004 -234,-1027 -166,-1043q-362 -974Q-268 -1019q-166 -1043);"/>
+                    <Edge cubics="!-297 -956(;-301,-955 -304,-953 -306,-952q-297 -956Q-302 -954q-306 -952);"/>
+                    <Edge cubics="!-313 -762(;-312,-762 -311,-761 -310,-760q-313 -762Q-311 -761q-310 -760);"/>
+                    <Edge cubics="!-310 -760(;-295,-751 -277,-745 -256,-739q-310 -760Q-287 -747q-256 -739);"/>
+                    <Edge cubics="!-371 -772(;-363,-764 -353,-756 -341,-749q-371 -772Q-359 -759q-341 -749);"/>
+                    <Edge cubics="!-313 -736(;-269,-721 -223,-708 -174,-698q-313 -736Q-247 -712q-174 -698);"/>
+                    <Edge cubics="!-51 -1063(;22,-1061 95,-1057 168,-1053q-51 -1063Q59 -1060q168 -1053);"/>
+                    <Edge cubics="!113 -1026(;69,-1032 25,-1033 -17,-1030q113 -1026Q47 -1034q-17 -1030);"/>
+                    <Edge cubics="!-42 -706(;-11,-704 20,-704 50,-706q-42 -706Q4 -703q50 -706);"/>
+                    <Edge cubics="!-154 -695(;-77,-681 1,-678 80,-686q-154 -695Q-39 -674q80 -686);"/>
+                    <Edge cubics="!448 -916(;455,-907 460,-897 463,-887q448 -916Q459 -903q463 -887);"/>
+                    <Edge cubics="!408 -906(;403,-914 397,-920 390,-927q408 -906Q400 -918q390 -927);"/>
+                    <Edge cubics="!-356 -924(;-372,-912 -380,-897 -381,-881q-356 -924Q-379 -905q-381 -881);"/>
+                    <Edge cubics="!-420 -862(;-418,-854 -417,-846 -416,-837q-420 -862Q-418 -850q-416 -837);"/>
+                    <Edge cubics="!-380 -865(;-380,-864 -380,-863 -380,-862q-380 -865Q-380 -863q-380 -862);"/>
+                    <Edge cubics="!-381 -870(;-381,-868 -381,-867 -380,-865q-381 -870Q-381 -868q-380 -865);"/>
+                    <Edge cubics="!-420 -919(;-417,-924 -414,-929 -412,-933q-420 -919Q-416 -927q-412 -933);"/>
+                    <Edge cubics="!-380 -865(;-380,-865 -412,-933 -412,-933q-380 -865 -412 -933);"/>
+                    <Edge cubics="!-412 -933(;-400,-950 -384,-964 -362,-974q-412 -933Q-394 -958q-362 -974);"/>
+                    <Edge cubics="!444 -929(;445,-926 446,-923 447,-919q444 -929Q446 -924q447 -919);"/>
+                    <Edge cubics="!429 -862(;429,-863 429,-864 429,-866q429 -862Q429 -864q429 -866);"/>
+                    <Edge cubics="!422 -823(;422,-826 422,-828 422,-831q422 -823Q422 -827q422 -831);"/>
+                    <Edge cubics="!422 -831(;423,-836 424,-840 425,-844q422 -831Q423 -838q425 -844);"/>
+                    <Edge cubics="!425 -844(;426,-845 426,-846 426,-846q425 -844Q426 -845q426 -846);"/>
+                    <Edge cubics="!426 -846(;428,-851 428,-857 429,-862q426 -846Q428 -854q429 -862);"/>
+                    <Edge cubics="!429 -862(;429,-862 444,-929 444,-929q429 -862 444 -929);"/>
+                    <Edge cubics="!430 -945(;437,-940 441,-935 444,-929q430 -945Q439 -938q444 -929);"/>
+                    <Edge cubics="!278 -982(;278,-982 278,-986 278,-986q278 -982 278 -986);"/>
+                    <Edge cubics="!285 -983(;285,-983 283,-981 283,-981q285 -983 283 -981);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.98260498046875" b="0.185699462890625" c="-0.185699462890625" d="0.98260498046875" tx="1.15" ty="-46.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.3" y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.960403442382813" b="0.278594970703125" c="-0.278594970703125" d="0.960403442382813" tx="-0.5" ty="-57.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.25" y="-0.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.984725952148438" b="-0.174148559570313" c="0.174148559570313" d="0.984725952148438" tx="-1.2" ty="-6.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.3" y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.987777709960938" b="0.155807495117188" c="-0.155807495117188" d="0.987777709960938" tx="0.5" ty="-1.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.25" y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="texture top" color="#4F80FF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!91 -1007[87 -1008 84 -1008!84 -1008|82 -1008!82 -1008[78 -1010 77 -1012!77 -1012|76 -1013!76 -1013[75 -1014 76 -1014!76 -1014[78 -1016 81 -1015!81 -1015[83 -1015 86 -1014!86 -1014[90 -1014 93 -1013!93 -1013[96 -1012 95 -1009!95 -1009
+[95 -1008 93 -1008!93 -1008[92 -1008 91 -1007"/>
+                    <Edge fillStyle0="1" edges="
+!322 -1020[297 -1019 273 -1016!273 -1016|274 -1015!274 -1015[275 -1016 276 -1015!276 -1015[298 -1018 322 -1020!209 -1009[86 -996 -32 -971!-32 -971[-104 -958 -174 -940!-174 -940[-212 -929 -248 -918!-248 -918[-251 -920 -254 -922!-254 -922
+[-253 -923 -252 -923!-252 -923[-246 -926 -254 -929!-254 -929[-258 -929 -258 -926!-258 -926|-258 -925!-258 -925[-273 -935 -286 -947!-286 -947[-292 -952 -297 -956!-297 -956[-302 -954 -306 -952!-306 -952[-292 -939 -276 -926!-276 -926[-268
+ -918 -258 -914!-258 -914[-324 -892 -380 -862!-380 -862[-380 -858 -379 -853!-379 -853[-350 -866 -319 -877!-319 -877[-186 -927 -43 -960!-43 -960[-41 -956 -32 -950!-32 -950[-10 -935 11 -918!11 -918[35 -900 57 -892!57 -892[50 -903 38 -911
+!38 -911[17 -925 -4 -940!-4 -940[-19 -951 -33 -962!-33 -962[-12 -967 9 -971!9 -971[113 -993 217 -1007!217 -1007[213 -1008 209 -1009"/>
+                    <Edge fillStyle1="1" edges="
+!429 -866[407 -862 385 -857!385 -857[388 -854 388 -850!388 -850[382 -850 379 -852!379 -852[379 -851 379 -850!379 -850[372 -850 368 -853!368 -853[342 -848 316 -842!316 -842[249 -827 185 -809!185 -809[202 -796 220 -782!220 -782[241 -767
+ 263 -752!263 -752[277 -742 279 -730!279 -730[254 -739 235 -759!235 -759[215 -780 190 -795!190 -795[180 -802 179 -807!179 -807[86 -782 -3 -749!-3 -749[-49 -732 -92 -716!-92 -716|-91 -714!-91 -714[-93 -715 -95 -715!-95 -715[-100 -714 -105
+ -711!-105 -711[-111 -712 -116 -713!-116 -713[-111 -716 -105 -718!-105 -718[-132 -726 -158 -743!-158 -743[-183 -762 -206 -780!-206 -780[-216 -789 -218 -793!-218 -793[-264 -776 -310 -760!-310 -760[-311 -761 -313 -762!-313 -762[-146 -838
+ 42 -887!42 -887[160 -919 284 -937!284 -937|284 -938!284 -938|285 -937!285 -937[290 -938 297 -939!297 -939[324 -943 351 -947!351 -947[352 -947 354 -946!354 -946[321 -941 288 -934!288 -934[303 -921 321 -910!321 -910[341 -896 359 -881!359
+ -881[364 -877 367 -872!367 -872[372 -869 377 -865!377 -865[378 -864 379 -862!379 -862[404 -868 428 -872!428 -872[428 -871 429 -869!429 -869[429 -868 429 -866!337 -887[318 -904 295 -918!295 -918[281 -927 282 -934!282 -934[203 -919 124
+ -901!124 -901[-35 -864 -182 -807!-182 -807[-197 -801 -212 -796!-212 -796[-187 -785 -168 -766!-168 -766[-148 -747 -120 -733!-120 -733[-108 -728 -98 -721!-98 -721[68 -792 257 -836!257 -836[310 -849 364 -859!364 -859[360 -864 358 -868!358
+ -868[348 -877 337 -887!247 -901[246 -905 248 -909!248 -909[250 -912 255 -913!255 -913[255 -914 257 -914!257 -914[259 -914 262 -914!262 -914[263 -914 266 -913!266 -913[266 -912 268 -912!268 -912[269 -911 270 -910!270 -910[270 -907 269
+ -904!269 -904[266 -900 264 -897!264 -897|264 -895!264 -895[261 -894 258 -895!258 -895[253 -896 249 -898!249 -898[247 -900 247 -901!298 -864[303 -865 308 -862!308 -862[312 -861 313 -857!313 -857[314 -855 313 -853!313 -853[312 -851 310
+ -850!310 -850[305 -850 301 -850!301 -850[296 -850 293 -853!293 -853|292 -854!292 -854[291 -854 291 -855!291 -855|291 -856!291 -856[290 -857 291 -857!291 -857[290 -859 291 -860!291 -860|291 -861!291 -861|292 -862!292 -862[293 -863 294
+ -863!294 -863[296 -864 298 -864!245 -812[251 -810 248 -806!248 -806[246 -804 243 -808!243 -808[240 -812 245 -812!297 -768[303 -769 302 -765!302 -765[301 -761 296 -765!296 -765[292 -768 297 -768!30 -961[32 -960 34 -958!34 -958[34 -956
+ 34 -953!34 -953[32 -951 28 -953!28 -953[18 -955 22 -961!22 -961[23 -963 26 -963!26 -963[27 -963 30 -961!47 -918[45 -920 48 -921!48 -921[49 -922 50 -922!50 -922[52 -922 53 -921!53 -921[55 -920 57 -920!57 -920[59 -920 61 -920!61 -920|63
+ -920!63 -920[62 -919 61 -918!61 -918[60 -917 59 -916!59 -916[59 -915 58 -914!58 -914[58 -913 57 -913!57 -913[53 -912 50 -914!50 -914[48 -916 47 -918!176 -777[177 -776 179 -774!179 -774|176 -774!176 -774[175 -775 174 -776!174 -776[173
+ -778 172 -778!172 -778[169 -779 166 -780!166 -780[163 -782 166 -783!166 -783[167 -784 169 -785!169 -785[172 -785 174 -782!174 -782[175 -780 176 -777!-28 -1029[-22 -1030 -17 -1030!-17 -1030[-19 -1029 -23 -1029!-23 -1029[-27 -1028 -28
+ -1029!-75 -943[-69 -942 -72 -938!-72 -938[-74 -936 -71 -932!-71 -932[-69 -930 -72 -929!-72 -929[-74 -928 -75 -928!-75 -928[-79 -928 -83 -929!-83 -929[-84 -930 -85 -931!-85 -931[-85 -934 -84 -935!-84 -935[-83 -938 -80 -940!-80 -940[-79
+ -942 -75 -943!-30 -893[-23 -893 -24 -888!-24 -888[-24 -884 -30 -885!-30 -885[-35 -885 -36 -888!-36 -888|-36 -890!-36 -890[-35 -892 -34 -891!-34 -891[-32 -892 -30 -892!-30 -892|-30 -893!-105 -814[-104 -813 -103 -813!-103 -813[-102 -813
+ -101 -812!-101 -812[-100 -811 -100 -809!-100 -809|-99 -808!-99 -808[-101 -806 -105 -805!-105 -805[-110 -805 -109 -801!-109 -801[-109 -800 -109 -799!-109 -799|-110 -800!-110 -800[-111 -802 -112 -803!-112 -803[-113 -805 -115 -805!-115
+ -805|-116 -806!-116 -806[-116 -808 -115 -809!-115 -809[-113 -811 -111 -813!-111 -813[-110 -814 -107 -814!-107 -814|-105 -814!-92 -749[-92 -752 -87 -753!-87 -753[-81 -749 -86 -746!-86 -746[-92 -742 -92 -749!-267 -968[-263 -969 -259 -971
+!-259 -971[-257 -970 -257 -968!-257 -968[-257 -967 -258 -966!-258 -966[-262 -965 -262 -962!-262 -962[-265 -961 -267 -962!-267 -962[-270 -965 -267 -968!-317 -906[-323 -903 -324 -907!-324 -907[-325 -912 -320 -912!-320 -912[-313 -910 -317
+ -906!-344 -839[-344 -840 -343 -839!-343 -839[-340 -838 -338 -836!-338 -836[-336 -835 -335 -833!-335 -833[-333 -832 -329 -831!-329 -831[-333 -831 -337 -831!-337 -831[-340 -831 -343 -831!-343 -831[-344 -833 -346 -833!-346 -833[-349 -835
+ -348 -837!-348 -837[-347 -838 -346 -839!-346 -839[-345 -839 -344 -839!-308 -794[-306 -793 -303 -791!-303 -791[-301 -790 -300 -789!-300 -789[-297 -786 -300 -783!-300 -783|-301 -782!-301 -782|-302 -782!-302 -782[-304 -782 -306 -782!-306
+ -782[-309 -782 -311 -782!-311 -782[-312 -784 -313 -785!-313 -785[-314 -787 -315 -789!-315 -789[-316 -792 -312 -793!-312 -793[-310 -794 -308 -794!-29 -725[-34 -721 -36 -725!-36 -725[-39 -728 -32 -729!-32 -729[-27 -727 -29 -725"/>
+                    <Edge fillStyle0="1" edges="
+!-154 -695[-156 -695 -157 -695!-157 -695[-164 -692 -170 -688!-170 -688[-162 -692 -154 -695"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.128738403320313" b="-0.311019897460938" c="0.311019897460938" d="0.128738403320313" tx="-20.95" ty="-30.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.30792236328125" b="-0.135971069335938" c="0.135971069335938" d="0.30792236328125" tx="-30.25" ty="-45.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.1904296875" b="-0.168701171875" c="0.168701171875" d="0.1904296875" tx="-33.7" ty="-15.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="parts" color="#4FFFFF" locked="true" autoNamed="false" layerType="folder"/>
+        <DOMLayer name="part002" color="#4F80FF" parentLayerIndex="4" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.08453369140625" b="-0.3258056640625" c="-0.3258056640625" d="0.08453369140625" tx="18.85" ty="-24.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.308090209960938" b="-0.135574340820313" c="-0.135574340820313" d="0.308090209960938" tx="29.75" ty="-36"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.20953369140625" b="-0.161056518554688" c="-0.161056518554688" d="0.20953369140625" tx="30.7" ty="-10.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="part001" color="#808080" parentLayerIndex="4" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.05657958984375" b="-0.331802368164063" c="-0.331802368164063" d="-0.05657958984375" tx="8.35" ty="-6.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.253189086914063" b="0.221771240234375" c="0.221771240234375" d="-0.253189086914063" tx="21.55" ty="17.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="part003" color="#4F80FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.00152587890625" b="0.336578369140625" c="0.336578369140625" d="-0.00152587890625" tx="-3.65" ty="-24.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.15" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.257171630859375" b="0.045166015625" c="0.152023315429688" d="-0.200973510742188" tx="-15.55" ty="-13.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.2" y="0.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallpars" color="#FF4F4F" locked="true" autoNamed="false" layerType="folder"/>
+        <DOMLayer name="part001" color="#4FFF4F" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="16" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#FF800A" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0614776611328125" b="-0.0276641845703125" c="0.0276641845703125" d="0.0614776611328125" tx="6.6" ty="-29.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0391998291015625" b="-0.0311279296875" c="0.0311279296875" d="0.0391998291015625" tx="4.9" ty="-31.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#FF4FFF" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.0527496337890625" b="-0.041961669921875" c="0.041961669921875" d="-0.0527496337890625" tx="-30.05" ty="-44.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.0408477783203125" b="-0.053619384765625" c="0.053619384765625" d="-0.0408477783203125" tx="-14.8" ty="-17.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#4FFFFF" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.050689697265625" b="0.04443359375" c="-0.04443359375" d="0.050689697265625" tx="-38.65" ty="-36.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.02960205078125" b="-0.03314208984375" c="0.03314208984375" d="-0.02960205078125" tx="-43.35" ty="-21.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#808080" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.050689697265625" b="0.04443359375" c="-0.04443359375" d="0.050689697265625" tx="-35.85" ty="-15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.067291259765625" b="0.00408935546875" c="-0.00408935546875" d="-0.067291259765625" tx="-36.8" ty="24.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#4F80FF" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.050689697265625" b="0.04443359375" c="-0.04443359375" d="0.050689697265625" tx="31.9" ty="-12.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0477142333984375" b="0.0476226806640625" c="-0.0476226806640625" d="0.0477142333984375" tx="42.4" ty="1.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#FF4F4F" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0737457275390625" b="-0.104812622070313" c="0.104812622070313" d="0.0737457275390625" tx="2.05" ty="-22.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.0196685791015625" b="0.126632690429688" c="-0.126632690429688" d="-0.0196685791015625" tx="9.9" ty="27.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#4FFF4F" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0737457275390625" b="-0.104812622070313" c="0.104812622070313" d="0.0737457275390625" tx="-9.2" ty="-28.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.125213623046875" b="0.0273590087890625" c="-0.0273590087890625" d="-0.125213623046875" tx="-19.15" ty="20.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#9933CC" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0737457275390625" b="-0.104812622070313" c="0.104812622070313" d="0.0737457275390625" tx="-1.75" ty="-31.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.109100341796875" b="0.067230224609375" c="-0.067230224609375" d="-0.109100341796875" tx="-7.65" ty="21.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#FF800A" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.09637451171875" b="0.0844879150390625" c="-0.0844879150390625" d="0.09637451171875" tx="32.2" ty="-29.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.126983642578125" b="0.0172882080078125" c="-0.0172882080078125" d="0.126983642578125" tx="30.85" ty="-19"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#FF4FFF" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.0245819091796875" b="-0.125778198242188" c="0.125778198242188" d="-0.0245819091796875" tx="-30.5" ty="-35.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.05419921875" b="-0.116119384765625" c="0.116119384765625" d="-0.05419921875" tx="-32.8" ty="-21.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#4FFFFF" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.09637451171875" b="0.0844879150390625" c="-0.0844879150390625" d="0.09637451171875" tx="26.65" ty="-34.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.12786865234375" b="-0.0088653564453125" c="0.0088653564453125" d="0.12786865234375" tx="18.65" ty="-23.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smallPart" color="#808080" parentLayerIndex="8" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.0245819091796875" b="-0.125778198242188" c="0.125778198242188" d="-0.0245819091796875" tx="-33.95" ty="-24.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.093109130859375" b="-0.088043212890625" c="0.088043212890625" d="-0.093109130859375" tx="-45.45" ty="2.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="top" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#612807"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#833E13"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-406 -874[-407 -872 -408 -868!-408 -868[-410 -775 -285 -723!-285 -723[-157 -671 25 -671!25 -671[207 -671 334 -723!334 -723[462 -776 460 -849!460 -849[460 -850 460 -854!460 -854[459 -858 459 -860"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!459 -860[449 -796 334 -748!334 -748[206 -697 25 -696!25 -696[-157 -697 -284 -748!-284 -748[-396 -794 -406 -874"/>
+                    <Edge fillStyle1="2" edges="
+!-406 -874|-407 -883!-407 -883[-390 -953 -280 -997!-280 -997[-154 -1048 24 -1048!24 -1048[202 -1048 326 -989!326 -989[384 -962 417 -936!417 -936[440 -912 452 -883!452 -883[457 -872 459 -860"/>
+                    <Edge cubics="!460 -854(;460,-851 460,-850 460,-849q460 -854Q460 -850q460 -849);"/>
+                    <Edge cubics="!460 -854(;459,-857 459,-859 459,-860q460 -854Q459 -858q459 -860);"/>
+                    <Edge cubics="!459 -860(;457,-868 455,-876 452,-883q459 -860Q457 -872q452 -883);"/>
+                    <Edge cubics="!452 -883(;444,-903 432,-920 417,-936q452 -883Q440 -912q417 -936);"/>
+                    <Edge cubics="!460 -849(;461,-800 419,-758 334,-723q460 -849Q462 -776q334 -723);"/>
+                    <Edge cubics="!459 -860(;452,-817 411,-780 334,-748q459 -860Q449 -796q334 -748);"/>
+                    <Edge cubics="!326 -989(;365,-971 395,-953 417,-936q326 -989Q384 -962q417 -936);"/>
+                    <Edge cubics="!-280 -997(;-196,-1030 -95,-1048 24,-1048q-280 -997Q-154 -1048q24 -1048);"/>
+                    <Edge cubics="!-406 -874(;-407,-880 -407,-883 -407,-883q-406 -874Q-407 -883q-407 -883);"/>
+                    <Edge cubics="!-408 -868(;-407,-870 -407,-872 -406,-874q-408 -868Q-407 -872q-406 -874);"/>
+                    <Edge cubics="!25 -696(;-97,-697 -200,-714 -284,-748q25 -696Q-157 -697q-284 -748);"/>
+                    <Edge cubics="!25 -671(;-97,-671 -200,-689 -285,-723q25 -671Q-157 -671q-285 -723);"/>
+                    <Edge cubics="!-285 -723(;-368,-758 -409,-806 -408,-868q-285 -723Q-410 -775q-408 -868);"/>
+                    <Edge cubics="!-284 -748(;-359,-779 -400,-821 -406,-874q-284 -748Q-396 -794q-406 -874);"/>
+                    <Edge cubics="!-407 -883(;-396,-929 -354,-968 -280,-997q-407 -883Q-390 -953q-280 -997);"/>
+                    <Edge cubics="!24 -1048(;143,-1048 243,-1028 326,-989q24 -1048Q202 -1048q326 -989);"/>
+                    <Edge cubics="!334 -723(;249,-689 146,-671 25,-671q334 -723Q207 -671q25 -671);"/>
+                    <Edge cubics="!334 -748(;249,-714 145,-697 25,-696q334 -748Q206 -697q25 -696);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="16" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="texture" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!508 -530[477 -500 425 -490!425 -490[434 -411 425 -308!425 -308[416 -197 389 -115!389 -115[451 -133 493 -191!493 -191[490 -177 488 -163!488 -163[444 -108 381 -93!381 -93[367 -57 349 -26!349 -26[346 -21 343 -15!343 -15[293 68 254 101!254
+ 101|226 109!226 109[265 81 317 -3!317 -3[259 20 191 3!191 3[171 75 150 125!150 125|106 136!106 136[127 86 148 12!148 12[176 -94 185 -182!185 -182[185 -186 185 -190!185 -190[186 -201 187 -211!187 -211[187 -214 187 -218!187 -218[37 -181
+ -42 -205!-42 -205[-122 -228 -126 -230!-126 -230[-125 -213 -124 -196!-124 -196[-124 -194 -124 -190!-124 -190[-123 -183 -122 -175!-122 -175[-114 -90 -86 12!-86 12[-67 80 -48 128!-48 128|-91 119!-91 119[-111 70 -130 1!-130 1[-220 15 -314
+ -24!-314 -24[-254 78 -210 109!-210 109|-237 102!-237 102[-278 67 -333 -26!-333 -26[-336 -31 -338 -36!-338 -36[-339 -37 -339 -38!-339 -38[-395 -140 -409 -308!-409 -308[-412 -339 -413 -369!-413 -369[-464 -382 -494 -421!-494 -421[-494 -446
+ -493 -471!-493 -471[-470 -421 -414 -406!-414 -406[-414 -440 -411 -471!-411 -471[-409 -490 -407 -507!-407 -507[-400 -554 -386 -592!-386 -592[-347 -699 -302 -734!-302 -734|-283 -734!-283 -734[-329 -699 -368 -592!-368 -592[-383 -550 -390
+ -497!-390 -497[-284 -439 -158 -445!-158 -445[-153 -495 -145 -552!-145 -552[-133 -642 -121 -708!-121 -708|-76 -700!-76 -700[-89 -632 -101 -541!-101 -541[-123 -383 -126 -278!-126 -278[31 -219 187 -280!187 -280[185 -385 163 -541!163 -541
+[150 -632 138 -700!138 -700|182 -711!182 -711[194 -643 207 -552!207 -552[210 -530 213 -509!213 -509[328 -517 386 -587!386 -587[384 -589 384 -592!384 -592[345 -699 299 -734!299 -734|323 -729!323 -729[366 -692 402 -592!402 -592[417 -552
+ 424 -501!424 -501[476 -512 507 -543!507 -543[507 -536 508 -530"/>
+                    <Edge fillStyle0="1" edges="
+!215 -489[333 -495 392 -566!392 -566[421 -465 407 -308!407 -308[397 -194 369 -110!369 -110[353 -64 331 -26!331 -26[270 5 195 -13!195 -13[232 -151 232 -259!232 -259[232 -351 215 -489"/>
+                    <Edge fillStyle1="1" edges="
+!-162 -411[-288 -404 -393 -461!-393 -461[-395 -434 -395 -403!-395 -403[-395 -385 -394 -365!-394 -365[-394 -337 -391 -308!-391 -308[-377 -146 -325 -45!-325 -45[-227 0 -133 -14!-133 -14[-170 -152 -170 -259!-170 -259[-170 -324 -162 -411"/>
+                    <Edge cubics="!-391 -308(-391,-308;-381,-199 -359,-110 -325,-45q-391 -308Q-377 -146q-325 -45);"/>
+                    <Edge cubics="!-368 -592(;-378,-564 -385,-532 -390,-497q-368 -592Q-383 -550q-390 -497);"/>
+                    <Edge cubics="!-393 -461(;-394,-442 -395,-423 -395,-403q-393 -461 -395 -403);"/>
+                    <Edge cubics="!-395 -403(;-395,-390 -395,-378 -394,-365q-395 -403 -394 -365);"/>
+                    <Edge cubics="!-394 -365(;-394,-346 -392,-327 -391,-308q-394 -365 -391 -308);"/>
+                    <Edge cubics="!-76 -700(;-76,-700 -121,-455 -126,-278q-76 -700 -101 -541Q-123 -383q-126 -278);"/>
+                    <Edge cubics="!-126 -230(;-125,-217 -125,-206 -124,-196q-126 -230 -124 -196);"/>
+                    <Edge cubics="!-302 -734(;-332,-710 -360,-663 -386,-592q-302 -734Q-347 -699q-386 -592)-386,-592;"/>
+                    <Edge cubics="!-386 -592(-386,-592;-395,-567 -402,-538 -407,-507q-386 -592Q-400 -554q-407 -507);"/>
+                    <Edge cubics="!-407 -507(;-408,-495 -409,-483 -411,-471q-407 -507 -411 -471);"/>
+                    <Edge cubics="!-411 -471(;-412,-451 -414,-429 -414,-406q-411 -471 -414 -406);"/>
+                    <Edge cubics="!-413 -369(;-412,-349 -411,-328 -409,-308q-413 -369 -409 -308);"/>
+                    <Edge cubics="!-162 -411(;-167,-358 -170,-305 -170,-259q-162 -411Q-170 -324q-170 -259);"/>
+                    <Edge cubics="!138 -700(138,-700;138,-700 182,-458 187,-280q138 -700 163 -541Q185 -385q187 -280);"/>
+                    <Edge cubics="!187 -211(;186,-204 186,-197 185,-190q187 -211 185 -190);"/>
+                    <Edge cubics="!215 -489(;224,-412 232,-328 232,-259q215 -489Q232 -351q232 -259);"/>
+                    <Edge cubics="!299 -734(;330,-710 358,-663 384,-592q299 -734Q345 -699q384 -592)384,-592;"/>
+                    <Edge cubics="!407 -308(;400,-232 388,-166 369,-110q407 -308Q397 -194q369 -110);"/>
+                    <Edge cubics="!392 -566(;411,-497 416,-412 407,-308q392 -566Q421 -465q407 -308);"/>
+                    <Edge cubics="!425 -308(425,-308;419,-234 407,-169 389,-115q425 -308Q416 -197q389 -115);"/>
+                    <Edge cubics="!381 -93(;371,-68 361,-46 349,-26q381 -93Q367 -57q349 -26);"/>
+                    <Edge cubics="!425 -490(;431,-436 431,-376 425,-308q425 -490Q434 -411q425 -308);"/>
+                    <Edge cubics="!-493 -471(;-494,-453 -494,-437 -494,-421q-493 -471 -494 -421);"/>
+                    <Edge cubics="!384 -592(384,-592;384,-590 385,-589 386,-587q384 -592Q384 -589q386 -587);"/>
+                    <Edge cubics="!507 -543(;507,-538 508,-534 508,-530q507 -543Q507 -536q508 -530)508,-530;"/>
+                    <Edge cubics="!424 -501(;459,-508 487,-522 507,-543q424 -501Q476 -512q507 -543);"/>
+                    <Edge cubics="!425 -490(;460,-497 487,-510 508,-530q425 -490Q477 -500q508 -530);"/>
+                    <Edge cubics="!402 -592(;412,-565 419,-535 424,-501q402 -592Q417 -552q424 -501);"/>
+                    <Edge cubics="!213 -509(;290,-514 347,-540 386,-587q213 -509Q328 -517q386 -587);"/>
+                    <Edge cubics="!215 -489(;294,-493 353,-519 392,-566q215 -489Q333 -495q392 -566);"/>
+                    <Edge cubics="!-414 -406(;-451,-416 -477,-438 -493,-471q-414 -406Q-470 -421q-493 -471);"/>
+                    <Edge cubics="!-413 -369(;-447,-377 -474,-395 -494,-421q-413 -369Q-464 -382q-494 -421);"/>
+                    <Edge cubics="!-390 -497(;-319,-458 -243,-441 -158,-445q-390 -497Q-284 -439q-158 -445);"/>
+                    <Edge cubics="!-393 -461(;-323,-423 -246,-406 -162,-411q-393 -461Q-288 -404q-162 -411);"/>
+                    <Edge cubics="!-170 -259(;-170,-188 -158,-106 -133,-14q-170 -259Q-170 -152q-133 -14);"/>
+                    <Edge cubics="!-338 -36(;-337,-33 -335,-29 -333,-26q-338 -36Q-336 -31q-333 -26);"/>
+                    <Edge cubics="!-339 -38(;-339,-37 -339,-37 -338,-36q-339 -38Q-339 -37q-338 -36);"/>
+                    <Edge cubics="!-409 -308(;-400,-196 -376,-106 -339,-38q-409 -308Q-395 -140q-339 -38);"/>
+                    <Edge cubics="!-314 -24(;-251,2 -190,10 -130,1q-314 -24Q-220 15q-130 1);"/>
+                    <Edge cubics="!-314 -24(;-273,44 -239,88 -210,109q-314 -24Q-254 78q-210 109);"/>
+                    <Edge cubics="!-325 -45(;-260,-15 -196,-5 -133,-14q-325 -45Q-227 0q-133 -14);"/>
+                    <Edge cubics="!493 -191(;491,-182 490,-172 488,-163q493 -191Q490 -177q488 -163);"/>
+                    <Edge cubics="!381 -93(;423,-103 459,-126 488,-163q381 -93Q444 -108q488 -163);"/>
+                    <Edge cubics="!389 -115(;430,-127 465,-152 493,-191q389 -115Q451 -133q493 -191);"/>
+                    <Edge cubics="!349 -26(;347,-22 345,-19 343,-15q349 -26Q346 -21q343 -15);"/>
+                    <Edge cubics="!195 -13(;245,-2 290,-6 331,-26q195 -13Q270 5q331 -26);"/>
+                    <Edge cubics="!191 3(;236,14 278,13 317,-3q191 3Q259 20q317 -3);"/>
+                    <Edge cubics="!232 -259(;232,-187 220,-105 195,-13q232 -259Q232 -151q195 -13);"/>
+                    <Edge cubics="!191 3(;178,51 164,92 150,125q191 3Q171 75q150 125);"/>
+                    <Edge cubics="!369 -110(;358,-79 345,-51 331,-26q369 -110Q353 -64q331 -26);"/>
+                    <Edge cubics="!299 -734(299,-734;299,-734 323,-729 323,-729q299 -734 323 -729)323,-729;"/>
+                    <Edge cubics="!138 -700(138,-700;138,-700 182,-711 182,-711q138 -700 182 -711)182,-711;"/>
+                    <Edge cubics="!207 -552(;209,-537 211,-523 213,-509q207 -552Q210 -530q213 -509);"/>
+                    <Edge cubics="!182 -711(;190,-666 198,-613 207,-552q182 -711Q194 -643q207 -552);"/>
+                    <Edge cubics="!323 -729(;351,-705 378,-659 402,-592q323 -729Q366 -692q402 -592);"/>
+                    <Edge cubics="!-121 -708(;-121,-708 -76,-700 -76,-700q-121 -708 -76 -700);"/>
+                    <Edge cubics="!-302 -734(;-302,-734 -283,-734 -283,-734q-302 -734 -283 -734);"/>
+                    <Edge cubics="!-145 -552(;-151,-515 -155,-479 -158,-445q-145 -552Q-153 -495q-158 -445)-158,-445;"/>
+                    <Edge cubics="!-121 -708(-121,-708;-129,-664 -137,-612 -145,-552q-121 -708Q-133 -642q-145 -552);"/>
+                    <Edge cubics="!-283 -734(-283,-734;-314,-710 -342,-663 -368,-592q-283 -734Q-329 -699q-368 -592);"/>
+                    <Edge cubics="!-124 -190(;-123,-186 -122,-180 -122,-175q-124 -190Q-123 -183q-122 -175);"/>
+                    <Edge cubics="!-124 -196(-124,-196;-124,-195 -124,-193 -124,-190q-124 -196Q-124 -194q-124 -190);"/>
+                    <Edge cubics="!-122 -175(-122,-175;-117,-118 -105,-56 -86,12q-122 -175Q-114 -90q-86 12);"/>
+                    <Edge cubics="!-237 102(;-237,102 -210,109 -210,109q-237 102 -210 109);"/>
+                    <Edge cubics="!-91 119(;-91,119 -48,128 -48,128q-91 119 -48 128);"/>
+                    <Edge cubics="!-333 -26(;-297,36 -265,79 -237,102q-333 -26Q-278 67q-237 102);"/>
+                    <Edge cubics="!-86 12(;-73,57 -61,96 -48,128q-86 12Q-67 80q-48 128);"/>
+                    <Edge cubics="!-130 1(;-117,47 -104,86 -91,119q-130 1Q-111 70q-91 119);"/>
+                    <Edge cubics="!226 109(;226,109 254,101 254,101q226 109 254 101)254,101;"/>
+                    <Edge cubics="!106 136(;106,136 150,125 150,125q106 136 150 125);"/>
+                    <Edge cubics="!317 -3(;282,53 252,90 226,109q317 -3Q265 81q226 109);"/>
+                    <Edge cubics="!343 -15(;310,40 280,79 254,101q343 -15Q293 68q254 101)254,101;"/>
+                    <Edge cubics="!-126 -278(-126,-278;-21,-238 83,-239 187,-280q-126 -278Q31 -219q187 -280)187,-280;"/>
+                    <Edge cubics="!185 -190(;185,-188 185,-185 185,-182q185 -190Q185 -186q185 -182);"/>
+                    <Edge cubics="!185 -182(;179,-123 167,-59 148,12q185 -182Q176 -94q148 12);"/>
+                    <Edge cubics="!148 12(;134,61 120,103 106,136q148 12Q127 86q106 136);"/>
+                    <Edge cubics="!187 -218(;187,-216 187,-213 187,-211q187 -218Q187 -214q187 -211);"/>
+                    <Edge cubics="!-42 -205(;-95,-221 -123,-229 -126,-230q-42 -205Q-122 -228q-126 -230)-126,-230;"/>
+                    <Edge cubics="!187 -218(;87,-193 11,-189 -42,-205q187 -218Q37 -181q-42 -205);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.250396728515625" b="0.224929809570313" c="0.224929809570313" d="-0.250396728515625" tx="-17.55" ty="-8.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/part001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.296356201171875" b="-0.159576416015625" c="-0.159576416015625" d="-0.296356201171875" tx="-27" ty="7.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#FF800A" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#808080"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!436 47[436 40 437 34!437 34[435 21 433 9!433 9[426 13 419 17!419 17[370 42 317 66!317 66[186 124 40 130!40 130[30 131 21 132!21 132[15 134 7 133!7 133|5 133!5 133[4 133 3 133!3 133[-75 143 -149 124!-149 124[-166 119 -183 114!-183 114
+[-241 103 -291 75!-291 75[-336 63 -370 36!-370 36[-387 27 -404 18!-404 18[-406 16 -408 14!-408 14[-416 19 -418 30!-418 30[-419 42 -417 54!-417 54[-417 55 -416 56!-416 56[-416 59 -416 62!-416 62[-415 65 -413 68!-413 68[-411 72 -409 76
+!-409 76|-409 74!-409 74[-396 82 -383 90!-383 90[-362 99 -343 112!-343 112[-274 129 -208 154!-208 154[-207 155 -205 156!-205 156[-64 182 78 172!78 172[207 163 325 118!325 118[376 94 420 60!420 60[428 53 436 47"/>
+                    <Edge cubics="!40 130(;137,126 230,105 317,66q40 130Q186 124q317 66);"/>
+                    <Edge cubics="!436 47(;430,51 426,55 420,60q436 47Q428 53q420 60);"/>
+                    <Edge cubics="!317 66(;353,50 387,34 419,17q317 66Q370 42q419 17);"/>
+                    <Edge cubics="!-149 124(;-100,136 -49,139 3,133q-149 124Q-75 143q3 133);"/>
+                    <Edge cubics="!21 132(;17,133 12,134 7,133q21 132Q15 134q7 133);"/>
+                    <Edge cubics="!7 133(;6,133 5,133 5,133q7 133Q5 133q5 133);"/>
+                    <Edge cubics="!3 133(;3,133 4,133 5,133q3 133Q4 133q5 133);"/>
+                    <Edge cubics="!-183 114(;-222,107 -258,94 -291,75q-183 114Q-241 103q-291 75);"/>
+                    <Edge cubics="!-183 114(;-172,118 -161,121 -149,124q-183 114Q-166 119q-149 124);"/>
+                    <Edge cubics="!-291 75(;-321,67 -347,54 -370,36q-291 75Q-336 63q-370 36);"/>
+                    <Edge cubics="!21 132(21,132;27,131 34,131 40,130q21 132Q30 131q40 130)40,130;"/>
+                    <Edge cubics="!78 172(;164,166 247,148 325,118q78 172Q207 163q325 118);"/>
+                    <Edge cubics="!420 60(;391,83 359,102 325,118q420 60Q376 94q325 118);"/>
+                    <Edge cubics="!-208 154(;-207,154 -206,155 -205,156q-208 154Q-207 155q-205 156);"/>
+                    <Edge cubics="!-205 156(;-111,173 -17,179 78,172q-205 156Q-64 182q78 172);"/>
+                    <Edge cubics="!437 34(;435,26 434,17 433,9q437 34Q435 21q433 9);"/>
+                    <Edge cubics="!419 17(;424,14 428,11 433,9q419 17Q426 13q433 9);"/>
+                    <Edge cubics="!436 47(;436,42 437,38 437,34q436 47Q436 40q437 34);"/>
+                    <Edge cubics="!-383 90(;-369,96 -356,103 -343,112q-383 90Q-362 99q-343 112);"/>
+                    <Edge cubics="!-409 74(;-401,79 -392,85 -383,90q-409 74Q-396 82q-383 90);"/>
+                    <Edge cubics="!-343 112(;-297,123 -252,137 -208,154q-343 112Q-274 129q-208 154);"/>
+                    <Edge cubics="!-408 14(;-414,17 -417,22 -418,30q-408 14Q-416 19q-418 30);"/>
+                    <Edge cubics="!-404 18(;-405,17 -407,16 -408,14q-404 18Q-406 16q-408 14);"/>
+                    <Edge cubics="!-370 36(;-381,30 -392,24 -404,18q-370 36Q-387 27q-404 18);"/>
+                    <Edge cubics="!-413 68(;-412,71 -410,73 -409,76q-413 68Q-411 72q-409 76);"/>
+                    <Edge cubics="!-416 62(;-415,64 -414,66 -413,68q-416 62Q-415 65q-413 68);"/>
+                    <Edge cubics="!-416 56(;-416,58 -416,60 -416,62q-416 56Q-416 59q-416 62);"/>
+                    <Edge cubics="!-417 54(;-417,54 -417,55 -416,56q-417 54Q-417 55q-416 56);"/>
+                    <Edge cubics="!-418 30(;-419,38 -418,46 -417,54q-418 30Q-419 42q-417 54);"/>
+                    <Edge cubics="!-409 76(;-409,76 -409,74 -409,74q-409 76 -409 74)-409,74;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="16" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="main" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#6B3102"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!417 -857[421 -866 435 -866!435 -866[474 -840 479 -790!479 -790[480 -778 480 -765!480 -765[479 -754 480 -742!480 -742[483 -731 486 -718!486 -718[492 -679 496 -637!496 -637[496 -632 497 -625!497 -625[501 -599 505 -570!505 -570[509 -523
+ 512 -472!512 -472[514 -417 512 -364!512 -364[509 -282 496 -206!496 -206[484 -145 473 -77!473 -77|473 -79!473 -79[471 -76 471 -73!471 -73[469 -68 468 -61!468 -61[468 -60 468 -59!468 -59[445 20 342 82!342 82[206 162 9 162!9 162[-188 162
+ -325 82!-325 82[-451 8 -455 -79!-455 -79[-467 -144 -477 -217!-477 -217[-490 -308 -493 -389!-493 -389[-495 -441 -493 -489!-493 -489[-492 -526 -488 -562!-488 -562[-486 -589 -480 -616!-480 -616[-470 -669 -457 -723!-457 -723[-445 -777 -427
+ -840!-427 -840|-427 -841!-427 -841[-398 -890 -368 -889!-368 -889[-324 -890 -273 -780!-273 -780[-270 -787 -266 -791!-266 -791[-251 -818 -226 -799!-226 -799[-223 -796 -221 -791!-221 -791[-214 -792 -208 -793!-208 -793[-196 -797 -184 -793
+!-184 -793[-182 -792 -179 -791!-179 -791[-175 -798 -167 -804!-167 -804[-149 -820 -130 -805!-130 -805[-127 -803 -126 -799!-126 -799[-106 -802 -87 -795!-87 -795[-74 -791 -68 -777!-68 -777[-61 -778 -49 -780!-49 -780[-24 -787 -14 -765!-14
+ -765[-13 -763 -12 -759!-12 -759[-9 -758 -5 -756!-5 -756[-1 -754 3 -752!3 -752[7 -750 10 -746!10 -746[20 -748 31 -754!31 -754[46 -764 63 -756!63 -756[64 -756 65 -755!65 -755[77 -765 88 -776!88 -776[110 -798 137 -784!137 -784[138 -783
+ 139 -782!139 -782[147 -785 156 -786!156 -786[175 -791 187 -776!187 -776[188 -774 190 -772!190 -772[227 -798 273 -798!273 -798[301 -798 301 -770!301 -770[301 -764 300 -757!300 -757[303 -763 309 -767!309 -767[323 -778 341 -777!341 -777
+[344 -777 347 -777!347 -777[351 -786 359 -792!359 -792[370 -804 382 -813!382 -813[387 -819 394 -822!394 -822[391 -827 391 -832!391 -832[391 -840 395 -846!395 -846|396 -846!396 -846[398 -850 401 -852!401 -852[407 -857 415 -857!415 -857
+[416 -857 417 -857"/>
+                    <Edge cubics="!396 -846(;397,-849 399,-850 401,-852q396 -846Q398 -850q401 -852);"/>
+                    <Edge cubics="!359 -792(;366,-800 374,-807 382,-813q359 -792Q370 -804q382 -813);"/>
+                    <Edge cubics="!382 -813(;386,-817 390,-820 394,-822q382 -813Q387 -819q394 -822);"/>
+                    <Edge cubics="!395 -846(;395,-846 395,-846 396,-846q395 -846Q395 -846q396 -846);"/>
+                    <Edge cubics="!394 -822(;392,-826 391,-829 391,-832q394 -822Q391 -827q391 -832);"/>
+                    <Edge cubics="!391 -832(;391,-837 392,-842 395,-846q391 -832Q391 -840q395 -846);"/>
+                    <Edge cubics="!401 -852(;405,-855 410,-857 415,-857q401 -852Q407 -857q415 -857);"/>
+                    <Edge cubics="!415 -857(;416,-857 416,-857 417,-857q415 -857Q416 -857q417 -857);"/>
+                    <Edge cubics="!479 -790(;480,-782 480,-774 480,-765q479 -790Q480 -778q480 -765);"/>
+                    <Edge cubics="!435 -866(;461,-849 476,-823 479,-790q435 -866Q474 -840q479 -790);"/>
+                    <Edge cubics="!417 -857(;419,-863 426,-866 435,-866q417 -857Q421 -866q435 -866);"/>
+                    <Edge cubics="!88 -776(;103,-791 119,-793 137,-784q88 -776Q110 -798q137 -784);"/>
+                    <Edge cubics="!137 -784(;138,-783 139,-782 139,-782q137 -784Q138 -783q139 -782);"/>
+                    <Edge cubics="!139 -782(;145,-784 150,-785 156,-786q139 -782Q147 -785q156 -786);"/>
+                    <Edge cubics="!156 -786(;169,-789 179,-786 187,-776q156 -786Q175 -791q187 -776);"/>
+                    <Edge cubics="!187 -776(;188,-774 189,-773 190,-772q187 -776Q188 -774q190 -772);"/>
+                    <Edge cubics="!341 -777(;343,-777 345,-777 347,-777q341 -777Q344 -777q347 -777);"/>
+                    <Edge cubics="!273 -798(;292,-798 301,-789 301,-770q273 -798Q301 -798q301 -770);"/>
+                    <Edge cubics="!309 -767(;318,-775 329,-778 341,-777q309 -767Q323 -778q341 -777);"/>
+                    <Edge cubics="!190 -772(;214,-789 242,-798 273,-798q190 -772Q227 -798q273 -798);"/>
+                    <Edge cubics="!31 -754(;41,-761 52,-761 63,-756q31 -754Q46 -764q63 -756);"/>
+                    <Edge cubics="!63 -756(;64,-756 64,-756 65,-755q63 -756Q64 -756q65 -755);"/>
+                    <Edge cubics="!480 -742(;482,-735 484,-727 486,-718q480 -742Q483 -731q486 -718);"/>
+                    <Edge cubics="!497 -625(;500,-608 503,-589 505,-570q497 -625Q501 -599q505 -570);"/>
+                    <Edge cubics="!505 -570(;507,-539 510,-506 512,-472q505 -570Q509 -523q512 -472);"/>
+                    <Edge cubics="!486 -718(;490,-692 493,-665 496,-637q486 -718Q492 -679q496 -637);"/>
+                    <Edge cubics="!496 -637(;496,-633 497,-630 497,-625q496 -637Q496 -632q497 -625);"/>
+                    <Edge cubics="!512 -472(;513,-435 513,-399 512,-364q512 -472Q514 -417q512 -364);"/>
+                    <Edge cubics="!347 -777(;350,-783 354,-788 359,-792q347 -777Q351 -786q359 -792);"/>
+                    <Edge cubics="!301 -770(;301,-766 301,-762 300,-757q301 -770Q301 -764q300 -757);"/>
+                    <Edge cubics="!300 -757(;302,-761 305,-764 309,-767q300 -757Q303 -763q309 -767);"/>
+                    <Edge cubics="!65 -755(;73,-762 80,-769 88,-776q65 -755Q77 -765q88 -776);"/>
+                    <Edge cubics="!480 -765(;479,-758 479,-750 480,-742q480 -765Q479 -754q480 -742);"/>
+                    <Edge cubics="!468 -61(;468,-60 468,-60 468,-59q468 -61Q468 -60q468 -59);"/>
+                    <Edge cubics="!471 -73(;470,-70 469,-66 468,-61q471 -73Q469 -68q468 -61);"/>
+                    <Edge cubics="!473 -79(;472,-77 471,-75 471,-73q473 -79Q471 -76q471 -73);"/>
+                    <Edge cubics="!473 -79(;473,-79 473,-77 473,-77q473 -79 473 -77);"/>
+                    <Edge cubics="!496 -206(;488,-165 480,-122 473,-77q496 -206Q484 -145q473 -77);"/>
+                    <Edge cubics="!468 -59(;452,-6 411,40 342,82q468 -59Q445 20q342 82);"/>
+                    <Edge cubics="!512 -364(;510,-309 505,-256 496,-206q512 -364Q509 -282q496 -206);"/>
+                    <Edge cubics="!-226 -799(;-224,-797 -222,-794 -221,-791q-226 -799Q-223 -796q-221 -791);"/>
+                    <Edge cubics="!-221 -791(;-216,-791 -212,-792 -208,-793q-221 -791Q-214 -792q-208 -793);"/>
+                    <Edge cubics="!-184 -793(;-183,-792 -181,-791 -179,-791q-184 -793Q-182 -792q-179 -791);"/>
+                    <Edge cubics="!-179 -791(;-176,-796 -172,-800 -167,-804q-179 -791Q-175 -798q-167 -804);"/>
+                    <Edge cubics="!-208 -793(-208,-793;-200,-796 -192,-796 -184,-793q-208 -793Q-196 -797q-184 -793)-184,-793;"/>
+                    <Edge cubics="!-273 -780(;-271,-785 -269,-788 -266,-791q-273 -780Q-270 -787q-266 -791);"/>
+                    <Edge cubics="!-266 -791(;-256,-809 -243,-812 -226,-799q-266 -791Q-251 -818q-226 -799);"/>
+                    <Edge cubics="!-68 -777(;-64,-777 -57,-778 -49,-780q-68 -777Q-61 -778q-49 -780);"/>
+                    <Edge cubics="!-49 -780(;-32,-785 -21,-780 -14,-765q-49 -780Q-24 -787q-14 -765);"/>
+                    <Edge cubics="!-130 -805(;-128,-804 -126,-802 -126,-799q-130 -805Q-127 -803q-126 -799);"/>
+                    <Edge cubics="!-126 -799(;-113,-801 -100,-800 -87,-795q-126 -799Q-106 -802q-87 -795);"/>
+                    <Edge cubics="!-87 -795(;-78,-792 -72,-786 -68,-777q-87 -795Q-74 -791q-68 -777);"/>
+                    <Edge cubics="!-167 -804(;-155,-815 -142,-815 -130,-805q-167 -804Q-149 -820q-130 -805);"/>
+                    <Edge cubics="!-427 -841(;-427,-841 -427,-840 -427,-840q-427 -841 -427 -840);"/>
+                    <Edge cubics="!-368 -889(;-388,-889 -408,-873 -427,-841q-368 -889Q-398 -890q-427 -841);"/>
+                    <Edge cubics="!-457 -723(;-466,-687 -473,-651 -480,-616q-457 -723Q-470 -669q-480 -616);"/>
+                    <Edge cubics="!-480 -616(;-484,-598 -486,-580 -488,-562q-480 -616Q-486 -589q-488 -562);"/>
+                    <Edge cubics="!-488 -562(;-491,-538 -493,-513 -493,-489q-488 -562Q-492 -526q-493 -489);"/>
+                    <Edge cubics="!-493 -489(;-494,-457 -494,-423 -493,-389q-493 -489Q-495 -441q-493 -389);"/>
+                    <Edge cubics="!3 -752(;6,-751 8,-749 10,-746q3 -752Q7 -750q10 -746);"/>
+                    <Edge cubics="!-5 -756(;-2,-755 1,-753 3,-752q-5 -756Q-1 -754q3 -752);"/>
+                    <Edge cubics="!-12 -759(;-10,-758 -8,-757 -5,-756q-12 -759Q-9 -758q-5 -756);"/>
+                    <Edge cubics="!-427 -840(;-439,-798 -449,-759 -457,-723q-427 -840Q-445 -777q-457 -723);"/>
+                    <Edge cubics="!-273 -780(;-307,-853 -339,-889 -368,-889q-273 -780Q-324 -890q-368 -889);"/>
+                    <Edge cubics="!-14 -765(;-13,-763 -12,-761 -12,-759q-14 -765Q-13 -763q-12 -759);"/>
+                    <Edge cubics="!-477 -217(;-470,-168 -463,-122 -455,-79q-477 -217Q-467 -144q-455 -79);"/>
+                    <Edge cubics="!9 162(;-123,162 -234,135 -325,82q9 162Q-188 162q-325 82);"/>
+                    <Edge cubics="!-325 82(;-409,32 -452,-21 -455,-79q-325 82Q-451 8q-455 -79);"/>
+                    <Edge cubics="!-493 -389(;-491,-335 -486,-278 -477,-217q-493 -389Q-490 -308q-477 -217);"/>
+                    <Edge cubics="!10 -746(;17,-747 24,-750 31,-754q10 -746Q20 -748q31 -754);"/>
+                    <Edge cubics="!342 82(;251,135 140,162 9,162q342 82Q206 162q9 162);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.999099731445313" b="0.042724609375" c="-0.042724609375" d="0.999099731445313" tx="0.85" ty="0.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.3" y="-0.1"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.27"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="shadow" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.01837158203125" c="-0.04071044921875" d="0" tx="0.35" ty="1.1"/>
+                        </matrix>
+                        <GradientEntry alpha="0.4" ratio="0.505882352941176"/>
+                        <GradientEntry alpha="0" ratio="0.843137254901961"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!475 -195[669 -105 669 22!669 22[669 150 475 240!475 240[281 331 7 331!7 331[-268 331 -462 240!-462 240[-656 150 -656 22!-656 22[-656 -105 -462 -195!-462 -195[-268 -286 7 -286!7 -286[281 -286 475 -195"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="16" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.01837158203125" c="-0.04071044921875" d="0" tx="0.35" ty="1.1"/>
+                        </matrix>
+                        <GradientEntry alpha="0.4" ratio="0.505882352941176"/>
+                        <GradientEntry alpha="0" ratio="0.843137254901961"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!475 -195[669 -105 669 22!669 22[669 150 475 240!475 240[281 331 7 331!7 331[-268 331 -462 240!-462 240[-656 150 -656 22!-656 22[-656 -105 -462 -195!-462 -195[-268 -286 7 -286!7 -286[281 -286 475 -195"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

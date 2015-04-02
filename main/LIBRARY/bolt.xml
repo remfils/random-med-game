@@ -1,0 +1,36 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bolt" itemID="5498517e-0000025e" symbolType="graphic" lastModified="1419268478">
+  <timeline>
+    <DOMTimeline name="bolt">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#B4B4B4"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#939393"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#353535"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!-25 -44S3[-14 -51 0 -51!0 -51[21 -51 36 -36!36 -36[51 -21 51 0!51 0[51 21 36 36!36 36[32 40 27 44"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="!27 44S3[15 51 0 51!0 51[-21 51 -36 36!-36 36[-51 21 -51 0!-51 0[-51 -21 -36 -36!-36 -36[-31 -41 -25 -44"/>
+                    <Edge fillStyle1="1" edges="!-31 -55S2[-17 -63 0 -63!0 -63[26 -63 44 -45!44 -45[63 -26 63 0!63 0[63 26 44 44!44 44[39 50 33 54"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="!33 54S3|27 44!-25 -44|-31 -55"/>
+                    <Edge fillStyle0="3" edges="!-31 -55S1[-39 -51 -45 -45!-45 -45[-63 -26 -63 0!-63 0[-63 26 -45 44!-45 44[-26 63 0 63!0 63[18 63 33 54"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

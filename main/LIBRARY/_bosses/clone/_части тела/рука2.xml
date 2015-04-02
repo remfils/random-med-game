@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/clone/_части тела/рука2" itemID="53ec78b9-0000014f" symbolType="graphic" lastModified="1408015646">
+  <timeline>
+    <DOMTimeline name="рука2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#3F085C"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#13031C"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-271 -663[-265 -682 -260 -695!-260 -695[-197 -825 17 -801!17 -801[101 -792 167 -768!167 -768[232 -744 264 -700!264 -700[269 -692 276 -663"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!276 -663[299 -551 321 -126!321 -126[348 406 386 739!386 739[510 806 351 804!351 804|-360 804!-360 804[-495 809 -407 752!-407 752[-357 444 -344 127!-344 127[-320 -501 -271 -663"/>
+                    <Edge cubics="!351 804(;351,804 -360,804 -360,804q351 804 -360 804);"/>
+                    <Edge cubics="!386 739(386,739;469,784 458,806 351,804q386 739Q510 806q351 804);"/>
+                    <Edge cubics="!264 -700(264,-700;268,-695 272,-681 276,-663q264 -700 276 -663);"/>
+                    <Edge cubics="!276 -663(;292,-583 306,-406 321,-126q276 -663Q299 -551q321 -126);"/>
+                    <Edge cubics="!17 -801(;72,-795 123,-783 167,-768q17 -801Q101 -792q167 -768);"/>
+                    <Edge cubics="!167 -768(;211,-752 243,-729 264,-700q167 -768Q232 -744q264 -700);"/>
+                    <Edge cubics="!-260 -695(;-217,-781 -125,-816 17,-801q-260 -695Q-197 -825q17 -801);"/>
+                    <Edge cubics="!-360 804(;-451,807 -467,790 -407,752q-360 804Q-495 809q-407 752);"/>
+                    <Edge cubics="!-407 752(;-374,547 -353,338 -344,127q-407 752Q-357 444q-344 127);"/>
+                    <Edge cubics="!321 -126(;340,229 361,517 386,739q321 -126Q348 406q386 739);"/>
+                    <Edge cubics="!-271 -663(;-267,-676 -264,-686 -260,-695q-271 -663Q-265 -682q-260 -695);"/>
+                    <Edge cubics="!-344 127(;-328,-292 -304,-555 -271,-663q-344 127Q-320 -501q-271 -663);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

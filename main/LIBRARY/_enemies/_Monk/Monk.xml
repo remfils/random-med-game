@@ -1,0 +1,127 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Monk/Monk" itemID="545f1fce-00000100" linkageExportForAS="true" linkageBaseClass="src.enemy.Sniper" linkageClassName="Monk" lastModified="1427389765" lastUniqueIdentifier="7">
+  <timeline>
+    <DOMTimeline name="Monk" currentFrame="8">
+      <layers>
+        <DOMLayer name="labels" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="8" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" duration="16" name="active" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="24" duration="56" name="shoot" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="80" duration="42" name="death" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="actions" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="8" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" duration="55" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="63" duration="16" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[shoot();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="79" duration="42" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[activate();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="121" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+removeCorpse();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="122" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001" centerPoint3DX="0.15" centerPoint3DY="-2">
+                  <matrix>
+                    <Matrix a="3.47415161132813" d="0.8350830078125" tx="0.15" ty="-2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_normal" centerPoint3DX="1.4" centerPoint3DY="-29.25">
+                  <matrix>
+                    <Matrix a="0.3265380859375" d="0.3265380859375" tx="1.45" ty="-3.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-78.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_active" centerPoint3DX="1.4" centerPoint3DY="-29.25">
+                  <matrix>
+                    <Matrix a="0.3265380859375" d="0.3265380859375" tx="1.45" ty="-3.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-78.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" duration="56" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_shoot" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.3265380859375" d="0.3265380859375" tx="1.45" ty="-3.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-78.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="80" duration="42" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_death" symbolType="graphic" firstFrame="1" loop="loop">
+                  <matrix>
+                    <Matrix a="0.3265380859375" d="0.3265380859375" tx="1.45" ty="-3.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-78.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

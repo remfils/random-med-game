@@ -1,0 +1,55 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="персонаж/части тела/_руки/рука2" itemID="53cc286b-0000010b" symbolType="graphic" lastModified="1406145091">
+  <timeline>
+    <DOMTimeline name="рука2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#930D0D"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor color="#690A0A"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-41.5 -65[#FFFFD7.C6 #FFFFB5.FB -35 -92.5!-35 -92.5[#FFFFE2.07 #FFFF91.09 -2 -109!-2 -109[#19.FC #FFFF94.D9 35.5 -98.5!35.5 -98.5[#2D.08 #FFFFA6.21 52.5 -60"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!52.5 -60[#3B.F5 #FFFFE1.EE 66.5 8.5!66.5 8.5[#49.08 #2F.04 71 86!71 86[71 91 65 91!65 91[50 87 48 77!48 77[46 82 45 88!45 88|45 90!45 90[42 90 40 92!40 92[30 89 20 92!20 92[11 95 2 92!2 92[-11 87 -26 87!-26 87[-26 86 -27 85!-27 85|-31
+ 83!-31 83[-36 83 -36 86!-36 86[-42 82 -41 75!-41 75[-42 12 -45 -45!-45 -45[-42.578125 #FFFFC8.12 -41.5 -65"/>
+                    <Edge cubics="!-36 86(;-36,84 -34,83 -31,83q-36 86Q-36 83q-31 83);"/>
+                    <Edge cubics="!-36 86(;-40,83 -42,80 -41,75q-36 86Q-42 82q-41 75);"/>
+                    <Edge cubics="!-27 85(;-26,86 -26,86 -26,87q-27 85Q-26 86q-26 87);"/>
+                    <Edge cubics="!-31 83(;-31,83 -27,85 -27,85q-31 83 -27 85);"/>
+                    <Edge cubics="!71 86(;71,89 69,91 65,91q71 86Q71 91q65 91);"/>
+                    <Edge cubics="!2 92(;8,94 14,94 20,92q2 92Q11 95q20 92);"/>
+                    <Edge cubics="!48 77(;47,80 46,84 45,88q48 77Q46 82q45 88);"/>
+                    <Edge cubics="!45 88(;45,88 45,90 45,90q45 88 45 90);"/>
+                    <Edge cubics="!40 92(;41,91 43,90 45,90q40 92Q42 90q45 90);"/>
+                    <Edge cubics="!20 92(;27,90 33,90 40,92q20 92Q30 89q40 92);"/>
+                    <Edge cubics="!65 91(;55,88 49,84 48,77q65 91Q50 87q48 77);"/>
+                    <Edge cubics="!62 7(;69,34 72,60 71,86q62 7Q73 47q71 86);"/>
+                    <Edge cubics="!-26 87(;-16,87 -7,89 2,92q-26 87Q-11 87q2 92);"/>
+                    <Edge cubics="!48 -68(;52,-35 57,-10 62,7q48 -68Q54 -18q62 7);"/>
+                    <Edge cubics="!-45 -45(;-49,-52 -51,-60 -51,-68q-45 -45Q-51 -56q-51 -68);"/>
+                    <Edge cubics="!-41 75(;-42,33 -43,-7 -45,-45q-41 75Q-42 12q-45 -45);"/>
+                    <Edge cubics="!-51 -68(;-51,-68 -69,-126 -11,-126q-51 -68Q-55 -82q-53 -97Q-47 -126q-11 -126);"/>
+                    <Edge cubics="!-11 -126(;47,-126 48,-68 48,-68q-11 -126Q25 -126q40 -97Q48 -82q48 -68);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

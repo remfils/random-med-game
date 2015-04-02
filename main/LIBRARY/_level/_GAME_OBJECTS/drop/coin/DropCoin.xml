@@ -1,0 +1,325 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/coin/DropCoin" itemID="546e158d-00000121" linkageExportForAS="true" linkageBaseClass="src.objects.DropObject" linkageClassName="DropCoin" lastModified="1416502307" lastUniqueIdentifier="10">
+  <timeline>
+    <DOMTimeline name="DropCoin" currentFrame="32">
+      <layers>
+        <DOMLayer name="actions" color="#FF800A" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="19" name="drop" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="8" name="default" labelType="name" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="27" duration="10" name="pickup" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="37" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="effect" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="30" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-59 -3[-44 7 -27 14!-27 14|-22 9!-22 9[-19 7 -17 7!-17 7[-12 7 -7 9!-7 9[-7 2 -4 -6!-4 -6[-2 -18 10 -26!10 -26[10 -8 3 12!3 12[8 14 8 19!8 19|8 24!8 24[6 24 3 26!3 26[18 31 30 36!30 36[45 39 58 44!58 44[30 36 6 31!6 31[-2 34 -9 34!-9
+ 34[-14 41 -17 51!-17 51[-24 64 -29 71!-29 71[-22 51 -17 34!-17 34[-17 31 -14 31!-14 31[-19 29 -24 26!-24 26[-29 24 -29 22!-29 22|-29 19!-29 19[-39 14 -47 7!-47 7[-59 -3 -62 4!-62 4|-62 -3!-62 -3|-59 -3"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="31" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!95 -163[68 -111 33 -61!33 -61[13 -33 -2 -3!-2 -3[6 2 6 9!6 9|6 12!6 12[98 39 190 64!190 64[247 79 307 94!307 94[220 86 138 64!138 64[73 46 10 26!10 26[10 29 13 31!13 31[30 44 50 59!50 59[70 71 88 89!88 89[48 64 8 39!8 39[1 41 -4 41!-4
+ 41[-14 41 -19 39!-19 39[-24 41 -24 46!-24 46[-27 51 -32 54!-32 54|-34 54!-34 54[-39 64 -47 76!-47 76[-64 109 -72 146!-72 146[-79 166 -94 181!-94 181[-84 151 -74 116!-74 116[-67 81 -47 51!-47 51[-49 44 -49 39!-49 39[-47 31 -44 26!-44
+ 26[-42 24 -37 22!-37 22[-44 14 -44 7!-44 7[-69 -1 -92 -11!-92 -11[-174 -41 -224 -86!-224 -86[-152 -46 -69 -16!-69 -16[-97 -36 -94 -53!-94 -53[-69 -28 -39 -3!-39 -3[-34 -11 -24 -11!-24 -11[-22 -11 -22 -13!-22 -13[8 -73 50 -126!50 -126
+[85 -173 118 -223!118 -223[130 -248 143 -273!143 -273[123 -218 95 -163"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="32" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!185 -402[153 -285 100 -178!100 -178[58 -96 13 -13!13 -13[18 -11 23 -16!23 -16[43 -36 70 -58!70 -58[93 -83 123 -103!123 -103[75 -56 30 -6!30 -6[33 4 33 12!33 12[30 24 23 31!23 31[28 39 33 39!33 39[38 44 40 51!40 51|38 54!38 54[53 64 68
+ 79!68 79[108 111 155 131!155 131[183 146 197 171!197 171[160 151 115 126!115 126[70 106 33 71!33 71[23 74 15 74!15 74[6 66 -2 61!-2 61[-2 56 -4 51!-4 51[-17 59 -29 56!-29 56[-44 89 -64 116!-64 116[-129 221 -201 278!-201 278[-127 189
+ -64 86!-64 86[-99 119 -124 109!-124 109[-82 81 -39 46!-39 46[-49 36 -44 24!-44 24[-44 19 -49 19!-49 19[-124 -36 -181 -108!-181 -108[-239 -170 -299 -228!-299 -228[-331 -250 -361 -275!-361 -275[-291 -233 -224 -180!-224 -180[-159 -128 -99
+ -68!-99 -68[-67 -33 -29 -6!-29 -6[-19 -13 -9 -13!-9 -13|-7 -11!-7 -11[55 -128 115 -250!115 -250[150 -325 185 -402"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="33" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!20 -163[10 -133 1 -103!1 -103[1 -81 1 -58!1 -58[1 -46 1 -33!1 -33[63 -160 143 -280!143 -280[190 -357 242 -427!242 -427[178 -285 90 -148!90 -148[48 -81 8 -11!8 -11[10 -11 15 -13!15 -13[25 -28 38 -46!38 -46[65 -83 100 -111!100 -111[100
+ -101 83 -78!83 -78[58 -48 35 -18!35 -18[130 -41 222 -63!222 -63[292 -83 362 -98!362 -98[230 -58 93 -16!93 -16[78 -11 63 -6!63 -6[98 -6 133 -6!133 -6[180 -8 227 -6!227 -6[140 2 53 7!53 7[33 7 15 9!15 9[13 9 13 12!13 12[15 14 18 17!18
+ 17[80 56 140 94!140 94[170 106 200 119!200 119[180 111 160 106!160 106[215 141 272 176!272 176[367 236 469 278!469 278[255 196 58 69!58 69[53 66 50 66!50 66|50 69!50 69[65 99 88 126!88 126[103 144 113 159!113 159[83 131 58 99!58 99[73
+ 136 83 179!83 179[#59.9 #CC.5 98.5 229.5!98.5 229.5[#52.0D #BB.4A 58 144!58 144[40 111 23 79!23 79[13 64 1 49!1 49[1 56 1 64!1 64[6 76 13 91!13 91[28 121 43 151!43 151[20 114 -2 76!-2 76[-2 81 -2 86!-2 86[-2 126 -4 166!-4 166[-4 126
+ -7 84!-7 84[-7 99 -9 116!-9 116[-12 141 -12 164!-12 164[-9 191 -7 221!-7 221[-12 199 -14 174!-14 174[-16.90625 #B2.D8 -17 183.5!-17 183.5[-17 #AD.D8 -17 164!-17 164[-24 124 -29 81!-29 81[-32 101 -34 119!-34 119[-37 146 -37 174!-37 174
+[-44 131 -44 89!-44 89[-54 106 -64 124!-64 124[-72 151 -82 174!-82 174[-77 154 -69 134!-69 134[-82 151 -92 169!-92 169[-102 186 -112 201!-112 201[-134 238 -157 278!-157 278[-122 211 -87 141!-87 141[-102 161 -117 181!-117 181[-132 199
+ -147 211!-147 211[-112 169 -77 124!-77 124[-67 81 -47 41!-47 41[-47 36 -44 34!-44 34[-47 31 -49 31!-49 31[-112 51 -174 76!-174 76[-249 109 -309 154!-309 154[-209 66 -84 19!-84 19[-99 12 -112 7!-112 7[-167 4 -216 -3!-216 -3[-211 -6 -206
+ -6!-206 -6[-201 -6 -199 -6!-199 -6[-194 -6 -189 -6!-189 -6[-154 -8 -122 -8!-122 -8[-89 -8 -59 -8!-59 -8[-142 -63 -221 -121!-221 -121[-331 -195 -411 -285!-411 -285[-256 -148 -79 -41!-79 -41[-72 -36 -64 -31!-64 -31[-69 -38 -72 -43!-72
+ -43[-89 -71 -104 -98!-104 -98|-104 -101!-104 -101|-109 -101!-109 -101[-109 -103 -112 -106!-112 -106[-114 -108 -114 -111!-114 -111[-114 -113 -112 -116!-112 -116[-109 -116 -107 -116!-107 -116[-112 -123 -112 -131!-112 -131[-82 -93 -57 -51
+!-57 -51[-54 -46 -49 -38!-49 -38[-54 -86 -59 -133!-59 -133[-62 -185 -64 -230!-64 -230[-47 -143 -37 -53!-37 -53[-37 -46 -34 -38!-34 -38[-29 -63 -17 -78!-17 -78[-17 -81 -17 -83!-17 -83[-17 -103 -17 -121!-17 -121[-17 -165 -12 -200!-12 -200
+[-4 -165 1 -128!1 -128[8 -148 20 -163!-17 -48[-17 -28 -19 -8!-19 -8|-17 -8!-17 -8[-17 -31 -14 -51!-14 -51|-17 -48!-19 56[-22 59 -24 64!-24 64[-22 94 -19 124!-19 124[-19 131 -17 139!-17 139[-17 99 -19 59!-19 59|-19 56!-72 14[-64 9 -59
+ 9!-59 9[-74 7 -89 7!-89 7[-82 9 -72 14"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="34" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!65 -390[6 -405 -54 -390!-54 -390[-102 -380 -137 -345!-137 -345[-216 -265 -236 -155!-236 -155[-251 -78 -196 -31!-196 -31[-241 -46 -246 -98!-246 -98[-249 -141 -239 -180!-239 -180[-216 -278 -144 -350!-144 -350[-87 -407 -7 -412!-7 -412[20
+ -410 45 -400!45 -400[55 -395 65 -390!3 -198[6 -208 13 -213!13 -213[35 -225 58 -235!58 -235[75 -240 90 -245!90 -245[118 -250 143 -250!143 -250[225 -253 302 -218!302 -218[392 -180 362 -93!362 -93[347 -51 322 -18!322 -18[347 -58 362 -101
+!362 -101[377 -138 347 -168!347 -168[287 -230 200 -243!200 -243[88 -258 3 -198!267 -103[242 -136 222 -163!222 -163[250 -141 272 -113!272 -113[297 -86 285 -48!285 -48[280 -28 270 -11!270 -11[275 -33 280 -58!280 -58[285 -83 267 -103!-259
+ -308[-274 -298 -284 -283!-284 -283[-291 -273 -299 -268!-299 -268[-291 -280 -281 -293!-281 -293[-269 -305 -254 -318!-254 -318[-244 -328 -234 -332!-234 -332[-244 -320 -259 -308!-366 -98[-366 -118 -363 -133!-363 -133[-363 -93 -358 -51!-358
+ -51[-353 -11 -334 26!-334 26[-324 46 -311 64!-311 64[-351 31 -361 -18!-361 -18[-368 -58 -366 -98!-59 179[8 196 78 181!78 181[133 171 183 149!183 149[205 136 227 126!227 126[227 139 197 156!197 156[143 189 80 194!80 194[20 199 -42 184
+!-42 184[-52 181 -59 179"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="35" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!297 -268[195 -300 93 -325!93 -325[-52 -360 -171 -275!-171 -275[-221 -240 -241 -183!-241 -183[-251 -160 -254 -138!-254 -138[-256 -153 -251 -175!-251 -175[-244 -205 -226 -230!-226 -230[-206 -255 -184 -275!-184 -275[-137 -315 -77 -332!-77
+ -332[-49 -337 -24 -340!-24 -340[40 -345 103 -328!103 -328[165 -313 227 -293!227 -293[262 -280 297 -268!282 -88[282 -81 280 -76!280 -76[277 -83 275 -93!275 -93[275 -106 272 -116!272 -116[270 -126 272 -128!272 -128[277 -121 280 -108!280
+ -108[282 -98 282 -88!325 -91[322 -106 322 -116!322 -116[337 -81 335 -36!335 -36[330 7 295 29!295 29[#126.5A #1D.42 293.5 29.5!293.5 29.5[#139.D #8.D8 325 -23!325 -23[332 -58 325 -91!255 39[240 49 225 56!225 56[215 61 205 64!205 64[227
+ 51 252 36!252 36[262 31 267 22!267 22[272 17 275 14!275 14[270 29 255 39!-211 -6[-194 22 -176 49!-176 49[-167 64 -162 81!-162 81[-186 64 -201 29!-201 29[-211 -1 -229 -28!-229 -28[-241 -46 -244 -61!-244 -61[-229 -33 -211 -6!-87 -195[-72
+ -200 -57 -208!-57 -208[-44 -215 -29 -220!-29 -220[-44 -213 -59 -203!-59 -203[-74 -195 -89 -190!-89 -190[-102 -185 -112 -183!-112 -183[-102 -190 -87 -195!-27 146[-44 154 -64 149!-64 149[-79 146 -89 141!-89 141[-67 146 -42 141!-42 141
+[-27 139 -12 131!-12 131[-7 126 -2 126!-2 126[-4 134 -27 146"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="36" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!53 -347[70 -342 88 -337!88 -337[#59.3B #FFFEB0.3B 91 -335.5!91 -335.5[#4D.0F -337.21875 65 -340!65 -340[20 -357 -22 -342!-22 -342[-27 -340 -32 -340!-32 -340[-49 -330 -62 -330!-62 -330[-57 -332 -54 -332!-54 -332[-47 -335 -42 -340!-42
+ -340[-37 -342 -32 -345!-32 -345[-22 -345 -14 -350!-14 -350[-9 -350 -4 -350!-4 -350[-2 -350 -2 -352!-2 -352[10 -352 20 -352!20 -352[38 -352 53 -347!262 -101[265 -116 265 -131!265 -131[267 -141 270 -148!270 -148[272 -133 272 -118!272 -118
+[270 -101 265 -86!265 -86[262 -78 260 -68!260 -68[257 -81 262 -101!195 64[180 76 160 79!160 79[148 81 138 81!138 81[160 76 180 66!180 66[195 59 207 46!207 46[215 39 220 31!220 31[212 49 195 64"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="37" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="main" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.05487060546875" d="0.05487060546875" tx="-0.35" ty="-57.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.46340942382813" d="1.46340942382813" tx="-0.35" ty="-57.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" duration="8" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.8333"/>
+                  <Point x="0.1972" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-0.35" ty="-57.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.97918701171875" b="-0.202957153320313" c="0.202957153320313" d="0.97918701171875" tx="-0.35" ty="-0.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.992111206054688" b="0.125350952148438" c="-0.125350952148438" d="0.992111206054688" tx="-0.35" ty="-0.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.997802734375" b="-0.0659942626953125" c="0.0659942626953125" d="0.997802734375" tx="-0.35" ty="-0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.993637084960938" b="0.112442016601563" c="-0.112442016601563" d="0.993637084960938" ty="0.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-0.35" ty="-0.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="27" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-0.35" ty="-0.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/coin_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.030487060546875" d="0.030487060546875" tx="-0.35" ty="-0.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="31" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="38" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001">
+                  <matrix>
+                    <Matrix a="1.54098510742188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

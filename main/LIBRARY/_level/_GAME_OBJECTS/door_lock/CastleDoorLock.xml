@@ -1,0 +1,119 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/door_lock/CastleDoorLock" itemID="546765d6-0000024f" linkageExportForAS="true" linkageBaseClass="src.objects.DoorLock" linkageClassName="CastleDoorLock" lastModified="1427389879" lastUniqueIdentifier="7">
+  <timeline>
+    <DOMTimeline name="CastleDoorLock">
+      <layers>
+        <DOMLayer name="labels" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="60" name="unlock" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="69" duration="51" name="break_key" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="actions" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="66" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="66" duration="50" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+removeCorpse();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="116" duration="4" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[gotoAndStop("normal");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="lock" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/doorLock" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.428268432617188" d="0.428268432617188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-2.55" y="-88.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="60" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/doorLock_unlock" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.428268432617188" d="0.428268432617188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-2.55" y="-88.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="69" duration="51" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/door_lock/doorLock_break_key" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.428268432617188" d="0.428268432617188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-2.55" y="-88.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="120" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001" centerPoint3DX="12.5" centerPoint3DY="14.6">
+                  <matrix>
+                    <Matrix a="3.39775085449219" d="0.375747680664063"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="activeArea" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="120" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="activeArea" centerPoint3DX="-45.85" centerPoint3DY="-46.7">
+                  <matrix>
+                    <Matrix a="5.59759521484375" d="1.06341552734375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="1" tintColor="#00FF00"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Ghost/mouth" itemID="5419fc85-00000181" symbolType="graphic" lastModified="1410989189">
+  <timeline>
+    <DOMTimeline name="mouth">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!136 -9|75 -111!75 -111|4 -69!4 -69|-36 -112!-36 -112|-74 -58!-74 -58|-143 -95!-143 -95|-243 56!-243 56|-132 5!-132 5|-120 54!-120 54|7 -2!7 -2|47 52!47 52|140 20!140 20|175 85!175 85|208 57!208 57|243 111!243 111|229 -27!229 -27|214
+ 16!214 16|162 -67!162 -67|136 -9"/>
+                    <Edge cubics="!243 111(;243,111 229,-27 229,-27q243 111 229 -27);"/>
+                    <Edge cubics="!229 -27(;229,-27 214,16 214,16q229 -27 214 16);"/>
+                    <Edge cubics="!214 16(;214,16 162,-67 162,-67q214 16 162 -67);"/>
+                    <Edge cubics="!162 -67(;162,-67 136,-9 136,-9q162 -67 136 -9);"/>
+                    <Edge cubics="!136 -9(;136,-9 75,-111 75,-111q136 -9 75 -111);"/>
+                    <Edge cubics="!75 -111(;75,-111 4,-69 4,-69q75 -111 4 -69);"/>
+                    <Edge cubics="!4 -69(;4,-69 -36,-112 -36,-112q4 -69 -36 -112);"/>
+                    <Edge cubics="!-36 -112(;-36,-112 -74,-58 -74,-58q-36 -112 -74 -58);"/>
+                    <Edge cubics="!-74 -58(;-74,-58 -143,-95 -143,-95q-74 -58 -143 -95);"/>
+                    <Edge cubics="!-143 -95(;-143,-95 -243,56 -243,56q-143 -95 -243 56);"/>
+                    <Edge cubics="!-243 56(;-243,56 -132,5 -132,5q-243 56 -132 5);"/>
+                    <Edge cubics="!-132 5(;-132,5 -120,54 -120,54q-132 5 -120 54);"/>
+                    <Edge cubics="!-120 54(;-120,54 7,-2 7,-2q-120 54 7 -2);"/>
+                    <Edge cubics="!7 -2(;7,-2 47,52 47,52q7 -2 47 52);"/>
+                    <Edge cubics="!47 52(;47,52 140,20 140,20q47 52 140 20);"/>
+                    <Edge cubics="!140 20(;140,20 175,85 175,85q140 20 175 85);"/>
+                    <Edge cubics="!175 85(;175,85 208,57 208,57q175 85 208 57);"/>
+                    <Edge cubics="!208 57(;208,57 243,111 243,111q208 57 243 111);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

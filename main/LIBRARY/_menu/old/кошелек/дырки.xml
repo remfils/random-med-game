@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/old/кошелек/дырки" itemID="53727891-00000118" symbolType="graphic" lastModified="1400010897">
+  <timeline>
+    <DOMTimeline name="дырки">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.01922607421875" d="0.01922607421875"/>
+                        </matrix>
+                        <GradientEntry color="#999999" ratio="0.823529411764706"/>
+                        <GradientEntry color="#959595" ratio="0.882352941176471"/>
+                        <GradientEntry color="#ECECEC" ratio="0.913725490196078"/>
+                        <GradientEntry color="#ADADAD" ratio="0.945098039215686"/>
+                        <GradientEntry color="#CCCCCC" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!221 -219S2[311 -128 310 1!310 1[310 130 219 220!219 220[128 311 -1 310!-1 310[-130 310 -221 218!-221 218[-311 127 -311 -2!-311 -2[-310 -131 -219 -221!-219 -221[-127 -311 2 -311!2 -311[131 -310 221 -219"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!187 -186S3[263 -109 263 0!263 0[263 110 185 186!185 186[108 263 -1 262!-1 262[-111 262 -188 184!-188 184[-264 107 -264 -2!-264 -2[-263 -112 -186 -188!-186 -188[-108 -264 1 -264!1 -264[111 -264 187 -186"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

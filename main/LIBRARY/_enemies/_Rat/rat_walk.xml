@@ -1,0 +1,652 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Rat/rat_walk" itemID="5421b830-00000173" lastModified="1412347624" lastUniqueIdentifier="14">
+  <timeline>
+    <DOMTimeline name="rat_walk">
+      <layers>
+        <DOMLayer name="arm1 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="16.05" ty="7.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.881195068359375" b="-0.472732543945313" c="0.472732543945313" d="0.881195068359375" tx="34.7" ty="1.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.979095458984375" b="0.203353881835938" c="-0.203353881835938" d="0.979095458984375" tx="11.55" ty="8.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.997573852539063" b="0.06610107421875" c="-0.06610107421875" d="0.997573852539063" tx="16.7" ty="10.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm2 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.997528076171875" b="-0.07025146484375" c="0.07025146484375" d="0.997528076171875" tx="39.25" ty="31.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.962860107421875" b="0.26995849609375" c="-0.26995849609375" d="0.962860107421875" tx="57.85" ty="35.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.997909545898438" b="0.064544677734375" c="-0.064544677734375" d="0.997909545898438" tx="23.5" ty="37.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.999679565429688" b="-0.0226898193359375" c="0.0226898193359375" d="0.999679565429688" tx="36.15" ty="36.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg2 right" color="#FF0000" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-46.6" ty="34.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.972564697265625" b="0.232620239257813" c="-0.232620239257813" d="0.972564697265625" tx="-63.35" ty="30.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.997543334960938" b="-0.06976318359375" c="0.06976318359375" d="0.997543334960938" tx="-33.55" ty="41.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.999908447265625" b="0.009063720703125" c="-0.009063720703125" d="0.999908447265625" tx="-48.6" ty="37.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg1 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-45.65" ty="4.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-58.4" ty="-4.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.850906372070313" b="-0.525299072265625" c="0.525299072265625" d="0.850906372070313" tx="-49.15" ty="2.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-49.25" ty="5.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="head" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/head" centerPoint3DX="104.6" centerPoint3DY="-4.35">
+                  <matrix>
+                    <Matrix tx="104.6" ty="-4.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/head" centerPoint3DX="105.35" centerPoint3DY="7.9">
+                  <matrix>
+                    <Matrix tx="105.35" ty="7.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/head" centerPoint3DX="101.95" centerPoint3DY="-4.35">
+                  <matrix>
+                    <Matrix tx="101.95" ty="-4.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/head" centerPoint3DX="103.7" centerPoint3DY="-4.35">
+                  <matrix>
+                    <Matrix tx="103.7" ty="-4.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="base" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/body" centerPoint3DX="-13.75" centerPoint3DY="-10.7">
+                  <matrix>
+                    <Matrix tx="-13.7" ty="-10.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/body" centerPoint3DX="-8.35" centerPoint3DY="-7.85">
+                  <matrix>
+                    <Matrix a="0.979110717773438" b="0.203292846679688" c="-0.203292846679688" d="0.979110717773438" tx="-9.1" ty="-7.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/body" centerPoint3DX="-13.9" centerPoint3DY="-8.25">
+                  <matrix>
+                    <Matrix a="0.997802734375" b="0.066436767578125" c="-0.066436767578125" d="0.997802734375" tx="-14.05" ty="-7.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/body" centerPoint3DX="-13.7" centerPoint3DY="-10.25">
+                  <matrix>
+                    <Matrix a="0.999679565429688" b="0.0218963623046875" c="-0.0218963623046875" d="0.999679565429688" tx="-13.85" ty="-9.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="tail" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="shape" keyMode="17922">
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="#FFFFEF.CB, #1.A7" startPointB="-15.96875, #1.A7" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="0">
+                    <MorphCurves controlPointA="#FFFFF3.23, #1.7D" anchorPointA="#FFFFF5.51, #1.5E" controlPointB="-12.625, #1.7D" anchorPointB="#FFFFF5.8E, #1.5E"/>
+                    <MorphCurves controlPointA="-9.3203125, #1.4B" anchorPointA="#FFFFF8.0F, #0.7C" controlPointB="#FFFFF6.EB, #1.4B" anchorPointB="-7.703125, #0.7C"/>
+                    <MorphCurves controlPointA="#FFFFF8.7D, #0.3C" anchorPointA="#FFFFF8.DF, #FFFFFF.F1" controlPointB="-7.2734375, #0.3C" anchorPointB="-6.890625, #FFFFFF.F1"/>
+                    <MorphCurves controlPointA="#FFFFF9.05, -0.1796875" anchorPointA="-6.8359375, -0.3046875" controlPointB="-6.7421875, -0.1796875" anchorPointB="#FFFFF9.67, -0.3046875" isLine="true"/>
+                    <MorphCurves controlPointA="-6.5078125, -0.3125" anchorPointA="#FFFFF9.D1, #FFFFFF.AD" controlPointB="#FFFFF9.BB, -0.3125" anchorPointB="-5.9453125, #FFFFFF.AD" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFFA.0B, -0.0703125" anchorPointA="-5.734375, #0.2F" controlPointB="-5.71875, -0.0703125" anchorPointB="#FFFFFA.81, #0.2F" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFF9.6B, #0.B4" anchorPointA="#FFFFF8.91, #1.38" controlPointB="-6.34375, #0.B4" anchorPointB="-7.1953125, #1.38" isLine="true"/>
+                    <MorphCurves controlPointA="-9.0234375, #1.BD" anchorPointA="#FFFFF5.DE, #1.D" controlPointB="#FFFFF7.37, #1.BD" anchorPointB="#FFFFF6.1B, #1.D"/>
+                    <MorphCurves controlPointA="#FFFFF4.C1, #1.E3" anchorPointA="#FFFFF2.2F, #1.C7" controlPointB="#FFFFF4.FE, #1.E3" anchorPointB="-13.578125, #1.C7"/>
+                    <MorphCurves controlPointA="#FFFFF0.E6, #1.B9" anchorPointA="#FFFFEF.CB, #1.A7" controlPointB="#FFFFF1.23, #1.B9" anchorPointB="-15.96875, #1.A7"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E4CCC8"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-1825 -15[-1923 60 -2033 124!-2033 124[-2386 331 -2735 350!-2735 350[-3293 381 -4149 423!-4149 423[-3866 441 -3537 455!-3537 455[#FFF4C0.E1 483 -2594.5 464!-2594.5 464[#FFF6FA.5C 445 -1903 312!-1903 312|-1468 47!-1468 47|-1583 -83!-1583
+ -83|-1750 -78!-1750 -78|-1825 -15"/>
+                    <Edge cubics="!-1750 -78(;-1750,-78 -2177,319 -2735,350q-1750 -78Q-1750 -78q-1825 -15Q-1923 60q-2033 124Q-2386 331q-2735 350);"/>
+                    <Edge cubics="!-2735 350(;-3293,381 -4149,423 -4149,423q-2735 350Q-3293 381q-4149 423);"/>
+                    <Edge cubics="!-4149 423(;-4149,423 -3018,495 -2647,464q-4149 423Q-3866 441q-3537 455Q-2879 483q-2647 464);"/>
+                    <Edge cubics="!-2647 464(;-2276,433 -1468,47 -1468,47q-2647 464Q-2415 445q-1918 244Q-1468 47q-1468 47);"/>
+                    <Edge cubics="!-1468 47(;-1468,47 -1583,-83 -1583,-83q-1468 47 -1583 -83);"/>
+                    <Edge cubics="!-1583 -83(;-1583,-83 -1750,-78 -1750,-78q-1583 -83 -1750 -78);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="shape" keyMode="17922">
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="-15.96875, #1.A7" startPointB="#FFFFEF.96, #1.A7" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="0">
+                    <MorphCurves controlPointA="-12.625, #1.7D" anchorPointA="#FFFFF5.8E, #1.5E" controlPointB="#FFFFF2.EE, #1.7D" anchorPointB="-10.890625, #1.5E"/>
+                    <MorphCurves controlPointA="#FFFFF6.EB, #1.4B" anchorPointA="-7.703125, #0.7C" controlPointB="#FFFFF6.79, #1.4B" anchorPointB="-8.1484375, #0.7C"/>
+                    <MorphCurves controlPointA="-7.2734375, #0.3C" anchorPointA="-6.890625, #FFFFFF.F1" controlPointB="-7.71875, #0.3C" anchorPointB="-7.3359375, #FFFFFF.F1"/>
+                    <MorphCurves controlPointA="-6.7421875, -0.1796875" anchorPointA="#FFFFF9.67, -0.3046875" controlPointB="-7.1875, -0.1796875" anchorPointB="#FFFFF8.F5, -0.3046875" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFF9.BB, -0.3125" anchorPointA="-5.9453125, #FFFFFF.AD" controlPointB="#FFFFF9.49, -0.3125" anchorPointB="-6.390625, #FFFFFF.AD" isLine="true"/>
+                    <MorphCurves controlPointA="-5.71875, -0.0703125" anchorPointA="#FFFFFA.81, #0.2F" controlPointB="-6.1640625, -0.0703125" anchorPointB="#FFFFFA.0F, #0.2F" isLine="true"/>
+                    <MorphCurves controlPointA="-6.34375, #0.B4" anchorPointA="-7.1953125, #1.38" controlPointB="-6.7890625, #0.B4" anchorPointB="-7.640625, #1.38" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFF7.37, #1.BD" anchorPointA="#FFFFF6.1B, #1.D" controlPointB="#FFFFF6.C5, #1.BD" anchorPointB="#FFFFF5.A9, #1.D"/>
+                    <MorphCurves controlPointA="#FFFFF4.FE, #1.E3" anchorPointA="-13.578125, #1.C7" controlPointB="-11.453125, #1.E3" anchorPointB="#FFFFF1.FA, #1.C7"/>
+                    <MorphCurves controlPointA="#FFFFF1.23, #1.B9" anchorPointA="-15.96875, #1.A7" controlPointB="#FFFFF0.B1, #1.B9" anchorPointB="#FFFFEF.96, #1.A7"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape selected="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E4CCC8"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-1764 -15[-1862 60 -1972 124!-1972 124[-2325 331 -2674 350!-2674 350[-3232 381 -4088 423!-4088 423[-3805 441 -3476 455!-3476 455[-2818 483 -2533 464!-2533 464[-2249 445 -1842 312!-1842 312|-1407 47!-1407 47|-1522 -83!-1522 -83|-1689
+ -78!-1689 -78|-1764 -15"/>
+                    <Edge cubics="!-1689 -78(;-1689,-78 -2116,319 -2674,350q-1689 -78Q-1689 -78q-1764 -15Q-1862 60q-1972 124Q-2325 331q-2674 350);"/>
+                    <Edge cubics="!-2674 350(;-3232,381 -4088,423 -4088,423q-2674 350Q-3232 381q-4088 423);"/>
+                    <Edge cubics="!-1407 47(;-1407,47 -1522,-83 -1522,-83q-1407 47 -1522 -83);"/>
+                    <Edge cubics="!-1522 -83(;-1522,-83 -1689,-78 -1689,-78q-1522 -83 -1689 -78);"/>
+                    <Edge cubics="!-2533 464(;-2344,451 -2113,401 -1842,312q-2533 464Q-2249 445q-1842 312);"/>
+                    <Edge cubics="!-1842 312(;-1842,312 -1407,47 -1407,47q-1842 312 -1407 47);"/>
+                    <Edge cubics="!-4088 423(;-3899,435 -3695,446 -3476,455q-4088 423Q-3805 441q-3476 455);"/>
+                    <Edge cubics="!-3476 455(;-3037,474 -2723,477 -2533,464q-3476 455Q-2818 483q-2533 464);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="shape" keyMode="17922">
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="#FFFFEF.96, #1.A7" startPointB="#FFFFEF.B9, #1.A7" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="0">
+                    <MorphCurves controlPointA="#FFFFF2.EE, #1.7D" anchorPointA="-10.890625, #1.5E" controlPointB="#FFFFF3.11, #1.7D" anchorPointB="#FFFFF5.3F, #1.5E"/>
+                    <MorphCurves controlPointA="#FFFFF6.79, #1.4B" anchorPointA="-8.1484375, #0.7C" controlPointB="-9.390625, #1.4B" anchorPointB="#FFFFF7.FD, #0.7C"/>
+                    <MorphCurves controlPointA="-7.71875, #0.3C" anchorPointA="-7.3359375, #FFFFFF.F1" controlPointB="#FFFFF8.6B, #0.3C" anchorPointB="#FFFFF8.CD, #FFFFFF.F1"/>
+                    <MorphCurves controlPointA="-7.1875, -0.1796875" anchorPointA="#FFFFF8.F5, -0.3046875" controlPointB="#FFFFF8.F3, -0.1796875" anchorPointB="-6.90625, -0.3046875" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFF9.49, -0.3125" anchorPointA="-6.390625, #FFFFFF.AD" controlPointB="-6.578125, -0.3125" anchorPointB="#FFFFF9.BF, #FFFFFF.AD" isLine="true"/>
+                    <MorphCurves controlPointA="-6.1640625, -0.0703125" anchorPointA="#FFFFFA.0F, #0.2F" controlPointB="#FFFFF9.F9, -0.0703125" anchorPointB="-5.8046875, #0.2F" isLine="true"/>
+                    <MorphCurves controlPointA="-6.7890625, #0.B4" anchorPointA="-7.640625, #1.38" controlPointB="#FFFFF9.59, #0.B4" anchorPointB="#FFFFF8.7F, #1.38" isLine="true"/>
+                    <MorphCurves controlPointA="#FFFFF6.C5, #1.BD" anchorPointA="#FFFFF5.A9, #1.D" controlPointB="-9.09375, #1.BD" anchorPointB="-10.203125, #1.D"/>
+                    <MorphCurves controlPointA="-11.453125, #1.E3" anchorPointA="#FFFFF1.FA, #1.C7" controlPointB="#FFFFF4.AF, #1.E3" anchorPointB="#FFFFF2.1D, #1.C7"/>
+                    <MorphCurves controlPointA="#FFFFF0.B1, #1.B9" anchorPointA="#FFFFEF.96, #1.A7" controlPointB="-15.171875, #1.B9" anchorPointB="#FFFFEF.B9, #1.A7"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape selected="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E4CCC8"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-1878 -15[-1976 60 -2086 124!-2086 124[-2439 331 -2788 350!-2788 350[-3346 381 -4202 423!-4202 423[-3919 441 -3590 455!-3590 455[-2932 483 -2647 464!-2647 464[-2363 445 -1956 312!-1956 312|-1521 47!-1521 47|-1636 -83!-1636 -83|-1803
+ -78!-1803 -78|-1878 -15"/>
+                    <Edge cubics="!-1803 -78(;-1803,-78 -2230,319 -2788,350q-1803 -78Q-1803 -78q-1878 -15Q-1976 60q-2086 124Q-2439 331q-2788 350);"/>
+                    <Edge cubics="!-2788 350(;-3346,381 -4202,423 -4202,423q-2788 350Q-3346 381q-4202 423);"/>
+                    <Edge cubics="!-1521 47(;-1521,47 -1636,-83 -1636,-83q-1521 47 -1636 -83);"/>
+                    <Edge cubics="!-1636 -83(;-1636,-83 -1803,-78 -1803,-78q-1636 -83 -1803 -78);"/>
+                    <Edge cubics="!-2647 464(;-2458,451 -2227,401 -1956,312q-2647 464Q-2363 445q-1956 312);"/>
+                    <Edge cubics="!-1956 312(;-1956,312 -1521,47 -1521,47q-1956 312 -1521 47);"/>
+                    <Edge cubics="!-4202 423(;-4013,435 -3809,446 -3590,455q-4202 423Q-3919 441q-3590 455);"/>
+                    <Edge cubics="!-3590 455(;-3151,474 -2837,477 -2647,464q-3590 455Q-2932 483q-2647 464);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="shape" keyMode="17922">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E4CCC8"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-1768 -78|-1601 -83!-1601 -83|-1486 47!-1486 47|-1921 312!-1921 312[-2328 445 -2612 464!-2612 464[-2897 483 -3555 455!-3555 455[-3884 441 -4167 423!-4167 423[-3311 381 -2753 350!-2753 350[-2404 331 -2051 124!-2051 124[-1941 60 -1843
+ -15!-1843 -15|-1768 -78"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm1 right copy" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.855926513671875" b="0.0975189208984375" c="-0.0975189208984375" d="0.855926513671875" tx="64.8" ty="3.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.811065673828125" b="0.290298461914063" c="-0.290298461914063" d="0.811065673828125" tx="23.65" ty="-3.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.811065673828125" b="0.290298461914063" c="-0.290298461914063" d="0.811065673828125" tx="17.95" ty="-3.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/arm1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.845703125" b="0.161209106445313" c="-0.161209106445313" d="0.845703125" tx="49.2" ty="0.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0.80078125" blueMultiplier="0.80078125" greenMultiplier="0.80078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm2 right copy" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.846527099609375" b="0.159652709960938" c="-0.159652709960938" d="0.846527099609375" tx="81.25" ty="28.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.787750244140625" b="0.348648071289063" c="-0.348648071289063" d="0.787750244140625" tx="34" ty="28.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.855682373046875" b="0.099578857421875" c="-0.099578857421875" d="0.855682373046875" tx="55.3" ty="22"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.849746704101563" b="0.1387939453125" c="-0.1387939453125" d="0.849746704101563" tx="72.65" ty="26.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0.80078125" blueMultiplier="0.80078125" greenMultiplier="0.80078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg2 left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-35.1" ty="17.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.998138427734375" b="0.06097412109375" c="-0.06097412109375" d="0.998138427734375" tx="-13.1" ty="24.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.998138427734375" b="0.06097412109375" c="-0.06097412109375" d="0.998138427734375" tx="-51.05" ty="24.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color tintMultiplier="0.2"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.999771118164063" b="0.0181732177734375" c="-0.0181732177734375" d="0.999771118164063" tx="-40.4" ty="19.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0.80078125" blueMultiplier="0.80078125" greenMultiplier="0.80078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

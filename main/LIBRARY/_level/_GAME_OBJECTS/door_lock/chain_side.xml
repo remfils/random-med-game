@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/door_lock/chain_side" itemID="54676102-0000021a" symbolType="graphic" lastModified="1416061186">
+  <timeline>
+    <DOMTimeline name="chain_side">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#A8A7AF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#EBEAF3"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#454548"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!133 270S3[98 162 73 43!73 43[48 -74 43 -194!43 -194[41 -269 45 -328!45 -328[94 -220 99 -95!99 -95[104 27 115 145!115 145[121 205 133 268"/>
+                    <Edge fillStyle0="1" edges="!133 268S1[122 31 111 -205!111 -205[104 -355 -3 -425!-3 -425[-75 -432 -121 -374!-121 -374[-138 -352 -137 -327!-137 -327[-136 -302 -133 -276"/>
+                    <Edge fillStyle0="1" fillStyle1="3" edges="!-133 -276S3[-130 -318 -122 -355!-122 -355[-113 -212 -85 -70!-85 -70[-58 72 -38 213!-38 213[-27 293 7 365!7 365[-44 277 -77 173"/>
+                    <Edge fillStyle0="1" edges="!-77 173S1[-61 262 -41 351!-41 351[-25 419 40 425!40 425[141 434 136 331!136 331[135 301 133 270"/>
+                    <Edge fillStyle1="2" edges="!133 268S2[133 #10D.35 133.5 271!133.5 271|133 270"/>
+                    <Edge fillStyle1="3" edges="!-77 173S2[-91 130 -101 85!-101 85[-134 -60 -136 -207!-136 -207[-136 -243 -133 -276"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

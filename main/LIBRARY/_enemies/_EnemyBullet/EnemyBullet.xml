@@ -1,0 +1,76 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_EnemyBullet/EnemyBullet" itemID="545f54ee-00000469" linkageExportForAS="true" linkageBaseClass="src.enemy.Projectile" linkageClassName="EnemyBullet" lastModified="1415873372" lastUniqueIdentifier="5">
+  <timeline>
+    <DOMTimeline name="EnemyBullet" currentFrame="23">
+      <layers>
+        <DOMLayer name="label" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="11" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="11" duration="13" name="death" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="23" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+removeCorpse();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="24" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001">
+                  <matrix>
+                    <Matrix a="0.782272338867188" d="0.387985229492188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_normal" centerPoint3DY="-41.1">
+                  <matrix>
+                    <Matrix a="1.56956481933594" d="1.56956481933594" ty="-41.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_death" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.56956481933594" d="1.56956481933594" ty="-41.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

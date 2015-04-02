@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/door_lock/keyHolder_top" itemID="546c7a81-00000625" symbolType="graphic" lastModified="1416395393">
+  <timeline>
+    <DOMTimeline name="keyHolder_top">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E7D348"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#F0E491"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!12 -33S3[11 25 12 82!12 82[12 113 7 143!7 143[1 128 -3 112!-3 112[-4 125 -8 136!-8 136[-18 102 -17 65!-17 65[-17 29 -17 -7!-17 -7[-16 -22 -11 -35!-11 -35[-12 -61 -12 -88!-12 -88[-12 -121 0 -147!0 -147[14 -94 12 -33!18 -134[26 -109 24
+ -77!24 -77[22 -49 21 -23!21 -23[25 5 25 35!25 35[25 71 25 107!25 107[25 126 24 147!24 147[20 115 16 77!16 77[11 40 13 4!13 4[14 -12 16 -24!16 -24[16 -33 15 -42!15 -42[12 -72 11 -102!11 -102[10 -122 18 -134"/>
+                    <Edge fillStyle1="1" edges="
+!40 160S2|-40 160!-40 160|-40 -160!-40 -160|40 -160!40 -160|40 160"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

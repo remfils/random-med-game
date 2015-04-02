@@ -1,0 +1,51 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/keys/key_gr_appear" itemID="546c702b-00000136" symbolType="graphic" lastModified="1416392838">
+  <timeline>
+    <DOMTimeline name="key_gr_appear" currentFrame="6">
+      <layers>
+        <DOMLayer name="tongue" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.13262939453125" d="0.13262939453125" tx="0.65" ty="-0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="0.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.1827392578125" d="1.1827392578125" tx="0.95" ty="-1.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.3" y="0.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="0.9" ty="-1.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.3" y="0.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

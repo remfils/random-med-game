@@ -1,0 +1,265 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Rat/rat_stand_down" itemID="5454b48a-0000014d" lastModified="1414837386" lastUniqueIdentifier="16">
+  <timeline>
+    <DOMTimeline name="rat_stand_down" currentFrame="4">
+      <layers>
+        <DOMLayer name="Layer 12" color="#FF4FFF">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-8.15" ty="-242.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-27.15" y="-8.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="head" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/head_down" centerPoint3DX="0.15" centerPoint3DY="72.3">
+                  <matrix>
+                    <Matrix tx="0.15" ty="72.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="body" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/body top" centerPoint3DY="-12.55">
+                  <matrix>
+                    <Matrix ty="-12.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg1 left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#3A443B"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!278 -1014[133 -828 107 -564!107 -564[102 -513 102 -463!102 -463[102 -264 188 -112!188 -112[294 75 473 75!473 75[650 75 796 -112!796 -112[940 -301 966 -564!966 -564[971 -617 971 -665!971 -665[971 -865 886 -1014!886 -1014[778 -1203 600
+ -1203!600 -1203[422 -1203 278 -1014"/>
+                    <Edge cubics="!600 -1203(600,-1203;481,-1203 374,-1140 278,-1014q600 -1203Q422 -1203q278 -1014);"/>
+                    <Edge cubics="!796 -112(;892,-238 949,-389 966,-564q796 -112Q940 -301q966 -564);"/>
+                    <Edge cubics="!966 -564(;969,-599 971,-633 971,-665q966 -564Q971 -617q971 -665);"/>
+                    <Edge cubics="!107 -564(;104,-530 102,-496 102,-463q107 -564Q102 -513q102 -463);"/>
+                    <Edge cubics="!102 -463(;102,-330 131,-213 188,-112q102 -463Q102 -264q188 -112);"/>
+                    <Edge cubics="!886 -1014(;814,-1140 719,-1203 600,-1203q886 -1014Q778 -1203q600 -1203);"/>
+                    <Edge cubics="!278 -1014(;181,-890 124,-740 107,-564q278 -1014Q133 -828q107 -564);"/>
+                    <Edge cubics="!971 -665(;971,-798 943,-915 886,-1014q971 -665Q971 -865q886 -1014);"/>
+                    <Edge cubics="!473 75(473,75;591,75 699,13 796,-112q473 75Q650 75q796 -112);"/>
+                    <Edge cubics="!188 -112(;259,13 354,75 473,75q188 -112Q294 75q473 75);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm1 left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#3A443B"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!820 694[812 795 750 878!750 878[673 978 556 989!556 989[438 997 350 910!350 910[262 821 255 689!255 689[254 677 254 666!254 666[254 651 255 638!255 638[262 536 324 456!324 456[402 353 520 344!520 344[637 333 724 423!724 423[812 509 821
+ 643!821 643[820 655 821 666!821 666[820 680 820 694"/>
+                    <Edge cubics="!750 878(;699,945 634,982 556,989q750 878Q673 978q556 989);"/>
+                    <Edge cubics="!556 989(556,989;477,994 409,968 350,910q556 989Q438 997q350 910);"/>
+                    <Edge cubics="!520 344(;598,337 666,363 724,423q520 344Q637 333q724 423);"/>
+                    <Edge cubics="!324 456(;376,387 441,350 520,344q324 456Q402 353q520 344);"/>
+                    <Edge cubics="!821 666(;820,675 820,685 820,694q821 666Q820 680q820 694);"/>
+                    <Edge cubics="!821 643(;820,651 820,659 821,666q821 643Q820 655q821 666);"/>
+                    <Edge cubics="!820 694(;815,761 791,823 750,878q820 694Q812 795q750 878);"/>
+                    <Edge cubics="!724 423(;783,480 815,554 821,643q724 423Q812 509q821 643);"/>
+                    <Edge cubics="!255 689(;254,681 254,673 254,666q255 689Q254 677q254 666);"/>
+                    <Edge cubics="!254 666(254,666;254,656 254,647 255,638q254 666Q254 651q255 638);"/>
+                    <Edge cubics="!350 910(;291,851 260,777 255,689q350 910Q262 821q255 689);"/>
+                    <Edge cubics="!255 638(255,638;260,570 283,509 324,456q255 638Q262 536q324 456);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm2 left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.110504150390625" b="0.693634033203125" c="0.693634033203125" d="0.110504150390625" tx="-22.65" ty="64.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-17.85" y="-8.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm1 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#3A443B"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-717 891[-805 802 -812 670!-812 670[-813 658 -813 647!-813 647[-813 632 -812 619!-812 619[-805 517 -743 437!-743 437[-665 334 -547 325!-547 325[-430 314 -343 404!-343 404[-255 490 -246 624!-246 624[-247 636 -246 647!-246 647[-247 661
+ -247 675!-247 675[-255 776 -317 859!-317 859[-394 959 -511 970!-511 970[-629 978 -717 891"/>
+                    <Edge cubics="!-317 859(;-368,926 -433,963 -511,970q-317 859Q-394 959q-511 970);"/>
+                    <Edge cubics="!-511 970(-511,970;-590,975 -658,949 -717,891q-511 970Q-629 978q-717 891);"/>
+                    <Edge cubics="!-547 325(;-469,318 -401,344 -343,404q-547 325Q-430 314q-343 404);"/>
+                    <Edge cubics="!-743 437(;-691,368 -626,331 -547,325q-743 437Q-665 334q-547 325);"/>
+                    <Edge cubics="!-246 647(;-247,656 -247,666 -247,675q-246 647Q-247 661q-247 675);"/>
+                    <Edge cubics="!-246 624(;-247,632 -247,640 -246,647q-246 624Q-247 636q-246 647);"/>
+                    <Edge cubics="!-247 675(;-252,742 -276,804 -317,859q-247 675Q-255 776q-317 859);"/>
+                    <Edge cubics="!-343 404(;-284,461 -252,535 -246,624q-343 404Q-255 490q-246 624);"/>
+                    <Edge cubics="!-812 670(;-813,662 -813,654 -813,647q-812 670Q-813 658q-813 647);"/>
+                    <Edge cubics="!-813 647(-813,647;-813,637 -813,628 -812,619q-813 647Q-813 632q-812 619);"/>
+                    <Edge cubics="!-717 891(;-776,832 -807,758 -812,670q-717 891Q-805 802q-812 670);"/>
+                    <Edge cubics="!-812 619(-812,619;-807,551 -784,490 -743,437q-812 619Q-805 517q-743 437);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="arm2 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.52587890625e-005" b="0.702362060546875" c="-0.702362060546875" d="1.52587890625e-005" tx="22.6" ty="67.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-19.6" y="-5.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg1 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#3A443B"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-305 -1014[-160 -828 -134 -564!-134 -564[-129 -513 -129 -463!-129 -463[-129 -264 -215 -112!-215 -112[-321 75 -500 75!-500 75[-677 75 -823 -112!-823 -112[-967 -301 -993 -564!-993 -564[-998 -617 -998 -665!-998 -665[-998 -865 -913 -1014
+!-913 -1014[-805 -1203 -627 -1203!-627 -1203[-449 -1203 -305 -1014"/>
+                    <Edge cubics="!-627 -1203(-627,-1203;-508,-1203 -401,-1140 -305,-1014q-627 -1203Q-449 -1203q-305 -1014);"/>
+                    <Edge cubics="!-823 -112(;-919,-238 -976,-389 -993,-564q-823 -112Q-967 -301q-993 -564);"/>
+                    <Edge cubics="!-993 -564(;-996,-599 -998,-633 -998,-665q-993 -564Q-998 -617q-998 -665);"/>
+                    <Edge cubics="!-134 -564(;-131,-530 -129,-496 -129,-463q-134 -564Q-129 -513q-129 -463);"/>
+                    <Edge cubics="!-129 -463(;-129,-330 -158,-213 -215,-112q-129 -463Q-129 -264q-215 -112);"/>
+                    <Edge cubics="!-913 -1014(;-841,-1140 -746,-1203 -627,-1203q-913 -1014Q-805 -1203q-627 -1203);"/>
+                    <Edge cubics="!-305 -1014(;-208,-890 -151,-740 -134,-564q-305 -1014Q-160 -828q-134 -564);"/>
+                    <Edge cubics="!-998 -665(;-998,-798 -970,-915 -913,-1014q-998 -665Q-998 -865q-913 -1014);"/>
+                    <Edge cubics="!-500 75(-500,75;-618,75 -726,13 -823,-112q-500 75Q-677 75q-823 -112);"/>
+                    <Edge cubics="!-215 -112(;-286,13 -381,75 -500,75q-215 -112Q-321 75q-500 75);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg2 left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.194839477539063" b="0.727188110351563" c="-0.965927124023438" d="0.258804321289063" tx="33.15" ty="-4.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-23.85" y="-10.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="leg2 right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/parts/leg2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.214950561523438" b="0.802261352539063" c="0.965927124023438" d="0.258804321289063" tx="-35.8" ty="-7.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-23.75" y="-10.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="tail" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E4CCC8"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-54 -3743|71 -1503!71 -1503|-152 -1503!-152 -1503|-54 -3743"/>
+                    <Edge cubics="!-152 -1503(;-152,-1503 -54,-3743 -54,-3743q-152 -1503 -54 -3743);"/>
+                    <Edge cubics="!-54 -3743(;-54,-3743 71,-1503 71,-1503q-54 -3743 71 -1503);"/>
+                    <Edge cubics="!71 -1503(;71,-1503 -152,-1503 -152,-1503q71 -1503 -152 -1503);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

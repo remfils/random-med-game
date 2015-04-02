@@ -1,0 +1,114 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Rat/Rat" itemID="5421b6f2-0000014b" linkageExportForAS="true" linkageBaseClass="src.enemy.ChargerEnemy" linkageClassName="Rat" lastModified="1427389801" lastUniqueIdentifier="16">
+  <timeline>
+    <DOMTimeline name="Rat">
+      <layers>
+        <DOMLayer name="actions" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" name="walk_hor" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" name="attack_hor" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="12" name="walk_vert" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="31" duration="12" name="attack_vert" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="43" duration="17" name="death" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="60" duration="5" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+removeCorpse();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="65" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001" centerPoint3DX="0.1" centerPoint3DY="0.1">
+                  <matrix>
+                    <Matrix a="1.31683349609375" d="1.08274841308594" tx="0.2" ty="0.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk" centerPoint3DX="86.25" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix a="0.194931030273438" d="0.194931030273438" tx="-1.35" ty="0.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-27.2" y="-8.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_charge" centerPoint3DX="86.25" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix a="0.194931030273438" d="0.194931030273438" tx="-1.35" ty="0.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-27.2" y="-8.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk_down" centerPoint3DX="87.7" centerPoint3DY="28.05">
+                  <matrix>
+                    <Matrix a="0.194931030273438" d="0.194931030273438" ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="31" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_attack_down" centerPoint3DX="87.7" centerPoint3DY="28.05">
+                  <matrix>
+                    <Matrix a="0.194931030273438" d="0.194931030273438" ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="43" duration="22" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_death" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.194931030273438" d="0.194931030273438" ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,418 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/кнопки/блеск кубок" itemID="53d049a8-00000099" lastModified="1406159873" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="блеск кубок" currentFrame="3">
+      <layers>
+        <DOMLayer name="луч001 copy 4" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001 copy 8" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-3.21409606933594" b="-1.33610534667969" c="0.265182495117188" d="-0.63787841796875" tx="-36.25" ty="138.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-2.2335205078125" b="-0.928482055664063" c="1.00027465820313" d="-2.40621948242188" tx="-94.6" ty="280"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-2.0087890625" b="-0.835067749023438" c="0.265182495117188" d="-0.63787841796875" tx="-35.75" ty="139.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001 copy 6" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.440628051757813" b="-3.03466796875" c="1.49514770507813" d="0.217117309570313" tx="-121.8" ty="6.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.50115966796875" b="-3.44451904296875" c="0.683624267578125" d="0.0994720458984375" tx="-57" ty="15.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.355560302734375" b="-2.44378662109375" c="0.683624267578125" d="0.0994720458984375" tx="-57.05" ty="16.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.362472534179688" b="-2.49130249023438" c="2.57872009277344" d="0.375213623046875" tx="-208.1" ty="-5.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.440628051757813" b="-3.03466796875" c="1.49514770507813" d="0.217117309570313" tx="-121.8" ty="6.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.4" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001 copy 7" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.691055297851563" b="3.41156005859375" c="-0.677078247070313" d="-0.13714599609375" tx="48" ty="50.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-1.02262878417969" b="5.04850769042969" c="-2.55401611328125" d="-0.517364501953125" tx="197.5" ty="81.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.691055297851563" b="3.41156005859375" c="-0.677078247070313" d="-0.13714599609375" tx="48" ty="50.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001 copy 5" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="2.58377075195313" b="-2.33244323730469" c="0.462905883789063" d="0.512802124023438" tx="-52" ty="-106.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="2.58377075195313" b="-2.33244323730469" c="0.462905883789063" d="0.512802124023438" tx="-52" ty="-106.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="2.58377075195313" b="-2.33244323730469" c="1.74613952636719" d="1.934326171875" tx="-154.25" ty="-219.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="2.5782470703125" b="-2.329833984375" c="0.6455078125" d="0.714324951171875" tx="-66.4" ty="-122.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001 copy" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.793212890625" b="2.97740173339844" c="-1.5269775390625" d="0.91961669921875" tx="134.8" ty="-126.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.79486083984375" b="2.982421875" c="-0.5919189453125" d="0.356216430664063" tx="60.2" ty="-81.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="6" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.79486083984375" b="2.982421875" c="-0.5919189453125" d="0.356216430664063" tx="60.2" ty="-81.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.79486083984375" b="2.982421875" c="-2.2327880859375" d="1.34368896484375" tx="190.95" ty="-160.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/луч" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.793212890625" b="2.97740173339844" c="-1.5269775390625" d="0.91961669921875" tx="134.8" ty="-126.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.35" y="10.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001 copy 3" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001 copy 2" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="луч001" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#FF800A" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="сфера1" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" tweenType="shape" keyMode="17922">
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="-18.15625, #0.DB" startPointB="-18.15625, #0.DB" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="1">
+                    <MorphCurves controlPointA="-18.15625, -7.28125" anchorPointA="#FFFFF3.97, #FFFFF2.F9" controlPointB="-18.15625, -7.28125" anchorPointB="#FFFFF3.97, #FFFFF2.F9"/>
+                    <MorphCurves controlPointA="-6.6796875, #FFFFED.3E" anchorPointA="#1.74, #FFFFED.3E" controlPointB="-6.6796875, #FFFFED.3E" anchorPointB="#1.74, #FFFFED.3E"/>
+                    <MorphCurves controlPointA="#9.93, #FFFFED.3E" anchorPointA="#F.52, #FFFFF2.F9" controlPointB="#9.93, #FFFFED.3E" anchorPointB="#F.52, #FFFFF2.F9"/>
+                    <MorphCurves controlPointA="#15.11, -7.28125" anchorPointA="#15.11, #0.DB" controlPointB="#15.11, -7.28125" anchorPointB="#15.11, #0.DB"/>
+                    <MorphCurves controlPointA="#15.11, #8.F8" anchorPointA="#F.52, #E.B7" controlPointB="#15.11, #8.F8" anchorPointB="#F.52, #E.B7"/>
+                    <MorphCurves controlPointA="#9.93, #14.78" anchorPointA="#1.74, #14.78" controlPointB="#9.93, #14.78" anchorPointB="#1.74, #14.78"/>
+                    <MorphCurves controlPointA="-6.6796875, #14.78" anchorPointA="#FFFFF3.97, #E.B7" controlPointB="-6.6796875, #14.78" anchorPointB="#FFFFF3.97, #E.B7"/>
+                    <MorphCurves controlPointA="-18.15625, #8.F8" anchorPointA="-18.15625, #0.DB" controlPointB="-18.15625, #8.F8" anchorPointB="-18.15625, #0.DB"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.308868408203125" d="0.308868408203125" tx="18.6" ty="10.95"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.2" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0" ratio="0.67843137254902"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!3922 -3335[5393 -1864 5393 219!5393 219[5393 2296 3922 3767!3922 3767[2451 5240 372 5240!372 5240[-1710 5240 -3177 3767!-3177 3767[-4648 2296 -4648 219!-4648 219[-4648 -1864 -3177 -3335!-3177 -3335[-1710 -4802 372 -4802!372 -4802[2451
+ -4802 3922 -3335"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="7" tweenType="shape" keyMode="17922">
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="-18.15625, #0.DB" startPointB="-18.15625, #0.DB" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="1">
+                    <MorphCurves controlPointA="-18.15625, -7.28125" anchorPointA="#FFFFF3.97, #FFFFF2.F9" controlPointB="-18.15625, -7.28125" anchorPointB="#FFFFF3.97, #FFFFF2.F9"/>
+                    <MorphCurves controlPointA="-6.6796875, #FFFFED.3E" anchorPointA="#1.74, #FFFFED.3E" controlPointB="-6.6796875, #FFFFED.3E" anchorPointB="#1.74, #FFFFED.3E"/>
+                    <MorphCurves controlPointA="#9.93, #FFFFED.3E" anchorPointA="#F.52, #FFFFF2.F9" controlPointB="#9.93, #FFFFED.3E" anchorPointB="#F.52, #FFFFF2.F9"/>
+                    <MorphCurves controlPointA="#15.11, -7.28125" anchorPointA="#15.11, #0.DB" controlPointB="#15.11, -7.28125" anchorPointB="#15.11, #0.DB"/>
+                    <MorphCurves controlPointA="#15.11, #8.F8" anchorPointA="#F.52, #E.B7" controlPointB="#15.11, #8.F8" anchorPointB="#F.52, #E.B7"/>
+                    <MorphCurves controlPointA="#9.93, #14.78" anchorPointA="#1.74, #14.78" controlPointB="#9.93, #14.78" anchorPointB="#1.74, #14.78"/>
+                    <MorphCurves controlPointA="-6.6796875, #14.78" anchorPointA="#FFFFF3.97, #E.B7" controlPointB="-6.6796875, #14.78" anchorPointB="#FFFFF3.97, #E.B7"/>
+                    <MorphCurves controlPointA="-18.15625, #8.F8" anchorPointA="-18.15625, #0.DB" controlPointB="-18.15625, #8.F8" anchorPointB="-18.15625, #0.DB"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.308868408203125" d="0.308868408203125" tx="18.6" ty="10.95"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.2" ratio="0.486274509803922"/>
+                        <GradientEntry color="#FFFFFF" alpha="0" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!3922 -3335[5393 -1864 5393 219!5393 219[5393 2296 3922 3767!3922 3767[2451 5240 372 5240!372 5240[-1710 5240 -3177 3767!-3177 3767[-4648 2296 -4648 219!-4648 219[-4648 -1864 -3177 -3335!-3177 -3335[-1710 -4802 372 -4802!372 -4802[2451
+ -4802 3922 -3335"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.308868408203125" d="0.308868408203125" tx="18.6" ty="10.95"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.2" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0" ratio="0.67843137254902"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!3922 -3335[5393 -1864 5393 219!5393 219[5393 2296 3922 3767!3922 3767[2451 5240 372 5240!372 5240[-1710 5240 -3177 3767!-3177 3767[-4648 2296 -4648 219!-4648 219[-4648 -1864 -3177 -3335!-3177 -3335[-1710 -4802 372 -4802!372 -4802[2451
+ -4802 3922 -3335"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" locked="true" layerType="guide">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" centerPoint3DY="13.65">
+                  <matrix>
+                    <Matrix tx="1.4" ty="9.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-1.4" y="4.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

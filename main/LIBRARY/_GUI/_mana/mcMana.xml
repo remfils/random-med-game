@@ -1,0 +1,74 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/_mana/mcMana" itemID="53c4fe7d-000001ab" lastModified="1407974794">
+  <timeline>
+    <DOMTimeline name="mcMana">
+      <layers>
+        <DOMLayer name="блеск" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="основа" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="обводка" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#FF800A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFEE00"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!224 -309|-92 -255!-92 -255|-194 -36!-194 -36|-86 -52!-86 -52|-183 122!-183 122|-135 115!-135 115|-215 271!-215 271|6 58!6 58|-54 71!-54 71|131 -108!131 -108|19 -98!19 -98|224 -309"/>
+                    <Edge cubics="!224 -309(;224,-309 -92,-255 -92,-255q224 -309 -92 -255);"/>
+                    <Edge cubics="!-92 -255(;-92,-255 -194,-36 -194,-36q-92 -255 -194 -36);"/>
+                    <Edge cubics="!-194 -36(;-194,-36 -86,-52 -86,-52q-194 -36 -86 -52);"/>
+                    <Edge cubics="!-86 -52(;-86,-52 -183,122 -183,122q-86 -52 -183 122);"/>
+                    <Edge cubics="!-183 122(;-183,122 -135,115 -135,115q-183 122 -135 115);"/>
+                    <Edge cubics="!-135 115(;-135,115 -215,271 -215,271q-135 115 -215 271);"/>
+                    <Edge cubics="!-215 271(;-215,271 6,58 6,58q-215 271 6 58);"/>
+                    <Edge cubics="!6 58(;6,58 -54,71 -54,71q6 58 -54 71);"/>
+                    <Edge cubics="!-54 71(;-54,71 131,-108 131,-108q-54 71 131 -108);"/>
+                    <Edge cubics="!131 -108(;131,-108 19,-98 19,-98q131 -108 19 -98);"/>
+                    <Edge cubics="!19 -98(;19,-98 224,-309 224,-309q19 -98 224 -309);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#4FFFFF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

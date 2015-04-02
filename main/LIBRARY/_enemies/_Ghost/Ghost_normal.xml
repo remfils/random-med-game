@@ -1,0 +1,85 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Ghost/Ghost_normal" itemID="5419fec9-000001b7" lastModified="1410989864" lastUniqueIdentifier="2">
+  <timeline>
+    <DOMTimeline name="Ghost_normal">
+      <layers>
+        <DOMLayer name="hand right" color="#FF0000" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#464646"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!191 -587[209 -592 225 -594!225 -594[259 -598 292 -588!292 -588[324 -578 351 -557!351 -557[367 -543 370 -523!370 -523[318 -595 220 -583!220 -583[147 -574 87 -533!87 -533[48 -506 20 -471!20 -471[11 -460 7 -449!7 -449[8 -464 18 -475!18
+ -475[58 -522 114 -554!114 -554[151 -575 191 -587!22 -484[#FFFFF1.15 #FFFE4C.A1 -60 -455!-60 -455[#FFFFE7.5A #FFFE3C.BB 5 -474!5 -474[13 -481 22 -484!276 -215[287 -173 307 -135!307 -135[326 -100 367 -118!367 -118[401 -132 417 -163!417
+ -163[381 -83 305 -123!305 -123[293 -129 288 -143!288 -143[277 -179 275 -215!275 -215|276 -215!-73 -520[-74 -499 -71 -478!-71 -478[-68.0625 -466.25 -61.5 -455.5!-61.5 -455.5[#FFFFBE.65 #FFFE36.96 -70 -460!-70 -460[-76 -463 -77 -471!-77
+ -471[-82 -495 -81 -522!-81 -522[-80 -545 -68 -560!-68 -560[-71 -540 -73 -520!-17 -290[-41 -232 -85 -188!-85 -188[-140 -133 -188 -190!-188 -190[-211 -216 -207 -252!-207 -252[-203 -240 -199 -221!-199 -221[-195 -204 -183 -191!-183 -191
+[-173 -180 -163 -171!-163 -171[-104 -176 -61 -227!-61 -227[-40 -252 -25 -282!-25 -282[-22 -288 -17 -290"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="mouth" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="main" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/ghost_main" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix c="0.14202880859375" tx="1.45" ty="-19.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="front" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/ghost_back" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix c="0.16375732421875" tx="9.55" ty="-6.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="hand left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/arm" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.796661376953125" b="0.604400634765625" c="-0.604400634765625" d="0.796661376953125" tx="19.7" ty="-15.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

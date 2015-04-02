@@ -1,0 +1,84 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Ghost/Ghost" itemID="5419fe5b-0000019b" linkageExportForAS="true" linkageBaseClass="src.enemy.FlyingEnemy" linkageClassName="Ghost" lastModified="1427389745" lastUniqueIdentifier="5">
+  <timeline>
+    <DOMTimeline name="Ghost">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="9" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" name="attack" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="22" name="death" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" duration="4" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+removeCorpse();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="45" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider001" centerPoint3DY="0.1">
+                  <matrix>
+                    <Matrix a="2.22050476074219" d="1.19888305664063" ty="0.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_normal" centerPoint3DX="-0.55" centerPoint3DY="-14.5">
+                  <matrix>
+                    <Matrix a="0.992019653320313" b="-0.126068115234375" c="0.126068115234375" d="0.992019653320313" tx="-2.5" ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.5" y="-17.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_attack" selected="true" centerPoint3DX="2.4" centerPoint3DY="-12.95">
+                  <matrix>
+                    <Matrix tx="-2" ty="6.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.5" y="-17.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_death" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2" ty="6.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.5" y="-17.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

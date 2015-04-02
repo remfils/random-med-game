@@ -1,0 +1,134 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/SpellSelecButton" itemID="54133284-000000c8" lastModified="1410549341">
+  <timeline>
+    <DOMTimeline name="SpellSelecButton" currentFrame="1">
+      <layers>
+        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.018218994140625" c="-0.011505126953125" d="0" tx="0.05"/>
+                        </matrix>
+                        <GradientEntry alpha="0.149019607843137" ratio="0"/>
+                        <GradientEntry alpha="0.0509803921568627" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor alpha="0.2"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!189 299|-113 299!-113 299|-113 298!-113 298[-171 289 -188 230!-188 230|-188 -199!-188 -199[-190 -294 -89 -298!-89 -298|189 -298"/>
+                    <Edge fillStyle1="1" edges="!189 -298|189 299"/>
+                    <Edge cubics="!-188 -199(;-189,-262 -156,-295 -89,-298q-188 -199Q-190 -294q-89 -298);"/>
+                    <Edge cubics="!-113 299(;-113,299 -113,298 -113,298q-113 299 -113 298);"/>
+                    <Edge cubics="!-113 298(;-152,292 -177,269 -188,230q-113 298Q-171 289q-188 230);"/>
+                    <Edge cubics="!-188 230(;-188,230 -188,-199 -188,-199q-188 230 -188 -199);"/>
+                    <Edge cubics="!189 299(;189,299 -113,299 -113,299q189 299 -113 299);"/>
+                    <Edge cubics="!-89 -298(;-89,-298 189,-298 189,-298q-89 -298 189 -298);"/>
+                    <Edge cubics="!189 -298(189,-298;189,-298 189,299 189,299q189 -298 189 299);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.018218994140625" c="-0.011505126953125" d="0" tx="0.05"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.431372549019608" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0.0470588235294118" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#FFFFFF" alpha="0.988235294117647"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="2" edges="!189 -260|189 -298!189 -298|-89 -298!-89 -298[-190 -294 -188 -199!-188 -199|-188 230!-188 230[-171 289 -113 298!-113 298|-113 299!-113 299|189 299!189 299|189 261"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!189 261|-99 261!-99 261|-99 260!-99 260[-149 252 -164 201!-164 201|-164 -174!-164 -174[-166 -256 -78 -260!-78 -260|189 -260"/>
+                    <Edge fillStyle1="1" edges="!189 -260|189 261"/>
+                    <Edge cubics="!-188 -199(;-189,-262 -156,-295 -89,-298q-188 -199Q-190 -294q-89 -298);"/>
+                    <Edge cubics="!-113 299(;-113,299 -113,298 -113,298q-113 299 -113 298);"/>
+                    <Edge cubics="!-113 298(;-152,292 -177,269 -188,230q-113 298Q-171 289q-188 230);"/>
+                    <Edge cubics="!-188 230(;-188,230 -188,-199 -188,-199q-188 230 -188 -199);"/>
+                    <Edge cubics="!189 299(;189,299 -113,299 -113,299q189 299 -113 299);"/>
+                    <Edge cubics="!-89 -298(;-89,-298 189,-298 189,-298q-89 -298 189 -298);"/>
+                    <Edge cubics="!189 -298(189,-298;189,-298 189,299 189,299q189 -298 189 299);"/>
+                    <Edge cubics="!-164 -174(;-165,-229 -136,-257 -78,-260q-164 -174Q-166 -256q-78 -260);"/>
+                    <Edge cubics="!-99 261(;-99,261 -99,260 -99,260q-99 261 -99 260);"/>
+                    <Edge cubics="!-99 260(;-133,255 -154,235 -164,201q-99 260Q-149 252q-164 201);"/>
+                    <Edge cubics="!-164 201(;-164,201 -164,-174 -164,-174q-164 201 -164 -174);"/>
+                    <Edge cubics="!165 261(;165,261 -99,261 -99,261q165 261 -99 261);"/>
+                    <Edge cubics="!-78 -260(;-78,-260 165,-260 165,-260q-78 -260 165 -260);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.018218994140625" c="-0.011505126953125" d="0" tx="0.05"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.431372549019608" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0.0470588235294118" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor alpha="0.2"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!189 299|-113 299!-113 299|-113 298!-113 298[-171 289 -188 230!-188 230|-188 -199!-188 -199[-190 -294 -89 -298!-89 -298|189 -298"/>
+                    <Edge fillStyle1="1" edges="!189 -298|189 299"/>
+                    <Edge cubics="!-188 -199(;-189,-262 -156,-295 -89,-298q-188 -199Q-190 -294q-89 -298);"/>
+                    <Edge cubics="!-113 299(;-113,299 -113,298 -113,298q-113 299 -113 298);"/>
+                    <Edge cubics="!-113 298(;-152,292 -177,269 -188,230q-113 298Q-171 289q-188 230);"/>
+                    <Edge cubics="!-188 230(;-188,230 -188,-199 -188,-199q-188 230 -188 -199);"/>
+                    <Edge cubics="!189 299(;189,299 -113,299 -113,299q189 299 -113 299);"/>
+                    <Edge cubics="!-89 -298(;-89,-298 189,-298 189,-298q-89 -298 189 -298);"/>
+                    <Edge cubics="!189 -298(189,-298;189,-298 189,299 189,299q189 -298 189 299);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Ghost/arm" itemID="5419fc39-00000172" symbolType="graphic" lastModified="1410989113">
+  <timeline>
+    <DOMTimeline name="arm">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#464646"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!16 -105S6[51 -67 80 -22!80 -22[134 64 95 95!95 95[55 123 -32 68!-32 68[-75 38 -111 5"/>
+                    <Edge fillStyle1="1" edges="!-111 5S2|16 -105"/>
+                    <Edge cubics="!-111 5(;-111,5 16,-105 16,-105q-111 5 16 -105);"/>
+                    <Edge cubics="!95 95(;31,141 -111,5 -111,5q95 95Q55 123q-32 68Q-75 38q-111 5);"/>
+                    <Edge cubics="!16 -105(;16,-105 160,47 95,95q16 -105Q51 -67q80 -22Q134 64q95 95);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

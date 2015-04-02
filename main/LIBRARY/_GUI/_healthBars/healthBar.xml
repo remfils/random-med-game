@@ -1,0 +1,187 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/_healthBars/healthBar" itemID="53b9771c-0000007b" lastModified="1404755544">
+  <timeline>
+    <DOMTimeline name="healthBar">
+      <layers>
+        <DOMLayer name="Layer 4" color="#FF4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#D70000" alpha="0.988235294117647"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#FF6666" alpha="0.988235294117647"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#931F1F" alpha="0.988235294117647"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="2" edges="!850 198|850 10!850 10|15 10"/>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="!15 10|27 27"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!27 27|836 27!836 27|836 179"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="!836 179|27 179!27 179|27 27"/>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="!836 179|850 198"/>
+                    <Edge fillStyle1="3" edges="!850 198|15 198!15 198|15 10"/>
+                    <Edge cubics="!850 10(;850,10 850,198 850,198q850 10 850 198);"/>
+                    <Edge cubics="!15 10(15,10;15,10 850,10 850,10q15 10 850 10);"/>
+                    <Edge cubics="!838 24(;838,24 838,198 838,198q838 24 838 198);"/>
+                    <Edge cubics="!850 198(;850,198 838,198 838,198q850 198 838 198);"/>
+                    <Edge cubics="!15 198(15,198;15,198 15,24 15,24q15 198 15 24);"/>
+                    <Edge cubics="!15 24(;15,24 15,10 15,10q15 24 15 10);"/>
+                    <Edge cubics="!838 198(838,198;838,198 15,198 15,198q838 198 15 198);"/>
+                    <Edge cubics="!15 24(;15,24 838,24 838,24q15 24 838 24);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.6"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#D70000" alpha="0.988235294117647"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!864 208|0 208!0 208|0 0!0 0|864 0!864 0|864 208"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!850 198|15 198!15 198|15 10!15 10|850 10!850 10|850 198"/>
+                    <Edge cubics="!864 0(;864,0 864,208 864,208q864 0 864 208);"/>
+                    <Edge cubics="!0 208(0,208;0,208 0,0 0,0q0 208 0 0);"/>
+                    <Edge cubics="!0 0(0,0;0,0 864,0 864,0q0 0 864 0);"/>
+                    <Edge cubics="!864 208(;864,208 0,208 0,208q864 208 0 208);"/>
+                    <Edge cubics="!850 10(;850,10 850,198 850,198q850 10 850 198);"/>
+                    <Edge cubics="!15 198(15,198;15,198 15,10 15,10q15 198 15 10);"/>
+                    <Edge cubics="!15 10(15,10;15,10 850,10 850,10q15 10 850 10);"/>
+                    <Edge cubics="!850 198(;850,198 15,198 15,198q850 198 15 198);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.6"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#6D0000" alpha="0.301960784313725"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor alpha="0.301960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="3" edges="!462 0|864 0!864 0|864 208!864 208|462 208"/>
+                    <Edge fillStyle1="1" edges="!462 208|0 208!0 208|0 0!0 0|462 0"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="!462 0|462 10"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!462 10|15 10!15 10|15 198!15 198|462 198"/>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="!462 198|462 10"/>
+                    <Edge fillStyle0="1" fillStyle1="3" edges="!462 208|462 198"/>
+                    <Edge cubics="!864 0(;864,0 864,208 864,208q864 0 864 208);"/>
+                    <Edge cubics="!0 208(0,208;0,208 0,0 0,0q0 208 0 0);"/>
+                    <Edge cubics="!850 10(;850,10 850,198 850,198q850 10 850 198);"/>
+                    <Edge cubics="!15 198(15,198;15,198 15,10 15,10q15 198 15 10);"/>
+                    <Edge cubics="!448 10(;448,10 448,0 448,0q448 10 448 0);"/>
+                    <Edge cubics="!448 208(;448,208 448,198 448,198q448 208 448 198);"/>
+                    <Edge cubics="!448 198(448,198;448,198 448,10 448,10q448 198 448 10);"/>
+                    <Edge cubics="!0 0(;0,0 448,0 448,0q0 0 448 0);"/>
+                    <Edge cubics="!15 10(;15,10 448,10 448,10q15 10 448 10);"/>
+                    <Edge cubics="!448 208(;448,208 0,208 0,208q448 208 0 208);"/>
+                    <Edge cubics="!448 198(;448,198 15,198 15,198q448 198 15 198);"/>
+                    <Edge cubics="!448 10(448,10;448,10 850,10 850,10q448 10 850 10);"/>
+                    <Edge cubics="!448 0(448,0;448,0 864,0 864,0q448 0 864 0);"/>
+                    <Edge cubics="!864 208(;864,208 448,208 448,208q864 208 448 208);"/>
+                    <Edge cubics="!850 198(;850,198 448,198 448,198q850 198 448 198);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#6D0000" alpha="0.6"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!864 208|0 208!0 208|0 0!0 0|864 0!864 0|864 208"/>
+                    <Edge cubics="!864 0(;864,0 864,208 864,208q864 0 864 208);"/>
+                    <Edge cubics="!0 208(0,208;0,208 0,0 0,0q0 208 0 0);"/>
+                    <Edge cubics="!0 0(0,0;0,0 864,0 864,0q0 0 864 0);"/>
+                    <Edge cubics="!864 208(;864,208 0,208 0,208q864 208 0 208);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#6D0000" alpha="0.6"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor alpha="0.301960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="2" edges="!462 0|864 0!864 0|864 208!864 208|462 208"/>
+                    <Edge fillStyle1="1" edges="!462 208|0 208!0 208|0 0!0 0|462 0"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!462 0|462 208"/>
+                    <Edge cubics="!864 0(;864,0 864,208 864,208q864 0 864 208);"/>
+                    <Edge cubics="!0 208(0,208;0,208 0,0 0,0q0 208 0 0);"/>
+                    <Edge cubics="!448 208(;448,208 448,0 448,0q448 208 448 0);"/>
+                    <Edge cubics="!448 208(;448,208 0,208 0,208q448 208 0 208);"/>
+                    <Edge cubics="!0 0(;0,0 448,0 448,0q0 0 448 0);"/>
+                    <Edge cubics="!864 208(;864,208 448,208 448,208q864 208 448 208);"/>
+                    <Edge cubics="!448 0(;448,0 864,0 864,0q448 0 864 0);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#FF800A" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.501960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!848 249|-30 249!-30 249|-30 10!-30 10|0 10!0 10|0 208!0 208|848 208!848 208|848 249"/>
+                    <Edge cubics="!848 208(;848,208 848,226 848,226q848 208 848 226);"/>
+                    <Edge cubics="!0 10(;0,10 0,208 0,208q0 10 0 208);"/>
+                    <Edge cubics="!0 208(;0,208 848,208 848,208q0 208 848 208);"/>
+                    <Edge cubics="!-30 249(;-30,249 -30,10 -30,10q-30 249 -30 10);"/>
+                    <Edge cubics="!848 226(;848,226 -30,249 -30,249q848 226 -30 249)-30,249;"/>
+                    <Edge cubics="!-30 10(;-30,10 0,10 0,10q-30 10 0 10);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,1041 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="750" height="600" frameRate="30" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" rulerVisible="true" timelineLabelWidth="233" viewAngle3D="70.7391536835427" nextSceneIdentifier="6" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <folders>
+          <DOMFolderItem name="_bosses" itemID="5421a1c8-00000102" isExpanded="true"/>
+          <DOMFolderItem name="_bosses/clone" itemID="53ebfd94-000000af"/>
+          <DOMFolderItem name="_bosses/clone/_части тела" itemID="53ebfe9c-00000297"/>
+          <DOMFolderItem name="_bosses/mad" itemID="54956214-000001ff" isExpanded="true"/>
+          <DOMFolderItem name="_bosses/mad/room" itemID="54956219-00000203"/>
+          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103"/>
+          <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104" isExpanded="true"/>
+          <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110"/>
+          <DOMFolderItem name="_enemies/_Ghost" itemID="5419fc21-000000d2"/>
+          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
+          <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
+          <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
+          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
+          <DOMFolderItem name="_GUI/_coins" itemID="53c4f206-00000070"/>
+          <DOMFolderItem name="_GUI/_healthBars" itemID="53c4f20b-00000071"/>
+          <DOMFolderItem name="_GUI/_hearts" itemID="53c4f20e-00000072"/>
+          <DOMFolderItem name="_GUI/_mana" itemID="53c4fe6d-000001a0"/>
+          <DOMFolderItem name="_GUI/_map" itemID="53c4f221-00000078"/>
+          <DOMFolderItem name="_GUI/_spells" itemID="53c4f211-00000073"/>
+          <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
+          <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/door_lock" itemID="54675e4e-000001f3"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/doors" itemID="53af5331-000000b5"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/doors/_graph" itemID="53af52a9-000000a0"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop" itemID="541c84dd-000000c6"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/coin" itemID="546e1575-00000110" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/exit" itemID="5427c13d-000000df"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/health" itemID="5426d98e-00000132" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/mana" itemID="541c84e1-000000ca"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
+          <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
+          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
+          <DOMFolderItem name="_menu/_magesShop" itemID="5470a581-00000125"/>
+          <DOMFolderItem name="_menu/_декорации" itemID="53d01285-000000f1"/>
+          <DOMFolderItem name="_menu/old" itemID="53cc2004-000000a6"/>
+          <DOMFolderItem name="_menu/old/_graph" itemID="53af52ac-000000a1"/>
+          <DOMFolderItem name="_menu/old/кошелек" itemID="53726c72-00000062"/>
+          <DOMFolderItem name="_menu/кнопки" itemID="53ebfe31-00000288"/>
+          <DOMFolderItem name="src" itemID="53afd2e7-00000077"/>
+          <DOMFolderItem name="персонаж" itemID="53775395-0000003e" isExpanded="true"/>
+          <DOMFolderItem name="персонаж/части тела" itemID="537753a6-00000043"/>
+          <DOMFolderItem name="персонаж/части тела/_головы" itemID="53d0124e-000000d3"/>
+          <DOMFolderItem name="персонаж/части тела/_руки" itemID="53d01255-000000d7"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
+          <DOMFontItem name="MagicFont" itemID="54380457-000000e7" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
+     </fonts>
+     <media>
+          <DOMBitmapItem name="_menu/65494423_640.jpg" itemID="53cc1ca2-00000094" sourceExternalFilepath="./LIBRARY/_menu/65494423_640.jpg" sourceLastImported="1405885513" quality="50" href="_menu/65494423_640.jpg" bitmapDataHRef="M 2 1405885602.dat" frameRight="12800" frameBottom="9600" isJPEG="true"/>
+          <DOMBitmapItem name="ghost_monk.jpg" itemID="545e3d3e-0000023a" sourceExternalFilepath="./LIBRARY/ghost_monk.jpg" sourceLastImported="1412596145" externalFileCRC32="2129838963" externalFileSize="1643617" quality="50" href="ghost_monk.jpg" bitmapDataHRef="M 3 1415462206.dat" frameRight="80360" frameBottom="60000" isJPEG="true"/>
+          <DOMBitmapItem name="_bosses/clone/Untitled-1.jpg" itemID="551d3a50-0000012d" sourceExternalFilepath="D:/ПРОЕКТЫ/GAME.RandomMed/Game/main/LIBRARY/_bosses/clone/Untitled-1.jpg" sourceLastImported="1427978743" externalFileCRC32="543492954" externalFileSize="382310" quality="50" href="_bosses/clone/Untitled-1.jpg" bitmapDataHRef="M 4 1407974788.dat" frameRight="32000" frameBottom="32000" isJPEG="true"/>
+     </media>
+     <symbols>
+          <Include href="_bosses/clone/_части тела/воротник.xml" itemIcon="1" loadImmediate="false" itemID="53ec6c02-000000ab" lastModified="1408006550"/>
+          <Include href="_bosses/clone/_части тела/голова.xml" itemIcon="1" loadImmediate="false" itemID="53ebfe0a-000000bf" lastModified="1408003855"/>
+          <Include href="_bosses/clone/_части тела/рука1.xml" itemIcon="1" loadImmediate="false" itemID="53ec7873-0000014b" lastModified="1408015637"/>
+          <Include href="_bosses/clone/_части тела/рука2.xml" itemIcon="1" loadImmediate="false" itemID="53ec78b9-0000014f" lastModified="1408015646"/>
+          <Include href="_bosses/clone/_части тела/тело.xml" itemIcon="1" loadImmediate="false" itemID="53ec6d15-000000b2" lastModified="1408016159"/>
+          <Include href="_bosses/clone/clone001.xml" itemIcon="1" loadImmediate="false" itemID="53ebfdaf-000000b8" lastModified="1408015661"/>
+          <Include href="_bosses/mad/MadBoss.xml" loadImmediate="false" itemID="5498474d-000001ef" lastModified="1419271253"/>
+          <Include href="_bullets/Bombastic.xml" itemID="5433fdf0-000000ed" lastModified="1415871372"/>
+          <Include href="_bullets/BombSpell.xml" itemID="54130caa-000000b3" lastModified="1415869568"/>
+          <Include href="_bullets/spark.xml" itemID="53dbc06b-000000b9" lastModified="1415869589"/>
+          <Include href="_enemies/_EnemyBullet/EnemyBullet.xml" itemID="545f54ee-00000469" lastModified="1415873372"/>
+          <Include href="_enemies/_EnemyBullet/EnemyBullet_death.xml" loadImmediate="false" itemID="54647d16-00000150" lastModified="1415873350"/>
+          <Include href="_enemies/_EnemyBullet/EnemyBullet_normal.xml" loadImmediate="false" itemID="546474eb-0000010a" lastModified="1415871679"/>
+          <Include href="_enemies/_Ghost/arm.xml" itemIcon="1" loadImmediate="false" itemID="5419fc39-00000172" lastModified="1410989113"/>
+          <Include href="_enemies/_Ghost/Ghost.xml" itemID="5419fe5b-0000019b" lastModified="1427389745"/>
+          <Include href="_enemies/_Ghost/Ghost_attack.xml" loadImmediate="false" itemID="5419ff8f-00000271" lastModified="1410989967"/>
+          <Include href="_enemies/_Ghost/ghost_back.xml" itemIcon="1" loadImmediate="false" itemID="5419fc64-0000017d" lastModified="1410989421"/>
+          <Include href="_enemies/_Ghost/Ghost_death.xml" loadImmediate="false" itemID="546487d2-00000176" lastModified="1415874885"/>
+          <Include href="_enemies/_Ghost/ghost_main.xml" itemIcon="1" loadImmediate="false" itemID="5419fc17-000000cb" lastModified="1410989339"/>
+          <Include href="_enemies/_Ghost/Ghost_normal.xml" loadImmediate="false" itemID="5419fec9-000001b7" lastModified="1410989864"/>
+          <Include href="_enemies/_Ghost/mouth.xml" itemIcon="1" loadImmediate="false" itemID="5419fc85-00000181" lastModified="1410989189"/>
+          <Include href="_enemies/_Monk/crystal.xml" itemIcon="1" loadImmediate="false" itemID="545e3ec1-00000243" lastModified="1415520142"/>
+          <Include href="_enemies/_Monk/crystal_deactivated.xml" itemIcon="1" loadImmediate="false" itemID="545f2023-00000131" lastModified="1415521053"/>
+          <Include href="_enemies/_Monk/crystal_shoot.xml" itemIcon="1" loadImmediate="false" itemID="545f2258-00000220" lastModified="1415539551"/>
+          <Include href="_enemies/_Monk/Monk.xml" itemID="545f1fce-00000100" lastModified="1427389765"/>
+          <Include href="_enemies/_Monk/monk_active.xml" loadImmediate="false" itemID="545f1fc4-000000fe" lastModified="1415520206"/>
+          <Include href="_enemies/_Monk/monk_death.xml" loadImmediate="false" itemID="5461bbec-000001f1" lastModified="1415696172"/>
+          <Include href="_enemies/_Monk/monk_normal.xml" loadImmediate="false" itemID="545f2017-00000129" lastModified="1415520786"/>
+          <Include href="_enemies/_Monk/monk_shoot.xml" loadImmediate="false" itemID="545f223b-00000218" lastModified="1415539738"/>
+          <Include href="_enemies/_Rat/parts/arm1.xml" itemIcon="1" loadImmediate="false" itemID="5421b47d-00000131" lastModified="1411495580"/>
+          <Include href="_enemies/_Rat/parts/body.xml" itemIcon="1" loadImmediate="false" itemID="5421a940-0000011d" lastModified="1411495853"/>
+          <Include href="_enemies/_Rat/parts/body top.xml" itemIcon="1" loadImmediate="false" itemID="5454b330-00000126" lastModified="1414837177"/>
+          <Include href="_enemies/_Rat/parts/ear right.xml" itemIcon="1" loadImmediate="false" itemID="5421a705-00000113" lastModified="1411495558"/>
+          <Include href="_enemies/_Rat/parts/head.xml" itemIcon="1" loadImmediate="false" itemID="5421a68f-0000010f" lastModified="1411495556"/>
+          <Include href="_enemies/_Rat/parts/head_down.xml" itemIcon="1" loadImmediate="false" itemID="54453ce4-0000010a" lastModified="1413894136"/>
+          <Include href="_enemies/_Rat/parts/leg1.xml" itemIcon="1" loadImmediate="false" itemID="5421b257-00000127" lastModified="1412347577"/>
+          <Include href="_enemies/_Rat/parts/leg2.xml" itemIcon="1" loadImmediate="false" itemID="5421b319-0000012d" lastModified="1411495586"/>
+          <Include href="_enemies/_Rat/Rat.xml" itemID="5421b6f2-0000014b" lastModified="1427389801"/>
+          <Include href="_enemies/_Rat/rat_attack_down.xml" loadImmediate="false" itemID="545dd03f-0000015f" lastModified="1415434582"/>
+          <Include href="_enemies/_Rat/rat_charge.xml" loadImmediate="false" itemID="542ebd4c-000002df" lastModified="1412352316"/>
+          <Include href="_enemies/_Rat/rat_death.xml" loadImmediate="false" itemID="546489a0-0000036d" lastModified="1415875240"/>
+          <Include href="_enemies/_Rat/rat_default.xml" loadImmediate="false" itemID="5421a554-00000109" lastModified="1411495455"/>
+          <Include href="_enemies/_Rat/rat_stand_down.xml" loadImmediate="false" itemID="5454b48a-0000014d" lastModified="1414837386"/>
+          <Include href="_enemies/_Rat/rat_walk.xml" loadImmediate="false" itemID="5421b830-00000173" lastModified="1412347624"/>
+          <Include href="_enemies/_Rat/rat_walk_002.xml" loadImmediate="false" itemID="542eb3aa-000000ef" lastModified="1412349263"/>
+          <Include href="_enemies/_Rat/rat_walk_down.xml" loadImmediate="false" itemID="5454b48e-0000014e" lastModified="1415094279"/>
+          <Include href="_enemies/enemy_flight_test.xml" itemID="53e9f4e6-000000a2" lastModified="1410990042"/>
+          <Include href="_GUI/_coins/coin.xml" loadImmediate="false" itemID="53af5237-00000097" lastModified="1403998775"/>
+          <Include href="_GUI/_coins/icoCoin.xml" loadImmediate="false" itemID="53cb1a9c-000001a0" lastModified="1416501447"/>
+          <Include href="_GUI/_healthBars/healthBar.xml" loadImmediate="false" itemID="53b9771c-0000007b" lastModified="1404755544"/>
+          <Include href="_GUI/_hearts/heart.xml" itemIcon="1" loadImmediate="false" itemID="53af5367-000000c6" lastModified="1403999079"/>
+          <Include href="_GUI/_hearts/mcHeart.xml" loadImmediate="false" itemID="53c4fddf-00000163" lastModified="1405419472"/>
+          <Include href="_GUI/_hearts/StatHeart.xml" itemID="5417437d-000000b6" lastModified="1411205320"/>
+          <Include href="_GUI/_mana/mcMana.xml" loadImmediate="false" itemID="53c4fe7d-000001ab" lastModified="1407974794"/>
+          <Include href="_GUI/_mana/StatMana.xml" itemID="5417444c-000000b7" lastModified="1411205265"/>
+          <Include href="_GUI/_map/map.xml" itemID="53c4f23d-0000007a" lastModified="1410647007"/>
+          <Include href="_GUI/_spells/spellPic.xml" loadImmediate="false" itemID="53b9b6ff-000000b5" lastModified="1417687537"/>
+          <Include href="_GUI/GameMenuBG.xml" itemID="5419c6f9-000000cb" lastModified="1411909212"/>
+          <Include href="_GUI/icoScore.xml" loadImmediate="false" itemID="53cb1c73-000001aa" lastModified="1411378689"/>
+          <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1421323086"/>
+          <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1407526163"/>
+          <Include href="_GUI/SpellMenu.xml" loadImmediate="false" itemID="541332c6-000000d2" lastModified="1410545813"/>
+          <Include href="_GUI/SpellSelecButton.xml" loadImmediate="false" itemID="54133284-000000c8" lastModified="1410549341"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1427389724"/>
+          <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
+          <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1412066217"/>
+          <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
+          <Include href="_level/_Decorations/знамя.xml" itemIcon="1" loadImmediate="false" itemID="535cfbdb-0000009e" lastModified="1398602812"/>
+          <Include href="_level/_GAME_OBJECTS/chests/chest.xml" loadImmediate="false" itemID="53af531a-000000b4" lastModified="1416500644"/>
+          <Include href="_level/_GAME_OBJECTS/decor/entry_flag.xml" loadImmediate="false" itemID="538b5538-0000004b" lastModified="1401640248"/>
+          <Include href="_level/_GAME_OBJECTS/decor/fire001.xml" loadImmediate="false" itemID="540071c0-000002d5" lastModified="1409316871"/>
+          <Include href="_level/_GAME_OBJECTS/decor/sheild_stars.xml" itemIcon="1" loadImmediate="false" itemID="5400695d-000002ca" lastModified="1409313117"/>
+          <Include href="_level/_GAME_OBJECTS/decor/sheild_stars_3d.xml" itemIcon="1" loadImmediate="false" itemID="54006957-000002c9" lastModified="1409314754"/>
+          <Include href="_level/_GAME_OBJECTS/decor/ShieldStars.xml" itemID="54171c8b-000000b8" lastModified="1415093900"/>
+          <Include href="_level/_GAME_OBJECTS/decor/Torch.xml" itemID="5406f304-000002c9" lastModified="1427389826"/>
+          <Include href="_level/_GAME_OBJECTS/decor/Web.xml" itemID="542a61f6-000000ee" lastModified="1427389846"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/CastleDoorLock.xml" itemID="546765d6-0000024f" lastModified="1427389879"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/chain_front.xml" itemIcon="1" loadImmediate="false" itemID="546760fa-00000216" lastModified="1416061328"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/chain_side.xml" itemIcon="1" loadImmediate="false" itemID="54676102-0000021a" lastModified="1416061186"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/doorLock.xml" itemIcon="1" loadImmediate="false" itemID="54675e3c-000001ec" lastModified="1416074359"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/doorLock_break_key.xml" itemIcon="1" loadImmediate="false" itemID="546c6fd6-0000011a" lastModified="1416394746"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/doorLock_unlock.xml" itemIcon="1" loadImmediate="false" itemID="546c7849-000003f2" lastModified="1416396701"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/keyHolder_top.xml" itemIcon="1" loadImmediate="false" itemID="546c7a81-00000625" lastModified="1416395393"/>
+          <Include href="_level/_GAME_OBJECTS/door_lock/lock.xml" itemIcon="1" loadImmediate="false" itemID="54676231-00000238" lastModified="1416074425"/>
+          <Include href="_level/_GAME_OBJECTS/doors/_graph/дверь.xml" itemIcon="1" loadImmediate="false" itemID="535d3e78-000000b5" lastModified="1398623139"/>
+          <Include href="_level/_GAME_OBJECTS/doors/_graph/дверь_основа.xml" loadImmediate="false" itemID="53afdf9d-0000008b" lastModified="1405870176"/>
+          <Include href="_level/_GAME_OBJECTS/doors/_graph/дверь1.xml" itemIcon="1" loadImmediate="false" itemID="535d4967-00000023" lastModified="1398622587"/>
+          <Include href="_level/_GAME_OBJECTS/doors/carpet.xml" loadImmediate="false" itemID="54215ead-000000e3" lastModified="1411473225"/>
+          <Include href="_level/_GAME_OBJECTS/doors/door.xml" itemID="53af5266-0000009a" lastModified="1412076571"/>
+          <Include href="_level/_GAME_OBJECTS/doors/doorEntrance.xml" loadImmediate="false" itemID="5421853a-000000ef" lastModified="1411482954"/>
+          <Include href="_level/_GAME_OBJECTS/drop/coin/coin_gr.xml" itemIcon="1" loadImmediate="false" itemID="546e1616-00000123" lastModified="1416505967"/>
+          <Include href="_level/_GAME_OBJECTS/drop/coin/DropCoin.xml" itemID="546e158d-00000121" lastModified="1416502307"/>
+          <Include href="_level/_GAME_OBJECTS/drop/exit/Exit.xml" itemID="5427c19d-000000e1" lastModified="1415093999"/>
+          <Include href="_level/_GAME_OBJECTS/drop/health/default.xml" loadImmediate="false" itemID="5426da07-000002da" lastModified="1415094028"/>
+          <Include href="_level/_GAME_OBJECTS/drop/health/drop.xml" loadImmediate="false" itemID="5426da8f-00000546" lastModified="1416502057"/>
+          <Include href="_level/_GAME_OBJECTS/drop/health/DropHP.xml" itemID="5426d982-0000012c" lastModified="1416502054"/>
+          <Include href="_level/_GAME_OBJECTS/drop/mana/default.xml" loadImmediate="false" itemID="541c850d-000000d6" lastModified="1415097254"/>
+          <Include href="_level/_GAME_OBJECTS/drop/mana/drop.xml" loadImmediate="false" itemID="541c857c-00000197" lastModified="1411155324"/>
+          <Include href="_level/_GAME_OBJECTS/drop/mana/DropMana.xml" itemID="541b4d37-000003ce" lastModified="1415094050"/>
+          <Include href="_level/_GAME_OBJECTS/keys/CastleKey.xml" itemID="5467322a-000001af" lastModified="1427389897"/>
+          <Include href="_level/_GAME_OBJECTS/keys/key_gr.xml" itemIcon="1" loadImmediate="false" itemID="54673214-000001ad" lastModified="1416049172"/>
+          <Include href="_level/_GAME_OBJECTS/keys/key_gr_appear.xml" itemIcon="1" loadImmediate="false" itemID="546c702b-00000136" lastModified="1416392838"/>
+          <Include href="_level/_GAME_OBJECTS/keys/key_gr_keyHolder.xml" itemIcon="1" loadImmediate="false" itemID="546c79be-0000051c" lastModified="1416395301"/>
+          <Include href="_level/_GAME_OBJECTS/keys/key_gr_part1.xml" itemIcon="1" loadImmediate="false" itemID="546c71f9-0000025d" lastModified="1416393361"/>
+          <Include href="_level/_GAME_OBJECTS/keys/key_gr_part2.xml" itemIcon="1" loadImmediate="false" itemID="546c7201-00000270" lastModified="1416393314"/>
+          <Include href="_level/_GAME_OBJECTS/keys/key_gr_staff.xml" itemIcon="1" loadImmediate="false" itemID="546c7a10-00000623" lastModified="1416395292"/>
+          <Include href="_level/_GAME_OBJECTS/keys/tintObj.xml" loadImmediate="false" itemID="54673303-000001db" lastModified="1416049412"/>
+          <Include href="_level/_GAME_OBJECTS/levers/_graph/base.xml" loadImmediate="false" itemID="54215b71-000000c9" lastModified="1411472241"/>
+          <Include href="_level/_GAME_OBJECTS/levers/_graph/ручка_0.5.xml" loadImmediate="false" itemID="53b6c199-000000a9" lastModified="1404486146"/>
+          <Include href="_level/_GAME_OBJECTS/levers/_graph/ручка_0.5_2.xml" loadImmediate="false" itemID="53b6c1a7-000000ad" lastModified="1404486127"/>
+          <Include href="_level/_GAME_OBJECTS/levers/_graph/шестеренка.xml" itemIcon="1" loadImmediate="false" itemID="537771a8-000000e2" lastModified="1405870990"/>
+          <Include href="_level/_GAME_OBJECTS/levers/Lever.xml" itemID="540741fa-0000028b" lastModified="1427389911"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemID="5406cba1-000002bd" lastModified="1427979249"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop.xml" itemIcon="1" loadImmediate="false" itemID="541aeeed-000002fd" lastModified="1411051268"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/part001.xml" itemIcon="1" loadImmediate="false" itemID="541aefb9-00000312" lastModified="1411051449"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart.xml" itemIcon="1" loadImmediate="false" itemID="541af728-0000034a" lastModified="1411053352"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Box.xml" itemID="545e00f5-00000225" lastModified="1427979249"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Stone.xml" itemID="542fd1c8-000000e4" lastModified="1427979249"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Vase.xml" itemID="54142a25-000000ef" lastModified="1427979249"/>
+          <Include href="_level/_GAME_OBJECTS/scrolls/scroll.xml" itemIcon="1" loadImmediate="false" itemID="53af534c-000000bd" lastModified="1403999052"/>
+          <Include href="_level/_Helpers/стена.xml" itemIcon="1" loadImmediate="false" itemID="535cf702-00000059" lastModified="1398601475"/>
+          <Include href="_level/пропасть001.xml" itemIcon="1" loadImmediate="false" itemID="53771b08-0000003d" lastModified="1412063639"/>
+          <Include href="_level/уровень001_colors.xml" itemIcon="1" loadImmediate="false" itemID="53e803a8-000000a5" lastModified="1407714671"/>
+          <Include href="_menu/_magesShop/demo.xml" itemIcon="1" loadImmediate="false" itemID="54748794-00000194" lastModified="1416926722"/>
+          <Include href="_menu/_magesShop/ItemIco.xml" itemID="5474a8d9-000001bd" lastModified="1416932419"/>
+          <Include href="_menu/_magesShop/itemPanell.xml" itemIcon="1" loadImmediate="false" itemID="5471a488-00000121" lastModified="1416733832"/>
+          <Include href="_menu/_magesShop/ItemPlaceHolder.xml" itemID="5479ed57-0000011d" lastModified="1417869038"/>
+          <Include href="_menu/_magesShop/mageDrawing.xml" itemIcon="1" loadImmediate="false" itemID="5471a476-0000011c" lastModified="1416735574"/>
+          <Include href="_menu/_magesShop/MageShopItem.xml" itemID="5479f0be-0000012d" lastModified="1418123035"/>
+          <Include href="_menu/_magesShop/MagesShop.xml" itemID="54748e1d-000001ac" lastModified="1417872846"/>
+          <Include href="_menu/_magesShop/magesShop_bg.xml" itemIcon="1" loadImmediate="false" itemID="5470a53f-0000011f" lastModified="1416733923"/>
+          <Include href="_menu/_magesShop/scrollBar.xml" itemIcon="1" loadImmediate="false" itemID="5470b8a9-000001e0" lastModified="1416673597"/>
+          <Include href="_menu/_magesShop/scrollBtn.xml" itemIcon="0" itemID="5470b7ad-000001c6" lastModified="1416923365"/>
+          <Include href="_menu/_декорации/дерево001.xml" itemIcon="1" loadImmediate="false" itemID="53cc2571-000000cc" lastModified="1406145072"/>
+          <Include href="_menu/_декорации/дерево002.xml" itemIcon="1" loadImmediate="false" itemID="53cc49d0-00000094" lastModified="1406145080"/>
+          <Include href="_menu/_декорации/дерево003.xml" itemIcon="1" loadImmediate="false" itemID="53cc4cf0-000000a8" lastModified="1406145080"/>
+          <Include href="_menu/_декорации/дерево004.xml" itemIcon="1" loadImmediate="false" itemID="53cd953a-00000081" lastModified="1406145080"/>
+          <Include href="_menu/_декорации/куст001.xml" itemIcon="1" loadImmediate="false" itemID="53ce77f3-00000083" lastModified="1406145080"/>
+          <Include href="_menu/_декорации/куст002.xml" itemIcon="1" loadImmediate="false" itemID="53ce7899-0000008c" lastModified="1406145080"/>
+          <Include href="_menu/MenuBackground.xml" itemID="53fb055a-000000ad" lastModified="1416668556"/>
+          <Include href="_menu/old/_graph/1_пользователь.xml" itemIcon="1" loadImmediate="false" itemID="536628fe-00000031" lastModified="1399206049"/>
+          <Include href="_menu/old/_graph/2_папка.xml" itemIcon="1" loadImmediate="false" itemID="53af5209-00000095" lastModified="1403998729"/>
+          <Include href="_menu/old/_graph/листы_на_фоне.xml" itemIcon="1" loadImmediate="false" itemID="536fc7cb-00000025" lastModified="1400071113"/>
+          <Include href="_menu/old/_graph/печать.xml" itemIcon="1" loadImmediate="false" itemID="53662ab8-00000035" lastModified="1399204599"/>
+          <Include href="_menu/old/icoLeve002.xml" itemIcon="0" loadImmediate="false" itemID="53d05b79-00000121" lastModified="1407580136"/>
+          <Include href="_menu/old/map_1_1.xml" itemIcon="0" loadImmediate="false" itemID="53af53a2-000000d2" lastModified="1406163322"/>
+          <Include href="_menu/old/кошелек/3_кошелек.xml" itemIcon="1" loadImmediate="false" itemID="53727608-00000110" lastModified="1400012550"/>
+          <Include href="_menu/old/кошелек/дырки.xml" itemIcon="1" loadImmediate="false" itemID="53727891-00000118" lastModified="1400010897"/>
+          <Include href="_menu/old/область меню.xml" itemIcon="1" loadImmediate="false" itemID="53662869-0000002d" lastModified="1405451587"/>
+          <Include href="_menu/star.xml" itemID="53e56300-000000a2" lastModified="1407544023"/>
+          <Include href="_menu/кнопки/genericLevelButon.xml" itemID="53e6318d-000000a7" lastModified="1407594893"/>
+          <Include href="_menu/кнопки/GotoAchievementsButton.xml" itemIcon="0" itemID="53fb0a0e-000000c1" lastModified="1408962269"/>
+          <Include href="_menu/кнопки/GotoLevelsButton.xml" itemIcon="0" itemID="53fb09d7-000000bf" lastModified="1408962273"/>
+          <Include href="_menu/кнопки/GotoShopButton.xml" itemIcon="0" itemID="53fb0e1b-00000199" lastModified="1408962212"/>
+          <Include href="_menu/кнопки/map default.xml" itemIcon="1" loadImmediate="false" itemID="53d012f7-000000ff" lastModified="1406155613"/>
+          <Include href="_menu/кнопки/PaintedArrow.xml" itemID="53fb3fdc-00000260" lastModified="1408974823"/>
+          <Include href="_menu/кнопки/TabletButton.xml" itemIcon="0" itemID="53fb3e67-00000258" lastModified="1408974873"/>
+          <Include href="_menu/кнопки/блеск.xml" loadImmediate="false" itemID="53d053e8-000000f1" lastModified="1406161896"/>
+          <Include href="_menu/кнопки/блеск кубок.xml" loadImmediate="false" itemID="53d049a8-00000099" lastModified="1406159873"/>
+          <Include href="_menu/кнопки/кубок.xml" loadImmediate="false" itemID="53d03d49-00000095" lastModified="1406157011"/>
+          <Include href="_menu/кнопки/луч.xml" itemIcon="1" loadImmediate="false" itemID="53d01cdc-0000012e" lastModified="1406147811"/>
+          <Include href="_menu/кнопки/луч анимация.xml" itemIcon="1" loadImmediate="false" itemID="53d01cfd-00000132" lastModified="1406148460"/>
+          <Include href="_menu/кнопки/сундук.xml" loadImmediate="false" itemID="53d030e5-00000219" lastModified="1406155462"/>
+          <Include href="_menu/название игры.xml" itemIcon="1" loadImmediate="false" itemID="53d0448d-000000b4" lastModified="1416138485"/>
+          <Include href="bolt.xml" itemIcon="1" loadImmediate="false" itemID="5498517e-0000025e" lastModified="1419268478"/>
+          <Include href="MagicWall.xml" loadImmediate="false" itemID="54985b97-00000298" lastModified="1419271397"/>
+          <Include href="spike.xml" itemIcon="1" loadImmediate="false" itemID="54984796-000001f4" lastModified="1419268257"/>
+          <Include href="SpikePlane.xml" loadImmediate="false" itemID="54984f3e-0000023b" lastModified="1419268125"/>
+          <Include href="src/collider.xml" itemID="53afd0c0-0000005a" lastModified="1411158086"/>
+          <Include href="src/player.xml" itemID="537cc6a6-00000053" lastModified="1411903663"/>
+          <Include href="персонаж/player_down.xml" loadImmediate="false" itemID="53c7024c-0000007b" lastModified="1405789808"/>
+          <Include href="персонаж/player_end.xml" loadImmediate="false" itemID="5427ee3a-000002d3" lastModified="1411903630"/>
+          <Include href="персонаж/stand_north.xml" loadImmediate="false" itemID="5380ffc7-000001dc" lastModified="1400963050"/>
+          <Include href="персонаж/персонаж_В.xml" loadImmediate="false" itemID="53771581-00000036" lastModified="1400686438"/>
+          <Include href="персонаж/персонаж_верх.xml" loadImmediate="false" itemID="53cad4d9-0000029c" lastModified="1406063461"/>
+          <Include href="персонаж/персонаж_лево.xml" loadImmediate="false" itemID="53cc2cd2-00000176" lastModified="1406062561"/>
+          <Include href="персонаж/персонаж_право.xml" loadImmediate="false" itemID="53cad1ac-0000019a" lastModified="1406062568"/>
+          <Include href="персонаж/персонаж_хотьба_верх.xml" loadImmediate="false" itemID="53ced3c2-000001ee" lastModified="1406063936"/>
+          <Include href="персонаж/персонаж_хотьба_лево.xml" loadImmediate="false" itemID="53cc2ce1-00000177" lastModified="1406919223"/>
+          <Include href="персонаж/персонаж_хотьба_низ.xml" loadImmediate="false" itemID="53ceb9d6-0000009c" lastModified="1406062460"/>
+          <Include href="персонаж/персонаж_хотьба_право.xml" loadImmediate="false" itemID="53cc2ef0-000002cb" lastModified="1406062539"/>
+          <Include href="персонаж/персонаж_Ю.xml" loadImmediate="false" itemID="5374ede9-00000089" lastModified="1406062468"/>
+          <Include href="персонаж/хотьба_В.xml" loadImmediate="false" itemID="53775309-0000003a" lastModified="1400686185"/>
+          <Include href="персонаж/хотьба_С.xml" loadImmediate="false" itemID="53776bb0-0000004a" lastModified="1400686215"/>
+          <Include href="персонаж/хотьба_Ю.xml" loadImmediate="false" itemID="53776bce-00000055" lastModified="1405551853"/>
+          <Include href="персонаж/хотьба_Ю2.xml" loadImmediate="false" itemID="53ca9fc3-000000db" lastModified="1405788624"/>
+          <Include href="персонаж/части тела/_головы/голова_В.xml" itemIcon="1" loadImmediate="false" itemID="537753f0-00000050" lastModified="1405453824"/>
+          <Include href="персонаж/части тела/_головы/голова_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad4e2-000002a0" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/_головы/голова_вниз.xml" itemIcon="1" loadImmediate="false" itemID="53c7026a-00000083" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/_головы/голова_вниз_выс.xml" itemIcon="1" loadImmediate="false" itemID="53caab08-000000de" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/_головы/голова_право.xml" itemIcon="1" loadImmediate="false" itemID="53cabfa5-000000f3" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/_головы/голова_С.xml" itemIcon="1" loadImmediate="false" itemID="537755f1-000000a8" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/_головы/голова_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776bed-00000057" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/_головы/шляпа.xml" itemIcon="1" loadImmediate="false" itemID="53ced55c-00000305" lastModified="1406145091"/>
+          <Include href="персонаж/части тела/_головы/шляпа_верх.xml" itemIcon="1" loadImmediate="false" itemID="53d0068c-000000b6" lastModified="1406145091"/>
+          <Include href="персонаж/части тела/_головы/шляпа_влево.xml" itemIcon="1" loadImmediate="false" itemID="53d00a38-000000bf" lastModified="1406145091"/>
+          <Include href="персонаж/части тела/_руки/рука1.xml" itemIcon="1" loadImmediate="false" itemID="53cc285b-00000103" lastModified="1406145091"/>
+          <Include href="персонаж/части тела/_руки/рука2.xml" itemIcon="1" loadImmediate="false" itemID="53cc286b-0000010b" lastModified="1406145091"/>
+          <Include href="персонаж/части тела/_руки/рука3.xml" itemIcon="1" loadImmediate="false" itemID="53cc28ce-0000010d" lastModified="1406145091"/>
+          <Include href="персонаж/части тела/нога_В.xml" itemIcon="1" loadImmediate="false" itemID="53775411-00000059" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/нога_С.xml" itemIcon="1" loadImmediate="false" itemID="537755a5-0000008b" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/нога2.xml" itemIcon="1" loadImmediate="false" itemID="537755c9-00000092" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/нога2_В.xml" itemIcon="1" loadImmediate="false" itemID="5377541c-0000005d" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/плечи_С.xml" itemIcon="1" loadImmediate="false" itemID="5377560b-000000ad" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/посох.xml" itemIcon="1" loadImmediate="false" itemID="53ca9df9-00000074" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/рука.xml" itemIcon="1" loadImmediate="false" itemID="537753af-00000045" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/ручка.xml" itemIcon="1" loadImmediate="false" itemID="53777229-000000ec" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_В.xml" itemIcon="1" loadImmediate="false" itemID="537753bb-00000049" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad5e5-000002a8" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_лево_2.xml" itemIcon="1" loadImmediate="false" itemID="53cac5bf-0000018a" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_С.xml" itemIcon="1" loadImmediate="false" itemID="53775598-00000087" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_хотьба_лево.xml" itemIcon="1" loadImmediate="false" itemID="53cc2bbe-00000153" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776c15-00000062" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_Ю2.xml" itemIcon="1" loadImmediate="false" itemID="53ca9c87-0000006c" lastModified="1406145125"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="start_menu">
+               <layers>
+                    <DOMLayer name="actions" color="#4FFF4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="main" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <swatchLists>
+          <swatchList>
+               <swatches>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#003300" hue="80" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#006600" hue="80" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009900" hue="80" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC00" hue="80" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330000" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#333300" hue="40" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#336600" hue="60" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#339900" hue="67" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#33CC00" hue="70" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#33FF00" hue="72" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#660000" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663300" hue="20" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#666600" hue="40" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#669900" hue="53" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#66CC00" hue="60" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#66FF00" hue="64" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#333333" brightness="48"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000033" hue="160" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#003333" hue="120" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#006633" hue="100" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009933" hue="93" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC33" hue="90" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF33" hue="88" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330033" hue="200" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#333333" brightness="48"/>
+                    <SolidSwatchItem color="#336633" hue="80" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#339933" hue="80" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC33" hue="80" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF33" hue="80" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660033" hue="220" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663333" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#666633" hue="40" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#669933" hue="60" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#66CC33" hue="67" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#66FF33" hue="70" saturation="239" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#666666" brightness="96"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000066" hue="160" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#003366" hue="140" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#006666" hue="120" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#009966" hue="107" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC66" hue="100" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF66" hue="96" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330066" hue="180" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#333366" hue="160" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#336666" hue="120" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#339966" hue="100" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC66" hue="93" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF66" hue="90" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660066" hue="200" saturation="239" brightness="48"/>
+                    <SolidSwatchItem color="#663366" hue="200" saturation="80" brightness="72"/>
+                    <SolidSwatchItem color="#666666" brightness="96"/>
+                    <SolidSwatchItem color="#669966" hue="80" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#66CC66" hue="80" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FF66" hue="80" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#999999" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#000099" hue="160" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#003399" hue="147" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#006699" hue="133" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#009999" hue="120" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#00CC99" hue="110" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FF99" hue="104" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#330099" hue="173" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#333399" hue="160" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#336699" hue="140" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#339999" hue="120" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#33CC99" hue="107" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FF99" hue="100" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#660099" hue="187" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#663399" hue="180" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#666699" hue="160" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#669999" hue="120" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#66CC99" hue="100" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FF99" hue="93" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000CC" hue="160" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0033CC" hue="150" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0066CC" hue="140" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#0099CC" hue="130" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00CCCC" hue="120" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#00FFCC" hue="112" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3300CC" hue="170" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#3333CC" hue="160" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#3366CC" hue="147" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#3399CC" hue="133" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33CCCC" hue="120" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#33FFCC" hue="110" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6600CC" hue="180" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#6633CC" hue="173" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#6666CC" hue="160" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#6699CC" hue="140" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66CCCC" hue="120" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#66FFCC" hue="107" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0033FF" hue="152" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0066FF" hue="144" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#0099FF" hue="136" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#00CCFF" hue="128" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3300FF" hue="168" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#3333FF" hue="160" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#3366FF" hue="150" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#3399FF" hue="140" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#33CCFF" hue="130" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#33FFFF" hue="120" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6600FF" hue="176" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#6633FF" hue="170" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#6666FF" hue="160" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#6699FF" hue="147" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#66CCFF" hue="133" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#66FFFF" hue="120" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990000" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993300" hue="13" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#996600" hue="27" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#999900" hue="40" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#99CC00" hue="50" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#99FF00" hue="56" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#CC0000" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3300" hue="10" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC6600" hue="20" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC9900" hue="30" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CCCC00" hue="40" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CCFF00" hue="48" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3300" hue="8" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF6600" hue="16" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF9900" hue="24" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFCC00" hue="32" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990033" hue="227" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993333" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996633" hue="20" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#999933" hue="40" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#99CC33" hue="53" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#99FF33" hue="60" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#CC0033" hue="230" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3333" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6633" hue="13" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC9933" hue="27" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CCCC33" hue="40" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CCFF33" hue="50" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF0033" hue="232" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3333" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6633" hue="10" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF9933" hue="20" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FFCC33" hue="30" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FFFF33" hue="40" saturation="239" brightness="144"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990066" hue="213" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993366" hue="220" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996666" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#999966" hue="40" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#99CC66" hue="60" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#99FF66" hue="67" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#CC0066" hue="220" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3366" hue="227" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6666" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC9966" hue="20" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CCCC66" hue="40" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CCFF66" hue="53" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF0066" hue="224" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3366" hue="230" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6666" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF9966" hue="13" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FFCC66" hue="27" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FFFF66" hue="40" saturation="239" brightness="168"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#990099" hue="200" saturation="239" brightness="72"/>
+                    <SolidSwatchItem color="#993399" hue="200" saturation="120" brightness="96"/>
+                    <SolidSwatchItem color="#996699" hue="200" saturation="48" brightness="120"/>
+                    <SolidSwatchItem color="#999999" brightness="144"/>
+                    <SolidSwatchItem color="#99CC99" hue="80" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99FF99" hue="80" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC0099" hue="210" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC3399" hue="213" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC6699" hue="220" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC9999" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCCC99" hue="40" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCFF99" hue="60" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FF0099" hue="216" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF3399" hue="220" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF6699" hue="227" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF9999" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCC99" hue="20" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFFF99" hue="40" saturation="239" brightness="192"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#9900CC" hue="190" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#9933CC" hue="187" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#9966CC" hue="180" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#9999CC" hue="160" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99CCCC" hue="120" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#99FFCC" hue="100" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC00CC" hue="200" saturation="239" brightness="96"/>
+                    <SolidSwatchItem color="#CC33CC" hue="200" saturation="144" brightness="120"/>
+                    <SolidSwatchItem color="#CC66CC" hue="200" saturation="120" brightness="144"/>
+                    <SolidSwatchItem color="#CC99CC" hue="200" saturation="80" brightness="168"/>
+                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
+                    <SolidSwatchItem color="#CCFFCC" hue="80" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FF00CC" hue="208" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF33CC" hue="210" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF66CC" hue="213" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF99CC" hue="220" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCCCC" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FFFFCC" hue="40" saturation="239" brightness="216"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
+                    <SolidSwatchItem/>
+                    <SolidSwatchItem color="#9900FF" hue="184" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#9933FF" hue="180" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#9966FF" hue="173" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#9999FF" hue="160" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#99CCFF" hue="140" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#99FFFF" hue="120" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CC00FF" hue="192" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#CC33FF" hue="190" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#CC66FF" hue="187" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#CC99FF" hue="180" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#CCCCFF" hue="160" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#CCFFFF" hue="120" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF33FF" hue="200" saturation="239" brightness="144"/>
+                    <SolidSwatchItem color="#FF66FF" hue="200" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#FF99FF" hue="200" saturation="239" brightness="192"/>
+                    <SolidSwatchItem color="#FFCCFF" hue="200" saturation="239" brightness="216"/>
+                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
+                    <SolidSwatchItem color="#CDCDCD" brightness="193"/>
+                    <SolidSwatchItem color="#342917" hue="25" saturation="91" brightness="36"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#B7B7B7" brightness="172"/>
+                    <SolidSwatchItem color="#5F3C19" hue="20" saturation="138" brightness="57"/>
+                    <SolidSwatchItem color="#422911" hue="20" saturation="142" brightness="39"/>
+                    <SolidSwatchItem color="#482D13" hue="19" saturation="140" brightness="43"/>
+                    <SolidSwatchItem color="#46301C" hue="19" saturation="104" brightness="46"/>
+                    <SolidSwatchItem color="#322000" hue="26" saturation="239" brightness="24"/>
+                    <SolidSwatchItem color="#4D4D4D" brightness="72"/>
+                    <SolidSwatchItem color="#FFF9D0" hue="35" saturation="239" brightness="218"/>
+                    <SolidSwatchItem color="#E7D348" hue="35" saturation="183" brightness="143"/>
+                    <SolidSwatchItem color="#FFECDB" hue="19" saturation="239" brightness="223"/>
+                    <SolidSwatchItem alpha="0.4"/>
+                    <SolidSwatchItem color="#666666" alpha="0.0862745098039216" brightness="96"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem color="#C2C2C2" alpha="0.0862745098039216" brightness="183"/>
+                    <SolidSwatchItem color="#E0DBD0" hue="27" saturation="49" brightness="204"/>
+                    <SolidSwatchItem color="#C2BDB2" hue="27" saturation="28" brightness="176"/>
+                    <SolidSwatchItem color="#EEEADF" hue="29" saturation="73" brightness="217"/>
+                    <SolidSwatchItem color="#EEE9DF" hue="26" saturation="73" brightness="217"/>
+                    <SolidSwatchItem color="#DED8CD" hue="25" saturation="49" brightness="201"/>
+                    <SolidSwatchItem color="#BFB9AC" hue="27" saturation="31" brightness="171"/>
+                    <SolidSwatchItem color="#D0CABF" hue="25" saturation="37" brightness="188"/>
+                    <SolidSwatchItem color="#7E7A72" hue="27" saturation="13" brightness="113"/>
+                    <SolidSwatchItem color="#A6A095" hue="28" saturation="21" brightness="148"/>
+                    <SolidSwatchItem color="#432E00" hue="27" saturation="239" brightness="32"/>
+                    <SolidSwatchItem color="#D7C292" hue="28" saturation="111" brightness="170"/>
+                    <SolidSwatchItem color="#5D2900" hue="18" saturation="239" brightness="44"/>
+                    <SolidSwatchItem color="#CDC7BA" hue="27" saturation="39" brightness="184"/>
+                    <SolidSwatchItem color="#B19D74" hue="27" saturation="68" brightness="138"/>
+                    <SolidSwatchItem color="#947C53" hue="26" saturation="67" brightness="109"/>
+                    <SolidSwatchItem color="#947D53" hue="26" saturation="67" brightness="109"/>
+                    <SolidSwatchItem color="#856C43" hue="25" saturation="79" brightness="94"/>
+                    <SolidSwatchItem color="#937B52" hue="26" saturation="68" brightness="108"/>
+                    <SolidSwatchItem color="#003507" alpha="0.6" hue="86" saturation="239" brightness="25"/>
+                    <SolidSwatchItem color="#C9B679" hue="30" saturation="102" brightness="152"/>
+                    <SolidSwatchItem color="#DBC16A" hue="31" saturation="146" brightness="153"/>
+                    <SolidSwatchItem color="#917D5F" hue="25" saturation="50" brightness="113"/>
+                    <SolidSwatchItem color="#EADFCB" hue="26" saturation="101" brightness="206"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem color="#666666" alpha="0.0862745098039216" brightness="96"/>
+                    <SolidSwatchItem color="#C2C2C2" alpha="0.0862745098039216" brightness="183"/>
+                    <SolidSwatchItem alpha="0.2"/>
+                    <SolidSwatchItem color="#4D0000" saturation="239" brightness="36"/>
+                    <SolidSwatchItem color="#101010" brightness="15"/>
+                    <SolidSwatchItem color="#B6B6B6" brightness="171"/>
+                    <SolidSwatchItem color="#9C9C9C" brightness="147"/>
+                    <SolidSwatchItem color="#3A2600" hue="26" saturation="239" brightness="28"/>
+                    <SolidSwatchItem color="#F3D2AB" hue="22" saturation="181" brightness="195"/>
+                    <SolidSwatchItem color="#526C77" hue="132" saturation="44" brightness="95"/>
+                    <SolidSwatchItem color="#6376C2" hue="152" saturation="106" brightness="138"/>
+                    <SolidSwatchItem color="#110F8E" hue="161" saturation="195" brightness="74"/>
+                    <SolidSwatchItem color="#705207" hue="29" saturation="210" brightness="56"/>
+                    <SolidSwatchItem color="#4D3907" hue="29" saturation="197" brightness="40"/>
+                    <SolidSwatchItem color="#9A7519" hue="29" saturation="172" brightness="85"/>
+                    <SolidSwatchItem color="#E0D8CB" hue="24" saturation="62" brightness="201"/>
+                    <SolidSwatchItem color="#6182B9" hue="145" saturation="93" brightness="133"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.0862745098039216" brightness="240"/>
+                    <SolidSwatchItem color="#523D08" hue="28" saturation="195" brightness="43"/>
+                    <SolidSwatchItem color="#564826" hue="29" saturation="92" brightness="59"/>
+                    <SolidSwatchItem color="#9C8417" hue="33" saturation="178" brightness="85"/>
+                    <SolidSwatchItem color="#70490F" hue="24" saturation="184" brightness="60"/>
+                    <SolidSwatchItem color="#A8A8A8" brightness="158"/>
+                    <SolidSwatchItem color="#563616" hue="20" saturation="141" brightness="51"/>
+                    <SolidSwatchItem color="#482F00" hue="26" saturation="239" brightness="34"/>
+                    <SolidSwatchItem color="#C4C4C4" brightness="184"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#C2C2C2" brightness="183"/>
+                    <SolidSwatchItem color="#666565" saturation="1" brightness="96"/>
+                    <SolidSwatchItem color="#E9CF51" hue="33" saturation="186" brightness="148"/>
+                    <SolidSwatchItem color="#E98B51" hue="15" saturation="186" brightness="148"/>
+                    <SolidSwatchItem alpha="0.498039215686275"/>
+                    <SolidSwatchItem color="#5085FA" hue="148" saturation="226" brightness="155"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem color="#FFD598" hue="24" saturation="239" brightness="192"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#BDBDBD" brightness="178"/>
+                    <SolidSwatchItem color="#DBDBDB" brightness="206"/>
+                    <SolidSwatchItem color="#F0F0F0" brightness="226"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#930D0D" saturation="202" brightness="75"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#A81414" saturation="188" brightness="89"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#FF7E00" hue="20" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#93740D" hue="31" saturation="202" brightness="75"/>
+                    <SolidSwatchItem color="#ECC134" hue="31" saturation="199" brightness="136"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#573716" hue="20" saturation="142" brightness="52"/>
+                    <SolidSwatchItem color="#614222" hue="20" saturation="115" brightness="62"/>
+                    <SolidSwatchItem color="#989898" alpha="0.0470588235294118" brightness="143"/>
+                    <SolidSwatchItem color="#D0AD0D" hue="33" saturation="212" brightness="104"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#352D20" hue="24" saturation="60" brightness="40"/>
+                    <SolidSwatchItem color="#D2CEBD" hue="32" saturation="46" brightness="188"/>
+                    <SolidSwatchItem color="#ECE2BC" hue="32" saturation="133" brightness="200"/>
+                    <SolidSwatchItem color="#807D70" hue="35" saturation="16" brightness="113"/>
+                    <SolidSwatchItem color="#764C19" hue="22" saturation="155" brightness="68"/>
+                    <SolidSwatchItem color="#7B7B7B" brightness="116"/>
+                    <SolidSwatchItem color="#148023" hue="86" saturation="174" brightness="70"/>
+                    <SolidSwatchItem color="#3B4834" hue="65" saturation="39" brightness="59"/>
+                    <SolidSwatchItem color="#3B4930" hue="62" saturation="51" brightness="57"/>
+                    <SolidSwatchItem color="#403A2A" hue="30" saturation="48" brightness="50"/>
+                    <SolidSwatchItem color="#50472A" hue="31" saturation="73" brightness="58"/>
+                    <SolidSwatchItem color="#474127" hue="32" saturation="69" brightness="52"/>
+                    <SolidSwatchItem color="#433D2D" hue="29" saturation="48" brightness="53"/>
+                    <SolidSwatchItem color="#374826" hue="60" saturation="74" brightness="52"/>
+                    <SolidSwatchItem color="#4C5E2A" hue="53" saturation="90" brightness="64"/>
+                    <SolidSwatchItem color="#4E633C" hue="62" saturation="60" brightness="75"/>
+                    <SolidSwatchItem color="#637744" hue="56" saturation="65" brightness="88"/>
+                    <SolidSwatchItem color="#413C29" hue="31" saturation="53" brightness="50"/>
+                    <SolidSwatchItem color="#4D4634" hue="30" saturation="46" brightness="61"/>
+                    <SolidSwatchItem color="#574F3A" hue="28" saturation="47" brightness="69"/>
+                    <SolidSwatchItem color="#574F3A" hue="28" saturation="47" brightness="69"/>
+                    <SolidSwatchItem color="#574F3A" hue="28" saturation="47" brightness="69"/>
+                    <SolidSwatchItem color="#574F3A" hue="28" saturation="47" brightness="69"/>
+                    <SolidSwatchItem color="#574F3A" hue="28" saturation="47" brightness="69"/>
+                    <SolidSwatchItem color="#574F3A" hue="28" saturation="47" brightness="69"/>
+                    <SolidSwatchItem color="#574F3A" hue="28" saturation="47" brightness="69"/>
+                    <SolidSwatchItem color="#4C4734" hue="31" saturation="46" brightness="61"/>
+                    <SolidSwatchItem color="#5B6B50" hue="63" saturation="35" brightness="88"/>
+                    <SolidSwatchItem color="#3D543A" hue="77" saturation="43" brightness="67"/>
+                    <SolidSwatchItem color="#5D7C41" hue="61" saturation="76" brightness="89"/>
+                    <SolidSwatchItem color="#5F7C42" hue="60" saturation="74" brightness="90"/>
+                    <SolidSwatchItem color="#708E4E" hue="59" saturation="71" brightness="104"/>
+                    <SolidSwatchItem color="#5A6B34" hue="52" saturation="83" brightness="75"/>
+                    <SolidSwatchItem color="#3F5023" hue="55" saturation="93" brightness="54"/>
+                    <SolidSwatchItem color="#4F6127" hue="53" saturation="101" brightness="64"/>
+                    <SolidSwatchItem color="#4A5B24" hue="52" saturation="104" brightness="60"/>
+                    <SolidSwatchItem color="#54692E" hue="54" saturation="95" brightness="71"/>
+                    <SolidSwatchItem color="#475C24" hue="55" saturation="105" brightness="61"/>
+                    <SolidSwatchItem color="#556D31" hue="56" saturation="92" brightness="75"/>
+                    <SolidSwatchItem color="#536527" hue="52" saturation="105" brightness="66"/>
+                    <SolidSwatchItem color="#596E2B" hue="53" saturation="107" brightness="72"/>
+                    <SolidSwatchItem color="#516327" hue="52" saturation="103" brightness="65"/>
+                    <SolidSwatchItem color="#627C1B" hue="51" saturation="155" brightness="71"/>
+                    <SolidSwatchItem color="#516715" hue="51" saturation="158" brightness="59"/>
+                    <SolidSwatchItem color="#2F4310" hue="56" saturation="148" brightness="39"/>
+                    <SolidSwatchItem color="#3E520A" hue="51" saturation="190" brightness="43"/>
+                    <SolidSwatchItem color="#3B4717" hue="50" saturation="121" brightness="45"/>
+                    <SolidSwatchItem color="#48560B" hue="47" saturation="187" brightness="46"/>
+                    <SolidSwatchItem color="#727C40" hue="47" saturation="77" brightness="89"/>
+                    <SolidSwatchItem color="#2F430E" hue="55" saturation="158" brightness="38"/>
+                    <SolidSwatchItem color="#384809" hue="50" saturation="189" brightness="38"/>
+                    <SolidSwatchItem color="#354914" hue="55" saturation="136" brightness="44"/>
+                    <SolidSwatchItem color="#3C510C" hue="52" saturation="179" brightness="44"/>
+                    <SolidSwatchItem color="#5F7534" hue="54" saturation="92" brightness="80"/>
+                    <SolidSwatchItem color="#6A8538" hue="54" saturation="97" brightness="89"/>
+                    <SolidSwatchItem color="#596C3F" hue="57" saturation="64" brightness="81"/>
+                    <SolidSwatchItem color="#4F6234" hue="57" saturation="73" brightness="71"/>
+                    <SolidSwatchItem color="#678873" hue="94" saturation="33" brightness="113"/>
+                    <SolidSwatchItem color="#789167" hue="64" saturation="40" brightness="117"/>
+                    <SolidSwatchItem color="#485A28" hue="55" saturation="92" brightness="62"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.498039215686275" brightness="240"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#D7C576" hue="33" saturation="131" brightness="157"/>
+                    <SolidSwatchItem color="#939393" brightness="138"/>
+                    <SolidSwatchItem color="#3C2F0D" hue="29" saturation="155" brightness="34"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.0862745098039216" brightness="240"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.2" brightness="240"/>
+                    <SolidSwatchItem color="#D7D7D7" brightness="202"/>
+                    <SolidSwatchItem color="#919191" brightness="136"/>
+                    <SolidSwatchItem color="#AAAAAA" brightness="160"/>
+                    <SolidSwatchItem color="#855E01" hue="28" saturation="236" brightness="63"/>
+                    <SolidSwatchItem color="#6A3900" hue="22" saturation="239" brightness="50"/>
+                    <SolidSwatchItem color="#502B00" hue="21" saturation="239" brightness="38"/>
+                    <SolidSwatchItem color="#341A00" hue="20" saturation="239" brightness="25"/>
+                    <SolidSwatchItem color="#3F2100" hue="21" saturation="239" brightness="30"/>
+                    <SolidSwatchItem color="#593100" hue="22" saturation="239" brightness="42"/>
+                    <SolidSwatchItem color="#BBA947" hue="34" saturation="110" brightness="122"/>
+                    <SolidSwatchItem color="#ECDE91" hue="34" saturation="169" brightness="179"/>
+                    <SolidSwatchItem color="#918336" hue="34" saturation="109" brightness="94"/>
+                    <SolidSwatchItem color="#C4B875" hue="34" saturation="95" brightness="147"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#BAA846" hue="34" saturation="109" brightness="121"/>
+                    <SolidSwatchItem color="#E5D371" hue="34" saturation="167" brightness="161"/>
+                    <SolidSwatchItem color="#E2D272" hue="34" saturation="159" brightness="160"/>
+                    <SolidSwatchItem color="#4F2300" hue="18" saturation="239" brightness="37"/>
+                    <SolidSwatchItem color="#A80101" saturation="237" brightness="80"/>
+                    <SolidSwatchItem color="#639F5B" hue="76" saturation="65" brightness="118"/>
+                    <SolidSwatchItem color="#3057B1" hue="148" saturation="138" brightness="106"/>
+                    <SolidSwatchItem color="#568C4F" hue="75" saturation="68" brightness="103"/>
+                    <SolidSwatchItem color="#D2BC60" hue="32" saturation="135" brightness="144"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.0862745098039216" brightness="240"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem color="#F0D685" hue="30" saturation="188" brightness="176"/>
+                    <SolidSwatchItem color="#D40D0D" saturation="213" brightness="106"/>
+                    <SolidSwatchItem color="#BBBBBB" brightness="176"/>
+                    <SolidSwatchItem color="#197FD9" hue="139" saturation="189" brightness="114"/>
+                    <SolidSwatchItem color="#414141" brightness="61"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.298039215686275" brightness="240"/>
+                    <SolidSwatchItem color="#B4FFF8" hue="116" saturation="239" brightness="205"/>
+                    <SolidSwatchItem color="#004FFF" hue="148" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.0862745098039216" brightness="240"/>
+                    <SolidSwatchItem color="#C6C6C6" brightness="186"/>
+                    <SolidSwatchItem color="#FFFCE9" hue="34" saturation="239" brightness="230"/>
+                    <SolidSwatchItem color="#E4D62D" hue="37" saturation="186" brightness="129"/>
+                    <SolidSwatchItem color="#ECD3B6" hue="22" saturation="141" brightness="197"/>
+                    <SolidSwatchItem color="#3F085C" hue="186" saturation="200" brightness="48"/>
+                    <SolidSwatchItem color="#2C2C27" hue="40" saturation="12" brightness="39"/>
+                    <SolidSwatchItem color="#72350E" hue="16" saturation="188" brightness="60"/>
+                    <SolidSwatchItem color="#5F2D0E" hue="15" saturation="179" brightness="51"/>
+                    <SolidSwatchItem color="#331705" hue="16" saturation="195" brightness="27"/>
+                    <SolidSwatchItem color="#808080" brightness="120"/>
+                    <SolidSwatchItem color="#CCC59F" hue="33" saturation="73" brightness="171"/>
+                    <SolidSwatchItem color="#FFA800" alpha="0.498039215686275" hue="26" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFFC00" alpha="0.8" hue="40" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF0000" alpha="0.6" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#D0D0D0" brightness="196"/>
+                    <SolidSwatchItem color="#AF9966" hue="28" saturation="76" brightness="131"/>
+                    <SolidSwatchItem color="#612807" hue="15" saturation="206" brightness="49"/>
+                    <SolidSwatchItem color="#6B3102" hue="18" saturation="231" brightness="52"/>
+                    <SolidSwatchItem color="#D4D4D4" brightness="200"/>
+                    <SolidSwatchItem color="#AFAFAF" brightness="165"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem color="#F7905F" hue="13" saturation="216" brightness="161"/>
+                    <SolidSwatchItem alpha="0.705882352941177"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.0862745098039216" brightness="240"/>
+                    <SolidSwatchItem color="#461F00" hue="18" saturation="239" brightness="33"/>
+                    <SolidSwatchItem color="#58351A" hue="18" saturation="132" brightness="54"/>
+                    <SolidSwatchItem color="#60391A" hue="18" saturation="139" brightness="57"/>
+                    <SolidSwatchItem color="#381800" hue="17" saturation="239" brightness="27"/>
+                    <SolidSwatchItem color="#552701" hue="18" saturation="234" brightness="41"/>
+                    <SolidSwatchItem color="#DBA236" hue="26" saturation="167" brightness="129"/>
+                    <SolidSwatchItem color="#956811" hue="27" saturation="191" brightness="78"/>
+                    <SolidSwatchItem color="#FCDB9D" hue="26" saturation="225" brightness="193"/>
+                    <SolidSwatchItem color="#103FA8" hue="148" saturation="198" brightness="87"/>
+                    <SolidSwatchItem color="#C0EDF0" hue="123" saturation="148" brightness="204"/>
+                    <SolidSwatchItem color="#1773FF" hue="144" saturation="239" brightness="131"/>
+                    <SolidSwatchItem alpha="0.6"/>
+                    <SolidSwatchItem color="#3A443B" hue="85" saturation="18" brightness="60"/>
+                    <SolidSwatchItem color="#BDAEA9" hue="11" saturation="32" brightness="169"/>
+                    <SolidSwatchItem color="#852D2C" hue="1" saturation="121" brightness="83"/>
+                    <SolidSwatchItem color="#4E5B4F" hue="83" saturation="20" brightness="80"/>
+                    <SolidSwatchItem color="#E4CCC8" hue="6" saturation="84" brightness="202"/>
+                    <SolidSwatchItem color="#FFBDBD" saturation="239" brightness="209"/>
+                    <SolidSwatchItem color="#564F46" hue="21" saturation="24" brightness="74"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#BFBFBF" brightness="180"/>
+                    <SolidSwatchItem color="#A3A3A3" brightness="153"/>
+                    <SolidSwatchItem color="#006BFF" hue="143" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FFE000" hue="35" saturation="239" brightness="120"/>
+                    <SolidSwatchItem color="#FF0038" hue="231" saturation="239" brightness="120"/>
+                    <SolidSwatchItem alpha="0.298039215686275"/>
+                    <SolidSwatchItem color="#B68180" hue="1" saturation="65" brightness="146"/>
+                    <SolidSwatchItem color="#646A50" hue="50" saturation="34" brightness="88"/>
+                    <SolidSwatchItem color="#2A1609" hue="16" saturation="160" brightness="24"/>
+                    <SolidSwatchItem color="#381B09" hue="15" saturation="177" brightness="31"/>
+                    <SolidSwatchItem color="#5F1C00" hue="12" saturation="239" brightness="45"/>
+                    <SolidSwatchItem color="#4F1700" hue="12" saturation="239" brightness="37"/>
+                    <SolidSwatchItem color="#79B385" hue="88" saturation="65" brightness="141"/>
+                    <SolidSwatchItem color="#3D8F4D" hue="88" saturation="98" brightness="96"/>
+                    <SolidSwatchItem color="#268138" hue="88" saturation="130" brightness="79"/>
+                    <SolidSwatchItem color="#086F1D" hue="88" saturation="206" brightness="56"/>
+                    <SolidSwatchItem color="#015B13" hue="88" saturation="234" brightness="44"/>
+                    <SolidSwatchItem color="#004A0F" hue="88" saturation="239" brightness="35"/>
+                    <SolidSwatchItem color="#005010" hue="88" saturation="239" brightness="38"/>
+                    <SolidSwatchItem color="#015C13" hue="88" saturation="235" brightness="44"/>
+                    <SolidSwatchItem color="#0B701F" hue="88" saturation="198" brightness="58"/>
+                    <SolidSwatchItem color="#015D13" hue="88" saturation="235" brightness="45"/>
+                    <SolidSwatchItem color="#278139" hue="88" saturation="128" brightness="79"/>
+                    <SolidSwatchItem color="#5CA26A" hue="88" saturation="65" brightness="120"/>
+                    <SolidSwatchItem color="#429252" hue="88" saturation="90" brightness="100"/>
+                    <SolidSwatchItem color="#59A068" hue="88" saturation="68" brightness="118"/>
+                    <SolidSwatchItem color="#60A46E" hue="89" saturation="65" brightness="122"/>
+                    <SolidSwatchItem color="#62A570" hue="88" saturation="65" brightness="124"/>
+                    <SolidSwatchItem color="#5BA16A" hue="89" saturation="67" brightness="119"/>
+                    <SolidSwatchItem color="#5DA26B" hue="88" saturation="64" brightness="120"/>
+                    <SolidSwatchItem color="#439353" hue="88" saturation="90" brightness="101"/>
+                    <SolidSwatchItem color="#227E34" hue="88" saturation="138" brightness="76"/>
+                    <SolidSwatchItem color="#29833B" hue="88" saturation="124" brightness="81"/>
+                    <SolidSwatchItem color="#368B47" hue="88" saturation="105" brightness="91"/>
+                    <SolidSwatchItem color="#127425" hue="88" saturation="175" brightness="63"/>
+                    <SolidSwatchItem color="#66A773" hue="88" saturation="64" brightness="127"/>
+                    <SolidSwatchItem color="#449354" hue="88" saturation="88" brightness="101"/>
+                    <SolidSwatchItem color="#3B8E4C" hue="88" saturation="99" brightness="95"/>
+                    <SolidSwatchItem color="#388B48" hue="88" saturation="102" brightness="92"/>
+                    <SolidSwatchItem color="#338944" hue="88" saturation="110" brightness="89"/>
+                    <SolidSwatchItem color="#4B975A" hue="88" saturation="80" brightness="107"/>
+                    <SolidSwatchItem color="#569E65" hue="88" saturation="71" brightness="115"/>
+                    <SolidSwatchItem color="#076E1C" hue="88" saturation="210" brightness="56"/>
+                    <SolidSwatchItem color="#0A6F1E" hue="88" saturation="202" brightness="57"/>
+                    <SolidSwatchItem color="#559D63" hue="88" saturation="72" brightness="114"/>
+                    <SolidSwatchItem color="#4F9A5E" hue="88" saturation="78" brightness="110"/>
+                    <SolidSwatchItem color="#623C39" hue="2" saturation="62" brightness="73"/>
+                    <SolidSwatchItem color="#FCEB76" hue="35" saturation="229" brightness="174"/>
+                    <SolidSwatchItem color="#B8A839" hue="35" saturation="126" brightness="114"/>
+                    <SolidSwatchItem color="#A8A7AF" hue="165" saturation="12" brightness="161"/>
+                    <SolidSwatchItem color="#FCE75A" hue="35" saturation="231" brightness="161"/>
+                    <SolidSwatchItem color="#FFF1AF" hue="33" saturation="239" brightness="203"/>
+                    <SolidSwatchItem color="#D2BD2C" hue="35" saturation="158" brightness="120"/>
+                    <SolidSwatchItem color="#F0E491" hue="35" saturation="183" brightness="181"/>
+                    <SolidSwatchItem color="#F5DA55" hue="33" saturation="214" brightness="156"/>
+                    <SolidSwatchItem color="#F9F0CA" hue="33" saturation="189" brightness="212"/>
+                    <SolidSwatchItem color="#A3913B" hue="33" saturation="111" brightness="105"/>
+                    <SolidSwatchItem color="#F1E194" hue="33" saturation="185" brightness="183"/>
+                    <SolidSwatchItem color="#371800" hue="18" saturation="239" brightness="26"/>
+                    <SolidSwatchItem color="#D9D0B3" hue="31" saturation="80" brightness="186"/>
+                    <SolidSwatchItem alpha="0.8"/>
+                    <SolidSwatchItem color="#3D1A00" hue="17" saturation="239" brightness="29"/>
+                    <SolidSwatchItem color="#20140B" hue="18" saturation="120" brightness="20"/>
+                    <SolidSwatchItem color="#BFA400" hue="34" saturation="239" brightness="90"/>
+                    <SolidSwatchItem color="#E7CE35" hue="35" saturation="188" brightness="134"/>
+                    <SolidSwatchItem color="#8A7600" hue="34" saturation="239" brightness="65"/>
+                    <SolidSwatchItem color="#381800" alpha="0.6" hue="17" saturation="239" brightness="27"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+                    <SolidSwatchItem color="#666156" hue="27" saturation="20" brightness="89"/>
+                    <SolidSwatchItem color="#C2BAA0" hue="30" saturation="53" brightness="167"/>
+                    <SolidSwatchItem color="#870B0B" saturation="205" brightness="69"/>
+                    <SolidSwatchItem color="#FF0000" alpha="0.4" saturation="239" brightness="120"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
+               </swatches>
+          </swatchList>
+     </swatchLists>
+     <extendedSwatchLists>
+          <swatchList>
+               <swatches>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" ratio="0"/>
+                         <GradientEntry ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" ratio="0"/>
+                         <GradientEntry ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FF0000" ratio="0"/>
+                         <GradientEntry ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#00FF00" ratio="0"/>
+                         <GradientEntry ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#0000FF" ratio="0"/>
+                         <GradientEntry ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#0066FD" ratio="0"/>
+                         <GradientEntry color="#FFFFFF" ratio="0.376470588235294"/>
+                         <GradientEntry color="#FFFFFF" ratio="0.47843137254902"/>
+                         <GradientEntry color="#996600" ratio="0.501960784313725"/>
+                         <GradientEntry color="#FFCC00" ratio="0.666666666666667"/>
+                         <GradientEntry color="#FFFFFF" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#FF0000" ratio="0"/>
+                         <GradientEntry color="#FFFF00" ratio="0.164705882352941"/>
+                         <GradientEntry color="#00FF00" ratio="0.364705882352941"/>
+                         <GradientEntry color="#00FFFF" ratio="0.498039215686275"/>
+                         <GradientEntry color="#0000FF" ratio="0.666666666666667"/>
+                         <GradientEntry color="#FF00FF" ratio="0.831372549019608"/>
+                         <GradientEntry color="#FF0000" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#4D3C22" ratio="0"/>
+                         <GradientEntry color="#2C2314" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#7B4A00" ratio="0"/>
+                         <GradientEntry color="#482800" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry alpha="0.2" ratio="0.745098039215686"/>
+                         <GradientEntry color="#FFFFFF" alpha="0.301960784313725" ratio="0.890196078431373"/>
+                         <GradientEntry alpha="0.101960784313725" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry alpha="0.2" ratio="0"/>
+                         <GradientEntry color="#FFFFFF" alpha="0.301960784313725" ratio="0.603921568627451"/>
+                         <GradientEntry alpha="0.101960784313725" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#4D2D05" ratio="0"/>
+                         <GradientEntry color="#311D05" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#D2CDC1" ratio="0"/>
+                         <GradientEntry color="#E0DBD0" ratio="0.0862745098039216"/>
+                         <GradientEntry color="#C4BFB4" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry alpha="0.0509803921568627" ratio="0"/>
+                         <GradientEntry alpha="0.149019607843137" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry alpha="0.2" ratio="0"/>
+                         <GradientEntry color="#FFFFFF" alpha="0.0980392156862745" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" alpha="0.2" ratio="0.486274509803922"/>
+                         <GradientEntry color="#FFFFFF" alpha="0" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" alpha="0.701960784313725" ratio="0.0862745098039216"/>
+                         <GradientEntry color="#FFFFFF" alpha="0.501960784313725" ratio="0.117647058823529"/>
+                         <GradientEntry alpha="0.309803921568627" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#73CD76" ratio="0"/>
+                         <GradientEntry color="#40A344" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry alpha="0.301960784313725" ratio="0"/>
+                         <GradientEntry alpha="0.101960784313725" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#151210" ratio="0"/>
+                         <GradientEntry color="#564F46" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry alpha="0" ratio="0"/>
+                         <GradientEntry ratio="0.486274509803922"/>
+                    </LinearGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#BFBFBF" ratio="0"/>
+                         <GradientEntry color="#838383" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#AFAFAF" ratio="0"/>
+                         <GradientEntry color="#8A8A8A" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" ratio="0.419607843137255"/>
+                         <GradientEntry color="#D9002F" ratio="0.8"/>
+                         <GradientEntry color="#FF4F50" ratio="0.898039215686275"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" ratio="0.388235294117647"/>
+                         <GradientEntry color="#9000FF" ratio="0.8"/>
+                         <GradientEntry color="#EC48FF" ratio="0.898039215686275"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" ratio="0.388235294117647"/>
+                         <GradientEntry color="#9000FF" ratio="0.8"/>
+                         <GradientEntry color="#EC48FF" ratio="0.898039215686275"/>
+                    </RadialGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#AFAFAF" ratio="0"/>
+                         <GradientEntry color="#8A8A8A" ratio="1"/>
+                    </RadialGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry alpha="0" ratio="0"/>
+                         <GradientEntry alpha="0.4" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry alpha="0" ratio="0"/>
+                         <GradientEntry alpha="0.2" ratio="1"/>
+                    </LinearGradientSwatchItem>
+               </swatches>
+          </swatchList>
+     </extendedSwatchLists>
+     <persistentData>
+          <PD n="defaultNewInstanceName" v="button_1"/>
+          <PD n="Mouse Click Event" t="i" v="2"/>
+          <PD n="snippetCounter" t="i" v="2"/>
+     </persistentData>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="620651" publishTime="1427978873"/>
+          <PublishItem publishSize="687124" publishTime="1427471873" publishDebug="true"/>
+          <PublishItem publishSize="687223" publishTime="1427470469" publishDebug="true"/>
+          <PublishItem publishSize="620768" publishTime="1427470424"/>
+          <PublishItem publishSize="620676" publishTime="1427470340"/>
+          <PublishItem publishSize="620813" publishTime="1427470210"/>
+          <PublishItem publishSize="620834" publishTime="1427470100"/>
+          <PublishItem publishSize="687217" publishTime="1421398693" publishDebug="true"/>
+          <PublishItem publishSize="687079" publishTime="1421397677" publishDebug="true"/>
+          <PublishItem publishSize="687191" publishTime="1421395803" publishDebug="true"/>
+          <PublishItem publishSize="687295" publishTime="1421395740" publishDebug="true"/>
+          <PublishItem publishSize="687175" publishTime="1421395682" publishDebug="true"/>
+          <PublishItem publishSize="510524" publishTime="1421395258" publishDebug="true"/>
+          <PublishItem publishSize="687280" publishTime="1421395111" publishDebug="true"/>
+          <PublishItem publishSize="687248" publishTime="1421395025" publishDebug="true"/>
+          <PublishItem publishSize="687150" publishTime="1421394834" publishDebug="true"/>
+          <PublishItem publishSize="687171" publishTime="1421340736" publishDebug="true"/>
+          <PublishItem publishSize="510533" publishTime="1421340712" publishDebug="true"/>
+          <PublishItem publishSize="687173" publishTime="1421340308" publishDebug="true"/>
+          <PublishItem publishSize="687099" publishTime="1421340092" publishDebug="true"/>
+     </publishHistory>
+</DOMDocument>

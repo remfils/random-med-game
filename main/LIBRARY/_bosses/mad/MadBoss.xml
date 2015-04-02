@@ -1,0 +1,581 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/mad/MadBoss" itemID="5498474d-000001ef" lastModified="1419271253" lastUniqueIdentifier="92">
+  <timeline>
+    <DOMTimeline name="MadBoss" currentFrame="14">
+      <layers>
+        <DOMLayer name="spikes" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="SpikePlane" name="spike_plane_1" centerPoint3DX="89" centerPoint3DY="-83.5">
+                  <matrix>
+                    <Matrix tx="89" ty="-83.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="SpikePlane" name="spike_plane_2" centerPoint3DX="281" centerPoint3DY="-83.5">
+                  <matrix>
+                    <Matrix tx="281" ty="-83.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="SpikePlane" name="spike_plane_3" centerPoint3DX="474.5" centerPoint3DY="-83.5">
+                  <matrix>
+                    <Matrix tx="474.5" ty="-83.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="posts" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="-0.10577392578125" b="0.10577392578125" c="-0.10577392578125" d="-0.10577392578125" tx="89.8" ty="-83.4"/>
+                        </matrix>
+                        <GradientEntry color="#3C2400" ratio="0"/>
+                        <GradientEntry color="#482B00" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="-0.106689453125" b="0.106689453125" c="-0.106689453125" d="-0.106689453125" tx="282.25" ty="-83.45"/>
+                        </matrix>
+                        <GradientEntry color="#3C2400" ratio="0"/>
+                        <GradientEntry color="#482B00" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="-0.105545043945313" b="0.105545043945313" c="-0.105545043945313" d="-0.105545043945313" tx="475.15" ty="-83.45"/>
+                        </matrix>
+                        <GradientEntry color="#3C2400" ratio="0"/>
+                        <GradientEntry color="#482B00" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#724400"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="2">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#2C1A00"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="2" edges="!3592 1|0 1!0 1|0 -3339!0 -3339|3 -3339"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!3 -3339|3592 -3339!3592 -3339|3592 1"/>
+                    <Edge strokeStyle="2" edges="!3820 1|3817 1!3817 1|3817 -3339!3817 -3339|3820 -3339"/>
+                    <Edge fillStyle1="2" strokeStyle="1" edges="!3820 -3339|7472 -3339!7472 -3339|7472 1"/>
+                    <Edge fillStyle1="2" strokeStyle="2" edges="!7472 1|3820 1"/>
+                    <Edge fillStyle1="2" edges="!3820 1|3820 -3339"/>
+                    <Edge strokeStyle="2" edges="!7715 1|7712 1!7712 1|7712 -3339!7712 -3339|7715 -3339"/>
+                    <Edge fillStyle1="3" strokeStyle="1" edges="!7715 -3339|11292 -3339"/>
+                    <Edge strokeStyle="1" edges="!11292 -3339|11304 -3339!11304 -3339|11304 1"/>
+                    <Edge strokeStyle="2" edges="!11304 1|11292 1"/>
+                    <Edge fillStyle1="3" strokeStyle="2" edges="!11292 1|7715 1"/>
+                    <Edge fillStyle1="3" edges="!7715 1|7715 -3339!11292 -3339|11292 1"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="barikade" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MagicWall" selected="true" centerPoint3DX="64.8" centerPoint3DY="-201.15">
+                  <matrix>
+                    <Matrix a="0.873397827148438" tx="64.9" ty="-201.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="MagicWall" centerPoint3DX="209.05" centerPoint3DY="-201.15">
+                  <matrix>
+                    <Matrix a="0.738357543945313" tx="209.25" ty="-201.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="MagicWall" centerPoint3DX="354.35" centerPoint3DY="-201.15">
+                  <matrix>
+                    <Matrix a="0.748779296875" tx="354.4" ty="-201.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="MagicWall" centerPoint3DX="499.55" centerPoint3DY="-201.15">
+                  <matrix>
+                    <Matrix a="0.905242919921875" tx="499.55" ty="-201.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="nails" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="182.1" ty="-170.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="182.1" ty="-127.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="182.1" ty="-83.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="182.1" ty="-40.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="182" ty="2.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="188.5" ty="-170.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="188.5" ty="-127.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="188.5" ty="-83.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="188.5" ty="-40.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="188.5" ty="2.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="376.5" ty="-170.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="376.5" ty="-127.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="376.5" ty="-83.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="376.5" ty="-40.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="376.5" ty="2.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="382.9" ty="-170.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="382.9" ty="-127.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="382.9" ty="-83.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="382.9" ty="-40.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="382.9" ty="2.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="567.5" ty="-170.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="567.55" ty="-127.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="567.55" ty="-83.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="567.55" ty="-40.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="567.5" ty="2.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="-3.6" ty="-170.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="-3.6" ty="-127.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="-3.6" ty="-83.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="-3.6" ty="-40.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.444442749023438" d="0.444442749023438" tx="-3.6" ty="2.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="135.6" ty="2.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="89.2" ty="2.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="42.8" ty="2.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="162.45" ty="-170.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="101.65" ty="-170.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="40.85" ty="-170.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="329.5" ty="2.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="282.5" ty="2.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="235.5" ty="2.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="329.5" ty="-170.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="282.5" ty="-170.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="235.5" ty="-170.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="521.35" ty="2.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="475.2" ty="2.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="429.05" ty="2.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="521.35" ty="-170.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="475.2" ty="-170.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="bolt" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0" b="0.444442749023438" c="-0.444442749023438" d="0" tx="429.05" ty="-170.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="metal floor" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#585858"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#252525"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!7603 -3479|11436 -3479!11436 -3479|11436 141!11436 141|7603 141!7603 141|3707 141!3707 141|-143 141!-143 141|-143 -3479!-143 -3479|3707 -3479"/>
+                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!3707 -3479|3707 141"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!3707 -3479|7603 -3479"/>
+                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!7603 -3479|7603 141"/>
+                    <Edge cubics="!7603 -3479(7603,-3479;7603,-3479 7603,141 7603,141q7603 -3479 7603 141);"/>
+                    <Edge cubics="!3707 -3479(3707,-3479;3707,-3479 3707,141 3707,141q3707 -3479 3707 141);"/>
+                    <Edge cubics="!7603 -3479(;7603,-3479 11436,-3479 11436,-3479q7603 -3479 11436 -3479);"/>
+                    <Edge cubics="!3707 -3479(;3707,-3479 7603,-3479 7603,-3479q3707 -3479 7603 -3479);"/>
+                    <Edge cubics="!11436 141(;11436,141 7603,141 7603,141q11436 141 7603 141);"/>
+                    <Edge cubics="!7603 141(;7603,141 3707,141 3707,141q7603 141 3707 141);"/>
+                    <Edge cubics="!-143 -3479(;-143,-3479 3707,-3479 3707,-3479q-143 -3479 3707 -3479);"/>
+                    <Edge cubics="!3707 141(;3707,141 -143,141 -143,141q3707 141 -143 141);"/>
+                    <Edge cubics="!-143 141(;-143,141 -143,-3479 -143,-3479q-143 141 -143 -3479);"/>
+                    <Edge cubics="!11436 -3479(;11436,-3479 11436,141 11436,141q11436 -3479 11436 141);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
