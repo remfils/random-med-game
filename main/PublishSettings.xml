@@ -5,7 +5,7 @@
     <flash>1</flash>
     <projectorWin>0</projectorWin>
     <projectorMac>0</projectorMac>
-    <html>1</html>
+    <html>0</html>
     <gif>0</gif>
     <jpeg>0</jpeg>
     <png>0</png>
@@ -114,6 +114,10 @@
         <rsl-url>http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz</rsl-url>
         <policy-file-url>http://fpdownload.adobe.com/pub/swz/crossdomain.xml</policy-file-url>
         <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
+      </library-path-entry>
+      <library-path-entry>
+        <swc-path>C:\Program Files (x86)\FlashDevelop\FLEX\frameworks\libs</swc-path>
+        <linkage>merge</linkage>
       </library-path-entry>
     </LibraryPath>
     <LibraryVersions>

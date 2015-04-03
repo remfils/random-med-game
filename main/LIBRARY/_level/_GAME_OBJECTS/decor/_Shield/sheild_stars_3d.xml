@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/sheild_stars_3d" itemID="54006957-000002c9" symbolType="graphic" lastModified="1409314754">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/_Shield/sheild_stars_3d" itemID="54006957-000002c9" symbolType="graphic" lastModified="1409314754">
   <timeline>
     <DOMTimeline name="sheild_stars_3d">
       <layers>
@@ -227,8 +227,6 @@
  -2585.5 -812.5!-2585.5 -812.5[#FFF5C6.0C -885.34375 -2856.5 -1093!-2856.5 -1093[#FFF49C.B3 #FFFB88.8F -2970.5 -1190!-2970.5 -1190[#FFF43F.99 #FFFB3B.07 -3044.5 -1250"/>
                     <Edge fillStyle1="2" edges="
 !-3044.5 -1250[#FFF40E.8C #FFFB14.44 -3068.5 -1268.5!-3068.5 -1268.5[#FFF400.43 #FFFB08.3C -3074.5 -1274.5"/>
-                    <Edge fillStyle0="4" fillStyle1="2" strokeStyle="3" edges="
-!-3074.5 -1274.5[#FFF400.62 #FFFB08.3B -3067.5 -1268.5!-3067.5 -1268.5[#FFF40F.8C #FFFB14.44 -3044.5 -1250"/>
                     <Edge fillStyle0="4" fillStyle1="2" strokeStyle="4" edges="
 !618.5 1889.5|326 1632.5!326 1632.5[#FFFF9F.D7 #64E.FE -674 1323!-674 1323[#FFF8D9.28 #2E4.2 -2092.5 359!-2092.5 359[-2349.75 #FFFFEF.9A -2424 -401.5!-2424 -401.5[#FFF673.F3 #FFFE0C.BB -2457 -646.5!-2457 -646.5[-2468.5 #FFFD09.C7 -2481.5
  -787.5!-2481.5 -787.5[#FFF62F.F2 #FFFCA6.B5 -2741 -1059!-2741 -1059[#FFF4E2.4C #FFFB81.EA -2943.5 -1230.5!-2943.5 -1230.5[#FFF474.59 #FFFB28.C7 -2964 -1246!-2964 -1246[#FFF5E0.7E #FFFAFF.EC -2166.5 -1416!-2166.5 -1416[#FFF930.A7 #FFF9EE.79
@@ -241,8 +239,10 @@
                     <Edge fillStyle0="3" fillStyle1="2" strokeStyle="2" edges="
 !1796 -1245[#700.66 #FFFB28.CB 1790.5 -1230.5!1790.5 -1230.5[#6D6.19 #FFFB81.EE 1716.5 -1058!1716.5 -1058[#669.B2 #FFFCA7.B4 1665.5 -786.5!1665.5 -786.5[#689.8D #FFFD09.CA 1749 -646.5!1749 -646.5[1848 #FFFE0C.BF 1904 -400.5!1904 -400.5
 [#84C.33 #FFFFF0.96 2155.5 359!2155.5 359[#88A.1B #2E5.1D 1476 1324!1476 1324[#45F.F #64F.06 712 1633.5!712 1633.5|623 1893.5!623 1893.5|618.5 1889.5"/>
-                    <Edge fillStyle0="4" fillStyle1="3" strokeStyle="3" edges="
-!636.5 1939|618.5 1889.5"/>
+                    <Edge fillStyle0="3" fillStyle1="4" strokeStyle="3" edges="
+!618.5 1889.5|636.5 1939"/>
+                    <Edge fillStyle0="2" fillStyle1="4" strokeStyle="3" edges="
+!-3044.5 -1250[#FFF40F.8C #FFFB14.44 -3067.5 -1268.5!-3067.5 -1268.5[#FFF400.62 #FFFB08.3B -3074.5 -1274.5"/>
                     <Edge cubics="!-758 -1701(;-655,-1702 -536,-1700 -403,-1697q-758 -1701Q-603 -1702q-403 -1697);"/>
                     <Edge cubics="!-1109 -1697(;-980,-1701 -863,-1702 -758,-1701q-1109 -1697Q-915 -1703q-758 -1701);"/>
                     <Edge cubics="!159 -1489(;273,-1464 485,-1412 796,-1335q159 -1489Q330 -1451q796 -1335);"/>

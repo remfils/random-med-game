@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_castle/castleLevel" itemID="53b73308-000000ea" linkageExportForAS="true" linkageClassName="src.levels.CastleLevel" lastModified="1427389724" lastUniqueIdentifier="179">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_castle/castleLevel" itemID="53b73308-000000ea" linkageExportForAS="true" linkageClassName="src.levels.CastleLevel" lastModified="1427981286" lastUniqueIdentifier="179">
   <timeline>
-    <DOMTimeline name="castleLevel" currentFrame="9" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;-448&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="castleLevel" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;-448&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
         <DOMLayer name="flags" color="#FF800A" autoNamed="false">
           <frames>
@@ -30,7 +30,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="exits" color="#9933CC" autoNamed="false" visible="false">
+        <DOMLayer name="exits" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="50" keyMode="9728">
               <elements>
@@ -82,7 +82,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="swpans" color="#4FFF4F" autoNamed="false" visible="false">
+        <DOMLayer name="swpans" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
@@ -101,7 +101,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="colliders" color="#9933CC" autoNamed="false" visible="false">
+        <DOMLayer name="colliders" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="50" keyMode="9728">
               <elements>
@@ -205,11 +205,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="doors" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="doors" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="50" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/door" name="door_up" selected="true" centerPoint3DX="372.95" centerPoint3DY="85.6">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/door" name="door_up" centerPoint3DX="372.95" centerPoint3DY="85.6">
                   <matrix>
                     <Matrix a="1.512451171875" d="1.512451171875" tx="372.8" ty="91.55"/>
                   </matrix>
@@ -511,7 +511,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="floor" color="#9933CC" autoNamed="false">
+        <DOMLayer name="floor" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="50" keyMode="9728">
               <elements>

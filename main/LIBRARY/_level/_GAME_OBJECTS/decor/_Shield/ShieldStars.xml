@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/ShieldStars" itemID="54171c8b-000000b8" linkageExportForAS="true" linkageClassName="ShieldStars" lastModified="1415093900">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/_Shield/ShieldStars" itemID="54171c8b-000000b8" lastModified="1427980003">
   <timeline>
     <DOMTimeline name="ShieldStars">
       <layers>

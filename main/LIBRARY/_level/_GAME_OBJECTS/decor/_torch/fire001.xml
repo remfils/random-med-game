@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/fire001" itemID="540071c0-000002d5" lastModified="1409316871">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/_torch/fire001" itemID="540071c0-000002d5" lastModified="1409316871">
   <timeline>
     <DOMTimeline name="fire001" currentFrame="5">
       <layers>

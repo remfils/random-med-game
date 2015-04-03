@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/Torch" itemID="5406f304-000002c9" linkageExportForAS="true" linkageBaseClass="src.objects.LoopMovieClip" linkageClassName="Torch" lastModified="1427389826">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/_torch/Torch" itemID="5406f304-000002c9" lastModified="1427979999">
   <timeline>
     <DOMTimeline name="Torch">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/fire001" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/_torch/fire001" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.253433227539063" b="-0.067901611328125" c="0.131698608398438" d="0.49151611328125" tx="-17.15" ty="-33.65"/>
                   </matrix>
