@@ -24,7 +24,7 @@
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_torch" itemID="551d3efe-00000161"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/door_lock" itemID="54675e4e-000001f3"/>
@@ -38,8 +38,8 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
           <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
@@ -56,8 +56,8 @@
           <DOMFolderItem name="персонаж/части тела/_руки" itemID="53d01255-000000d7"/>
      </folders>
      <fonts>
-          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
           <DOMFontItem name="MagicFont" itemID="54380457-000000e7" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
+          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
      </fonts>
      <media>
           <DOMBitmapItem name="_menu/65494423_640.jpg" itemID="53cc1ca2-00000094" sourceExternalFilepath="../main/LIBRARY/_menu/65494423_640.jpg" sourceLastImported="1405885513" originalCompressionType="lossless" quality="50" href="_menu/65494423_640.jpg" bitmapDataHRef="M 2 1405885602.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
@@ -178,13 +178,14 @@
           <Include href="_level/_GAME_OBJECTS/levers/_graph/ручка_0.5_2.xml" loadImmediate="false" itemID="53b6c1a7-000000ad" lastModified="1404486127"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/шестеренка.xml" itemIcon="1" loadImmediate="false" itemID="537771a8-000000e2" lastModified="1405870990"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever.xml" itemID="540741fa-0000028b" lastModified="1427389911"/>
-          <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemID="5406cba1-000002bd" lastModified="1427979249"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemIcon="1" loadImmediate="false" itemID="5406cba1-000002bd" lastModified="1428224304"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop.xml" itemIcon="1" loadImmediate="false" itemID="541aeeed-000002fd" lastModified="1411051268"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/part001.xml" itemIcon="1" loadImmediate="false" itemID="541aefb9-00000312" lastModified="1411051449"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart.xml" itemIcon="1" loadImmediate="false" itemID="541af728-0000034a" lastModified="1411053352"/>
-          <Include href="_level/_GAME_OBJECTS/obstacles/Box.xml" itemID="545e00f5-00000225" lastModified="1427979249"/>
-          <Include href="_level/_GAME_OBJECTS/obstacles/Stone.xml" itemID="542fd1c8-000000e4" lastModified="1427979249"/>
-          <Include href="_level/_GAME_OBJECTS/obstacles/Vase.xml" itemID="54142a25-000000ef" lastModified="1427979249"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Box.xml" itemIcon="1" loadImmediate="false" itemID="545e00f5-00000225" lastModified="1428224354"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/ObstacleObject.xml" itemID="5520e82d-0000012b" lastModified="1428224419"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Stone.xml" itemIcon="1" loadImmediate="false" itemID="542fd1c8-000000e4" lastModified="1428224394"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Vase.xml" itemIcon="1" loadImmediate="false" itemID="54142a25-000000ef" lastModified="1428224426"/>
           <Include href="_level/_GAME_OBJECTS/scrolls/scroll.xml" itemIcon="1" loadImmediate="false" itemID="53af534c-000000bd" lastModified="1403999052"/>
           <Include href="_level/_Helpers/стена.xml" itemIcon="1" loadImmediate="false" itemID="535cf702-00000059" lastModified="1398601475"/>
           <Include href="_level/пропасть001.xml" itemIcon="1" loadImmediate="false" itemID="53771b08-0000003d" lastModified="1412063639"/>
@@ -1013,6 +1014,9 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="511094" publishTime="1428224477"/>
+          <PublishItem publishSize="511093" publishTime="1428224443"/>
+          <PublishItem publishSize="511120" publishTime="1428224265"/>
           <PublishItem publishSize="687415" publishTime="1428073157" publishDebug="true"/>
           <PublishItem publishSize="687392" publishTime="1428060302" publishDebug="true"/>
           <PublishItem publishSize="687481" publishTime="1428060187" publishDebug="true"/>
@@ -1030,8 +1034,5 @@
           <PublishItem publishSize="510549" publishTime="1428054673" publishDebug="true"/>
           <PublishItem publishSize="687495" publishTime="1428054115" publishDebug="true"/>
           <PublishItem publishSize="621258" publishTime="1427981098"/>
-          <PublishItem publishSize="621220" publishTime="1427981005"/>
-          <PublishItem publishSize="687516" publishTime="1427980883" publishDebug="true"/>
-          <PublishItem publishSize="621166" publishTime="1427980788"/>
      </publishHistory>
 </DOMDocument>
