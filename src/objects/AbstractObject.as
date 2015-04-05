@@ -3,7 +3,9 @@ package src.objects {
     import Box2D.Dynamics.b2World;
     import fl.motion.Color;
 	import flash.display.MovieClip;
+    import flash.geom.Point;
     import src.Game;
+    import src.util.CreateBodyRequest;
 	
 	/**
      * ...
@@ -18,7 +20,13 @@ package src.objects {
         }
         
         public function requestBodyAt(world:b2World):void {
+            var collider:MovieClip = getChildByName("collider") as MovieClip;
             
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            createBodyRequest.setAsStaticBody();
+            createBodyRequest.setBodyPosition( new Point(x + collider.x, y + collider.y) );
+            
+            game.bodyCreator.add(createBodyRequest);
         }
         
         public function destroy():void {
