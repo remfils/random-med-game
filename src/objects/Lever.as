@@ -44,7 +44,7 @@
         
         override public function update():void {
             if ( active ) {
-                if ( _activeArea.checkObjectCollision( game._player.getCollider()) && game._player.ACTION_PRESSED ) {
+                if ( _activeArea.checkObjectCollision( game.player.getCollider()) && game.player.ACTION_PRESSED ) {
                     dispatchEvent(new Event("GUESS_EVENT"));
                 }
             }

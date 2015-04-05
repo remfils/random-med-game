@@ -50,7 +50,6 @@
         public var MOVE_LEFT:Boolean = false;
         public var MOVE_UP:Boolean = false;
         public var MOVE_DOWN:Boolean = false;
-        public var ACTION_PRESSED:Boolean = false;
         
         // направление персонажа
         public var dir_x:Number;
@@ -144,48 +143,32 @@
             switch (keyCode) {
                 case 37 :
                 case 65 :
-                    setMovement ("west",keyDown);
+                    DIRECTION_CHANGED = true;
+                    MOVE_LEFT = keyDown;
+                    updateDirection();
                     break;
                 case 38 :
                 case 87 :
-                    setMovement ("north",keyDown);
+                    DIRECTION_CHANGED = true;
+                    MOVE_UP = keyDown;
+                    updateDirection();
                     break;
                 case 39 :
                 case 68 :
-                    setMovement ("east",keyDown);
+                    DIRECTION_CHANGED = true;
+                    MOVE_RIGHT = keyDown;
+                    updateDirection();
                     break;
                 case 40 :
                 case 83 :
-                    setMovement ("south",keyDown);
+                    DIRECTION_CHANGED = true;
+                    MOVE_DOWN = keyDown;
+                    updateDirection();
                     break;
                 case 32 :
                     makeHit(2);
                     break;
             }
-        }
-        /**
-         * задает движение персонажа и определяет его направление
-         * @param State куда нажата клавиша
-         * @param max = true если клавиша нажата, false - отжата
-         */
-        public function setMovement(State:String, keyDown:Boolean) {
-            DIRECTION_CHANGED = true;
-            switch (State) {
-                case "east" :
-                    MOVE_RIGHT = keyDown;
-                    break;
-                case "west" :
-                    MOVE_LEFT = keyDown;
-                    break;
-                case "south" :
-                    MOVE_DOWN = keyDown;
-                    break;
-                case "north" :
-                    MOVE_UP = keyDown;
-                    break;
-            }
-            
-            updateDirection();
         }
         
         private function updateDirection():void {

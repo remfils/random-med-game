@@ -92,9 +92,9 @@
         }
         
         private function updateText():void {
-            level_txt.text = String(game._player.LEVEL);
-            money_txt.text = String(game._player.MONEY);
-            exp_txt.text = String(game._player.EXP);
+            level_txt.text = String(game.player.LEVEL);
+            money_txt.text = String(game.player.MONEY);
+            exp_txt.text = String(game.player.EXP);
         }
         
         public function registerDamage (dmg:Number) {

@@ -1,5 +1,7 @@
 package src.objects {
     import Box2D.Dynamics.b2FixtureDef;
+    import flash.display.Graphics;
+    import flash.display.MovieClip;
     import flash.geom.Point;
     import Box2D.Dynamics.b2World;
     import fl.motion.Color;
@@ -14,14 +16,14 @@ package src.objects {
      */
     public class Key extends TaskObject {
         private var playerCollider:Collider;
-        public var _activeArea:Collider;
-        public var _collider:Collider;
+        public var _activeArea:MovieClip;
+        public var _collider:MovieClip;
         
         public function Key() {
             super();
-            _activeArea = getChildByName("activeArea") as Collider;
-            _collider = getChildByName("collider001") as Collider;
-            playerCollider = game._player.getCollider();
+            _activeArea = getChildByName("activeArea") as MovieClip;
+            _collider = getChildByName("collider001") as MovieClip;
+            playerCollider = game.player.getCollider();
         }
         
         override public function update():void {
@@ -35,7 +37,6 @@ package src.objects {
                         gotoAndPlay("hide");
                         active = false;
                         player.holdObject = this;
-                        //player.ACTION_PRESSED = false;
                     }
                 }
             }
@@ -50,7 +51,7 @@ package src.objects {
         public function changePlace():void {
             active = true;
             gotoAndPlay("show");
-            var player:Player = game._player;
+            var player:Player = game.player;
             
             if ( body && parent != player ) {
                 player.addChild(this);

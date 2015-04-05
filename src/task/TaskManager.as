@@ -49,7 +49,7 @@ package src.task {
                     if ( task.makeGuess(answer) ) {
                         tasks.splice(i, 1);
                         
-                        game._player.addToStats({"EXP": task.getExperience()});
+                        game.player.addToStats({"EXP": task.getExperience()});
                         
                         if ( task.room ) {
                             task.room.assignTask( getNextTaskForRoom(task.room) );

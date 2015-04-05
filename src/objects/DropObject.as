@@ -38,7 +38,7 @@ package src.objects {
         }
         
         public function pickUp():void {
-            if ( game._player.addToStats(statObject) ) {
+            if ( game.player.addToStats(statObject) ) {
                 game.deleteManager.add(body);
                 body = null;
                 gotoAndPlay("pickup");

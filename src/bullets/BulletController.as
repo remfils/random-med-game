@@ -30,7 +30,7 @@
         public function BulletController(stage:DisplayObjectContainer) {
             this.stage = stage;
             
-            bulletClasses = game._player.spells;
+            bulletClasses = game.player.spells;
             
             BulletClass = bulletClasses[currentBulletClass];
             
@@ -43,10 +43,10 @@
         }
         
         public function update () {
-            if (fire && game._player.MANA >= BulletClass.bulletDef.manaCost) {
+            if (fire && game.player.MANA >= BulletClass.bulletDef.manaCost) {
                 var b:Bullet = spawnBullet();
                 if ( b ) {
-                    game._player.MANA -= BulletClass.bulletDef.manaCost;
+                    game.player.MANA -= BulletClass.bulletDef.manaCost;
                     game.playerStat.update();
                 }
             }
@@ -77,7 +77,7 @@
             if ( block ) return null;
             
             var bullet:Bullet = getFreeBullet();
-            var player:Player = game._player;
+            var player:Player = game.player;
             
             var spawnPoint:Point = new Point();
             spawnPoint.x = player.x + player.dir_x * bullet.colliderWidth;

@@ -27,8 +27,13 @@ package src {
         
         private static var i:uint;
         private var j:uint;
+        
+        // УПРАВЛЕНИЕ
         private var PAUSED:Boolean = false;
+        private var ACTION_PRESSED:Boolean = false;
         private var blockControlls:Boolean = false;
+        
+        
         private var isTransition:Boolean = false;
         
         public static const WORLD_SCALE:Number = 30;
@@ -44,7 +49,7 @@ package src {
         var playerPanel:Sprite; // for bullets
         private var glassPanel:Sprite;
         
-        public var _player:Player;
+        public var player:Player;
 
         var _LEVEL:Array = new Array();
         public static var cRoom:Room;
@@ -68,13 +73,11 @@ package src {
             AbstractManager.game = this;
             AbstractMenu.game = this;
             
-            
-            
             TestModePanel = new Sprite();
             
-            _player = Player.getInstance();
-            _player.x = 385;
-            _player.y = 400;
+            player = Player.getInstance();
+            player.x = 385;
+            player.y = 400;
         }
         
         public function setLevel(level:Array):void {
@@ -103,8 +106,8 @@ package src {
             
             initCurrentLevel();
             
-            playerStat.getMapMC().setUpScale(_LEVEL[_player.currentRoom.z]);
-            playerStat.getMapMC().update(_LEVEL[_player.currentRoom.z]);
+            playerStat.getMapMC().setUpScale(_LEVEL[player.currentRoom.z]);
+            playerStat.getMapMC().update(_LEVEL[player.currentRoom.z]);
             
             glassPanel = new Sprite();
             glassPanel.y += playerStat.height;
@@ -154,9 +157,9 @@ package src {
         private function addPlayerTo(panel:DisplayObjectContainer):void {
             playerPanel = new Sprite();
             
-            _player = Player.getInstance();
+            player = Player.getInstance();
             
-            playerPanel.addChild(_player);
+            playerPanel.addChild(player);
             
             panel.addChild(playerPanel);
         }
@@ -171,12 +174,12 @@ package src {
         }
         
         private function setUpLevelMapPosition() {
-            levelMap.x -= _player.currentRoom.x * cRoom.width;
-            levelMap.y -= _player.currentRoom.y * cRoom.height;
+            levelMap.x -= player.currentRoom.x * cRoom.width;
+            levelMap.y -= player.currentRoom.y * cRoom.height;
         }
         
         private function getCurrentLevel ():Room {
-            return _LEVEL[ _player.currentRoom.z ][ _player.currentRoom.x ][ _player.currentRoom.y ]
+            return _LEVEL[ player.currentRoom.z ][ player.currentRoom.x ][ player.currentRoom.y ]
         }
         
         private function addEventListeners() {
@@ -205,14 +208,14 @@ package src {
             }
             if (isTransition) return;
             
-            _player.preupdate();
+            player.preupdate();
             
             bodyCreator.createBodies();
             
             if (!blockControlls) {
                 cRoom.update();
             }
-            _player.update ();
+            player.update ();
             
             bulletController.update();
             
@@ -222,12 +225,12 @@ package src {
         public function keyDown_fun (e:KeyboardEvent) {
             if ( blockControlls ) return;
             
-            _player.handleInput(e.keyCode);
+            player.handleInput(e.keyCode);
             
             switch (e.keyCode) {
                 // E key
                 case 69:
-                    _player.ACTION_PRESSED = true;
+                    ACTION_PRESSED = true;
                 break;
                 // J key
                 case 74 :
@@ -250,12 +253,12 @@ package src {
         }
         
         public function keyUp_fun (E:KeyboardEvent) {
-            _player.handleInput(E.keyCode, false);
+            player.handleInput(E.keyCode, false);
             
             switch (E.keyCode) {
                 // E key
                 case 69:
-                    _player.ACTION_PRESSED = false;
+                    ACTION_PRESSED = false;
                 break;
                 case 74:
                     bulletController.stopBulletSpawn();
@@ -269,7 +272,7 @@ package src {
         
         // по возможности удалить RoomEvent
         public function nextRoom (e:Event) {
-            glassPanel.addChild(_player);
+            glassPanel.addChild(player);
             
             isTransition = true;
             blockControlls = true;
@@ -287,23 +290,23 @@ package src {
             
             switch (endDoor.name) {
                 case "door_up":
-                    _player.currentRoom.y --;
-                    destination.y -= _player.getCollider().height / 2;
+                    player.currentRoom.y --;
+                    destination.y -= player.getCollider().height / 2;
                     endDoor = cRoom.getDoorByDirection("down");
                 break;
                 case "door_down":
-                    _player.currentRoom.y ++;
-                    destination.y += _player.getCollider().height / 2;
+                    player.currentRoom.y ++;
+                    destination.y += player.getCollider().height / 2;
                     endDoor = cRoom.getDoorByDirection("up");
                 break;
                 case "door_left":
-                    _player.currentRoom.x --;
-                    destination.x -= _player.getCollider().width / 2;
+                    player.currentRoom.x --;
+                    destination.x -= player.getCollider().width / 2;
                     endDoor = cRoom.getDoorByDirection("right");
                 break;
                 case "door_right":
-                    _player.currentRoom.x ++;
-                    destination.x += _player.getCollider().width / 2;
+                    player.currentRoom.x ++;
+                    destination.x += player.getCollider().width / 2;
                     endDoor = cRoom.getDoorByDirection("left");
                 break;
             }
@@ -326,8 +329,8 @@ package src {
             tweenX.start();
             
             
-            var playerXTween:Tween = new Tween (_player, "x", Strong.easeInOut, _player.x, destination.x, 18 );
-            var playerYTween:Tween = new Tween (_player, "y", Strong.easeInOut, _player.y, destination.y, 18 );
+            var playerXTween:Tween = new Tween (player, "x", Strong.easeInOut, player.x, destination.x, 18 );
+            var playerYTween:Tween = new Tween (player, "y", Strong.easeInOut, player.y, destination.y, 18 );
             
             var map = playerStat.getMapMC();
             map.update(_LEVEL);
@@ -349,7 +352,7 @@ package src {
             removeEventListeners();
             addEventListener(GameEvent.RESUME_EVENT, resume, true);
             stopAllLoopClipsIn(this);
-            _player.clearInput();
+            player.clearInput();
             menuPanel.show();
         }
         
@@ -376,8 +379,8 @@ package src {
                 rating += 1;
             }
             
-            _player.clearInput();
-            _player.gotoAndPlay("end");
+            player.clearInput();
+            player.gotoAndPlay("end");
             
             var timer:Timer = new Timer(700);
             timer.addEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);

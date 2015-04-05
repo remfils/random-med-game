@@ -15,7 +15,7 @@ package src.objects {
         
         public function DoorLock() {
             super();
-            playerCollider = game._player.getCollider();
+            playerCollider = game.player.getCollider();
             
             _activeArea = getChildByName("activeArea") as Collider;
             _collider = getChildByName("collider001") as Collider;
