@@ -42,7 +42,7 @@
         
         static public var instance:Player = null;
         
-        // переменные движения
+// переменные движения
         private var inputForce:b2Vec2 = new b2Vec2();
         private var DIRECTION_CHANGED:Boolean = false;
         public static var SPEED:uint = 40;
@@ -51,10 +51,17 @@
         public var MOVE_UP:Boolean = false;
         public var MOVE_DOWN:Boolean = false;
         
-        // направление персонажа
+// направление персонажа
+        private const STAND_SATE:String = "stand_";
+        private const DIR_LEFT:String = "left";
+        private const DIR_RIGHT:String = "right";
+        private const DIR_UP:String = "up";
+        private const DIR_DOWN:String = "down";
+        private var state_label:String = DIR_UP + MOVE_STATE;
+        
         public var dir_x:Number;
         public var dir_y:Number;
-        private var _collider:Collider;
+        private var collider:MovieClip;
         
         public var holdObject:Object = null;
         
@@ -67,7 +74,7 @@
             dir_y = -1;
 
             // получаем коллайдер
-            _collider = getChildByName( "collider" ) as Collider;
+            collider = getChildByName( "collider" ) as Collider;
             
             invincibilityTimer = new Timer(invincibilityDelay,6);
             
@@ -225,21 +232,12 @@
             
             if ( DIRECTION_CHANGED ) {
                 applyDirectionChanges();
+                gotoAndStop(state_label);
             }
             
             if ( isStopped() ) {
-                if ( dir_x != 0 ) {
-                    if ( dir_y > 0 ) gotoAndStop("stand_down");
-                    else if ( dir_y < 0 ) gotoAndStop("stand_up");
-                    else {
-                        if ( dir_x > 0 ) gotoAndStop("stand_right");
-                        else gotoAndStop("stand_left");
-                    }
-                }
-                else {
-                    if ( dir_y > 0 ) gotoAndStop("stand_down");
-                    else if ( dir_y < 0 ) gotoAndStop("stand_up");
-                }
+                state_label += STAND_SATE;
+                gotoAndStop(state_label);
             }
             
             updateHoldObject();
@@ -247,16 +245,16 @@
         
         private function applyDirectionChanges():void {
             if ( dir_x != 0 ) {
-                if ( dir_y > 0 ) gotoAndStop("down");
-                else if ( dir_y < 0 ) gotoAndStop("up");
+                if ( dir_y > 0 ) state_label = DIR_DOWN;
+                else if ( dir_y < 0 ) state_label = DIR_UP;
                 else {
-                    if ( dir_x > 0 ) gotoAndStop("right");
-                    else gotoAndStop("left");
+                    if ( dir_x > 0 ) state_label = DIR_RIGHT;
+                    else state_label = DIR_LEFT;
                 }
             }
             else {
-                if ( dir_y > 0 ) gotoAndStop("down");
-                else if ( dir_y < 0 ) gotoAndStop("up");
+                if ( dir_y > 0 ) state_label = DIR_DOWN;
+                else if ( dir_y < 0 ) state_label = DIR_UP;
             }
         }
         
@@ -279,7 +277,7 @@
         }
 
         public function getCollider ():Collider {
-            return _collider;
+            return collider;
         }
         
         public function makeHit (dmg:Number) {
