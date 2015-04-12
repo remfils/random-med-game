@@ -57,15 +57,16 @@
         private const DIR_RIGHT:String = "right";
         private const DIR_UP:String = "up";
         private const DIR_DOWN:String = "down";
+        
         private var state_label:String = DIR_UP + MOVE_STATE;
         
         public var dir_x:Number;
         public var dir_y:Number;
-        private var collider:MovieClip;
+        public var collider:MovieClip;
         
         public var holdObject:Object = null;
         
-        public var currentRoom:Object = {x:0, y:0, z:0};
+        public var currentRoom:Point = new Point(0,0);
         
         public function Player():void {
             // задаём стандартное направление
@@ -74,7 +75,7 @@
             dir_y = -1;
 
             // получаем коллайдер
-            collider = getChildByName( "collider" ) as Collider;
+            collider = getChildByName( "collider" ) as MovieClip;
             
             invincibilityTimer = new Timer(invincibilityDelay,6);
             
@@ -277,12 +278,13 @@
         }
 
         public function getCollider ():Collider {
+            trace("Player.getCollider: NO WAY!! use public method");
             return collider;
         }
         
         public function makeHit (dmg:Number) {
-            if (isImmune()) return;
-            
+            if (immune) return;
+            immune = true;
             startInvincibilityTimer();
 
             HEALTH -= dmg;
@@ -299,7 +301,6 @@
             invincibilityTimer.addEventListener(TimerEvent.TIMER_COMPLETE, stopInvincibilityTimer);
             invincibilityTimer.reset();
             invincibilityTimer.start();
-            immune = true;
         }
         
         private function blink(e:TimerEvent) {

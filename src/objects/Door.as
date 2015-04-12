@@ -74,11 +74,6 @@
             
         }
         
-        public function requestBodyAt(world:b2World, position:Point = null, speed:Point = null ):void {
-        }
-        
-        
-        
         public function createBodyFromCollider(world:b2World):b2Body {
             return wall;
         }

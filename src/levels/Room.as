@@ -27,22 +27,27 @@
     
     public class Room extends MovieClip {
         public var isSecret:Boolean = false;
-        protected static const directions:Array = ["left", "right", "up", "down"];
-        public static var taskManager:TaskManager;
+        protected static const directions:Array = ["left", "right", "up", "down"]; // deleteme
+        public static var taskManager:TaskManager; // deleteme
+        
+        public static const DOOR_DIRECTION_LEFT:int = 1;
+        public static const DOOR_DIRECTION_UP:int = 2;
+        public static const DOOR_DIRECTION_RIGHT:int = 3;
+        public static const DOOR_DIRECTION_DOWN:int = 4;
 
-        public var game:Game;
+        public var game:Game; // deleteme
         
         public var world:b2World;
         private static var gravity:b2Vec2 = new b2Vec2(0, 0);
         protected var ROOM_FRICTION:Number = 8;
         
-        var _doors:Array = new Array();
+        var _doors:Array = new Array(); // deleteme
         var _gameObjects:Array = new Array();
         var _enemies:Array = new Array();
         public var drops:Array = new Array();
         
-        var _tasks:Array = new Array();
-        var currentTask:Task = null;
+        var _tasks:Array = new Array(); // deleteme
+        public var currentTask:Task = null;
         
         static var _player:Player;
         private var playerBody:b2Body;
@@ -224,7 +229,7 @@
             door.unlock();
         }
         
-        public function getDoorByDirection(direction:String):Door {
+        public function getDoorByDirection(direction:int):Door {
             return getChildByName("door_" + direction) as Door;
         }
         

@@ -28,11 +28,16 @@ package src {
         private static var i:uint;
         private var j:uint;
         
+        public static const ROOM_MIN_X:int = 61;
+        public static const ROOM_MAX_X:int = 695.65;
+        public static const ROOM_MIN_Y:int = 57.5;
+        public static const ROOM_MAX_Y:int = 443;
+        
+        
         // УПРАВЛЕНИЕ
         private var PAUSED:Boolean = false;
         private var ACTION_PRESSED:Boolean = false;
         private var blockControlls:Boolean = false;
-        
         
         private var isTransition:Boolean = false;
         
@@ -52,7 +57,7 @@ package src {
         public var player:Player;
 
         var _LEVEL:Array = new Array();
-        public static var cRoom:Room;
+        public var cRoom:Room;
         
         var levelMap:MovieClip;
         
@@ -179,14 +184,14 @@ package src {
         }
         
         private function getCurrentLevel ():Room {
-            return _LEVEL[ player.currentRoom.z ][ player.currentRoom.x ][ player.currentRoom.y ]
+            return _LEVEL[ 0 ][ player.currentRoom.x ][ player.currentRoom.y ]
         }
         
         private function addEventListeners() {
             this.stage.addEventListener ( Event.ENTER_FRAME, update );
             this.stage.addEventListener ( KeyboardEvent.KEY_DOWN, keyDown_fun );
             this.stage.addEventListener ( KeyboardEvent.KEY_UP, keyUp_fun );
-            this.stage.addEventListener ( RoomEvent.EXIT_ROOM_EVENT , nextRoom, true );
+            this.stage.addEventListener ( Game.EXIT_ROOM_EVENT , nextRoom, true );
         }
         
         private function removeEventListeners():void {
@@ -214,6 +219,13 @@ package src {
             
             if (!blockControlls) {
                 cRoom.update();
+                if ( !cRoom.currentTask ) {
+                    if ( player.x < ROOM_MIN_X ||
+                        player.x > ROOM_MAX_X ||
+                        player.y < ROOM_MIN_Y ||
+                        player.y > ROOM_MAX_Y
+                    ) dispatchEvent(new Event(Game.EXIT_ROOM_EVENT));
+                }
             }
             player.update ();
             
@@ -272,51 +284,48 @@ package src {
         
         // по возможности удалить RoomEvent
         public function nextRoom (e:Event) {
+            var destination:Point;
+            var directionB:int;
+            var destination:Point = new Point();
+            
             glassPanel.addChild(player);
             
             isTransition = true;
             blockControlls = true;
             
-            var destination:Point = new Point();
-            
             cRoom.exit();
             bulletController.clearBullets();
             
-            var endDoor:Door = e.target as Door;
-            
-            if ( endDoor.isSecret ) {
-                SECRET_ROOM_FOUND = true;
+            if ( player.x < ROOM_MIN_X ) {
+                player.currentRoom.x --;
+                directionB = Room.DOOR_DIRECTION_RIGHT;
+                destination.x -= player.collider.width / 2;
             }
-            
-            switch (endDoor.name) {
-                case "door_up":
-                    player.currentRoom.y --;
-                    destination.y -= player.getCollider().height / 2;
-                    endDoor = cRoom.getDoorByDirection("down");
-                break;
-                case "door_down":
-                    player.currentRoom.y ++;
-                    destination.y += player.getCollider().height / 2;
-                    endDoor = cRoom.getDoorByDirection("up");
-                break;
-                case "door_left":
-                    player.currentRoom.x --;
-                    destination.x -= player.getCollider().width / 2;
-                    endDoor = cRoom.getDoorByDirection("right");
-                break;
-                case "door_right":
-                    player.currentRoom.x ++;
-                    destination.x += player.getCollider().width / 2;
-                    endDoor = cRoom.getDoorByDirection("left");
-                break;
+            if ( player.x > ROOM_MAX_X ) {
+                player.currentRoom.x ++;
+                directionB = Room.DOOR_DIRECTION_LEFT;
+                destination.x += player.collider.width / 2;
             }
-            
-            destination.x += endDoor.x;
-            destination.y += endDoor.y;
-            
-            var shouldUnlockDoorInFuture:Boolean = cRoom.isSecret;
+            if ( player.y < ROOM_MIN_Y ) {
+                player.currentRoom.y --;
+                directionB = Room.DOOR_DIRECTION_DOWN;
+                destination.y -= player.collider.height / 2;
+            }
+            if ( player.y > ROOM_MAX_Y ) {
+                player.currentRoom.y ++;
+                directionB = Room.DOOR_DIRECTION_UP;
+                destination.y += player.collider.height / 2;
+            }
             
             cRoom = getCurrentLevel();
+            doorB = cRoom.getDoorByDirection(directionB);
+            
+            destination.x += doorB.x;
+            destination.y += doorB.y;
+            
+            if ( roomB.isSecret ) SECRET_ROOM_FOUND = true;
+            
+            var shouldUnlockDoorInFuture:Boolean = cRoom.isSecret;
             
             if ( cRoom.isSecret || shouldUnlockDoorInFuture ) {
                 var door:Door = cRoom.getDoorByDirection(endDoor.getDirection());
