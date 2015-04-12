@@ -6,10 +6,10 @@
           <DOMFolderItem name="_bosses/mad" itemID="54956214-000001ff" isExpanded="true"/>
           <DOMFolderItem name="_bosses/mad/room" itemID="54956219-00000203"/>
           <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103"/>
-          <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104"/>
+          <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104" isExpanded="true"/>
           <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110"/>
           <DOMFolderItem name="_enemies/_Ghost" itemID="5419fc21-000000d2"/>
-          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
+          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd" isExpanded="true"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
           <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
@@ -30,15 +30,15 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/door_lock" itemID="54675e4e-000001f3"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/doors" itemID="53af5331-000000b5"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/doors/_graph" itemID="53af52a9-000000a0"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop" itemID="541c84dd-000000c6"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/coin" itemID="546e1575-00000110" isExpanded="true"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/exit" itemID="5427c13d-000000df"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/health" itemID="5426d98e-00000132" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop" itemID="541c84dd-000000c6" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/coin" itemID="546e1575-00000110"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/exit" itemID="5427c13d-000000df" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/health" itemID="5426d98e-00000132"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/mana" itemID="541c84e1-000000ca"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
@@ -89,7 +89,7 @@
           <Include href="_enemies/_Monk/crystal.xml" itemIcon="1" loadImmediate="false" itemID="545e3ec1-00000243" lastModified="1415520142"/>
           <Include href="_enemies/_Monk/crystal_deactivated.xml" itemIcon="1" loadImmediate="false" itemID="545f2023-00000131" lastModified="1415521053"/>
           <Include href="_enemies/_Monk/crystal_shoot.xml" itemIcon="1" loadImmediate="false" itemID="545f2258-00000220" lastModified="1415539551"/>
-          <Include href="_enemies/_Monk/Monk.xml" itemID="545f1fce-00000100" lastModified="1427389765"/>
+          <Include href="_enemies/_Monk/Monk.xml" itemID="545f1fce-00000100" lastModified="1428672279"/>
           <Include href="_enemies/_Monk/monk_active.xml" loadImmediate="false" itemID="545f1fc4-000000fe" lastModified="1415520206"/>
           <Include href="_enemies/_Monk/monk_death.xml" loadImmediate="false" itemID="5461bbec-000001f1" lastModified="1415696172"/>
           <Include href="_enemies/_Monk/monk_normal.xml" loadImmediate="false" itemID="545f2017-00000129" lastModified="1415520786"/>
@@ -112,6 +112,7 @@
           <Include href="_enemies/_Rat/rat_walk_002.xml" loadImmediate="false" itemID="542eb3aa-000000ef" lastModified="1412349263"/>
           <Include href="_enemies/_Rat/rat_walk_down.xml" loadImmediate="false" itemID="5454b48e-0000014e" lastModified="1415094279"/>
           <Include href="_enemies/enemy_flight_test.xml" itemID="53e9f4e6-000000a2" lastModified="1410990042"/>
+          <Include href="_enemies/EnemyCostume.xml" itemID="5527ddce-0000024c" lastModified="1428677564"/>
           <Include href="_GUI/_coins/coin.xml" loadImmediate="false" itemID="53af5237-00000097" lastModified="1403998775"/>
           <Include href="_GUI/_coins/icoCoin.xml" loadImmediate="false" itemID="53cb1a9c-000001a0" lastModified="1416501447"/>
           <Include href="_GUI/_healthBars/healthBar.xml" loadImmediate="false" itemID="53b9771c-0000007b" lastModified="1404755544"/>
@@ -128,7 +129,7 @@
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1407526163"/>
           <Include href="_GUI/SpellMenu.xml" loadImmediate="false" itemID="541332c6-000000d2" lastModified="1410545813"/>
           <Include href="_GUI/SpellSelecButton.xml" loadImmediate="false" itemID="54133284-000000c8" lastModified="1410549341"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1427981286"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1428669194"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1412066217"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
@@ -158,14 +159,14 @@
           <Include href="_level/_GAME_OBJECTS/doors/doorEntrance.xml" loadImmediate="false" itemID="5421853a-000000ef" lastModified="1411482954"/>
           <Include href="_level/_GAME_OBJECTS/drop/coin/coin_gr.xml" itemIcon="1" loadImmediate="false" itemID="546e1616-00000123" lastModified="1416505967"/>
           <Include href="_level/_GAME_OBJECTS/drop/coin/DropCoin.xml" itemID="546e158d-00000121" lastModified="1416502307"/>
-          <Include href="_level/_GAME_OBJECTS/drop/exit/Exit.xml" itemID="5427c19d-000000e1" lastModified="1415093999"/>
+          <Include href="_level/_GAME_OBJECTS/drop/exit/Exit.xml" itemID="5427c19d-000000e1" lastModified="1428671275"/>
           <Include href="_level/_GAME_OBJECTS/drop/health/default.xml" loadImmediate="false" itemID="5426da07-000002da" lastModified="1415094028"/>
           <Include href="_level/_GAME_OBJECTS/drop/health/drop.xml" loadImmediate="false" itemID="5426da8f-00000546" lastModified="1416502057"/>
           <Include href="_level/_GAME_OBJECTS/drop/health/DropHP.xml" itemID="5426d982-0000012c" lastModified="1416502054"/>
           <Include href="_level/_GAME_OBJECTS/drop/mana/default.xml" loadImmediate="false" itemID="541c850d-000000d6" lastModified="1415097254"/>
           <Include href="_level/_GAME_OBJECTS/drop/mana/drop.xml" loadImmediate="false" itemID="541c857c-00000197" lastModified="1411155324"/>
           <Include href="_level/_GAME_OBJECTS/drop/mana/DropMana.xml" itemID="541b4d37-000003ce" lastModified="1415094050"/>
-          <Include href="_level/_GAME_OBJECTS/keys/CastleKey.xml" itemID="5467322a-000001af" lastModified="1427389897"/>
+          <Include href="_level/_GAME_OBJECTS/keys/CastleKey.xml" itemID="5467322a-000001af" lastModified="1428669194"/>
           <Include href="_level/_GAME_OBJECTS/keys/key_gr.xml" itemIcon="1" loadImmediate="false" itemID="54673214-000001ad" lastModified="1416049172"/>
           <Include href="_level/_GAME_OBJECTS/keys/key_gr_appear.xml" itemIcon="1" loadImmediate="false" itemID="546c702b-00000136" lastModified="1416392838"/>
           <Include href="_level/_GAME_OBJECTS/keys/key_gr_keyHolder.xml" itemIcon="1" loadImmediate="false" itemID="546c79be-0000051c" lastModified="1416395301"/>
@@ -1014,6 +1015,15 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="510918" publishTime="1428671358"/>
+          <PublishItem publishSize="510908" publishTime="1428671349"/>
+          <PublishItem publishSize="510908" publishTime="1428671335"/>
+          <PublishItem publishSize="510908" publishTime="1428671325"/>
+          <PublishItem publishSize="510908" publishTime="1428671311"/>
+          <PublishItem publishSize="510913" publishTime="1428669278"/>
+          <PublishItem publishSize="510913" publishTime="1428669234"/>
+          <PublishItem publishSize="510913" publishTime="1428669155"/>
+          <PublishItem publishSize="510913" publishTime="1428668939"/>
           <PublishItem publishSize="511094" publishTime="1428224477"/>
           <PublishItem publishSize="511093" publishTime="1428224443"/>
           <PublishItem publishSize="511120" publishTime="1428224265"/>
@@ -1025,14 +1035,5 @@
           <PublishItem publishSize="687433" publishTime="1428060001" publishDebug="true"/>
           <PublishItem publishSize="687315" publishTime="1428057810" publishDebug="true"/>
           <PublishItem publishSize="687449" publishTime="1428056295" publishDebug="true"/>
-          <PublishItem publishSize="687435" publishTime="1428056251" publishDebug="true"/>
-          <PublishItem publishSize="687394" publishTime="1428056044" publishDebug="true"/>
-          <PublishItem publishSize="687158" publishTime="1428055189" publishDebug="true"/>
-          <PublishItem publishSize="687333" publishTime="1428055019" publishDebug="true"/>
-          <PublishItem publishSize="620932" publishTime="1428054857"/>
-          <PublishItem publishSize="687313" publishTime="1428054780" publishDebug="true"/>
-          <PublishItem publishSize="510549" publishTime="1428054673" publishDebug="true"/>
-          <PublishItem publishSize="687495" publishTime="1428054115" publishDebug="true"/>
-          <PublishItem publishSize="621258" publishTime="1427981098"/>
      </publishHistory>
 </DOMDocument>

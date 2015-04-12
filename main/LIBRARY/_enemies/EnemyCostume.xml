@@ -1,0 +1,87 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.enemy.EnemyCostume" lastModified="1428677564" lastUniqueIdentifier="5">
+  <timeline>
+    <DOMTimeline name="EnemyCostume" currentFrame="52">
+      <layers>
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" name="ghost_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" duration="15" name="ghost_active" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" duration="47" name="ghost_dead" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="76" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="29" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" duration="22" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="51" duration="25" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[removeCostume();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_normal" centerPoint3DX="1.45" centerPoint3DY="-18.95">
+                  <transformationPoint>
+                    <Point x="1.65" y="-17.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_attack" centerPoint3DX="4.15" centerPoint3DY="-18.7">
+                  <matrix>
+                    <Matrix tx="-0.25" ty="0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.5" y="-17.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" duration="23" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_death" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-0.25" ty="0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.5" y="-17.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="52" duration="24" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Monk/Monk" itemID="545f1fce-00000100" linkageExportForAS="true" linkageBaseClass="src.enemy.Sniper" linkageClassName="Monk" lastModified="1427389765" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Monk/Monk" itemID="545f1fce-00000100" linkageExportForAS="true" linkageClassName="Monk" lastModified="1428672279" lastUniqueIdentifier="7">
   <timeline>
     <DOMTimeline name="Monk" currentFrame="8">
       <layers>
