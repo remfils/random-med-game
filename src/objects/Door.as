@@ -6,41 +6,48 @@
     import fl.motion.Color;
     import flash.display.MovieClip;
     import flash.geom.Point;
+    import src.costumes.ObjectCostume;
     import src.interfaces.Updatable;
     import src.Player;
     import src.util.Collider;
     
     public class Door extends AbstractObject implements Updatable {
+        public static const LOCKED_STATE:String = "_locked";
+        public static const UNLOCKED_STATE:String = "_unlocked";
+        
         private var locked:Boolean = true;
         public var specialLock:Boolean = false;
-        
         public var isSecret:Boolean = false;
         
         public var goto:int;
         
         public var level:int;
         
-        private var wall:b2Body;
-        private var exit:b2Body;
-        
         public var taskId:int = 0;
 
         public function Door() {
             show();
+            
+            costume = new ObjectCostume();
+            costume.setType(ObjectCostume.DOOR_TYPE);
+            costume.setState(LOCKED_STATE);
         }
         
+        // delete
         public function setDestination ( LEVEL:int ) {
             level = LEVEL;
         }
         
+        //delete
         public function setWall ( body:b2Body ):void {
-            this.wall = body;
+            //this.wall = body;
         }
         
         public function setExit( exitBody:b2Body ):void {
             
         }
         
+        // delete
         public function getDirection ():String {
             var doorRotation = rotation;
             
@@ -70,32 +77,32 @@
             return locked;
         }
         
+        // delete me maybe
         public function update ():void {
             
         }
         
-        public function createBodyFromCollider(world:b2World):b2Body {
-            return wall;
-        }
-        
-        // this is kostyl
+        // DELeTE
         public function getExit ():Collider {
             return new Collider();
         }
         
+        //delete
         public function checkExitCollision ( P:Player ): Boolean {
             return !locked;
         }
+        
         
         public function assignTask( taskId:int ):void {
             this.taskId = taskId;
             specialLock = true;
         }
         
+        
         public function setType(type:String):void {
             isSecret = type == "secret";
             if ( isSecret ) {
-                gotoAndStop("secret_locked");
+                costume.setType(ObjectCostume.SECRET_DOOR_TYPE);
             }
         }
         
@@ -108,24 +115,14 @@
         public function instantLock():void {
             locked = true;
             
-            if ( isSecret ) {
-                gotoAndStop("secret_locked");
-            }
-            else {
-                gotoAndPlay( "locked" );
-            }
+            costume.setState(LOCKED_STATE);
             
-            wall.SetActive(true);
+            body.SetActive(true);
         }
 
         public function unlock () {
             if ( visible && locked && !specialLock) {
-                if ( isSecret ) {
-                    gotoAndPlay( "secret_unlocked" );
-                }
-                else {
-                    gotoAndPlay( "unlocked" );
-                }
+                costume.setState(UNLOCKED_STATE);
                 
                 locked = false;
                 wall.SetActive(false);
