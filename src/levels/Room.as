@@ -7,9 +7,11 @@
     import flash.display.Sprite;
     import flash.display.Stage;
     import flash.display.MovieClip;
+    import flash.geom.Point;
     import src.interfaces.ExtrudeObject;
     import src.objects.Lever;
     import src.task.TaskManager;
+    import src.util.CreateBodyRequest;
     import src.util.DropFactory;
     import src.util.GameObjectPanel;
     import src.util.ItemDropper;
@@ -26,16 +28,25 @@
     import src.task.Task;
     
     public class Room extends MovieClip {
+        private static const PLAYER_START_POINT:int = 255;
+        
+        private static const MIN_X:Number = 89.2;
+        private static const MAX_X:Number = 662.75;
+        private static const MIN_Y:Number = 91.55;
+        private static const MAX_Y:Number = 413.1;
+        private static const CENTER_X:Number = 372.8;
+        private static const CENTER_Y:Number = 257.3;
+        
         public var isSecret:Boolean = false;
         protected static const directions:Array = ["left", "right", "up", "down"]; // deleteme
         public static var taskManager:TaskManager; // deleteme
         
-        public static const DOOR_DIRECTION_LEFT:int = 1;
-        public static const DOOR_DIRECTION_UP:int = 2;
-        public static const DOOR_DIRECTION_RIGHT:int = 3;
-        public static const DOOR_DIRECTION_DOWN:int = 4;
-
-        public var game:Game; // deleteme
+        public static const DOOR_DIRECTION_LEFT:int = 0;
+        public static const DOOR_DIRECTION_UP:int = 1;
+        public static const DOOR_DIRECTION_RIGHT:int = 2;
+        public static const DOOR_DIRECTION_DOWN:int = 3;
+        
+        public static var game:Game;
         
         public var world:b2World;
         private static var gravity:b2Vec2 = new b2Vec2(0, 0);
@@ -53,15 +64,13 @@
         private var playerBody:b2Body;
         public var gameObjectPanel:GameObjectPanel;
 
-        public function Room(game:Game) {
-            this.game = game;
-            
+        public function Room() {
             world = new b2World(gravity, true);
             world.SetContactListener(new ContactListener(game));
             gameObjectPanel = new GameObjectPanel();
             addChild(gameObjectPanel);
             
-            _player = Player.getInstance();
+            _player = game.player;
             
             createPlayerBody();
             
@@ -73,15 +82,13 @@
         }
         
         private function createPlayerBody():void {
-            var collider:Collider = _player.getCollider().copy();
+            var collider:DisplayObject = _player.costume.getCollider();
             
-            playerBody = collider.replaceWithDynamicB2Body(world, Player.fixtureDef);
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, _player);
+            createBodyRequest.setAsDynamicBody(Player.fixtureDef);
+            createBodyRequest.setBodyPosition(new Point(PLAYER_START_POINT, PLAYER_START_POINT));
             
-            playerBody.GetFixtureList().SetUserData( { "object": _player } );
-            
-            playerBody.SetPosition(new b2Vec2(300 / Game.WORLD_SCALE, 200 / Game.WORLD_SCALE));
-            playerBody.SetLinearDamping(ROOM_FRICTION);
-            playerBody.SetFixedRotation(true);
+            game.bodyCreator.add(createBodyRequest);
         }
         
         private function addWalls():void {
@@ -94,7 +101,34 @@
         }
         
         private function addDoors():void {
-            var collider:Collider, door:Door, name:String, wall:b2Body;
+            var i = 4;
+            while ( i -- ) {
+                _doors[i] = new Door();
+                addChild(Door(_doors[i]).costume);
+            }
+            
+            _doors[DOOR_DIRECTION_LEFT].costume.x = MIN_X;
+            _doors[DOOR_DIRECTION_LEFT].costume.y = CENTER_Y;
+            _doors[DOOR_DIRECTION_LEFT].costume.rotation = -90;
+            
+            _doors[DOOR_DIRECTION_UP].costume.x = CENTER_X;
+            _doors[DOOR_DIRECTION_UP].costume.y = MIN_Y;
+            _doors[DOOR_DIRECTION_UP].costume.rotation = 0;
+            
+            _doors[DOOR_DIRECTION_RIGHT].costume.x = MAX_X;
+            _doors[DOOR_DIRECTION_RIGHT].costume.y = CENTER_Y;
+            _doors[DOOR_DIRECTION_RIGHT].costume.rotation = 90;
+            
+            _doors[DOOR_DIRECTION_DOWN].costume.x = CENTER_X;
+            _doors[DOOR_DIRECTION_DOWN].costume.y = MAX_Y;
+            _doors[DOOR_DIRECTION_DOWN].costume.rotation = 180;
+            
+            i = _doors.length;
+            while (i--) {
+                Door(_doors[i]).requestBodyAt(world);
+            }
+            
+            /*var collider:Collider, door:Door, name:String, wall:b2Body;
             for each ( var direction:String in directions) {
                 name = "door_" + direction;
                 door = getChildByName(name) as Door;
@@ -112,7 +146,8 @@
                 door.hide();
                 
                 _doors.push(door);
-            }
+            }*/
+            
         }
         
         private function setDebugDraw():void {
