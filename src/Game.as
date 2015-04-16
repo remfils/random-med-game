@@ -41,6 +41,7 @@ package src {
         
         private var isTransition:Boolean = false;
         
+        public static const TO_RAD:Number = Math.PI / 180;
         public static const WORLD_SCALE:Number = 30;
         public static const TIME_STEP:Number = 1 / 30;
         
@@ -77,6 +78,7 @@ package src {
             AbstractObject.game = this;
             AbstractManager.game = this;
             AbstractMenu.game = this;
+            Room.game = this;
             
             TestModePanel = new Sprite();
             

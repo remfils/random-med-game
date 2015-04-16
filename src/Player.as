@@ -17,10 +17,6 @@
     import flash.utils.Timer;
     import flash.events.TimerEvent;
     
-    
-    /**
-     * Главный класс игрока
-     */
     public class Player extends AbstractObject implements ExtrudeObject {
 //states
         /*public static const WALK_UP_STATE:String = "walk_up_state";
