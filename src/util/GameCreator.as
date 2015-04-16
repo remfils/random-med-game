@@ -65,7 +65,7 @@ package src.util {
                 cRoom:CastleLevel = null;
             
             for each ( var room:XML in xmlFloor.room ) {
-                cRoom = new CastleLevel(game);
+                cRoom = new CastleLevel();
                 cRoom.x = room.@x * cRoom.width;
                 cRoom.y = room.@y * cRoom.height;
                 
@@ -74,11 +74,10 @@ package src.util {
                 }
                 
                 if ( room.@first_level == "true" ) {
-                    Player.getInstance().currentRoom = {
-                        x: room.@x,
-                        y: room.@y,
-                        z: floorCounter
-                    };
+                    game.player.currentRoom.x = room.@x;
+                    game.player.currentRoom.x = room.@y;
+                    
+                    // create first door
                 }
                 
                 addDecorationsToRoom(cRoom, room.wallDecorations.*);
@@ -104,6 +103,7 @@ package src.util {
         }
         
         private function addDecorationsToRoom(cRoom:Room, wallDecorationsXML:XMLList):void {
+            return;
             for each (var decorationNode:XML in wallDecorationsXML) {
                 var decorObj:DecorObject = new DecorObject();
                 decorObj.setType(decorationNode.name())
@@ -124,6 +124,7 @@ package src.util {
         }
         
         private function addObstaclesToRoom (cRoom:Room, obstaclesXMLList:XMLList):void {
+            return;
             var obst:Obstacle;
             for each (var obstacle:XML in obstaclesXMLList) {
                 obst = new Obstacle();
@@ -137,6 +138,7 @@ package src.util {
         }
         
         private function addTasksToRoom(room:Room, roomXML:XML):void {
+            return;
             var tasks:XMLList = roomXML.task;
             var enemies:XMLList = roomXML.enemies;
             var enemyCount:int = 0;
@@ -158,6 +160,7 @@ package src.util {
         }
         
         private function addTaskObjectsToRoom (room:Room, activeObjectsXML:XMLList) {
+            return;
             var taskId:int = activeObjectsXML.@taskId;
             
             for each ( var object:XML in activeObjectsXML.* ) {
@@ -181,6 +184,7 @@ package src.util {
         }
         
         private function addTasksToDoors(room:Room, doorList:XMLList) {
+            return;
             var doorName:String;
             var doorObj:Door;
             
@@ -199,6 +203,7 @@ package src.util {
         }
         
         private function addEnemiesToRoom (room:Room, enemiesXML:XMLList) {
+            return;
             var taskId:uint = enemiesXML.@task_id;
             var enemy:Enemy;
             for each ( var object:XML in enemiesXML.* ) {
