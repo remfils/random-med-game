@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Ghost/Ghost" itemID="5419fe5b-0000019b" linkageExportForAS="true" linkageBaseClass="src.enemy.FlyingEnemy" linkageClassName="Ghost" lastModified="1427389745" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Ghost/Ghost" itemID="5419fe5b-0000019b" lastModified="1428865403" lastUniqueIdentifier="5">
   <timeline>
     <DOMTimeline name="Ghost">
       <layers>

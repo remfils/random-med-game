@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/BombSpell" itemID="54130caa-000000b3" linkageExportForAS="true" linkageClassName="src.bullets.BombSpell" lastModified="1415869568" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/PowerSpell" itemID="552eb1ea-000002b8" lastModified="1429123562" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="BombSpell" currentFrame="28" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-12&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="PowerSpell" currentFrame="28" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-12&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
         <DOMLayer name="Layer 5" color="#4FFFFF" locked="true" visible="false">
           <frames>

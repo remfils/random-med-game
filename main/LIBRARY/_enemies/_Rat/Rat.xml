@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Rat/Rat" itemID="5421b6f2-0000014b" linkageExportForAS="true" linkageBaseClass="src.enemy.ChargerEnemy" linkageClassName="Rat" lastModified="1427389801" lastUniqueIdentifier="16">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_Rat/Rat" itemID="5421b6f2-0000014b" lastModified="1428865384" lastUniqueIdentifier="16">
   <timeline>
     <DOMTimeline name="Rat">
       <layers>

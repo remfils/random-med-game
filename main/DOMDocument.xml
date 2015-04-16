@@ -5,11 +5,11 @@
           <DOMFolderItem name="_bosses/clone/_части тела" itemID="53ebfe9c-00000297"/>
           <DOMFolderItem name="_bosses/mad" itemID="54956214-000001ff" isExpanded="true"/>
           <DOMFolderItem name="_bosses/mad/room" itemID="54956219-00000203"/>
-          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103"/>
-          <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104" isExpanded="true"/>
+          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103" isExpanded="true"/>
+          <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104"/>
           <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110"/>
           <DOMFolderItem name="_enemies/_Ghost" itemID="5419fc21-000000d2"/>
-          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd" isExpanded="true"/>
+          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
           <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
@@ -30,17 +30,17 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/door_lock" itemID="54675e4e-000001f3"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/doors" itemID="53af5331-000000b5"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/doors/_graph" itemID="53af52a9-000000a0"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop" itemID="541c84dd-000000c6" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop" itemID="541c84dd-000000c6"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/coin" itemID="546e1575-00000110"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/exit" itemID="5427c13d-000000df" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/exit" itemID="5427c13d-000000df"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/health" itemID="5426d98e-00000132"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/mana" itemID="541c84e1-000000ca"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc" isExpanded="true"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
           <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
           <DOMFolderItem name="_menu/_magesShop" itemID="5470a581-00000125"/>
@@ -61,7 +61,6 @@
      </fonts>
      <media>
           <DOMBitmapItem name="_menu/65494423_640.jpg" itemID="53cc1ca2-00000094" sourceExternalFilepath="../main/LIBRARY/_menu/65494423_640.jpg" sourceLastImported="1405885513" originalCompressionType="lossless" quality="50" href="_menu/65494423_640.jpg" bitmapDataHRef="M 2 1405885602.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
-          <DOMBitmapItem name="ghost_monk.jpg" itemID="545e3d3e-0000023a" sourceExternalFilepath="../main/LIBRARY/ghost_monk.jpg" sourceLastImported="1412596145" externalFileCRC32="2129838963" externalFileSize="1643617" originalCompressionType="lossless" quality="50" href="ghost_monk.jpg" bitmapDataHRef="M 3 1415462206.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
           <DOMBitmapItem name="_bosses/clone/Untitled-1.jpg" itemID="551d3a50-0000012d" sourceExternalFilepath="../main/LIBRARY/_bosses/clone/Untitled-1.jpg" sourceLastImported="1427978743" externalFileCRC32="543492954" externalFileSize="382310" quality="50" href="_bosses/clone/Untitled-1.jpg" bitmapDataHRef="M 4 1407974788.dat" frameRight="32000" frameBottom="32000" isJPEG="true"/>
      </media>
      <symbols>
@@ -72,14 +71,14 @@
           <Include href="_bosses/clone/_части тела/тело.xml" itemIcon="1" loadImmediate="false" itemID="53ec6d15-000000b2" lastModified="1408016159"/>
           <Include href="_bosses/clone/clone001.xml" itemIcon="1" loadImmediate="false" itemID="53ebfdaf-000000b8" lastModified="1408015661"/>
           <Include href="_bosses/mad/MadBoss.xml" loadImmediate="false" itemID="5498474d-000001ef" lastModified="1419271253"/>
-          <Include href="_bullets/Bombastic.xml" itemID="5433fdf0-000000ed" lastModified="1415871372"/>
-          <Include href="_bullets/BombSpell.xml" itemID="54130caa-000000b3" lastModified="1415869568"/>
-          <Include href="_bullets/spark.xml" itemID="53dbc06b-000000b9" lastModified="1415869589"/>
+          <Include href="_bullets/Nukelino.xml" loadImmediate="false" itemID="552eb1fd-000002b9" lastModified="1429123581"/>
+          <Include href="_bullets/PowerSpell.xml" loadImmediate="false" itemID="552eb1ea-000002b8" lastModified="1429123562"/>
+          <Include href="_bullets/Spark.xml" loadImmediate="false" itemID="552eb1c8-000002b7" lastModified="1429123538"/>
           <Include href="_enemies/_EnemyBullet/EnemyBullet.xml" itemID="545f54ee-00000469" lastModified="1415873372"/>
           <Include href="_enemies/_EnemyBullet/EnemyBullet_death.xml" loadImmediate="false" itemID="54647d16-00000150" lastModified="1415873350"/>
           <Include href="_enemies/_EnemyBullet/EnemyBullet_normal.xml" loadImmediate="false" itemID="546474eb-0000010a" lastModified="1415871679"/>
           <Include href="_enemies/_Ghost/arm.xml" itemIcon="1" loadImmediate="false" itemID="5419fc39-00000172" lastModified="1410989113"/>
-          <Include href="_enemies/_Ghost/Ghost.xml" itemID="5419fe5b-0000019b" lastModified="1427389745"/>
+          <Include href="_enemies/_Ghost/Ghost.xml" loadImmediate="false" itemID="5419fe5b-0000019b" lastModified="1428865403"/>
           <Include href="_enemies/_Ghost/Ghost_attack.xml" loadImmediate="false" itemID="5419ff8f-00000271" lastModified="1410989967"/>
           <Include href="_enemies/_Ghost/ghost_back.xml" itemIcon="1" loadImmediate="false" itemID="5419fc64-0000017d" lastModified="1410989421"/>
           <Include href="_enemies/_Ghost/Ghost_death.xml" loadImmediate="false" itemID="546487d2-00000176" lastModified="1415874885"/>
@@ -89,7 +88,7 @@
           <Include href="_enemies/_Monk/crystal.xml" itemIcon="1" loadImmediate="false" itemID="545e3ec1-00000243" lastModified="1415520142"/>
           <Include href="_enemies/_Monk/crystal_deactivated.xml" itemIcon="1" loadImmediate="false" itemID="545f2023-00000131" lastModified="1415521053"/>
           <Include href="_enemies/_Monk/crystal_shoot.xml" itemIcon="1" loadImmediate="false" itemID="545f2258-00000220" lastModified="1415539551"/>
-          <Include href="_enemies/_Monk/Monk.xml" itemID="545f1fce-00000100" lastModified="1428672279"/>
+          <Include href="_enemies/_Monk/Monk.xml" loadImmediate="false" itemID="545f1fce-00000100" lastModified="1428865377"/>
           <Include href="_enemies/_Monk/monk_active.xml" loadImmediate="false" itemID="545f1fc4-000000fe" lastModified="1415520206"/>
           <Include href="_enemies/_Monk/monk_death.xml" loadImmediate="false" itemID="5461bbec-000001f1" lastModified="1415696172"/>
           <Include href="_enemies/_Monk/monk_normal.xml" loadImmediate="false" itemID="545f2017-00000129" lastModified="1415520786"/>
@@ -102,7 +101,7 @@
           <Include href="_enemies/_Rat/parts/head_down.xml" itemIcon="1" loadImmediate="false" itemID="54453ce4-0000010a" lastModified="1413894136"/>
           <Include href="_enemies/_Rat/parts/leg1.xml" itemIcon="1" loadImmediate="false" itemID="5421b257-00000127" lastModified="1412347577"/>
           <Include href="_enemies/_Rat/parts/leg2.xml" itemIcon="1" loadImmediate="false" itemID="5421b319-0000012d" lastModified="1411495586"/>
-          <Include href="_enemies/_Rat/Rat.xml" itemID="5421b6f2-0000014b" lastModified="1427389801"/>
+          <Include href="_enemies/_Rat/Rat.xml" loadImmediate="false" itemID="5421b6f2-0000014b" lastModified="1428865384"/>
           <Include href="_enemies/_Rat/rat_attack_down.xml" loadImmediate="false" itemID="545dd03f-0000015f" lastModified="1415434582"/>
           <Include href="_enemies/_Rat/rat_charge.xml" loadImmediate="false" itemID="542ebd4c-000002df" lastModified="1412352316"/>
           <Include href="_enemies/_Rat/rat_death.xml" loadImmediate="false" itemID="546489a0-0000036d" lastModified="1415875240"/>
@@ -111,8 +110,8 @@
           <Include href="_enemies/_Rat/rat_walk.xml" loadImmediate="false" itemID="5421b830-00000173" lastModified="1412347624"/>
           <Include href="_enemies/_Rat/rat_walk_002.xml" loadImmediate="false" itemID="542eb3aa-000000ef" lastModified="1412349263"/>
           <Include href="_enemies/_Rat/rat_walk_down.xml" loadImmediate="false" itemID="5454b48e-0000014e" lastModified="1415094279"/>
-          <Include href="_enemies/enemy_flight_test.xml" itemID="53e9f4e6-000000a2" lastModified="1410990042"/>
-          <Include href="_enemies/EnemyCostume.xml" itemID="5527ddce-0000024c" lastModified="1428677564"/>
+          <Include href="_enemies/enemy_flight_test.xml" loadImmediate="false" itemID="53e9f4e6-000000a2" lastModified="1428865390"/>
+          <Include href="_enemies/EnemyCostume.xml" itemID="5527ddce-0000024c" lastModified="1429125078"/>
           <Include href="_GUI/_coins/coin.xml" loadImmediate="false" itemID="53af5237-00000097" lastModified="1403998775"/>
           <Include href="_GUI/_coins/icoCoin.xml" loadImmediate="false" itemID="53cb1a9c-000001a0" lastModified="1416501447"/>
           <Include href="_GUI/_healthBars/healthBar.xml" loadImmediate="false" itemID="53b9771c-0000007b" lastModified="1404755544"/>
@@ -274,7 +273,7 @@
           <Include href="персонаж/части тела/тело_С.xml" itemIcon="1" loadImmediate="false" itemID="53775598-00000087" lastModified="1406145125"/>
           <Include href="персонаж/части тела/тело_хотьба_лево.xml" itemIcon="1" loadImmediate="false" itemID="53cc2bbe-00000153" lastModified="1406145125"/>
           <Include href="персонаж/части тела/тело_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776c15-00000062" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_Ю2.xml" itemIcon="1" loadImmediate="false" itemID="53ca9c87-0000006c" lastModified="1406145125"/>
+          <Include href="персонаж/части тела/тело_Ю2.xml" itemIcon="1" loadImmediate="false" itemID="53ca9c87-0000006c" lastModified="1428865915"/>
      </symbols>
      <timelines>
           <DOMTimeline name="start_menu">
@@ -1015,6 +1014,8 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="509863" publishTime="1429120077"/>
+          <PublishItem publishSize="509862" publishTime="1429114008"/>
           <PublishItem publishSize="510918" publishTime="1428671358"/>
           <PublishItem publishSize="510908" publishTime="1428671349"/>
           <PublishItem publishSize="510908" publishTime="1428671335"/>
@@ -1033,7 +1034,5 @@
           <PublishItem publishSize="687313" publishTime="1428060152" publishDebug="true"/>
           <PublishItem publishSize="687301" publishTime="1428060055" publishDebug="true"/>
           <PublishItem publishSize="687433" publishTime="1428060001" publishDebug="true"/>
-          <PublishItem publishSize="687315" publishTime="1428057810" publishDebug="true"/>
-          <PublishItem publishSize="687449" publishTime="1428056295" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>
