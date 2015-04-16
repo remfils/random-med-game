@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="src/collider" itemID="53afd0c0-0000005a" linkageExportForAS="true" linkageClassName="src.util.Collider" lastModified="1411158086">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="src/collider" itemID="53afd0c0-0000005a" lastModified="1429203300">
   <timeline>
     <DOMTimeline name="collider">
       <layers>

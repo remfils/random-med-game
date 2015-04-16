@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/parts/рука" itemID="537753af-00000045" symbolType="graphic" lastModified="1406145125">
+  <timeline>
+    <DOMTimeline name="рука">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!18 -39S2[12 -14 10 7!10 7[10 13 14 45!14 45[17 76 5 79!5 79[-12 83 -16 62!-16 62[-26 21 -9 -39!-9 -39[8 -100 16 -71!16 -71[20 -54 18 -39"/>
+                    <Edge cubics="!16 -71(;24,-39 13,-42 10,7q16 -71Q20 -54q18 -39Q12 -14q10 7);"/>
+                    <Edge cubics="!10 7(;10,20 24,74 5,79q10 7Q10 13q14 45Q17 76q5 79);"/>
+                    <Edge cubics="!5 79(;-12,83 -15,64 -16,62q5 79Q-12 83q-16 62);"/>
+                    <Edge cubics="!-16 62(;-31,4 7,-106 16,-71q-16 62Q-26 21q-9 -39Q8 -100q16 -71);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

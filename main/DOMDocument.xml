@@ -20,7 +20,7 @@
           <DOMFolderItem name="_GUI/_map" itemID="53c4f221-00000078"/>
           <DOMFolderItem name="_GUI/_spells" itemID="53c4f211-00000073"/>
           <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
-          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
@@ -28,7 +28,7 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_torch" itemID="551d3efe-00000161"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/door_lock" itemID="54675e4e-000001f3"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/doors" itemID="53af5331-000000b5"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/doors" itemID="53af5331-000000b5" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/doors/_graph" itemID="53af52a9-000000a0"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop" itemID="541c84dd-000000c6"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/coin" itemID="546e1575-00000110"/>
@@ -38,9 +38,9 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
           <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
           <DOMFolderItem name="_menu/_magesShop" itemID="5470a581-00000125"/>
@@ -49,15 +49,16 @@
           <DOMFolderItem name="_menu/old/_graph" itemID="53af52ac-000000a1"/>
           <DOMFolderItem name="_menu/old/кошелек" itemID="53726c72-00000062"/>
           <DOMFolderItem name="_menu/кнопки" itemID="53ebfe31-00000288"/>
+          <DOMFolderItem name="_player" itemID="552fc5f9-00000169"/>
+          <DOMFolderItem name="_player/parts" itemID="552fc2f1-0000013e"/>
+          <DOMFolderItem name="_player/parts/_головы" itemID="53d0124e-000000d3"/>
+          <DOMFolderItem name="_player/parts/_руки" itemID="53d01255-000000d7"/>
+          <DOMFolderItem name="_player/states" itemID="552fc219-0000012e" isExpanded="true"/>
           <DOMFolderItem name="src" itemID="53afd2e7-00000077" isExpanded="true"/>
-          <DOMFolderItem name="персонаж" itemID="53775395-0000003e" isExpanded="true"/>
-          <DOMFolderItem name="персонаж/части тела" itemID="537753a6-00000043"/>
-          <DOMFolderItem name="персонаж/части тела/_головы" itemID="53d0124e-000000d3"/>
-          <DOMFolderItem name="персонаж/части тела/_руки" itemID="53d01255-000000d7"/>
      </folders>
      <fonts>
-          <DOMFontItem name="MagicFont" itemID="54380457-000000e7" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
           <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
+          <DOMFontItem name="MagicFont" itemID="54380457-000000e7" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
      </fonts>
      <media>
           <DOMBitmapItem name="_menu/65494423_640.jpg" itemID="53cc1ca2-00000094" sourceExternalFilepath="../main/LIBRARY/_menu/65494423_640.jpg" sourceLastImported="1405885513" originalCompressionType="lossless" quality="50" href="_menu/65494423_640.jpg" bitmapDataHRef="M 2 1405885602.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
@@ -128,7 +129,7 @@
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1407526163"/>
           <Include href="_GUI/SpellMenu.xml" loadImmediate="false" itemID="541332c6-000000d2" lastModified="1410545813"/>
           <Include href="_GUI/SpellSelecButton.xml" loadImmediate="false" itemID="54133284-000000c8" lastModified="1410549341"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1428669194"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1429203221"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1412066217"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
@@ -154,7 +155,7 @@
           <Include href="_level/_GAME_OBJECTS/doors/_graph/дверь_основа.xml" loadImmediate="false" itemID="53afdf9d-0000008b" lastModified="1405870176"/>
           <Include href="_level/_GAME_OBJECTS/doors/_graph/дверь1.xml" itemIcon="1" loadImmediate="false" itemID="535d4967-00000023" lastModified="1398622587"/>
           <Include href="_level/_GAME_OBJECTS/doors/carpet.xml" loadImmediate="false" itemID="54215ead-000000e3" lastModified="1411473225"/>
-          <Include href="_level/_GAME_OBJECTS/doors/door.xml" itemID="53af5266-0000009a" lastModified="1412076571"/>
+          <Include href="_level/_GAME_OBJECTS/doors/Door.xml" itemIcon="1" loadImmediate="false" itemID="552fcdd6-0000017a" lastModified="1429196246"/>
           <Include href="_level/_GAME_OBJECTS/doors/doorEntrance.xml" loadImmediate="false" itemID="5421853a-000000ef" lastModified="1411482954"/>
           <Include href="_level/_GAME_OBJECTS/drop/coin/coin_gr.xml" itemIcon="1" loadImmediate="false" itemID="546e1616-00000123" lastModified="1416505967"/>
           <Include href="_level/_GAME_OBJECTS/drop/coin/DropCoin.xml" itemID="546e158d-00000121" lastModified="1416502307"/>
@@ -178,12 +179,12 @@
           <Include href="_level/_GAME_OBJECTS/levers/_graph/ручка_0.5_2.xml" loadImmediate="false" itemID="53b6c1a7-000000ad" lastModified="1404486127"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/шестеренка.xml" itemIcon="1" loadImmediate="false" itemID="537771a8-000000e2" lastModified="1405870990"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever.xml" itemID="540741fa-0000028b" lastModified="1427389911"/>
+          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1429197767"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemIcon="1" loadImmediate="false" itemID="5406cba1-000002bd" lastModified="1428224304"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop.xml" itemIcon="1" loadImmediate="false" itemID="541aeeed-000002fd" lastModified="1411051268"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/part001.xml" itemIcon="1" loadImmediate="false" itemID="541aefb9-00000312" lastModified="1411051449"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart.xml" itemIcon="1" loadImmediate="false" itemID="541af728-0000034a" lastModified="1411053352"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/Box.xml" itemIcon="1" loadImmediate="false" itemID="545e00f5-00000225" lastModified="1428224354"/>
-          <Include href="_level/_GAME_OBJECTS/obstacles/ObstacleObject.xml" itemID="5520e82d-0000012b" lastModified="1428224419"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/Stone.xml" itemIcon="1" loadImmediate="false" itemID="542fd1c8-000000e4" lastModified="1428224394"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/Vase.xml" itemIcon="1" loadImmediate="false" itemID="54142a25-000000ef" lastModified="1428224426"/>
           <Include href="_level/_GAME_OBJECTS/scrolls/scroll.xml" itemIcon="1" loadImmediate="false" itemID="53af534c-000000bd" lastModified="1403999052"/>
@@ -231,49 +232,49 @@
           <Include href="_menu/кнопки/луч анимация.xml" itemIcon="1" loadImmediate="false" itemID="53d01cfd-00000132" lastModified="1406148460"/>
           <Include href="_menu/кнопки/сундук.xml" loadImmediate="false" itemID="53d030e5-00000219" lastModified="1406155462"/>
           <Include href="_menu/название игры.xml" itemIcon="1" loadImmediate="false" itemID="53d0448d-000000b4" lastModified="1416138485"/>
+          <Include href="_player/parts/_головы/голова_В.xml" itemIcon="1" loadImmediate="false" itemID="537753f0-00000050" lastModified="1405453824"/>
+          <Include href="_player/parts/_головы/голова_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad4e2-000002a0" lastModified="1406145125"/>
+          <Include href="_player/parts/_головы/голова_вниз.xml" itemIcon="1" loadImmediate="false" itemID="53c7026a-00000083" lastModified="1406145125"/>
+          <Include href="_player/parts/_головы/голова_вниз_выс.xml" itemIcon="1" loadImmediate="false" itemID="53caab08-000000de" lastModified="1406145125"/>
+          <Include href="_player/parts/_головы/голова_право.xml" itemIcon="1" loadImmediate="false" itemID="53cabfa5-000000f3" lastModified="1406145125"/>
+          <Include href="_player/parts/_головы/голова_С.xml" itemIcon="1" loadImmediate="false" itemID="537755f1-000000a8" lastModified="1406145125"/>
+          <Include href="_player/parts/_головы/голова_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776bed-00000057" lastModified="1406145125"/>
+          <Include href="_player/parts/_головы/шляпа.xml" itemIcon="1" loadImmediate="false" itemID="53ced55c-00000305" lastModified="1406145091"/>
+          <Include href="_player/parts/_головы/шляпа_верх.xml" itemIcon="1" loadImmediate="false" itemID="53d0068c-000000b6" lastModified="1406145091"/>
+          <Include href="_player/parts/_головы/шляпа_влево.xml" itemIcon="1" loadImmediate="false" itemID="53d00a38-000000bf" lastModified="1406145091"/>
+          <Include href="_player/parts/_руки/рука1.xml" itemIcon="1" loadImmediate="false" itemID="53cc285b-00000103" lastModified="1406145091"/>
+          <Include href="_player/parts/_руки/рука2.xml" itemIcon="1" loadImmediate="false" itemID="53cc286b-0000010b" lastModified="1406145091"/>
+          <Include href="_player/parts/_руки/рука3.xml" itemIcon="1" loadImmediate="false" itemID="53cc28ce-0000010d" lastModified="1406145091"/>
+          <Include href="_player/parts/нога_В.xml" itemIcon="1" loadImmediate="false" itemID="53775411-00000059" lastModified="1406145125"/>
+          <Include href="_player/parts/нога_С.xml" itemIcon="1" loadImmediate="false" itemID="537755a5-0000008b" lastModified="1406145125"/>
+          <Include href="_player/parts/нога2.xml" itemIcon="1" loadImmediate="false" itemID="537755c9-00000092" lastModified="1406145125"/>
+          <Include href="_player/parts/нога2_В.xml" itemIcon="1" loadImmediate="false" itemID="5377541c-0000005d" lastModified="1406145125"/>
+          <Include href="_player/parts/плечи_С.xml" itemIcon="1" loadImmediate="false" itemID="5377560b-000000ad" lastModified="1406145125"/>
+          <Include href="_player/parts/посох.xml" itemIcon="1" loadImmediate="false" itemID="53ca9df9-00000074" lastModified="1406145125"/>
+          <Include href="_player/parts/рука.xml" itemIcon="1" loadImmediate="false" itemID="537753af-00000045" lastModified="1406145125"/>
+          <Include href="_player/parts/ручка.xml" itemIcon="1" loadImmediate="false" itemID="53777229-000000ec" lastModified="1406145125"/>
+          <Include href="_player/parts/тело_В.xml" itemIcon="1" loadImmediate="false" itemID="537753bb-00000049" lastModified="1406145125"/>
+          <Include href="_player/parts/тело_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad5e5-000002a8" lastModified="1406145125"/>
+          <Include href="_player/parts/тело_лево_2.xml" itemIcon="1" loadImmediate="false" itemID="53cac5bf-0000018a" lastModified="1406145125"/>
+          <Include href="_player/parts/тело_С.xml" itemIcon="1" loadImmediate="false" itemID="53775598-00000087" lastModified="1406145125"/>
+          <Include href="_player/parts/тело_хотьба_лево.xml" itemIcon="1" loadImmediate="false" itemID="53cc2bbe-00000153" lastModified="1406145125"/>
+          <Include href="_player/parts/тело_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776c15-00000062" lastModified="1406145125"/>
+          <Include href="_player/parts/тело_Ю2.xml" itemIcon="1" loadImmediate="false" itemID="53ca9c87-0000006c" lastModified="1428865915"/>
+          <Include href="_player/PlayerCostume.xml" itemID="552fc242-00000135" lastModified="1429194242"/>
+          <Include href="_player/states/down.xml" loadImmediate="false" itemID="552fc266-0000013b" lastModified="1429193318"/>
+          <Include href="_player/states/end.xml" loadImmediate="false" itemID="552fc38a-00000168" lastModified="1429193610"/>
+          <Include href="_player/states/left.xml" loadImmediate="false" itemID="552fc263-0000013a" lastModified="1429193315"/>
+          <Include href="_player/states/right.xml" loadImmediate="false" itemID="552fc269-0000013c" lastModified="1429193321"/>
+          <Include href="_player/states/stand_down.xml" loadImmediate="false" itemID="552fc277-0000013d" lastModified="1429193335"/>
+          <Include href="_player/states/stand_left.xml" loadImmediate="false" itemID="552fc255-00000137" lastModified="1429193301"/>
+          <Include href="_player/states/stand_right.xml" loadImmediate="false" itemID="552fc25c-00000138" lastModified="1429193308"/>
+          <Include href="_player/states/stand_up.xml" loadImmediate="false" itemID="552fc251-00000136" lastModified="1429193297"/>
+          <Include href="_player/states/up.xml" loadImmediate="false" itemID="552fc260-00000139" lastModified="1429193312"/>
           <Include href="bolt.xml" itemIcon="1" loadImmediate="false" itemID="5498517e-0000025e" lastModified="1419268478"/>
           <Include href="MagicWall.xml" loadImmediate="false" itemID="54985b97-00000298" lastModified="1419271397"/>
           <Include href="spike.xml" itemIcon="1" loadImmediate="false" itemID="54984796-000001f4" lastModified="1419268257"/>
           <Include href="SpikePlane.xml" loadImmediate="false" itemID="54984f3e-0000023b" lastModified="1419268125"/>
-          <Include href="src/collider.xml" itemID="53afd0c0-0000005a" lastModified="1411158086"/>
-          <Include href="src/player.xml" itemID="537cc6a6-00000053" lastModified="1411903663"/>
-          <Include href="персонаж/player_end.xml" loadImmediate="false" itemID="5427ee3a-000002d3" lastModified="1411903630"/>
-          <Include href="персонаж/персонаж_верх.xml" loadImmediate="false" itemID="53cad4d9-0000029c" lastModified="1406063461"/>
-          <Include href="персонаж/персонаж_лево.xml" loadImmediate="false" itemID="53cc2cd2-00000176" lastModified="1406062561"/>
-          <Include href="персонаж/персонаж_право.xml" loadImmediate="false" itemID="53cad1ac-0000019a" lastModified="1406062568"/>
-          <Include href="персонаж/персонаж_хотьба_верх.xml" loadImmediate="false" itemID="53ced3c2-000001ee" lastModified="1406063936"/>
-          <Include href="персонаж/персонаж_хотьба_лево.xml" loadImmediate="false" itemID="53cc2ce1-00000177" lastModified="1406919223"/>
-          <Include href="персонаж/персонаж_хотьба_низ.xml" loadImmediate="false" itemID="53ceb9d6-0000009c" lastModified="1406062460"/>
-          <Include href="персонаж/персонаж_хотьба_право.xml" loadImmediate="false" itemID="53cc2ef0-000002cb" lastModified="1406062539"/>
-          <Include href="персонаж/персонаж_Ю.xml" loadImmediate="false" itemID="5374ede9-00000089" lastModified="1406062468"/>
-          <Include href="персонаж/части тела/_головы/голова_В.xml" itemIcon="1" loadImmediate="false" itemID="537753f0-00000050" lastModified="1405453824"/>
-          <Include href="персонаж/части тела/_головы/голова_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad4e2-000002a0" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/_головы/голова_вниз.xml" itemIcon="1" loadImmediate="false" itemID="53c7026a-00000083" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/_головы/голова_вниз_выс.xml" itemIcon="1" loadImmediate="false" itemID="53caab08-000000de" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/_головы/голова_право.xml" itemIcon="1" loadImmediate="false" itemID="53cabfa5-000000f3" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/_головы/голова_С.xml" itemIcon="1" loadImmediate="false" itemID="537755f1-000000a8" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/_головы/голова_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776bed-00000057" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/_головы/шляпа.xml" itemIcon="1" loadImmediate="false" itemID="53ced55c-00000305" lastModified="1406145091"/>
-          <Include href="персонаж/части тела/_головы/шляпа_верх.xml" itemIcon="1" loadImmediate="false" itemID="53d0068c-000000b6" lastModified="1406145091"/>
-          <Include href="персонаж/части тела/_головы/шляпа_влево.xml" itemIcon="1" loadImmediate="false" itemID="53d00a38-000000bf" lastModified="1406145091"/>
-          <Include href="персонаж/части тела/_руки/рука1.xml" itemIcon="1" loadImmediate="false" itemID="53cc285b-00000103" lastModified="1406145091"/>
-          <Include href="персонаж/части тела/_руки/рука2.xml" itemIcon="1" loadImmediate="false" itemID="53cc286b-0000010b" lastModified="1406145091"/>
-          <Include href="персонаж/части тела/_руки/рука3.xml" itemIcon="1" loadImmediate="false" itemID="53cc28ce-0000010d" lastModified="1406145091"/>
-          <Include href="персонаж/части тела/нога_В.xml" itemIcon="1" loadImmediate="false" itemID="53775411-00000059" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/нога_С.xml" itemIcon="1" loadImmediate="false" itemID="537755a5-0000008b" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/нога2.xml" itemIcon="1" loadImmediate="false" itemID="537755c9-00000092" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/нога2_В.xml" itemIcon="1" loadImmediate="false" itemID="5377541c-0000005d" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/плечи_С.xml" itemIcon="1" loadImmediate="false" itemID="5377560b-000000ad" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/посох.xml" itemIcon="1" loadImmediate="false" itemID="53ca9df9-00000074" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/рука.xml" itemIcon="1" loadImmediate="false" itemID="537753af-00000045" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/ручка.xml" itemIcon="1" loadImmediate="false" itemID="53777229-000000ec" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_В.xml" itemIcon="1" loadImmediate="false" itemID="537753bb-00000049" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad5e5-000002a8" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_лево_2.xml" itemIcon="1" loadImmediate="false" itemID="53cac5bf-0000018a" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_С.xml" itemIcon="1" loadImmediate="false" itemID="53775598-00000087" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_хотьба_лево.xml" itemIcon="1" loadImmediate="false" itemID="53cc2bbe-00000153" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776c15-00000062" lastModified="1406145125"/>
-          <Include href="персонаж/части тела/тело_Ю2.xml" itemIcon="1" loadImmediate="false" itemID="53ca9c87-0000006c" lastModified="1428865915"/>
+          <Include href="src/collider.xml" loadImmediate="false" itemID="53afd0c0-0000005a" lastModified="1429203300"/>
      </symbols>
      <timelines>
           <DOMTimeline name="start_menu">

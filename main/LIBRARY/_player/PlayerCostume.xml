@@ -1,0 +1,180 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1429194242" lastUniqueIdentifier="24">
+  <timeline>
+    <DOMTimeline name="PlayerCostume">
+      <layers>
+        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="87" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="87" duration="11" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="labels" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="8" name="right" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" duration="7" name="left" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" duration="7" name="down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="22" duration="7" name="up" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" duration="12" name="stand_right" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" duration="9" name="stand_left" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="50" duration="13" name="stand_down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="63" duration="12" name="stand_up" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="75" duration="23" name="end" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="collider" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="98" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="collider" centerPoint3DX="-5.6" centerPoint3DY="2.35">
+                  <matrix>
+                    <Matrix a="1.85562133789063" d="0.9305419921875" ty="-0.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="player" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/left" name="player" centerPoint3DX="3.05" centerPoint3DY="-22.5">
+                  <matrix>
+                    <Matrix a="1.656982421875" d="1.656982421875" tx="3.3" ty="-15.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-4.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/right" name="player" centerPoint3DX="-2.35" centerPoint3DY="-22.5">
+                  <matrix>
+                    <Matrix a="-1.656982421875" d="1.656982421875" tx="-2.6" ty="-15.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-4.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/down" name="player" centerPoint3DY="-21.55">
+                  <matrix>
+                    <Matrix a="1.656982421875" d="1.656982421875" tx="0.9" ty="-13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="-5.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/up" name="player" centerPoint3DY="-21.55">
+                  <matrix>
+                    <Matrix a="1.656982421875" d="1.656982421875" tx="0.9" ty="-13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="-5.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/stand_left" name="player" centerPoint3DX="3.05" centerPoint3DY="-22.5">
+                  <matrix>
+                    <Matrix a="1.656982421875" d="1.656982421875" tx="3.3" ty="-15.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-4.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="41" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/stand_right" name="player" centerPoint3DX="-2.35" centerPoint3DY="-22.5">
+                  <matrix>
+                    <Matrix a="-1.656982421875" d="1.656982421875" tx="-2.6" ty="-15.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-4.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="50" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/stand_down" name="player" centerPoint3DY="-21.55">
+                  <matrix>
+                    <Matrix a="1.656982421875" d="1.656982421875" tx="0.9" ty="-13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="-5.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="63" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/stand_up" name="player" centerPoint3DY="-21.55">
+                  <matrix>
+                    <Matrix a="1.656982421875" d="1.656982421875" tx="0.9" ty="-13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="-5.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="75" duration="23" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/states/end" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.656982421875" d="1.656982421875" tx="0.9" ty="-13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="-5.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

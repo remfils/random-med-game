@@ -1,0 +1,61 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/parts/_руки/рука1" itemID="53cc285b-00000103" symbolType="graphic" lastModified="1406145091">
+  <timeline>
+    <DOMTimeline name="рука1">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#930D0D"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor color="#690A0A"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-39 -7[-37 -9 -35 -11!-35 -11[-28 -22 -11 -29!-11 -29[-5 -29 0 -28!0 -28[4 -31 7 -31!7 -31[8 -33 12 -34!12 -34[14 -34 17 -33!17 -33[20 -33 22 -33!22 -33[39 -22 44 -1!44 -1[45 7 45 17!45 17[#2C.C5 #11.B2 44.5 18.5"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!44.5 18.5[44 #14.B2 44 23!44 23[44 28 44 34!44 34[44 43 43 53!43 53[42 70 39 89!39 89|39 90!39 90[34 131 36 151!36 151[33 191 -11 191!-11 191[#FFFFDD.19 #BE.F2 -46 175!-46 175[-57.359375 #9F.38 -58.5 156!-58.5 156[#FFFFC4.AB #98.B6 -60
+ 141.5!-60 141.5[#FFFFC3.16 #82.1E -62 120!-62 120[-64 81 -55 42!-55 42[-51 15 -39 -6!-39 -6|-39 -7"/>
+                    <Edge cubics="!12 -34(;13,-34 15,-34 17,-33q12 -34Q14 -34q17 -33);"/>
+                    <Edge cubics="!7 -31(;8,-32 9,-33 12,-34q7 -31Q8 -33q12 -34);"/>
+                    <Edge cubics="!0 -28(;3,-30 5,-31 7,-31q0 -28Q4 -31q7 -31);"/>
+                    <Edge cubics="!-11 -29(;-7,-29 -3,-29 0,-28q-11 -29Q-5 -29q0 -28);"/>
+                    <Edge cubics="!17 -33(;19,-33 21,-33 22,-33q17 -33Q20 -33q22 -33);"/>
+                    <Edge cubics="!-39 -7(;-38,-8 -36,-10 -35,-11q-39 -7Q-37 -9q-35 -11);"/>
+                    <Edge cubics="!-62 120(;-63,94 -61,68 -55,42q-62 120Q-64 81q-55 42);"/>
+                    <Edge cubics="!44 23(;44,26 44,30 44,34q44 23Q44 28q44 34);"/>
+                    <Edge cubics="!44 34(;44,40 44,46 43,53q44 34Q44 43q43 53);"/>
+                    <Edge cubics="!43 53(;42,64 41,76 39,89q43 53Q42 70q39 89);"/>
+                    <Edge cubics="!39 89(;39,89 39,90 39,90q39 89 39 90);"/>
+                    <Edge cubics="!-35 -11(;-30,-18 -22,-24 -11,-29q-35 -11Q-28 -22q-11 -29);"/>
+                    <Edge cubics="!-62 139(;-61,133 -61,127 -62,120q-62 139Q-61 130q-62 120);"/>
+                    <Edge cubics="!22 -33(;33,-26 41,-15 44,-1q22 -33Q39 -22q44 -1);"/>
+                    <Edge cubics="!-39 -6(;-39,-6 -39,-7 -39,-7q-39 -6 -39 -7);"/>
+                    <Edge cubics="!44 -1(;45,4 45,10 45,17q44 -1Q45 7q45 17);"/>
+                    <Edge cubics="!-55 42(;-52,24 -47,8 -39,-6q-55 42Q-51 15q-39 -6);"/>
+                    <Edge cubics="!36 151(;35,164 29,191 -11,191q36 151Q33 191q-11 191);"/>
+                    <Edge cubics="!45 17(;45,18 45,18 45,19q45 17Q45 18q45 19);"/>
+                    <Edge cubics="!45 19(;44,20 44,22 44,23q45 19Q44 21q44 23);"/>
+                    <Edge cubics="!39 90(;36,117 35,138 36,151q39 90Q34 131q36 151);"/>
+                    <Edge cubics="!-53 168(;-57,162 -60,157 -62,154q-53 168Q-59 159q-62 154);"/>
+                    <Edge cubics="!-62 154(;-61,153 -61,148 -62,139q-62 154Q-61 153q-62 139);"/>
+                    <Edge cubics="!-11 191(;-27,191 -41,183 -53,168q-11 191Q-35 191q-53 168);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

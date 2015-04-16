@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/parts/нога2" itemID="537755c9-00000092" symbolType="graphic" lastModified="1406145125">
+  <timeline>
+    <DOMTimeline name="нога2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!10 40S2[-27 40 -41 16!-41 16[-47.890625 -5.65625 -48 -2!-48 -2[-47.9375 #FFFFD1.03 0 -38!0 -38[48 -29 48 4!48 4[48 40 10 40"/>
+                    <Edge cubics="!48 4(48,4;48,18 41,40 10,40q48 4Q48 40q10 40);"/>
+                    <Edge cubics="!10 40(10,40;-50,40 -48,-10 -48,-2q10 40Q-27 40q-41 16Q-48 -6q-48 -2);"/>
+                    <Edge cubics="!-48 -2(;-48,-66 48,-36 48,4q-48 -2Q-48 -47q0 -38Q48 -29q48 4);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

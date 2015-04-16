@@ -1,0 +1,207 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/stand_right" itemID="552fc25c-00000138" lastModified="1429193308" lastUniqueIdentifier="10">
+  <timeline>
+    <DOMTimeline name="stand_right">
+      <layers>
+        <DOMLayer name="голова" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="4.45" centerPoint3DY="-13.6">
+                  <matrix>
+                    <Matrix a="0.370849609375" b="-0.928680419921875" c="0.942794799804688" d="0.376495361328125" tx="-0.25" ty="-12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-5.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука1_левая" color="#808080" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-0.9" centerPoint3DY="-15.85">
+                  <matrix>
+                    <Matrix a="0.9930419921875" b="-0.137451171875" c="0.0572509765625" d="0.869003295898438" tx="-3.45" ty="-20.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука_правая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/посох" centerPoint3DX="0.35" centerPoint3DY="-7.6">
+                  <matrix>
+                    <Matrix a="0.919113159179688" b="0.1318359375" c="-0.1424560546875" d="0.993133544921875" tx="6.65" ty="-26.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.95" y="18.75"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука_левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_право" symbolType="graphic" firstFrame="1" loop="loop">
+                  <matrix>
+                    <Matrix a="0.20660400390625" b="0.0368804931640625" c="-0.0368804931640625" d="0.20660400390625" tx="-11.05" ty="-42.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="51.55" y="59.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="тело" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="нога2_П" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/тело_хотьба_лево" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.2763671875" d="1.2701416015625" tx="-0.55" ty="-9.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.3" y="1.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="нога2_Л" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.00332641601563" b="0.0078125" c="0.0078125" d="-1.00332641601563" tx="-1.25" ty="10.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="нога2_Л" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.00332641601563" b="0.0078125" c="0.0078125" d="-1.00332641601563" tx="2.4" ty="7.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="обводка" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-2.05" centerPoint3DY="-15.05">
+                  <matrix>
+                    <Matrix a="0.99371337890625" b="0.111663818359375" c="-0.111663818359375" d="0.99371337890625" tx="-3.9" ty="-19.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.3" y="-0.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука2_правая" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="-3.55" centerPoint3DY="-5.05">
+                  <matrix>
+                    <Matrix a="0.99371337890625" b="0.111663818359375" c="-0.111663818359375" d="0.99371337890625" tx="-5.65" ty="-8.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.2" y="-5.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука3_правая" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" centerPoint3DX="-5.9" centerPoint3DY="-4">
+                  <matrix>
+                    <Matrix a="0.99371337890625" b="0.111663818359375" c="-0.111663818359375" d="0.99371337890625" tx="-7.15" ty="-5.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.95" y="1.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="тень" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.02423095703125" d="0.01483154296875" tx="-0.1" ty="10.5"/>
+                        </matrix>
+                        <GradientEntry alpha="0.4" ratio="0.274509803921569"/>
+                        <GradientEntry alpha="0" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!162 -1[219 15 267 45!267 45[316 74 343 110!343 110[380 155 380 210!380 210[380 265 343 312!343 312[316 346 267 375!267 375[219 405 162 423!162 423[87 445 -3 445!-3 445[-163 445 -274 375!-274 375[-385 308 -385 210!-385 210[-385 113 -274
+ 45!-274 45[-163 -24 -3 -24!-3 -24[87 -24 162 -1"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
