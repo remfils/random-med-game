@@ -75,7 +75,7 @@ package src.objects {
         
         override public function requestBodyAt(world:b2World, position:Point = null, speed:Point = null):void {
             
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, _collider);
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, _collider, this);
             
             var fixtureDef:b2FixtureDef = new b2FixtureDef();
             fixtureDef.density = 0.3;

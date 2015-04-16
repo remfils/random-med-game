@@ -25,7 +25,7 @@ package src.objects {
             
             var collider:Collider = getChildByName(colliderName) as Collider;
             
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsDynamicBody(fixtureDef);
             createBodyRequest.bodyDef.linearDamping = 5;
             createBodyRequest.setBodyPosition( new Point(x + collider.x, y + collider.y) );

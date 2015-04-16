@@ -64,7 +64,7 @@ package src.enemy {
         override public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
             var collider:Collider = getChildByName("collider001") as Collider;
             
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsStaticBody();
             
             game.bodyCreator.add(createBodyRequest);

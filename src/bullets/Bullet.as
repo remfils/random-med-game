@@ -41,7 +41,7 @@
             fixtureDef.friction = 0;
             fixtureDef.restitution = 0;
             
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             bodyCreateRequest.setAsDynamicBody(fixtureDef);
             
             bodyCreateRequest.setBodyPosition(position);
@@ -65,7 +65,7 @@
             fixtureDef.friction = 0;
             fixtureDef.restitution = 0;
             
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             bodyCreateRequest.setAsDynamicBody(fixtureDef);
             bodyCreateRequest.parent = this;
             

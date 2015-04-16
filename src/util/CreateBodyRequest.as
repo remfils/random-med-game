@@ -20,7 +20,7 @@ package src.util {
         public var collider:DisplayObject;
         public var world:b2World;
         
-        public var parent:AbstractObject;
+        public var parent:DisplayObject;
         
         public var bodyDef:b2BodyDef;
         public var fixtureDef:b2FixtureDef;
@@ -29,11 +29,11 @@ package src.util {
         public var userData:Object = null;
         //public var 
         
-        public function CreateBodyRequest(world:b2World, collider:DisplayObject) {
+        public function CreateBodyRequest(world:b2World, collider:DisplayObject, object_:Object) {
             this.world = world;
             this.collider = collider;
-            this.parent = collider.parent as AbstractObject;
-            this.userData = { "object": collider.parent };
+            this.parent = collider.parent;
+            this.userData = { "object": object_ };
             
             bodyDef = new b2BodyDef();
             bodyDef.angle = parent.rotation * Math.PI / 180;

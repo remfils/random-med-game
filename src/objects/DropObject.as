@@ -25,7 +25,7 @@ package src.objects {
         override public function requestBodyAt(world:b2World):void {
             var collider:Collider = getChildByName("collider001") as Collider;
             
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsDynamicSensor();
             
             game.bodyCreator.add(createBodyRequest);

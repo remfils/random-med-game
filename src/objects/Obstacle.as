@@ -65,7 +65,7 @@ package src.objects {
         override public function requestBodyAt(world:b2World):void {
             var collider:MovieClip = getChildByName(COLLIDER_NAME) as MovieClip;
             
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             
             if ( isStatic ) bodyCreateRequest.setAsStaticBody();
             else bodyCreateRequest.setAsDynamicBody(fixtureDef);

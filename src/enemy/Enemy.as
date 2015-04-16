@@ -117,7 +117,7 @@
         override public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
             var collider:DisplayObject = costume.getCollider();
             
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             bodyCreateRequest.setAsDynamicBody(enemyFixtureDef);
             
             game.bodyCreator.add(bodyCreateRequest);

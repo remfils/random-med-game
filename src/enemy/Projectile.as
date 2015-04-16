@@ -45,7 +45,7 @@ package src.enemy {
             cRoom = game.cRoom;
             var collider:Collider = getChildByName("collider001") as Collider;
             
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsDynamicSensor();
             
             game.bodyCreator.add(createBodyRequest);

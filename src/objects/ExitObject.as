@@ -22,7 +22,7 @@ package src.objects {
         }
         
         override public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
+            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsStaticSensor();
             
             game.bodyCreator.add(createBodyRequest);
