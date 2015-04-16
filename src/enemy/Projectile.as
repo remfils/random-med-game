@@ -42,7 +42,7 @@ package src.enemy {
         }
         
         override public function requestBodyAt(world:b2World, position:Point = null, speed:Point = null):void {
-            cRoom = Game.cRoom;
+            cRoom = game.cRoom;
             var collider:Collider = getChildByName("collider001") as Collider;
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);

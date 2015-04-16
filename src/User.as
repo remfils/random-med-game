@@ -14,7 +14,8 @@ package src {
         
         public var inventory:Array = new Array();
         
-        public var player:Player;
+        public var player:Player; // delete-me
+        public var playerData:Object;
         
         public function User() {
             player = Player.getInstance();
@@ -32,7 +33,8 @@ package src {
         }
         
         public function setPlayerInventory():void {
-            var item:InventoryItem;
+            trace("ran: User.setPlayerInvetory");
+            /*var item:InventoryItem;
             player.spells = [];
             
             for ( var i:int = 0; i < inventory.length; i++ ) {
@@ -42,18 +44,18 @@ package src {
                         player.spells.push(item.getClassFromName());
                     }
                 }
-            }
+            }*/
         }
         
         public function setDataFromXML (userXML:XMLList):void {
             var item:InventoryItem;
             for each ( var data:XML in userXML.* ) {
-                if ( player.hasOwnProperty(data.name()) ) {
-                    player[data.name()] = data;
-                }
                 if ( this.hasOwnProperty(data.name()) ) {
                     this[data.name()] = data;
-                } 
+                }
+                else {
+                    playerData[data.name()] = data;
+                }
             }
             
             if ( userXML.INVENTORY ) {
@@ -75,15 +77,15 @@ package src {
                 <uid>{this.uid}</uid>
                 <name>{this.name}</name>
                 <surname>{this.surname}</surname>
-                <HEALTH>{player.HEALTH}</HEALTH>
-                <MAX_HEALTH>{player.MAX_HEALTH}</MAX_HEALTH>
-                <MANA>{player.MANA}</MANA>
-                <MAX_MANA>{player.MAX_MANA}</MAX_MANA>
-                <EXP>{player.EXP}</EXP>
-                <MONEY>{player.MONEY}</MONEY>
+                <HEALTH>{playerData.HEALTH}</HEALTH>
+                <MAX_HEALTH>{playerData.MAX_HEALTH}</MAX_HEALTH>
+                <MANA>{playerData.MANA}</MANA>
+                <MAX_MANA>{playerData.MAX_MANA}</MAX_MANA>
+                <EXP>{playerData.EXP}</EXP>
+                <MONEY>{playerData.MONEY}</MONEY>
                 <levelsCompleted>{this.levelsCompleted}</levelsCompleted>
-                <MAX_SPELLS>{player.MAX_SPELLS}</MAX_SPELLS>
-                <MAX_ITEMS>{player.MAX_ITEMS}</MAX_ITEMS>
+                <MAX_SPELLS>{playerData.MAX_SPELLS}</MAX_SPELLS>
+                <MAX_ITEMS>{playerData.MAX_ITEMS}</MAX_ITEMS>
                 <INVENTORY></INVENTORY>
             </User>;
             
@@ -99,8 +101,6 @@ package src {
         }
         
         public function updateData():void {
-            var player:Player = Player.getInstance();
-            
             if ( levelsCompleted < AbstractObject.game.levelId ) {
                 levelsCompleted = AbstractObject.game.levelId;
             }

@@ -5,10 +5,13 @@
     import Box2D.Dynamics.b2World;
     import fl.motion.Color;
     import fl.motion.ColorMatrix;
+    import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.events.Event;
     import flash.filters.ColorMatrixFilter;
     import flash.geom.Point;
+    import flash.net.NetStreamAppendBytesAction;
+    import src.costumes.EnemyCostume;
     import src.events.RoomEvent;
     import src.Game;
     import src.interfaces.ExtrudeObject;
@@ -20,6 +23,10 @@
     import src.Player;
     
     public class Enemy extends TaskObject implements Updatable, ExtrudeObject {
+        public static const DEATH_STATE:String = "death";
+        
+        public var costume:EnemyCostume;
+        
         public static var MAX_HEALTH:Number = 100;
         public static var agroDistance:Number = 150;
         
@@ -47,7 +54,14 @@
             enemyFixtureDef.density = 0.3;
             enemyFixtureDef.userData = { "object": this };
             
+            costume = new EnemyCostume();
+            addChild(costume);
+            
             deactivate();
+        }
+        public function setCotume(enemyBreed:String):void {
+            costume.setType(enemyBreed);
+            if ( getChildIndex(costume) < 0 ) addChild(costume);
         }
         
         override public function update ():void {
@@ -101,7 +115,7 @@
         }
         
         override public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
-            var collider:Collider = getChildByName("collider001") as Collider;
+            var collider:DisplayObject = costume.getCollider();
             
             var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);
             bodyCreateRequest.setAsDynamicBody(enemyFixtureDef);

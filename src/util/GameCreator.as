@@ -8,6 +8,8 @@ package src.util {
     import src.bullets.Spark;
     import src.enemy.ChargerEnemy;
     import src.enemy.Enemy;
+    import src.enemy.EnemyCostume;
+    import src.enemy.Sniper;
     import src.Game;
     import src.levels.CastleLevel;
     import src.levels.Room;
@@ -198,11 +200,22 @@ package src.util {
         
         private function addEnemiesToRoom (room:Room, enemiesXML:XMLList) {
             var taskId:uint = enemiesXML.@task_id;
-            
+            var enemy:Enemy;
             for each ( var object:XML in enemiesXML.* ) {
-                var enemyClass:Class = getDefinitionByName(object.name()) as Class;
+                switch ( object.name() ) {
+                    case EnemyCostume.GHOST:
+                        enemy = new FlyingEnemy();
+                        break;
+                    case EnemyCostume.MONK:
+                        enemy = new Sniper();
+                        break;
+                    case EnemyCostume.RAT:
+                        enemy = new ChargerEnemy();
+                        break;
+                    default: continue;
+                }
                 
-                var enemy:Enemy = new enemyClass() as Enemy;
+                enemy.setType(object.name());
                 
                 enemy.cRoom = room;
                 enemy.taskId = taskId;

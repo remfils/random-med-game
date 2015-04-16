@@ -29,7 +29,7 @@ package src.util {
         public var userData:Object = null;
         //public var 
         
-        public function CreateBodyRequest(world:b2World, collider:MovieClip) {
+        public function CreateBodyRequest(world:b2World, collider:DisplayObject) {
             this.world = world;
             this.collider = collider;
             this.parent = collider.parent as AbstractObject;

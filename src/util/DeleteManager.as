@@ -37,7 +37,7 @@ package src.util {
             var i:int = objectsToRemove.length;
             while ( i-- ) {
                 if ( objectsToRemove[i] is b2Body ) {
-                   Game.cRoom.world.DestroyBody(objectsToRemove[i]);
+                   game.cRoom.world.DestroyBody(objectsToRemove[i]);
                 }
                 
                 if ( objectsToRemove[i] is AbstractObject

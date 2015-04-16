@@ -3,6 +3,11 @@ package src.enemy {
     import flash.geom.Point;
     
     public class ChargerEnemy extends Enemy {
+        public static const ATTACK_HORIZONTAL_STATE:String = "attack_hor";
+        public static const ATTACK_VERTICAL_STATE:String = "attack_vert";
+        public static const ATTACK_VERTICAL_STATE:String = "walk_hor";
+        public static const ATTACK_VERTICAL_STATE:String = "walk_vert";
+        
         public var speed:b2Vec2;
         
         public static var SPEED:Number = 2;

@@ -6,6 +6,7 @@
     import flash.display.MovieClip;
     import flash.events.KeyboardEvent;
     import flash.geom.Point;
+    import src.costumes.PlayerCostume;
     import src.interfaces.ExtrudeObject;
     import src.interfaces.Updatable;
     import src.objects.AbstractObject;
@@ -21,6 +22,19 @@
      * Главный класс игрока
      */
     public class Player extends AbstractObject implements ExtrudeObject {
+//states
+        /*public static const WALK_UP_STATE:String = "walk_up_state";
+        public static const WALK_DOWN_STATE:String = "walk_down_state";
+        public static const WALK_RIGHT_STATE:String = "walk_right_state";
+        public static const WALK_LEFT_STATE:String = "walk_left_state";
+        
+        public static const STAND_UP_STATE:String = "stand_up_state";
+        public static const STAND_DOWN_STATE:String = "stand_down_state";
+        public static const STAND_RIGHT_STATE:String = "stand_right_state";
+        public static const STAND_LEFT_STATE:String = "stand_left_state";
+        
+        public static const _STATE:String = "";*/
+        
 //stats
         public var MAX_HEALTH:uint = 6;
         public var MAX_MANA:uint = 14;
@@ -52,13 +66,13 @@
         public var MOVE_DOWN:Boolean = false;
         
 // направление персонажа
-        private const STAND_SATE:String = "stand_";
-        private const DIR_LEFT:String = "left";
-        private const DIR_RIGHT:String = "right";
-        private const DIR_UP:String = "up";
-        private const DIR_DOWN:String = "down";
+        private static const STAND_SATE:String = "stand_";
+        private static const DIR_LEFT:String = "left";
+        private static const DIR_RIGHT:String = "right";
+        private static const DIR_UP:String = "up";
+        private static const DIR_DOWN:String = "down";
         
-        private var state_label:String = DIR_UP + MOVE_STATE;
+        private var state_label:String = STAND_SATE + DIR_UP;
         
         public var dir_x:Number;
         public var dir_y:Number;
@@ -70,7 +84,7 @@
         
         public function Player():void {
             // задаём стандартное направление
-            gotoAndStop("stand_down");
+            costume.setState(STAND_STATE + DIR_DOWN);
             dir_x = 0;
             dir_y = -1;
 
@@ -228,17 +242,17 @@
         }
         
         public function update():void {
-            x = body.GetPosition().x * Game.WORLD_SCALE;
-            y = body.GetPosition().y * Game.WORLD_SCALE;
+            costume.x = body.GetPosition().x * Game.WORLD_SCALE;
+            costume.y = body.GetPosition().y * Game.WORLD_SCALE;
             
             if ( DIRECTION_CHANGED ) {
                 applyDirectionChanges();
-                gotoAndStop(state_label);
+                costume.setState(state_label);
             }
             
             if ( isStopped() ) {
                 state_label += STAND_SATE;
-                gotoAndStop(state_label);
+                costume.setState(state_label);
             }
             
             updateHoldObject();

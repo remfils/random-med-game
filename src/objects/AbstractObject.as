@@ -4,6 +4,7 @@ package src.objects {
     import fl.motion.Color;
 	import flash.display.MovieClip;
     import flash.geom.Point;
+    import src.costumes.Costume;
     import src.Game;
     import src.util.CreateBodyRequest;
 	
@@ -14,6 +15,7 @@ package src.objects {
     public class AbstractObject extends MovieClip {
         public static var game:Game;
         public var body:b2Body;
+        public var costume:Costume;
         
         public function AbstractObject() {
             super();
