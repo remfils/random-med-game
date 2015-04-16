@@ -49,7 +49,7 @@ package src.util {
                     startDelayedDrop();
                 }
                 else {
-                    while ( Game.cRoom.checkOverlapGameObjects(obj) ) {
+                    while ( game.cRoom.checkOverlapGameObjects(obj) ) {
                         obj.y -= obj.height;
                     }
                     dropInCurrentRoom(obj);
@@ -65,7 +65,7 @@ package src.util {
         
         private static function checkZoneToDropObject(e:TimerEvent):void {
             if ( delayedDropObject is ExitObject ) {
-                if ( !Game.cRoom.checkOverlapGameObjects(ExitObject(delayedDropObject).collider) ) {
+                if ( !game.cRoom.checkOverlapGameObjects(ExitObject(delayedDropObject).collider) ) {
                     var timer:Timer = e.target as Timer;
                     timer.removeEventListener(TimerEvent.TIMER, checkZoneToDropObject);
                     timer.stop();
@@ -95,7 +95,7 @@ package src.util {
         }
         
         public static function dropInCurrentRoom(dropObject:DropObject):void {
-            var room:Room = Game.cRoom;
+            var room:Room = game.cRoom;
             dropObject.playDrop();
             dropObject.requestBodyAt(room.world);
             room.gameObjectPanel.addChild(dropObject);

@@ -112,12 +112,12 @@ package src.levels {
         
         private function checkExitCollide(userDataA:Object, userDataB:Object):void {
             if ( userDataA.object is Player || userDataB.object is Player ) {
-                if ( userDataA.object is Door ) {
+                /*if ( userDataA.object is Door ) {
                     Sprite(userDataA.object).dispatchEvent(new RoomEvent(RoomEvent.EXIT_ROOM_EVENT));
                 }
                 if ( userDataB.object is Door ) {
                     Sprite(userDataB.object).dispatchEvent(new RoomEvent(RoomEvent.EXIT_ROOM_EVENT));
-                }
+                }*/
             }
         }
         

@@ -22,7 +22,7 @@ package src.objects {
             gotoAndPlay("drop");
         }
         
-        public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
+        override public function requestBodyAt(world:b2World):void {
             var collider:Collider = getChildByName("collider001") as Collider;
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider);

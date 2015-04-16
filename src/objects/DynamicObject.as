@@ -18,7 +18,7 @@ package src.objects {
                 ItemDropper.dropSmallFromObject(this);
                 
                 world.DestroyBody(body);
-                Game.cRoom.addChild(this);
+                game.cRoom.addChild(this);
                 gotoAndPlay("break");
             }
             super.update();

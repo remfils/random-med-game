@@ -30,7 +30,7 @@ package src.objects {
             super.update();
             
             if ( active && playerCollider.checkObjectCollision(_activeArea) ) {
-                var player:Player = Player.getInstance();
+                var player:Player = game.player;
                 
                 if ( player.ACTION_PRESSED ) {
                     if ( !player.holdObject || player.holdObject == this ) {
@@ -59,7 +59,7 @@ package src.objects {
                 y = -30;
                 
                 body.SetActive(false);
-                Game.cRoom.removeActiveObject(this);
+                game.cRoom.removeActiveObject(this);
             }
             else {
                 x = player.x + ( playerCollider.width + _collider.width ) * player.dir_x / 2;
@@ -69,7 +69,7 @@ package src.objects {
                     player.holdObject = null;
                 }
                 
-                Game.cRoom.addActiveObject(this);
+                game.cRoom.addActiveObject(this);
             }
         }
         

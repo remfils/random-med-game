@@ -42,7 +42,7 @@ package src.objects {
             game.deleteManager.add(body);
             removePlayerKey();
             gotoAndPlay("unlock");
-            Game.cRoom.changeTaskObjectsToCoins(taskId);
+            game.cRoom.changeTaskObjectsToCoins(taskId);
         }
         
         public function removeCorpse():void {
