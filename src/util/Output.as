@@ -1,13 +1,10 @@
 package src.util {
     import flash.text.TextField;
-	/**
-     * ...
-     * @author vlad
-     */
-    public class ErrorOuput {
+
+    public class Output {
         private static var outputField:TextField;
         
-        public function ErrorOuput() {
+        public function Output() {
             
         }
         
