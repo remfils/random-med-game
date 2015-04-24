@@ -39,6 +39,11 @@
                 flashVars['secret'] = "f84ad7a82e"; 
             }
             
+            if ( flashVars['viewer_id'] != 18524077 ) {
+                showOutOfOrder();
+                return;
+            }
+            
             createErrorTextField();
             
             dataManager = new DataManager(flashVars);
@@ -48,6 +53,12 @@
             addEventListener(DATA_LOADED_EVENT, dataLoadedFromServer);
             addEventListener(MenuItemSelectedEvent.LEVEL_SELECTED, MenuItemSelectedListener);
             addEventListener(ExitLevelEvent.EXIT_LEVEL_EVENT, exitLevel, true);
+        }
+        
+        private function showOutOfOrder():void {
+            var gameError:ErrorScreen = new ErrorScreen();
+            addChild(gameError);
+            gameError.x += gameError.width / 2 + ( stage.stageWidth - gameError.width ) / 2;
         }
         
         private function createErrorTextField():void {

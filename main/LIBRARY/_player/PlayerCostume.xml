@@ -1,13 +1,13 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1429807985" lastUniqueIdentifier="24">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1429885784" lastUniqueIdentifier="24">
   <timeline>
-    <DOMTimeline name="PlayerCostume" currentFrame="22">
+    <DOMTimeline name="PlayerCostume" currentFrame="29">
       <layers>
         <DOMLayer name="actions" color="#FF800A" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="87" keyMode="9728">
+            <DOMFrame index="0" duration="101" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="87" duration="11" keyMode="9728">
+            <DOMFrame index="101" duration="11" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
@@ -15,40 +15,40 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="labels" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="8" name="right" labelType="name" keyMode="9728">
+            <DOMFrame index="0" duration="10" name="move_right" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="8" duration="7" name="left" labelType="name" keyMode="9728">
+            <DOMFrame index="10" duration="10" name="move_left" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="15" duration="7" name="down" labelType="name" keyMode="9728">
+            <DOMFrame index="20" duration="10" name="move_down" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="22" duration="7" name="up" labelType="name" keyMode="9728">
+            <DOMFrame index="30" duration="11" name="move_up" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="29" duration="12" name="stand_right" labelType="name" keyMode="9728">
+            <DOMFrame index="41" duration="12" name="stand_right" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="41" duration="9" name="stand_left" labelType="name" keyMode="9728">
+            <DOMFrame index="53" duration="11" name="stand_left" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="50" duration="13" name="stand_down" labelType="name" keyMode="9728">
+            <DOMFrame index="64" duration="13" name="stand_down" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="63" duration="12" name="stand_up" labelType="name" keyMode="9728">
+            <DOMFrame index="77" duration="12" name="stand_up" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="75" duration="23" name="end" labelType="name" keyMode="9728">
+            <DOMFrame index="89" duration="23" name="end" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="collider" color="#9933CC" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="98" keyMode="9728">
+            <DOMFrame index="0" duration="112" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-5.6" centerPoint3DY="2.35">
                   <matrix>
@@ -62,9 +62,9 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="player" color="#FF800A" autoNamed="false">
+        <DOMLayer name="player" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="8" keyMode="9728">
+            <DOMFrame index="0" duration="10" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/left" centerPoint3DX="3.05" centerPoint3DY="-22.5">
                   <matrix>
@@ -76,7 +76,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="8" duration="7" keyMode="9728">
+            <DOMFrame index="10" duration="10" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/right" centerPoint3DX="-2.35" centerPoint3DY="-22.5">
                   <matrix>
@@ -88,7 +88,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="15" duration="7" keyMode="9728">
+            <DOMFrame index="20" duration="10" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/down" centerPoint3DY="-21.55">
                   <matrix>
@@ -100,7 +100,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="22" duration="7" keyMode="9728">
+            <DOMFrame index="30" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/up" centerPoint3DY="-21.55">
                   <matrix>
@@ -112,7 +112,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="29" duration="12" keyMode="9728">
+            <DOMFrame index="41" duration="12" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/stand_left" centerPoint3DX="3.05" centerPoint3DY="-22.5">
                   <matrix>
@@ -124,7 +124,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="41" duration="9" keyMode="9728">
+            <DOMFrame index="53" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/stand_right" centerPoint3DX="-2.35" centerPoint3DY="-22.5">
                   <matrix>
@@ -136,7 +136,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="50" duration="13" keyMode="9728">
+            <DOMFrame index="64" duration="13" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/stand_down" centerPoint3DY="-21.55">
                   <matrix>
@@ -148,7 +148,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="63" duration="12" keyMode="9728">
+            <DOMFrame index="77" duration="12" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/stand_up" centerPoint3DY="-21.55">
                   <matrix>
@@ -160,7 +160,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="75" duration="23" keyMode="9728">
+            <DOMFrame index="89" duration="23" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/states/end" symbolType="graphic" loop="loop">
                   <matrix>
