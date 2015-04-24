@@ -50,14 +50,14 @@ package src.ui {
         override public function readData(data:Object):void {
             super.readData(data);
             
-            addPlaceholders(data.user.player as Player);
+            addPlaceholders(data.user.playerData);
             
             addItems(data.user as User);
         }
         
-        private function addPlaceholders(player:Player):void {
-            var maxSpells:int = player.MAX_SPELLS,
-                maxItems:int = player.MAX_ITEMS,
+        private function addPlaceholders(playerData:Object):void {
+            var maxSpells:int = playerData.MAX_SPELLS,
+                maxItems:int = playerData.MAX_ITEMS,
                 i:int,
                 item:Object,
                 ph:MageShopContainer,
