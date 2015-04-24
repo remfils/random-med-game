@@ -5,14 +5,15 @@
     import flash.text.TextFieldAutoSize;
     import src.objects.AbstractObject;
     import src.Player;
+    import src.ui.AbstractMenu;
     import src.ui.playerStat.StatPoint;
     import src.bullets.*;
     import flash.utils.*;
     
-    public class PlayerStat extends AbstractObject {
+    public class PlayerStat extends AbstractMenu {
         static public var instance:PlayerStat = null;
         public var current_theme = 1;
-        var level_map;
+        var level_map:Map;
         
         private var healthBar:Bar;
         private var manaBar:Bar;
@@ -22,11 +23,15 @@
         
         var hearts:Array = new Array();
         
+        public var spellPic_mc, spellFire_mc, spellLeft_mc, spellRight_mc :MovieClip;
+        public var level_txt, money_txt, exp_txt: TextField;
+        
         public function PlayerStat() {
             super();
             level_map = new Map();
             level_map.x = 519;
             level_map.y = 13;
+            level_map._player = game.player;
             addChild (level_map);
             
             healthBar = new Bar(StatHeart as Class, "HEALTH");
@@ -40,6 +45,16 @@
             manaBar.pointsLeftPadding = 7;
             manaBar.redraw();
             addChild(manaBar);
+            
+            // setting variables
+            spellPic_mc = getChildByName("spellPic_mc") as MovieClip;
+            spellFire_mc = getChildByName("spellFire_mc") as MovieClip;
+            spellLeft_mc = getChildByName("spellLeft_mc") as MovieClip;
+            spellRight_mc = getChildByName("spellRight_mc") as MovieClip;
+            
+            level_txt = getChildByName("level_txt") as TextField;
+            money_txt = getChildByName("money_txt") as TextField;
+            exp_txt = getChildByName("exp_txt") as TextField;
         }
         
         public function setCurrentSpell(spellClass:Class):void {
@@ -72,13 +87,13 @@
         }
         
         public function swapMenuTheme(keyFrame:int) {
-            gotoAndStop(keyFrame);
+            //gotoAndStop(keyFrame);
         }
         
         public function nextMenuTheme () {
             current_theme ++;
-            if (current_theme == totalFrames + 1) current_theme = 1;
-            gotoAndStop( current_theme );
+            /*if (current_theme == totalFrames + 1) current_theme = 1;
+            gotoAndStop( current_theme );*/
         }
         
         public function getMapMC ():Map {
