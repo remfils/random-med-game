@@ -12,9 +12,10 @@ package src.ui.mageShop {
         public var isSpell:Boolean;
         public var dsc:String;
         
+        public var item_mc:MovieClip;
+        
         public function InventoryItem() {
             super();
-            item_mc.mouseEnabled = false;
         }
         
         public function setParams(iid:uint, name:String, name_rus:String, dsc:String, isSpell:Boolean, onPlayer:Boolean):void {
@@ -25,6 +26,8 @@ package src.ui.mageShop {
             this.isSpell = isSpell;
             this.onPlayer = onPlayer;
             
+            item_mc = getChildByName("item_mc") as MovieClip;
+            item_mc.mouseEnabled = false;
             item_mc.gotoAndStop(item_name);
         }
         
