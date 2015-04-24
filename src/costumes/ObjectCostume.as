@@ -19,7 +19,6 @@ package src.costumes {
         public static const EXIT_TYPE:String = "Exit";
         public static const POTION_MANA_TYPE:String = "PotionMP";
         public static const POTION_HEALTH_TYPE:String = "PotionHP";
-        public static const EXIT_TYPE:String = "Exit";
         
         // TASK OBJECTS
         

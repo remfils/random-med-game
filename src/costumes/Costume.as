@@ -4,11 +4,12 @@ package src.costumes {
 
     public class Costume extends MovieClip {
         protected static const COLLIDER_NAME:String = "costume_collider";
+        public var costume_collider:DisplayObject;
         
         protected var type:String = "";
         
         public function Costume() {
-            
+            costume_collider = getChildByName(COLLIDER_NAME) as MovieClip;
         }
         
         public function setType(type_:String):void {
@@ -20,7 +21,7 @@ package src.costumes {
         }
         
         public function getCollider():DisplayObject {
-            return getChildByName(COLLIDER_NAME);
+            return costume_collider;
         }
         
     }
