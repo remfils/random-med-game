@@ -5,10 +5,7 @@ package src.ui {
     import flash.events.MouseEvent;
     import src.events.MenuItemSelectedEvent;
     import src.User;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class LevelSelectMenu extends AbstractMenu {
         private var allLevelsContainer:Sprite;
         

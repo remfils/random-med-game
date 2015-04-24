@@ -10,10 +10,7 @@ package src.ui {
     import flash.text.TextFormat;
     import src.Player;
     import src.User;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class TitleMenu extends AbstractMenu {
         
         public function TitleMenu() {
@@ -46,9 +43,9 @@ package src.ui {
             
             userInfo.text = "Имя: " + user.name + "\n"
                 + "Фамилия: " + user.surname + "\n"
-                + "Уровень: " + user.player.LEVEL + "\n"
-                + "♥ = " + user.player.HEALTH / 2. + " / " + user.player.MAX_HEALTH / 2. + "    "
-                + "ѽ =  " + user.player.MANA / 2. + " / " + user.player.MAX_MANA / 2. + ""
+                + "Уровень: " + user.playerData.LEVEL + "\n"
+                + "♥ = " + user.playerData.HEALTH / 2. + " / " + user.playerData.MAX_HEALTH / 2. + "    "
+                + "ѽ =  " + user.playerData.MANA / 2. + " / " + user.playerData.MAX_MANA / 2. + ""
                 + "";
             userInfo.width = userInfo.textWidth + 20;
             userInfo.height = userInfo.textHeight + 20;
