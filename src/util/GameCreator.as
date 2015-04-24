@@ -1,6 +1,7 @@
 package src.util {
     import fl.motion.Color;
     import flash.display.Sprite;
+    import flash.geom.Point;
     import flash.text.StaticText;
     import src.bullets.Bombastic;
     import src.bullets.BombSpell;
@@ -202,6 +203,7 @@ package src.util {
             }
         }
         
+        // setPositionBad -> setPosition
         private function addEnemiesToRoom (room:Room, enemiesXML:XMLList) {
             return;
             var taskId:uint = enemiesXML.@task_id;
@@ -225,7 +227,7 @@ package src.util {
                 enemy.cRoom = room;
                 enemy.taskId = taskId;
                 
-                enemy.setPosition(object.@x,object.@y);
+                enemy.setPosition(new Point(object.@x,object.@y));
                 
                 room.addEnenemy(enemy);
             }
