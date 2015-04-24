@@ -14,11 +14,11 @@ package src {
         
         public var inventory:Array = new Array();
         
-        public var player:Player; // delete-me
         public var playerData:Object;
         
         public function User() {
-            player = Player.getInstance();
+            playerData = new Object();
+            //player = Player.getInstance();
         }
         
         public function putSpellAt ( position:int, Spell:Class ):void {
