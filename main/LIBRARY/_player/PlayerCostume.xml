@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1429807985" lastUniqueIdentifier="24">
   <timeline>
-    <DOMTimeline name="PlayerCostume" currentFrame="68">
+    <DOMTimeline name="PlayerCostume" currentFrame="22">
       <layers>
         <DOMLayer name="actions" color="#FF800A" autoNamed="false">
           <frames>
@@ -15,7 +15,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
+        <DOMLayer name="labels" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="8" name="right" labelType="name" keyMode="9728">
               <elements/>
@@ -46,7 +46,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="collider" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="collider" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="98" keyMode="9728">
               <elements>

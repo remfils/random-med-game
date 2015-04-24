@@ -394,24 +394,22 @@
                   <edges>
                     <Edge fillStyle0="1" fillStyle1="2" strokeStyle="1" edges="
 !13307 1760|14770 317"/>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="
+!14770 317|309 317"/>
+                    <Edge fillStyle0="1" fillStyle1="3" strokeStyle="1" edges="
+!309 317|1772 1809"/>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="
+!1772 1809|13307 1760"/>
+                    <Edge fillStyle0="4" fillStyle1="2" strokeStyle="1" edges="
+!14770 9775|13307 8301"/>
+                    <Edge fillStyle0="4" strokeStyle="1" edges="
+!13307 8301|1764 8295"/>
+                    <Edge fillStyle0="4" fillStyle1="3" strokeStyle="1" edges="
+!1764 8295|309 9775"/>
+                    <Edge fillStyle0="4" strokeStyle="1" edges="
+!309 9775|14770 9775"/>
                     <Edge fillStyle1="2" strokeStyle="1" edges="
-!14770 317|14770 9775"/>
-                    <Edge fillStyle1="4" strokeStyle="1" edges="
-!14770 9775|309 9775"/>
-                    <Edge fillStyle0="3" fillStyle1="4" strokeStyle="1" edges="
-!309 9775|1764 8295"/>
-                    <Edge fillStyle1="4" strokeStyle="1" edges="
-!1764 8295|13307 8301"/>
-                    <Edge fillStyle0="2" fillStyle1="4" strokeStyle="1" edges="
-!13307 8301|14770 9775"/>
-                    <Edge fillStyle1="2" strokeStyle="1" edges="
-!13307 8301|13307 1760"/>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="
-!13307 1760|1772 1809"/>
-                    <Edge fillStyle0="3" fillStyle1="1" strokeStyle="1" edges="
-!1772 1809|309 317"/>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="
-!309 317|14770 317"/>
+!13307 8301|13307 1760!14770 317|14770 9775"/>
                     <Edge fillStyle0="3" strokeStyle="1" edges="
 !309 317|309 9775!1764 8295|1772 1809"/>
                     <Edge cubics="!309 9775(;309,9775 309,317 309,317q309 9775 309 317);"/>

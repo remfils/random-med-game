@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1429859610" lastUniqueIdentifier="45">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1429870505" lastUniqueIdentifier="45">
   <timeline>
     <DOMTimeline name="playerStat">
       <layers>
@@ -131,11 +131,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 8" color="#FF4F4F">
+        <DOMLayer name="Layer 8" color="#FF4F4F" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_spells/spellPic" name="spellPic_mc" centerPoint3DX="446.9" centerPoint3DY="47.55">
+                <DOMSymbolInstance libraryItemName="_GUI/_spells/spellPic" name="spellPic_mc" selected="true" centerPoint3DX="446.9" centerPoint3DY="47.55">
                   <matrix>
                     <Matrix tx="428.05" ty="17.8"/>
                   </matrix>
@@ -243,7 +243,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="полоски хп" color="#FF800A" current="true" isSelected="true" autoNamed="false" layerType="guide">
+        <DOMLayer name="полоски хп" color="#FF800A" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
