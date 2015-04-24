@@ -20,7 +20,7 @@ package src.util {
         public var collider:DisplayObject;
         public var world:b2World;
         
-        public var parent:DisplayObject;
+        public var actor:AbstractObject;
         
         public var bodyDef:b2BodyDef;
         public var fixtureDef:b2FixtureDef;
@@ -29,14 +29,14 @@ package src.util {
         public var userData:Object = null;
         //public var 
         
-        public function CreateBodyRequest(world:b2World, collider:DisplayObject, object_:Object) {
+        public function CreateBodyRequest(world:b2World, collider:DisplayObject, actor_:AbstractObject) {
             this.world = world;
             this.collider = collider;
-            this.parent = collider.parent;
-            this.userData = { "object": object_ };
+            this.actor = actor_;
+            this.userData = { "object": actor_ };
             
             bodyDef = new b2BodyDef();
-            bodyDef.angle = parent.rotation * Math.PI / 180;
+            bodyDef.angle = actor.costume.rotation * Game.TO_RAD;
             
             var globalPosition:Point = collider.localToGlobal(new Point(0,0));
             bodyDef.position.Set( globalPosition.x / Game.WORLD_SCALE, globalPosition.y / Game.WORLD_SCALE);
@@ -88,7 +88,7 @@ package src.util {
         public function destroy():void {
             collider = null;
             world = null;
-            parent = null;
+            actor = null;
             bodyDef = null;
             fixtureDef = null;
             userData = null;

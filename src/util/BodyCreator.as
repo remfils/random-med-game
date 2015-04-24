@@ -29,9 +29,9 @@ package src.util {
                     
                     body.CreateFixture(request.fixtureDef);
                     body.SetLinearVelocity(request.velocity);
-                    request.parent.body = body;
+                    request.actor.body = body;
                     
-                    request.parent.removeChild(request.collider);
+                    //request.actor.removeChild(request.collider);
                     request.destroy();
                     
                     bodies.splice(i, 1);
