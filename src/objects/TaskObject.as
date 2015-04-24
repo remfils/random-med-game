@@ -1,11 +1,13 @@
 package src.objects {
+    import Box2D.Dynamics.b2World;
+    import Box2D.Dynamics.b2Body;
     import src.interfaces.Updatable;
     import src.util.Collider;
 	/**
      * ...
      * @author vlad
      */
-    public class TaskObject extends AbstractObject implements Updatable {
+    public class TaskObject extends AbstractObject {
         public var id:uint = 0;
         public var taskId:uint = 0;
         
