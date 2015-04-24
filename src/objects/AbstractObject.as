@@ -23,6 +23,22 @@ package src.objects {
             super();
         }
         
+        public function set x (param:Number):void {
+            costume.x = param;
+        }
+        
+        public function get x ():Number {
+            return costume.x;
+        }
+        
+        public function set y (param:Number):void {
+            costume.y = param;
+        }
+        
+        public function get y ():Number {
+            return costume.y;
+        }
+        
         public function requestBodyAt(world:b2World):void {
             var collider:DisplayObject = costume.getCollider();
             
@@ -55,7 +71,7 @@ package src.objects {
         public function setTint(color:uint):void {
             var col:Color = new Color();
             col.setTint(color, 0.3);
-            transform.colorTransform = col;
+            costume.transform.colorTransform = col;
         }
         
     }
