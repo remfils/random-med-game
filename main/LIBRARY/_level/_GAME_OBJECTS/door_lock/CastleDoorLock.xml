@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/door_lock/CastleDoorLock" itemID="546765d6-0000024f" linkageExportForAS="true" linkageBaseClass="src.objects.DoorLock" linkageClassName="CastleDoorLock" lastModified="1427389879" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/door_lock/CastleDoorLock" itemID="546765d6-0000024f" lastModified="1429366627" lastUniqueIdentifier="7">
   <timeline>
     <DOMTimeline name="CastleDoorLock">
       <layers>

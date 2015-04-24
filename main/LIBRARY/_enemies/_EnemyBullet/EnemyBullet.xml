@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_EnemyBullet/EnemyBullet" itemID="545f54ee-00000469" linkageExportForAS="true" linkageBaseClass="src.enemy.Projectile" linkageClassName="EnemyBullet" lastModified="1415873372" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_EnemyBullet/EnemyBullet" itemID="545f54ee-00000469" lastModified="1429367400" lastUniqueIdentifier="5">
   <timeline>
     <DOMTimeline name="EnemyBullet" currentFrame="23">
       <layers>

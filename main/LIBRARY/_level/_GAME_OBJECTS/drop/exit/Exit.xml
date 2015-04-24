@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/exit/Exit" itemID="5427c19d-000000e1" linkageExportForAS="true" linkageClassName="src.objects.ExitObject" lastModified="1428671275" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/exit/Exit" itemID="5427c19d-000000e1" lastModified="1429362752" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="Exit" currentFrame="16">
       <layers>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1421323086" lastUniqueIdentifier="45">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1429859610" lastUniqueIdentifier="45">
   <timeline>
     <DOMTimeline name="playerStat">
       <layers>
@@ -195,7 +195,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="exp" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="exp" color="#4F80FF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -243,11 +243,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="полоски хп" color="#FF800A" autoNamed="false">
+        <DOMLayer name="полоски хп" color="#FF800A" current="true" isSelected="true" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_map/map" name="map" centerPoint3DX="587.45" centerPoint3DY="49.45">
+                <DOMSymbolInstance libraryItemName="_GUI/_map/map" centerPoint3DX="587.45" centerPoint3DY="49.45">
                   <matrix>
                     <Matrix tx="519.6" ty="13.55"/>
                   </matrix>

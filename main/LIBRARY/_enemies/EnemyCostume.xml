@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.enemy.EnemyCostume" lastModified="1429125078" lastUniqueIdentifier="26">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.enemy.EnemyCostume" lastModified="1429448457" lastUniqueIdentifier="26">
   <timeline>
     <DOMTimeline name="EnemyCostume">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" locked="true" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="14" name="Ghost_stand" labelType="name" keyMode="9728">
               <elements/>
@@ -42,7 +42,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#FF800A" locked="true">
+        <DOMLayer name="Layer 2" color="#FF800A">
           <frames>
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements/>
@@ -52,7 +52,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="collider" color="#FF800A" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="collider" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="52" keyMode="9728">
               <elements>
@@ -68,7 +68,7 @@
             </DOMFrame>
             <DOMFrame index="52" duration="77" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
                     <Matrix a="1.22921752929688" d="1.00523376464844"/>
                   </matrix>
@@ -92,7 +92,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#FF4FFF" locked="true" autoNamed="false">
+        <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="29" keyMode="9728">
               <elements/>
@@ -104,9 +104,6 @@
               <elements/>
             </DOMFrame>
             <DOMFrame index="51" duration="60" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[removeCostume();]]></script>
-              </Actionscript>
               <elements/>
             </DOMFrame>
             <DOMFrame index="111" duration="17" keyMode="9728">
@@ -265,7 +262,7 @@
             </DOMFrame>
             <DOMFrame index="157" duration="55" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_shoot" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_shoot" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.3265380859375" d="0.3265380859375" tx="1.45" ty="0.9"/>
                   </matrix>

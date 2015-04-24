@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/levers/Lever" itemID="540741fa-0000028b" linkageExportForAS="true" linkageBaseClass="src.objects.Lever" linkageClassName="CastleLever" lastModified="1427389911" lastUniqueIdentifier="9">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/levers/Lever" itemID="540741fa-0000028b" lastModified="1429366706" lastUniqueIdentifier="9">
   <timeline>
     <DOMTimeline name="Lever">
       <layers>

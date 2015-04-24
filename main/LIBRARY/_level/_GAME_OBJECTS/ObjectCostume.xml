@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1429197767" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1429818559" lastUniqueIdentifier="5">
   <timeline>
-    <DOMTimeline name="ObjectCostume" currentFrame="179">
+    <DOMTimeline name="ObjectCostume" currentFrame="32">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" name="Barell_stand" labelType="name" keyMode="9728">
               <elements/>
@@ -143,7 +143,7 @@
           <frames>
             <DOMFrame index="0" duration="27" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="obst_collider" centerPoint3DX="-16.55" centerPoint3DY="-5">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-16.55" centerPoint3DY="-5">
                   <matrix>
                     <Matrix a="2.5650634765625" d="1.12139892578125" ty="0.4"/>
                   </matrix>
@@ -155,7 +155,7 @@
             </DOMFrame>
             <DOMFrame index="27" duration="24" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="obst_collider" selected="true" centerPoint3DX="-16.55" centerPoint3DY="-5">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DX="-16.55" centerPoint3DY="-5">
                   <matrix>
                     <Matrix a="2.73324584960938" d="2.7449951171875" ty="0.4"/>
                   </matrix>
@@ -167,7 +167,7 @@
             </DOMFrame>
             <DOMFrame index="51" duration="27" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="obst_collider" selected="true" centerPoint3DX="-16.55" centerPoint3DY="-5">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DX="-16.55" centerPoint3DY="-5">
                   <matrix>
                     <Matrix a="2.73324584960938" d="2.7449951171875" ty="0.4"/>
                   </matrix>
@@ -179,7 +179,7 @@
             </DOMFrame>
             <DOMFrame index="78" duration="30" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="obst_collider" centerPoint3DX="-15.95" centerPoint3DY="-5.4">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-15.95" centerPoint3DY="-5.4">
                   <matrix>
                     <Matrix a="1.63363647460938" d="0.831787109375"/>
                   </matrix>
@@ -191,9 +191,9 @@
             </DOMFrame>
             <DOMFrame index="108" duration="107" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="obst_collider" centerPoint3DX="-15.95" centerPoint3DY="-12.4">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-18.5">
                   <matrix>
-                    <Matrix a="3.50830078125" d="0.735809326171875" ty="-7"/>
+                    <Matrix a="5.25439453125" d="1.10202026367188" ty="-10.1"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -203,7 +203,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="obj" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="obj" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements>
@@ -303,7 +303,10 @@
             </DOMFrame>
             <DOMFrame index="108" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.4976806640625" d="1.4976806640625"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="-3.2" y="-21.65"/>
                   </transformationPoint>
@@ -313,6 +316,9 @@
             <DOMFrame index="119" duration="6" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="11" loop="single frame">
+                  <matrix>
+                    <Matrix a="1.4976806640625" d="1.4976806640625"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="-3.2" y="-21.65"/>
                   </transformationPoint>
@@ -322,6 +328,9 @@
             <DOMFrame index="125" duration="9" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="11" loop="loop">
+                  <matrix>
+                    <Matrix a="1.4976806640625" d="1.4976806640625"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="-3.2" y="-21.65"/>
                   </transformationPoint>
@@ -331,6 +340,9 @@
             <DOMFrame index="134" duration="5" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="20" loop="single frame">
+                  <matrix>
+                    <Matrix a="1.4976806640625" d="1.4976806640625"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="-3.2" y="-21.65"/>
                   </transformationPoint>
@@ -342,7 +354,10 @@
             </DOMFrame>
             <DOMFrame index="160" duration="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" selected="true" symbolType="graphic" firstFrame="32" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="32" loop="loop">
+                  <matrix>
+                    <Matrix a="1.4976806640625" d="1.4976806640625"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="-3.2" y="-21.65"/>
                   </transformationPoint>
@@ -351,7 +366,7 @@
             </DOMFrame>
             <DOMFrame index="179" duration="36" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" centerPoint3DX="113" centerPoint3DY="-32.7">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="112.85" ty="-32.7"/>
                   </matrix>
@@ -359,7 +374,7 @@
                     <Point y="-0.05"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" centerPoint3DX="-113.55" centerPoint3DY="-33.85">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-1" tx="-113.9" ty="-33.9"/>
                   </matrix>
