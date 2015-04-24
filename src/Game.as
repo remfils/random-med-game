@@ -35,9 +35,9 @@ package src {
         
         
         // УПРАВЛЕНИЕ
-        private var PAUSED:Boolean = false;
-        private var ACTION_PRESSED:Boolean = false;
-        private var blockControlls:Boolean = false;
+        public var PAUSED:Boolean = false;
+        public var ACTION_PRESSED:Boolean = false;
+        public var blockControlls:Boolean = false;
         
         private var isTransition:Boolean = false;
         
@@ -82,7 +82,7 @@ package src {
             
             TestModePanel = new Sprite();
             
-            player = Player.getInstance();
+            player = new Player();
             player.x = 385;
             player.y = 400;
         }
@@ -113,8 +113,9 @@ package src {
             
             initCurrentLevel();
             
-            playerStat.getMapMC().setUpScale(_LEVEL[player.currentRoom.z]);
-            playerStat.getMapMC().update(_LEVEL[player.currentRoom.z]);
+            // change LEVEL array
+            playerStat.getMapMC().setUpScale(_LEVEL[0]);
+            playerStat.getMapMC().update(_LEVEL[0]);
             
             glassPanel = new Sprite();
             glassPanel.y += playerStat.height;
@@ -164,9 +165,7 @@ package src {
         private function addPlayerTo(panel:DisplayObjectContainer):void {
             playerPanel = new Sprite();
             
-            player = Player.getInstance();
-            
-            playerPanel.addChild(player);
+            playerPanel.addChild(player.costume);
             
             panel.addChild(playerPanel);
         }
@@ -290,7 +289,7 @@ package src {
             var directionB:int;
             var destination:Point = new Point();
             
-            glassPanel.addChild(player);
+            glassPanel.addChild(player.costume);
             
             isTransition = true;
             blockControlls = true;
@@ -320,17 +319,18 @@ package src {
             }
             
             cRoom = getCurrentLevel();
-            doorB = cRoom.getDoorByDirection(directionB);
+            var doorB:Door = cRoom.getDoorByDirection(directionB);
             
             destination.x += doorB.x;
             destination.y += doorB.y;
             
-            if ( roomB.isSecret ) SECRET_ROOM_FOUND = true;
+            if ( cRoom.isSecret ) SECRET_ROOM_FOUND = true;
             
             var shouldUnlockDoorInFuture:Boolean = cRoom.isSecret;
             
             if ( cRoom.isSecret || shouldUnlockDoorInFuture ) {
-                var door:Door = cRoom.getDoorByDirection(endDoor.getDirection());
+                // direction
+                var door:Door = cRoom.getDoorByDirection(1);
                 door.specialLock = false;
                 door.unlock();
             }
@@ -391,7 +391,7 @@ package src {
             }
             
             player.clearInput();
-            player.gotoAndPlay("end");
+            //player.gotoAndPlay("end");
             
             var timer:Timer = new Timer(700);
             timer.addEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);
