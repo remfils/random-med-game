@@ -17,6 +17,9 @@
         var game:Game;
         private var dataManager:DataManager;
         
+        // events
+        public static const DATA_LOADED_EVENT:String = "evt_menu_loaded";
+        
         public function Main () {
             super ();
             
@@ -39,8 +42,10 @@
             createErrorTextField();
             
             dataManager = new DataManager(flashVars);
+            dataManager.main = this;
             dataManager.startGameDataLoading(createMainMenu);
             
+            addEventListener(DATA_LOADED_EVENT, dataLoadedFromServer);
             addEventListener(MenuItemSelectedEvent.LEVEL_SELECTED, MenuItemSelectedListener);
             addEventListener(ExitLevelEvent.EXIT_LEVEL_EVENT, exitLevel, true);
         }
@@ -57,7 +62,13 @@
             
             addChild(tf);
             
-            ErrorOuput.init(tf);
+            Output.init(tf);
+        }
+        
+        private function dataLoadedFromServer(e:Event):void {
+            createMainMenu();
+            
+            mainMenu.switchToMenu(mainMenu.TITLE_MENU);
         }
         
         private function createMainMenu():void {
@@ -65,18 +76,19 @@
             addChild(mainMenu);
             
             mainMenu.render( dataManager.getMainMenuData() );
-            mainMenu.switchToMenu(mainMenu.TITLE_MENU);
         }
         
         private function MenuItemSelectedListener(e:MenuItemSelectedEvent):void {
             startLevelLoading(e.id);
+            
+            game = new Game(e.id);
+            game.player.setInventory(dataManager.user.inventory);
         }
         
         private function startLevelLoading(levelId:int):void {
             var levelLoader = new URLLoader();
             levelLoader.addEventListener(Event.COMPLETE, levelDataLoaded);
             
-            game = new Game(levelId);
             levelLoader.load(new URLRequest(dataManager.getLevelLinkById(levelId)));
         }
         
