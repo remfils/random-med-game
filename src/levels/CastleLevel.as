@@ -9,8 +9,13 @@
     
     
     public class CastleLevel extends Room {
-        public function CastleLevel(game:Game) {
-            super(game);
+        public var floor_mc, wall_mc:MovieClip;
+        
+        public function CastleLevel() {
+            super();
+            
+            floor_mc = getChildByName("floor_mc") as MovieClip;
+            wall_mc = getChildByName("wall_mc") as MovieClip;
         }
         
         override public function setParametersFromXML (paramsXML:XMLList):void {
