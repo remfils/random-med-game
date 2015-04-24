@@ -1,9 +1,7 @@
 package src.util {
+    import flash.events.EventDispatcher;
     import src.Game;
-	/**
-     * ...
-     * @author vlad
-     */
+    import src.Main;
     public class AbstractManager {
         
         public static var game:Game;
