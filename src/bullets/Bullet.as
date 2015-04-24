@@ -7,6 +7,7 @@
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.geom.Point;
+    import src.costumes.BulletCostume;
     import src.Game;
     import src.interfaces.*;
     import src.objects.AbstractObject;
@@ -14,27 +15,63 @@
     import src.util.Collider;
     
     public class Bullet extends AbstractObject implements LoopClip {
-        public static var bulletDef:BulletDef = new BulletDef(50, 10, 0, 500);
+        public static const DEF_ARRAY:Array = new Array(new BulletDef(100, 10, 0, 1000), new BulletDef(100, 10, 3, 1000), new BulletDef(50, 10, 0, 500));
+        
+        public static const DEFAULT_STATE:String = "_default";
+        public static const DESTOY_STATE:String = "_destroy";
+        
+        public static const POWER_SPELL_TYPE:int = 0;
+        public static const NUKELINO_TYPE:int = 1;
+        public static const SPARK_TYPE:int = 2;
+        
+        public var bullet_type:int = SPARK_TYPE;
+        
+        //public static var bulletDef:BulletDef = DEF_ARRAY[SPARK_TYPE];
         
         public var colliderWidth:Number = 0;
         public var colliderHeight:Number = 0;
         
         private var active = true;
         private var bodyHidden:Boolean = false;
+        private var speed:Point;
 
         public function Bullet() {
+            costume = new BulletCostume();
+            
             var collider:DisplayObject = costume.getCollider();
             
             colliderWidth = collider.width;
             colliderHeight = collider.height;
         }
         
+        public function setType(type_:String):void {
+            costume.setType(type_);
+            switch (type_) {
+                case BulletCostume.NUKELINO_TYPE:
+                    bullet_type = NUKELINO_TYPE;
+                    break;
+                case BulletCostume.POWER_SPELL_TYPE:
+                    bullet_type = POWER_SPELL_TYPE;
+                    break;
+                case BulletCostume.SPARK_TYPE:
+                    bullet_type = SPARK_TYPE;
+                    break;
+            }
+            costume.setState(DEFAULT_STATE);
+        }
+        
+        public function setDirection(dir_x:Number, dir_y:Number):void {
+            speed = new Point(dir_x, dir_y);
+            speed.normalize(1);
+        }
+        
         public function getBulletDefenition():BulletDef {
-            return bulletDef;
+            return DEF_ARRAY[bullet_type];
         }
         
         override public function requestBodyAt(world:b2World):void {
-            /*var collider:Collider = getChildByName("collider001") as Collider;
+            var collider:DisplayObject = costume.getCollider();
+            var bulletDef:BulletDef = DEF_ARRAY[bullet_type];
             
             var fixtureDef:b2FixtureDef = new b2FixtureDef();
             fixtureDef.userData = { "object": this };
@@ -45,12 +82,11 @@
             var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             bodyCreateRequest.setAsDynamicBody(fixtureDef);
             
-            bodyCreateRequest.setBodyPosition(position);
+            bodyCreateRequest.setBodyPosition(new Point(x, y));
             
-            speed.normalize(1);
             bodyCreateRequest.velocity = new b2Vec2 ( speed.x * bulletDef.speed, speed.y * bulletDef.speed );
             
-            game.bodyCreator.add(bodyCreateRequest);*/
+            game.bodyCreator.add(bodyCreateRequest);
         }
         
         // deprecated

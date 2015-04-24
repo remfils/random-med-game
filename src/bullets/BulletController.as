@@ -4,6 +4,7 @@
     import flash.geom.Point;
     import flash.utils.Timer;
     import flash.events.TimerEvent;
+    import src.costumes.BulletCostume;
     import src.events.RoomEvent;
     import src.Game;
     import src.util.AbstractManager;
@@ -15,6 +16,8 @@
         private var _bullets:Array = new Array();
         private var _bulletsToRemove:Array = new Array();
         private var fire:Boolean;
+        
+        public var bullet_type:String;
         
         private var bulletClasses:Array = [Spark, BombSpell, Bombastic];
         private var currentBulletClass:int = 0;
@@ -29,12 +32,13 @@
 
         public function BulletController(stage:DisplayObjectContainer) {
             this.stage = stage;
+            bullet_type = BulletCostume.SPARK_TYPE;
             
             bulletClasses = game.player.spells;
             
             BulletClass = bulletClasses[currentBulletClass];
             
-            bulletDelay = new Timer(BulletClass.bulletDef.delay);
+            bulletDelay = new Timer(10);
             bulletDelay.addEventListener(TimerEvent.TIMER, unlockSpawn);
         }
         
@@ -79,6 +83,8 @@
             var bullet:Bullet = getFreeBullet();
             var player:Player = game.player;
             
+            bulletDelay.delay = bullet.getBulletDefenition().delay;
+            
             var spawnPoint:Point = new Point();
             spawnPoint.x = player.x + player.dir_x * bullet.colliderWidth;
             spawnPoint.y = player.y + player.dir_y * bullet.colliderHeight;
@@ -92,15 +98,12 @@
                 
             }
             else {
-                //bullet.requestBodyAt(currentRoom.world, spawnPoint, direction);
+                bullet.setPosition(spawnPoint);
+                bullet.setDirection(direction.x, direction.y);
+                bullet.requestBodyAt(currentRoom.world);
                 stage.addChild (bullet.costume);
                 _bullets.push(bullet);
             }
-            
-            //var player:Player = Player.getInstance();
-            
-            //bullet.moveTo(player.x + player.dir_x * bullet.colliderWidth , player.y + player.dir_y*bullet.colliderHeight);
-            
             
             lockSpawn();
             
@@ -116,7 +119,9 @@
                     return _bullets[i];
                 }
             }
-            return new BulletClass();
+            var bullet:Bullet = new Bullet();
+            bullet.setType(BulletCostume.SPARK_TYPE);
+            return bullet;
         }
         
         public function hideBullet (B:Bullet) {

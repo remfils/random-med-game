@@ -57,13 +57,7 @@
             exp_txt = getChildByName("exp_txt") as TextField;
         }
         
-        public function setCurrentSpell(spellClass:Class):void {
-            var spellRaw:String = getQualifiedClassName(spellClass);
-            var spellName:String;
-            
-            var i:int = spellRaw.lastIndexOf(":")+1;
-            
-            spellName = spellRaw.substr(i,spellRaw.length - i);
+        public function setCurrentSpell(spellName:String):void {
             spellPic_mc.gotoAndStop(spellName);
         }
         
