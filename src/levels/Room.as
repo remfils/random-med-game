@@ -1,7 +1,10 @@
 ﻿package src.levels {
+    import Box2D.Collision.Shapes.b2PolygonShape;
     import Box2D.Common.Math.b2Vec2;
     import Box2D.Dynamics.b2Body;
+    import Box2D.Dynamics.b2BodyDef;
     import Box2D.Dynamics.b2DebugDraw;
+    import Box2D.Dynamics.b2FixtureDef;
     import Box2D.Dynamics.b2World;
     import flash.display.DisplayObject;
     import flash.display.Sprite;
@@ -36,6 +39,7 @@
         private static const MAX_Y:Number = 413.1;
         private static const CENTER_X:Number = 372.8;
         private static const CENTER_Y:Number = 257.3;
+        private static const HALF_DOOR_WIDTH:Number = 65 / 2;
         
         public var isSecret:Boolean = false;
         protected static const directions:Array = ["left", "right", "up", "down"]; // deleteme
@@ -92,12 +96,24 @@
         }
         
         private function addWalls():void {
-            var i = 8;
-            var collider:Collider = new Collider();
-            while ( i-- ) {
-                collider = getChildByName ( "wall" + i ) as Collider
-                collider.replaceWithStaticB2Body(world);
-            }
+            var box_shape:b2PolygonShape = new b2PolygonShape();
+            box_shape.SetAsBox( CENTER_X - MIN_X + HALF_DOOR_WIDTH, CENTER_Y - MIN_Y + HALF_DOOR_WIDTH );
+            
+            var bodyDef:b2BodyDef = new b2BodyDef();
+            
+            bodyDef.type = b2Body.b2_staticBody;
+            
+            var fixtureDef:b2FixtureDef = new b2FixtureDef();
+            fixtureDef.shape = box_shape;
+            
+            // horisontal box
+            bodyDef.position.Set(((CENTER_X - MIN_X) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE, ((CENTER_Y - MIN_Y) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE);
+            var body:b2Body = world.CreateBody(bodyDef);
+            body.CreateFixture(fixtureDef);
+            
+            bodyDef.position.Set(((MAX_X - CENTER_X ) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE, (( MAX_Y - CENTER_Y ) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE);
+            body = world.CreateBody(bodyDef);
+            body.CreateFixture(fixtureDef);
         }
         
         private function addDoors():void {
@@ -172,7 +188,7 @@
             playerBody.SetPosition(new b2Vec2(_player.x / Game.WORLD_SCALE, _player.y / Game.WORLD_SCALE));
             
             _player.setActorBody(playerBody);
-            gameObjectPanel.addChild(_player);
+            gameObjectPanel.addChild(_player.costume);
             
             addEventListener("GUESS_EVENT", taskManager.guessEventListener, true);
             
@@ -195,7 +211,7 @@
         }
         
         public function addPlayerToWorld():void {
-            _player.getCollider();
+            //_player.getColliderBad();
         }
         
         public function addActiveObject(object:TaskObject):void {
@@ -222,7 +238,7 @@
         public function addEnenemy(object:Enemy) {
             _enemies.push(object);
             object.requestBodyAt(world);
-            gameObjectPanel.addChild(object);
+            gameObjectPanel.addChild(object.costume);
             
             if ( object is FlyingEnemy ) {
                 FlyingEnemy(object).setTarget(playerBody);
@@ -250,7 +266,7 @@
         
         public function addObstacle(obstacle:Obstacle):void {
             _gameObjects.push(obstacle);
-            gameObjectPanel.addChild(obstacle);
+            gameObjectPanel.addChild(obstacle.costume);
             obstacle.requestBodyAt(world);
         }
         // delete me in GlassPanel
@@ -258,8 +274,10 @@
             return new Array();
         }
         
+        //direc door
         public function makeDoorWay (direction:String) {
-            var door:Door = getDoorByDirection(direction);
+            return;
+            var door:Door = getDoorByDirection(1);
             door.show();
             door.unlock();
         }
