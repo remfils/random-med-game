@@ -49,8 +49,8 @@ package src.util {
                     startDelayedDrop();
                 }
                 else {
-                    while ( game.cRoom.checkOverlapGameObjects(obj) ) {
-                        obj.y -= obj.height;
+                    while ( game.cRoom.checkOverlapGameObjects(obj.costume) ) {
+                        obj.y -= obj.costume.height;
                     }
                     dropInCurrentRoom(obj);
                 }
@@ -98,7 +98,7 @@ package src.util {
             var room:Room = game.cRoom;
             dropObject.playDrop();
             dropObject.requestBodyAt(room.world);
-            room.gameObjectPanel.addChild(dropObject);
+            room.gameObjectPanel.addChild(dropObject.costume);
             
         }
     }
