@@ -10,6 +10,7 @@
     import src.interfaces.ExtrudeObject;
     import src.interfaces.Updatable;
     import src.objects.AbstractObject;
+    import src.ui.mageShop.InventoryItem;
     import src.util.Collider;
     
     import src.bullets.*;
@@ -62,17 +63,17 @@
         public var MOVE_DOWN:Boolean = false;
         
 // направление персонажа
-        private static const STAND_SATE:String = "stand_";
+        private static const STAND_STATE:String = "stand_";
         private static const DIR_LEFT:String = "left";
         private static const DIR_RIGHT:String = "right";
         private static const DIR_UP:String = "up";
         private static const DIR_DOWN:String = "down";
         
-        private var state_label:String = STAND_SATE + DIR_UP;
+        private var state_label:String = STAND_STATE + DIR_UP;
         
         public var dir_x:Number;
         public var dir_y:Number;
-        public var collider:MovieClip;
+        public var collider:MovieClip; // delete me
         
         public var holdObject:Object = null;
         
@@ -80,12 +81,13 @@
         
         public function Player():void {
             // задаём стандартное направление
+            costume = new PlayerCostume();
             costume.setState(STAND_STATE + DIR_DOWN);
             dir_x = 0;
             dir_y = -1;
 
-            // получаем коллайдер
-            collider = getChildByName( "collider" ) as MovieClip;
+            // delete me
+            collider = costume.getCollider() as MovieClip;
             
             invincibilityTimer = new Timer(invincibilityDelay,6);
             
@@ -155,6 +157,14 @@
         private function getXPToLevel(lvl:Number):Number{
             if ( lvl > 0 ) return 25 * lvl * lvl + getXPToLevel(lvl - 1);
             else return 25;
+        }
+        
+        public function setInventory(inventory:Array):void {
+            for ( var i:int = inventory.length - 1; i >= 0; i-- ) {
+                if ( InventoryItem(inventory[i]).isSpell ) {
+                    //inventory[i]
+                }
+            }
         }
         
         public function handleInput(keyCode:uint, keyDown:Boolean=true):void {
@@ -247,7 +257,7 @@
             }
             
             if ( isStopped() ) {
-                state_label += STAND_SATE;
+                state_label += STAND_STATE;
                 costume.setState(state_label);
             }
             
@@ -286,10 +296,11 @@
             game.playerStat.update();
             return true;
         }
-
-        public function getCollider ():Collider {
+        
+        // delete me
+        public function getColliderBad ():Collider {
             trace("Player.getCollider: NO WAY!! use public method");
-            return collider;
+            return collider as Collider;
         }
         
         public function makeHit (dmg:Number) {
@@ -314,12 +325,12 @@
         }
         
         private function blink(e:TimerEvent) {
-            visible = !visible;
+            costume.visible = !costume.visible;
         }
         
         private function stopInvincibilityTimer (e:TimerEvent) {
             immune = false;
-            visible = true;
+            costume.visible = true;
             invincibilityTimer.stop();
         }
         
