@@ -31,7 +31,7 @@
     import src.task.Task;
     
     public class Room extends MovieClip {
-        private static const PLAYER_START_POINT:int = 255;
+        private static const PLAYER_START_POINT:int = 100;
         
         private static const MIN_X:Number = 89.2;
         private static const MAX_X:Number = 662.75;
@@ -86,13 +86,13 @@
         }
         
         private function createPlayerBody():void {
-            var collider:DisplayObject = _player.costume.getCollider();
+            var bodyDef:b2BodyDef = new b2BodyDef();
+            bodyDef.type = b2Body.b2_dynamicBody;
+            bodyDef.fixedRotation = true;
+            bodyDef.position.Set(PLAYER_START_POINT / Game.WORLD_SCALE, PLAYER_START_POINT / Game.WORLD_SCALE);
             
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, _player);
-            createBodyRequest.setAsDynamicBody(Player.fixtureDef);
-            createBodyRequest.setBodyPosition(new Point(PLAYER_START_POINT, PLAYER_START_POINT));
-            
-            game.bodyCreator.add(createBodyRequest);
+            playerBody = world.CreateBody(bodyDef);
+            playerBody.CreateFixture(Player.fixtureDef);
         }
         
         private function addWalls():void {

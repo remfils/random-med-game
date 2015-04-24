@@ -84,7 +84,7 @@ package src {
             
             player = new Player();
             player.x = 385;
-            player.y = 400;
+            player.y = 100;
         }
         
         public function setLevel(level:Array):void {
@@ -131,7 +131,7 @@ package src {
         
         private function addBulletController() {
             bulletController = new BulletController(playerPanel);
-            playerStat.setCurrentSpell(bulletController.BulletClass);
+            playerStat.setCurrentSpell("Spark");
         }
         
         private function createGamePanel():void {
@@ -254,13 +254,13 @@ package src {
                 case 72:
                     bulletController.setPrevBullet();
                     playerStat.flashButton("spellLeft");
-                    playerStat.setCurrentSpell(bulletController.BulletClass);
+                    playerStat.setCurrentSpell(bulletController.bullet_type);
                 break;
                 // K key
                 case 75:
                     bulletController.setNextBullet();
                     playerStat.flashButton("spellRight");
-                    playerStat.setCurrentSpell(bulletController.BulletClass);
+                    playerStat.setCurrentSpell(bulletController.bullet_type);
                 break;
             }
         }

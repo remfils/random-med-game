@@ -1,8 +1,10 @@
 ﻿package src  {
     
+    import Box2D.Collision.Shapes.b2PolygonShape;
     import Box2D.Common.Math.b2Vec2;
     import Box2D.Dynamics.b2Body;
     import Box2D.Dynamics.b2FixtureDef;
+    import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.events.KeyboardEvent;
     import flash.geom.Point;
@@ -64,12 +66,12 @@
         
 // направление персонажа
         private static const STAND_STATE:String = "stand_";
-        private static const DIR_LEFT:String = "left";
-        private static const DIR_RIGHT:String = "right";
-        private static const DIR_UP:String = "up";
-        private static const DIR_DOWN:String = "down";
+        private static const DIR_LEFT_STATE:String = "_left";
+        private static const DIR_RIGHT_STATE:String = "_right";
+        private static const DIR_UP_STATE:String = "_up";
+        private static const DIR_DOWN_STATE:String = "_down";
         
-        private var state_label:String = STAND_STATE + DIR_UP;
+        private var state_label:String = DIR_UP_STATE;
         
         public var dir_x:Number;
         public var dir_y:Number;
@@ -82,7 +84,8 @@
         public function Player():void {
             // задаём стандартное направление
             costume = new PlayerCostume();
-            costume.setState(STAND_STATE + DIR_DOWN);
+            costume.setType(PlayerCostume.STAND_TYPE);
+            costume.setState(DIR_DOWN_STATE);
             dir_x = 0;
             dir_y = -1;
 
@@ -98,6 +101,13 @@
             fixtureDef = new b2FixtureDef();
             fixtureDef.density = 1;
             fixtureDef.friction = 0.3;
+            
+            var collider:DisplayObject = costume.getCollider();
+            
+            var shape:b2PolygonShape = new b2PolygonShape();
+            shape.SetAsBox(collider.width / 2 / Game.WORLD_SCALE, collider.height / 2 / Game.WORLD_SCALE);
+            
+            fixtureDef.shape = shape;
         }
         
         public function set HEALTH (hp:Number):void {
@@ -167,7 +177,7 @@
             }
         }
         
-        public function handleInput(keyCode:uint, keyDown:Boolean=true):void {
+        public function handleInput(keyCode:uint, keyDown:Boolean = true):void {
             switch (keyCode) {
                 case 37 :
                 case 65 :
@@ -225,7 +235,7 @@
         
         /** обновляет положение персонажа */
         public function preupdate():void {
-            movePlayer();
+            //movePlayer();
         }
         
         private function movePlayer():void {
@@ -253,29 +263,32 @@
             
             if ( DIRECTION_CHANGED ) {
                 applyDirectionChanges();
-                costume.setState(state_label);
             }
             
             if ( isStopped() ) {
-                state_label += STAND_STATE;
-                costume.setState(state_label);
+                costume.setType(PlayerCostume.STAND_TYPE);
             }
+            else {
+                costume.setType(PlayerCostume.MOVE_TYPE);
+            }
+            
+            costume.setState(state_label);
             
             updateHoldObject();
         }
         
         private function applyDirectionChanges():void {
             if ( dir_x != 0 ) {
-                if ( dir_y > 0 ) state_label = DIR_DOWN;
-                else if ( dir_y < 0 ) state_label = DIR_UP;
+                if ( dir_y > 0 ) state_label = DIR_DOWN_STATE;
+                else if ( dir_y < 0 ) state_label = DIR_UP_STATE;
                 else {
-                    if ( dir_x > 0 ) state_label = DIR_RIGHT;
-                    else state_label = DIR_LEFT;
+                    if ( dir_x > 0 ) state_label = DIR_RIGHT_STATE;
+                    else state_label = DIR_LEFT_STATE;
                 }
             }
             else {
-                if ( dir_y > 0 ) state_label = DIR_DOWN;
-                else if ( dir_y < 0 ) state_label = DIR_UP;
+                if ( dir_y > 0 ) state_label = DIR_DOWN_STATE;
+                else if ( dir_y < 0 ) state_label = DIR_UP_STATE;
             }
         }
         
