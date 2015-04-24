@@ -4,6 +4,7 @@
     import Box2D.Dynamics.b2BodyDef;
     import Box2D.Dynamics.b2FixtureDef;
     import Box2D.Dynamics.b2World;
+    import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.geom.Point;
     import src.Game;
@@ -12,7 +13,7 @@
     import src.util.CreateBodyRequest;
     import src.util.Collider;
     
-    public class Bullet extends AbstractObject implements Updatable, LoopClip {
+    public class Bullet extends AbstractObject implements LoopClip {
         public static var bulletDef:BulletDef = new BulletDef(50, 10, 0, 500);
         
         public var colliderWidth:Number = 0;
@@ -22,7 +23,7 @@
         private var bodyHidden:Boolean = false;
 
         public function Bullet() {
-            var collider:Collider = getChildByName("collider001") as Collider;
+            var collider:DisplayObject = costume.getCollider();
             
             colliderWidth = collider.width;
             colliderHeight = collider.height;
@@ -32,8 +33,8 @@
             return bulletDef;
         }
         
-        override public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
-            var collider:Collider = getChildByName("collider001") as Collider;
+        override public function requestBodyAt(world:b2World):void {
+            /*var collider:Collider = getChildByName("collider001") as Collider;
             
             var fixtureDef:b2FixtureDef = new b2FixtureDef();
             fixtureDef.userData = { "object": this };
@@ -49,12 +50,12 @@
             speed.normalize(1);
             bodyCreateRequest.velocity = new b2Vec2 ( speed.x * bulletDef.speed, speed.y * bulletDef.speed );
             
-            game.bodyCreator.add(bodyCreateRequest);
+            game.bodyCreator.add(bodyCreateRequest);*/
         }
         
         // deprecated
         public function createBodyFromCollider(world:b2World):b2Body {
-            var collider:Collider = getChildByName("collider001") as Collider;
+            /*var collider:Collider = getChildByName("collider001") as Collider;
             
             colliderWidth = collider.width;
             colliderHeight = collider.height;
@@ -67,10 +68,10 @@
             
             var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             bodyCreateRequest.setAsDynamicBody(fixtureDef);
-            bodyCreateRequest.parent = this;
+            bodyCreateRequest.actor = this;
             
             game.bodyCreator.add(bodyCreateRequest);
-            
+            */
             //body = collider.replaceWithDynamicB2Body(world, fixtureDef);
             //body.SetBullet(true);
             return null;
@@ -83,7 +84,8 @@
         public function update():void {
             if ( !body ) return;
             
-            if ( currentFrame == totalFrames ) {
+            // write better
+            if ( costume.currentFrame == costume.totalFrames ) {
                 deactivate();
             }
             if (!active) {
@@ -102,7 +104,7 @@
         
         public function safeCollide():void {
             detachBody();
-            gotoAndPlay("destroy");
+            //gotoAndPlay("destroy");
         }
         
         public function detachBody():void {
@@ -122,7 +124,7 @@
         
         private function updateActiveState():void {
             body.SetAwake(active);
-            visible = active;
+            costume.visible = active;
         }
         
         public function isActive():Boolean {

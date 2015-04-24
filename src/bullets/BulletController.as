@@ -92,8 +92,8 @@
                 
             }
             else {
-                bullet.requestBodyAt(currentRoom.world, spawnPoint, direction);
-                stage.addChild (bullet);
+                //bullet.requestBodyAt(currentRoom.world, spawnPoint, direction);
+                stage.addChild (bullet.costume);
                 _bullets.push(bullet);
             }
             
@@ -158,7 +158,7 @@
         private function deleteBullet(b:Bullet) {
             b.moveTo(-100, -100);
             currentRoom.world.DestroyBody(b.body);
-            stage.removeChild(b);
+            stage.removeChild(b.costume);
             _bullets.splice(_bullets.indexOf(b),1);
         }
         
