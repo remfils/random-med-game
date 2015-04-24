@@ -11,9 +11,9 @@
     import src.Player;
     import src.util.Collider;
     
-    public class Door extends AbstractObject implements Updatable {
-        public static const LOCKED_STATE:String = "_locked";
-        public static const UNLOCKED_STATE:String = "_unlocked";
+    public class Door extends AbstractObject {
+        public static const LOCKED_STATE:String = "_lock";
+        public static const UNLOCKED_STATE:String = "_unlock";
         
         private var locked:Boolean = true;
         public var specialLock:Boolean = false;
@@ -26,11 +26,10 @@
         public var taskId:int = 0;
 
         public function Door() {
-            show();
-            
             costume = new ObjectCostume();
             costume.setType(ObjectCostume.DOOR_TYPE);
             costume.setState(LOCKED_STATE);
+            show();
         }
         
         // delete
@@ -49,7 +48,7 @@
         
         // delete
         public function getDirection ():String {
-            var doorRotation = rotation;
+            var doorRotation = costume.rotation;
             
             switch ( doorRotation ) {
                 case 90:
@@ -102,7 +101,7 @@
         public function setType(type:String):void {
             isSecret = type == "secret";
             if ( isSecret ) {
-                costume.setType(ObjectCostume.SECRET_DOOR_TYPE);
+                costume.setType(ObjectCostume.DOOR_SECRET_TYPE);
             }
         }
         
@@ -121,26 +120,26 @@
         }
 
         public function unlock () {
-            if ( visible && locked && !specialLock) {
+            if ( costume.visible && locked && !specialLock) {
                 costume.setState(UNLOCKED_STATE);
                 
                 locked = false;
-                wall.SetActive(false);
+                body.SetActive(false);
             }
         }
         
         public function hide () {
-            visible = false;
+            costume.visible = false;
         }
         
         public function show () {
-            visible = true;
+            costume.visible = true;
         }
         
         override public function setTint(color:uint):void {
             var col:Color = new Color();
             col.setTint(color, 1);
-            tintObject_mc.transform.colorTransform = col;
+            //tintObject_mc.transform.colorTransform = col;
         }
 
     }

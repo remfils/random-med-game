@@ -3,10 +3,10 @@ package src.enemy {
     import flash.geom.Point;
     
     public class ChargerEnemy extends Enemy {
-        public static const ATTACK_HORIZONTAL_STATE:String = "attack_hor";
-        public static const ATTACK_VERTICAL_STATE:String = "attack_vert";
-        public static const ATTACK_VERTICAL_STATE:String = "walk_hor";
-        public static const ATTACK_VERTICAL_STATE:String = "walk_vert";
+        public static const ATTACK_HORIZONTAL_STATE:String = "_attack_hor";
+        public static const ATTACK_VERTICAL_STATE:String = "_attack_vert";
+        public static const WALK_HORIZONTAL_STATE:String = "_walk_hor";
+        public static const WALK_VERTICAL_STATE:String = "_walk_vert";
         
         public var speed:b2Vec2;
         
@@ -41,12 +41,12 @@ package src.enemy {
         
         override protected function activateIfPlayerIsAround():void {
             if ( !charge && playerDistance < agroDistance ) {
-                if ( Math.abs(y - player.y) < height / 4 ) {
+                if ( Math.abs(y - player.y) < costume.height / 4 ) {
                     horizontal = true;
                     startCharge();
                     changeSpeed(new b2Vec2(player.x - x, 0), CHARGE_SPEED);
                 }
-                else if ( Math.abs( x - player.x ) < width / 4 ) {
+                else if ( Math.abs( x - player.x ) < costume.width / 4 ) {
                     horizontal = false;
                     startCharge();
                     changeSpeed(new b2Vec2(0, player.y - y), CHARGE_SPEED);
@@ -61,12 +61,12 @@ package src.enemy {
         
         override protected function flip():void {
             if ( speed.x != 0 ) {
-                scaleX = speed.x / Math.abs(speed.x);
-                scaleY = 1;
+                costume.scaleX = speed.x / Math.abs(speed.x);
+                costume.scaleY = 1;
             }
             else {
-                scaleX = 1;
-                scaleY = speed.y / Math.abs(speed.y);
+                costume.scaleX = 1;
+                costume.scaleY = speed.y / Math.abs(speed.y);
             }
         }
         
@@ -74,10 +74,10 @@ package src.enemy {
             charge = true;
             
             if ( horizontal ) {
-                gotoAndStop("attack_hor");
+                //gotoAndStop("attack_hor");
             }
             else {
-                gotoAndStop("attack_vert");
+                //gotoAndStop("attack_vert");
             }
         }
         
@@ -85,7 +85,7 @@ package src.enemy {
             charge = false;
             
             var animState:String = horizontal ? "walk_hor" : "walk_vert";
-            gotoAndStop(animState);
+            //gotoAndStop(animState);
         }
         
         private function changeSpeed(direction:b2Vec2, speedVal:Number):void {

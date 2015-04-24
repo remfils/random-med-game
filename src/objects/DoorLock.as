@@ -15,10 +15,10 @@ package src.objects {
         
         public function DoorLock() {
             super();
-            playerCollider = game.player.getCollider();
+            //playerCollider = game.player.getColliderBad();
             
-            _activeArea = getChildByName("activeArea") as Collider;
-            _collider = getChildByName("collider001") as Collider;
+            _activeArea = costume.getChildByName("activeArea") as Collider;
+            _collider = costume.getChildByName("collider001") as Collider;
             
             active = true;
         }
@@ -32,7 +32,7 @@ package src.objects {
                 if ( holdObject ) {
                     if ( holdObject is Key ) {
                         id = Key(holdObject).id;
-                        dispatchEvent(new Event("GUESS_EVENT"));
+                        costume.dispatchEvent(new Event("GUESS_EVENT"));
                     }
                 }
             }
@@ -41,7 +41,7 @@ package src.objects {
         override public function positiveOutcome():void {
             game.deleteManager.add(body);
             removePlayerKey();
-            gotoAndPlay("unlock");
+            //gotoAndPlay("unlock");
             game.cRoom.changeTaskObjectsToCoins(taskId);
         }
         
@@ -54,12 +54,12 @@ package src.objects {
         }
         
         private function removePlayerKey():void {
-            var holdObject:Object = Player.getInstance().holdObject;
-            Player.getInstance().removeChild(DisplayObject(holdObject));
+            var holdObject:Object = game.player.holdObject;
+            game.player.costume.removeChild(DisplayObject(holdObject));
             //game.deleteManager.add(holdObject);
-            Player.getInstance().holdObject = null;
+            game.player.holdObject = null;
             holdObject = null;
-            gotoAndPlay("break_key");
+            //gotoAndPlay("break_key");
         }
         
         override public function destroy():void {

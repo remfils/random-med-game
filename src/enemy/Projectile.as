@@ -2,6 +2,7 @@ package src.enemy {
     import Box2D.Dynamics.b2World;
     import Box2D.Common.Math.b2Vec2;
     import Box2D.Dynamics.b2Body;
+    import flash.display.DisplayObject;
     import flash.geom.Point;
     import src.Game;
     import src.util.CreateBodyRequest;
@@ -31,7 +32,7 @@ package src.enemy {
         
         override public function activate():void {
             active = true;
-            gotoAndStop("normal");
+            //gotoAndStop("normal");
         }
         
         override public function deactivate():void {
@@ -41,9 +42,9 @@ package src.enemy {
         override public function makeHit(damage:Number):void {
         }
         
-        override public function requestBodyAt(world:b2World, position:Point = null, speed:Point = null):void {
+        override public function requestBodyAt(world:b2World):void {
             cRoom = game.cRoom;
-            var collider:Collider = getChildByName("collider001") as Collider;
+            var collider:DisplayObject = costume.getCollider();
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsDynamicSensor();
@@ -51,11 +52,11 @@ package src.enemy {
             game.bodyCreator.add(createBodyRequest);
         }
         
-        override public function createBodyFromCollider(world:b2World):b2Body {
+        /*override public function createBodyFromCollider(world:b2World):b2Body {
             var collider:Collider = getChildByName("collider001") as Collider;
             body = collider.replaceWithDynamicSensor(world, {"object":this});
             return body;
-        }
+        }*/
         
         override public function destroy():void {
         }

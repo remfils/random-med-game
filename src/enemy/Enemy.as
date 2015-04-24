@@ -22,10 +22,8 @@
     import src.util.Collider;
     import src.Player;
     
-    public class Enemy extends TaskObject implements Updatable, ExtrudeObject {
+    public class Enemy extends TaskObject implements ExtrudeObject {
         public static const DEATH_STATE:String = "death";
-        
-        public var costume:EnemyCostume;
         
         public static var MAX_HEALTH:Number = 100;
         public static var agroDistance:Number = 150;
@@ -54,14 +52,15 @@
             enemyFixtureDef.density = 0.3;
             enemyFixtureDef.userData = { "object": this };
             
-            costume = new EnemyCostume();
-            addChild(costume);
+            //costume = new EnemyCostume();
+            
+            //addChild(costume);
             
             deactivate();
         }
         public function setCotume(enemyBreed:String):void {
-            costume.setType(enemyBreed);
-            if ( getChildIndex(costume) < 0 ) addChild(costume);
+            /*costume.setType(enemyBreed);
+            if ( getChildIndex(costume) < 0 ) addChild(costume);*/
         }
         
         override public function update ():void {
@@ -99,7 +98,7 @@
                 if ( hitFrames == 0 )
                     hitColor.setTint(0, 0);
                 
-                transform.colorTransform = hitColor;
+                costume.transform.colorTransform = hitColor;
             }
         }
         
@@ -110,11 +109,11 @@
         
         protected function flip():void {
             if ( isFlip ) {
-                scaleX = x < player.x ? 1 : -1;
+                costume.scaleX = x < player.x ? 1 : -1;
             }
         }
         
-        override public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
+        override public function requestBodyAt(world:b2World):void {
             var collider:DisplayObject = costume.getCollider();
             
             var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
@@ -123,26 +122,27 @@
             game.bodyCreator.add(bodyCreateRequest);
         }
         
-        override public function createBodyFromCollider(world:b2World):b2Body {
+        /*override public function createBodyFromCollider(world:b2World):b2Body {
             var collider:Collider = getChildByName("collider001") as Collider;
             body = collider.replaceWithDynamicB2Body(world, enemyFixtureDef);
             return body;
-        }
+        }*/
         
         public function activate ():void {
             active = true;
-            gotoAndStop("attack");
+            //gotoAndStop("attack");
         }
         
         public function deactivate():void {
             active = false;
-            gotoAndStop("normal");
+            //gotoAndStop("normal");
         }
         
-        public function setPosition (X:Number, Y:Number):void {
+        // remove this
+        /*public function setPositionBad (X:Number, Y:Number):void {
             x = X;
             y = Y;
-        }
+        }*/
         
         protected function calculateDistanceToPlayer():void {
             var dx = player.x - x,
@@ -164,7 +164,7 @@
         }
         
         public function die():void {
-            gotoAndPlay("death");
+            //gotoAndPlay("death");
             hitColor.setTint(0, 0);
             hitFrames = 0;
             cRoom.removeEnemy(this);
@@ -173,12 +173,12 @@
         }
         
         public function removeCorpse():void {
-            cRoom.gameObjectPanel.removeChild(this);
+            cRoom.gameObjectPanel.removeChild(costume);
         }
         
         override public function destroy():void {
             super.destroy();
-            dispatchEvent(new Event("GUESS_EVENT"));
+            costume.dispatchEvent(new Event("GUESS_EVENT"));
         }
 
     }
