@@ -9,7 +9,7 @@ package src.interfaces {
      * @author vlad
      */
     public interface SolidBody {
-        function createBodyFromCollider (world:b2World):b2Body;
+        //function createBodyFromCollider (world:b2World):b2Body;
         
         function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void;
     }
