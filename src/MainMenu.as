@@ -50,15 +50,6 @@ package src {
             addChild(BG);
         }
         
-        private function placeMenus():void {
-            var spr:Sprite = menus[LEVELS_MENU];
-            spr.x = 0;
-            spr.y += -2 * stage.stageHeight - height;
-            
-            spr = menus[MAGE_MENU];
-            spr.y -= -2 * stage.stageHeight - height ;
-        }
-        
         private function hideAll():void {
             hideMenusExcept();
         }
@@ -79,6 +70,15 @@ package src {
             
             while ( i-- )
                 AbstractMenu(menus[i]).readData(data);
+        }
+        
+        private function placeMenus():void {
+            var spr:Sprite = menus[LEVELS_MENU];
+            spr.x = 0;
+            spr.y += -2 * stage.stageHeight - height;
+            
+            spr = menus[MAGE_MENU];
+            spr.y -= -2 * stage.stageHeight - height ;
         }
         
         public function switchToMenu(MENU_NAME:uint):void {
