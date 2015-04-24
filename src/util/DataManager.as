@@ -4,25 +4,25 @@ package src.util {
     import flash.text.StyleSheet;
     import flash.text.TextField;
     import flash.utils.ByteArray;
+    import src.Main;
     import src.Player;
     import src.User;
-    import src.util.ErrorOuput;
+    import src.util.Output;
     import vk.api.DataProvider;
     import vk.APIConnection;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class DataManager extends AbstractManager {
         public const server_name = "http://game.ngmu.tk";
         public var flashVars:Object = null;
-        public static var user:User = new User();
+        public var user:User = new User();
         public var vkID:int = 0;
         
         private static var data:XML = null;
         private var styleSheet:StyleSheet;
         private var testMode:Boolean = true;
         private var dataLoadIsCompleteCallback:Function;
+        
+        public var main:Main;
         
         public function DataManager(flashVars:Object):void {
             super();
@@ -41,10 +41,10 @@ package src.util {
             
             path = server_name + "/start_game.php?user_vk_id=" + flashVars['viewer_id'];
             
-            dataLoadIsCompleteCallback = callback;
+            //dataLoadIsCompleteCallback = callback;
             loader.addEventListener(Event.COMPLETE, gameDataLoadComplete);
             
-            ErrorOuput.add("sending start_game req to " + path);
+            Output.add("sending start_game req to " + path);
             
             loader.load(new URLRequest(path));
         }
@@ -52,7 +52,7 @@ package src.util {
         private function gameDataLoadComplete(e:Event):void {
             var loader:URLLoader = e.target as URLLoader;
             loader.removeEventListener(Event.COMPLETE, gameDataLoadComplete);
-            ErrorOuput.add('server response\n' + loader.data);
+            Output.add('server response\n' + loader.data);
             data = new XML(loader.data);
             
             if ( data.BaseData.length() > 0 ) {
@@ -62,15 +62,11 @@ package src.util {
                 startGettingUserData(new Event(Event.ACTIVATE));
             }
             
-            // delete me if no errors in design will appear
-            //loader = new URLLoader(new URLRequest("style.css"));
-            //loader.addEventListener(Event.COMPLETE, CSSLoadedListener);
-            
-            dataLoadIsCompleteCallback();
+            main.dispatchEvent(new Event(Main.DATA_LOADED_EVENT, true));
         }
         
         public function setGameData():void {
-            user.setPlayerInventory();
+            //user.setPlayerInventory();
         }
         
         private function formUser():void {
@@ -90,7 +86,7 @@ package src.util {
         
         private function sendCreateUserRequest(allUsersData:Object):void {
             var loader:URLLoader = new URLLoader();
-            ErrorOuput.add("sending create_player req");
+            Output.add("sending create_player req");
             var req:URLRequest = new URLRequest(server_name + "/create_player.php");
             req.method = URLRequestMethod.POST;
             
@@ -155,7 +151,7 @@ package src.util {
                 {game.taskManager.eventsToXML()}
             </Data>;
             
-            ErrorOuput.add(resultXML);
+            Output.add(resultXML);
             
             result.dataXML = resultXML;
             
@@ -166,7 +162,7 @@ package src.util {
             var loader:URLLoader = e.target as URLLoader;
             loader.removeEventListener(Event.COMPLETE, onGameDataSaved);
             
-            ErrorOuput.add('server response:\n' + loader.data);
+            Output.add('server response:\n' + loader.data);
             
             if ( dataLoadIsCompleteCallback ) {
                 dataLoadIsCompleteCallback();
