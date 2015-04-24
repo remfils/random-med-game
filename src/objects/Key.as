@@ -21,9 +21,9 @@ package src.objects {
         
         public function Key() {
             super();
-            _activeArea = getChildByName("activeArea") as MovieClip;
-            _collider = getChildByName("collider001") as MovieClip;
-            playerCollider = game.player.getCollider();
+            _activeArea = costume.getChildByName("activeArea") as MovieClip;
+            _collider = costume.getChildByName("collider001") as MovieClip;
+            //playerCollider = game.player.collider;
         }
         
         override public function update():void {
@@ -32,9 +32,9 @@ package src.objects {
             if ( active && playerCollider.checkObjectCollision(_activeArea) ) {
                 var player:Player = game.player;
                 
-                if ( player.ACTION_PRESSED ) {
+                if ( game.ACTION_PRESSED ) {
                     if ( !player.holdObject || player.holdObject == this ) {
-                        gotoAndPlay("hide");
+                        //gotoAndPlay("hide");
                         active = false;
                         player.holdObject = this;
                     }
@@ -50,11 +50,11 @@ package src.objects {
         
         public function changePlace():void {
             active = true;
-            gotoAndPlay("show");
+            //gotoAndPlay("show");
             var player:Player = game.player;
             
-            if ( body && parent != player ) {
-                player.addChild(this);
+            if ( body && costume.parent != player.costume ) {
+                player.costume.addChild(costume);
                 x = -15;
                 y = -30;
                 
@@ -73,7 +73,7 @@ package src.objects {
             }
         }
         
-        override public function requestBodyAt(world:b2World, position:Point = null, speed:Point = null):void {
+        override public function requestBodyAt(world:b2World):void {
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, _collider, this);
             
@@ -91,7 +91,7 @@ package src.objects {
         override public function setTint(color:uint):void {
             var col:Color = new Color();
             col.setTint(color, 0.5);
-            var tintObject:DisplayObject = getChildByName("tintObject_mc");
+            var tintObject:DisplayObject = costume.getChildByName("tintObject_mc");
             tintObject.transform.colorTransform = col;
         }
         

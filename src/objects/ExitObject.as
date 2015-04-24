@@ -11,28 +11,28 @@ package src.objects {
         
         public function ExitObject() {
             super();
-            collider = getChildByName("collider002") as Collider;
+            // collider = getChildByName("collider002") as Collider;
             dropProbability = 1;
             isFixed = true;
         }
         
         override public function pickUp():void {
-            gotoAndPlay("pickup");
+            //gotoAndPlay("pickup");
             game.finishLevel();
         }
         
-        override public function requestBodyAt(world:b2World, position:Point=null, speed:Point=null):void {
+        override public function requestBodyAt(world:b2World):void {
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsStaticSensor();
             
             game.bodyCreator.add(createBodyRequest);
         }
         
-        override public function createBodyFromCollider(world:b2World):b2Body {
+        /*override public function createBodyFromCollider(world:b2World):b2Body {
             var col:Collider = collider.copy();
             body = col.replaceWithSensor(world, { "object": this } );
             return body;
-        }
+        }*/
         
     }
 

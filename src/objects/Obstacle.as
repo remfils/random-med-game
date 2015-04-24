@@ -4,6 +4,7 @@ package src.objects {
     import Box2D.Dynamics.b2BodyDef;
     import Box2D.Dynamics.b2FixtureDef;
     import Box2D.Dynamics.b2World;
+    import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.geom.Point;
     import src.Game;
@@ -15,7 +16,7 @@ package src.objects {
      * ...
      * @author vlad
      */
-    public class Obstacle extends AbstractObject implements Updatable {
+    public class Obstacle extends AbstractObject {
         
         public static const STAND_STATE:int = 1;
         public static const DESTROY_STATE:int = 2;
@@ -39,9 +40,9 @@ package src.objects {
         }
         
         public function setType(name_:String):void {
-            name = name_;
+            costume.name = name_;
             
-            switch (name) {
+            switch (name_) {
                 case "Vase":
                     extruded = true;
                 break;
@@ -53,21 +54,21 @@ package src.objects {
                     has_drop = true;
                 default:
             }
-            
+            costume.setType(name_);
             setState(STAND_STATE);
         }
         
         private function setState(state_:int):void {
             state = state_;
-            gotoAndStop(name + STATE_LABELS[state]);
+            //gotoAndStop(name + STATE_LABELS[state]);
         }
         
         override public function requestBodyAt(world:b2World):void {
-            var collider:MovieClip = getChildByName(COLLIDER_NAME) as MovieClip;
+            var collider:DisplayObject = costume.getCollider();
             
             var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             
-            if ( isStatic ) bodyCreateRequest.setAsStaticBody();
+            if ( is_static ) bodyCreateRequest.setAsStaticBody();
             else bodyCreateRequest.setAsDynamicBody(fixtureDef);
             
             bodyCreateRequest.setBodyPosition( new Point(x + collider.x, y + collider.y) );
@@ -84,7 +85,7 @@ package src.objects {
         
         override public function destroy():void {
             super.destroy();
-            if ( has_drop ) ItemDropper.dropSmallFromObject(this);
+            //if ( has_drop ) ItemDropper.dropSmallFromObject(this);
             setState(DESTROY_STATE);
         }
         

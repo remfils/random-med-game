@@ -18,7 +18,7 @@
 
         public function Lever ():void {
             super();
-            _activeArea = getChildByName( "activeArea" ) as Collider;
+            _activeArea = costume.getChildByName( "activeArea" ) as Collider;
         }
         
         public function getActiveArea ():Collider {
@@ -26,27 +26,28 @@
         }
         
         override public function positiveOutcome():void {
-            gotoAndPlay("open");
+            //gotoAndPlay("open");
             _activeArea.lock();
         }
         
         override public function negativeOutcome():void {
-            gotoAndPlay("break");
+            //gotoAndPlay("break");
             _activeArea.lock();
         }
         
         override public function setTint(color:uint):void {
             var col:Color = new Color();
             col.setTint(color, 0.5);
-            var tintObject:DisplayObject = getChildByName("tintObject_mc");
+            var tintObject:DisplayObject = costume.getChildByName("tintObject_mc");
             tintObject.transform.colorTransform = col;
         }
         
+        // change to better collider support
         override public function update():void {
             if ( active ) {
-                if ( _activeArea.checkObjectCollision( game.player.getCollider()) && game.player.ACTION_PRESSED ) {
+                /*if ( _activeArea.checkObjectCollision( game.player.getColliderBad()) && game.player.ACTION_PRESSED ) {
                     dispatchEvent(new Event("GUESS_EVENT"));
-                }
+                }*/
             }
         }
         

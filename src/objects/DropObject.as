@@ -9,7 +9,10 @@ package src.objects {
     import src.Player;
     import src.util.Collider;
     import src.util.CreateBodyRequest;
-    public class DropObject extends AbstractObject implements SolidBody, ExtrudeObject {
+    
+    // ADD COSTUME SUPPORT
+    
+    public class DropObject extends AbstractObject implements ExtrudeObject {
         public var dropProbability:Number = 0;
         public var isFixed:Boolean = false;
         public var statObject:Object;
@@ -19,29 +22,31 @@ package src.objects {
         }
         
         public function playDrop():void {
-            gotoAndPlay("drop");
+            //gotoAndPlay("drop");
         }
         
         override public function requestBodyAt(world:b2World):void {
-            var collider:Collider = getChildByName("collider001") as Collider;
+            /*var collider:Collider = getChildByName("collider001") as Collider;
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsDynamicSensor();
             
-            game.bodyCreator.add(createBodyRequest);
+            game.bodyCreator.add(createBodyRequest);*/
         }
         
-        public function createBodyFromCollider(world:b2World):b2Body {
+        // delete me
+        /*public function createBodyFromCollider(world:b2World):b2Body {
             var collider:Collider = getChildByName("collider001") as Collider;
             body = collider.replaceWithDynamicSensor(world, { "object": this } );
             return body;
-        }
+            return new b2Body(
+        }*/
         
         public function pickUp():void {
             if ( game.player.addToStats(statObject) ) {
                 game.deleteManager.add(body);
                 body = null;
-                gotoAndPlay("pickup");
+                //gotoAndPlay("pickup");
             }
         }
     }
