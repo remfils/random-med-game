@@ -10,8 +10,12 @@ package src.ui.mageShop {
         public var type:String = "";
         public var item:InventoryItem;
         
+        private var label_mc:MovieClip;
+        
         public function MageShopContainer() {
             gotoAndStop("normal");
+            
+            label_mc = getChildByName("label_mc") as MovieClip;
         }
         
         public function setAsItem():void {
