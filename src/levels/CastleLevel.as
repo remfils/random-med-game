@@ -14,8 +14,8 @@
         public function CastleLevel() {
             super();
             
-            floor_mc = getChildByName("floor_mc") as MovieClip;
-            wall_mc = getChildByName("wall_mc") as MovieClip;
+            //floor_mc = getChildByName("floor_mc") as MovieClip;
+            //wall_mc = getChildByName("wall_mc") as MovieClip;
         }
         
         override public function setParametersFromXML (paramsXML:XMLList):void {
@@ -46,6 +46,7 @@
         }
         
         private function setFloorState(state:String):void {
+            return;
             switch (state) {
                 case "ground":
                     floor_mc.gotoAndStop("ground_state");
@@ -56,6 +57,7 @@
         }
         
         private function setWallState(state:String):void {
+            return;
             switch (state) {
                 default:
                     wall_mc.gotoAndStop("brick_state");
