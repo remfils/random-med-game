@@ -1,34 +1,14 @@
 ﻿package src.levels {
-    import Box2D.Collision.Shapes.b2PolygonShape;
-    import Box2D.Common.Math.b2Vec2;
-    import Box2D.Dynamics.b2Body;
-    import Box2D.Dynamics.b2BodyDef;
-    import Box2D.Dynamics.b2DebugDraw;
-    import Box2D.Dynamics.b2FixtureDef;
-    import Box2D.Dynamics.b2World;
-    import flash.display.DisplayObject;
-    import flash.display.Sprite;
-    import flash.display.Stage;
-    import flash.display.MovieClip;
-    import flash.geom.Point;
-    import src.interfaces.ExtrudeObject;
-    import src.objects.Lever;
-    import src.task.TaskManager;
-    import src.util.CreateBodyRequest;
-    import src.util.DropFactory;
-    import src.util.GameObjectPanel;
-    import src.util.ItemDropper;
-    import src.util.Random;
-    import src.interfaces.Updatable;
-    import src.objects.*;
-    import src.events.RoomEvent;
-    import src.util.Collider;
-    import src.Game;
+    import Box2D.Collision.Shapes.*;
+    import Box2D.Common.Math.*;
+    import Box2D.Dynamics.*;
+    import flash.display.*;
+    import src.*;
     import src.enemy.*;
+    import src.objects.*;
+    import src.task.*;
+    import src.util.*;
     
-    import src.Player;
-    import flash.events.Event;
-    import src.task.Task;
     
     public class Room extends MovieClip {
         private static const PLAYER_START_POINT:int = 100;
@@ -40,6 +20,8 @@
         private static const CENTER_X:Number = 372.8;
         private static const CENTER_Y:Number = 257.3;
         private static const HALF_DOOR_WIDTH:Number = 65 / 2;
+        
+        private var TIME_STEP:Number = Game.TIME_STEP;
         
         public var isSecret:Boolean = false;
         protected static const directions:Array = ["left", "right", "up", "down"]; // deleteme
@@ -92,28 +74,51 @@
             bodyDef.position.Set(PLAYER_START_POINT / Game.WORLD_SCALE, PLAYER_START_POINT / Game.WORLD_SCALE);
             
             playerBody = world.CreateBody(bodyDef);
+            playerBody.SetLinearDamping(ROOM_FRICTION);
             playerBody.CreateFixture(Player.fixtureDef);
         }
         
         private function addWalls():void {
-            var box_shape:b2PolygonShape = new b2PolygonShape();
-            box_shape.SetAsBox( CENTER_X - MIN_X + HALF_DOOR_WIDTH, CENTER_Y - MIN_Y + HALF_DOOR_WIDTH );
+            
+            // horisontal top box
+            createWall( (CENTER_X - MIN_X ) / 2 + HALF_DOOR_WIDTH, MIN_Y - HALF_DOOR_WIDTH);
+            createWall( (MAX_X - CENTER_X + HALF_DOOR_WIDTH) / 2 + CENTER_X + HALF_DOOR_WIDTH, MIN_Y - HALF_DOOR_WIDTH);
+            
+            // horisontal bottom box
+            
+            createWall( (CENTER_X - MIN_X ) / 2 + HALF_DOOR_WIDTH, MAX_Y + HALF_DOOR_WIDTH );
+            createWall( (MAX_X - CENTER_X + HALF_DOOR_WIDTH) / 2 + CENTER_X + HALF_DOOR_WIDTH, MAX_Y + HALF_DOOR_WIDTH);
+            
+            // vertical left box
+            createWall( MIN_X - HALF_DOOR_WIDTH , (CENTER_Y - MIN_Y ) / 2 + HALF_DOOR_WIDTH, true);
+            
+            createWall( MIN_X - HALF_DOOR_WIDTH, (MAX_Y - CENTER_Y + HALF_DOOR_WIDTH) / 2 + CENTER_Y + HALF_DOOR_WIDTH, true);
+            
+            // vertical right box
+            createWall( MAX_X + HALF_DOOR_WIDTH , (CENTER_Y - MIN_Y ) / 2 + HALF_DOOR_WIDTH, true);
+            createWall( MAX_X + HALF_DOOR_WIDTH , (MAX_Y - CENTER_Y + HALF_DOOR_WIDTH) / 2 + CENTER_Y + HALF_DOOR_WIDTH, true);
+        }
+        
+        private function createWall(x_:Number, y_:Number, is_vertical_:Boolean = false):void {
+            var gws:Number = Game.WORLD_SCALE;
             
             var bodyDef:b2BodyDef = new b2BodyDef();
-            
             bodyDef.type = b2Body.b2_staticBody;
             
+            var wall_shape:b2PolygonShape = new b2PolygonShape()
+            if ( is_vertical_ ) {
+                wall_shape.SetAsBox( HALF_DOOR_WIDTH / Game.WORLD_SCALE, (CENTER_Y - MIN_Y + HALF_DOOR_WIDTH) / 2 / gws);
+            }
+            else {
+                wall_shape.SetAsBox( (CENTER_X - MIN_X + HALF_DOOR_WIDTH) / 2 / Game.WORLD_SCALE , HALF_DOOR_WIDTH / gws );
+            }
+            
             var fixtureDef:b2FixtureDef = new b2FixtureDef();
-            fixtureDef.shape = box_shape;
+            fixtureDef.shape = wall_shape;
             
-            // horisontal box
-            bodyDef.position.Set(((CENTER_X - MIN_X) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE, ((CENTER_Y - MIN_Y) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE);
-            var body:b2Body = world.CreateBody(bodyDef);
-            body.CreateFixture(fixtureDef);
-            
-            bodyDef.position.Set(((MAX_X - CENTER_X ) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE, (( MAX_Y - CENTER_Y ) / 2 - HALF_DOOR_WIDTH) / Game.WORLD_SCALE);
-            body = world.CreateBody(bodyDef);
-            body.CreateFixture(fixtureDef);
+            bodyDef.position.Set(x_ / gws, y_ / gws);
+            var bod:b2Body = world.CreateBody(bodyDef);
+            bod.CreateFixture(fixtureDef);
         }
         
         private function addDoors():void {
@@ -287,7 +292,7 @@
         }
         
         public function update () {
-            world.Step(Game.TIME_STEP, 5, 5);
+            world.Step(TIME_STEP, 5, 5);
             world.ClearForces();
             
             updateEnemies();
