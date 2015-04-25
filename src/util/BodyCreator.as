@@ -4,10 +4,7 @@ package src.util {
     import Box2D.Dynamics.b2Fixture;
     import Box2D.Dynamics.b2FixtureDef;
     import Box2D.Dynamics.b2World;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class BodyCreator extends AbstractManager {
         private var bodies:Array;
         
@@ -33,6 +30,7 @@ package src.util {
                     
                     //request.actor.removeChild(request.collider);
                     request.destroy();
+                    request = null;
                     
                     bodies.splice(i, 1);
                 }

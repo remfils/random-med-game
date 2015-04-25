@@ -10,10 +10,6 @@ package src.objects {
     import src.Game;
     import src.util.CreateBodyRequest;
 	
-	/**
-     * ...
-     * @author vlad
-     */
     public class AbstractObject {
         public static var game:Game;
         public var body:b2Body;
