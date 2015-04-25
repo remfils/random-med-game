@@ -12,10 +12,7 @@ package src.util {
     import flash.geom.Rectangle;
     import src.Game;
     import src.objects.AbstractObject;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class CreateBodyRequest {
         public var collider:DisplayObject;
         public var world:b2World;
