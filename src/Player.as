@@ -1,24 +1,19 @@
 ﻿package src  {
     
-    import Box2D.Collision.Shapes.b2PolygonShape;
-    import Box2D.Common.Math.b2Vec2;
-    import Box2D.Dynamics.b2Body;
-    import Box2D.Dynamics.b2FixtureDef;
-    import flash.display.DisplayObject;
-    import flash.display.MovieClip;
-    import flash.events.KeyboardEvent;
-    import flash.geom.Point;
-    import src.costumes.PlayerCostume;
-    import src.interfaces.ExtrudeObject;
-    import src.interfaces.Updatable;
-    import src.objects.AbstractObject;
-    import src.ui.mageShop.InventoryItem;
-    import src.util.Collider;
-    
+    import Box2D.Collision.Shapes.*;
+    import Box2D.Common.Math.*;
+    import Box2D.Dynamics.*;
+    import flash.display.*;
+    import flash.events.*;
+    import flash.geom.*;
+    import flash.utils.*;
     import src.bullets.*;
-    import src.ui.playerStat.PlayerStat;
-    import flash.utils.Timer;
-    import flash.events.TimerEvent;
+    import src.costumes.*;
+    import src.interfaces.*;
+    import src.objects.*;
+    import src.ui.mageShop.*;
+    import src.util.*;
+    
     
     public class Player extends AbstractObject implements ExtrudeObject {
 //states
@@ -235,7 +230,7 @@
         
         /** обновляет положение персонажа */
         public function preupdate():void {
-            //movePlayer();
+            movePlayer();
         }
         
         private function movePlayer():void {
@@ -258,18 +253,19 @@
         }
         
         public function update():void {
-            costume.x = body.GetPosition().x * Game.WORLD_SCALE;
-            costume.y = body.GetPosition().y * Game.WORLD_SCALE;
+            var worldScale:Number = Game.WORLD_SCALE;
+            var bodyPosition:b2Vec2 = body.GetPosition();
+            
+            costume.x = bodyPosition.x * worldScale;
+            costume.y = bodyPosition.y * worldScale;
             
             if ( DIRECTION_CHANGED ) {
                 applyDirectionChanges();
+                costume.setType(PlayerCostume.MOVE_TYPE);
             }
             
             if ( isStopped() ) {
                 costume.setType(PlayerCostume.STAND_TYPE);
-            }
-            else {
-                costume.setType(PlayerCostume.MOVE_TYPE);
             }
             
             costume.setState(state_label);

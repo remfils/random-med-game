@@ -1,25 +1,19 @@
 package src {
+    import fl.transitions.*;
     import fl.transitions.easing.*;
-    import fl.transitions.Tween;
-    import fl.transitions.TweenEvent;
     import flash.display.*;
-    import flash.display.Sprite;
     import flash.events.*;
-    import flash.geom.Point;
-    import flash.utils.Timer;
-    import src.bullets.BulletController;
+    import flash.geom.*;
+    import flash.utils.*;
+    import src.bullets.*;
     import src.events.*;
     import src.interfaces.*;
     import src.levels.*;
     import src.objects.*;
-    import src.task.TaskManager;
-    import src.ui.AbstractMenu;
-    import src.ui.EndLevelMenu;
-    import src.ui.GameMenu;
-    import src.ui.playerStat.PlayerStat;
-    import src.util.AbstractManager;
-    import src.util.BodyCreator;
-    import src.util.DeleteManager;
+    import src.task.*;
+    import src.ui.*;
+    import src.ui.playerStat.*;
+    import src.util.*;
     
     public class Game extends Sprite {
         public var levelId:int = 0;
