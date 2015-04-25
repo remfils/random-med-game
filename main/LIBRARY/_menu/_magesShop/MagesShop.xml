@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/MagesShop" itemID="54748e1d-000001ac" linkageExportForAS="true" linkageClassName="MagesShop" lastModified="1417872846" lastUniqueIdentifier="29">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/MagesShop" itemID="54748e1d-000001ac" linkageExportForAS="true" linkageClassName="MagesShop" lastModified="1429889816" lastUniqueIdentifier="29">
   <timeline>
     <DOMTimeline name="MagesShop">
       <layers>
@@ -23,8 +23,8 @@
                   </strokes>
                   <edges>
                     <Edge fillStyle1="1" strokeStyle="1" edges="!6916 2175|5115 2175!5115 2175|5115 559!5115 559|6916 559!6916 559|6916 2175!6916 5809|5115 5809!5115 5809|5115 4193!5115 4193|6916 4193!6916 4193|6916 5809!6916 3997|5115 3997!5115 3997|5115 2381!5115 2381|6916 2381!6916 2381|6916 3997
-!4795 2175|2994 2175!2994 2175|2994 559!2994 559|4795 559!4795 559|4795 2175!883 558|2684 558!2684 558|2684 2174!2684 2174|883 2174!883 2174|883 558!2684 2376|2684 3992!2684 3992|883 3992!883 3992|883 2376!883 2376|2684 2376!2994 4193
-|4795 4193!4795 4193|4795 5809!4795 5809|2994 5809!2994 5809|2994 4193!2684 5809|883 5809!883 5809|883 4193!883 4193|2684 4193!2684 4193|2684 5809!4795 2381|4795 3997!4795 3997|2994 3997!2994 3997|2994 2381!2994 2381|4795 2381"/>
+!4795 2175|2994 2175!2994 2175|2994 559!2994 559|4795 559!4795 559|4795 2175!2684 2376|2684 3992!2684 3992|883 3992!883 3992|883 2376!883 2376|2684 2376!883 558|2684 558!2684 558|2684 2174!2684 2174|883 2174!883 2174|883 558!2684 5809
+|883 5809!883 5809|883 4193!883 4193|2684 4193!2684 4193|2684 5809!2994 4193|4795 4193!4795 4193|4795 5809!4795 5809|2994 5809!2994 5809|2994 4193!4795 2381|4795 3997!4795 3997|2994 3997!2994 3997|2994 2381!2994 2381|4795 2381"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -82,7 +82,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="placeHolders" color="#4FFF4F" current="true" isSelected="true" autoNamed="false" layerType="guide">
+        <DOMLayer name="placeHolders" color="#4FFF4F" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -187,11 +187,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="mageDrawing" color="#FF800A" autoNamed="false">
+        <DOMLayer name="mageDrawing" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/mageDrawing" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/mageDrawing" cacheAsBitmap="true" centerPoint3DX="509.75" centerPoint3DY="159.2">
                   <matrix>
                     <Matrix tx="398.85" ty="19.5"/>
                   </matrix>

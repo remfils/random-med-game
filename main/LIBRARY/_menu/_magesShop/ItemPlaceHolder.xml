@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/ItemPlaceHolder" itemID="5479ed57-0000011d" linkageExportForAS="true" linkageBaseClass="src.ui.mageShop.MageShopContainer" linkageClassName="ItemPlaceHolder" lastModified="1417869038" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/ItemPlaceHolder" itemID="5479ed57-0000011d" linkageExportForAS="true" linkageBaseClass="src.ui.mageShop.MageShopContainer" linkageClassName="ItemPlaceHolder" lastModified="1429956343" lastUniqueIdentifier="2">
   <timeline>
-    <DOMTimeline name="ItemPlaceHolder" currentFrame="12">
+    <DOMTimeline name="ItemPlaceHolder" currentFrame="1">
       <layers>
         <DOMLayer name="label" color="#FF800A" autoNamed="false">
           <frames>
@@ -12,7 +12,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="lock" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="lock" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements/>
@@ -31,7 +31,7 @@
                   <edges>
                     <Edge fillStyle1="1" edges="!1801 1616|0 1616!0 1616|0 0!0 0|1801 0!1801 0|1801 1616"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!1004 449[1091 454 1086 531!1086 531/1086 562!1086 562/1086 645!1086 645|1197 645!1197 645|1197 1011!1197 1011|620 1011!620 1011|620 645!620 645|731 645!731 645/731 580!731 580/731 570!731 570/731 531!731 531[726 454 813 449!813 449|1004
- 449!995 645|995 514!995 514|822 514!822 514|822 645!822 645|995 645"/>
+ 449!822 514|822 645!822 645|995 645!995 645|995 514!995 514|822 514"/>
                     <Edge cubics="!1801 0(;1801,0 1801,1616 1801,1616q1801 0 1801 1616);"/>
                     <Edge cubics="!0 1616(;0,1616 0,0 0,0q0 1616 0 0);"/>
                     <Edge cubics="!0 0(;0,0 1801,0 1801,0q0 0 1801 0);"/>
@@ -63,7 +63,7 @@
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" name="label_mc" centerPoint3DX="77.3" centerPoint3DY="13.05">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" name="label_mc" cacheAsBitmap="true" centerPoint3DX="77.3" centerPoint3DY="13.05">
                   <matrix>
                     <Matrix a="0.374008178710938" d="0.374008178710938" tx="71.4" ty="7.15"/>
                   </matrix>
@@ -87,7 +87,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="bg" color="#4FFF4F" autoNamed="false">
+        <DOMLayer name="bg" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>

@@ -1,31 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/down" itemID="552fc266-0000013b" lastModified="1429193318" lastUniqueIdentifier="13">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/down" itemID="552fc266-0000013b" lastModified="1429898834" lastUniqueIdentifier="13">
   <timeline>
-    <DOMTimeline name="down">
+    <DOMTimeline name="down" currentFrame="19">
       <layers>
-        <DOMLayer name="рука" color="#4F80FF" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="4" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="4" duration="5" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="9" duration="5" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="14" duration="5" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="19" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
         <DOMLayer name="Layer 6" color="#808080">
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/посох" centerPoint3DX="8.65" centerPoint3DY="-2.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/посох" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.99786376953125" b="0.104339599609375" c="-0.104339599609375" d="0.99786376953125" tx="7.55" ty="-23.6"/>
                   </matrix>
@@ -37,19 +18,19 @@
             </DOMFrame>
             <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/посох" centerPoint3DX="9.3" centerPoint3DY="-3.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/посох" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.00267028808594" b="-0.0352325439453125" c="0.0352325439453125" d="1.00267028808594" tx="5.45" ty="-24.25"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="1.95" y="18.65"/>
+                    <Point x="1.9" y="18.65"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/посох" centerPoint3DX="10" centerPoint3DY="-5.7">
+                <DOMSymbolInstance libraryItemName="_player/parts/посох" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.994705200195313" b="-0.130889892578125" c="0.130889892578125" d="0.994705200195313" tx="3.85" ty="-25.7"/>
                   </matrix>
@@ -61,19 +42,19 @@
             </DOMFrame>
             <DOMFrame index="14" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/посох" centerPoint3DX="10.25" centerPoint3DY="-2.55">
+                <DOMSymbolInstance libraryItemName="_player/parts/посох" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.00254821777344" b="0.0386962890625" c="-0.0386962890625" d="1.00254821777344" tx="7.5" ty="-23.9"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="1.8" y="18.7"/>
+                    <Point x="1.8" y="18.65"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/посох" centerPoint3DX="8.65" centerPoint3DY="-2.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/посох" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.99786376953125" b="0.104339599609375" c="-0.104339599609375" d="0.99786376953125" tx="7.55" ty="-23.6"/>
                   </matrix>
@@ -137,7 +118,7 @@
             </DOMFrame>
             <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_вниз_выс" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_вниз_выс" selected="true" symbolType="graphic" loop="single frame">
                   <matrix>
                     <Matrix a="0.209869384765625" d="0.209869384765625" tx="-12.15" ty="-38.4"/>
                   </matrix>
@@ -149,30 +130,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="рука3 левая" color="#0000FF" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="14" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
         <DOMLayer name="рука2 левая" color="#0000FF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="9.05" centerPoint3DY="-8.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.705215454101563" b="0.378143310546875" c="-0.318130493164063" d="0.59332275390625" tx="8.75" ty="-11.05"/>
                   </matrix>
@@ -184,7 +146,7 @@
             </DOMFrame>
             <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="9" centerPoint3DY="-8.15">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.705215454101563" b="0.378143310546875" c="-0.318130493164063" d="0.59332275390625" tx="8.7" ty="-10.35"/>
                   </matrix>
@@ -196,7 +158,7 @@
             </DOMFrame>
             <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="8.45" centerPoint3DY="-9.9">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.645980834960938" b="0.472274780273438" c="-0.397323608398438" d="0.543472290039063" tx="8.4" ty="-12"/>
                   </matrix>
@@ -208,19 +170,19 @@
             </DOMFrame>
             <DOMFrame index="14" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="8.85" centerPoint3DY="-8.55">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.645980834960938" b="0.472274780273438" c="-0.397323608398438" d="0.543472290039063" tx="8.8" ty="-10.65"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="0.6" y="-0.15"/>
+                    <Point x="0.65" y="-0.2"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="9.05" centerPoint3DY="-8.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.705215454101563" b="0.378143310546875" c="-0.318130493164063" d="0.59332275390625" tx="8.75" ty="-11.05"/>
                   </matrix>
@@ -300,43 +262,43 @@
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="8.55" centerPoint3DY="-15.3">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.92303466796875" b="0.384735107421875" c="0.33685302734375" d="0.80816650390625" tx="6.65" ty="-18.5"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.45" y="3.95"/>
+                    <Point x="-0.45" y="4"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="8.5" centerPoint3DY="-14.6">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.92303466796875" b="0.384735107421875" c="0.33685302734375" d="0.80816650390625" tx="6.6" ty="-17.8"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.45" y="3.95"/>
+                    <Point x="-0.4" y="3.9"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="8.45" centerPoint3DY="-15.65">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.951644897460938" b="0.30718994140625" c="0.268951416015625" d="0.833221435546875" tx="6.75" ty="-19"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.4" y="3.95"/>
+                    <Point x="-0.4" y="4"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="14" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="8.8" centerPoint3DY="-14.15">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.951644897460938" b="0.30718994140625" c="0.268951416015625" d="0.833221435546875" tx="7.1" ty="-17.5"/>
                   </matrix>
@@ -348,12 +310,12 @@
             </DOMFrame>
             <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="8.55" centerPoint3DY="-15.3">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.92303466796875" b="0.384735107421875" c="0.33685302734375" d="0.80816650390625" tx="6.65" ty="-18.5"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.45" y="3.95"/>
+                    <Point x="-0.45" y="4"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -364,7 +326,7 @@
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="-8.85" centerPoint3DY="-11.35">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.9990234375" b="0.044219970703125" c="0.044219970703125" d="0.9990234375" tx="-8.85" ty="-10.2"/>
                   </matrix>
@@ -376,19 +338,19 @@
             </DOMFrame>
             <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="-9" centerPoint3DY="-11.15">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.99908447265625" b="-0.042755126953125" c="-0.042755126953125" d="0.99908447265625" tx="-9.15" ty="-10"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="0.6" y="-0.75"/>
+                    <Point x="0.55" y="-0.75"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="-8.8" centerPoint3DY="-12.7">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.999832153320313" b="0.0182342529296875" c="0.0182342529296875" d="0.999832153320313" tx="-8.8" ty="-11.5"/>
                   </matrix>
@@ -400,7 +362,7 @@
             </DOMFrame>
             <DOMFrame index="14" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="-7.4" centerPoint3DY="-11.3">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.985504150390625" b="0.169631958007813" c="0.169631958007813" d="0.985504150390625" tx="-6.8" ty="-9.9"/>
                   </matrix>
@@ -412,7 +374,7 @@
             </DOMFrame>
             <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="-8.85" centerPoint3DY="-11.35">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.9990234375" b="0.044219970703125" c="0.044219970703125" d="0.9990234375" tx="-8.85" ty="-10.2"/>
                   </matrix>
@@ -428,19 +390,19 @@
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-8.7" centerPoint3DY="-15.65">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.990325927734375" b="0.138748168945313" c="-0.138748168945313" d="0.990325927734375" tx="-7.8" ty="-19.25"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.4" y="3.9"/>
+                    <Point x="-0.45" y="3.85"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-8.5" centerPoint3DY="-15.5">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.974517822265625" b="0.224288940429688" c="-0.224288940429688" d="0.974517822265625" tx="-7.3" ty="-18.95"/>
                   </matrix>
@@ -452,19 +414,19 @@
             </DOMFrame>
             <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-8.3" centerPoint3DY="-16.95">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.974517822265625" b="0.224288940429688" c="-0.224288940429688" d="0.974517822265625" tx="-7.1" ty="-20.4"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.45" y="3.9"/>
+                    <Point x="-0.45" y="3.95"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="14" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-7.45" centerPoint3DY="-15.35">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.99725341796875" b="0.07391357421875" c="-0.07391357421875" d="0.99725341796875" tx="-6.5" ty="-18.95"/>
                   </matrix>
@@ -476,12 +438,12 @@
             </DOMFrame>
             <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-8.7" centerPoint3DY="-15.65">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.990325927734375" b="0.138748168945313" c="-0.138748168945313" d="0.990325927734375" tx="-7.8" ty="-19.25"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.4" y="3.9"/>
+                    <Point x="-0.45" y="3.85"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -492,31 +454,31 @@
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" centerPoint3DX="-10.25" centerPoint3DY="-5.55">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.990325927734375" b="0.138748168945313" c="-0.138748168945313" d="0.990325927734375" tx="-12" ty="-7"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="1.95" y="1.55"/>
+                    <Point x="2" y="1.6"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" centerPoint3DX="-10.95" centerPoint3DY="-5.65">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.974517822265625" b="0.224288940429688" c="-0.224288940429688" d="0.974517822265625" tx="-12.6" ty="-7.15"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="1.95" y="1.55"/>
+                    <Point x="2" y="1.55"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="9" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" centerPoint3DX="-10.4" centerPoint3DY="-7">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.986373901367188" b="0.164459228515625" c="-0.164459228515625" d="0.986373901367188" tx="-12.1" ty="-8.45"/>
                   </matrix>
@@ -528,24 +490,24 @@
             </DOMFrame>
             <DOMFrame index="14" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" centerPoint3DX="-7.95" centerPoint3DY="-4.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.999893188476563" b="0.012969970703125" c="-0.012969970703125" d="0.999893188476563" tx="-9.55" ty="-6.4"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="1.85" y="1.6"/>
+                    <Point x="1.9" y="1.6"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
             <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" centerPoint3DX="-10.25" centerPoint3DY="-5.55">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.990325927734375" b="0.138748168945313" c="-0.138748168945313" d="0.990325927734375" tx="-12" ty="-7"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="1.95" y="1.55"/>
+                    <Point x="2" y="1.6"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -680,9 +642,9 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#9933CC" locked="true">
+        <DOMLayer name="Layer 2" color="#9933CC">
           <frames>
-            <DOMFrame index="0" duration="4" keyMode="9728">
+            <DOMFrame index="0" duration="20" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -697,95 +659,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!269 352S2[157 422 -1 422!-1 422[-161 422 -272 352!-272 352[-383 285 -383 187!-383 187[-383 90 -272 22!-272 22[-161 -47 -1 -47!-1 -47[157 -47 269 22!269 22[318 51 345 87!345 87[382 132 382 187!382 187[382 242 345 289!345 289[318 323 269
- 352"/>
-                  </edges>
-                </DOMShape>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="4" duration="5" keyMode="9728">
-              <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <RadialGradient>
-                        <matrix>
-                          <Matrix a="0.02423095703125" d="0.01483154296875" ty="9.35"/>
-                        </matrix>
-                        <GradientEntry alpha="0.4" ratio="0.274509803921569"/>
-                        <GradientEntry alpha="0" ratio="1"/>
-                      </RadialGradient>
-                    </FillStyle>
-                  </fills>
-                  <edges>
-                    <Edge fillStyle1="1" edges="
-!345 87S2[382 132 382 187!382 187[382 242 345 289!345 289[318 323 269 352!269 352[157 422 -1 422!-1 422[-161 422 -272 352!-272 352[-383 285 -383 187!-383 187[-383 90 -272 22!-272 22[-161 -47 -1 -47!-1 -47[157 -47 269 22!269 22[318 51
- 345 87"/>
-                  </edges>
-                </DOMShape>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="9" duration="5" keyMode="9728">
-              <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <RadialGradient>
-                        <matrix>
-                          <Matrix a="0.02423095703125" d="0.01483154296875" ty="9.35"/>
-                        </matrix>
-                        <GradientEntry alpha="0.4" ratio="0.274509803921569"/>
-                        <GradientEntry alpha="0" ratio="1"/>
-                      </RadialGradient>
-                    </FillStyle>
-                  </fills>
-                  <edges>
-                    <Edge fillStyle1="1" edges="
-!382 187[382 242 345 289!345 289[318 323 269 352!269 352[157 422 -1 422!-1 422[-161 422 -272 352!-272 352[-383 285 -383 187!-383 187[-383 90 -272 22!-272 22[-161 -47 -1 -47!-1 -47[157 -47 269 22!269 22[318 51 345 87!345 87[382 132 382
- 187"/>
-                  </edges>
-                </DOMShape>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="14" duration="5" keyMode="9728">
-              <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <RadialGradient>
-                        <matrix>
-                          <Matrix a="0.02423095703125" d="0.01483154296875" ty="9.35"/>
-                        </matrix>
-                        <GradientEntry alpha="0.4" ratio="0.274509803921569"/>
-                        <GradientEntry alpha="0" ratio="1"/>
-                      </RadialGradient>
-                    </FillStyle>
-                  </fills>
-                  <edges>
-                    <Edge fillStyle1="1" edges="
-!345 289[318 323 269 352!269 352[157 422 -1 422!-1 422[-161 422 -272 352!-272 352[-383 285 -383 187!-383 187[-383 90 -272 22!-272 22[-161 -47 -1 -47!-1 -47[157 -47 269 22!269 22[318 51 345 87!345 87[382 132 382 187!382 187[382 242 345
- 289"/>
-                  </edges>
-                </DOMShape>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="19" keyMode="9728">
-              <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <RadialGradient>
-                        <matrix>
-                          <Matrix a="0.02423095703125" d="0.01483154296875" ty="9.35"/>
-                        </matrix>
-                        <GradientEntry alpha="0.4" ratio="0.274509803921569"/>
-                        <GradientEntry alpha="0" ratio="1"/>
-                      </RadialGradient>
-                    </FillStyle>
-                  </fills>
-                  <edges>
-                    <Edge fillStyle1="1" edges="
-!269 352[157 422 -1 422!-1 422[-161 422 -272 352!-272 352[-383 285 -383 187!-383 187[-383 90 -272 22!-272 22[-161 -47 -1 -47!-1 -47[157 -47 269 22!269 22[318 51 345 87!345 87[382 132 382 187!382 187[382 242 345 289!345 289[318 323 269
+                    <Edge fillStyle1="1" edges="!269 352[157 422 -1 422!-1 422[-161 422 -272 352!-272 352[-383 285 -383 187!-383 187[-383 90 -272 22!-272 22[-161 -47 -1 -47!-1 -47[157 -47 269 22!269 22[318 51 345 87!345 87[382 132 382 187!382 187[382 242 345 289!345 289[318 323 269
  352"/>
                   </edges>
                 </DOMShape>

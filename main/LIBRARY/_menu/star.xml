@@ -1,16 +1,16 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/star" itemID="53e56300-000000a2" linkageExportForAS="true" linkageClassName="src.ui.Star" lastModified="1407544023">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/star" itemID="53e56300-000000a2" linkageExportForAS="true" linkageClassName="src.ui.Star" lastModified="1429902713">
   <timeline>
-    <DOMTimeline name="star" currentFrame="4">
+    <DOMTimeline name="star">
       <layers>
-        <DOMLayer name="label" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="label" color="#FF4FFF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="4" name="normal" labelType="name" keyMode="9728">
+            <DOMFrame index="0" duration="8" name="normal" labelType="name" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="4" duration="6" name="score" labelType="name" keyMode="9728">
+            <DOMFrame index="8" duration="8" name="score" labelType="name" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
@@ -20,7 +20,7 @@
         </DOMLayer>
         <DOMLayer name="Layer 2" color="#9933CC">
           <frames>
-            <DOMFrame index="0" duration="10" keyMode="9728">
+            <DOMFrame index="0" duration="16" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -57,7 +57,7 @@
         </DOMLayer>
         <DOMLayer name="Layer 1" color="#4FFF4F">
           <frames>
-            <DOMFrame index="0" duration="4" keyMode="9728">
+            <DOMFrame index="0" duration="8" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -69,10 +69,10 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="
-!453 358|468 550!468 550|290 477!290 477|111 550!111 550|126 358!126 358|0 211!0 211|188 165!188 165|290 0!290 0|391 165!391 165|579 211!579 211|453 358"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="
 !437 350|451 523!451 523|290 457!290 457|129 523!129 523|142 350!142 350|29 217!29 217|198 175!198 175|290 27!290 27|381 175!381 175|551 217!551 217|437 350"/>
+                    <Edge fillStyle1="1" edges="
+!453 358|468 550!468 550|290 477!290 477|111 550!111 550|126 358!126 358|0 211!0 211|188 165!188 165|290 0!290 0|391 165!391 165|579 211!579 211|453 358"/>
                     <Edge cubics="!391 165(;391,165 579,211 579,211q391 165 579 211);"/>
                     <Edge cubics="!188 165(;188,165 290,0 290,0q188 165 290 0);"/>
                     <Edge cubics="!0 211(;0,211 188,165 188,165q0 211 188 165);"/>
@@ -97,7 +97,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="4" duration="6" keyMode="9728">
+            <DOMFrame index="8" duration="8" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -109,10 +109,10 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="
-!453 358|468 550!468 550|290 477!290 477|111 550!111 550|126 358!126 358|0 211!0 211|188 165!188 165|290 0!290 0|391 165!391 165|579 211!579 211|453 358"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="
 !437 350|451 523!451 523|290 457!290 457|129 523!129 523|142 350!142 350|29 217!29 217|198 175!198 175|290 27!290 27|381 175!381 175|551 217!551 217|437 350"/>
+                    <Edge fillStyle1="1" edges="
+!453 358|468 550!468 550|290 477!290 477|111 550!111 550|126 358!126 358|0 211!0 211|188 165!188 165|290 0!290 0|391 165!391 165|579 211!579 211|453 358"/>
                     <Edge cubics="!391 165(;391,165 579,211 579,211q391 165 579 211);"/>
                     <Edge cubics="!188 165(;188,165 290,0 290,0q188 165 290 0);"/>
                     <Edge cubics="!0 211(;0,211 188,165 188,165q0 211 188 165);"/>
@@ -139,9 +139,9 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#FF800A">
+        <DOMLayer name="Layer 3" color="#FF800A" current="true" isSelected="true">
           <frames>
-            <DOMFrame index="0" duration="10" keyMode="9728">
+            <DOMFrame index="0" duration="16" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>

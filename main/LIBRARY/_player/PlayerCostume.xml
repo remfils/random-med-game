@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1429885784" lastUniqueIdentifier="24">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1429895621" lastUniqueIdentifier="24">
   <timeline>
-    <DOMTimeline name="PlayerCostume" currentFrame="29">
+    <DOMTimeline name="PlayerCostume">
       <layers>
         <DOMLayer name="actions" color="#FF800A" autoNamed="false">
           <frames>
@@ -114,7 +114,7 @@
             </DOMFrame>
             <DOMFrame index="41" duration="12" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/states/stand_left" centerPoint3DX="3.05" centerPoint3DY="-22.5">
+                <DOMSymbolInstance libraryItemName="_player/states/stand_left" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.656982421875" d="1.656982421875" tx="3.3" ty="-15.35"/>
                   </matrix>
@@ -126,7 +126,7 @@
             </DOMFrame>
             <DOMFrame index="53" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/states/stand_right" centerPoint3DX="-2.35" centerPoint3DY="-22.5">
+                <DOMSymbolInstance libraryItemName="_player/states/stand_right" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-1.656982421875" d="1.656982421875" tx="-2.6" ty="-15.35"/>
                   </matrix>
@@ -138,7 +138,7 @@
             </DOMFrame>
             <DOMFrame index="64" duration="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/states/stand_down" centerPoint3DY="-21.55">
+                <DOMSymbolInstance libraryItemName="_player/states/stand_down" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.656982421875" d="1.656982421875" tx="0.9" ty="-13"/>
                   </matrix>
@@ -150,7 +150,7 @@
             </DOMFrame>
             <DOMFrame index="77" duration="12" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/states/stand_up" centerPoint3DY="-21.55">
+                <DOMSymbolInstance libraryItemName="_player/states/stand_up" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.656982421875" d="1.656982421875" tx="0.9" ty="-13"/>
                   </matrix>

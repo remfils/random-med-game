@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/MenuBackground" centerPoint3DX="413.65" centerPoint3DY="257.15">
+                <DOMSymbolInstance libraryItemName="_menu/MenuBackground" selected="true" centerPoint3DX="413.65" centerPoint3DY="257.15">
                   <matrix>
                     <Matrix tx="0.1" ty="0.1"/>
                   </matrix>
@@ -22,7 +22,7 @@
                     <Point x="324.35" y="223.25"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/кнопки/TabletButton" symbolType="button">
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/TabletButton" selected="true" symbolType="button">
                   <matrix>
                     <Matrix a="1.99143981933594" b="-0.0678253173828125" c="0.0340423583984375" d="0.999420166015625" tx="419.25" ty="593.35"/>
                   </matrix>
@@ -30,7 +30,7 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" symbolType="graphic" firstFrame="1" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" selected="true" symbolType="graphic" firstFrame="1" loop="loop">
                   <matrix>
                     <Matrix a="0.652420043945313" d="0.652420043945313" tx="150.9" ty="230.15"/>
                   </matrix>
@@ -38,7 +38,7 @@
                     <Point x="15.8" y="15.8"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.652420043945313" d="0.652420043945313" tx="259.2" ty="231.5"/>
                   </matrix>
@@ -46,7 +46,7 @@
                     <Point x="15.8" y="15.8"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.652420043945313" d="0.652420043945313" tx="364.85" ty="232.15"/>
                   </matrix>
@@ -54,7 +54,7 @@
                     <Point x="15.8" y="15.8"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.652420043945313" d="0.652420043945313" tx="150.9" ty="321.15"/>
                   </matrix>
@@ -62,7 +62,7 @@
                     <Point x="15.8" y="15.8"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" symbolType="graphic" firstFrame="1" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" selected="true" symbolType="graphic" firstFrame="1" loop="loop">
                   <matrix>
                     <Matrix a="0.652420043945313" d="0.652420043945313" tx="257.85" ty="323.15"/>
                   </matrix>
@@ -70,7 +70,7 @@
                     <Point x="15.8" y="15.8"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" symbolType="graphic" firstFrame="1" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_magesShop/ItemIco" selected="true" symbolType="graphic" firstFrame="1" loop="loop">
                   <matrix>
                     <Matrix a="0.652420043945313" d="0.652420043945313" tx="364.85" ty="322.5"/>
                   </matrix>

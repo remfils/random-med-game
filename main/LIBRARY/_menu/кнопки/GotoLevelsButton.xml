@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/кнопки/GotoLevelsButton" itemID="53fb09d7-000000bf" linkageExportForAS="true" linkageClassName="GotoLevelsButton" symbolType="button" lastModified="1408962273" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/кнопки/GotoLevelsButton" itemID="53fb09d7-000000bf" linkageExportForAS="true" linkageClassName="GotoLevelsButton" symbolType="button" lastModified="1429956461" lastUniqueIdentifier="5">
   <timeline>
-    <DOMTimeline name="GotoLevelsButton" currentFrame="2" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;-41&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="GotoLevelsButton" currentFrame="3" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;-41&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
         <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>

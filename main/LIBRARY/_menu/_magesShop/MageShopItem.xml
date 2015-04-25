@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/MageShopItem" itemID="5479f0be-0000012d" linkageExportForAS="true" linkageClassName="src.ui.mageShop.InventoryItem" lastModified="1429444362" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/MageShopItem" itemID="5479f0be-0000012d" linkageExportForAS="true" linkageClassName="src.ui.mageShop.InventoryItem" lastModified="1429890102" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="MageShopItem">
       <layers>
@@ -13,7 +13,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_spells/spellPic" name="item_mc" centerPoint3DX="-3.1" centerPoint3DY="-0.4">
+                <DOMSymbolInstance libraryItemName="_GUI/_spells/spellPic" name="item_mc" cacheAsBitmap="true" centerPoint3DX="-3.1" centerPoint3DY="-0.4">
                   <matrix>
                     <Matrix tx="-21.95" ty="-30.15"/>
                   </matrix>

@@ -6,23 +6,23 @@
           <DOMFolderItem name="_bosses/mad" itemID="54956214-000001ff"/>
           <DOMFolderItem name="_bosses/mad/room" itemID="54956219-00000203"/>
           <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103"/>
-          <DOMFolderItem name="_bullets/_nukelino" itemID="553a0697-00000142" isExpanded="true"/>
-          <DOMFolderItem name="_bullets/_powerspell" itemID="553a0788-0000016a" isExpanded="true"/>
-          <DOMFolderItem name="_bullets/_spark" itemID="553a0843-00000193" isExpanded="true"/>
+          <DOMFolderItem name="_bullets/_nukelino" itemID="553a0697-00000142"/>
+          <DOMFolderItem name="_bullets/_powerspell" itemID="553a0788-0000016a"/>
+          <DOMFolderItem name="_bullets/_spark" itemID="553a0843-00000193"/>
           <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104"/>
           <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110"/>
           <DOMFolderItem name="_enemies/_Ghost" itemID="5419fc21-000000d2"/>
           <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
-          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8" isExpanded="true"/>
+          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
           <DOMFolderItem name="_GUI/_coins" itemID="53c4f206-00000070"/>
           <DOMFolderItem name="_GUI/_healthBars" itemID="53c4f20b-00000071"/>
           <DOMFolderItem name="_GUI/_hearts" itemID="53c4f20e-00000072"/>
           <DOMFolderItem name="_GUI/_mana" itemID="53c4fe6d-000001a0"/>
           <DOMFolderItem name="_GUI/_map" itemID="53c4f221-00000078"/>
           <DOMFolderItem name="_GUI/_spells" itemID="53c4f211-00000073"/>
-          <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
+          <DOMFolderItem name="_level" itemID="5421a1d2-00000105"/>
           <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc"/>
@@ -45,14 +45,14 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
-          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
+          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107" isExpanded="true"/>
           <DOMFolderItem name="_menu/_magesShop" itemID="5470a581-00000125" isExpanded="true"/>
-          <DOMFolderItem name="_menu/_декорации" itemID="53d01285-000000f1"/>
+          <DOMFolderItem name="_menu/_деревья" itemID="553b66de-00000142"/>
           <DOMFolderItem name="_menu/old" itemID="53cc2004-000000a6"/>
           <DOMFolderItem name="_menu/old/_graph" itemID="53af52ac-000000a1"/>
           <DOMFolderItem name="_menu/old/кошелек" itemID="53726c72-00000062"/>
-          <DOMFolderItem name="_menu/кнопки" itemID="53ebfe31-00000288"/>
-          <DOMFolderItem name="_player" itemID="552fc5f9-00000169" isExpanded="true"/>
+          <DOMFolderItem name="_menu/кнопки" itemID="53ebfe31-00000288" isExpanded="true"/>
+          <DOMFolderItem name="_player" itemID="552fc5f9-00000169"/>
           <DOMFolderItem name="_player/parts" itemID="552fc2f1-0000013e"/>
           <DOMFolderItem name="_player/parts/_головы" itemID="53d0124e-000000d3"/>
           <DOMFolderItem name="_player/parts/_руки" itemID="53d01255-000000d7"/>
@@ -60,8 +60,8 @@
           <DOMFolderItem name="src" itemID="53afd2e7-00000077" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="MagicFont" itemID="54380457-000000e7" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
           <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
+          <DOMFontItem name="MagicFont" itemID="54380457-000000e7" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
      </fonts>
      <media>
           <DOMBitmapItem name="_menu/65494423_640.jpg" itemID="53cc1ca2-00000094" sourceExternalFilepath="../main/LIBRARY/_menu/65494423_640.jpg" sourceLastImported="1405885513" originalCompressionType="lossless" quality="50" href="_menu/65494423_640.jpg" bitmapDataHRef="M 2 1405885602.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
@@ -132,15 +132,15 @@
           <Include href="_GUI/_mana/mcMana.xml" loadImmediate="false" itemID="53c4fe7d-000001ab" lastModified="1407974794"/>
           <Include href="_GUI/_mana/StatMana.xml" itemID="5417444c-000000b7" lastModified="1411205265"/>
           <Include href="_GUI/_map/map.xml" itemID="53c4f23d-0000007a" lastModified="1410647007"/>
-          <Include href="_GUI/_spells/spellPic.xml" loadImmediate="false" itemID="53b9b6ff-000000b5" lastModified="1429868631"/>
-          <Include href="_GUI/ErrorScreen.xml" itemID="553a5836-0000013b" lastModified="1429887152"/>
+          <Include href="_GUI/_spells/spellPic.xml" loadImmediate="false" itemID="53b9b6ff-000000b5" lastModified="1429902498"/>
+          <Include href="_GUI/ErrorScreen.xml" itemID="553a5836-0000013b" lastModified="1429902442"/>
           <Include href="_GUI/GameMenuBG.xml" itemID="5419c6f9-000000cb" lastModified="1411909212"/>
           <Include href="_GUI/icoScore.xml" loadImmediate="false" itemID="53cb1c73-000001aa" lastModified="1411378689"/>
-          <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1429870505"/>
+          <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1429902530"/>
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1407526163"/>
           <Include href="_GUI/SpellMenu.xml" loadImmediate="false" itemID="541332c6-000000d2" lastModified="1410545813"/>
           <Include href="_GUI/SpellSelecButton.xml" loadImmediate="false" itemID="54133284-000000c8" lastModified="1410549341"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1429818348"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1429895583"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1412066217"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
@@ -204,21 +204,22 @@
           <Include href="_level/уровень001_colors.xml" itemIcon="1" loadImmediate="false" itemID="53e803a8-000000a5" lastModified="1407714671"/>
           <Include href="_menu/_magesShop/demo.xml" itemIcon="1" loadImmediate="false" itemID="54748794-00000194" lastModified="1416926722"/>
           <Include href="_menu/_magesShop/ItemIco.xml" itemID="5474a8d9-000001bd" lastModified="1416932419"/>
-          <Include href="_menu/_magesShop/itemPanell.xml" itemIcon="1" loadImmediate="false" itemID="5471a488-00000121" lastModified="1416733832"/>
-          <Include href="_menu/_magesShop/ItemPlaceHolder.xml" itemID="5479ed57-0000011d" lastModified="1417869038"/>
+          <Include href="_menu/_magesShop/itemPanell.xml" itemIcon="1" loadImmediate="false" itemID="5471a488-00000121" lastModified="1429890051"/>
+          <Include href="_menu/_magesShop/ItemPlaceHolder.xml" itemID="5479ed57-0000011d" lastModified="1429956343"/>
           <Include href="_menu/_magesShop/mageDrawing.xml" itemIcon="1" loadImmediate="false" itemID="5471a476-0000011c" lastModified="1416735574"/>
-          <Include href="_menu/_magesShop/MageShopItem.xml" itemID="5479f0be-0000012d" lastModified="1429444362"/>
-          <Include href="_menu/_magesShop/MagesShop.xml" itemID="54748e1d-000001ac" lastModified="1417872846"/>
+          <Include href="_menu/_magesShop/MageShopItem.xml" itemID="5479f0be-0000012d" lastModified="1429890102"/>
+          <Include href="_menu/_magesShop/MagesShop.xml" itemID="54748e1d-000001ac" lastModified="1429889816"/>
           <Include href="_menu/_magesShop/magesShop_bg.xml" itemIcon="1" loadImmediate="false" itemID="5470a53f-0000011f" lastModified="1416733923"/>
           <Include href="_menu/_magesShop/scrollBar.xml" itemIcon="1" loadImmediate="false" itemID="5470b8a9-000001e0" lastModified="1416673597"/>
           <Include href="_menu/_magesShop/scrollBtn.xml" itemIcon="0" itemID="5470b7ad-000001c6" lastModified="1416923365"/>
-          <Include href="_menu/_декорации/дерево001.xml" itemIcon="1" loadImmediate="false" itemID="53cc2571-000000cc" lastModified="1406145072"/>
-          <Include href="_menu/_декорации/дерево002.xml" itemIcon="1" loadImmediate="false" itemID="53cc49d0-00000094" lastModified="1406145080"/>
-          <Include href="_menu/_декорации/дерево003.xml" itemIcon="1" loadImmediate="false" itemID="53cc4cf0-000000a8" lastModified="1406145080"/>
-          <Include href="_menu/_декорации/дерево004.xml" itemIcon="1" loadImmediate="false" itemID="53cd953a-00000081" lastModified="1406145080"/>
-          <Include href="_menu/_декорации/куст001.xml" itemIcon="1" loadImmediate="false" itemID="53ce77f3-00000083" lastModified="1406145080"/>
-          <Include href="_menu/_декорации/куст002.xml" itemIcon="1" loadImmediate="false" itemID="53ce7899-0000008c" lastModified="1406145080"/>
-          <Include href="_menu/MenuBackground.xml" itemID="53fb055a-000000ad" lastModified="1416668556"/>
+          <Include href="_menu/_деревья/дерево001.xml" itemIcon="1" loadImmediate="false" itemID="53cc2571-000000cc" lastModified="1406145072"/>
+          <Include href="_menu/_деревья/дерево002.xml" itemIcon="1" loadImmediate="false" itemID="53cc49d0-00000094" lastModified="1406145080"/>
+          <Include href="_menu/_деревья/дерево003.xml" itemIcon="1" loadImmediate="false" itemID="53cc4cf0-000000a8" lastModified="1406145080"/>
+          <Include href="_menu/_деревья/дерево004.xml" itemIcon="1" loadImmediate="false" itemID="53cd953a-00000081" lastModified="1406145080"/>
+          <Include href="_menu/_деревья/куст001.xml" itemIcon="1" loadImmediate="false" itemID="53ce77f3-00000083" lastModified="1406145080"/>
+          <Include href="_menu/_деревья/куст002.xml" itemIcon="1" loadImmediate="false" itemID="53ce7899-0000008c" lastModified="1406145080"/>
+          <Include href="_menu/MenuBackground.xml" itemID="53fb055a-000000ad" lastModified="1429894264"/>
+          <Include href="_menu/MenuBackground_clip.xml" loadImmediate="false" itemID="553a62d8-0000014a" lastModified="1429894262"/>
           <Include href="_menu/old/_graph/1_пользователь.xml" itemIcon="1" loadImmediate="false" itemID="536628fe-00000031" lastModified="1399206049"/>
           <Include href="_menu/old/_graph/2_папка.xml" itemIcon="1" loadImmediate="false" itemID="53af5209-00000095" lastModified="1403998729"/>
           <Include href="_menu/old/_graph/листы_на_фоне.xml" itemIcon="1" loadImmediate="false" itemID="536fc7cb-00000025" lastModified="1400071113"/>
@@ -228,25 +229,25 @@
           <Include href="_menu/old/кошелек/3_кошелек.xml" itemIcon="1" loadImmediate="false" itemID="53727608-00000110" lastModified="1400012550"/>
           <Include href="_menu/old/кошелек/дырки.xml" itemIcon="1" loadImmediate="false" itemID="53727891-00000118" lastModified="1400010897"/>
           <Include href="_menu/old/область меню.xml" itemIcon="1" loadImmediate="false" itemID="53662869-0000002d" lastModified="1405451587"/>
-          <Include href="_menu/star.xml" itemID="53e56300-000000a2" lastModified="1407544023"/>
-          <Include href="_menu/кнопки/genericLevelButon.xml" itemID="53e6318d-000000a7" lastModified="1407594893"/>
-          <Include href="_menu/кнопки/GotoAchievementsButton.xml" itemIcon="0" itemID="53fb0a0e-000000c1" lastModified="1408962269"/>
-          <Include href="_menu/кнопки/GotoLevelsButton.xml" itemIcon="0" itemID="53fb09d7-000000bf" lastModified="1408962273"/>
-          <Include href="_menu/кнопки/GotoShopButton.xml" itemIcon="0" itemID="53fb0e1b-00000199" lastModified="1408962212"/>
+          <Include href="_menu/star.xml" itemID="53e56300-000000a2" lastModified="1429902713"/>
+          <Include href="_menu/кнопки/genericLevelButon.xml" itemID="53e6318d-000000a7" lastModified="1429956411"/>
+          <Include href="_menu/кнопки/GotoAchievementsButton.xml" itemIcon="0" itemID="53fb0a0e-000000c1" lastModified="1429956447"/>
+          <Include href="_menu/кнопки/GotoLevelsButton.xml" itemIcon="0" itemID="53fb09d7-000000bf" lastModified="1429956461"/>
+          <Include href="_menu/кнопки/GotoShopButton.xml" itemIcon="0" itemID="53fb0e1b-00000199" lastModified="1429956488"/>
           <Include href="_menu/кнопки/map default.xml" itemIcon="1" loadImmediate="false" itemID="53d012f7-000000ff" lastModified="1406155613"/>
           <Include href="_menu/кнопки/PaintedArrow.xml" itemID="53fb3fdc-00000260" lastModified="1408974823"/>
-          <Include href="_menu/кнопки/TabletButton.xml" itemIcon="0" itemID="53fb3e67-00000258" lastModified="1408974873"/>
+          <Include href="_menu/кнопки/TabletButton.xml" itemIcon="0" itemID="53fb3e67-00000258" lastModified="1429956576"/>
           <Include href="_menu/кнопки/блеск.xml" loadImmediate="false" itemID="53d053e8-000000f1" lastModified="1406161896"/>
           <Include href="_menu/кнопки/блеск кубок.xml" loadImmediate="false" itemID="53d049a8-00000099" lastModified="1406159873"/>
-          <Include href="_menu/кнопки/кубок.xml" loadImmediate="false" itemID="53d03d49-00000095" lastModified="1406157011"/>
+          <Include href="_menu/кнопки/кубок.xml" itemIcon="1" loadImmediate="false" itemID="53d03d49-00000095" lastModified="1429956504"/>
           <Include href="_menu/кнопки/луч.xml" itemIcon="1" loadImmediate="false" itemID="53d01cdc-0000012e" lastModified="1406147811"/>
           <Include href="_menu/кнопки/луч анимация.xml" itemIcon="1" loadImmediate="false" itemID="53d01cfd-00000132" lastModified="1406148460"/>
-          <Include href="_menu/кнопки/сундук.xml" loadImmediate="false" itemID="53d030e5-00000219" lastModified="1406155462"/>
+          <Include href="_menu/кнопки/сундук.xml" itemIcon="1" loadImmediate="false" itemID="53d030e5-00000219" lastModified="1429956587"/>
           <Include href="_menu/название игры.xml" itemIcon="1" loadImmediate="false" itemID="53d0448d-000000b4" lastModified="1416138485"/>
           <Include href="_player/parts/_головы/голова_В.xml" itemIcon="1" loadImmediate="false" itemID="537753f0-00000050" lastModified="1405453824"/>
           <Include href="_player/parts/_головы/голова_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad4e2-000002a0" lastModified="1406145125"/>
           <Include href="_player/parts/_головы/голова_вниз.xml" itemIcon="1" loadImmediate="false" itemID="53c7026a-00000083" lastModified="1406145125"/>
-          <Include href="_player/parts/_головы/голова_вниз_выс.xml" itemIcon="1" loadImmediate="false" itemID="53caab08-000000de" lastModified="1406145125"/>
+          <Include href="_player/parts/_головы/голова_вниз_выс.xml" itemIcon="1" loadImmediate="false" itemID="53caab08-000000de" lastModified="1429898845"/>
           <Include href="_player/parts/_головы/голова_право.xml" itemIcon="1" loadImmediate="false" itemID="53cabfa5-000000f3" lastModified="1406145125"/>
           <Include href="_player/parts/_головы/голова_С.xml" itemIcon="1" loadImmediate="false" itemID="537755f1-000000a8" lastModified="1406145125"/>
           <Include href="_player/parts/_головы/голова_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776bed-00000057" lastModified="1406145125"/>
@@ -271,16 +272,16 @@
           <Include href="_player/parts/тело_хотьба_лево.xml" itemIcon="1" loadImmediate="false" itemID="53cc2bbe-00000153" lastModified="1406145125"/>
           <Include href="_player/parts/тело_Ю.xml" itemIcon="1" loadImmediate="false" itemID="53776c15-00000062" lastModified="1406145125"/>
           <Include href="_player/parts/тело_Ю2.xml" itemIcon="1" loadImmediate="false" itemID="53ca9c87-0000006c" lastModified="1428865915"/>
-          <Include href="_player/PlayerCostume.xml" itemID="552fc242-00000135" lastModified="1429885784"/>
-          <Include href="_player/states/down.xml" loadImmediate="false" itemID="552fc266-0000013b" lastModified="1429193318"/>
-          <Include href="_player/states/end.xml" loadImmediate="false" itemID="552fc38a-00000168" lastModified="1429193610"/>
-          <Include href="_player/states/left.xml" loadImmediate="false" itemID="552fc263-0000013a" lastModified="1429193315"/>
-          <Include href="_player/states/right.xml" loadImmediate="false" itemID="552fc269-0000013c" lastModified="1429193321"/>
-          <Include href="_player/states/stand_down.xml" loadImmediate="false" itemID="552fc277-0000013d" lastModified="1429193335"/>
-          <Include href="_player/states/stand_left.xml" loadImmediate="false" itemID="552fc255-00000137" lastModified="1429193301"/>
-          <Include href="_player/states/stand_right.xml" loadImmediate="false" itemID="552fc25c-00000138" lastModified="1429193308"/>
-          <Include href="_player/states/stand_up.xml" loadImmediate="false" itemID="552fc251-00000136" lastModified="1429193297"/>
-          <Include href="_player/states/up.xml" loadImmediate="false" itemID="552fc260-00000139" lastModified="1429193312"/>
+          <Include href="_player/PlayerCostume.xml" itemID="552fc242-00000135" lastModified="1429895621"/>
+          <Include href="_player/states/down.xml" loadImmediate="false" itemID="552fc266-0000013b" lastModified="1429898834"/>
+          <Include href="_player/states/end.xml" loadImmediate="false" itemID="552fc38a-00000168" lastModified="1429899080"/>
+          <Include href="_player/states/left.xml" loadImmediate="false" itemID="552fc263-0000013a" lastModified="1429898666"/>
+          <Include href="_player/states/right.xml" loadImmediate="false" itemID="552fc269-0000013c" lastModified="1429898754"/>
+          <Include href="_player/states/stand_down.xml" loadImmediate="false" itemID="552fc277-0000013d" lastModified="1429899030"/>
+          <Include href="_player/states/stand_left.xml" loadImmediate="false" itemID="552fc255-00000137" lastModified="1429898975"/>
+          <Include href="_player/states/stand_right.xml" loadImmediate="false" itemID="552fc25c-00000138" lastModified="1429899009"/>
+          <Include href="_player/states/stand_up.xml" loadImmediate="false" itemID="552fc251-00000136" lastModified="1429899042"/>
+          <Include href="_player/states/up.xml" loadImmediate="false" itemID="552fc260-00000139" lastModified="1429898941"/>
           <Include href="bolt.xml" itemIcon="1" loadImmediate="false" itemID="5498517e-0000025e" lastModified="1419268478"/>
           <Include href="MagicWall.xml" loadImmediate="false" itemID="54985b97-00000298" lastModified="1419271397"/>
           <Include href="spike.xml" itemIcon="1" loadImmediate="false" itemID="54984796-000001f4" lastModified="1419268257"/>
@@ -1026,25 +1027,25 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="625117" publishTime="1429887774" publishDebug="true"/>
-          <PublishItem publishSize="624896" publishTime="1429887360" publishDebug="true"/>
-          <PublishItem publishSize="625124" publishTime="1429887247" publishDebug="true"/>
-          <PublishItem publishSize="625084" publishTime="1429887207" publishDebug="true"/>
-          <PublishItem publishSize="550333" publishTime="1429885811"/>
-          <PublishItem publishSize="550475" publishTime="1429877787"/>
-          <PublishItem publishSize="550421" publishTime="1429877334"/>
-          <PublishItem publishSize="550424" publishTime="1429877207"/>
-          <PublishItem publishSize="394329" publishTime="1429877164"/>
-          <PublishItem publishSize="550327" publishTime="1429877021"/>
-          <PublishItem publishSize="550428" publishTime="1429876923"/>
-          <PublishItem publishSize="616218" publishTime="1429876824" publishDebug="true"/>
-          <PublishItem publishSize="550431" publishTime="1429876741"/>
-          <PublishItem publishSize="550056" publishTime="1429874699"/>
-          <PublishItem publishSize="615970" publishTime="1429874661" publishDebug="true"/>
-          <PublishItem publishSize="550095" publishTime="1429874602"/>
-          <PublishItem publishSize="550193" publishTime="1429874567"/>
-          <PublishItem publishSize="616056" publishTime="1429874469" publishDebug="true"/>
-          <PublishItem publishSize="615980" publishTime="1429874250" publishDebug="true"/>
-          <PublishItem publishSize="615839" publishTime="1429874009" publishDebug="true"/>
+          <PublishItem publishSize="621522" publishTime="1429956624" publishDebug="true"/>
+          <PublishItem publishSize="555917" publishTime="1429956538"/>
+          <PublishItem publishSize="621651" publishTime="1429954917" publishDebug="true"/>
+          <PublishItem publishSize="621454" publishTime="1429954845" publishDebug="true"/>
+          <PublishItem publishSize="445292" publishTime="1429954788" publishDebug="true"/>
+          <PublishItem publishSize="445292" publishTime="1429954758" publishDebug="true"/>
+          <PublishItem publishSize="445294" publishTime="1429954711" publishDebug="true"/>
+          <PublishItem publishSize="621492" publishTime="1429954232" publishDebug="true"/>
+          <PublishItem publishSize="621496" publishTime="1429954087" publishDebug="true"/>
+          <PublishItem publishSize="626090" publishTime="1429902044" publishDebug="true"/>
+          <PublishItem publishSize="450781" publishTime="1429902008" publishDebug="true"/>
+          <PublishItem publishSize="626049" publishTime="1429901502" publishDebug="true"/>
+          <PublishItem publishSize="625897" publishTime="1429901004" publishDebug="true"/>
+          <PublishItem publishSize="561191" publishTime="1429900818"/>
+          <PublishItem publishSize="561317" publishTime="1429900593"/>
+          <PublishItem publishSize="561192" publishTime="1429900342"/>
+          <PublishItem publishSize="561174" publishTime="1429900239"/>
+          <PublishItem publishSize="561104" publishTime="1429899965"/>
+          <PublishItem publishSize="561170" publishTime="1429899907"/>
+          <PublishItem publishSize="625920" publishTime="1429899705" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

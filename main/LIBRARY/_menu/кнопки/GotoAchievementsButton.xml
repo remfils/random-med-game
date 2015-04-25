@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/кнопки/GotoAchievementsButton" itemID="53fb0a0e-000000c1" linkageExportForAS="true" linkageClassName="GotoAchievementsButton" symbolType="button" lastModified="1408962269">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/кнопки/GotoAchievementsButton" itemID="53fb0a0e-000000c1" linkageExportForAS="true" linkageClassName="GotoAchievementsButton" symbolType="button" lastModified="1429956447">
   <timeline>
-    <DOMTimeline name="GotoAchievementsButton" currentFrame="2">
+    <DOMTimeline name="GotoAchievementsButton" currentFrame="3">
       <layers>
         <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" centerPoint3DX="-37.8" centerPoint3DY="-68.9">
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>
@@ -18,7 +18,7 @@
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" centerPoint3DX="-37.8" centerPoint3DY="-68.9">
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>
@@ -30,7 +30,7 @@
             </DOMFrame>
             <DOMFrame index="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" centerPoint3DX="-37.8" centerPoint3DY="-68.9">
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>
@@ -45,7 +45,7 @@
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" centerPoint3DX="-37.8" centerPoint3DY="-68.9">
+                <DOMSymbolInstance libraryItemName="_menu/кнопки/кубок" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>

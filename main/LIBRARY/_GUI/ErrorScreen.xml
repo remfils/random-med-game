@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/ErrorScreen" itemID="553a5836-0000013b" linkageExportForAS="true" linkageClassName="ErrorScreen" lastModified="1429887152">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/ErrorScreen" itemID="553a5836-0000013b" linkageExportForAS="true" linkageClassName="ErrorScreen" lastModified="1429902442">
   <timeline>
     <DOMTimeline name="ErrorScreen">
       <layers>
@@ -9,7 +9,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#FF800A" current="true" isSelected="true">
+        <DOMLayer name="Layer 3" color="#FF800A">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -46,7 +46,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#9933CC">
+        <DOMLayer name="Layer 2" color="#9933CC" visible="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -179,7 +179,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="form" color="#4FFFFF" autoNamed="false">
+        <DOMLayer name="form" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

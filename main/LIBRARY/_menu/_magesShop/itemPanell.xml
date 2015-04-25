@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/itemPanell" itemID="5471a488-00000121" symbolType="graphic" lastModified="1416733832">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_magesShop/itemPanell" itemID="5471a488-00000121" symbolType="graphic" lastModified="1429890051">
   <timeline>
     <DOMTimeline name="itemPanell">
       <layers>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!6517 5588S2|0 5588!0 5588|0 0!0 0|6517 0!6517 0|6517 5588"/>
+                    <Edge fillStyle1="1" edges="!6517 5588|0 5588!0 5588|0 0!0 0|6517 0!6517 0|6517 5588"/>
                   </edges>
                 </DOMShape>
               </elements>

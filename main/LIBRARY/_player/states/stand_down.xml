@@ -1,19 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/stand_down" itemID="552fc277-0000013d" lastModified="1429193335" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/stand_down" itemID="552fc277-0000013d" lastModified="1429899030" lastUniqueIdentifier="3">
   <timeline>
     <DOMTimeline name="stand_down">
       <layers>
-        <DOMLayer name="рука" color="#4F80FF" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
         <DOMLayer name="Layer 6" color="#808080">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/посох" centerPoint3DX="8.65" centerPoint3DY="-2.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/посох" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.99786376953125" b="0.104339599609375" c="-0.104339599609375" d="0.99786376953125" tx="7.55" ty="-23.6"/>
                   </matrix>
@@ -25,11 +18,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="голова" color="#4F80FF" autoNamed="false">
+        <DOMLayer name="голова" color="#4F80FF" autoNamed="false" visible="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_вниз_выс" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_вниз_выс" selected="true" symbolType="graphic" loop="single frame">
                   <matrix>
                     <Matrix a="0.209869384765625" d="0.209869384765625" tx="-12.15" ty="-38.4"/>
                   </matrix>
@@ -41,18 +34,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="рука_правая" color="#FF0000" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
         <DOMLayer name="тело" color="#4F80FF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="9.05" centerPoint3DY="-8.85">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.705215454101563" b="0.378143310546875" c="-0.318130493164063" d="0.59332275390625" tx="8.75" ty="-11.05"/>
                   </matrix>
@@ -64,11 +50,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="рука_левая" color="#0000FF" autoNamed="false">
+        <DOMLayer name="рука_левая" color="#0000FF" autoNamed="false" visible="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/тело_Ю2" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_player/parts/тело_Ю2" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.09989929199219" d="1.2701416015625" tx="-0.2" ty="-9.8"/>
                   </matrix>
@@ -82,14 +68,14 @@
         </DOMLayer>
         <DOMLayer name="нога2_П" color="#FF4F4F" autoNamed="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="8.55" centerPoint3DY="-15.3">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.92303466796875" b="0.384735107421875" c="0.33685302734375" d="0.80816650390625" tx="6.65" ty="-18.5"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.45" y="3.95"/>
+                    <Point x="-0.45" y="4"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -98,9 +84,9 @@
         </DOMLayer>
         <DOMLayer name="нога2_Л" color="#4FFF4F" autoNamed="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" centerPoint3DX="-8.85" centerPoint3DY="-11.35">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.9990234375" b="0.044219970703125" c="0.044219970703125" d="0.9990234375" tx="-8.85" ty="-10.2"/>
                   </matrix>
@@ -114,30 +100,30 @@
         </DOMLayer>
         <DOMLayer name="рука1_правая" color="#9933CC" autoNamed="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" centerPoint3DX="-8.7" centerPoint3DY="-15.65">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.990325927734375" b="0.138748168945313" c="-0.138748168945313" d="0.990325927734375" tx="-7.8" ty="-19.25"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="-0.4" y="3.9"/>
+                    <Point x="-0.45" y="3.85"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="обводка" color="#4F80FF" autoNamed="false">
+        <DOMLayer name="обводка" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" centerPoint3DX="-10.25" centerPoint3DY="-5.55">
+                <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.990325927734375" b="0.138748168945313" c="-0.138748168945313" d="0.990325927734375" tx="-12" ty="-7"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="1.95" y="1.55"/>
+                    <Point x="2" y="1.6"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -146,7 +132,7 @@
         </DOMLayer>
         <DOMLayer name="нога2_П" color="#FF800A" autoNamed="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
                   <matrix>
@@ -162,7 +148,7 @@
         </DOMLayer>
         <DOMLayer name="нога2_Л" color="#FF4FFF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="0" keyMode="15872">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
                   <matrix>
@@ -176,7 +162,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 5" color="#4FFFFF" locked="true" current="true" isSelected="true">
+        <DOMLayer name="Layer 5" color="#4FFFFF" locked="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
