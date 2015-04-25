@@ -135,7 +135,11 @@ package src.ui {
         }
         
         public function destroy():void {
+            deactivate();
             
+            while (numChildren > 0) {
+                removeChildAt(numChildren-1);
+            }
         }
         
     }

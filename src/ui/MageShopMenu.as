@@ -9,10 +9,7 @@ package src.ui {
     import src.ui.mageShop.MageShopContainer;
     import src.ui.mageShop.InventoryItem;
     import src.User;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class MageShopMenu extends AbstractMenu {
         private var menu:MovieClip;
         
@@ -271,6 +268,12 @@ package src.ui {
             i = placeHolders.length;
             while (i--)
                 placeHolders.pop();
+                
+            menu = null;
+            
+            tip = null;
+        
+            dragTarget = null;
         }
     }
 

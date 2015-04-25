@@ -96,7 +96,7 @@ package src {
         public function destroy():void {
             var i:int = menus.length;
             while ( i-- ) {
-                AbstractMenu(menus[i]).deactivate();
+                AbstractMenu(menus[i]).destroy();
             }
             
             while (numChildren > 0) {
