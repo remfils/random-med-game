@@ -1,4 +1,5 @@
 package src.ui {
+    import flash.display.DisplayObject;
     import flash.display.SimpleButton;
     import flash.display.Sprite;
     import flash.events.Event;
@@ -8,10 +9,15 @@ package src.ui {
     import flash.text.StyleSheet;
     import flash.text.TextField;
     import flash.text.TextFormat;
+    import src.costumes.MenuSprites;
     import src.Player;
     import src.User;
 
     public class TitleMenu extends AbstractMenu {
+        
+        private static const LEVELS_BTN:String = "levels_btn";
+        private static const INVENTORY_BTN:String = "inventory_btn";
+        private static const ACHIVEMENTS_BTN:String = "achivements_btn";
         
         public function TitleMenu() {
             
@@ -22,7 +28,30 @@ package src.ui {
             
             addUserData(data.user as User, data.css as StyleSheet);
             
-            addTitleMenuButtons();
+            // create btns
+            
+            var rake_y:Number = 504.3;
+            
+            var btn:MenuButton = new MenuButton();
+            btn.setState(MenuButton.LEVEL_BTN);
+            btn.x = 236.25;
+            btn.y = rake_y;
+            btn.name = LEVELS_BTN;
+            addChild(btn);
+            
+            btn = new MenuButton();
+            btn.setState(MenuButton.INVENTORY_BTN);
+            btn.x = 401.25;
+            btn.y = rake_y;
+            btn.name = INVENTORY_BTN;
+            addChild(btn);
+            
+            btn = new MenuButton();
+            btn.setState(MenuButton.ACHIVEMENTS_BTN);
+            btn.x = 544.15;
+            btn.y = rake_y;
+            btn.name = ACHIVEMENTS_BTN;
+            addChild(btn);
         }
         
         private function addUserData(user:User, styleSheet:StyleSheet):void {
@@ -59,30 +88,32 @@ package src.ui {
             addChild(userBg);
         }
         
-        private function addTitleMenuButtons():void {
-            var btn:SimpleButton = createButtonFromClass(GotoLevelsButton, 236.25, 504.3);
-            addChild(btn);
-            
-            btn = createButtonFromClass(GotoShopButton, 401.25, 506);
-            addChild(btn);
-            
-            btn = createButtonFromClass(GotoAchievementsButton, 544.15, 504.5);
-            addChild(btn);
-        }
-        
         override protected function clickListener(e:MouseEvent):void {
-            if ( e.target is GotoLevelsButton ) {
-                parentMenu.switchToMenu(parentMenu.LEVELS_MENU);
-            }
-            if ( e.target is GotoShopButton ) {
-                parentMenu.switchToMenu(parentMenu.MAGE_MENU);
-            }
-            if ( e.target is GotoAchievementsButton ) {
-                parentMenu.switchToMenu(0);
+            var objectName:String = DisplayObject(e.target).parent.name;
+                
+            switch (objectName) {
+            case LEVELS_BTN:
+                    parentMenu.switchToMenu(parentMenu.LEVELS_MENU);
+                    break;
+                case INVENTORY_BTN:
+                    parentMenu.switchToMenu(parentMenu.MAGE_MENU);
+                    break;
+                case ACHIVEMENTS_BTN:
+                    parentMenu.switchToMenu(0);
+                    break;
             }
         }
         
-        
+        override public function destroy():void {
+            super.destroy();
+            
+            var child:DisplayObject;
+            while (numChildren) {
+                child = getChildAt(numChildren - 1);
+                if ( child is MenuButton ) MenuButton(child).destroy();
+                removeChild(child);
+            }
+        }
     }
 
 }

@@ -1,35 +1,39 @@
 package src.ui.mageShop {
     import flash.display.MovieClip;
-	/**
-     * ...
-     * @author vlad
-     */
-    public class MageShopContainer extends MovieClip {
+    import flash.display.Sprite;
+    import src.costumes.MenuSprites;
+
+    public class MageShopContainer extends Sprite {
         public var isSpell:Boolean = false;
         public var locked:Boolean = false;
         public var type:String = "";
+        
+        public var costume:MenuSprites;
+        
         public var item:InventoryItem;
         
         private var label_mc:MovieClip;
         
         public function MageShopContainer() {
-            gotoAndStop("normal");
-            
-            label_mc = getChildByName("label_mc") as MovieClip;
+            costume = new MenuSprites();
+            setAsSpell();
+            addChild(costume);
         }
         
         public function setAsItem():void {
-            label_mc.gotoAndStop("item");
+            costume.setSprite(MenuSprites.ITEM_HOLDER);
             isSpell = false;
         }
         
         public function setAsSpell():void {
-            label_mc.gotoAndStop("spell");
+            costume.setSprite(MenuSprites.SPELL_HOLDER);
             isSpell = true;
         }
         
         public function setLocked():void {
-            gotoAndStop("locked");
+            if ( isSpell ) costume.setSprite(MenuSprites.SPELL_HOLDER_LOCKED);
+            else costume.setSprite(MenuSprites.ITEM_HOLDER_LOCKED);
+            
             locked = true;
         }
         

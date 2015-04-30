@@ -1,16 +1,19 @@
 package src.ui {
     import flash.automation.StageCaptureEvent;
+    import flash.display.DisplayObject;
     import flash.display.DisplayObjectContainer;
     import flash.display.MovieClip;
     import flash.display.Sprite;
     import flash.events.MouseEvent;
     import flash.geom.Point;
+    import src.costumes.MenuSprites;
     import src.Player;
     import src.ui.mageShop.MageShopContainer;
     import src.ui.mageShop.InventoryItem;
     import src.User;
 
     public class MageShopMenu extends AbstractMenu {
+        
         private var menu:MovieClip;
         
         private var tip:GameTip;
@@ -22,17 +25,23 @@ package src.ui {
         public function MageShopMenu() {
             super();
             
-            menu = new MagesShop();
+            menu = new MenuSprites();
+            MenuSprites(menu).setSprite(MenuSprites.MAGE_SHOP);
             menu.x = 55;
             menu.y = 197.9;
             
             addChild(menu);
             
-            var titleBtn:Sprite = getGotoMenuButton();
+            var titleBtn:MenuButton = new MenuButton();
+            titleBtn.setState(MenuButton.GOTO_TITLE_BTN);
+            titleBtn.name = GOTO_TITLE_BTN;
+            titleBtn.x = GOTO_TITLE_BTN_POSITION.x;
+            titleBtn.y = GOTO_TITLE_BTN_POSITION.y;
             addChild(titleBtn);
             
             placeHolders = [];
             
+            // переписать
             placeholderProperties = [];
             placeholderProperties.push( { "x":431, "y":205,"isSpell":true } );
             placeholderProperties.push( { "x":425.5, "y":122.5,"isSpell":true } );
@@ -81,7 +90,7 @@ package src.ui {
         private function createItemPlaceHolderAt(X:int, Y:int, isSpell:Boolean=false, locked:Boolean=false):MageShopContainer {
             var ph:MageShopContainer;
             
-            ph = new ItemPlaceHolder();
+            ph = new MageShopContainer();
             ph.x = X;
             ph.y = Y;
             
@@ -250,9 +259,9 @@ package src.ui {
         override protected function clickListener(e:MouseEvent):void {
             super.clickListener(e);
             
-            var target:Sprite = Sprite(e.target.parent);
-            switch (target.name) {
-                case "GotoTitle":
+            var name:String = DisplayObject(e.target).parent.name;
+            switch ( name ) {
+                case GOTO_TITLE_BTN:
                     parentMenu.switchToMenu(parentMenu.TITLE_MENU);
                     break;
             }
@@ -268,11 +277,16 @@ package src.ui {
             i = placeHolders.length;
             while (i--)
                 placeHolders.pop();
-                
-            menu = null;
             
+            var child:DisplayObject;
+            while (numChildren) {
+                child = getChildAt(numChildren - 1);
+                if ( child is MenuButton ) MenuButton(child).destroy();
+                removeChild(child);
+            }
+            
+            menu = null;
             tip = null;
-        
             dragTarget = null;
         }
     }
