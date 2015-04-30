@@ -3,11 +3,13 @@ package src {
     import fl.transitions.Tween;
     import flash.display.Sprite;
     import flash.events.MouseEvent;
+    import src.costumes.MenuSprites;
     import src.objects.AbstractObject;
     import src.ui.AbstractMenu;
     import src.ui.LevelSelectMenu;
     import src.ui.MageShopMenu;
     import src.ui.TitleMenu;
+    import src.util.TweenPool;
     
 
     public class MainMenu extends Sprite {
@@ -23,7 +25,10 @@ package src {
         public function MainMenu() {
             super();
             
-            createBG();
+            // create BG
+            var BG:MenuSprites = new MenuSprites();
+            BG.setSprite(MenuSprites.BG);
+            addChild(BG);
             
             currentMenu = menus[TITLE_MENU] = new TitleMenu();
             menus[LEVELS_MENU] = new LevelSelectMenu();
@@ -37,17 +42,6 @@ package src {
                 menuContainer.addChild(menus[i]);
                 AbstractMenu(menus[i]).parentMenu = this;
             }
-        }
-        
-        private function createBG():void {
-            var BG:Sprite = new MenuBackground();
-            
-            BG.x = -2.7;
-            BG.y = -13.1;
-            BG.width = 784.95;
-            BG.height = 770.15;
-            
-            addChild(BG);
         }
         
         private function hideAll():void {
@@ -83,8 +77,10 @@ package src {
         
         public function switchToMenu(MENU_NAME:uint):void {
             currentMenu.deactivate();
-            var tween:Tween = new Tween(menuContainer, "y", Strong.easeInOut, -currentMenu.y, -menus[MENU_NAME].y, 25);
-            currentMenu = menus[MENU_NAME] as AbstractMenu;
+            
+            var tween:Tween = TweenPool.getTween(menuContainer, "y", Strong.easeInOut, -currentMenu.y, -menus[MENU_NAME].y, 25);
+            
+            currentMenu = AbstractMenu(menus[MENU_NAME]);
             currentMenu.activate();
         }
         
