@@ -2,6 +2,7 @@ package src.util {
     import Box2D.Dynamics.b2Body;
     import flash.display.DisplayObject;
     import flash.display.DisplayObjectContainer;
+    import flash.display.Sprite;
     import src.enemy.Enemy;
     import src.Game;
     import src.interfaces.SolidBody;
@@ -57,6 +58,20 @@ package src.util {
                 }
                 
                 objectsToRemove.splice(i, 1);
+            }
+        }
+        
+        public static function stripDisplayObject(obj:Sprite):void {
+            if ( !obj ) return;
+            
+            var child:DisplayObject;
+            
+            while ( obj.numChildren ) {
+                child = obj.getChildAt(obj.numChildren - 1);
+                
+                if ( child is Sprite ) stripDisplayObject(Sprite(child));
+                
+                obj.removeChild(child);
             }
         }
         
