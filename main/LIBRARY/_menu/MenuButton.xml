@@ -1,0 +1,177 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuButton" itemID="5540a554-00000187" linkageExportForAS="true" linkageClassName="src.ui.MenuButton" lastModified="1430311996" lastUniqueIdentifier="2">
+  <timeline>
+    <DOMTimeline name="MenuButton" currentFrame="87">
+      <layers>
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" name="level_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="14" name="inventory_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" duration="16" name="achivements_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="39" duration="14" name="goto_title_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="53" duration="16" name="move_levels_right" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="69" duration="18" name="move_levels_left" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="87" duration="17" name="level_select_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="текст" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="39" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="39" duration="14" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" left="17.45" width="109.1" height="35.95" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-69.4" ty="-18.2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>МЕНЮ</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" size="30" bitmapSize="600" face="MagicFont*" fillColor="#F0D685"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/PaintedArrow_clip" symbolType="graphic" centerPoint3DX="-0.1" centerPoint3DY="0.45" loop="loop">
+                  <matrix>
+                    <Matrix a="0.99755859375" b="0.06976318359375" c="-0.06976318359375" d="0.99755859375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="0.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="69" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/PaintedArrow_clip" symbolType="graphic" centerPoint3DX="0.1" centerPoint3DY="0.45" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.99755859375" b="0.06976318359375" c="0.06976318359375" d="0.99755859375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="0.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="87" duration="17" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="level_name" fontRenderingMode="standard" left="45.65" width="145.8" height="80.5" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-43.65" ty="93.65"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>text</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" size="14" bitmapSize="280" face="MagicFont*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/GotoLevelsButton" symbolType="button">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/GotoShopButton" symbolType="button">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="23" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/GotoAchievementsButton" selected="true" symbolType="button">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="39" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/TabletButton" symbolType="button">
+                  <matrix>
+                    <Matrix a="1.68931579589844"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/TabletButton" symbolType="button" centerPoint3DX="-4.05" centerPoint3DY="60.4">
+                  <matrix>
+                    <Matrix a="0.99755859375" b="0.06976318359375" c="-0.06976318359375" d="0.99755859375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="69" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/TabletButton" symbolType="button" centerPoint3DX="4.05" centerPoint3DY="60.4">
+                  <matrix>
+                    <Matrix a="-0.99755859375" b="0.06976318359375" c="0.06976318359375" d="0.99755859375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="87" duration="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/levelSelectButton" symbolType="button">
+                  <matrix>
+                    <Matrix tx="19.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

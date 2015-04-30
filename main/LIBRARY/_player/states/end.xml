@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/end" itemID="552fc38a-00000168" lastModified="1429899080" lastUniqueIdentifier="16">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/end" itemID="552fc38a-00000168" lastModified="1430296028" lastUniqueIdentifier="16">
   <timeline>
     <DOMTimeline name="end" currentFrame="12">
       <layers>
@@ -165,40 +165,13 @@
         <DOMLayer name="map" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/old/map_1_1" symbolType="button">
-                  <matrix>
-                    <Matrix a="0.018829345703125" b="0.021453857421875" c="-0.021453857421875" d="0.018829345703125" tx="-4" ty="-3.2"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
+              <elements/>
             </DOMFrame>
             <DOMFrame index="5" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="100">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/old/map_1_1" symbolType="button">
-                  <matrix>
-                    <Matrix a="0.028533935546875" b="-0.0005950927734375" c="0.0005950927734375" d="0.028533935546875" tx="-0.9" ty="-24.35"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
+              <elements/>
             </DOMFrame>
             <DOMFrame index="12" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/old/map_1_1" symbolType="button">
-                  <matrix>
-                    <Matrix a="0.0276336669921875" b="-0.007110595703125" c="0.007110595703125" d="0.0276336669921875" tx="-1.2" ty="-32.5"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

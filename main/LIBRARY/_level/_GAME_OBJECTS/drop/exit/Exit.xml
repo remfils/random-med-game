@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/exit/Exit" itemID="5427c19d-000000e1" lastModified="1429362752" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/exit/Exit" itemID="5427c19d-000000e1" lastModified="1430296028" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="Exit" currentFrame="16">
       <layers>
@@ -96,31 +96,10 @@
               <elements/>
             </DOMFrame>
             <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/old/map_1_1" symbolType="button">
-                  <matrix>
-                    <Matrix a="0.0638885498046875" d="0.0638885498046875" tx="1.15" ty="-77.55"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                  <color>
-                    <Color alphaMultiplier="0" redOffset="100" blueOffset="100" greenOffset="100"/>
-                  </color>
-                </DOMSymbolInstance>
-              </elements>
+              <elements/>
             </DOMFrame>
             <DOMFrame index="15" duration="9" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/old/map_1_1" symbolType="button">
-                  <matrix>
-                    <Matrix a="0.0638885498046875" d="0.0638885498046875" tx="1.15" ty="-32.1"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
+              <elements/>
             </DOMFrame>
             <DOMFrame index="24" duration="11" keyMode="9728">
               <elements/>
@@ -236,7 +215,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!86 77|-17 77!-17 77|-16 -3581!-16 -3581|86 -3581!86 -3581|86 77"/>
+                    <Edge fillStyle1="1" edges="!86 -3581|86 77!86 77|-17 77!-17 77|-16 -3581!-16 -3581|86 -3581"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -256,7 +235,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!1977 -3581|1977 77!1977 77|-1883.5 77!-1883.5 77|-1841 -3581!-1841 -3581|1977 -3581"/>
+                    <Edge fillStyle1="1" edges="!1977 77|-1883.5 77!-1883.5 77|-1841 -3581!-1841 -3581|1977 -3581!1977 -3581|1977 77"/>
                   </edges>
                 </DOMShape>
               </elements>
