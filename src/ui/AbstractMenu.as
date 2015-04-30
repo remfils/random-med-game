@@ -2,18 +2,20 @@ package src.ui {
     import flash.display.SimpleButton;
     import flash.display.Sprite;
     import flash.events.MouseEvent;
+    import flash.geom.Point;
     import flash.text.Font;
     import flash.text.FontStyle;
     import flash.text.TextField;
     import flash.text.TextFormat;
     import src.Game;
     import src.MainMenu;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class AbstractMenu extends Sprite {
         public static var game:Game;
+        
+        public static const GOTO_TITLE_BTN:String = "GotoTitle";
+        public static const GOTO_TITLE_BTN_POSITION:Point = new Point(375.3, 583);
+        
         public var parentMenu:MainMenu;
         
         protected var active:Boolean = false;
@@ -36,25 +38,7 @@ package src.ui {
             
         }
         
-        protected function createButtonFromClass(ButtonClass:Class, x:Number=0, y:Number=0):SimpleButton {
-            var btn:SimpleButton = new ButtonClass();
-            
-            btn.x = x;
-            btn.y = y;
-            
-            return btn
-        }
-        
-        protected function getCustomButtonAt(ButtonClass:Class, x:Number=0, y:Number=0):Sprite {
-            var btnContainer:Sprite = new Sprite();
-            btnContainer.x = x;
-            btnContainer.y = y;
-            
-            var btn:SimpleButton = createButtonFromClass(ButtonClass);
-            btnContainer.addChild(btn);
-            return btnContainer;
-        }
-        
+        // delete me. used in EndLevelMenu and GameMenu
         protected function createTitledButton(title:String, textFormtat:TextFormat):SimpleButton {
             var button:SimpleButton = new SimpleButton();
             
@@ -71,31 +55,7 @@ package src.ui {
             return button;
         }
         
-        protected function getGotoMenuButton():Sprite {
-            var btnContainer:Sprite = getCustomButtonAt(TabletButton, 375.3, 583);
-            btnContainer.name = "GotoTitle";
-            btnContainer.width = 182;
-            
-            var text:TextField = new TextField();
-            text.embedFonts = true;
-            text.textColor = 0xF0D685;
-            text.width = btnContainer.width;
-            text.mouseEnabled = false;
-            
-            var font:Font = new MagicFont();
-            
-            var tf:TextFormat = new TextFormat(font.fontName, 30);
-            tf.align = "center";
-            text.defaultTextFormat = tf;
-            text.text = "Меню";
-            
-            text.x -= text.width / 2;
-            text.y -= text.height / 4;
-            
-            btnContainer.addChild(text);
-            return btnContainer;
-        }
-        
+        // delete me. used above
         protected function createTextField(title:String, textFormat:TextFormat):TextField {
             var textField:TextField = new TextField();
             textField.embedFonts = true;
