@@ -7,7 +7,7 @@
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.geom.Point;
-    import src.costumes.BulletCostume;
+    import src.costumes.ItemCostume;
     import src.Game;
     import src.interfaces.*;
     import src.objects.AbstractObject;
@@ -38,7 +38,7 @@
         private var speed:Point;
 
         public function Bullet() {
-            costume = new BulletCostume();
+            costume = new ItemCostume();
             
             var collider:DisplayObject = costume.getCollider();
             
@@ -49,14 +49,14 @@
         public function setType(type_:String):void {
             costume.setType(type_);
             switch (type_) {
-                case BulletCostume.NUKELINO_TYPE:
+                case ItemCostume.NUKELINO_TYPE:
                     bullet_type = NUKELINO_TYPE;
                     is_bomb = true;
                     break;
-                case BulletCostume.POWER_SPELL_TYPE:
+                case ItemCostume.POWER_SPELL_TYPE:
                     bullet_type = POWER_SPELL_TYPE;
                     break;
-                case BulletCostume.SPARK_TYPE:
+                case ItemCostume.SPARK_TYPE:
                     bullet_type = SPARK_TYPE;
                     break;
             }

@@ -11,6 +11,10 @@
     import flash.utils.*;
     
     public class PlayerStat extends AbstractMenu {
+        public static const FIRE_COMMAND:int = 1;
+        public static const FIRE_COMMAND:int = 1;
+        public static const FIRE_COMMAND:int = 1;
+        
         static public var instance:PlayerStat = null; // delete this
         public var current_theme = 1;
         var level_map:Map;

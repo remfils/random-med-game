@@ -4,7 +4,7 @@
     import flash.geom.Point;
     import flash.utils.Timer;
     import flash.events.TimerEvent;
-    import src.costumes.BulletCostume;
+    import src.costumes.ItemCostume;
     import src.events.RoomEvent;
     import src.Game;
     import src.util.AbstractManager;
@@ -32,7 +32,7 @@
 
         public function BulletController(stage:DisplayObjectContainer) {
             this.stage = stage;
-            bullet_type = BulletCostume.SPARK_TYPE;
+            bullet_type = ItemCostume.SPARK_TYPE;
             
             bulletClasses = game.player.spells;
             
@@ -120,7 +120,7 @@
                 }
             }
             var bullet:Bullet = new Bullet();
-            bullet.setType(BulletCostume.SPARK_TYPE);
+            bullet.setType(ItemCostume.SPARK_TYPE);
             return bullet;
         }
         
