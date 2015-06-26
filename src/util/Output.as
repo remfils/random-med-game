@@ -14,6 +14,7 @@ package src.util {
         
         public static function add(msg:String):void {
             outputField.appendText(msg + '\n');
+            trace(msg);
         }
     }
 

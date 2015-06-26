@@ -149,7 +149,7 @@
         public function setPrevBullet():void {
             currentBulletClass --;
             if ( currentBulletClass == -1 ) {
-                currentBulletClass = bulletClasses.length - 1;
+                currentBulletClass = bulletClasses.length;
             }
             updateBulletClass();
         }

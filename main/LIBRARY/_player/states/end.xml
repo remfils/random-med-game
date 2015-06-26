@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/end" itemID="552fc38a-00000168" lastModified="1430296028" lastUniqueIdentifier="16">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/end" itemID="552fc38a-00000168" lastModified="1435165167" lastUniqueIdentifier="16">
   <timeline>
-    <DOMTimeline name="end" currentFrame="12">
+    <DOMTimeline name="end">
       <layers>
         <DOMLayer name="рука_правая_1" color="#FF4FFF" autoNamed="false">
           <frames>
@@ -175,11 +175,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="голова" color="#4F80FF" autoNamed="false" visible="false">
+        <DOMLayer name="голова" color="#4F80FF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_вниз_выс" selected="true" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_вниз_выс" symbolType="graphic" loop="single frame">
                   <matrix>
                     <Matrix a="0.209869384765625" d="0.209869384765625" tx="-12.15" ty="-38.4"/>
                   </matrix>
@@ -215,11 +215,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="рука_левая" color="#0000FF" autoNamed="false" visible="false">
+        <DOMLayer name="рука_левая" color="#0000FF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/тело_Ю2" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_player/parts/тело_Ю2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.09989929199219" d="1.2701416015625" tx="-0.2" ty="-9.8"/>
                   </matrix>

@@ -15,6 +15,9 @@
         public static const LOCKED_STATE:String = "_lock";
         public static const UNLOCKED_STATE:String = "_unlock";
         
+        public static const DOOR_SECRET_TYPE:String = "secret";
+        public static const DOOR_START_TYPE:String = "start";
+        
         private var locked:Boolean = true;
         public var specialLock:Boolean = false;
         public var isSecret:Boolean = false;
@@ -99,9 +102,15 @@
         
         
         public function setType(type:String):void {
-            isSecret = type == "secret";
+            isSecret = type == DOOR_SECRET_TYPE;
             if ( isSecret ) {
                 costume.setType(ObjectCostume.DOOR_SECRET_TYPE);
+            }
+            
+            if ( type == DOOR_START_TYPE ) {
+                costume.setType(ObjectCostume.DOOR_START_TYPE);
+                costume.setState("");
+                specialLock = true;
             }
         }
         

@@ -2,10 +2,7 @@ package src {
     import src.objects.AbstractObject;
     import src.ui.mageShop.InventoryItem;
     import src.ui.playerStat.PlayerStat;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class User {
         public var uid:uint=0;
         public var name:String = "";
@@ -13,11 +10,13 @@ package src {
         public var levelsCompleted:int = 0;
         
         public var inventory:Array = new Array();
+        public var playerInventory:Vector.<InventoryItem>;
         
         public var playerData:Object;
         
         public function User() {
             playerData = new Object();
+            playerInventory = new <InventoryItem>[];
             //player = Player.getInstance();
         }
         
@@ -30,6 +29,10 @@ package src {
             else {
                 spells[position] = Spell;
             }*/
+        }
+        
+        public function addToPlayerInventory():void {
+            
         }
         
         public function setPlayerInventory():void {
@@ -49,6 +52,7 @@ package src {
         
         public function setDataFromXML (userXML:XMLList):void {
             var item:InventoryItem;
+            
             for each ( var data:XML in userXML.* ) {
                 if ( this.hasOwnProperty(data.name()) ) {
                     this[data.name()] = data;
@@ -61,8 +65,12 @@ package src {
             if ( userXML.INVENTORY ) {
                 for each ( var itemXML:XML in userXML.INVENTORY.* ) {
                     item = new InventoryItem();
-                    item.setParams(itemXML.@iid, itemXML.@name, itemXML.@nameRus, itemXML.@dsc, itemXML.@isSpell == "true", itemXML.@onPlayer == "true");
-                    inventory.push(item);
+                    //item.setParams(itemXML.@iid, itemXML.@name, itemXML.@nameRus, itemXML.@dsc, itemXML.@isSpell == "true", itemXML.@onPlayer == "true");
+                    
+                    item.setParametersFromXML(itemXML);
+                    inventory[inventory.length] = item;
+                    
+                    //if ( item.onPlayer ) playerInventory[playerInventory.length - 1] = item;
                 }
             }
         }

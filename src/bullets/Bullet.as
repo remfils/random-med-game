@@ -15,14 +15,15 @@
     import src.util.Collider;
     
     public class Bullet extends AbstractObject implements LoopClip {
+        private var gws:Number = Game.WORLD_SCALE;
         public static const DEF_ARRAY:Array = new Array(new BulletDef(100, 10, 0, 1000), new BulletDef(100, 10, 3, 1000), new BulletDef(50, 10, 0, 500));
-        
-        public static const DEFAULT_STATE:String = "_default";
-        public static const DESTOY_STATE:String = "_destroy";
         
         public static const POWER_SPELL_TYPE:int = 0;
         public static const NUKELINO_TYPE:int = 1;
         public static const SPARK_TYPE:int = 2;
+
+        public static const DEFAULT_STATE:String = "_default";
+        public static const DESTOY_STATE:String = "_destroy";
         
         public var bullet_type:int = SPARK_TYPE;
         
@@ -32,6 +33,7 @@
         public var colliderHeight:Number = 0;
         
         private var active = true;
+        public var is_bomb:Boolean = false;
         private var bodyHidden:Boolean = false;
         private var speed:Point;
 
@@ -49,6 +51,7 @@
             switch (type_) {
                 case BulletCostume.NUKELINO_TYPE:
                     bullet_type = NUKELINO_TYPE;
+                    is_bomb = true;
                     break;
                 case BulletCostume.POWER_SPELL_TYPE:
                     bullet_type = POWER_SPELL_TYPE;
@@ -71,7 +74,7 @@
         
         override public function requestBodyAt(world:b2World):void {
             var collider:DisplayObject = costume.getCollider();
-            var bulletDef:BulletDef = DEF_ARRAY[bullet_type];
+            var bulletDef:BulletDef = getBulletDefenition();
             
             var fixtureDef:b2FixtureDef = new b2FixtureDef();
             fixtureDef.userData = { "object": this };
@@ -87,30 +90,6 @@
             bodyCreateRequest.velocity = new b2Vec2 ( speed.x * bulletDef.speed, speed.y * bulletDef.speed );
             
             game.bodyCreator.add(bodyCreateRequest);
-        }
-        
-        // deprecated
-        public function createBodyFromCollider(world:b2World):b2Body {
-            /*var collider:Collider = getChildByName("collider001") as Collider;
-            
-            colliderWidth = collider.width;
-            colliderHeight = collider.height;
-            
-            var fixtureDef:b2FixtureDef = new b2FixtureDef();
-            fixtureDef.userData = { "object": this };
-            fixtureDef.density = 1;
-            fixtureDef.friction = 0;
-            fixtureDef.restitution = 0;
-            
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
-            bodyCreateRequest.setAsDynamicBody(fixtureDef);
-            bodyCreateRequest.actor = this;
-            
-            game.bodyCreator.add(bodyCreateRequest);
-            */
-            //body = collider.replaceWithDynamicB2Body(world, fixtureDef);
-            //body.SetBullet(true);
-            return null;
         }
         
         public function setSpeedDirection(dir_x:Number, dir_y:Number):void {
@@ -130,12 +109,12 @@
             }
             
             if ( bodyHidden ) {
-                body.SetPosition(new b2Vec2(-100 / Game.WORLD_SCALE, -100 / Game.WORLD_SCALE));
+                body.SetPosition(new b2Vec2(-100 / gws, -100 / gws));
                 return;
             }
             
-            x = body.GetPosition().x * Game.WORLD_SCALE;
-            y = body.GetPosition().y * Game.WORLD_SCALE;
+            x = body.GetPosition().x * gws;
+            y = body.GetPosition().y * gws;
         }
         
         public function safeCollide():void {
@@ -170,7 +149,7 @@
         public function moveTo(X:Number, Y:Number):void {
             this.x = X;
             this.y = Y;
-            body.SetPosition(new b2Vec2(X / Game.WORLD_SCALE, Y / Game.WORLD_SCALE));
+            body.SetPosition(new b2Vec2(X / gws, Y / gws));
         }
 
     }

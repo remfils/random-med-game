@@ -76,9 +76,14 @@ package src.util {
                 
                 if ( room.@first_level == "true" ) {
                     game.player.currentRoom.x = room.@x;
-                    game.player.currentRoom.x = room.@y;
+                    game.player.currentRoom.y = room.@y;
                     
-                    // create first door
+                    var doorXML:XML = room.Door.(@type == Door.DOOR_START_TYPE)[0];
+                    
+                    var door:Door = Door(cRoom.getDoorByDirection(doorXML.@direction));
+                    
+                    door.show();
+                    door.setType(Door.DOOR_START_TYPE);
                 }
                 
                 addDecorationsToRoom(cRoom, room.wallDecorations.*);
@@ -267,16 +272,16 @@ package src.util {
             for ( var i in rooms ) {
                 for ( var j in rooms[i] ) {
                     if ( j < rooms[i].length-1 && rooms[i][j+1] ){
-                        rooms[i][j].makeDoorWay("down");
+                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_DOWN);
                     }
                     if ( j > 0 && rooms[i][j-1] ){
-                        rooms[i][j].makeDoorWay("up");
+                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_UP);
                     }
                     if ( i > 0 && rooms[i-1][j] ){
-                        rooms[i][j].makeDoorWay("left");
+                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_LEFT);
                     }
                     if ( i < rooms.length-1 && rooms[i+1][j] ){
-                        rooms[i][j].makeDoorWay("right");
+                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_RIGHT);
                     }
                 }
             }

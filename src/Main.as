@@ -7,6 +7,7 @@
     import flash.text.TextField;
     import src.Game;
     import src.MainMenu;
+    import src.ui.AbstractMenu;
     import src.util.DataManager;
     import src.util.GameCreator;
     import src.events.*;
@@ -29,6 +30,8 @@
         
         private function init():void {
             removeEventListener(Event.ADDED_TO_STAGE, init);
+            
+            AbstractMenu.user = new User();
             
             var flashVars:Object = stage.loaderInfo.parameters as Object;
             
@@ -100,12 +103,16 @@
             var levelLoader = new URLLoader();
             levelLoader.addEventListener(Event.COMPLETE, levelDataLoaded);
             
+            Output.add("starting to load level: " + dataManager.getLevelLinkById(levelId));
+            
             levelLoader.load(new URLRequest(dataManager.getLevelLinkById(levelId)));
         }
         
         private function levelDataLoaded(e:Event) {
             var levelLoader:URLLoader = e.target as URLLoader;
             levelLoader.removeEventListener(Event.COMPLETE, levelDataLoaded);
+            
+            Output.add(levelLoader.data);
             
             dataManager.setGameData();
             

@@ -1,8 +1,9 @@
 package src.ui.mageShop {
     import flash.display.MovieClip;
     import flash.utils.getDefinitionByName;
+    import src.ui.MenuItem;
     
-    public class InventoryItem extends MovieClip {
+    public class InventoryItem {
         public var parentContainer:MageShopContainer;
         
         public var iid:uint;
@@ -12,7 +13,9 @@ package src.ui.mageShop {
         public var isSpell:Boolean;
         public var dsc:String;
         
-        public var item_mc:MovieClip;
+        public var item_index:int;
+        
+        public var itemMenu:MenuItem;
         
         public function InventoryItem() {
             super();
@@ -25,27 +28,16 @@ package src.ui.mageShop {
             this.dsc = dsc;
             this.isSpell = isSpell;
             this.onPlayer = onPlayer;
-            
-            item_mc = getChildByName("item_mc") as MovieClip;
-            item_mc.mouseEnabled = false;
-            item_mc.gotoAndStop(item_name);
         }
         
-        public function setInitialPositionInContainer():void {
-            x = 50;
-            y = 40;
+        public function setParametersFromXML(params:XML):void {
+            this.iid = params.@iid;
+            this.item_name = params.@name;
+            this.rus_name = params.@nameRus;
+            this.dsc = params.@dsc;
+            this.isSpell = params.@isSpell == "true";
+            this.onPlayer = params.@onPlayer == "true";
         }
-        
-        public function getClassFromName():Class {
-            var spellClass:Class = null ;
-            
-            if ( isSpell ) {
-                spellClass = getDefinitionByName("src.bullets." + item_name) as Class
-            }
-            
-            return spellClass;
-        }
-        
     }
 
 }

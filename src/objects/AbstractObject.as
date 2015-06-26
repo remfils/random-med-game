@@ -40,7 +40,13 @@ package src.objects {
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsStaticBody();
-            createBodyRequest.setBodyPosition( new Point(x + collider.x, y + collider.y) );
+            
+            var sin_rotation:Number = Math.sin(costume.rotation * Math.PI / 180);
+            var cos_rotation:Number = Math.cos(costume.rotation * Math.PI / 180);
+            
+            createBodyRequest.setBodyPosition( new Point(
+                        x + collider.x * cos_rotation - collider.y * sin_rotation,
+                        y + collider.y * cos_rotation + collider.x * sin_rotation ) );
             
             game.bodyCreator.add(createBodyRequest);
         }

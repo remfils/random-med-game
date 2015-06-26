@@ -4,7 +4,7 @@ package src.costumes {
         
         public static const DOOR_TYPE:String = "Door";
         public static const DOOR_SECRET_TYPE:String = "DoorSecret";
-        public static const DOOR_ENTER_TYPE:String = "DoorEnter";
+        public static const DOOR_START_TYPE:String = "DoorEnter";
         
         // OBEJCTS
         

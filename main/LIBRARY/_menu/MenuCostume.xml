@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1430058618" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1430498500" lastUniqueIdentifier="3">
   <timeline>
-    <DOMTimeline name="MenuCostume" currentFrame="132">
+    <DOMTimeline name="MenuCostume" currentFrame="34">
       <layers>
         <DOMLayer name="label" color="#9933CC" autoNamed="false">
           <frames>
@@ -16,22 +16,10 @@
             <DOMFrame index="34" duration="14" name="mage_shop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="48" duration="15" name="item_ico_spell" labelType="name" keyMode="9728">
+            <DOMFrame index="48" duration="17" name="item_holder_locked" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="63" duration="15" name="item_ico_item" labelType="name" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="78" duration="13" name="item_holder" labelType="name" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="91" duration="13" name="spell_holder" labelType="name" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="104" duration="17" name="item_holder_locked" labelType="name" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="121" duration="19" name="spell_holder_locked" labelType="name" keyMode="9728">
+            <DOMFrame index="65" duration="19" name="spell_holder_locked" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -59,6 +47,9 @@
             <DOMFrame index="23" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MenuBackground_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2.7" ty="-13.1"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="413.55" y="257.3"/>
                   </transformationPoint>
@@ -67,50 +58,14 @@
             </DOMFrame>
             <DOMFrame index="34" duration="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MagesShop_clip" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MagesShop_clip" selected="true" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="324.35" y="223.25"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="48" duration="15" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/_magesShop/item_ico" symbolType="graphic" loop="single frame">
-                  <transformationPoint>
-                    <Point x="15.75" y="15.75"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="63" duration="15" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/_magesShop/item_ico" symbolType="graphic" firstFrame="9" loop="single frame">
-                  <transformationPoint>
-                    <Point x="15.75" y="15.75"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="78" duration="13" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/ItemPlaceHolder_clip" symbolType="graphic" firstFrame="9" loop="single frame">
-                  <transformationPoint>
-                    <Point x="45" y="40.4"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="91" duration="13" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/ItemPlaceHolder_clip" selected="true" symbolType="graphic" loop="single frame">
-                  <transformationPoint>
-                    <Point x="45" y="40.4"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="104" duration="17" keyMode="9728">
+            <DOMFrame index="48" duration="17" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/ItemPlaceHolder_clip" symbolType="graphic" firstFrame="29" loop="single frame">
                   <transformationPoint>
@@ -119,7 +74,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="121" duration="19" keyMode="9728">
+            <DOMFrame index="65" duration="19" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/ItemPlaceHolder_clip" symbolType="graphic" firstFrame="19" loop="single frame">
                   <transformationPoint>

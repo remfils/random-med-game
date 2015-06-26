@@ -164,12 +164,17 @@
             else return 25;
         }
         
+        public function addSpell(str:String):void {
+            spells[spells.length] = str;
+        }
+        
         public function setInventory(inventory:Array):void {
-            for ( var i:int = inventory.length - 1; i >= 0; i-- ) {
+            /*for ( var i:int = inventory.length - 1; i >= 0; i-- ) {
                 if ( InventoryItem(inventory[i]).isSpell ) {
                     //inventory[i]
+                    spells[spells.length - 1] = InventoryItem().item_name;
                 }
-            }
+            }*/
         }
         
         public function handleInput(keyCode:uint, keyDown:Boolean = true):void {
@@ -199,7 +204,7 @@
                     updateDirection();
                     break;
                 case 32 :
-                    makeHit(2);
+                    game.hitPlayer(2);
                     break;
             }
         }
@@ -322,8 +327,6 @@
                 die();
                 HEALTH = 0;
             }
-            
-            game.playerStat.update();
         }
         
         private function startInvincibilityTimer() {

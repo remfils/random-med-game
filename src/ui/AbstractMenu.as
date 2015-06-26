@@ -9,9 +9,11 @@ package src.ui {
     import flash.text.TextFormat;
     import src.Game;
     import src.MainMenu;
+    import src.User;
 
     public class AbstractMenu extends Sprite {
         public static var game:Game;
+        public static var user:User;
         
         public static const GOTO_TITLE_BTN:String = "GotoTitle";
         public static const GOTO_TITLE_BTN_POSITION:Point = new Point(375.3, 583);

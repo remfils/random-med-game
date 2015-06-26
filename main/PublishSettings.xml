@@ -81,13 +81,13 @@
     <AS3ConfigConst>CONFIG::FLASH_AUTHORING=&quot;true&quot;;</AS3ConfigConst>
     <DebuggingPermitted>0</DebuggingPermitted>
     <DebuggingPassword></DebuggingPassword>
-    <CompressMovie>1</CompressMovie>
+    <CompressMovie>0</CompressMovie>
     <CompressionType>0</CompressionType>
-    <InvisibleLayer>1</InvisibleLayer>
+    <InvisibleLayer>0</InvisibleLayer>
     <DeviceSound>0</DeviceSound>
     <StreamUse8kSampleRate>0</StreamUse8kSampleRate>
     <EventUse8kSampleRate>0</EventUse8kSampleRate>
-    <UseNetwork>0</UseNetwork>
+    <UseNetwork>1</UseNetwork>
     <DocumentClass>src.Main</DocumentClass>
     <AS3Strict>2</AS3Strict>
     <AS3Coach>4</AS3Coach>

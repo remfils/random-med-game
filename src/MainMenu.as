@@ -1,4 +1,5 @@
 package src {
+    import fl.transitions.easing.None;
     import fl.transitions.easing.Strong;
     import fl.transitions.Tween;
     import flash.display.Sprite;
@@ -78,7 +79,7 @@ package src {
         public function switchToMenu(MENU_NAME:uint):void {
             currentMenu.deactivate();
             
-            var tween:Tween = TweenPool.getTween(menuContainer, "y", Strong.easeInOut, -currentMenu.y, -menus[MENU_NAME].y, 25);
+            var tween:Tween = TweenPool.getTween(menuContainer, "y", Strong.easeInOut, menuContainer.y, -menus[MENU_NAME].y, 25);
             
             currentMenu = AbstractMenu(menus[MENU_NAME]);
             currentMenu.activate();

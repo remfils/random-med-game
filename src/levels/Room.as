@@ -54,7 +54,7 @@
             world = new b2World(gravity, true);
             world.SetContactListener(new ContactListener(game));
             gameObjectPanel = new GameObjectPanel();
-            addChild(gameObjectPanel);
+            addChildAt(gameObjectPanel, numChildren);
             
             _player = game.player;
             
@@ -107,10 +107,10 @@
             
             var wall_shape:b2PolygonShape = new b2PolygonShape()
             if ( is_vertical_ ) {
-                wall_shape.SetAsBox( HALF_DOOR_WIDTH / Game.WORLD_SCALE, (CENTER_Y - MIN_Y + HALF_DOOR_WIDTH) / 2 / gws);
+                wall_shape.SetAsBox( HALF_DOOR_WIDTH / gws, (CENTER_Y - MIN_Y + HALF_DOOR_WIDTH) / 2 / gws);
             }
             else {
-                wall_shape.SetAsBox( (CENTER_X - MIN_X + HALF_DOOR_WIDTH) / 2 / Game.WORLD_SCALE , HALF_DOOR_WIDTH / gws );
+                wall_shape.SetAsBox( (CENTER_X - MIN_X + HALF_DOOR_WIDTH) / 2 / gws , HALF_DOOR_WIDTH / gws );
             }
             
             var fixtureDef:b2FixtureDef = new b2FixtureDef();
@@ -147,6 +147,7 @@
             i = _doors.length;
             while (i--) {
                 Door(_doors[i]).requestBodyAt(world);
+                Door(_doors[i]).hide();
             }
             
             /*var collider:Collider, door:Door, name:String, wall:b2Body;
@@ -206,9 +207,9 @@
         
         private function unlockDoorsWithoutTasks():void {
             for each ( var door:Door in _doors ) {
-                if ( door.specialLock ) {
-                    if ( door.taskId != 0 && !game.taskManager.findTaskById(door.taskId) ) {
-                        door.specialLock = false;
+                if ( !door.specialLock ) {
+                    trace(door.taskId != 0, !game.taskManager.findTaskById(door.taskId));
+                    if ( door.taskId == 0 || !game.taskManager.findTaskById(door.taskId) ) {
                         door.unlock();
                     }
                 }
@@ -280,15 +281,14 @@
         }
         
         //direc door
-        public function makeDoorWay (direction:String) {
-            return;
-            var door:Door = getDoorByDirection(1);
+        public function makeDoorWay (direction:int) {
+            var door:Door = getDoorByDirection(direction);
             door.show();
-            door.unlock();
+            //door.unlock();
         }
         
         public function getDoorByDirection(direction:int):Door {
-            return getChildByName("door_" + direction) as Door;
+            return _doors[direction] as Door;
         }
         
         public function update () {
@@ -373,6 +373,8 @@
                 default:
                     gotoAndStop("normal_room");
             }
+            
+            setChildIndex(gameObjectPanel, numChildren-1);
         }
         
         public function assignTask(task:Task) {

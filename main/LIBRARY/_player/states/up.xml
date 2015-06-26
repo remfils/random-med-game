@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/up" itemID="552fc260-00000139" lastModified="1429898941" lastUniqueIdentifier="30">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/up" itemID="552fc260-00000139" lastModified="1435165178" lastUniqueIdentifier="30">
   <timeline>
-    <DOMTimeline name="up" currentFrame="19">
+    <DOMTimeline name="up">
       <layers>
-        <DOMLayer name="голова" color="#4F80FF" autoNamed="false" visible="false">
+        <DOMLayer name="голова" color="#4F80FF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
@@ -66,11 +66,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="тело" color="#4F80FF" autoNamed="false" visible="false">
+        <DOMLayer name="тело" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/тело_верх" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_player/parts/тело_верх" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.09989929199219" d="1.2701416015625" tx="0.55" ty="-10.4"/>
                   </matrix>
@@ -322,11 +322,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="нога левая" color="#0000FF" autoNamed="false" visible="false">
+        <DOMLayer name="нога левая" color="#0000FF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/нога2" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.483627319335938" b="-0.87908935546875" c="-0.87908935546875" d="0.483627319335938" tx="-4.7" ty="8.15"/>
                   </matrix>
@@ -386,11 +386,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="нога2 правая" color="#FF0000" autoNamed="false" visible="false">
+        <DOMLayer name="нога2 правая" color="#FF0000" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/нога2" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-0.02362060546875" b="1.0030517578125" c="-1.0030517578125" d="-0.02362060546875" tx="4.55" ty="7"/>
                   </matrix>
@@ -535,7 +535,7 @@
                     <Matrix a="0.19586181640625" b="0.980621337890625" c="0.980621337890625" d="-0.19586181640625" tx="-5.95" ty="-11.8"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="0.65" y="-0.45"/>
+                    <Point x="0.7" y="-0.45"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -578,7 +578,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="посох" color="#808080" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="посох" color="#808080" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>

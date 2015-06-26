@@ -41,7 +41,7 @@ package src {
         
         public static const EXIT_ROOM_EVENT = "exit_room";
         public static const OBJECT_ACTIVATE_EVENT = "object_activate";
-        public static const TEST_MODE:Boolean = false;
+        public static const TEST_MODE:Boolean = true;
         public static var TestModePanel:Sprite;
 
         private var menuPanel:GameMenu;
@@ -87,6 +87,8 @@ package src {
         
         public function init() {
             this.stage.focus = this;
+            
+            bodyCreator.createBodies();
             
             Room.taskManager = taskManager;
             
@@ -275,6 +277,12 @@ package src {
                     PAUSED = true;
                     break;
             }
+        }
+        
+        public function hitPlayer(hitNumber:int ):void {
+            player.makeHit(hitNumber);
+            
+            playerStat.update();
         }
         
         // по возможности удалить RoomEvent

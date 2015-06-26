@@ -15,12 +15,11 @@ package src.ui {
     public class MageShopMenu extends AbstractMenu {
         
         private var menu:MovieClip;
+        private var itemContainer:Sprite;
         
-        private var tip:GameTip;
-        
-        private var dragTarget:InventoryItem;
-        private var placeholderProperties:Array;
-        private var placeHolders:Array;
+        private var dragTarget:MovieClip;
+        private var placeHolders:Vector.<MenuItem>;
+        private var menuItems:Vector.<MenuItem>;
         
         public function MageShopMenu() {
             super();
@@ -39,18 +38,9 @@ package src.ui {
             titleBtn.y = GOTO_TITLE_BTN_POSITION.y;
             addChild(titleBtn);
             
-            placeHolders = [];
+            placeHolders = new <MenuItem>[];
+            menuItems = new <MenuItem>[];
             
-            // переписать
-            placeholderProperties = [];
-            placeholderProperties.push( { "x":431, "y":205,"isSpell":true } );
-            placeholderProperties.push( { "x":425.5, "y":122.5,"isSpell":true } );
-            placeholderProperties.push( { "x":424, "y":50,"isSpell":true } );
-            placeholderProperties.push( { "x":503.5, "y":154,"isSpell":false } );
-            placeholderProperties.push( { "x":494, "y":28, "isSpell":false } );
-            
-            tip = new GameTip();
-            tip.hide();
         }
         
         override public function readData(data:Object):void {
@@ -58,211 +48,222 @@ package src.ui {
             
             addPlaceholders(data.user.playerData);
             
-            addItems(data.user as User);
+            addItems();
         }
         
         private function addPlaceholders(playerData:Object):void {
             var maxSpells:int = playerData.MAX_SPELLS,
                 maxItems:int = playerData.MAX_ITEMS,
                 i:int,
-                item:Object,
-                ph:MageShopContainer,
-                locked:Boolean = false;
+                scale_factor:Number=206/317,
+                locked:Boolean = false,
+                inputMI:MenuItem;
             
-            i = placeholderProperties.length;
+            inputMI = new MenuItem();
+            inputMI.x = 431;
+            inputMI.y = 205;
+            inputMI.setType(MenuItem.SPELL_TYPE);
+            placeHolders[placeHolders.length] = inputMI;
+            
+            inputMI = new MenuItem();
+            inputMI.x = 425.5;
+            inputMI.y = 122.5;
+            inputMI.setType(MenuItem.SPELL_TYPE);
+            placeHolders[placeHolders.length] = inputMI;
+            
+            inputMI = new MenuItem();
+            inputMI.x = 424;
+            inputMI.y = 50;
+            inputMI.setType(MenuItem.SPELL_TYPE);
+            placeHolders[placeHolders.length] = inputMI;
+            
+            inputMI = new MenuItem();
+            inputMI.x = 503.5;
+            inputMI.y = 154;
+            inputMI.setType(MenuItem.ITEM_TYPE);
+            placeHolders[placeHolders.length] = inputMI;
+            
+            inputMI = new MenuItem();
+            inputMI.x = 494;
+            inputMI.y = 28;
+            inputMI.setType(MenuItem.ITEM_TYPE);
+            placeHolders[placeHolders.length] = inputMI;
+            
+            i = placeHolders.length;
             while ( i-- ) {
-                item = placeholderProperties[i];
-                locked = item.isSpell ? !maxSpells-- : !maxItems--;
+                inputMI = placeHolders[i];
+                locked = inputMI.isSpell ? maxSpells--<=0 : maxItems--<=0;
                 
-                if ( maxItems < 0 ) maxItems = 0;
-                if ( maxSpells < 0 ) maxSpells = 0;
+                if ( locked ) inputMI.setState(MenuItem.SHORT_LOCKED_STATE);
+                else inputMI.setState(MenuItem.SHORT_STATE);
                 
-                ph = createItemPlaceHolderAt(item.x, item.y, item.isSpell, locked);
-                
-                ph.scaleX = 56 / ph.width;
-                ph.scaleY = 56 / ph.height;
-                
-                menu.addChild(ph);
-                placeHolders.push(ph);
+                inputMI.scaleX = inputMI.scaleY = scale_factor;
+                menu.addChild(inputMI);
             }
         }
         
-        private function createItemPlaceHolderAt(X:int, Y:int, isSpell:Boolean=false, locked:Boolean=false):MageShopContainer {
-            var ph:MageShopContainer;
-            
-            ph = new MageShopContainer();
-            ph.x = X;
-            ph.y = Y;
-            
-            ph.mouseEnabled = false;
-            
-            if ( isSpell ) ph.setAsSpell();
-            else ph.setAsItem();
-            
-            if ( locked ) ph.setLocked();
-            
-            return ph;
-        }
-        
-        private function addItems(user:User):void {
+        private function addItems():void {
             var items: Array = user.inventory,
                 item:InventoryItem,
-                itemContainer:MageShopContainer,
+                mi, inputMenuItem:MenuItem,
                 itemCount:int = items.length,
-                i:int, j:int, k:int;
+                placeHoldersCount = placeHolders.length,
+                i:int, j:int, k:int,
+                spr:Sprite;
+            
+            itemContainer = new Sprite();
             
             for (i = 0; i < itemCount; i++ ) {
                 item = items[i];
-                itemContainer = createItemPlaceHolderAt(44.15 + 105.55 * j, 27.95 + 90.85 * k, item.isSpell);
                 
-                var spr:Sprite = new Sprite();
-                spr.graphics.beginFill(0);
-                spr.graphics.drawRect(0, 0, itemContainer.width, itemContainer.height);
-                spr.x -= spr.width / 2;
-                spr.y -= spr.height / 2;
-                spr.visible = false;
-                spr.mouseEnabled = false;
-                item.addChild(spr);
-                item.hitArea = spr;
+                mi = new MenuItem();
+                mi.y = i * mi.height;
                 
-                menu.addChild(itemContainer);
+                mi.setLogo(item.item_name);
+                mi.setName(item.rus_name);
+                mi.setDescription(item.dsc);
                 
-                item.setInitialPositionInContainer();
-                item.buttonMode = true;
-                item.parentContainer = itemContainer;
+                menuItems[menuItems.length] = mi;
+                itemContainer.addChild(mi);
+                
+                if ( item.isSpell ) mi.setType(MenuItem.SPELL_TYPE);
+                else mi.setType(MenuItem.ITEM_TYPE);
+                
+                mi.setState(MenuItem.LONG_STATE);
+                
+                mi.activate();
                 
                 if ( item.onPlayer ) {
-                    placeItemOnPlayer(item);
-                }
-                else {
-                    itemContainer.addChild(item);
-                }
-                
-                j++;
-                if ( j % 3 == 0 ) {
-                    k ++;
-                }
-                if ( j == 3 ) j = 0;
-            }
-        }
-        
-        private function placeItemOnPlayer(mageItem:InventoryItem):void {
-            var itemCount:int = placeHolders.length;
-            var container:MageShopContainer;
-            for ( var i = 0; i < itemCount; i++ ) {
-                container = placeHolders[i] as MageShopContainer;
-                if ( !container.locked && container.isSpell == mageItem.isSpell && !container.item ) {
-                    container.item = mageItem;
-                    container.addChild(mageItem);
-                    break;
+                    mi.deactivate();
+                    
+                    // search available placeholder
+                    for ( j = 0; j < placeHoldersCount; j++ ) {
+                        inputMenuItem = placeHolders[j];
+                        if ( inputMenuItem.isInput && !inputMenuItem.logo && mi.isSpell == inputMenuItem.isSpell ) {
+                            inputMenuItem.addLogo(mi.logo_copy);
+                            break;
+                        }
+                    }
                 }
             }
+            
+            itemContainer.x = 35.5;
+            itemContainer.y = 21.1;
+            menu.addChild(itemContainer);
         }
-        
         
         override public function activate():void {
             super.activate();
             
-            addEventListener(MouseEvent.MOUSE_DOWN, startDragListener);
-            addEventListener(MouseEvent.MOUSE_UP, stopDragListener);
+            addEventListener(MouseEvent.MOUSE_DOWN, mouseDownListener);
+            addEventListener(MouseEvent.MOUSE_UP, mouseUpListener);
             addEventListener(MouseEvent.MOUSE_OVER, mouseOverListener);
             addEventListener(MouseEvent.MOUSE_OUT, mouseOutListener);
         }
         
-        private function startDragListener(e:MouseEvent):void {
-            if ( e.target is InventoryItem ) {
-                dragTarget = e.target as InventoryItem;
+        private function mouseDownListener(e:MouseEvent):void {
+            var name:String = DisplayObject(e.target).name;
+            var menuItem:MenuItem;
+            
+            if ( name == MenuItem.NAME ) {
+                menuItem = MenuItem(e.target);
+                
+                if ( menuItem.isInput ) {
+                    if ( menuItem.logo ) {
+                        dragTarget = menuItem.logo;
+                        menuItem.logo = null;
+                    }
+                    else return;
+                }
+                else {
+                    dragTarget = menuItem.logo_copy;
+                    menuItem.deactivate();
+                }
                 
                 dragTarget.x = mouseX;
                 dragTarget.y = mouseY;
-                
-                var i:int = placeHolders.length;
-                while ( i-- ) {
-                    if ( placeHolders[i].item == dragTarget )
-                        placeHolders[i].item = null;
-                }
-                
                 addChild(dragTarget);
                 dragTarget.startDrag();
-                
-                tip.forceHide();
             }
         }
         
-        private function stopDragListener(e:MouseEvent):void {
-            var i:int,
-                container:MageShopContainer,
-                addedToPlayer:Boolean = false;
+        private function mouseUpListener(e:MouseEvent):void {
+            var i:int = placeHolders.length,
+                itemHolder:MenuItem;
             
             if ( dragTarget ) {
                 dragTarget.stopDrag();
-                i = placeHolders.length;
                 
-                while ( i-- ) {
-                    container = placeHolders[i];
-                    if ( container.hitTestObject(dragTarget) ) {
-                        if ( container.locked || container.isSpell != dragTarget.isSpell ) break;
-                        
-                        if ( container.item ) {
-                            container.item.onPlayer = false;
-                            container.item.parentContainer.addChild(container.item);
+                // check if over placeholder
+                while (i--) {
+                    itemHolder = MenuItem(placeHolders[i]);
+                    if ( itemHolder.hitTestPoint(mouseX, mouseY) ) {
+                        trace(i);
+                        if ( itemHolder.logo ) {
+                            itemHolder.logo_copy = ItemLogo(dragTarget);
+                            dragTarget = itemHolder.logo;
+                            itemHolder.addLogo(itemHolder.logo_copy);
+                            itemHolder.logo_copy = null;
+                            addChild(dragTarget);
+                            break;
                         }
-                        
-                        dragTarget.onPlayer = true;
-                        container.addChild(dragTarget);
-                        container.item = dragTarget;
-                        addedToPlayer = true;
-                        break;
+                        else {
+                            itemHolder.addLogo(ItemLogo(dragTarget));
+                            dragTarget = null;
+                            return;
+                        }
                     }
                 }
                 
-                if ( !addedToPlayer ) {
-                    dragTarget.onPlayer = false;
-                    dragTarget.parentContainer.addChild(dragTarget);
+                // return dragTarget
+                i = menuItems.length;
+                while (i--) {
+                    itemHolder = menuItems[i];
+                    if ( itemHolder.logo_copy == dragTarget ) {
+                        removeChild(dragTarget);
+                        dragTarget = null;
+                        itemHolder.activate();
+                    }
                 }
-                
-                dragTarget.setInitialPositionInContainer();
-                    
-                dragTarget = null;
             }
         }
         
         private function mouseOverListener(e:MouseEvent):void {
-            if ( !dragTarget && e.target is InventoryItem ) {
-                if ( !tip.active && !tip.isTransition ) {
-                    tip.x = mouseX + 10;
-                    tip.y = mouseY + 10;
-                    tip.setText(e.target.rus_name, e.target.dsc);
-                    addChild(tip);
-                    tip.show();
-                }
-            }
+            
         }
         
         private function mouseOutListener(e:MouseEvent):void {
-            if ( !dragTarget && e.target is InventoryItem ) {
-                if ( tip.active ) {
-                    tip.hide();
-                }
-            }
+            
         }
         
         override public function deactivate():void {
             super.deactivate();
             
-            removeEventListener(MouseEvent.MOUSE_DOWN, startDragListener);
-            removeEventListener(MouseEvent.MOUSE_UP, stopDragListener);
+            removeEventListener(MouseEvent.MOUSE_DOWN, mouseDownListener);
+            removeEventListener(MouseEvent.MOUSE_UP, mouseUpListener);
             removeEventListener(MouseEvent.MOUSE_OVER, mouseOverListener);
             removeEventListener(MouseEvent.MOUSE_OUT, mouseOutListener);
         }
         
         override protected function clickListener(e:MouseEvent):void {
             super.clickListener(e);
+            var i:int, menuItem:MenuItem;
             
             var name:String = DisplayObject(e.target).parent.name;
             switch ( name ) {
                 case GOTO_TITLE_BTN:
-                    parentMenu.switchToMenu(parentMenu.TITLE_MENU);
+                    i = placeHolders.length;
+                    while ( i-- ) {
+                        menuItem = placeHolders[i];
+                        if ( menuItem.isSpell ) {
+                            if ( menuItem.logo ) {
+                                parentMenu.switchToMenu(parentMenu.TITLE_MENU);
+                                return;
+                            }
+                        }
+                    }
+                    
+                    trace("nope");
                     break;
             }
         }
@@ -270,9 +271,7 @@ package src.ui {
         override public function destroy():void {
             super.destroy();
             
-            var i:int = placeholderProperties.length;
-            while (i--)
-                placeholderProperties.pop();
+            var i:int;
             
             i = placeHolders.length;
             while (i--)
@@ -286,7 +285,6 @@ package src.ui {
             }
             
             menu = null;
-            tip = null;
             dragTarget = null;
         }
     }

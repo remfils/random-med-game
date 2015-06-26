@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_MenuCostume/MagesShop_clip" itemID="553cd28f-000005bb" symbolType="graphic" lastModified="1430059045" lastUniqueIdentifier="29">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_MenuCostume/MagesShop_clip" itemID="553cd28f-000005bb" symbolType="graphic" lastModified="1430499113" lastUniqueIdentifier="29">
   <timeline>
     <DOMTimeline name="MagesShop_clip">
       <layers>
@@ -36,39 +36,20 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <SolidColor color="#801B00"/>
-                    </FillStyle>
-                  </fills>
-                  <edges>
-                    <Edge fillStyle1="1" edges="
-!7701 390|7701 5978!7701 5978|7245 5978!7245 5978|7245 390!7245 390|7701 390"/>
-                  </edges>
-                </DOMShape>
                 <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/_magesShop/scrollBtn" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix tx="362.25" ty="19.5"/>
+                    <Matrix tx="359.25" ty="19.75"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="11.4" y="13.25"/>
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/_magesShop/scrollBtn" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix a="-1" d="-1" tx="385.05" ty="296.6"/>
+                    <Matrix a="-1" d="-1" tx="398" ty="298.05"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="11.4" y="13.25"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/_magesShop/scrollBar" symbolType="graphic" loop="loop">
-                  <matrix>
-                    <Matrix tx="362.25" ty="49.55"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="11.4" y="24.9"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
@@ -82,7 +63,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="placeHolders" color="#4FFF4F" autoNamed="false" layerType="guide">
+        <DOMLayer name="placeHolders" color="#4FFF4F" current="true" isSelected="true" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -127,6 +108,30 @@
                     <Edge cubics="!11204 3082(;11204,3082 11204,4097 11204,4097q11204 3082 11204 4097);"/>
                   </edges>
                 </DOMShape>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" centerPoint3DX="293" centerPoint3DY="83.55">
+                  <matrix>
+                    <Matrix tx="35.5" ty="21.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="257.5" y="62.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" centerPoint3DX="293" centerPoint3DY="176.2">
+                  <matrix>
+                    <Matrix tx="35.5" ty="113.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="257.5" y="62.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" selected="true" centerPoint3DX="293" centerPoint3DY="270.55">
+                  <matrix>
+                    <Matrix tx="35.5" ty="208.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="257.5" y="62.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
@@ -147,7 +152,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="mageDrawing" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="mageDrawing" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

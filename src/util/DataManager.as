@@ -6,15 +6,17 @@ package src.util {
     import flash.utils.ByteArray;
     import src.Main;
     import src.Player;
+    import src.ui.AbstractMenu;
     import src.User;
     import src.util.Output;
     import vk.api.DataProvider;
     import vk.APIConnection;
+    import flash.system.Security;
 
     public class DataManager extends AbstractManager {
-        public const server_name = "http://game.ngmu.tk";
+        public const server_name = "http://game.home";
         public var flashVars:Object = null;
-        public var user:User = new User();
+        public var user:User;
         public var vkID:int = 0;
         
         private static var data:XML = null;
@@ -28,6 +30,7 @@ package src.util {
             super();
             this.flashVars = flashVars;
             
+            user = AbstractMenu.user;
             user.uid = flashVars['viewer_id'];
             
             if ( testMode ) {
@@ -53,6 +56,7 @@ package src.util {
             var loader:URLLoader = e.target as URLLoader;
             loader.removeEventListener(Event.COMPLETE, gameDataLoadComplete);
             Output.add('server response\n' + loader.data);
+            
             data = new XML(loader.data);
             
             if ( data.BaseData.length() > 0 ) {
@@ -181,8 +185,8 @@ package src.util {
         
 // SET STATIC DATA IN GAME
         public function startSettingGameStats():void {
-            var loader:URLLoader = new URLLoader(new URLRequest("GameStats.xml"));
-            loader.addEventListener(Event.COMPLETE, setGameStats);
+            /*var loader:URLLoader = new URLLoader(new URLRequest("GameStats.xml"));
+            loader.addEventListener(Event.COMPLETE, setGameStats);*/
         }
         
         private function setGameStats(e:Event):void {

@@ -1,10 +1,10 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/stand_left" itemID="552fc255-00000137" lastModified="1429898975" lastUniqueIdentifier="16">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/states/stand_left" itemID="552fc255-00000137" lastModified="1435165183" lastUniqueIdentifier="16">
   <timeline>
     <DOMTimeline name="stand_left">
       <layers>
-        <DOMLayer name="голова" color="#4F80FF" autoNamed="false" visible="false">
+        <DOMLayer name="голова" color="#4F80FF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/_головы/голова_право" symbolType="graphic" firstFrame="1" loop="loop">
                   <matrix>
@@ -20,7 +20,7 @@
         </DOMLayer>
         <DOMLayer name="рука2_правая" color="#FF0000" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
@@ -36,7 +36,7 @@
         </DOMLayer>
         <DOMLayer name="рука1_правая" color="#FF0000" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука1" symbolType="graphic" loop="loop">
                   <matrix>
@@ -52,7 +52,7 @@
         </DOMLayer>
         <DOMLayer name="рука3_правая" color="#FF0000" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука3" symbolType="graphic" loop="loop">
                   <matrix>
@@ -66,9 +66,9 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="тело" color="#4F80FF" autoNamed="false" visible="false">
+        <DOMLayer name="тело" color="#4F80FF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/тело_хотьба_лево" symbolType="graphic" loop="loop">
                   <matrix>
@@ -84,7 +84,7 @@
         </DOMLayer>
         <DOMLayer name="нога2_П" color="#FF4F4F" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
                   <matrix>
@@ -100,7 +100,7 @@
         </DOMLayer>
         <DOMLayer name="нога2_Л" color="#4FFF4F" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/нога2" symbolType="graphic" loop="loop">
                   <matrix>
@@ -116,7 +116,7 @@
         </DOMLayer>
         <DOMLayer name="посох" color="#FF800A" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/посох" symbolType="graphic" loop="loop">
                   <matrix>
@@ -132,7 +132,7 @@
         </DOMLayer>
         <DOMLayer name="рука_левая" color="#0000FF" current="true" isSelected="true" autoNamed="false">
           <frames>
-            <DOMFrame index="0" keyMode="15872">
+            <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_player/parts/_руки/рука2" symbolType="graphic" loop="loop">
                   <matrix>
@@ -163,8 +163,8 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!162 -1S2[219 15 267 45!267 45[316 74 343 110!343 110[380 155 380 210!380 210[380 265 343 312!343 312[316 346 267 375!267 375[219 405 162 423!162 423[87 445 -3 445!-3 445[-163 445 -274 375!-274 375[-385 308 -385 210!-385 210[-385 113
- -274 45!-274 45[-163 -24 -3 -24!-3 -24[87 -24 162 -1"/>
+                    <Edge fillStyle1="1" edges="!162 423S2[87 445 -3 445!-3 445[-163 445 -274 375!-274 375[-385 308 -385 210!-385 210[-385 113 -274 45!-274 45[-163 -24 -3 -24!-3 -24[87 -24 162 -1!162 -1[219 15 267 45!267 45[316 74 343 110!343 110[380 155 380 210!380 210[380 265 343
+ 312!343 312[316 346 267 375!267 375[219 405 162 423"/>
                   </edges>
                 </DOMShape>
               </elements>

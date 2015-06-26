@@ -25,12 +25,13 @@ package src.util {
             }
             else {
                 tween = _pool[--_counter];
-                
                 tween.obj = obj;
                 tween.prop = prop;
-                tween.func = func;
                 tween.begin = begin;
-                tween.continueTo(finish, duration);
+                tween.finish = finish
+                tween.duration = duration;
+                tween.func = func;
+                tween.start();
             }
             
             tween.addEventListener(TweenEvent.MOTION_FINISH, releaseTween);
@@ -40,6 +41,7 @@ package src.util {
         public static function releaseTween(e:TweenEvent):void {
             var tween:Tween = Tween(e.target);
             tween.removeEventListener(TweenEvent.MOTION_FINISH, releaseTween);
+            tween.stop();
             _pool[_counter++] = tween;
         }
         

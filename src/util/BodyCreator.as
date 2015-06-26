@@ -4,6 +4,7 @@ package src.util {
     import Box2D.Dynamics.b2Fixture;
     import Box2D.Dynamics.b2FixtureDef;
     import Box2D.Dynamics.b2World;
+    import src.objects.AbstractObject;
 
     public class BodyCreator extends AbstractManager {
         private var bodies:Array;
@@ -26,7 +27,7 @@ package src.util {
                     
                     body.CreateFixture(request.fixtureDef);
                     body.SetLinearVelocity(request.velocity);
-                    request.actor.body = body;
+                    AbstractObject(request.actor).body = body;
                     
                     //request.actor.removeChild(request.collider);
                     request.destroy();

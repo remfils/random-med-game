@@ -11,15 +11,15 @@
     import flash.utils.*;
     
     public class PlayerStat extends AbstractMenu {
-        static public var instance:PlayerStat = null;
+        static public var instance:PlayerStat = null; // delete this
         public var current_theme = 1;
         var level_map:Map;
         
         private var healthBar:Bar;
         private var manaBar:Bar;
         
-        private const HEARTS_START_X:Number = 90;
-        private const HEARTS_START_Y:Number = 29;
+        private static const HEARTS_START_X:Number = 90;
+        private static const HEARTS_START_Y:Number = 29;
         
         var hearts:Array = new Array();
         
