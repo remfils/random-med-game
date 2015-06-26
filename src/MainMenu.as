@@ -4,6 +4,7 @@ package src {
     import fl.transitions.Tween;
     import flash.display.Sprite;
     import flash.events.MouseEvent;
+    import flash.text.TextField;
     import src.costumes.MenuSprites;
     import src.objects.AbstractObject;
     import src.ui.AbstractMenu;
@@ -43,6 +44,15 @@ package src {
                 menuContainer.addChild(menus[i]);
                 AbstractMenu(menus[i]).parentMenu = this;
             }
+            
+            // version textbox
+            var textfield:TextField = new TextField();
+            textfield.text = "Текущая версия: " + Game.version;
+            textfield.width = textfield.textWidth + textfield.textWidth;
+            textfield.textColor = 0xFFFFFF;
+            textfield.selectable = false;
+            textfield.scaleX = textfield.scaleY = 1.2;
+            addChild(textfield);
         }
         
         private function hideAll():void {

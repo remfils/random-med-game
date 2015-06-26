@@ -1,19 +1,18 @@
-package src.ui {
-    import flash.display.MovieClip;
+package src.costumes {
+    import flash.display.DisplayObject;
 
-
-    public class ItemLogo extends MovieClip {
+    public class ItemLogoCostume extends Costume {
         
         public static const SPELL_SPARK:String = "Spark";
         public static const SPELL_NUKELINO:String = "Nukelino";
         public static const SPELL_POWER_SPELL:String = "PowerSpell";
         
-        public function ItemLogo() {
+        public function ItemLogoCostume() {
             super();
         }
         
-        public function setType(type_:String):void {
-            gotoAndStop(type_);
+        override public function getCollider():DisplayObject {
+            return null;
         }
     }
 

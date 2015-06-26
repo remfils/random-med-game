@@ -6,6 +6,9 @@ package src.ui {
     import flash.display.Sprite;
     import flash.events.MouseEvent;
     import flash.geom.Point;
+    import src.costumes.ItemLogoCostume;
+    import src.costumes.MenuButtonCostume;
+    import src.costumes.MenuItemCostume;
     import src.costumes.MenuSprites;
     import src.Player;
     import src.ui.mageShop.MageShopContainer;
@@ -18,8 +21,8 @@ package src.ui {
         private var itemContainer:Sprite;
         
         private var dragTarget:MovieClip;
-        private var placeHolders:Vector.<MenuItem>;
-        private var menuItems:Vector.<MenuItem>;
+        private var placeHolders:Vector.<MenuItemCostume>;
+        private var menuItems:Vector.<MenuItemCostume>;
         
         public function MageShopMenu() {
             super();
@@ -31,15 +34,15 @@ package src.ui {
             
             addChild(menu);
             
-            var titleBtn:MenuButton = new MenuButton();
-            titleBtn.setState(MenuButton.GOTO_TITLE_BTN);
+            var titleBtn:MenuButtonCostume = new MenuButtonCostume();
+            titleBtn.setState(MenuButtonCostume.GOTO_TITLE_BTN);
             titleBtn.name = GOTO_TITLE_BTN;
             titleBtn.x = GOTO_TITLE_BTN_POSITION.x;
             titleBtn.y = GOTO_TITLE_BTN_POSITION.y;
             addChild(titleBtn);
             
-            placeHolders = new <MenuItem>[];
-            menuItems = new <MenuItem>[];
+            placeHolders = new <MenuItemCostume>[];
+            menuItems = new <MenuItemCostume>[];
             
         }
         
@@ -57,36 +60,36 @@ package src.ui {
                 i:int,
                 scale_factor:Number=206/317,
                 locked:Boolean = false,
-                inputMI:MenuItem;
+                inputMI:MenuItemCostume;
             
-            inputMI = new MenuItem();
+            inputMI = new MenuItemCostume();
             inputMI.x = 431;
             inputMI.y = 205;
-            inputMI.setType(MenuItem.SPELL_TYPE);
+            inputMI.setType(MenuItemCostume.SPELL_TYPE);
             placeHolders[placeHolders.length] = inputMI;
             
-            inputMI = new MenuItem();
+            inputMI = new MenuItemCostume();
             inputMI.x = 425.5;
             inputMI.y = 122.5;
-            inputMI.setType(MenuItem.SPELL_TYPE);
+            inputMI.setType(MenuItemCostume.SPELL_TYPE);
             placeHolders[placeHolders.length] = inputMI;
             
-            inputMI = new MenuItem();
+            inputMI = new MenuItemCostume();
             inputMI.x = 424;
             inputMI.y = 50;
-            inputMI.setType(MenuItem.SPELL_TYPE);
+            inputMI.setType(MenuItemCostume.SPELL_TYPE);
             placeHolders[placeHolders.length] = inputMI;
             
-            inputMI = new MenuItem();
+            inputMI = new MenuItemCostume();
             inputMI.x = 503.5;
             inputMI.y = 154;
-            inputMI.setType(MenuItem.ITEM_TYPE);
+            inputMI.setType(MenuItemCostume.ITEM_TYPE);
             placeHolders[placeHolders.length] = inputMI;
             
-            inputMI = new MenuItem();
+            inputMI = new MenuItemCostume();
             inputMI.x = 494;
             inputMI.y = 28;
-            inputMI.setType(MenuItem.ITEM_TYPE);
+            inputMI.setType(MenuItemCostume.ITEM_TYPE);
             placeHolders[placeHolders.length] = inputMI;
             
             i = placeHolders.length;
@@ -94,8 +97,8 @@ package src.ui {
                 inputMI = placeHolders[i];
                 locked = inputMI.isSpell ? maxSpells--<=0 : maxItems--<=0;
                 
-                if ( locked ) inputMI.setState(MenuItem.SHORT_LOCKED_STATE);
-                else inputMI.setState(MenuItem.SHORT_STATE);
+                if ( locked ) inputMI.setState(MenuItemCostume.SHORT_LOCKED_STATE);
+                else inputMI.setState(MenuItemCostume.SHORT_STATE);
                 
                 inputMI.scaleX = inputMI.scaleY = scale_factor;
                 menu.addChild(inputMI);
@@ -105,7 +108,7 @@ package src.ui {
         private function addItems():void {
             var items: Array = user.inventory,
                 item:InventoryItem,
-                mi, inputMenuItem:MenuItem,
+                mi, inputMenuItem:MenuItemCostume,
                 itemCount:int = items.length,
                 placeHoldersCount = placeHolders.length,
                 i:int, j:int, k:int,
@@ -116,7 +119,7 @@ package src.ui {
             for (i = 0; i < itemCount; i++ ) {
                 item = items[i];
                 
-                mi = new MenuItem();
+                mi = new MenuItemCostume();
                 mi.y = i * mi.height;
                 
                 mi.setLogo(item.item_name);
@@ -126,10 +129,10 @@ package src.ui {
                 menuItems[menuItems.length] = mi;
                 itemContainer.addChild(mi);
                 
-                if ( item.isSpell ) mi.setType(MenuItem.SPELL_TYPE);
-                else mi.setType(MenuItem.ITEM_TYPE);
+                if ( item.isSpell ) mi.setType(MenuItemCostume.SPELL_TYPE);
+                else mi.setType(MenuItemCostume.ITEM_TYPE);
                 
-                mi.setState(MenuItem.LONG_STATE);
+                mi.setState(MenuItemCostume.LONG_STATE);
                 
                 mi.activate();
                 
@@ -163,10 +166,10 @@ package src.ui {
         
         private function mouseDownListener(e:MouseEvent):void {
             var name:String = DisplayObject(e.target).name;
-            var menuItem:MenuItem;
+            var menuItem:MenuItemCostume;
             
-            if ( name == MenuItem.NAME ) {
-                menuItem = MenuItem(e.target);
+            if ( name == MenuItemCostume.NAME ) {
+                menuItem = MenuItemCostume(e.target);
                 
                 if ( menuItem.isInput ) {
                     if ( menuItem.logo ) {
@@ -189,18 +192,18 @@ package src.ui {
         
         private function mouseUpListener(e:MouseEvent):void {
             var i:int = placeHolders.length,
-                itemHolder:MenuItem;
+                itemHolder:MenuItemCostume;
             
             if ( dragTarget ) {
                 dragTarget.stopDrag();
                 
                 // check if over placeholder
                 while (i--) {
-                    itemHolder = MenuItem(placeHolders[i]);
+                    itemHolder = MenuItemCostume(placeHolders[i]);
                     if ( itemHolder.hitTestPoint(mouseX, mouseY) ) {
                         trace(i);
                         if ( itemHolder.logo ) {
-                            itemHolder.logo_copy = ItemLogo(dragTarget);
+                            itemHolder.logo_copy = ItemLogoCostume(dragTarget);
                             dragTarget = itemHolder.logo;
                             itemHolder.addLogo(itemHolder.logo_copy);
                             itemHolder.logo_copy = null;
@@ -208,7 +211,7 @@ package src.ui {
                             break;
                         }
                         else {
-                            itemHolder.addLogo(ItemLogo(dragTarget));
+                            itemHolder.addLogo(ItemLogoCostume(dragTarget));
                             dragTarget = null;
                             return;
                         }
@@ -247,7 +250,7 @@ package src.ui {
         
         override protected function clickListener(e:MouseEvent):void {
             super.clickListener(e);
-            var i:int, menuItem:MenuItem;
+            var i:int, menuItem:MenuItemCostume;
             
             var name:String = DisplayObject(e.target).parent.name;
             switch ( name ) {
@@ -280,7 +283,7 @@ package src.ui {
             var child:DisplayObject;
             while (numChildren) {
                 child = getChildAt(numChildren - 1);
-                if ( child is MenuButton ) MenuButton(child).destroy();
+                if ( child is MenuButtonCostume ) MenuButtonCostume(child).destroy();
                 removeChild(child);
             }
             

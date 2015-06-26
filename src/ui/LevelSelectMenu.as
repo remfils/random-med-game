@@ -4,6 +4,7 @@ package src.ui {
     import flash.display.DisplayObject;
     import flash.display.Sprite;
     import flash.events.MouseEvent;
+    import src.costumes.MenuButtonCostume;
     import src.costumes.MenuSprites;
     import src.events.MenuItemSelectedEvent;
     import src.User;
@@ -24,24 +25,24 @@ package src.ui {
             
             var rake_y:Number = 485.45
             
-            var btn:MenuButton = new MenuButton();
-            btn.setState(MenuButton.MOVE_LEVELS_LEFT);
+            var btn:MenuButtonCostume = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.MOVE_LEVELS_LEFT);
             btn.x = 55.4;
             btn.y = rake_y;
             btn.name = MOVE_LEVELS_LEFT_BTN;
             
             addChild(btn);
             
-            btn = new MenuButton();
-            btn.setState(MenuButton.MOVE_LEVELS_RIGHT);
+            btn = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.MOVE_LEVELS_RIGHT);
             btn.x = 697.95;
             btn.y = rake_y;
             btn.name = MOVE_LEVELS_RIGHT_BTN;
             
             addChild(btn);
             
-            btn = new MenuButton();
-            btn.setState(MenuButton.GOTO_TITLE_BTN);
+            btn = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.GOTO_TITLE_BTN);
             btn.name = GOTO_TITLE_BTN;
             btn.x = GOTO_TITLE_BTN_POSITION.x;
             btn.y = GOTO_TITLE_BTN_POSITION.y;
@@ -51,7 +52,7 @@ package src.ui {
         }
         
         private function createLevelSelectButtons(user:User, levels:XMLList):void {
-            var btn:MenuButton,
+            var btn:MenuButtonCostume,
                 star:MenuSprites,
                 i:int = 0,
                 j:int = 0,
@@ -61,8 +62,8 @@ package src.ui {
                 ammendX:Number = 0,
                 ammendY:Number = 0;
             
-            btn = new MenuButton();
-            btn.setState(MenuButton.LEVEL_SELECT_BTN);
+            btn = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.LEVEL_SELECT_BTN);
             
             star = new MenuSprites();
             star.setSprite(MenuSprites.STAR_EMPTY);
@@ -74,8 +75,8 @@ package src.ui {
             addChild(allLevelsContainer);
             
             for each ( var level:XML in levels.* ) {
-                btn = new MenuButton();
-                btn.setState(MenuButton.LEVEL_SELECT_BTN);
+                btn = new MenuButtonCostume();
+                btn.setState(MenuButtonCostume.LEVEL_SELECT_BTN);
                 btn.name = level.id;
                 btn.level_name.text = level.name;
                 
@@ -155,7 +156,7 @@ package src.ui {
             var i = numChildren;
             while (i--) {
                 child = getChildAt(i);
-                if ( child is MenuButton ) MenuButton(child).destroy();
+                if ( child is MenuButtonCostume ) MenuButtonCostume(child).destroy();
             }
             DeleteManager.stripDisplayObject(this);
             DeleteManager.stripDisplayObject(allLevelsContainer)

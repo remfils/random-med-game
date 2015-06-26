@@ -1,7 +1,7 @@
 package src.ui.mageShop {
     import flash.display.MovieClip;
     import flash.utils.getDefinitionByName;
-    import src.ui.MenuItem;
+    import src.costumes.MenuItemCostume;
     
     public class InventoryItem {
         public var parentContainer:MageShopContainer;
@@ -15,7 +15,7 @@ package src.ui.mageShop {
         
         public var item_index:int;
         
-        public var itemMenu:MenuItem;
+        public var itemMenu:MenuItemCostume;
         
         public function InventoryItem() {
             super();

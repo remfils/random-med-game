@@ -84,6 +84,11 @@ package src.util {
                     
                     door.show();
                     door.setType(Door.DOOR_START_TYPE);
+                    
+                    // place player in front of the door
+                    var angle:Number = door.costume.rotation * Math.PI / 180;
+                    Game.PLAYER_START_X = door.x - game.player.collider.width * Math.sin(angle);
+                    Game.PLAYER_START_Y = door.y + game.player.collider.height * Math.cos(angle);
                 }
                 
                 addDecorationsToRoom(cRoom, room.wallDecorations.*);

@@ -16,11 +16,16 @@ package src {
     import src.util.*;
     
     public class Game extends Sprite {
+        public static const version:String = "0.41";
+        
         public var levelId:int = 0;
         public var rating:int = 1;
         
         private static var i:uint;
         private var j:uint;
+        
+        public static var PLAYER_START_X:Number;
+        public static var PLAYER_START_Y:Number;
         
         public static const ROOM_MIN_X:int = 61;
         public static const ROOM_MAX_X:int = 695.65;
@@ -77,8 +82,6 @@ package src {
             TestModePanel = new Sprite();
             
             player = new Player();
-            player.x = 385;
-            player.y = 100;
         }
         
         public function setLevel(level:Array):void {
@@ -87,6 +90,9 @@ package src {
         
         public function init() {
             this.stage.focus = this;
+            
+            player.x = PLAYER_START_X;
+            player.y = PLAYER_START_Y;
             
             bodyCreator.createBodies();
             
@@ -243,20 +249,20 @@ package src {
                 break;
                 // J key
                 case 74 :
-                    bulletController.startBulletSpawn();
-                    playerStat.flashButton("fire");
+                    //bulletController.startBulletSpawn();
+                    playerStat.flashButtonByID(PlayerStat.FIRE_BTN_ID);
                 break;
                 // H key
                 case 72:
-                    bulletController.setPrevBullet();
-                    playerStat.flashButton("spellLeft");
-                    playerStat.setCurrentSpell(bulletController.bullet_type);
+                    //bulletController.setPrevBullet();
+                    playerStat.flashButtonByID(PlayerStat.SPELL_LEFT_BTN_ID);
+                    //playerStat.setCurrentSpell(bulletController.bullet_type);
                 break;
                 // K key
                 case 75:
-                    bulletController.setNextBullet();
-                    playerStat.flashButton("spellRight");
-                    playerStat.setCurrentSpell(bulletController.bullet_type);
+                    //bulletController.setNextBullet();
+                    playerStat.flashButtonByID(PlayerStat.SPELL_RIGHT_BTN_ID);
+                    //playerStat.setCurrentSpell(bulletController.bullet_type);
                 break;
             }
         }

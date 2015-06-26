@@ -11,7 +11,7 @@ package src.costumes {
         public function Costume() {
             costume_collider = getChildByName(COLLIDER_NAME) as MovieClip;
             this.mouseEnabled = false;
-            costume_collider.visible = false;
+            if (costume_collider) costume_collider.visible = false;
         }
         
         public function setType(type_:String):void {
@@ -26,6 +26,11 @@ package src.costumes {
             return costume_collider;
         }
         
+        public function destroy():void {
+            while ( numChildren ) {
+                removeChild(getChildAt(numChildren-1));
+            }
+        }
     }
 
 }

@@ -1,9 +1,9 @@
-package src.ui {
+package src.costumes {
     import flash.display.MovieClip;
     import flash.text.TextField;
 
 
-    public class MenuItem extends MovieClip {
+    public class MenuItemCostume extends Costume {
         
         public var item_name_txt:TextField;
         public var item_dsc_txt:TextField;
@@ -24,15 +24,16 @@ package src.ui {
         public var isSpell:Boolean;
         public var isInput:Boolean;
         
-        public var logo_copy:ItemLogo;
-        public var logo:ItemLogo;
+        public var logo_copy:ItemLogoCostume;
+        public var logo:ItemLogoCostume;
         
-        public function MenuItem() {
+        public function MenuItemCostume() {
             super();
             
             name = NAME;
             
             mouseChildren = false;
+            mouseEnabled = true;
             
             item_name_txt = TextField(getChildByName("item_name_txt"));
             item_dsc_txt = TextField(getChildByName("item_dsc_txt"));
@@ -41,21 +42,21 @@ package src.ui {
             
             block_curtain_mc = MovieClip(getChildByName("block_curtain_mc"));
             
-            logo = new ItemLogo();
+            logo = new ItemLogoCostume();
             addChildAt(logo, getChildIndex(block_curtain_mc) - 1);
             logo.x = LOGO_X;
             logo.y = LOGO_Y;
             
-            logo_copy = new ItemLogo();
+            logo_copy = new ItemLogoCostume();
         }
         
-        public function setType(type:String):void {
+        override public function setType(type:String):void {
             isSpell = type == SPELL_TYPE;
         }
         
-        public function setState(state:String):void {
-            if (isSpell) gotoAndStop(SPELL_TYPE + state);
-            else gotoAndStop(ITEM_TYPE + state);
+        override public function setState(state:String):void {
+            if (isSpell) super.setState(SPELL_TYPE + state);
+            else super.setState(ITEM_TYPE + state);
             
             if ( state == SHORT_STATE ) {
                 isInput = true;
@@ -66,9 +67,9 @@ package src.ui {
             if ( state == SHORT_LOCKED_STATE ) logo = logo_copy = null;
         }
         
-        public function setLogo(logoType:String ):void {
-            logo.setType(logoType);
-            logo_copy.setType(logoType);
+        public function setLogo(logoState_:String ):void {
+            logo.setState(logoState_);
+            logo_copy.setState(logoState_);
         }
         
         public function setName(name:String):void {
@@ -89,7 +90,7 @@ package src.ui {
             mouseEnabled = useHandCursor = buttonMode = false;
         }
         
-        public function addLogo(logo_:ItemLogo):void {
+        public function addLogo(logo_:ItemLogoCostume):void {
             logo = logo_;
             addChild(logo);
             logo.x = LOGO_X;

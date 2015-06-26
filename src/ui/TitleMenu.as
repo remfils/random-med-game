@@ -9,6 +9,7 @@ package src.ui {
     import flash.text.StyleSheet;
     import flash.text.TextField;
     import flash.text.TextFormat;
+    import src.costumes.MenuButtonCostume;
     import src.costumes.MenuSprites;
     import src.Player;
     import src.User;
@@ -32,22 +33,22 @@ package src.ui {
             
             var rake_y:Number = 504.3;
             
-            var btn:MenuButton = new MenuButton();
-            btn.setState(MenuButton.LEVEL_BTN);
+            var btn:MenuButtonCostume = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.LEVEL_BTN);
             btn.x = 236.25;
             btn.y = rake_y;
             btn.name = LEVELS_BTN;
             addChild(btn);
             
-            btn = new MenuButton();
-            btn.setState(MenuButton.INVENTORY_BTN);
+            btn = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.INVENTORY_BTN);
             btn.x = 401.25;
             btn.y = rake_y;
             btn.name = INVENTORY_BTN;
             addChild(btn);
             
-            btn = new MenuButton();
-            btn.setState(MenuButton.ACHIVEMENTS_BTN);
+            btn = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.ACHIVEMENTS_BTN);
             btn.x = 544.15;
             btn.y = rake_y;
             btn.name = ACHIVEMENTS_BTN;
@@ -110,7 +111,7 @@ package src.ui {
             var child:DisplayObject;
             while (numChildren) {
                 child = getChildAt(numChildren - 1);
-                if ( child is MenuButton ) MenuButton(child).destroy();
+                if ( child is MenuButtonCostume ) MenuButtonCostume(child).destroy();
                 removeChild(child);
             }
         }

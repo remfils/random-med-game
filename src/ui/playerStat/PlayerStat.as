@@ -3,6 +3,8 @@
     import flash.display.MovieClip;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
+    import src.costumes.ItemLogoCostume;
+    import src.costumes.PlayerStatCostume;
     import src.objects.AbstractObject;
     import src.Player;
     import src.ui.AbstractMenu;
@@ -11,9 +13,11 @@
     import flash.utils.*;
     
     public class PlayerStat extends AbstractMenu {
-        public static const FIRE_COMMAND:int = 1;
-        public static const FIRE_COMMAND:int = 1;
-        public static const FIRE_COMMAND:int = 1;
+        public static const FIRE_BTN_ID:int = 1;
+        public static const SPELL_LEFT_BTN_ID:int = 2;
+        public static const SPELL_RIGHT_BTN_ID:int = 3;
+        
+        public static const BTN_FLASH_STATE:String = "_flash";
         
         static public var instance:PlayerStat = null; // delete this
         public var current_theme = 1;
@@ -24,8 +28,13 @@
         
         private static const HEARTS_START_X:Number = 90;
         private static const HEARTS_START_Y:Number = 29;
+        private static const SPELL_MENU_CENTER_X:Number = 445.7;
+        private static const SPELL_MENU_CENTER_Y:Number = 48.8;
         
         var hearts:Array = new Array();
+        
+        private var spell_logo:ItemLogoCostume;
+        private var spell_place, spell_change_left, spell_change_right :PlayerStatCostume;
         
         public var spellPic_mc, spellFire_mc, spellLeft_mc, spellRight_mc :MovieClip;
         public var level_txt, money_txt, exp_txt: TextField;
@@ -51,17 +60,44 @@
             addChild(manaBar);
             
             // setting variables
-            spellPic_mc = getChildByName("spellPic_mc") as MovieClip;
-            spellFire_mc = getChildByName("spellFire_mc") as MovieClip;
-            spellLeft_mc = getChildByName("spellLeft_mc") as MovieClip;
-            spellRight_mc = getChildByName("spellRight_mc") as MovieClip;
+            //spellPic_mc = getChildByName("spellPic_mc") as MovieClip;
+            //spellFire_mc = getChildByName("spellFire_mc") as MovieClip;
+            //spellLeft_mc = getChildByName("spellLeft_mc") as MovieClip;
+            //spellRight_mc = getChildByName("spellRight_mc") as MovieClip;
             
             level_txt = getChildByName("level_txt") as TextField;
             money_txt = getChildByName("money_txt") as TextField;
             exp_txt = getChildByName("exp_txt") as TextField;
+            
+            createSpellMenu();
+        }
+        
+        private function createSpellMenu():void {
+            spell_place = new PlayerStatCostume();
+            spell_place.setType(PlayerStatCostume.SPELL_PLACE_TYPE);
+            spell_place.setState("");
+            spell_place.x = SPELL_MENU_CENTER_X;
+            spell_place.y = SPELL_MENU_CENTER_Y;
+            addChild(spell_place);
+            
+            spell_change_left = new PlayerStatCostume();
+            spell_change_left.setType(PlayerStatCostume.SPELL_CHANGE_TYPE);
+            spell_change_left.setState("");
+            spell_change_left.x = SPELL_MENU_CENTER_X - spell_place.width/2 -spell_change_left.width/2;
+            spell_change_left.y = SPELL_MENU_CENTER_Y;
+            addChild(spell_change_left);
+            
+            spell_change_right = new PlayerStatCostume();
+            spell_change_right.setType(PlayerStatCostume.SPELL_CHANGE_TYPE);
+            spell_change_right.setState("");
+            spell_change_right.scaleX = -1;
+            spell_change_right.x = SPELL_MENU_CENTER_X + spell_place.width/2 + spell_change_right.width/2;
+            spell_change_right.y = SPELL_MENU_CENTER_Y;
+            addChild(spell_change_right);
         }
         
         public function setCurrentSpell(spellName:String):void {
+            return;
             spellPic_mc.gotoAndStop(spellName);
         }
         
@@ -70,16 +106,16 @@
             return instance;
         }
         
-        public function flashButton(btnName:String):void {
-            switch (btnName) {
-                case "fire":
-                    spellFire_mc.play();
+        public function flashButtonByID(btnID:int):void {
+            switch (btnID) {
+                case FIRE_BTN_ID:
+                    spell_place.setState(BTN_FLASH_STATE);
                 break;
-                case "spellLeft":
-                    spellLeft_mc.play();
+                case SPELL_LEFT_BTN_ID:
+                    spell_change_left.setState(BTN_FLASH_STATE);
                 break;
-                case "spellRight":
-                    spellRight_mc.play();
+                case SPELL_RIGHT_BTN_ID:
+                    spell_change_right.setState(BTN_FLASH_STATE);
                 break;
             }
         }
