@@ -11,6 +11,13 @@ package src.costumes {
             super();
         }
         
+        // logos don't have states
+        override public function setState(state_:String):void { }
+       
+        override public function setType(type_:String):void {
+            gotoAndStop(type_);
+        }
+        
         override public function getCollider():DisplayObject {
             return null;
         }

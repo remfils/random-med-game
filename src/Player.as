@@ -96,6 +96,7 @@
             fixtureDef = new b2FixtureDef();
             fixtureDef.density = 1;
             fixtureDef.friction = 0.3;
+            fixtureDef.userData = {"object": this}
             
             var collider:DisplayObject = costume.getCollider();
             
@@ -168,6 +169,7 @@
             spells[spells.length] = str;
         }
         
+        // deprecated
         public function setInventory(inventory:Array):void {
             /*for ( var i:int = inventory.length - 1; i >= 0; i-- ) {
                 if ( InventoryItem(inventory[i]).isSpell ) {
@@ -202,9 +204,6 @@
                     DIRECTION_CHANGED = true;
                     MOVE_DOWN = keyDown;
                     updateDirection();
-                    break;
-                case 32 :
-                    game.hitPlayer(2);
                     break;
             }
         }
@@ -321,8 +320,8 @@
             if (immune) return;
             immune = true;
             startInvincibilityTimer();
-
-            HEALTH -= dmg;
+            
+            _HEALTH -= dmg;
             if ( HEALTH <= 0 ) {
                 die();
                 HEALTH = 0;

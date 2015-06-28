@@ -15,7 +15,7 @@ package src.ui.mageShop {
         
         public var item_index:int;
         
-        public var itemMenu:MenuItemCostume;
+        public var itemMenu:MenuItemCostume; // D!
         
         public function InventoryItem() {
             super();

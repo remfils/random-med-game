@@ -8,6 +8,7 @@
     import src.events.RoomEvent;
     import src.Game;
     import src.util.AbstractManager;
+    import src.util.Output;
     
     import src.levels.Room;
     import src.Player;
@@ -19,7 +20,6 @@
         
         public var bullet_type:String;
         
-        private var bulletClasses:Array = [Spark, BombSpell, Bombastic];
         private var currentBulletClass:int = 0;
         public var BulletClass:Class;
         
@@ -29,17 +29,33 @@
         private var currentRoom:Room = null;
         
         private var stage:DisplayObjectContainer;
+        
+        public var currentSpellDef:BulletDef;
+        private var currentSpellIndex:int = 0;
+        
+        private static const allSpells:Vector.<BulletDef> = new <BulletDef>[
+            new BulletDef(BulletCostume.SPARK_TYPE, 50, 10, 0, 500),
+            new BulletDef(BulletCostume.POWER_SPELL_TYPE, 100, 10, 1, 500),
+            new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 3, 1000)
+        ];
 
         public function BulletController(stage:DisplayObjectContainer) {
             this.stage = stage;
             bullet_type = BulletCostume.SPARK_TYPE;
             
-            bulletClasses = game.player.spells;
-            
-            BulletClass = bulletClasses[currentBulletClass];
+            currentSpellDef = allSpells[game.player.spells[currentSpellIndex]];
             
             bulletDelay = new Timer(10);
             bulletDelay.addEventListener(TimerEvent.TIMER, unlockSpawn);
+        }
+        
+        public static function getIndexOfBulletByName(name:String):int {
+            var i:int = allSpells.length;
+            while (i--) {
+                if ( allSpells[i].name == name ) return i;
+            }
+            Output.add("Spell not found at game.getIndexOfBulletByName");
+            return 0;
         }
         
         public function changeLevel (level:Room):void {
@@ -47,10 +63,10 @@
         }
         
         public function update () {
-            if (fire && game.player.MANA >= BulletClass.bulletDef.manaCost) {
+            if (fire && game.player.MANA >= currentSpellDef.manaCost) {
                 var b:Bullet = spawnBullet();
                 if ( b ) {
-                    game.player.MANA -= BulletClass.bulletDef.manaCost;
+                    game.player.MANA -= currentSpellDef.manaCost;
                     game.playerStat.update();
                 }
             }
@@ -83,7 +99,8 @@
             var bullet:Bullet = getFreeBullet();
             var player:Player = game.player;
             
-            bulletDelay.delay = bullet.getBulletDefenition().delay;
+            bullet.setType(currentSpellDef.name);
+            bulletDelay.delay = currentSpellDef.delay;
             
             var spawnPoint:Point = new Point();
             spawnPoint.x = player.x + player.dir_x * bullet.colliderWidth;
@@ -95,10 +112,10 @@
                 bullet.moveTo(spawnPoint.x, spawnPoint.y);
                 
                 bullet.setSpeedDirection (direction.x, direction.y);
-                
             }
             else {
-                bullet.setPosition(spawnPoint);
+                bullet.costume.x = spawnPoint.x;
+                bullet.costume.y = spawnPoint.y;
                 bullet.setDirection(direction.x, direction.y);
                 bullet.requestBodyAt(currentRoom.world);
                 stage.addChild (bullet.costume);
@@ -115,13 +132,12 @@
             while (i--) {
                 if (!_bullets[i].isActive()) {
                     _bullets[i].activate();
-                    _bullets[i].gotoAndPlay(1);
+                    _bullets[i].bulletDef = currentSpellDef;
                     return _bullets[i];
                 }
             }
-            var bullet:Bullet = new Bullet();
-            bullet.setType(BulletCostume.SPARK_TYPE);
-            return bullet;
+            
+            return new Bullet(currentSpellDef);
         }
         
         public function hideBullet (B:Bullet) {
@@ -138,26 +154,20 @@
             }*/
         }
         
-        public function setNextBullet():void {
-            currentBulletClass ++;
-            if ( currentBulletClass == bulletClasses.length ) {
-                currentBulletClass = 0;
+        public function nextSpell():void {
+            var spells:Array = game.player.spells;
+            if ( ++currentSpellIndex > spells.length - 1 ) {
+                currentSpellIndex = 0;
             }
-            updateBulletClass();
+            currentSpellDef = allSpells[spells[currentSpellIndex]];
         }
         
-        public function setPrevBullet():void {
-            currentBulletClass --;
-            if ( currentBulletClass == -1 ) {
-                currentBulletClass = bulletClasses.length;
+        public function prevSpell():void {
+            var spells:Array = game.player.spells;
+            if ( --currentSpellIndex < 0 ) {
+                currentSpellIndex = spells.length - 1;
             }
-            updateBulletClass();
-        }
-        
-        private function updateBulletClass():void {
-            BulletClass = bulletClasses[currentBulletClass];
-            bulletDelay.delay = BulletClass.bulletDef.delay;
-            smartClearBullets();
+            currentSpellDef = allSpells[spells[currentSpellIndex]];
         }
         
         private function deleteBullet(b:Bullet) {

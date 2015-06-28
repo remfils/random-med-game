@@ -47,7 +47,7 @@ package src {
             
             // version textbox
             var textfield:TextField = new TextField();
-            textfield.text = "Текущая версия: " + Game.version;
+            textfield.text = "Текущая версия: " + Game.VERSION;
             textfield.width = textfield.textWidth + textfield.textWidth;
             textfield.textColor = 0xFFFFFF;
             textfield.selectable = false;

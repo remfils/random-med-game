@@ -6,17 +6,19 @@ package src {
     import flash.geom.*;
     import flash.utils.*;
     import src.bullets.*;
+    import src.costumes.BulletCostume;
     import src.events.*;
     import src.interfaces.*;
     import src.levels.*;
     import src.objects.*;
     import src.task.*;
     import src.ui.*;
+    import src.ui.mageShop.InventoryItem;
     import src.ui.playerStat.*;
     import src.util.*;
     
     public class Game extends Sprite {
-        public static const version:String = "0.41";
+        public static const VERSION:String = "0.41";
         
         public var levelId:int = 0;
         public var rating:int = 1;
@@ -88,6 +90,20 @@ package src {
             _LEVEL = level;
         }
         
+        public function readUserInventory(userInventory:Array):void {
+            var i:int = userInventory.length;
+            var item:InventoryItem;
+            
+            while (i--) {
+                item = InventoryItem(userInventory[i]);
+                if (item.onPlayer) {
+                    if (item.isSpell ) {
+                        player.spells.push(BulletController.getIndexOfBulletByName(item.item_name));
+                    }
+                }
+            }
+        }
+        
         public function init() {
             this.stage.focus = this;
             
@@ -133,7 +149,6 @@ package src {
         
         private function addBulletController() {
             bulletController = new BulletController(playerPanel);
-            playerStat.setCurrentSpell("Spark");
         }
         
         private function createGamePanel():void {
@@ -249,20 +264,20 @@ package src {
                 break;
                 // J key
                 case 74 :
-                    //bulletController.startBulletSpawn();
-                    playerStat.flashButtonByID(PlayerStat.FIRE_BTN_ID);
+                    bulletController.startBulletSpawn();
+                    playerStat.flashElementByID(PlayerStat.FIRE_BTN_ID);
                 break;
                 // H key
                 case 72:
-                    //bulletController.setPrevBullet();
-                    playerStat.flashButtonByID(PlayerStat.SPELL_LEFT_BTN_ID);
-                    //playerStat.setCurrentSpell(bulletController.bullet_type);
+                    bulletController.prevSpell();
+                    playerStat.flashElementByID(PlayerStat.SPELL_LEFT_BTN_ID);
+                    playerStat.setSpellLogo(bulletController.currentSpellDef.name);
                 break;
                 // K key
                 case 75:
-                    //bulletController.setNextBullet();
-                    playerStat.flashButtonByID(PlayerStat.SPELL_RIGHT_BTN_ID);
-                    //playerStat.setCurrentSpell(bulletController.bullet_type);
+                    bulletController.nextSpell();
+                    playerStat.flashElementByID(PlayerStat.SPELL_RIGHT_BTN_ID);
+                    playerStat.setSpellLogo(bulletController.currentSpellDef.name);
                 break;
             }
         }
@@ -282,13 +297,17 @@ package src {
                 case 27:
                     PAUSED = true;
                     break;
+                // SPACE
+                case 32 :
+                    hitPlayer(1);
+                    break;
             }
         }
         
         public function hitPlayer(hitNumber:int ):void {
             player.makeHit(hitNumber);
             
-            playerStat.update();
+            playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
         }
         
         // по возможности удалить RoomEvent

@@ -8,7 +8,6 @@ package src.levels {
     import flash.display.Sprite;
     import flash.events.Event;
     import flash.net.ObjectEncoding;
-    import src.bullets.BombSpell;
     import src.bullets.Bullet;
     import src.enemy.Enemy;
     import src.enemy.Projectile;
@@ -24,6 +23,7 @@ package src.levels {
      */
     public class ContactListener extends b2ContactListener {
         private var game:Game;
+        private static const MAX_DOOR_DAMAGE:int = 150;
         
         public function ContactListener(game:Game) {
             this.game = game;
@@ -79,7 +79,7 @@ package src.levels {
                     return;
                 }
                 
-                if ( bullet is BombSpell && userData.object is Door ) {
+                if ( bullet.bulletDef.damage >= MAX_DOOR_DAMAGE && userData.object is Door ) {
                     if ( Door(userData.object).isSecret ) {
                         Door(userData.object).specialLock = false;
                         Door(userData.object).unlock();
@@ -87,15 +87,14 @@ package src.levels {
                 }
                 
                 if ( userData.object is Enemy ) {
-                    Enemy(userData.object).makeHit(bullet.getBulletDefenition().damage);
+                    Enemy(userData.object).makeHit(bullet.bulletDef.damage);
                 }
                 
-                if ( userData.object is Breakable && bullet is BombSpell ) {
+                if ( userData.object is Breakable && bullet.bulletDef.damage >= MAX_DOOR_DAMAGE ) {
                     Breakable(userData.object).breakObject();
                 }
             }
-            
-            game.bulletController.hideBullet(bullet);
+            else game.bulletController.hideBullet(bullet);
         }
         
         private function asymetricEnemyBulletCheck(bullet:Projectile, userData:Object):void {

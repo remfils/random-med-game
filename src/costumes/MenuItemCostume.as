@@ -1,6 +1,7 @@
 package src.costumes {
     import flash.display.MovieClip;
     import flash.text.TextField;
+    import src.ui.mageShop.InventoryItem;
 
 
     public class MenuItemCostume extends Costume {
@@ -26,6 +27,8 @@ package src.costumes {
         
         public var logo_copy:ItemLogoCostume;
         public var logo:ItemLogoCostume;
+        
+        public var item:InventoryItem;
         
         public function MenuItemCostume() {
             super();
@@ -67,9 +70,9 @@ package src.costumes {
             if ( state == SHORT_LOCKED_STATE ) logo = logo_copy = null;
         }
         
-        public function setLogo(logoState_:String ):void {
-            logo.setState(logoState_);
-            logo_copy.setState(logoState_);
+        public function setLogo(logoType_:String ):void {
+            logo.setType(logoType_);
+            logo_copy.setType(logoType_);
         }
         
         public function setName(name:String):void {

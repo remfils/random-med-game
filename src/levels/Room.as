@@ -208,7 +208,6 @@
         private function unlockDoorsWithoutTasks():void {
             for each ( var door:Door in _doors ) {
                 if ( !door.specialLock ) {
-                    trace(door.taskId != 0, !game.taskManager.findTaskById(door.taskId));
                     if ( door.taskId == 0 || !game.taskManager.findTaskById(door.taskId) ) {
                         door.unlock();
                     }

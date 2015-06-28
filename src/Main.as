@@ -96,7 +96,8 @@
             startLevelLoading(e.id);
             
             game = new Game(e.id);
-            game.player.setInventory(dataManager.user.inventory);
+            game.readUserInventory(dataManager.user.inventory);
+            //game.player.setInventory(dataManager.user.inventory);
         }
         
         private function startLevelLoading(levelId:int):void {

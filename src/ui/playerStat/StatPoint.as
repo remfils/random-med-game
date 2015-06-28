@@ -2,6 +2,8 @@
     
     import flash.display.MovieClip;
     
+    // D!
+    
     
     public class StatPoint extends MovieClip {
         public static const FULL_STATE:String = "full";

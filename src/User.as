@@ -114,6 +114,11 @@ package src {
             }
         }
         
+        public function clearInventory():void {
+            while (inventory.length) {
+                inventory.pop();
+            }
+        }
     }
 
 }

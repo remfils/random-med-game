@@ -3,10 +3,7 @@ package src.util {
     import flash.display.Sprite;
     import flash.geom.Point;
     import flash.text.StaticText;
-    import src.bullets.Bombastic;
-    import src.bullets.BombSpell;
     import src.bullets.BulletDef;
-    import src.bullets.Spark;
     import src.enemy.ChargerEnemy;
     import src.enemy.Enemy;
     import src.enemy.EnemyCostume;
@@ -307,7 +304,7 @@ package src.util {
         
         
         public static function setGameStats(stats:XML):void {
-            var stat:XMLList = stats.player;
+            /*var stat:XMLList = stats.player;
             Player.invincibilityDelay = stat.invincibility_time;
             Player.SPEED = stat.speed;
             
@@ -321,14 +318,14 @@ package src.util {
             ChargerEnemy.CHARGE_SPEED = stat.chargeSpeed;
             
             stat = stats.spells.large;
-            BombSpell.bulletDef = new BulletDef(stat.damage, stat.speed, stat.manaCost, stat.delay);
+            BombSpell.bulletDef = new BulletDef("",stat.damage, stat.speed, stat.manaCost, stat.delay);
             
             stat = stats.spells.spark;
-            Spark.bulletDef = new BulletDef(stat.damage, stat.speed, stat.manaCost, stat.delay);
+            Spark.bulletDef = new BulletDef("",stat.damage, stat.speed, stat.manaCost, stat.delay);
             
             stat = stats.spells.bomb;
-            Bombastic.bulletDef = new BulletDef(stat.damage, stat.speed, stat.manaCost, stat.delay);
-            Bombastic.BLAST_RADIUS = stat.blastRadius;
+            Bombastic.bulletDef = new BulletDef("",stat.damage, stat.speed, stat.manaCost, stat.delay);
+            Bombastic.BLAST_RADIUS = stat.blastRadius;*/
         }
     }
 

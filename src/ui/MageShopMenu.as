@@ -120,6 +120,7 @@ package src.ui {
                 item = items[i];
                 
                 mi = new MenuItemCostume();
+                mi.item = item;
                 mi.y = i * mi.height;
                 
                 mi.setLogo(item.item_name);
@@ -140,7 +141,7 @@ package src.ui {
                     mi.deactivate();
                     
                     // search available placeholder
-                    for ( j = 0; j < placeHoldersCount; j++ ) {
+                    for ( j = placeHoldersCount-1; j >= 0 ; j-- ) {
                         inputMenuItem = placeHolders[j];
                         if ( inputMenuItem.isInput && !inputMenuItem.logo && mi.isSpell == inputMenuItem.isSpell ) {
                             inputMenuItem.addLogo(mi.logo_copy);
@@ -201,7 +202,14 @@ package src.ui {
                 while (i--) {
                     itemHolder = MenuItemCostume(placeHolders[i]);
                     if ( itemHolder.hitTestPoint(mouseX, mouseY) ) {
-                        trace(i);
+                        i = menuItems.length;
+                        while (i--) {
+                            if ( MenuItemCostume(menuItems[i]).logo_copy == dragTarget ) break;
+                        }
+                        
+                        if ( MenuItemCostume(menuItems[i]).isSpell != itemHolder.isSpell ) break;
+                        menuItems[i].item.onPlayer = true;
+                        
                         if ( itemHolder.logo ) {
                             itemHolder.logo_copy = ItemLogoCostume(dragTarget);
                             dragTarget = itemHolder.logo;
@@ -226,6 +234,7 @@ package src.ui {
                         removeChild(dragTarget);
                         dragTarget = null;
                         itemHolder.activate();
+                        itemHolder.item.onPlayer = false;
                     }
                 }
             }
@@ -251,22 +260,20 @@ package src.ui {
         override protected function clickListener(e:MouseEvent):void {
             super.clickListener(e);
             var i:int, menuItem:MenuItemCostume;
+            var item:InventoryItem;
+            var inv:Array;
             
             var name:String = DisplayObject(e.target).parent.name;
             switch ( name ) {
                 case GOTO_TITLE_BTN:
-                    i = placeHolders.length;
+                    inv = user.inventory;
+                    i = inv.length;
                     while ( i-- ) {
-                        menuItem = placeHolders[i];
-                        if ( menuItem.isSpell ) {
-                            if ( menuItem.logo ) {
-                                parentMenu.switchToMenu(parentMenu.TITLE_MENU);
-                                return;
-                            }
+                        item = inv[i];
+                        if ( item.isSpell && item.onPlayer ) {
+                            parentMenu.switchToMenu(parentMenu.TITLE_MENU);
                         }
                     }
-                    
-                    trace("nope");
                     break;
             }
         }

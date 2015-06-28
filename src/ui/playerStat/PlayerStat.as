@@ -1,5 +1,8 @@
 ﻿package src.ui.playerStat {
     
+    import fl.motion.easing.Bounce;
+    import fl.motion.easing.Elastic;
+    import fl.transitions.Tween;
     import flash.display.MovieClip;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
@@ -11,11 +14,14 @@
     import src.ui.playerStat.StatPoint;
     import src.bullets.*;
     import flash.utils.*;
+    import src.util.TweenPool;
     
     public class PlayerStat extends AbstractMenu {
         public static const FIRE_BTN_ID:int = 1;
         public static const SPELL_LEFT_BTN_ID:int = 2;
         public static const SPELL_RIGHT_BTN_ID:int = 3;
+        public static const HEALTH_BAR_ID:int = 4;
+        public static const MANA_BAR_ID:int = 5;
         
         public static const BTN_FLASH_STATE:String = "_flash";
         
@@ -23,8 +29,8 @@
         public var current_theme = 1;
         var level_map:Map;
         
-        private var healthBar:Bar;
-        private var manaBar:Bar;
+        private var healthBar:StatDescriteBar;
+        private var manaBar:StatDescriteBar;
         
         private static const HEARTS_START_X:Number = 90;
         private static const HEARTS_START_Y:Number = 29;
@@ -47,12 +53,12 @@
             level_map._player = game.player;
             addChild (level_map);
             
-            healthBar = new Bar(StatHeart as Class, "HEALTH");
+            healthBar = new StatDescriteBar(game.player, PlayerStatCostume.HEART_TYPE, "HEALTH");
             healthBar.x = 90;
             healthBar.y = 29;
             addChild(healthBar);
             
-            manaBar = new Bar(StatMana as Class, "MANA");
+            manaBar = new StatDescriteBar(game.player, PlayerStatCostume.MANA_TYPE, "MANA");
             manaBar.x = 90;
             manaBar.y = 67;
             manaBar.pointsLeftPadding = 7;
@@ -94,6 +100,16 @@
             spell_change_right.x = SPELL_MENU_CENTER_X + spell_place.width/2 + spell_change_right.width/2;
             spell_change_right.y = SPELL_MENU_CENTER_Y;
             addChild(spell_change_right);
+            
+            spell_logo = new ItemLogoCostume();
+            spell_logo.setType(ItemLogoCostume.SPELL_SPARK);
+            spell_logo.x = SPELL_MENU_CENTER_X - spell_logo.width / 2;
+            spell_logo.y = SPELL_MENU_CENTER_Y - spell_logo.height / 2;
+            addChild(spell_logo);
+        }
+        
+        public function setSpellLogo(spellType_:String):void {
+            spell_logo.setType(spellType_);
         }
         
         public function setCurrentSpell(spellName:String):void {
@@ -106,8 +122,8 @@
             return instance;
         }
         
-        public function flashButtonByID(btnID:int):void {
-            switch (btnID) {
+        public function flashElementByID(elemID:int):void {
+            switch (elemID) {
                 case FIRE_BTN_ID:
                     spell_place.setState(BTN_FLASH_STATE);
                 break;
@@ -116,6 +132,14 @@
                 break;
                 case SPELL_RIGHT_BTN_ID:
                     spell_change_right.setState(BTN_FLASH_STATE);
+                break;
+                case HEALTH_BAR_ID:
+                    healthBar.updatePoints();
+                    var tween:Tween = TweenPool.getTween(healthBar,"alpha", Elastic.easeOut, 0, 1, 40);
+                break;
+                case MANA_BAR_ID:
+                    manaBar.updatePoints();
+                    var tween:Tween = TweenPool.getTween(manaBar,"alpha", Elastic.easeOut, 0, 1, 40);
                 break;
             }
         }
