@@ -124,7 +124,6 @@
             }
             
             lockSpawn();
-            trace(_bullets.length);
             return bullet;
         }
         

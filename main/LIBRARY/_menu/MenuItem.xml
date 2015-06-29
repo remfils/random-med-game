@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.ui.MenuItem" lastModified="1435159445" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1435321956" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="MenuItem" currentFrame="21">
+    <DOMTimeline name="MenuItem" currentFrame="2">
       <layers>
         <DOMLayer name="label" color="#4F80FF" autoNamed="false">
           <frames>
@@ -24,7 +24,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#808080" current="true" isSelected="true">
+        <DOMLayer name="Layer 6" color="#808080">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
@@ -42,7 +42,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="block_curtain_mc" centerPoint3DX="8.95" centerPoint3DY="9.15" isVisible="false">
                   <matrix>
-                    <Matrix a="4.92835998535156" d="4.38668823242188" tx="44.9" ty="40.25"/>
+                    <Matrix a="4.9283447265625" d="4.38668823242188" tx="44.9" ty="40.25"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -129,11 +129,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="item" color="#FF800A" autoNamed="false" layerType="guide">
+        <DOMLayer name="item" color="#FF800A" current="true" isSelected="true" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" duration="80" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_spells/ItemLogo" centerPoint3DX="46.75" centerPoint3DY="46.75">
+                <DOMSymbolInstance libraryItemName="_GUI/_spells/ItemLogoCostume" centerPoint3DX="46.75" centerPoint3DY="46.75">
                   <matrix>
                     <Matrix tx="27.9" ty="17"/>
                   </matrix>

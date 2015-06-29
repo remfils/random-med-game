@@ -7,22 +7,17 @@ package src.objects {
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.geom.Point;
+    import src.costumes.ObjectCostume;
     import src.Game;
     import src.interfaces.SolidBody;
     import src.interfaces.Updatable;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class Obstacle extends AbstractObject {
         
-        public static const STAND_STATE:int = 1;
-        public static const DESTROY_STATE:int = 2;
-        private static const STATE_LABELS:Array = new Array("", "_stand", "_destroy");
-        
-        public static const COLLIDER_NAME:String = "obst_collider";
+        public static const NORMAL_STATE:String = "_stand";
+        public static const DESTROY_STATE:String = "_destroy";
         
         public static var fixtureDef:b2FixtureDef = new b2FixtureDef();
         fixtureDef.density = 6;
@@ -39,6 +34,25 @@ package src.objects {
             
         }
         
+        public function readXMLParams(paramsXML:XML):void {
+            costume.readXMLParams(paramsXML);
+            var type:String = paramsXML.name();
+            
+            switch (type) {
+                case ObjectCostume.VASE_TYPE:
+                    extruded = true;
+                break;
+                case ObjectCostume.BARELL_TYPE:
+                    extruded = true;
+                case ObjectCostume.BOX_TYPE:
+                    is_static = false;
+                    active = true;
+                    has_drop = true;
+                default:
+            }
+        }
+        
+        // D!
         public function setType(name_:String):void {
             costume.name = name_;
             
@@ -55,7 +69,7 @@ package src.objects {
                 default:
             }
             costume.setType(name_);
-            setState(STAND_STATE);
+            setState(NORMAL_STATE);
         }
         
         private function setState(state_:int):void {
@@ -81,6 +95,10 @@ package src.objects {
             
             x = body.GetPosition().x * Game.WORLD_SCALE;
             y = body.GetPosition().y * Game.WORLD_SCALE;
+        }
+        
+        public function breakObject():void {
+            // code to break obj
         }
         
         override public function destroy():void {

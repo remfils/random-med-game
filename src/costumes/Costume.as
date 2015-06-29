@@ -31,6 +31,21 @@ package src.costumes {
                 removeChild(getChildAt(numChildren-1));
             }
         }
+        
+        public function readXMLParams(paramsXML:XML):void {
+            setType(paramsXML.name());
+            
+            x = paramsXML.@x;
+            y = paramsXML.@y;
+            
+            if ( paramsXML.@flip == "true" ) {
+                scaleX *= -1;
+            }
+            
+            if ( paramsXML.@rotation ) {
+                rotation = paramsXML.@rotation;
+            }
+        }
     }
 
 }

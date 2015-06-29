@@ -1,18 +1,26 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/SpellSelecButton" itemID="54133284-000000c8" lastModified="1410549341">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/_PlayerStatCostume/SpellSelecButton" itemID="54133284-000000c8" symbolType="graphic" lastModified="1435326596">
   <timeline>
-    <DOMTimeline name="SpellSelecButton" currentFrame="1">
+    <DOMTimeline name="SpellSelecButton">
       <layers>
-        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="5" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();]]></script>
-              </Actionscript>
-              <elements/>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#217200"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!51 -53|-2 0!-2 0|51 53!51 53|26 77!26 77|-51 0!-51 0|26 -77!26 -77|51 -53"/>
+                  </edges>
+                </DOMShape>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4FFF4F">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

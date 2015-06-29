@@ -18,7 +18,7 @@ package src.util {
 	import flash.events.Event;
 	import flash.utils.*;
     import src.objects.AbstractObject;
-    import src.objects.DecorObject;
+    import src.costumes.DecorCostume;
     import src.objects.Door;
 	import src.objects.Lever;
 	import src.enemy.FlyingEnemy;
@@ -111,36 +111,18 @@ package src.util {
         }
         
         private function addDecorationsToRoom(cRoom:Room, wallDecorationsXML:XMLList):void {
-            return;
             for each (var decorationNode:XML in wallDecorationsXML) {
-                var decorObj:DecorObject = new DecorObject();
-                decorObj.setType(decorationNode.name())
-                
-                decorObj.x = decorationNode.@x;
-                decorObj.y = decorationNode.@y;
-                
-                if ( decorationNode.@flip == "true" ) {
-                    decorObj.scaleX *= -1;
-                }
-                
-                if ( decorationNode.@rotation ) {
-                    decorObj.rotation = decorationNode.@rotation;
-                }
-                
+                var decorObj:DecorCostume = new DecorCostume();
+                decorObj.readXMLParams(decorationNode);
                 cRoom.addChild(decorObj);
             }
         }
         
         private function addObstaclesToRoom (cRoom:Room, obstaclesXMLList:XMLList):void {
-            return;
             var obst:Obstacle;
             for each (var obstacle:XML in obstaclesXMLList) {
                 obst = new Obstacle();
-                obst.setType(obstacle.name());
-                
-                obstSprite.x = obstacle.@x;
-                obstSprite.y = obstacle.@y;
-                
+                obst.costume.readXMLParams(obstacle);
                 cRoom.addObstacle(obstSprite);
             }
         }

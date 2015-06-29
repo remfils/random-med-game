@@ -20,7 +20,6 @@ package src.util {
         private static var delayedDropObject:DropObject
         
         public static function dropFrom(dropObjects:Array):DropObject {
-            trace(dropObjects.length);
             var i:int = dropObjects.length,
                 p:Number = 0,
                 randomP:Number = Math.random();

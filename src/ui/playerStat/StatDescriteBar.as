@@ -57,8 +57,7 @@
         public function updatePoints():void {
             var health:Number = player[stat] / 2.0 - 1,
                 i:int = points.length;
-            
-            trace(health);
+
             while ( i -- ) {
                 if ( i <= health ) {
                     PlayerStatCostume(points[i]).setState(NORMAL_STATE);

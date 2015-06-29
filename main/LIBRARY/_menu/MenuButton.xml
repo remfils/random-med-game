@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuButton" itemID="5540a554-00000187" linkageExportForAS="true" linkageClassName="src.ui.MenuButton" lastModified="1430408175" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuButton" itemID="5540a554-00000187" linkageExportForAS="true" linkageClassName="src.costumes.MenuButtonCostume" lastModified="1435324186" lastUniqueIdentifier="2">
   <timeline>
-    <DOMTimeline name="MenuButton" currentFrame="104">
+    <DOMTimeline name="MenuButton" currentFrame="87">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" name="level_btn" labelType="name" keyMode="9728">
               <elements/>
@@ -43,14 +43,14 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!291 -359|291 378!291 378|-310 378!-310 378|-310 -359!-310 -359|291 -359"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!291 378|-310 378!-310 378|-310 -359!-310 -359|291 -359!291 -359|291 378"/>
                   </edges>
                 </DOMShape>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="текст" color="#FF800A" autoNamed="false">
+        <DOMLayer name="текст" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="39" keyMode="9728">
               <elements/>

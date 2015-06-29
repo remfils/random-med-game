@@ -23,7 +23,6 @@ package src.costumes {
             super.setState(state_);
             if ( state_ == LEVEL_SELECT_BTN ) {
                 level_name = TextField(getChildByName("level_name"));
-                trace(level_name);
             }
         }
     }

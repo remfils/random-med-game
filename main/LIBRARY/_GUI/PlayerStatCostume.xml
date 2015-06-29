@@ -1,0 +1,167 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1435416480" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="PlayerStatCostume" currentFrame="71">
+      <layers>
+        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" name="spell_change" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" duration="19" name="spell_change_flash" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="33" duration="14" name="spell_place" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="47" duration="14" name="spell_place_flash" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" duration="10" name="heart" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="71" duration="10" name="heart_half" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="81" duration="13" name="heart_empty" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="94" duration="7" name="mana" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="101" duration="11" name="mana_half" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="112" duration="51" name="mana_empty" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" duration="9" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" duration="24" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[gotoAndStop("spell_change");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="47" duration="9" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="56" duration="107" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[gotoAndStop("spell_place");]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/SpellSelecButton" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="19" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/SpellSelecButton" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="33" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/SpellMenu" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="47" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/SpellMenu" selected="true" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="61" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_hearts/stat_heart" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="71" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_hearts/stat_heart" symbolType="graphic" firstFrame="9" loop="single frame">
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="81" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_hearts/stat_heart" symbolType="graphic" firstFrame="17" loop="single frame">
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="94" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_mana/stat_mana" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point x="-0.45" y="-0.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="101" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_mana/stat_mana" symbolType="graphic" firstFrame="7" loop="single frame">
+                  <transformationPoint>
+                    <Point x="-0.45" y="-0.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="112" duration="51" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_mana/stat_mana" symbolType="graphic" firstFrame="14" loop="single frame">
+                  <transformationPoint>
+                    <Point x="-0.45" y="-0.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
