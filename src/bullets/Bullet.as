@@ -75,19 +75,10 @@
         }
         
         public function update():void {
-            if ( !body ) return;
-            
-            // write better
-            if ( bodyHidden && costume.isPlaying ) {
-                deactivate();
-            }
-            if (!active) {
-                updateActiveState();
-                return;
-            }
+            if ( !body || !active ) return;
             
             if ( bodyHidden ) {
-                body.SetPosition(new b2Vec2(-100 / gws, -100 / gws));
+                if (active && !costume.visible) deactivate();
                 return;
             }
             
@@ -95,13 +86,20 @@
             y = body.GetPosition().y * gws;
         }
         
+        public function setState(state:String):void {
+            costume.setState(DESTOY_STATE);
+        }
+        
+        // D!
         public function safeCollide():void {
+            costume.setState(DESTOY_STATE);
             detachBody();
-            //gotoAndPlay("destroy");
         }
         
         public function detachBody():void {
             bodyHidden = true;
+            body.SetActive(!bodyHidden);
+            //body.SetPosition(new b2Vec2( -100 / gws, -100 / gws));
         }
         
         public function activate():void {
@@ -112,12 +110,13 @@
         
         public function deactivate():void {
             active = false;
+            costume.stop();
             updateActiveState();
         }
         
         private function updateActiveState():void {
-            body.SetAwake(active);
             costume.visible = active;
+            body.SetActive(active);
         }
         
         public function isActive():Boolean {

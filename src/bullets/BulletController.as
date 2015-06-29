@@ -34,6 +34,7 @@
         private var currentSpellIndex:int = 0;
         
         private static const allSpells:Vector.<BulletDef> = new <BulletDef>[
+            null,
             new BulletDef(BulletCostume.SPARK_TYPE, 50, 10, 0, 500),
             new BulletDef(BulletCostume.POWER_SPELL_TYPE, 100, 10, 1, 500),
             new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 3, 1000)
@@ -41,8 +42,8 @@
 
         public function BulletController(stage:DisplayObjectContainer) {
             this.stage = stage;
-            bullet_type = BulletCostume.SPARK_TYPE;
             
+            currentSpellIndex = 0;
             currentSpellDef = allSpells[game.player.spells[currentSpellIndex]];
             
             bulletDelay = new Timer(10);
@@ -123,7 +124,7 @@
             }
             
             lockSpawn();
-            
+            trace(_bullets.length);
             return bullet;
         }
         
@@ -141,17 +142,8 @@
         }
         
         public function hideBullet (B:Bullet) {
-            B.safeCollide();
-            //B.moveTo(100, 100);
-            //B.disableMovement();
-            /*var i = _bullets.length;
-            while (i--) {
-                if ( B == _bullets[i] ) {
-                    _bullets[i].disableMovement();
-                    //_bullets[i].gotoAndPlay("destroy");
-                    return;
-                }
-            }*/
+            B.detachBody();
+            B.setState(Bullet.DESTOY_STATE);
         }
         
         public function nextSpell():void {

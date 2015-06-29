@@ -274,21 +274,48 @@ package src.util {
             for ( var i in rooms ) {
                 for ( var j in rooms[i] ) {
                     if ( j < rooms[i].length-1 && rooms[i][j+1] ){
-                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_DOWN);
+                        connectRooms(Room(rooms[i][j]), Room(rooms[i][j+1]), Room.DOOR_DIRECTION_DOWN);
                     }
                     if ( j > 0 && rooms[i][j-1] ){
-                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_UP);
+                        connectRooms(Room(rooms[i][j]), Room(rooms[i][j-1]), Room.DOOR_DIRECTION_UP);
                     }
                     if ( i > 0 && rooms[i-1][j] ){
-                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_LEFT);
+                        connectRooms(Room(rooms[i][j]), Room(rooms[i-1][j]), Room.DOOR_DIRECTION_LEFT);
                     }
                     if ( i < rooms.length-1 && rooms[i+1][j] ){
-                        rooms[i][j].makeDoorWay(Room.DOOR_DIRECTION_RIGHT);
+                        connectRooms(Room(rooms[i][j]), Room(rooms[i+1][j]), Room.DOOR_DIRECTION_RIGHT);
                     }
                 }
             }
             
             return rooms;
+        }
+        
+        private function connectRooms(roomA:Room, roomB:Room, dir:int):void {
+            var door:Door = roomA.getDoorByDirection(dir);
+            door.show();
+            
+            switch (dir) {
+                case Room.DOOR_DIRECTION_DOWN:
+                    dir = Room.DOOR_DIRECTION_UP;
+                break;
+                case Room.DOOR_DIRECTION_UP:
+                    dir = Room.DOOR_DIRECTION_DOWN;
+                break;
+                case Room.DOOR_DIRECTION_LEFT:
+                    dir = Room.DOOR_DIRECTION_RIGHT;
+                break;
+                case Room.DOOR_DIRECTION_RIGHT:
+                    dir = Room.DOOR_DIRECTION_LEFT;
+                break;
+            }
+            
+            door = roomB.getDoorByDirection(dir);
+            door.show();
+            
+            if (roomA.isSecret) {
+                door.setType(Door.DOOR_SECRET_TYPE);
+            }
         }
         
         private function tintObjects():void {

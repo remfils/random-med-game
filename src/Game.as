@@ -91,10 +91,10 @@ package src {
         }
         
         public function readUserInventory(userInventory:Array):void {
-            var i:int = userInventory.length;
+            var i:int, invLength:int = userInventory.length;
             var item:InventoryItem;
             
-            while (i--) {
+            for (i = 0; i < invLength; i++) {
                 item = InventoryItem(userInventory[i]);
                 if (item.onPlayer) {
                     if (item.isSpell ) {
@@ -315,6 +315,7 @@ package src {
             var destination:Point;
             var directionB:int;
             var destination:Point = new Point();
+            var roomWasSecret:Boolean = cRoom.isSecret;
             
             glassPanel.addChild(player.costume);
             
@@ -351,15 +352,10 @@ package src {
             destination.x += doorB.x;
             destination.y += doorB.y;
             
-            if ( cRoom.isSecret ) SECRET_ROOM_FOUND = true;
-            
-            var shouldUnlockDoorInFuture:Boolean = cRoom.isSecret;
-            
-            if ( cRoom.isSecret || shouldUnlockDoorInFuture ) {
-                // direction
-                var door:Door = cRoom.getDoorByDirection(1);
-                door.specialLock = false;
-                door.unlock();
+            if ( (cRoom.isSecret || roomWasSecret ) && doorB.specialLock ) {
+                SECRET_ROOM_FOUND = true;
+                doorB.specialLock = false;
+                doorB.unlock();
             }
             
             var tweenX:Tween = new Tween (levelMap, "x",Strong.easeInOut, levelMap.x, -cRoom.x, 18);

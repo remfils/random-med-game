@@ -279,11 +279,10 @@
             return new Array();
         }
         
-        //direc door
+        // D!
         public function makeDoorWay (direction:int) {
             var door:Door = getDoorByDirection(direction);
             door.show();
-            //door.unlock();
         }
         
         public function getDoorByDirection(direction:int):Door {
@@ -365,6 +364,9 @@
                 case "secret_room":
                     gotoAndStop("secret_room");
                     isSecret = true;
+                    for each (var door:Door in _doors) {
+                        door.setType(Door.DOOR_SECRET_TYPE);
+                    }
                 break;
                 case "end_room" :
                     gotoAndStop("end_room");

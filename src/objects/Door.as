@@ -105,6 +105,8 @@
             isSecret = type == DOOR_SECRET_TYPE;
             if ( isSecret ) {
                 costume.setType(ObjectCostume.DOOR_SECRET_TYPE);
+                specialLock = true;
+                instantLock();
             }
             
             if ( type == DOOR_START_TYPE ) {
@@ -125,7 +127,7 @@
             
             costume.setState(LOCKED_STATE);
             
-            body.SetActive(true);
+            if (body) body.SetActive(true);
         }
 
         public function unlock () {

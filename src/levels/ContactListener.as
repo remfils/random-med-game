@@ -17,13 +17,10 @@ package src.levels {
     import src.objects.Door;
     import src.objects.DropObject;
     import src.Player;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class ContactListener extends b2ContactListener {
         private var game:Game;
-        private static const MAX_DOOR_DAMAGE:int = 150;
+        private static const MAX_DOOR_DAMAGE:int = 80;
         
         public function ContactListener(game:Game) {
             this.game = game;
@@ -94,7 +91,8 @@ package src.levels {
                     Breakable(userData.object).breakObject();
                 }
             }
-            else game.bulletController.hideBullet(bullet);
+            
+            game.bulletController.hideBullet(bullet);
         }
         
         private function asymetricEnemyBulletCheck(bullet:Projectile, userData:Object):void {
