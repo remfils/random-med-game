@@ -50,23 +50,19 @@
             speed.normalize(1);
         }
         
-        override public function requestBodyAt(world:b2World):void {
-            var collider:DisplayObject = costume.getCollider();
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
             
-            var fixtureDef:b2FixtureDef = new b2FixtureDef();
-            fixtureDef.userData = { "object": this };
+            var fixtureDef:b2FixtureDef = createBodyReq.fixtureDef;
             fixtureDef.density = 1;
             fixtureDef.friction = 0;
             fixtureDef.restitution = 0;
             
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
-            bodyCreateRequest.setAsDynamicBody(fixtureDef);
+            createBodyReq.setAsDynamicBody();
             
-            bodyCreateRequest.setBodyPosition(new Point(x, y));
+            createBodyReq.velocity = new b2Vec2 ( speed.x * bulletDef.speed, speed.y * bulletDef.speed );
             
-            bodyCreateRequest.velocity = new b2Vec2 ( speed.x * bulletDef.speed, speed.y * bulletDef.speed );
-            
-            game.bodyCreator.add(bodyCreateRequest);
+            return createBodyReq;
         }
         
         public function setSpeedDirection(dir_x:Number, dir_y:Number):void {

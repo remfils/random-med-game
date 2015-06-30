@@ -42,14 +42,10 @@ package src.enemy {
         override public function makeHit(damage:Number):void {
         }
         
-        override public function requestBodyAt(world:b2World):void {
-            cRoom = game.cRoom;
-            var collider:DisplayObject = costume.getCollider();
-            
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
-            createBodyRequest.setAsDynamicSensor();
-            
-            game.bodyCreator.add(createBodyRequest);
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
+            createBodyReq.setAsDynamicSensor();
+            return createBodyReq;
         }
         
         /*override public function createBodyFromCollider(world:b2World):b2Body {

@@ -31,24 +31,26 @@ package src.objects {
         public var active:Boolean = false;
         
         public function Obstacle() {
-            
+            costume = new ObjectCostume();
         }
         
-        public function readXMLParams(paramsXML:XML):void {
-            costume.readXMLParams(paramsXML);
-            var type:String = paramsXML.name();
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            costume.setState(NORMAL_STATE);
             
+            var type:String = paramsXML.name();
             switch (type) {
                 case ObjectCostume.VASE_TYPE:
                     extruded = true;
                 break;
+                case ObjectCostume.STONE_TYPE:
+                    is_static = true;
+                break;
                 case ObjectCostume.BARELL_TYPE:
                     extruded = true;
                 case ObjectCostume.BOX_TYPE:
-                    is_static = false;
                     active = true;
                     has_drop = true;
-                default:
             }
         }
         
@@ -69,7 +71,7 @@ package src.objects {
                 default:
             }
             costume.setType(name_);
-            setState(NORMAL_STATE);
+            //setState(NORMAL_STATE);
         }
         
         private function setState(state_:int):void {
@@ -77,17 +79,16 @@ package src.objects {
             //gotoAndStop(name + STATE_LABELS[state]);
         }
         
-        override public function requestBodyAt(world:b2World):void {
-            var collider:DisplayObject = costume.getCollider();
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
             
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
+            createBodyReq.fixtureDef.density = 6;
+            createBodyReq.fixtureDef.friction = 0.6;
             
-            if ( is_static ) bodyCreateRequest.setAsStaticBody();
-            else bodyCreateRequest.setAsDynamicBody(fixtureDef);
+            if ( is_static ) createBodyReq.setAsStaticBody();
+            else createBodyReq.setAsDynamicBody();
             
-            bodyCreateRequest.setBodyPosition( new Point(x + collider.x, y + collider.y) );
-            
-            game.bodyCreator.add(bodyCreateRequest);
+            return createBodyReq;
         }
         
         public function update():void {
@@ -98,13 +99,15 @@ package src.objects {
         }
         
         public function breakObject():void {
-            // code to break obj
+            active = false;
+            body.SetActive(active);
+            costume.setState(DESTROY_STATE);
         }
         
         override public function destroy():void {
             super.destroy();
             //if ( has_drop ) ItemDropper.dropSmallFromObject(this);
-            setState(DESTROY_STATE);
+            //setState(DESTROY_STATE);
         }
         
         public function isActive():Boolean {

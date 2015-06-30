@@ -73,19 +73,17 @@ package src.objects {
             }
         }
         
-        override public function requestBodyAt(world:b2World):void {
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
             
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, _collider, this);
-            
-            var fixtureDef:b2FixtureDef = new b2FixtureDef();
+            var fixtureDef:b2FixtureDef = createBodyReq.fixtureDef;
             fixtureDef.density = 0.3;
             fixtureDef.friction = 1;
-            createBodyRequest.setAsDynamicBody(fixtureDef);
+            createBodyReq.setAsDynamicBody();
             
-            createBodyRequest.bodyDef.linearDamping = 5;
-            createBodyRequest.setBodyPosition( new Point(x + _collider.x, y + _collider.y) );
+            createBodyReq.bodyDef.linearDamping = 5;
             
-            game.bodyCreator.add(createBodyRequest);
+            return createBodyReq;
         }
         
         override public function setTint(color:uint):void {

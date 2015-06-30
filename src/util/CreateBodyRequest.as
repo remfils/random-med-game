@@ -52,29 +52,18 @@ package src.util {
             bodyDef.type = b2Body.b2_staticBody;
         }
         
-        public function setAsDynamicBody(fixtureDef:b2FixtureDef):void {
-            setAsStaticBody();
-            
-            this.fixtureDef.density = fixtureDef.density;
-            
-            this.fixtureDef.friction = fixtureDef.friction;
-            this.fixtureDef.isSensor = fixtureDef.isSensor;
-            this.fixtureDef.restitution = fixtureDef.restitution;
-            this.fixtureDef.userData = fixtureDef.userData;
-            
+        public function setAsDynamicBody():void {
             bodyDef.type = b2Body.b2_dynamicBody;
             bodyDef.fixedRotation = true;
         }
         
         public function setAsStaticSensor():void {
             setAsStaticBody();
-            
             fixtureDef.isSensor = true;
         }
         
         public function setAsDynamicSensor():void {
             setAsStaticSensor();
-            
             bodyDef.type = b2Body.b2_dynamicBody;
         }
         

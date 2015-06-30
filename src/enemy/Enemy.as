@@ -31,6 +31,7 @@
         protected var health:Number = MAX_HEALTH;
         public var damage:Number = 1;
         public var exp:Number = 30;
+        protected var enemy_mass:Number = 0.3;
         
         protected var isFlip:Boolean = true;
         
@@ -41,16 +42,16 @@
         
         private static var hitColor:Color = new Color();
         
-        protected var enemyFixtureDef:b2FixtureDef;
+        protected var enemyFixtureDef:b2FixtureDef; // D!
 
         public function Enemy():void {
             super();
             
             player = Player.getInstance();
             
-            enemyFixtureDef = new b2FixtureDef();
+            /*enemyFixtureDef = new b2FixtureDef();
             enemyFixtureDef.density = 0.3;
-            enemyFixtureDef.userData = { "object": this };
+            enemyFixtureDef.userData = { "object": this };*/
             
             //costume = new EnemyCostume();
             
@@ -113,13 +114,13 @@
             }
         }
         
-        override public function requestBodyAt(world:b2World):void {
-            var collider:DisplayObject = costume.getCollider();
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
             
-            var bodyCreateRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
-            bodyCreateRequest.setAsDynamicBody(enemyFixtureDef);
+            var fixtureDef:b2FixtureDef = createBodyReq.fixtureDef;
+            fixtureDef.density = enemy_mass;
             
-            game.bodyCreator.add(bodyCreateRequest);
+            return createBodyReq;
         }
         
         /*override public function createBodyFromCollider(world:b2World):b2Body {

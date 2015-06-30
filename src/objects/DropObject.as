@@ -25,13 +25,14 @@ package src.objects {
             //gotoAndPlay("drop");
         }
         
-        override public function requestBodyAt(world:b2World):void {
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
             /*var collider:Collider = getChildByName("collider001") as Collider;
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
             createBodyRequest.setAsDynamicSensor();
             
             game.bodyCreator.add(createBodyRequest);*/
+            return null;
         }
         
         // delete me

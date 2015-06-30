@@ -21,11 +21,10 @@ package src.objects {
             game.finishLevel();
         }
         
-        override public function requestBodyAt(world:b2World):void {
-            var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
-            createBodyRequest.setAsStaticSensor();
-            
-            game.bodyCreator.add(createBodyRequest);
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
+            createBodyReq.setAsStaticSensor();
+            return createBodyReq;
         }
         
         /*override public function createBodyFromCollider(world:b2World):b2Body {

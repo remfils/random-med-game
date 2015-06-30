@@ -35,7 +35,7 @@ package src.objects {
             return costume.y;
         }
         
-        public function requestBodyAt(world:b2World):void {
+        public function requestBodyAt(world:b2World):CreateBodyRequest {
             var collider:DisplayObject = costume.getCollider();
             
             var createBodyRequest:CreateBodyRequest = new CreateBodyRequest(world, collider, this);
@@ -49,6 +49,7 @@ package src.objects {
                         y + collider.y * cos_rotation + collider.x * sin_rotation ) );
             
             game.bodyCreator.add(createBodyRequest);
+            return createBodyRequest;
         }
         
         public function setPosition(point:Point):void {
@@ -74,6 +75,10 @@ package src.objects {
             var col:Color = new Color();
             col.setTint(color, 0.3);
             costume.transform.colorTransform = col;
+        }
+        
+        public function readXMLParams(paramsXML:XML):void {
+            costume.readXMLParams(paramsXML);
         }
         
     }

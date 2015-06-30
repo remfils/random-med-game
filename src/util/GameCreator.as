@@ -122,8 +122,8 @@ package src.util {
             var obst:Obstacle;
             for each (var obstacle:XML in obstaclesXMLList) {
                 obst = new Obstacle();
-                obst.costume.readXMLParams(obstacle);
-                cRoom.addObstacle(obstSprite);
+                obst.readXMLParams(obstacle);
+                cRoom.addObstacle(obst);
             }
         }
         

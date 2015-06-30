@@ -16,6 +16,7 @@
     public class BulletController extends AbstractManager {
         private var _bullets:Array = new Array();
         private var _bulletsToRemove:Array = new Array();
+        private var _bulletToHide:Vector.<Bullet> = new Vector.<Bullet>();
         private var fire:Boolean;
         
         public var bullet_type:String;
@@ -75,6 +76,12 @@
             var i = _bullets.length;
             while ( i-- ) {
                 _bullets[i].update();
+            }
+            
+            while (i = _bulletToHide.length) {
+                _bulletToHide[i-1].detachBody();
+                _bulletToHide[i-1].setState(Bullet.DESTOY_STATE);
+                _bulletToHide.pop();
             }
             
             i = _bulletsToRemove.length;
@@ -141,8 +148,7 @@
         }
         
         public function hideBullet (B:Bullet) {
-            B.detachBody();
-            B.setState(Bullet.DESTOY_STATE);
+            _bulletToHide.push(B);
         }
         
         public function nextSpell():void {

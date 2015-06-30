@@ -16,6 +16,7 @@ package src.levels {
     import src.interfaces.Breakable;
     import src.objects.Door;
     import src.objects.DropObject;
+    import src.objects.Obstacle;
     import src.Player;
 
     public class ContactListener extends b2ContactListener {
@@ -87,8 +88,8 @@ package src.levels {
                     Enemy(userData.object).makeHit(bullet.bulletDef.damage);
                 }
                 
-                if ( userData.object is Breakable && bullet.bulletDef.damage >= MAX_DOOR_DAMAGE ) {
-                    Breakable(userData.object).breakObject();
+                if ( userData.object is Obstacle && bullet.bulletDef.damage >= MAX_DOOR_DAMAGE ) {
+                    Obstacle(userData.object).breakObject();
                 }
             }
             
