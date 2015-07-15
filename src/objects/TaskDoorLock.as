@@ -8,30 +8,30 @@ package src.objects {
      * ...
      * @author vlad
      */
-    public class DoorLock extends TaskObject {
+    public class TaskDoorLock extends TaskObject {
         public var _activeArea:Collider;
         public var _collider:Collider;
         private var playerCollider:Collider;
         
-        public function DoorLock() {
+        public function TaskDoorLock() {
             super();
             //playerCollider = game.player.getColliderBad();
             
             _activeArea = costume.getChildByName("activeArea") as Collider;
             _collider = costume.getChildByName("collider001") as Collider;
             
-            active = true;
+            is_active = true;
         }
         
         override public function update():void {
-            if ( !active ) return;
+            if ( !is_active ) return;
             
             if ( _collider.checkObjectCollision(playerCollider) ) {
                 var holdObject:Object = Player.getInstance().holdObject;
                 
                 if ( holdObject ) {
-                    if ( holdObject is Key ) {
-                        id = Key(holdObject).id;
+                    if ( holdObject is TaskKey ) {
+                        id = TaskKey(holdObject).id;
                         costume.dispatchEvent(new Event("GUESS_EVENT"));
                     }
                 }
@@ -42,7 +42,7 @@ package src.objects {
             game.deleteManager.add(body);
             removePlayerKey();
             //gotoAndPlay("unlock");
-            game.cRoom.changeTaskObjectsToCoins(taskId);
+            game.cRoom.changeTaskObjectsToCoins(task_id);
         }
         
         public function removeCorpse():void {

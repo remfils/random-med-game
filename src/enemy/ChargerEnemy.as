@@ -1,10 +1,12 @@
 package src.enemy {
     import Box2D.Common.Math.b2Vec2;
+    import Box2D.Dynamics.b2World;
     import flash.geom.Point;
+    import src.util.CreateBodyRequest;
     
     public class ChargerEnemy extends Enemy {
-        public static const ATTACK_HORIZONTAL_STATE:String = "_attack_hor";
-        public static const ATTACK_VERTICAL_STATE:String = "_attack_vert";
+        public static const ATTACK_HORIZONTAL_STATE:String = "_charge_hor";
+        public static const ATTACK_VERTICAL_STATE:String = "_charge_vert";
         public static const WALK_HORIZONTAL_STATE:String = "_walk_hor";
         public static const WALK_VERTICAL_STATE:String = "_walk_vert";
         
@@ -20,6 +22,12 @@ package src.enemy {
             super();
             speed = new b2Vec2(SPEED, 0);
             agroDistance = 200;
+        }
+        
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createReq:CreateBodyRequest = super.requestBodyAt(world);
+            createReq.setAsDynamicBody();
+            return createReq;
         }
         
         override public function update():void {
@@ -55,7 +63,7 @@ package src.enemy {
         }
         
         override public function deactivate():void {
-            active = false;
+            is_active = false;
             stopCharge();
         }
         
@@ -74,18 +82,18 @@ package src.enemy {
             charge = true;
             
             if ( horizontal ) {
-                //gotoAndStop("attack_hor");
+                costume.setState(ATTACK_HORIZONTAL_STATE);
             }
             else {
-                //gotoAndStop("attack_vert");
+                costume.setState(ATTACK_VERTICAL_STATE);
             }
         }
         
         private function stopCharge():void {
             charge = false;
             
-            var animState:String = horizontal ? "walk_hor" : "walk_vert";
-            //gotoAndStop(animState);
+            if ( horizontal ) costume.setState(WALK_HORIZONTAL_STATE);
+            else costume.setState(WALK_VERTICAL_STATE);
         }
         
         private function changeSpeed(direction:b2Vec2, speedVal:Number):void {

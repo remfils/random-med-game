@@ -6,12 +6,15 @@
     import fl.motion.Color;
     import flash.display.MovieClip;
     import flash.geom.Point;
+    import src.costumes.Costume;
+    import src.costumes.DecorCostume;
     import src.costumes.ObjectCostume;
     import src.interfaces.Updatable;
     import src.Player;
     import src.util.Collider;
+    import src.util.CreateBodyRequest;
     
-    public class Door extends AbstractObject {
+    public class Door extends TaskObject {
         public static const LOCKED_STATE:String = "_lock";
         public static const UNLOCKED_STATE:String = "_unlock";
         
@@ -25,8 +28,6 @@
         public var goto:int;
         
         public var level:int;
-        
-        public var taskId:int = 0;
 
         public function Door() {
             costume = new ObjectCostume();
@@ -75,13 +76,8 @@
         }
         
         // gameobjct methods
-        public function isActive ():Boolean {
+        override public function isActive ():Boolean {
             return locked;
-        }
-        
-        // delete me maybe
-        public function update ():void {
-            
         }
         
         // DELeTE
@@ -96,7 +92,7 @@
         
         
         public function assignTask( taskId:int ):void {
-            this.taskId = taskId;
+            this.task_id = taskId;
             specialLock = true;
         }
         
@@ -111,7 +107,7 @@
             
             if ( type == DOOR_START_TYPE ) {
                 costume.setType(ObjectCostume.DOOR_START_TYPE);
-                costume.setState("");
+                costume.setState();
                 specialLock = true;
             }
         }
@@ -127,7 +123,7 @@
             
             costume.setState(LOCKED_STATE);
             
-            if (body) body.SetActive(true);
+            if (body) body.SetActive(locked);
         }
 
         public function unlock () {
@@ -135,7 +131,7 @@
                 costume.setState(UNLOCKED_STATE);
                 
                 locked = false;
-                body.SetActive(false);
+                body.SetActive(locked);
             }
         }
         
@@ -145,6 +141,20 @@
         
         public function show () {
             costume.visible = true;
+        }
+        
+        override public function readXMLParams(paramsXML:XML):void {
+            var color:String = paramsXML.@color;
+            if (color) createColorObject(color);
+            
+            task_id = paramsXML.@task_id;
+        }
+        
+        override public function createColorObject(color:String):DecorCostume {
+            var costume:DecorCostume = super.createColorObject(color);
+            costume.x = -42;
+            costume.y = 1;
+            return costume;
         }
         
         override public function setTint(color:uint):void {

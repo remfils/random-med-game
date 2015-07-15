@@ -1,31 +1,22 @@
 package src.util {
-    import fl.motion.Color;
-    import flash.display.Sprite;
-    import flash.geom.Point;
-    import flash.text.StaticText;
-    import src.bullets.BulletDef;
+    import flash.utils.*;
+    import src.costumes.CostumeEnemy;
+    import src.costumes.DecorCostume;
     import src.enemy.ChargerEnemy;
     import src.enemy.Enemy;
-    import src.enemy.EnemyCostume;
+    import src.enemy.FlyingEnemy;
     import src.enemy.Sniper;
     import src.Game;
+    import src.interfaces.*;
     import src.levels.CastleLevel;
     import src.levels.Room;
-    import flash.display.MovieClip;
-	import src.interfaces.*;
-	import flash.net.URLLoader;
-	import flash.net.URLRequest;
-	import flash.events.Event;
-	import flash.utils.*;
     import src.objects.AbstractObject;
-    import src.costumes.DecorCostume;
     import src.objects.Door;
-	import src.objects.Lever;
-	import src.enemy.FlyingEnemy;
     import src.objects.Obstacle;
-    import src.objects.StaticObstacle;
+    import src.objects.TaskLever;
     import src.objects.TaskObject;
-    import src.Player;
+    import src.task.KillEnemyTask;
+    import src.task.Record;
     import src.task.Task;
     import src.task.TaskManager;
     
@@ -48,7 +39,7 @@ package src.util {
             var floors:Array = new Array();
             
             for each ( var floor:XML in xmlLevel.floor ) {
-                addTasksToRoom(null, floor);
+                //addTasksToRoom(null, floor);
                 floors.push( createRooms(floor) );
                 floorCounter ++;
             }
@@ -128,97 +119,87 @@ package src.util {
         }
         
         private function addTasksToRoom(room:Room, roomXML:XML):void {
-            return;
             var tasks:XMLList = roomXML.task;
             var enemies:XMLList = roomXML.enemies;
             var enemyCount:int = 0;
+            var task:Task;
+            var task_type:int;
             
-            for each (var task:XML in tasks) {
-                switch (task.@type.toString()) {
-                    case "levers":
-                    case "keys":
-                        gameTaskManager.addLeverTaskToRoom(room, task.@id, task.@color);
+            for each (var taskXML:XML in tasks) {
+                task_type = taskXML.@type;
+                switch (task_type) {
+                    case Record.LEVER_PULL_TYPE:
+                    //case Task.KEY_USED_RECORD:
+                        task = new Task();
                     break;
-                    
-                    case "enemies":
-                        enemyCount = enemies.(@task_id == task.@id).*.length();
-                        gameTaskManager.addEnemyTaskToRoom(room, task.@id, enemyCount, task.@color );
+                    case Record.ENEMY_KILL_TYPE:
+                        task = new KillEnemyTask();
                     break;
                     default:
+                        continue;
                 }
+                task.readXML(taskXML);
+                gameTaskManager.assignTaskToRoom(task, room);
             }
         }
         
         private function addTaskObjectsToRoom (room:Room, activeObjectsXML:XMLList) {
-            return;
             var taskId:int = activeObjectsXML.@taskId;
+            var taskObj:TaskObject;
+            var objName:String;
             
             for each ( var object:XML in activeObjectsXML.* ) {
-                var ActiveObjectClass:Class = getDefinitionByName(object.name()) as Class;
-                var currentObject:TaskObject = new ActiveObjectClass();
-                
-                currentObject.id = object.@id;
-                currentObject.taskId = taskId;
-                
-                currentObject.x = object.@x;
-                currentObject.y = object.@y;
-                
-                if ( object.@rotation ) {
-                    currentObject.rotation = object.@rotation;
+                objName = object.name();
+                switch (objName) {
+                    case TaskLever.LEVER_TYPE:
+                        taskObj = new TaskLever();
+                    break;
+                default:
+                    Output.add("object " +objName + " not found when creating taskobjects");
+                    return;
                 }
-                    
-                room.addActiveObject(currentObject);
-                        
-                tintObjectsArray.push(currentObject);
+                taskObj.readXMLParams(object);
+                
+                room.addActiveObject(taskObj);
+                //tintObjectsArray.push(taskObj);
             }
         }
         
         private function addTasksToDoors(room:Room, doorList:XMLList) {
-            return;
-            var doorName:String;
-            var doorObj:Door;
+            var door:Door;
             
-            for each ( var door:XML in doorList ) {
-                doorName = "door_" + door.@direction;
-                doorObj = room.getChildByName(doorName) as Door;
-                doorObj.setType(door.@type);
+            for each ( var doorXML:XML in doorList ) {
+                door = room.getDoorByDirection(doorXML.@direction);
                 
-                doorObj.specialLock = true;
-                if (door.@type == "task") {
-                    doorObj.assignTask(door.@taskId);
-                }
-                
-                tintObjectsArray.push(doorObj);
+                door.specialLock = true;
+                door.readXMLParams(doorXML);
             }
         }
         
         // setPositionBad -> setPosition
         private function addEnemiesToRoom (room:Room, enemiesXML:XMLList) {
-            return;
             var taskId:uint = enemiesXML.@task_id;
             var enemy:Enemy;
+            var enemyName:String;
+            
             for each ( var object:XML in enemiesXML.* ) {
-                switch ( object.name() ) {
-                    case EnemyCostume.GHOST:
+                enemyName = object.name();
+                switch ( enemyName ) {
+                    case CostumeEnemy.GHOST:
                         enemy = new FlyingEnemy();
-                        break;
-                    case EnemyCostume.MONK:
-                        enemy = new Sniper();
-                        break;
-                    case EnemyCostume.RAT:
+                    break;
+                    case CostumeEnemy.RAT:
                         enemy = new ChargerEnemy();
+                    break;
+                    case CostumeEnemy.MONK:
+                        enemy = new Sniper();
                         break;
                     default: continue;
                 }
                 
-                enemy.setType(object.name());
+                enemy.readXMLParams(object);
                 
-                enemy.cRoom = room;
-                enemy.taskId = taskId;
-                
-                enemy.setPosition(new Point(object.@x,object.@y));
-                
-                room.addEnenemy(enemy);
+                room.addEnemy(enemy);
             }
         }
         
@@ -301,6 +282,7 @@ package src.util {
         }
         
         private function tintObjects():void {
+            return;
             var i:int = tintObjectsArray.length;
             var colorNumber:uint = 0;
             while ( i-- ) {
@@ -311,7 +293,7 @@ package src.util {
             }
         }
         
-        
+        // D!
         public static function setGameStats(stats:XML):void {
             /*var stat:XMLList = stats.player;
             Player.invincibilityDelay = stat.invincibility_time;

@@ -3,36 +3,38 @@
     import fl.motion.Color;
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
+    import src.costumes.ActiveObjectCostume;
+    import src.costumes.DecorCostume;
+    import src.events.SubmitTaskEvent;
+    import src.Game;
     import src.interfaces.ExtrudeObject;
     import src.interfaces.Updatable;
     import src.Main;
     import flash.events.Event;
+    import src.task.TaskEvent;
     import src.util.Collider;
     import Box2D.Dynamics.b2Body;
     import src.util.ComboManager;
 
-    public class Lever extends TaskObject implements ExtrudeObject {
-        private var _activeArea:Collider;
+    public class TaskLever extends TaskObject {
+        public static const LEVER_TYPE:String = "Lever";
+        public static const OPEN_STATE:String = "_open";
+        public static const BREAK_STATE:String = "_break";
         
-        private var testFun:Function;
-
-        public function Lever ():void {
+        private var testFun:Function; // D!
+        
+        public function TaskLever ():void {
             super();
-            _activeArea = costume.getChildByName( "activeArea" ) as Collider;
-        }
-        
-        public function getActiveArea ():Collider {
-            return _activeArea;
+            costume.setType(LEVER_TYPE);
+            costume.setState();
         }
         
         override public function positiveOutcome():void {
-            //gotoAndPlay("open");
-            _activeArea.lock();
+            costume.setState(OPEN_STATE);
         }
         
         override public function negativeOutcome():void {
-            //gotoAndPlay("break");
-            _activeArea.lock();
+            costume.setState(BREAK_STATE);
         }
         
         override public function setTint(color:uint):void {
@@ -42,17 +44,20 @@
             tintObject.transform.colorTransform = col;
         }
         
-        // change to better collider support
-        override public function update():void {
-            if ( active ) {
-                /*if ( _activeArea.checkObjectCollision( game.player.getColliderBad()) && game.player.ACTION_PRESSED ) {
-                    dispatchEvent(new Event("GUESS_EVENT"));
-                }*/
-            }
+        override public function createColorObject(color:String):DecorCostume {
+            var costume:DecorCostume = super.createColorObject(color);
+            costume.x = -16;
+            costume.y = 9;
+            return costume;
         }
         
-        override public function isActive():Boolean {
-            return this.active;
+        // change to better collider support
+        override public function update():void {
+            if ( is_active ) {
+                /*if ( _activeArea.checkObjectCollision( game.player.getColliderBad()) && game.player.ACTION_PRESSED ) {
+                    dispatchEvent(new Event(Game.GUESS_EVENT));
+                }*/
+            }
         }
     }
 

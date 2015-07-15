@@ -3,15 +3,13 @@ package src.util {
     import flash.display.DisplayObject;
     import flash.display.DisplayObjectContainer;
     import flash.display.Sprite;
+    import src.costumes.Costume;
     import src.enemy.Enemy;
     import src.Game;
     import src.interfaces.SolidBody;
     import src.objects.AbstractObject;
     import src.ui.AbstractMenu;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class DeleteManager extends AbstractManager {
         private var sleep:Boolean = true;
         
@@ -46,6 +44,10 @@ package src.util {
                     || objectsToRemove[i] is AbstractManager
                 ) {
                     objectsToRemove[i].destroy();
+                }
+                
+                if ( objectsToRemove[i] is Costume ) {
+                    if ( objectsToRemove[i].visible ) continue;
                 }
                 
                 if ( objectsToRemove[i] is DisplayObject ) {

@@ -53,7 +53,9 @@ package src.objects {
         }
         
         public function setPosition(point:Point):void {
-            body.SetPosition(new b2Vec2(point.x / Game.WORLD_SCALE, point.y / Game.WORLD_SCALE));
+            costume.x = point.x;
+            costume.y = point.y;
+            //body.SetPosition(new b2Vec2(point.x / Game.WORLD_SCALE, point.y / Game.WORLD_SCALE));
         }
         
         public function refreshCostumePosition():void {

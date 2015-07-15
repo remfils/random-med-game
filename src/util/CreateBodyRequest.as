@@ -67,6 +67,10 @@ package src.util {
             bodyDef.type = b2Body.b2_dynamicBody;
         }
         
+        public function setAsBullet():void {
+            bodyDef.bullet = true;
+        }
+        
         public function setBodyPosition(position:Point):void {
             bodyDef.position.Set(position.x / Game.WORLD_SCALE, position.y / Game.WORLD_SCALE);
         }

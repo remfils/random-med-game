@@ -19,10 +19,6 @@ package src.objects {
         public static const NORMAL_STATE:String = "_stand";
         public static const DESTROY_STATE:String = "_destroy";
         
-        public static var fixtureDef:b2FixtureDef = new b2FixtureDef();
-        fixtureDef.density = 6;
-        fixtureDef.friction = 0.6;
-        
         public var state:int;
         
         public var is_static:Boolean = false;
@@ -82,8 +78,10 @@ package src.objects {
         override public function requestBodyAt(world:b2World):CreateBodyRequest {
             var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
             
-            createBodyReq.fixtureDef.density = 6;
-            createBodyReq.fixtureDef.friction = 0.6;
+            createBodyReq.fixtureDef.density = 4;
+            createBodyReq.fixtureDef.friction = 1;
+            
+            createBodyReq.bodyDef.linearDamping = 3;
             
             if ( is_static ) createBodyReq.setAsStaticBody();
             else createBodyReq.setAsDynamicBody();

@@ -12,7 +12,7 @@ package src.costumes {
         }
         
         // logos don't have states
-        override public function setState(state_:String):void { }
+        override public function setState(state_:String=null):void { }
        
         override public function setType(type_:String):void {
             gotoAndStop(type_);

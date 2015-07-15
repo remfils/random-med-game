@@ -8,6 +8,7 @@ package src.costumes {
         public static const TORCH_TYPE:String = "Torch";
         public static const WEB_TYPE:String = "Web";
         public static const SHIELD_TYPE:String = "Shield";
+        public static const TASK_FLAG_TYPE:String = "TaskFlag";
         
         public function DecorCostume() {
             

@@ -316,8 +316,8 @@
             return collider as Collider;
         }
         
-        public function makeHit (dmg:Number) {
-            if (immune) return;
+        public function makeHit (dmg:Number):Boolean {
+            if (immune) return false;
             immune = true;
             startInvincibilityTimer();
             
@@ -326,6 +326,7 @@
                 die();
                 HEALTH = 0;
             }
+            return true;
         }
         
         private function startInvincibilityTimer() {

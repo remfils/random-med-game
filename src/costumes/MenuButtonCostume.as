@@ -19,7 +19,7 @@ package src.costumes {
             super();
         }
         
-        override public function setState(state_:String):void {
+        override public function setState(state_:String=null):void {
             super.setState(state_);
             if ( state_ == LEVEL_SELECT_BTN ) {
                 level_name = TextField(getChildByName("level_name"));

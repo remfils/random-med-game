@@ -57,7 +57,7 @@ package src.costumes {
             isSpell = type == SPELL_TYPE;
         }
         
-        override public function setState(state:String):void {
+        override public function setState(state:String=null):void {
             if (isSpell) super.setState(SPELL_TYPE + state);
             else super.setState(ITEM_TYPE + state);
             

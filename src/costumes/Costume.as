@@ -12,14 +12,16 @@ package src.costumes {
             costume_collider = getChildByName(COLLIDER_NAME) as MovieClip;
             this.mouseEnabled = false;
             if (costume_collider) costume_collider.visible = false;
+            stop();
         }
         
         public function setType(type_:String):void {
             type = type_;
         }
         
-        public function setState(state_:String):void {
-            gotoAndStop(type + state_);
+        public function setState(state_:String=null):void {
+            if (state_) gotoAndStop(type + state_);
+            else gotoAndStop(type);
         }
         
         public function getCollider():DisplayObject {

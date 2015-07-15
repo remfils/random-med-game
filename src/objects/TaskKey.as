@@ -14,12 +14,12 @@ package src.objects {
      * ...
      * @author vlad
      */
-    public class Key extends TaskObject {
+    public class TaskKey extends TaskObject {
         private var playerCollider:Collider;
         public var _activeArea:MovieClip;
         public var _collider:MovieClip;
         
-        public function Key() {
+        public function TaskKey() {
             super();
             _activeArea = costume.getChildByName("activeArea") as MovieClip;
             _collider = costume.getChildByName("collider001") as MovieClip;
@@ -29,13 +29,13 @@ package src.objects {
         override public function update():void {
             super.update();
             
-            if ( active && playerCollider.checkObjectCollision(_activeArea) ) {
+            if ( is_active && playerCollider.checkObjectCollision(_activeArea) ) {
                 var player:Player = game.player;
                 
                 if ( game.ACTION_PRESSED ) {
                     if ( !player.holdObject || player.holdObject == this ) {
                         //gotoAndPlay("hide");
-                        active = false;
+                        is_active = false;
                         player.holdObject = this;
                     }
                 }
@@ -49,7 +49,7 @@ package src.objects {
         }
         
         public function changePlace():void {
-            active = true;
+            is_active = true;
             //gotoAndPlay("show");
             var player:Player = game.player;
             

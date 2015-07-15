@@ -50,7 +50,6 @@ package src.levels {
             
             if ( userDataA is Object && userDataA.hasOwnProperty("object") ) {
                 if ( userDataA.object is Bullet )
-                    
                     asymetricBulletCheck(userDataA.object as Bullet, userDataB);
                     
                 if ( userDataA.object is Projectile )
@@ -101,7 +100,7 @@ package src.levels {
                 if ( userData.object is Enemy ) return;
                 
                 if ( userData.object is Player ) {
-                    Player(userData.object).makeHit( bullet.damage );
+                    game.hitPlayer(bullet.damage);
                 }
             }
             bullet.die();
@@ -150,25 +149,23 @@ package src.levels {
             if ( userDataA.object is Enemy || userDataB.object is Enemy ) {
                 var bodyA:b2Body = fixtureA.GetBody();
                 var bodyB:b2Body = fixtureB.GetBody();
-                var dr:b2Vec2;
                 
                 if ( userDataA.object is Player ) {
-                    dr = bodyA.GetPosition().Copy();
-                    dr.Subtract(bodyB.GetPosition());
-                    dr.Multiply(3);
-                    bodyA.ApplyImpulse( dr ,bodyA.GetWorldCenter());
-                    Player(userDataA.object).makeHit( Enemy(userDataB.object).damage );
+                    hitPlayer(bodyA, bodyB, Enemy(userDataB.object).damage);
                 }
                 
                 if ( userDataB.object is Player ) {
-                    dr = bodyB.GetPosition().Copy();
-                    dr.Subtract(bodyA.GetPosition());
-                    dr.Multiply(3);
-                    
-                    bodyB.ApplyImpulse( dr ,bodyB.GetWorldCenter());
-                    Player(userDataB.object).makeHit( Enemy(userDataA.object).damage );
+                    hitPlayer(bodyB, bodyA, Enemy(userDataA.object).damage);
                 }
             }
+        }
+        
+        private function hitPlayer(playerBod:b2Body, enemyBody:b2Body, dmg:Number):void {
+            var dr:b2Vec2 = playerBod.GetPosition().Copy();
+            dr.Subtract(enemyBody.GetPosition());
+            dr.Multiply(3);
+            playerBod.ApplyImpulse( dr , playerBod.GetWorldCenter());
+            game.hitPlayer(dmg);
         }
         
     }

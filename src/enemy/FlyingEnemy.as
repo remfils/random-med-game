@@ -1,10 +1,16 @@
 ﻿package src.enemy {
     import Box2D.Common.Math.b2Vec2;
     import Box2D.Dynamics.b2Body;
+    import Box2D.Dynamics.b2World;
     import Box2D.Dynamics.Joints.b2MouseJoint;
     import Box2D.Dynamics.Joints.b2MouseJointDef;
+    import src.costumes.CostumeEnemy;
+    import src.util.CreateBodyRequest;
     
     public class FlyingEnemy extends Enemy {
+        public static const STAND_STATE:String = "_stand";
+        public static const ATTACK_STATE:String = "_active";
+        
         public static var SPEED:Number = 10;
         private var leashJoint:b2MouseJoint;
         private var target:b2Body;
@@ -29,12 +35,31 @@
             }
         }
         
-        override protected function activateIfPlayerIsAround():void {
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            var createReq:CreateBodyRequest = super.requestBodyAt(world);
+            
+            createReq.setAsDynamicBody();
+            
+            return createReq;
+        }
+        
+        /*override protected function activateIfPlayerIsAround():void {
             if ( !isActive() ){
                 if ( agroDistance > playerDistance ) {
                     activate();
                 }
             }
+        }*/
+        
+        override public function activate():void {
+            super.activate();
+            costume.setState(ATTACK_STATE);
+            trace("activeated");
+        }
+        
+        override public function deactivate():void {
+            super.deactivate();
+            costume.setState(STAND_STATE);
         }
         
         public function setTarget(body:b2Body):void {

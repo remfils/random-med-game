@@ -39,6 +39,7 @@
         protected var ROOM_FRICTION:Number = 8;
         
         var _doors:Array = new Array(); // deleteme
+        var _activeAreas:Vector.<DisplayObject> = new Vector.<DisplayObject>();
         var _gameObjects:Array = new Array();
         var _enemies:Array = new Array();
         public var drops:Array = new Array();
@@ -150,26 +151,6 @@
                 Door(_doors[i]).hide();
             }
             
-            /*var collider:Collider, door:Door, name:String, wall:b2Body;
-            for each ( var direction:String in directions) {
-                name = "door_" + direction;
-                door = getChildByName(name) as Door;
-                
-                name = "door_collider_" + direction;
-                collider = getChildByName(name) as Collider;
-                wall = collider.replaceWithStaticB2Body(world, { 'object' : door });
-                door.setWall(wall);
-                
-                name = "exit_" + direction;
-                collider = getChildByName(name) as Collider;
-                wall = collider.replaceWithSensor(world, { 'object' : door });
-                door.setExit(wall);
-                
-                door.hide();
-                
-                _doors.push(door);
-            }*/
-            
         }
         
         private function setDebugDraw():void {
@@ -196,7 +177,12 @@
             _player.setActorBody(playerBody);
             gameObjectPanel.addChild(_player.costume);
             
-            addEventListener("GUESS_EVENT", taskManager.guessEventListener, true);
+            //addEventListener(Game.GUESS_EVENT, taskManager.guessEventListener, true);
+            
+            var i:int = _enemies.length;
+            while (i--) {
+                _enemies[i].deactivate();
+            }
             
             unlockDoorsWithoutTasks();
             
@@ -208,9 +194,17 @@
         private function unlockDoorsWithoutTasks():void {
             for each ( var door:Door in _doors ) {
                 if ( !door.specialLock ) {
-                    if ( door.taskId == 0 || !game.taskManager.findTaskById(door.taskId) ) {
-                        door.unlock();
-                    }
+                    door.unlock();
+                }
+            }
+        }
+        
+        public function unlockDoorsWithTaskID(task_id:int):void {
+            for each (var door:Door in _doors ) {
+                if (door.task_id == task_id) {
+                    trace("unlockDoorsWithTaskID: door unlocked");
+                    door.specialLock = false;
+                    door.unlock();
                 }
             }
         }
@@ -220,9 +214,11 @@
         }
         
         public function addActiveObject(object:TaskObject):void {
-            gameObjectPanel.addChild(object as DisplayObject);
+            gameObjectPanel.addChild(object.costume);
             
             _gameObjects.push(object);
+            
+            _activeAreas.push(object.getActiveArea());
             
             if ( !object.body ) {
                 object.requestBodyAt(world);
@@ -240,16 +236,20 @@
             }
         }
         
-        public function addEnenemy(object:Enemy) {
-            _enemies.push(object);
-            object.requestBodyAt(world);
-            gameObjectPanel.addChild(object.costume);
+        public function addEnemy(enemy:Enemy) {
+            _enemies.push(enemy);
+            gameObjectPanel.addChild(enemy.costume);
+            enemy.cRoom = this;
             
-            if ( object is FlyingEnemy ) {
-                FlyingEnemy(object).setTarget(playerBody);
+            enemy.requestBodyAt(world);
+            
+            enemy.deactivate();
+            
+            if ( enemy is FlyingEnemy ) {
+                FlyingEnemy(enemy).setTarget(playerBody);
             }
             
-            if (Game.TEST_MODE) trace("enemy added", object.x);
+            if (Game.TEST_MODE) trace("enemy added", enemy.x);
         }
         
         // depracated
@@ -270,7 +270,7 @@
         }
         
         public function addObstacle(obstacle:Obstacle):void {
-            _gameObjects.push(obstacle);
+            if ( obstacle.active ) _gameObjects.push(obstacle);
             gameObjectPanel.addChild(obstacle.costume);
             obstacle.requestBodyAt(world);
         }
@@ -324,9 +324,9 @@
             var i = _gameObjects.length;
             
             while (i--) {
-                if ( _gameObjects[i] is TaskObject && !(_gameObjects[i] is DoorLock) ) {
+                if ( _gameObjects[i] is TaskObject && !(_gameObjects[i] is TaskDoorLock) ) {
                     var taskObject:TaskObject = _gameObjects[i] as TaskObject;
-                    if ( taskObject.taskId == task_id ) {
+                    if ( taskObject.task_id == task_id ) {
                         game.deleteManager.add(taskObject);
                         ItemDropper.dropAtPointFrom([DropFactory.createCoin()], taskObject.x, taskObject.y);
                     }
@@ -397,8 +397,29 @@
             return false;
         }
         
+        public function getTaskObjectNearPlayer():TaskObject {
+            var i:int = _gameObjects.length;
+            var playerCollider:DisplayObject = game.player.costume.getCollider();
+            var activeArea:DisplayObject;
+            while (i--) {
+                if ( _gameObjects[i] is TaskObject ) {
+                    activeArea = TaskObject(_gameObjects[i]).getActiveArea();
+                    if ( activeArea.hitTestObject(playerCollider) ) return TaskObject(_gameObjects[i]);
+                }
+            }
+            return null;
+        }
+        
+        public function checkEnemiesForTask(task_id:int):Boolean {
+            var i:int = _enemies.length;
+            while (i--) {
+                if ( _enemies[i].task_id == task_id ) return true;
+            }
+            return false;
+        }
+        
         public function exit():void {
-            removeEventListener("GUESS_EVENT", taskManager.guessEventListener, true);
+            //removeEventListener(Game.GUESS_EVENT, taskManager.guessEventListener, true);
         }
 
     }

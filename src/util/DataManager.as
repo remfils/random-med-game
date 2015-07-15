@@ -121,7 +121,7 @@ package src.util {
         }
         
         public function getLevelLinkById(ID:int):String {
-            return server_name + '/' + data.GameData.levels.level.(id == "" + ID).src;
+            return server_name + '/' + data.GameData.levels.level.(id == "" + ID).src + "?" + (new Date()).getTime();
         }
         
 // SAVE DATA

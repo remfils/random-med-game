@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.enemy.EnemyCostume" lastModified="1429448457" lastUniqueIdentifier="26">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1436263114" lastUniqueIdentifier="30">
   <timeline>
-    <DOMTimeline name="EnemyCostume">
+    <DOMTimeline name="EnemyCostume" currentFrame="255">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="14" name="Ghost_stand" labelType="name" keyMode="9728">
               <elements/>
@@ -10,7 +10,7 @@
             <DOMFrame index="14" duration="15" name="Ghost_active" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="29" duration="23" name="Ghost_dead" labelType="name" keyMode="9728">
+            <DOMFrame index="29" duration="23" name="Ghost_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
             <DOMFrame index="52" duration="15" name="Rat_walk_hor" labelType="name" keyMode="9728">
@@ -37,7 +37,84 @@
             <DOMFrame index="157" duration="55" name="Monk_shoot" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="212" duration="65" name="Monk_death" labelType="name" keyMode="9728">
+            <DOMFrame index="212" duration="43" name="Monk_death" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="255" duration="16" name="EnemyBullet" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="271" duration="59" name="EnemyBullet_death" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="29" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" duration="22" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="51" duration="60" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="111" duration="17" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="128" duration="29" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="157" duration="54" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="211" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="212" duration="42" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="254" duration="17" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="271" duration="12" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="283" duration="47" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
               <elements/>
             </DOMFrame>
           </frames>
@@ -47,16 +124,16 @@
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="14" duration="263" keyMode="9728">
+            <DOMFrame index="14" duration="316" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="collider" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="collider" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="52" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
                     <Matrix a="2.22050476074219" d="1.19888305664063"/>
                   </matrix>
@@ -78,63 +155,17 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="129" duration="148" keyMode="9728">
+            <DOMFrame index="129" duration="201" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
-                    <Matrix a="3.44584655761719" d="1.00523376464844"/>
+                    <Matrix a="0.8284912109375" d="0.400787353515625"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="29" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="29" duration="22" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="51" duration="60" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="111" duration="17" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="128" duration="29" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="157" duration="54" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="211" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="212" duration="42" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="254" duration="23" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();]]></script>
-              </Actionscript>
-              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -284,8 +315,29 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="255" duration="22" keyMode="9728">
-              <elements/>
+            <DOMFrame index="255" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_normal" centerPoint3DX="-0.2" centerPoint3DY="-30.4">
+                  <matrix>
+                    <Matrix a="1.77641296386719" d="1.77641296386719" tx="-0.2" ty="-46.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="8.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="271" duration="59" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_death" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.77641296386719" d="1.77641296386719" tx="-0.2" ty="-46.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="8.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

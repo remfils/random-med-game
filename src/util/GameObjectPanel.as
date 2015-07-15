@@ -1,7 +1,7 @@
 ﻿package src.util {
     import flash.display.DisplayObject;
     import src.interfaces.ExtrudeObject;
-    import src.objects.Key;
+    import src.objects.TaskKey;
     import src.ui.playerStat.PlayerStat;
     import src.Player;
     import flash.display.Sprite;

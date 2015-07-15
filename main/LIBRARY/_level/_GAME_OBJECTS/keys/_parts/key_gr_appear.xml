@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/keys/key_gr_appear" itemID="546c702b-00000136" symbolType="graphic" lastModified="1416392838">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/keys/_parts/key_gr_appear" itemID="546c702b-00000136" symbolType="graphic" lastModified="1435670959">
   <timeline>
     <DOMTimeline name="key_gr_appear" currentFrame="6">
       <layers>
@@ -9,7 +9,7 @@
             </DOMFrame>
             <DOMFrame index="1" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/_parts/key_gr" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.13262939453125" d="0.13262939453125" tx="0.65" ty="-0.7"/>
                   </matrix>
@@ -21,9 +21,9 @@
             </DOMFrame>
             <DOMFrame index="4" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/_parts/key_gr" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix a="1.1827392578125" d="1.1827392578125" tx="0.95" ty="-1.6"/>
+                    <Matrix a="1.1827392578125" d="1.1827392578125"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="-0.3" y="0.85"/>
@@ -33,10 +33,7 @@
             </DOMFrame>
             <DOMFrame index="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/key_gr" symbolType="graphic" loop="loop">
-                  <matrix>
-                    <Matrix tx="0.9" ty="-1.45"/>
-                  </matrix>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/_parts/key_gr" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="-0.3" y="0.85"/>
                   </transformationPoint>

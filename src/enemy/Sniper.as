@@ -8,55 +8,62 @@ package src.enemy {
     import src.util.CreateBodyRequest;
 
     public class Sniper extends Enemy {
+        public static const ACTIVE_STATE:String = "_active";
+        public static const STAND_STATE:String = "_stand";
+        public static const SHOOT_STATE:String = "_shoot";
+        
         public var charge:Boolean = false;
         public var chargeTime:Number = 0;
         public var chargeDelay:Number = 100;
         
+        protected var framesToShoot:int = 0;
+        protected var bulletFired:Boolean = false;
+        protected var TOTAL_CHARGE_FRAMES:int = 47;
+        
         public function Sniper() {
             super();
+            agroDistance = 300;
         }
         
         override public function activate():void {
-            active = true;
-            //gotoAndStop("active");
+            is_active = true;
+            costume.setState(ACTIVE_STATE);
         }
         
         override public function deactivate():void {
-            active = false;
-            //gotoAndStop("normal");
+            charge = bulletFired = is_active = false;
+            chargeTime = framesToShoot = 0;
+            costume.setState(STAND_STATE);
         }
         
-        override protected function flip():void {
-            
-        }
+        override protected function flip():void {}
         
         override public function update():void {
-            if ( !body ) return;
+            super.update();
             
-            calculateDistanceToPlayer();
-            
-            if ( isActive() ) {
-                if ( chargeTime == 0 ) {
+            if ( is_active ) {
+                if ( !chargeTime ) {
                     startShoot();
                     chargeTime = chargeDelay;
                 }
                 else {
                     chargeTime --;
                 }
+                if ( bulletFired ) {
+                    if ( !framesToShoot-- ) {
+                        bulletFired = false;
+                        costume.setState(ACTIVE_STATE);
+                        shoot();
+                        framesToShoot = 0;
+                    }
+                }
             }
-            
-            if ( chargeTime == 0 ) {
-                activateIfPlayerIsAround();
-            }
-            
-            playHitAnimationIfNeeded();
-            
-            updatePosition();
         }
         
         public function startShoot():void {
-            active = false;
-            //gotoAndPlay("shoot");
+            bulletFired = true;
+            framesToShoot = TOTAL_CHARGE_FRAMES;
+            costume.setState(SHOOT_STATE);
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {
@@ -72,14 +79,15 @@ package src.enemy {
         }*/
         
         public function shoot():void {
-            /*var direction:b2Vec2 = new b2Vec2(player.x - x, player.y - y);
+            var direction:b2Vec2 = new b2Vec2(player.x - x, player.y - y);
             
-            var bullet:Projectile = new EnemyBullet();
+            var bullet:Projectile = new Projectile();
+            
             bullet.setSpeed(direction);
-            bullet.activate();
             bullet.setPosition(new Point(x, y));
             
-            this.cRoom.addEnenemy(bullet);*/
+            cRoom.addEnemy(bullet);
+            //this.cRoom.addEnenemy(bullet);
         }
         
     }

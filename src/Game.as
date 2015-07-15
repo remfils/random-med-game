@@ -26,6 +26,8 @@ package src {
         private static var i:uint;
         private var j:uint;
         
+        public static const GUESS_EVENT:String = "make_guess";
+        
         public static var PLAYER_START_X:Number;
         public static var PLAYER_START_Y:Number;
         
@@ -112,7 +114,16 @@ package src {
             
             bodyCreator.createBodies();
             
-            Room.taskManager = taskManager;
+            var i, j:int;
+            for (i = _LEVEL[0].length-1; i >= 0; i--) {
+                for (j = _LEVEL[0][i].length-1; j >= 0; j--) {
+                    if ( _LEVEL[0][i][j] ) {
+                        _LEVEL[0][i][j].unlock();
+                    }
+                }
+            }
+            
+            Room.taskManager = taskManager; // D!
             
             cRoom = getCurrentLevel();
             
@@ -206,10 +217,11 @@ package src {
         }
         
         private function addEventListeners() {
-            this.stage.addEventListener ( Event.ENTER_FRAME, update );
-            this.stage.addEventListener ( KeyboardEvent.KEY_DOWN, keyDown_fun );
-            this.stage.addEventListener ( KeyboardEvent.KEY_UP, keyUp_fun );
-            this.stage.addEventListener ( Game.EXIT_ROOM_EVENT , nextRoom, true );
+            stage.addEventListener ( Event.ENTER_FRAME, update );
+            stage.addEventListener ( KeyboardEvent.KEY_DOWN, keyDown_fun );
+            stage.addEventListener ( KeyboardEvent.KEY_UP, keyUp_fun );
+            stage.addEventListener ( Game.EXIT_ROOM_EVENT , nextRoom, true );
+            stage.addEventListener ( SubmitTaskEvent.GUESS_EVENT, taskManager.guessEventListener2, true );
         }
         
         private function removeEventListeners():void {
@@ -217,6 +229,7 @@ package src {
             stage.removeEventListener ( KeyboardEvent.KEY_DOWN, keyDown_fun );
             stage.removeEventListener ( KeyboardEvent.KEY_UP, keyUp_fun );
             stage.removeEventListener ( RoomEvent.EXIT_ROOM_EVENT , nextRoom, true );
+            stage.removeEventListener ( SubmitTaskEvent.GUESS_EVENT, taskManager.guessEventListener2, true );
         }
         
         public function initCurrentLevel() {
@@ -289,6 +302,10 @@ package src {
                 // E key
                 case 69:
                     ACTION_PRESSED = false;
+                    var to:TaskObject = cRoom.getTaskObjectNearPlayer();
+                    if (to) {
+                        to.submitAnswer();
+                    }
                 break;
                 case 74:
                     bulletController.stopBulletSpawn();
@@ -305,9 +322,9 @@ package src {
         }
         
         public function hitPlayer(hitNumber:int ):void {
-            player.makeHit(hitNumber);
-            
-            playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
+            if ( player.makeHit(hitNumber) ) {
+                playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
+            }
         }
         
         // по возможности удалить RoomEvent
