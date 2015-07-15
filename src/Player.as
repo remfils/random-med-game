@@ -60,6 +60,7 @@
         public var MOVE_DOWN:Boolean = false;
         
 // направление персонажа
+        public static const END_STATE:String = "end";
         private static const STAND_STATE:String = "stand_";
         private static const DIR_LEFT_STATE:String = "_left";
         private static const DIR_RIGHT_STATE:String = "_right";
@@ -257,6 +258,8 @@
         }
         
         public function update():void {
+            if ( !body ) return;
+            
             var worldScale:Number = Game.WORLD_SCALE;
             var bodyPosition:b2Vec2 = body.GetPosition();
             
@@ -301,8 +304,8 @@
         public function addToStats(statObject:Object):Boolean {
             for ( var stat in statObject ) {
                 if ( this.hasOwnProperty(stat) ) {
-                    if ( stat == "HEALTH" && HEALTH == MAX_HEALTH ) return false;
-                    if ( stat == "MANA" && MANA == MAX_MANA ) return false;
+                    // if ( stat == "HEALTH" && HEALTH == MAX_HEALTH ) return false;
+                    // if ( stat == "MANA" && MANA == MAX_MANA ) return false;
                     this[stat] += statObject[stat];
                 }
             }

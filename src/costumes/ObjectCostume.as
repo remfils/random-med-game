@@ -17,16 +17,14 @@ package src.costumes {
         
         public static const COIN_TYPE:String = "Coin";
         public static const EXIT_TYPE:String = "Exit";
-        public static const POTION_MANA_TYPE:String = "PotionMP";
-        public static const POTION_HEALTH_TYPE:String = "PotionHP";
+        public static const SMALLMP_TYPE:String = "SmallMP";
+        public static const SMALLHP_TYPE:String = "SmallHP";
         
         // TASK OBJECTS
         
         public static const KEY_TYPE:String = "Key";
         public static const LEVER_TYPE:String = "Lever";
         public static const DOOR_LOCK_TYPE:String = "DoorLock";
-        
-        //public static const 1_TYPE:String = "*";
         
         public function ObjectCostume() {
             super();

@@ -9,7 +9,7 @@
     import src.MainMenu;
     import src.ui.AbstractMenu;
     import src.util.DataManager;
-    import src.util.GameCreator;
+    import src.util.LevelParser;
     import src.events.*;
     import src.util.*;
 
@@ -119,7 +119,7 @@
             
             addChild(game);
             
-            var levelCreator:GameCreator = new GameCreator();
+            var levelCreator:LevelParser = new LevelParser();
             levelCreator.createLevelFromXML(game, XML(levelLoader.data));
             
             game.init();

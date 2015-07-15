@@ -93,6 +93,7 @@ package src.task {
                     else {
                         room.currentTask = null;
                         room.unlock();
+                        room.createDrop();
                     }
                 }
                 else {

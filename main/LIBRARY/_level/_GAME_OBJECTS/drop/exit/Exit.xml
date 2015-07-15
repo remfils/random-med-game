@@ -1,45 +1,7 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/exit/Exit" itemID="5427c19d-000000e1" symbolType="graphic" lastModified="1436953407" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/exit/Exit" itemID="5427c19d-000000e1" symbolType="graphic" lastModified="1436978738" lastUniqueIdentifier="2">
   <timeline>
-    <DOMTimeline name="Exit" currentFrame="6">
+    <DOMTimeline name="Exit" currentFrame="16">
       <layers>
-        <DOMLayer name="actions" color="#4FFFFF" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="16" name="drop" labelType="name" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="16" duration="8" name="default" labelType="name" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="24" duration="10" name="pickup" labelType="name" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="34" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="collider" color="#4F80FF" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="35" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="collider002" centerPoint3DX="1.05" centerPoint3DY="0.65">
-                  <matrix>
-                    <Matrix a="1.54098510742188" tx="1.05" ty="0.65"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
         <DOMLayer name="shadow" color="#808080" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="7" keyMode="9728">
@@ -69,12 +31,12 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!315 -51S2[445 -30 445 1!445 1[445 31 315 52!315 52[184 74 1 74!1 74[-184 74 -312 52!-312 52[-443 31 -443 1!-443 1[-443 -30 -312 -51!-312 -51[-184 -72 1 -72!1 -72[184 -72 315 -51"/>
+                    <Edge fillStyle1="1" edges="!315 -51[445 -30 445 1!445 1[445 31 315 52!315 52[184 74 1 74!1 74[-184 74 -312 52!-312 52[-443 31 -443 1!-443 1[-443 -30 -312 -51!-312 -51[-184 -72 1 -72!1 -72[184 -72 315 -51"/>
                   </edges>
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="14" duration="21" keyMode="9728">
+            <DOMFrame index="14" duration="10" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -88,25 +50,12 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="map" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" duration="6" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="15" duration="9" keyMode="9728">
-              <elements/>
-            </DOMFrame>
             <DOMFrame index="24" duration="11" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#9933CC">
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="6" tweenType="shape" keyMode="17922">
               <MorphShape>
@@ -184,6 +133,51 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
+        <DOMLayer name="map" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.1667" y="0.3185"/>
+                  <Point x="0.7154" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/exit/map_1_1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.05859375" b="-0.000732421875" c="0.000732421875" d="0.05859375" tx="-1" ty="-52.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="20.5" y="-0.6"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/exit/map_1_1" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.05859375" b="-0.000732421875" c="0.000732421875" d="0.05859375" tx="-1" ty="-36.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="20.5" y="-0.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
         <DOMLayer name="Layer 1" color="#4FFF4F">
           <frames>
             <DOMFrame index="0" duration="2" keyMode="9728">
@@ -215,7 +209,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!86 77|-17 77!-17 77|-16 -3581!-16 -3581|86 -3581!86 -3581|86 77"/>
+                    <Edge fillStyle1="1" edges="!86 -3581|86 77!86 77|-17 77!-17 77|-16 -3581!-16 -3581|86 -3581"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -235,7 +229,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!1977 -3581|1977 77!1977 77|-1883.5 77!-1883.5 77|-1841 -3581!-1841 -3581|1977 -3581"/>
+                    <Edge fillStyle1="1" edges="!1977 77|-1883.5 77!-1883.5 77|-1841 -3581!-1841 -3581|1977 -3581!1977 -3581|1977 77"/>
                   </edges>
                 </DOMShape>
               </elements>

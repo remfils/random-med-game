@@ -431,7 +431,9 @@ package src {
             }
             
             player.clearInput();
-            //player.gotoAndPlay("end");
+            player.body = null;
+            player.costume.setType(Player.END_STATE);
+            player.costume.setState();
             
             var timer:Timer = new Timer(700);
             timer.addEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);
@@ -443,10 +445,10 @@ package src {
             timer.removeEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);
             timer.stop();
             
-            endGame();
+            showEndLevelMenu();
         }
         
-        private function endGame():void {
+        public function showEndLevelMenu():void {
             var endGameMenu:EndLevelMenu = new EndLevelMenu();
             addChild(endGameMenu);
             endGameMenu.setUpMenu();

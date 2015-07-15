@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1436953356" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1436955832" lastUniqueIdentifier="12">
   <timeline>
-    <DOMTimeline name="ObjectCostume">
+    <DOMTimeline name="ObjectCostume" currentFrame="16">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" name="Barell_stand" labelType="name" keyMode="9728">
               <elements/>
@@ -43,7 +43,28 @@
             <DOMFrame index="179" duration="15" name="DoorEnter" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="194" duration="21" name="DropCoin_drop" labelType="name" keyMode="9728">
+            <DOMFrame index="194" duration="27" name="Coin_drop" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="221" duration="15" name="Coin_pickup" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="236" duration="24" name="Exit_drop" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="260" duration="15" name="Exit_pickup" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="275" duration="21" name="SmallHP_drop" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="296" duration="13" name="SmallHP_pickup" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="309" duration="21" name="SmallMP_drop" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="330" duration="30" name="SmallMP_pickup" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -65,7 +86,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="179" duration="36" keyMode="9728">
+            <DOMFrame index="179" duration="181" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -156,15 +177,102 @@
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="178" duration="37" keyMode="9728">
+            <DOMFrame index="178" duration="16" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
+            <DOMFrame index="194" duration="21" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="215" duration="6" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="221" duration="11" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="232" duration="4" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="236" duration="16" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="252" duration="23" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="275" duration="14" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="289" duration="7" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="296" duration="6" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="302" duration="7" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="309" duration="13" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="322" duration="8" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="330" duration="6" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="336" duration="24" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="collider" color="#FF800A" autoNamed="false">
+        <DOMLayer name="collider" color="#FF800A" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="27" keyMode="9728">
               <elements>
@@ -214,7 +322,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="108" duration="107" keyMode="9728">
+            <DOMFrame index="108" duration="86" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-18.5">
                   <matrix>
@@ -226,9 +334,21 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
+            <DOMFrame index="194" duration="166" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-8.7">
+                  <matrix>
+                    <Matrix a="1.5792236328125" d="1.10202026367188" ty="-0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="obj" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="obj" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements>
@@ -389,7 +509,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="179" duration="36" keyMode="9728">
+            <DOMFrame index="179" duration="15" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" symbolType="graphic" loop="loop">
                   <matrix>
@@ -416,6 +536,54 @@
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
+            </DOMFrame>
+            <DOMFrame index="194" duration="38" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/DropCoin" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point x="1.45" y="-25.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="232" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="236" duration="35" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/exit/Exit" selected="true" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point x="1.7" y="-63.85"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="271" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="275" duration="27" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/health/DropHP" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point x="1.2" y="-29.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="302" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="309" duration="27" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/mana/DropMana" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point x="1.2" y="-29.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="336" duration="24" keyMode="9728">
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

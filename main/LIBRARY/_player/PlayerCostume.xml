@@ -1,10 +1,16 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1435165172" lastUniqueIdentifier="25">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/PlayerCostume" itemID="552fc242-00000135" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="src.costumes.PlayerCostume" lastModified="1436978780" lastUniqueIdentifier="25">
   <timeline>
-    <DOMTimeline name="PlayerCostume" currentFrame="93">
+    <DOMTimeline name="PlayerCostume" currentFrame="89">
       <layers>
-        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
+        <DOMLayer name="actions" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="101" keyMode="9728">
+            <DOMFrame index="0" duration="89" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="89" duration="12" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
+              </Actionscript>
               <elements/>
             </DOMFrame>
             <DOMFrame index="101" duration="11" keyMode="9728">
@@ -62,7 +68,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="player" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="player" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="10" keyMode="9728">
               <elements>

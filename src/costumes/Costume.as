@@ -6,7 +6,7 @@ package src.costumes {
         protected static const COLLIDER_NAME:String = "costume_collider";
         public var costume_collider:DisplayObject;
         
-        protected var type:String = "";
+        public var type:String = "";
         
         public function Costume() {
             costume_collider = getChildByName(COLLIDER_NAME) as MovieClip;

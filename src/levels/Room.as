@@ -4,6 +4,7 @@
     import Box2D.Dynamics.*;
     import flash.display.*;
     import src.*;
+    import src.costumes.ObjectCostume;
     import src.enemy.*;
     import src.objects.*;
     import src.task.*;
@@ -50,6 +51,8 @@
         static var _player:Player;
         private var playerBody:b2Body;
         public var gameObjectPanel:GameObjectPanel;
+        
+        public var magic_bag:MagicBag;
 
         public function Room() {
             world = new b2World(gravity, true);
@@ -64,6 +67,8 @@
             addWalls();
             
             addDoors();
+            
+            magic_bag = new MagicBag();
             
             if (Game.TEST_MODE) setDebugDraw();
         }
@@ -299,6 +304,8 @@
             
             gameObjectPanel.update();
             
+            if ( magic_bag ) magic_bag.update();
+            
             if (Game.TEST_MODE) world.DrawDebugData();
         }
         
@@ -416,6 +423,15 @@
                 if ( _enemies[i].task_id == task_id ) return true;
             }
             return false;
+        }
+        
+        public function createDrop():void {
+            if (magic_bag.is_empty) return;
+            
+            var costume:ObjectCostume = magic_bag.open();
+            costume.x = CENTER_X;
+            costume.y = CENTER_Y;
+            gameObjectPanel.addChild(costume);
         }
         
         public function exit():void {

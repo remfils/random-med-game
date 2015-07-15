@@ -20,13 +20,13 @@ package src.util {
     import src.task.Task;
     import src.task.TaskManager;
     
-    public class GameCreator {
+    public class LevelParser {
         private var game:Game;
         private var gameTaskManager:TaskManager;
         private var floorCounter:int = 0;
         private var tintObjectsArray:Array = new Array();
         
-        public function GameCreator() {
+        public function LevelParser() {
         }
         
         public function createLevelFromXML (game:Game, levelData:XML):void {
@@ -44,7 +44,7 @@ package src.util {
                 floorCounter ++;
             }
             
-            tintObjects();
+            // tintObjects();
             
             return floors;
         }
@@ -53,20 +53,20 @@ package src.util {
             var rooms:Array = new Array(),
                 cRoom:CastleLevel = null;
             
-            for each ( var room:XML in xmlFloor.room ) {
+            for each ( var roomXML:XML in xmlFloor.room ) {
                 cRoom = new CastleLevel();
-                cRoom.x = room.@x * cRoom.width;
-                cRoom.y = room.@y * cRoom.height;
+                cRoom.x = roomXML.@x * cRoom.width;
+                cRoom.y = roomXML.@y * cRoom.height;
                 
-                if ( !rooms[room.@x] ) {
-                    rooms[room.@x] = new Array();
+                if ( !rooms[roomXML.@x] ) {
+                    rooms[roomXML.@x] = new Array();
                 }
                 
-                if ( room.@first_level == "true" ) {
-                    game.player.currentRoom.x = room.@x;
-                    game.player.currentRoom.y = room.@y;
+                if ( roomXML.@first_level == "true" ) {
+                    game.player.currentRoom.x = roomXML.@x;
+                    game.player.currentRoom.y = roomXML.@y;
                     
-                    var doorXML:XML = room.Door.(@type == Door.DOOR_START_TYPE)[0];
+                    var doorXML:XML = roomXML.Door.(@type == Door.DOOR_START_TYPE)[0];
                     
                     var door:Door = Door(cRoom.getDoorByDirection(doorXML.@direction));
                     
@@ -79,21 +79,23 @@ package src.util {
                     Game.PLAYER_START_Y = door.y + game.player.collider.height * Math.cos(angle);
                 }
                 
-                addDecorationsToRoom(cRoom, room.wallDecorations.*);
+                addDecorationsToRoom(cRoom, roomXML.wallDecorations.*);
                 
-                addObstaclesToRoom(cRoom, room.obstacles.*);
+                addObstaclesToRoom(cRoom, roomXML.obstacles.*);
                 
-                addTasksToRoom(cRoom, room);
-                addTaskObjectsToRoom(cRoom, room.active);
-                addTasksToDoors(cRoom, room.Door);
+                addTasksToRoom(cRoom, roomXML);
+                addTaskObjectsToRoom(cRoom, roomXML.active);
+                addTasksToDoors(cRoom, roomXML.Door);
                 
-                addEnemiesToRoom(cRoom, room.enemies);
+                addEnemiesToRoom(cRoom, roomXML.enemies);
                 
-                addDropsToRoom(cRoom, room.drop);
+                addDropsToRoom(cRoom, roomXML.drop);
                 
-                cRoom.setParametersFromXML(room.@*);
+                cRoom.setParametersFromXML(roomXML.@ * );
                 
-                rooms[room.@x][room.@y] = cRoom;
+                cRoom.magic_bag.readXML(roomXML.drop);
+                
+                rooms[roomXML.@x][roomXML.@y] = cRoom;
             }
             
             rooms = makeDoorsInRooms(rooms);

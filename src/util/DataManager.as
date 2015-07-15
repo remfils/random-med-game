@@ -193,7 +193,7 @@ package src.util {
             var loader:URLLoader = e.target as URLLoader;
             loader.removeEventListener(Event.COMPLETE, setGameStats);
             
-            GameCreator.setGameStats( XML(loader.data) );
+            LevelParser.setGameStats( XML(loader.data) );
         }
         
     }
