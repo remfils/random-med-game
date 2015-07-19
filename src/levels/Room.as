@@ -182,8 +182,6 @@
             _player.setActorBody(playerBody);
             gameObjectPanel.addChild(_player.costume);
             
-            //addEventListener(Game.GUESS_EVENT, taskManager.guessEventListener, true);
-            
             var i:int = _enemies.length;
             while (i--) {
                 _enemies[i].deactivate();
@@ -207,7 +205,6 @@
         public function unlockDoorsWithTaskID(task_id:int):void {
             for each (var door:Door in _doors ) {
                 if (door.task_id == task_id) {
-                    trace("unlockDoorsWithTaskID: door unlocked");
                     door.specialLock = false;
                     door.unlock();
                 }
@@ -223,7 +220,7 @@
             
             _gameObjects.push(object);
             
-            _activeAreas.push(object.getActiveArea());
+            // _activeAreas.push(object.getActiveArea()); // D!
             
             if ( !object.body ) {
                 object.requestBodyAt(world);
@@ -254,7 +251,7 @@
                 FlyingEnemy(enemy).setTarget(playerBody);
             }
             
-            if (Game.TEST_MODE) trace("enemy added", enemy.x);
+            // if (Game.TEST_MODE) trace("enemy added", enemy.x);
         }
         
         // depracated

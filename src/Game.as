@@ -302,10 +302,10 @@ package src {
                 // E key
                 case 69:
                     ACTION_PRESSED = false;
-                    var to:TaskObject = cRoom.getTaskObjectNearPlayer();
-                    if (to) {
-                        to.submitAnswer();
-                    }
+                    //var to:TaskObject = cRoom.getTaskObjectNearPlayer();
+                    //if (to) {
+                    //    to.submitAnswer();
+                    //}
                 break;
                 case 74:
                     bulletController.stopBulletSpawn();

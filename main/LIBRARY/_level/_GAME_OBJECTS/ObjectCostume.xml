@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1436955832" lastUniqueIdentifier="12">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1437309804" lastUniqueIdentifier="12">
   <timeline>
-    <DOMTimeline name="ObjectCostume" currentFrame="16">
+    <DOMTimeline name="ObjectCostume" currentFrame="125">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -288,7 +288,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="27" duration="24" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DX="-16.55" centerPoint3DY="-5">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-16.55" centerPoint3DY="-5">
                   <matrix>
                     <Matrix a="2.73324584960938" d="2.7449951171875" ty="0.4"/>
                   </matrix>
@@ -300,7 +300,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="51" duration="27" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DX="-16.55" centerPoint3DY="-5">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-16.55" centerPoint3DY="-5">
                   <matrix>
                     <Matrix a="2.73324584960938" d="2.7449951171875" ty="0.4"/>
                   </matrix>

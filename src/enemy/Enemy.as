@@ -2,6 +2,7 @@
     import Box2D.Dynamics.b2FixtureDef;
     import Box2D.Dynamics.b2World;
     import fl.motion.Color;
+    import flash.display.DisplayObject;
     import src.costumes.CostumeEnemy;
     import src.events.SubmitTaskEvent;
     import src.Game;
@@ -133,6 +134,9 @@
             super.destroy();
         }
 
+        override public function getActiveArea():DisplayObject {
+            return costume;
+        }
     }
     
 }

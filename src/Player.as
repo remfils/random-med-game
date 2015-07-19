@@ -48,7 +48,7 @@
         public static var invincibilityDelay:Number = 140;
         var invincibilityTimer:Timer;
         
-        static public var instance:Player = null;
+        static public var instance:Player = null; // D!
         
 // переменные движения
         private var inputForce:b2Vec2 = new b2Vec2();
@@ -71,9 +71,11 @@
         
         public var dir_x:Number;
         public var dir_y:Number;
-        public var collider:MovieClip; // delete me
+        public var collider:DisplayObject; // delete me or not?
         
-        public var holdObject:Object = null;
+        public var holdObject:TaskObject = null;
+        public static const HOLD_OBJECT_X:Number = -15;
+        public static const HOLD_OBJECT_Y:Number = -30;
         
         public var currentRoom:Point = new Point(0,0);
         
@@ -86,7 +88,7 @@
             dir_y = -1;
 
             // delete me
-            collider = costume.getCollider() as MovieClip;
+            collider = costume.getCollider();
             
             invincibilityTimer = new Timer(invincibilityDelay,6);
             
@@ -178,6 +180,14 @@
                     spells[spells.length - 1] = InventoryItem().item_name;
                 }
             }*/
+        }
+        
+        public function addHoldObject(obj:TaskObject):void {
+            holdObject = obj;
+            obj.deactivate();
+            obj.x = HOLD_OBJECT_X;
+            obj.y = HOLD_OBJECT_Y;
+            costume.addChild(obj);
         }
         
         public function handleInput(keyCode:uint, keyDown:Boolean = true):void {

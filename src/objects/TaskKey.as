@@ -10,34 +10,56 @@ package src.objects {
     import src.Player;
     import src.util.Collider;
     import src.util.CreateBodyRequest;
-	/**
-     * ...
-     * @author vlad
-     */
+
     public class TaskKey extends TaskObject {
-        private var playerCollider:Collider;
-        public var _activeArea:MovieClip;
-        public var _collider:MovieClip;
+        public static const KEY_TYPE:String = "TaskKey";
+        
+        public static const SHOW_STATE:String = "_show";
+        public static const HIDE_STATE:String = "_hide";
         
         public function TaskKey() {
             super();
-            _activeArea = costume.getChildByName("activeArea") as MovieClip;
-            _collider = costume.getChildByName("collider001") as MovieClip;
-            //playerCollider = game.player.collider;
+            costume.setType(KEY_TYPE);
+            costume.setState();
         }
         
         override public function update():void {
             super.update();
+            var player:Player = game.player;
+            var to:TaskObject = player.holdObject;
             
-            if ( is_active && playerCollider.checkObjectCollision(_activeArea) ) {
-                var player:Player = game.player;
+            if ( game.ACTION_PRESSED && is_active ) {
                 
-                if ( game.ACTION_PRESSED ) {
-                    if ( !player.holdObject || player.holdObject == this ) {
-                        //gotoAndPlay("hide");
-                        is_active = false;
-                        player.holdObject = this;
+                if ( active_area.hitTestObject(player.collider) ) {
+                    if ( to ) {
+                        if ( !to.is_active ) return;
+                        to.costume.setState(HIDE_STATE);
+                        to.is_active = false;
+                        game.cRoom.addActiveObject(to);
                     }
+                    
+                    deactivate();
+                    player.holdObject = this;
+                    costume.setState(HIDE_STATE);
+                }
+            }
+            else if ( !is_active ) {
+                if ( costume.visible ) return;
+                // else add hold object to player
+                if ( player.holdObject == this ) {
+                    costume.x = Player.HOLD_OBJECT_X;
+                    costume.y = Player.HOLD_OBJECT_Y;
+                    is_active = costume.visible = true;
+                    costume.setState(SHOW_STATE);
+                    player.costume.addChild(costume);
+                    game.cRoom.removeActiveObject(this);
+                    return;
+                }
+                else {
+                    activate();
+                    costume.setState(SHOW_STATE);
+                    game.cRoom.addActiveObject(this);
+                    costume.visible = true;
                 }
             }
             
@@ -49,7 +71,7 @@ package src.objects {
         }
         
         public function changePlace():void {
-            is_active = true;
+            /*is_active = true;
             //gotoAndPlay("show");
             var player:Player = game.player;
             
@@ -70,7 +92,7 @@ package src.objects {
                 }
                 
                 game.cRoom.addActiveObject(this);
-            }
+            }*/
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {

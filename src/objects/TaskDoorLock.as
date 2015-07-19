@@ -4,21 +4,20 @@ package src.objects {
     import src.Game;
     import src.Player;
     import src.util.Collider;
-	/**
-     * ...
-     * @author vlad
-     */
+    
     public class TaskDoorLock extends TaskObject {
         public var _activeArea:Collider;
         public var _collider:Collider;
         private var playerCollider:Collider;
         
+        public static const LOCK_TYPE:String = "DoorLock";
+        public static const BREAK_KEY_STATE:String = "_break";
+        public static const UNLOCK_STATE:String = "_unlock";
+        
         public function TaskDoorLock() {
             super();
-            //playerCollider = game.player.getColliderBad();
-            
-            _activeArea = costume.getChildByName("activeArea") as Collider;
-            _collider = costume.getChildByName("collider001") as Collider;
+            costume.setType(LOCK_TYPE);
+            costume.setState();
             
             is_active = true;
         }
@@ -26,7 +25,7 @@ package src.objects {
         override public function update():void {
             if ( !is_active ) return;
             
-            if ( _collider.checkObjectCollision(playerCollider) ) {
+            /*if ( _collider.checkObjectCollision(playerCollider) ) {
                 var holdObject:Object = Player.getInstance().holdObject;
                 
                 if ( holdObject ) {
@@ -35,14 +34,14 @@ package src.objects {
                         costume.dispatchEvent(new Event("GUESS_EVENT"));
                     }
                 }
-            }
+            }*/
         }
         
         override public function positiveOutcome():void {
-            game.deleteManager.add(body);
-            removePlayerKey();
+            //game.deleteManager.add(body);
+            //removePlayerKey();
             //gotoAndPlay("unlock");
-            game.cRoom.changeTaskObjectsToCoins(task_id);
+            //game.cRoom.changeTaskObjectsToCoins(task_id);
         }
         
         public function removeCorpse():void {
@@ -50,7 +49,7 @@ package src.objects {
         }
         
         override public function negativeOutcome():void {
-            removePlayerKey();
+            //removePlayerKey();
         }
         
         private function removePlayerKey():void {

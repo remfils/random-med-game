@@ -13,6 +13,8 @@ package src.util {
     import src.objects.AbstractObject;
     import src.objects.Door;
     import src.objects.Obstacle;
+    import src.objects.TaskDoorLock;
+    import src.objects.TaskKey;
     import src.objects.TaskLever;
     import src.objects.TaskObject;
     import src.task.KillEnemyTask;
@@ -155,6 +157,12 @@ package src.util {
                 switch (objName) {
                     case TaskLever.LEVER_TYPE:
                         taskObj = new TaskLever();
+                    break;
+                    case TaskKey.KEY_TYPE:
+                        taskObj = new TaskKey();
+                    break;
+                    case TaskDoorLock.LOCK_TYPE:
+                        taskObj = new TaskDoorLock();
                     break;
                 default:
                     Output.add("object " +objName + " not found when creating taskobjects");

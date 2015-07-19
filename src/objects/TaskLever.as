@@ -53,7 +53,11 @@
         
         // change to better collider support
         override public function update():void {
-            if ( is_active ) {
+            if ( game.ACTION_PRESSED && is_active ) {
+                if ( active_area.hitTestObject(game.player.collider) ) {
+                    submitAnswer();
+                    is_active = false;
+                }
                 /*if ( _activeArea.checkObjectCollision( game.player.getColliderBad()) && game.player.ACTION_PRESSED ) {
                     dispatchEvent(new Event(Game.GUESS_EVENT));
                 }*/

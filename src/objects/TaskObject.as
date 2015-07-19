@@ -21,6 +21,7 @@ package src.objects {
         public var task_id:uint = 0;
         
         public var is_active = true;
+        public var active_area:DisplayObject;
         
         public function TaskObject() {
             super();
@@ -47,10 +48,12 @@ package src.objects {
         
         public function activate():void {
             is_active = true;
+            if (body) body.SetActive(is_active);
         }
         
         public function deactivate():void {
             is_active = false;
+            if (body) body.SetActive(is_active);
         }
         
         override public function readXMLParams(paramsXML:XML):void {
@@ -64,6 +67,8 @@ package src.objects {
             
             var color:String = paramsXML.@color;
             if ( color ) createColorObject(color);
+            
+            if ( costume is ActiveObjectCostume ) active_area = ActiveObjectCostume(costume).getActiveArea();
         }
         
         public function createColorObject(color:String):DecorCostume {
