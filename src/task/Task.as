@@ -38,6 +38,7 @@
         }
         
         public function checkAnswer(task_object:TaskObject):Boolean {
+            trace(answer, task_object.id);
             return answer == task_object.id;
         }
         

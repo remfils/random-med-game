@@ -14,6 +14,8 @@ package src.objects {
         public static const BREAK_KEY_STATE:String = "_break";
         public static const UNLOCK_STATE:String = "_unlock";
         
+        private var key:TaskKey;
+        
         public function TaskDoorLock() {
             super();
             costume.setType(LOCK_TYPE);
@@ -24,24 +26,28 @@ package src.objects {
         
         override public function update():void {
             if ( !is_active ) return;
+            var player:Player = game.player;
             
-            /*if ( _collider.checkObjectCollision(playerCollider) ) {
-                var holdObject:Object = Player.getInstance().holdObject;
+            if ( active_area.hitTestObject(player.collider) ) {
+                var holdObject:Object = player.holdObject;
                 
                 if ( holdObject ) {
                     if ( holdObject is TaskKey ) {
-                        id = TaskKey(holdObject).id;
-                        costume.dispatchEvent(new Event("GUESS_EVENT"));
+                        eatPlayerKey();
+                        key = TaskKey(holdObject);
+                        id = key.id;
+                        submitAnswer();
                     }
                 }
-            }*/
+            }
+            
+            if ( !costume.visible ) {
+                destroy();
+            }
         }
         
         override public function positiveOutcome():void {
-            //game.deleteManager.add(body);
-            //removePlayerKey();
-            //gotoAndPlay("unlock");
-            //game.cRoom.changeTaskObjectsToCoins(task_id);
+            costume.setState(UNLOCK_STATE);
         }
         
         public function removeCorpse():void {
@@ -49,16 +55,15 @@ package src.objects {
         }
         
         override public function negativeOutcome():void {
-            //removePlayerKey();
+            costume.setState(BREAK_KEY_STATE);
         }
         
-        private function removePlayerKey():void {
-            var holdObject:Object = game.player.holdObject;
-            game.player.costume.removeChild(DisplayObject(holdObject));
-            //game.deleteManager.add(holdObject);
-            game.player.holdObject = null;
-            holdObject = null;
-            //gotoAndPlay("break_key");
+        private function eatPlayerKey():void {
+            var player:Player = game.player;
+            var hb:TaskObject = player.holdObject;
+            player.holdObject = null;
+            hb.hide();
+            game.deleteManager.add(hb);
         }
         
         override public function destroy():void {

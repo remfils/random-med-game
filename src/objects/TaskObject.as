@@ -80,6 +80,20 @@ package src.objects {
             costume.addChild(decorFlag);
             return decorFlag;
         }
+        
+        public function show():void {
+            costume.visible = true;
+        }
+        
+        public function hide():void {
+            costume.visible = false;
+        }
+        
+        override public function destroy():void {
+            super.destroy();
+            game.deleteManager.add(costume);
+            game.deleteManager.add(body);
+        }
     }
 
 }

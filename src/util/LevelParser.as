@@ -133,6 +133,7 @@ package src.util {
                 task_type = taskXML.@type;
                 switch (task_type) {
                     case Record.LEVER_PULL_TYPE:
+                    case Record.KEY_USED_TYPE:
                     //case Task.KEY_USED_RECORD:
                         task = new Task();
                     break;

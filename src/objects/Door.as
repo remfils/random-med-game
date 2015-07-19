@@ -135,14 +135,6 @@
             }
         }
         
-        public function hide () {
-            costume.visible = false;
-        }
-        
-        public function show () {
-            costume.visible = true;
-        }
-        
         override public function readXMLParams(paramsXML:XML):void {
             var color:String = paramsXML.@color;
             if (color) createColorObject(color);

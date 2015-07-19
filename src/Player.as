@@ -73,6 +73,7 @@
         public var dir_y:Number;
         public var collider:DisplayObject; // delete me or not?
         
+        public var is_picking:Boolean = false;
         public var holdObject:TaskObject = null;
         public static const HOLD_OBJECT_X:Number = -15;
         public static const HOLD_OBJECT_Y:Number = -30;
@@ -182,12 +183,29 @@
             }*/
         }
         
-        public function addHoldObject(obj:TaskObject):void {
+        public function startPickingUp():void {
+            is_picking = true;
+            if (holdObject) holdObject.hide();
+        }
+        
+        public function replaceHoldObject(obj:TaskObject):TaskObject {
+            var tmpHLD:TaskObject = holdObject;
+            
             holdObject = obj;
             obj.deactivate();
             obj.x = HOLD_OBJECT_X;
             obj.y = HOLD_OBJECT_Y;
-            costume.addChild(obj);
+            costume.addChild(obj.costume);
+            obj.show();
+            is_picking = false;
+            
+            if ( tmpHLD ) {
+                game.cRoom.addActiveObject(tmpHLD);
+                tmpHLD.activate();
+                tmpHLD.show();
+            }
+            
+            return tmpHLD;
         }
         
         public function handleInput(keyCode:uint, keyDown:Boolean = true):void {

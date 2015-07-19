@@ -17,9 +17,9 @@
         
         public static function getOneFrom(N:Number):Number {
             var d:Date = new Date();
-
+            var random:Number = Math.random() * 400;
             var t_ms:Number = d.milliseconds,
-                r:Number = t_ms % N + 1;
+                r:Number = t_ms * random % N + 1;
                 
             return r;
         }

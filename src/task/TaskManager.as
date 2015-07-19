@@ -23,7 +23,7 @@ package src.task {
         
         public function assignTaskToRoom(task:Task, room:Room):void {
             task.room = room;
-            room.assignTask(task);
+            if ( !task.external ) room.assignTask(task);
             tasks.push(task);
         }
         

@@ -28,38 +28,14 @@ package src.objects {
             var player:Player = game.player;
             var to:TaskObject = player.holdObject;
             
-            if ( game.ACTION_PRESSED && is_active ) {
+            if ( is_active ) {
+                if ( game.ACTION_PRESSED && !player.is_picking && active_area.hitTestObject(player.collider) ) {
+                    hide();
+                    player.startPickingUp();
+                }
                 
-                if ( active_area.hitTestObject(player.collider) ) {
-                    if ( to ) {
-                        if ( !to.is_active ) return;
-                        to.costume.setState(HIDE_STATE);
-                        to.is_active = false;
-                        game.cRoom.addActiveObject(to);
-                    }
-                    
-                    deactivate();
-                    player.holdObject = this;
-                    costume.setState(HIDE_STATE);
-                }
-            }
-            else if ( !is_active ) {
-                if ( costume.visible ) return;
-                // else add hold object to player
-                if ( player.holdObject == this ) {
-                    costume.x = Player.HOLD_OBJECT_X;
-                    costume.y = Player.HOLD_OBJECT_Y;
-                    is_active = costume.visible = true;
-                    costume.setState(SHOW_STATE);
-                    player.costume.addChild(costume);
-                    game.cRoom.removeActiveObject(this);
-                    return;
-                }
-                else {
-                    activate();
-                    costume.setState(SHOW_STATE);
-                    game.cRoom.addActiveObject(this);
-                    costume.visible = true;
+                if ( ! costume.visible ) {
+                    player.replaceHoldObject(this);
                 }
             }
             
@@ -117,6 +93,15 @@ package src.objects {
         
         override public function destroy():void {
             super.destroy();
+        }
+        
+        override public function show():void {
+            super.show();
+            costume.setState(SHOW_STATE);
+        }
+        
+        override public function hide():void {
+            costume.setState(HIDE_STATE);
         }
         
     }
