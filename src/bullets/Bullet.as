@@ -1,7 +1,9 @@
 ﻿package src.bullets {
+    import Box2D.Collision.b2AABB;
     import Box2D.Common.Math.b2Vec2;
     import Box2D.Dynamics.b2Body;
     import Box2D.Dynamics.b2BodyDef;
+    import Box2D.Dynamics.b2Fixture;
     import Box2D.Dynamics.b2FixtureDef;
     import Box2D.Dynamics.b2World;
     import flash.display.DisplayObject;
@@ -11,6 +13,8 @@
     import src.Game;
     import src.interfaces.*;
     import src.objects.AbstractObject;
+    import src.objects.Door;
+    import src.objects.Obstacle;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
     
@@ -25,6 +29,12 @@
         
         private var active = true;
         private var bodyHidden:Boolean = false;
+        
+        public var is_explosion:Boolean = false;
+        public var explode:Boolean = false;
+        private var powder_power:Number = 2;
+        private var explosion_rad:Number = 2;
+        
         private var speed:Point;
         
         public var bulletDef:BulletDef;
@@ -41,6 +51,11 @@
         }
         
         public function setType(type_:String):void {
+            switch (type_) {
+                case BulletCostume.NUKELINO_TYPE:
+                    is_explosion = true;
+                break;
+            }
             costume.setType(type_);
             costume.setState(DEFAULT_STATE);
         }
@@ -77,9 +92,48 @@
                 if (active && !costume.visible) deactivate();
                 return;
             }
-            
+            if ( explode ) {
+                var aabb:b2AABB = new b2AABB();
+                aabb.lowerBound = body.GetPosition().Copy();
+                aabb.lowerBound.Subtract(new b2Vec2(explosion_rad, explosion_rad));
+                aabb.upperBound = body.GetPosition().Copy();
+                aabb.upperBound.Add(new b2Vec2(explosion_rad, explosion_rad));
+                game.cRoom.world.QueryAABB(queryAABBCallback, aabb);
+                
+                explode = false;
+            }
             x = body.GetPosition().x * gws;
             y = body.GetPosition().y * gws;
+        }
+        
+        private function queryAABBCallback(fixture:b2Fixture):Boolean {
+            var userData:Object = fixture.GetUserData();
+            var object_name:String = "object";
+            
+            if ( userData && userData.hasOwnProperty(object_name) ) {
+                if ( userData[object_name] is AbstractObject ) {
+                    var obj:AbstractObject = AbstractObject(userData[object_name]);
+                    var obj_impulse:b2Vec2 = obj.body.GetPosition().Copy();
+                    obj_impulse.Subtract(body.GetPosition());
+                    obj_impulse.Multiply(10);
+                    
+                    if ( obj is Door && Door(obj).isSecret ) {
+                        Door(obj).specialLock = false;
+                        Door(obj).unlock();
+                    }
+                    
+                    if ( obj is Obstacle ) {
+                        Obstacle(obj).breakObject();
+                    }
+                    
+                    if ( obj is Bullet ) {
+                        return true;
+                    }
+                    
+                    obj.body.ApplyImpulse( obj_impulse, obj.body.GetWorldCenter());
+                }
+            }
+            return true;
         }
         
         public function setState(state:String):void {

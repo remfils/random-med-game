@@ -57,7 +57,7 @@ package src.task {
                     if ( task.makeGuess(answer) ) {
                         tasks.splice(i, 1);
                         
-                        game.player.addToStats({"EXP": task.getReward()});
+                        //game.player.addToStats({"EXP": task.getReward()});
                         
                         if ( task.room ) {
                             //task.room.assignTask( getNextTaskForRoom(task.room) );
@@ -81,6 +81,8 @@ package src.task {
                 if ( task.checkAnswer(task_object) ) {
                     task_object.positiveOutcome();
                     task.complete();
+                    game.player.addToStats(task.reward);
+                    
                     tasks.splice(task_index, 1);
                     
                     var room:Room = task.room;

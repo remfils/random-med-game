@@ -6,16 +6,18 @@ package src.task {
         
         public function KillEnemyTask() {
             super();
+            answer = 0;
         }
         
         override public function checkAnswer(task_object:TaskObject):Boolean {
-            if ( task_object.task_id == id ) answer ++;
-            trace("answer checked!");
+            if ( task_object.task_id == id ) {
+                answer += Enemy(task_object).exp;
+            }
             return !room.checkEnemiesForTask(id);
         }
         
-        override public function getReward():Number {
-            return 2 * answer;
+        override protected function generateReward():void {
+            reward.EXP = answer;
         }
         
     }

@@ -7,6 +7,7 @@
     import src.util.Recorder;
     
     public class Task {
+        public var reward:Object = { "EXP": 0 };
         
         public static var taskManager:TaskManager; // D!
         
@@ -19,12 +20,18 @@
         public var color:uint = 0;
         var answer:uint;
         
+        var combo:Number = 1;
+        
         public var end_time:Date;// D!
 
         public function Task(id_:uint=0, type_id_:int=0) {
             answer = Random.getOneFromThree();
             id = id_;
             type = type_id_;
+        }
+        
+        public function get MULT():Number {
+            return ( combo + 1 ) / 2 * combo; 
         }
         
         // D!
@@ -39,6 +46,7 @@
         
         public function checkAnswer(task_object:TaskObject):Boolean {
             trace(answer, task_object.id);
+            guessCount ++;
             return answer == task_object.id;
         }
         
@@ -72,24 +80,6 @@
             return result;
         }
         
-        public function getReward():Number {
-            var total:Number = 0;
-            switch ( guessCount ) {
-                case 1:
-                    total += 5;
-                    ComboManager.addCombo(ComboManager.LEVER_COMBO);
-                break;
-                case 2:
-                    total += 1;
-                default:
-                    ComboManager.clearCombo(ComboManager.LEVER_COMBO);
-            }
-            
-            total *= ComboManager.getCombo(ComboManager.LEVER_COMBO);
-            
-            return total;
-        }
-        
         public function readXML(taskXML:XML):void {
             type = taskXML.@type;
             id = taskXML.@id;
@@ -99,6 +89,34 @@
         public function complete():void {
             is_complete = true;
             if (external) room.unlockDoorsWithTaskID(id);
+            
+            generateReward();
+        }
+        
+        protected function generateReward():void {
+            var total:Number = 0;
+            switch ( guessCount ) {
+                case 1:
+                    total += 5;
+                    incMultiplier();
+                break;
+                case 2:
+                    total += 1;
+                default:
+                    resetMultiplier();
+            }
+            
+            total *= MULT;
+            reward.EXP = total;
+        }
+        
+        public function incMultiplier():void {
+            combo ++;
+            if ( combo > 4 ) combo = 4;
+        }
+        
+        public function resetMultiplier():void {
+            combo = 1;
         }
 
     }

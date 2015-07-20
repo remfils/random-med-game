@@ -19,7 +19,7 @@
         
         protected var health:Number = MAX_HEALTH;
         public var damage:Number = 1;
-        public var exp:Number = 30;
+        public var exp:Number = 2;
         protected var enemy_mass:Number = 0.3;
         
         protected var isFlip:Boolean = true;

@@ -76,6 +76,12 @@ package src.levels {
                     return;
                 }
                 
+                if ( bullet.is_explosion ) {
+                    bullet.explode = true;
+                    game.bulletController.hideBullet(bullet);
+                    return;
+                }
+                
                 if ( bullet.bulletDef.damage >= MAX_DOOR_DAMAGE && userData.object is Door ) {
                     if ( Door(userData.object).isSecret ) {
                         Door(userData.object).specialLock = false;

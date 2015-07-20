@@ -1,4 +1,5 @@
 ﻿package src.levels {
+    import Box2D.Collision.b2AABB;
     import Box2D.Collision.Shapes.*;
     import Box2D.Common.Math.*;
     import Box2D.Dynamics.*;
@@ -429,6 +430,10 @@
             costume.x = CENTER_X;
             costume.y = CENTER_Y;
             gameObjectPanel.addChild(costume);
+        }
+        
+        public function createExplosion(power:Number, center:b2Vec2, radius:Number):void {
+            
         }
         
         public function exit():void {

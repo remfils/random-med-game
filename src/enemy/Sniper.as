@@ -23,6 +23,7 @@ package src.enemy {
         public function Sniper() {
             super();
             agroDistance = 300;
+            exp = 10;
         }
         
         override public function activate():void {
