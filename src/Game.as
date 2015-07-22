@@ -92,7 +92,8 @@ package src {
             _LEVEL = level;
         }
         
-        public function readUserInventory(userInventory:Array):void {
+        public function getDataFromUser(user:User):void {
+            var userInventory:Array = user.inventory;
             var i:int, invLength:int = userInventory.length;
             var item:InventoryItem;
             
@@ -102,6 +103,13 @@ package src {
                     if (item.isSpell ) {
                         player.spells.push(BulletController.getIndexOfBulletByName(item.item_name));
                     }
+                }
+            }
+            
+            var p_data:Object = user.playerData;
+            for (var prop:String in p_data) {
+                if ( player.hasOwnProperty(prop) ) {
+                    player[prop] = p_data[prop];
                 }
             }
         }

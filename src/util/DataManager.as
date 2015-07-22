@@ -143,7 +143,7 @@ package src.util {
             
             var resultXML:XML = <Data>
                 <UserData>
-                    {user.toXML() }
+                    {user.toXML()}
                 </UserData>
                 <LevelData>
                     <level>

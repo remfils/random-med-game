@@ -134,7 +134,7 @@
                 
                 EXP_TO_NEXT = getXPToLevel(LEVEL);
                 
-                if ( game ) {
+                if ( game.playerStat ) {
                     game.playerStat.update();
                 }
             }

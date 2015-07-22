@@ -96,7 +96,7 @@
             startLevelLoading(e.id);
             
             game = new Game(e.id);
-            game.readUserInventory(dataManager.user.inventory);
+            game.getDataFromUser(dataManager.user);
             //game.player.setInventory(dataManager.user.inventory);
         }
         

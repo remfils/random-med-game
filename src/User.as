@@ -2,8 +2,9 @@ package src {
     import src.objects.AbstractObject;
     import src.ui.mageShop.InventoryItem;
     import src.ui.playerStat.PlayerStat;
+    import src.util.AbstractManager;
 
-    public class User {
+    public class User extends AbstractManager {
         public var uid:uint=0;
         public var name:String = "";
         public var surname:String = "";
@@ -78,27 +79,30 @@ package src {
         public function toXML():XML {
             var result:XML,
                 item:InventoryItem;
+            var player:Player = game.player;
             
-            updateData();
+            if ( levelsCompleted < AbstractObject.game.levelId ) {
+                levelsCompleted = AbstractObject.game.levelId;
+            }
             
             result =  <User>
                 <uid>{this.uid}</uid>
                 <name>{this.name}</name>
                 <surname>{this.surname}</surname>
-                <HEALTH>{playerData.HEALTH}</HEALTH>
-                <MAX_HEALTH>{playerData.MAX_HEALTH}</MAX_HEALTH>
-                <MANA>{playerData.MANA}</MANA>
-                <MAX_MANA>{playerData.MAX_MANA}</MAX_MANA>
-                <EXP>{playerData.EXP}</EXP>
-                <MONEY>{playerData.MONEY}</MONEY>
+                <HEALTH>{player.HEALTH}</HEALTH>
+                <MAX_HEALTH>{player.MAX_HEALTH}</MAX_HEALTH>
+                <MANA>{player.MANA}</MANA>
+                <MAX_MANA>{player.MAX_MANA}</MAX_MANA>
+                <EXP>{player.EXP}</EXP>
+                <MONEY>{player.MONEY}</MONEY>
                 <levelsCompleted>{this.levelsCompleted}</levelsCompleted>
-                <MAX_SPELLS>{playerData.MAX_SPELLS}</MAX_SPELLS>
-                <MAX_ITEMS>{playerData.MAX_ITEMS}</MAX_ITEMS>
+                <MAX_SPELLS>{player.MAX_SPELLS}</MAX_SPELLS>
+                <MAX_ITEMS>{player.MAX_ITEMS}</MAX_ITEMS>
                 <INVENTORY></INVENTORY>
             </User>;
             
-            for ( var i = 0; i < inventory.length; i++ ) {
-                item = inventory[i];
+            for ( var i = 0; i < playerInventory.length; i++ ) {
+                item = playerInventory[i];
                 result.INVENTORY.*[i] = <Item>
                     <iid>{item.iid}</iid>
                     <onPlayer>{item.onPlayer}</onPlayer>
@@ -108,6 +112,7 @@ package src {
             return result;
         }
         
+        // D!
         public function updateData():void {
             if ( levelsCompleted < AbstractObject.game.levelId ) {
                 levelsCompleted = AbstractObject.game.levelId;
