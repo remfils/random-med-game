@@ -19,9 +19,10 @@ package src {
     
     public class Game extends Sprite {
         public static const VERSION:String = "0.41";
+        public static var TEST_MODE:Boolean = true;
         
         public var levelId:int = 0;
-        public var rating:int = 1;
+        public var rating:int = 0;
         
         private static var i:uint;
         private var j:uint;
@@ -50,7 +51,6 @@ package src {
         
         public static const EXIT_ROOM_EVENT = "exit_room";
         public static const OBJECT_ACTIVATE_EVENT = "object_activate";
-        public static const TEST_MODE:Boolean = true;
         public static var TestModePanel:Sprite;
 
         private var menuPanel:GameMenu;
@@ -85,7 +85,7 @@ package src {
             
             TestModePanel = new Sprite();
             
-            player = new Player();
+            //player = new Player();
         }
         
         public function setLevel(level:Array):void {
@@ -96,6 +96,8 @@ package src {
             var userInventory:Array = user.inventory;
             var i:int, invLength:int = userInventory.length;
             var item:InventoryItem;
+            
+            player = user.player;
             
             for (i = 0; i < invLength; i++) {
                 item = InventoryItem(userInventory[i]);
@@ -156,11 +158,10 @@ package src {
             
             glassPanel = new Sprite();
             glassPanel.y += playerStat.height;
-            addChild(glassPanel);
+            addChildAt(glassPanel, getChildIndex(playerStat));
             
             menuPanel = new GameMenu();
             addChild(menuPanel);
-            menuPanel.setUpMenu();
             
             TestModePanel.y += playerStat.height;
             addChild(TestModePanel);
@@ -248,6 +249,7 @@ package src {
         public function update (e:Event) {
             if (PAUSED) {
                 stopTheGame();
+                menuPanel.show();
                 return;
             }
             if (isTransition) return;
@@ -332,7 +334,34 @@ package src {
         public function hitPlayer(hitNumber:int ):void {
             if ( player.makeHit(hitNumber) ) {
                 playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
+                
+                if ( player.HEALTH <= 0 ) {
+                    stopTheGame();
+                    
+                    var gr:Graphics = glassPanel.graphics;
+                    gr.beginFill(0x000000);
+                    gr.drawRect(0, 0,stage.stageWidth, stage.stageHeight);
+                    gr.endFill();
+                    glassPanel.alpha = 0.7;
+                    
+                    glassPanel.addChild(player.costume);
+                    player.die();
+                    player.costume.alpha = 1 + glassPanel.alpha;
+                    
+                    var timer:Timer = new Timer(2000, 1);
+                    timer.addEventListener(TimerEvent.TIMER_COMPLETE, playerDeathAnimationListener);
+                    timer.start();
+                }
             }
+        }
+        
+        private function playerDeathAnimationListener(e:TimerEvent) :void {
+            var timer:Timer = Timer(e.target);
+            timer.removeEventListener(TimerEvent.TIMER_COMPLETE, playerDeathAnimationListener);
+            
+            var menu:GameMenu = new GameMenu(GameMenu.DEATH_TYPE);
+            addChild(menu);
+            menu.show();
         }
         
         // по возможности удалить RoomEvent
@@ -408,11 +437,11 @@ package src {
         
         // ВЫЗОВ ИГРОВОГО МЕНЮ
         public function stopTheGame():void {
+            isTransition = true;
             removeEventListeners();
-            addEventListener(GameEvent.RESUME_EVENT, resume, true);
+            addEventListener(GameEvent.RESUME_EVENT, resume, true); // D!
             stopAllLoopClipsIn(this);
             player.clearInput();
-            menuPanel.show();
         }
         
         private function stopAllLoopClipsIn( obj:DisplayObjectContainer, setToPlay:Boolean=false ):void {
@@ -453,22 +482,22 @@ package src {
             timer.removeEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);
             timer.stop();
             
-            showEndLevelMenu();
-        }
-        
-        public function showEndLevelMenu():void {
-            var endGameMenu:EndLevelMenu = new EndLevelMenu();
+            var endGameMenu:GameMenu = new GameMenu(GameMenu.END_LEVEL_TYPE);
             addChild(endGameMenu);
-            endGameMenu.setUpMenu();
             endGameMenu.show();
         }
-        
-        public function gotoNextLevel():void {
-            dispatchEvent(new ExitLevelEvent(true));
+        // D!
+        public function showEndLevelMenu():void {
+            
         }
-        
+        // D!
+        public function gotoNextLevel():void {
+            dispatchEvent(new ExitLevelEvent());
+        }
+        // D!
         public function exit():void {
-            dispatchEvent(new ExitLevelEvent(false));
+            var event:ExitLevelEvent = new ExitLevelEvent();
+            dispatchEvent(event);
         }
         
         public function resume():void {

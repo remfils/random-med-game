@@ -49,14 +49,14 @@ package src.ui {
         override public function readData(data:Object):void {
             super.readData(data);
             
-            addPlaceholders(data.user.playerData);
+            addPlaceholders();
             
             addItems();
         }
         
-        private function addPlaceholders(playerData:Object):void {
-            var maxSpells:int = playerData.MAX_SPELLS,
-                maxItems:int = playerData.MAX_ITEMS,
+        private function addPlaceholders():void {
+            var maxSpells:int = user.player.MAX_SPELLS,
+                maxItems:int = user.player.MAX_ITEMS,
                 i:int,
                 scale_factor:Number=206/317,
                 locked:Boolean = false,

@@ -73,9 +73,10 @@ package src.ui {
             
             userInfo.text = "Имя: " + user.name + "\n"
                 + "Фамилия: " + user.surname + "\n"
-                + "Уровень: " + user.playerData.LEVEL + "\n"
-                + "♥ = " + user.playerData.HEALTH / 2. + " / " + user.playerData.MAX_HEALTH / 2. + "    "
-                + "ѽ =  " + user.playerData.MANA / 2. + " / " + user.playerData.MAX_MANA / 2. + ""
+                + "Опыт: " + user.player.EXP + "\n"
+                + "До следующего уровня: " + (user.player.EXP_TO_NEXT - user.player.EXP) + "\n"
+                + "♥ = " + user.player.HEALTH / 2. + " / " + user.player.MAX_HEALTH / 2. + "    "
+                + "ѽ =  " + user.player.MANA / 2. + " / " + user.player.MAX_MANA / 2. + ""
                 + "";
             userInfo.width = userInfo.textWidth + 20;
             userInfo.height = userInfo.textHeight + 20;

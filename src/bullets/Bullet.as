@@ -10,11 +10,13 @@
     import flash.display.MovieClip;
     import flash.geom.Point;
     import src.costumes.BulletCostume;
+    import src.enemy.Enemy;
     import src.Game;
     import src.interfaces.*;
     import src.objects.AbstractObject;
     import src.objects.Door;
     import src.objects.Obstacle;
+    import src.Player;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
     
@@ -124,6 +126,14 @@
                     
                     if ( obj is Obstacle ) {
                         Obstacle(obj).breakObject();
+                    }
+                    
+                    if ( obj is Enemy ) {
+                        Enemy(obj).makeHit(bulletDef.damage);
+                    }
+                    
+                    if ( obj is Player ) {
+                        game.hitPlayer(2);
                     }
                     
                     if ( obj is Bullet ) {

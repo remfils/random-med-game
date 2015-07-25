@@ -6,6 +6,7 @@ package src.ui {
     import flash.text.TextField;
     import flash.text.TextFormat;
     import src.events.ExitLevelEvent;
+    // D!
     public class EndLevelMenu extends GameMenu {
         
         private var exitButton:SimpleButton;
@@ -49,12 +50,12 @@ package src.ui {
         
         private function nextLevel(e:MouseEvent):void {
             destroy();
-            game.gotoNextLevel();
+            dispatchEvent(new ExitLevelEvent(ExitLevelEvent.NEXT_LEVEL_CMD));
         }
         
         private function exitGame(e:MouseEvent):void {
             destroy();
-            game.exit();
+            dispatchEvent(new ExitLevelEvent(ExitLevelEvent.EXIT_LEVEL_EVENT));
         }
         
         override public function destroy():void {

@@ -134,7 +134,7 @@
                 
                 EXP_TO_NEXT = getXPToLevel(LEVEL);
                 
-                if ( game.playerStat ) {
+                if ( game && game.playerStat ) {
                     game.playerStat.update();
                 }
             }
@@ -286,7 +286,7 @@
         }
         
         public function update():void {
-            if ( !body ) return;
+            if ( !body || !_HEALTH ) return;
             
             var worldScale:Number = Game.WORLD_SCALE;
             var bodyPosition:b2Vec2 = body.GetPosition();
@@ -349,13 +349,14 @@
         
         public function makeHit (dmg:Number):Boolean {
             if (immune) return false;
-            immune = true;
-            startInvincibilityTimer();
             
             _HEALTH -= dmg;
             if ( HEALTH <= 0 ) {
-                die();
                 HEALTH = 0;
+            }
+            else {
+                immune = true;
+                startInvincibilityTimer();
             }
             return true;
         }
@@ -382,7 +383,8 @@
         }
         
         public function die() {
-            trace("Player is dead");
+            costume.setType(PlayerCostume.DEATH_TYPE);
+            costume.setAnimatedState();
         }
     }
 }

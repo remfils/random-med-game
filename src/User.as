@@ -10,17 +10,20 @@ package src {
         public var surname:String = "";
         public var levelsCompleted:int = 0;
         
-        public var inventory:Array = new Array();
+        public var inventory:Array = new Array(); // D!
         public var playerInventory:Vector.<InventoryItem>;
         
+        public var player:Player;
         public var playerData:Object;
         
         public function User() {
             playerData = new Object();
             playerInventory = new <InventoryItem>[];
-            //player = Player.getInstance();
+            player = new Player();
+            
         }
         
+        // D!
         public function putSpellAt ( position:int, Spell:Class ):void {
             /*if ( position >= maxSpells || spells.length == maxSpells ) {
                 throw new RangeError("You can't any more spells", 1);
@@ -31,7 +34,7 @@ package src {
                 spells[position] = Spell;
             }*/
         }
-        
+        // D!
         public function addToPlayerInventory():void {
             
         }
@@ -49,17 +52,23 @@ package src {
                     }
                 }
             }*/
+            
         }
         
         public function setDataFromXML (userXML:XMLList):void {
             var item:InventoryItem;
+            var dname:String;
             
             for each ( var data:XML in userXML.* ) {
-                if ( this.hasOwnProperty(data.name()) ) {
-                    this[data.name()] = data;
+                dname = data.name();
+                if ( this.hasOwnProperty(dname) ) {
+                    this[dname] = data;
+                }
+                else if ( player.hasOwnProperty(dname)){
+                    player[dname] = data;
                 }
                 else {
-                    playerData[data.name()] = data;
+                    playerData[dname] = data;
                 }
             }
             
@@ -74,6 +83,23 @@ package src {
                     //if ( item.onPlayer ) playerInventory[playerInventory.length - 1] = item;
                 }
             }
+        }
+        
+        public function getEXPToNextLevel():int {
+            var _EXP:int = playerData.EXP;
+            var next_level_xp:Number = 0;
+            var level = 0;
+            
+            while ( (next_level_xp = getXPToLevel(level) ) < _EXP) {
+                level ++;
+            }
+            
+            return next_level_xp - _EXP;
+        }
+        
+        private function getXPToLevel(lvl:Number):Number{
+            if ( lvl > 0 ) return 25 * lvl * lvl + getXPToLevel(lvl - 1);
+            else return 25;
         }
         
         public function toXML():XML {

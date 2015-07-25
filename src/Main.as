@@ -14,6 +14,8 @@
     import src.util.*;
 
     public class Main extends Sprite {
+        private const TEST_MODE:Boolean = false;
+        
         var mainMenu:MainMenu;
         var game:Game;
         private var dataManager:DataManager;
@@ -22,7 +24,7 @@
         public static const DATA_LOADED_EVENT:String = "evt_menu_loaded";
         
         public function Main () {
-            super ();
+            super();
             
             if ( stage ) init();
             else addEventListener(Event.ADDED_TO_STAGE, init);
@@ -32,17 +34,18 @@
             removeEventListener(Event.ADDED_TO_STAGE, init);
             
             AbstractMenu.user = new User();
+            Game.TEST_MODE = TEST_MODE;
             
             var flashVars:Object = stage.loaderInfo.parameters as Object;
             
-            if ( !flashVars.api_id ) {
+            if ( TEST_MODE || !flashVars.api_id ) {
                 flashVars['api_id'] = 4700251;
                 flashVars['viewer_id'] = 18524077;
                 flashVars['sid'] = "5d01022e7987c20447c1bad1921ae0d7ab656198b89b610e1d1c97875cbd51f72d115368d06319b1006da";
                 flashVars['secret'] = "f84ad7a82e"; 
             }
             
-            if ( flashVars['viewer_id'] != 18524077 ) {
+            if ( TEST_MODE && flashVars['viewer_id'] != 18524077 ) {
                 showOutOfOrder();
                 return;
             }
@@ -94,9 +97,6 @@
         
         private function MenuItemSelectedListener(e:MenuItemSelectedEvent):void {
             startLevelLoading(e.id);
-            
-            game = new Game(e.id);
-            game.getDataFromUser(dataManager.user);
             //game.player.setInventory(dataManager.user.inventory);
         }
         
@@ -104,9 +104,12 @@
             var levelLoader = new URLLoader();
             levelLoader.addEventListener(Event.COMPLETE, levelDataLoaded);
             
-            Output.add("starting to load level: " + dataManager.getLevelLinkById(levelId));
+            Output.add("starting to load level: " + dataManager.getLevelURL(levelId));
             
-            levelLoader.load(new URLRequest(dataManager.getLevelLinkById(levelId)));
+            game = new Game(levelId);
+            game.getDataFromUser(dataManager.user);
+            
+            levelLoader.load(dataManager.getLevelURL(levelId));
         }
         
         private function levelDataLoaded(e:Event) {
@@ -128,16 +131,33 @@
         }
         
         public function exitLevel(e:ExitLevelEvent):void {
+            if ( !e.level_completed ) {
+                var user:User = dataManager.user;
+                var player:Player = game.player;
+                
+                player.EXP = user.playerData.EXP;
+                player.MONEY = user.playerData.MONEY;
+                
+                if ( !player.HEALTH ) {
+                    player.HEALTH = 1;
+                }
+            }
+            
+            switch (e.cmd) {
+                case ExitLevelEvent.EXIT_TO_MENU_CMD:
+                    dataManager.saveGameData(init);
+                break;
+                case ExitLevelEvent.NEXT_LEVEL_CMD:
+                    dataManager.saveGameData(function(){startLevelLoading(game.levelId + 1);});
+                break;
+                case ExitLevelEvent.RESTART_LEVEL_CMD:
+                    dataManager.saveGameData(function(){startLevelLoading(game.levelId);});
+                break;
+                default:
+            }
+            
             game.destroy();
             removeChild(game);
-            
-            if ( e.nextLevel ) {
-                dataManager.saveGameData();
-                startLevelLoading(game.levelId + 1);
-            }
-            else
-                dataManager.saveGameData(createMainMenu);
-            
         }
         
         private function exitToMainMenu():void {

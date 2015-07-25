@@ -24,6 +24,11 @@ package src.costumes {
             else gotoAndStop(type);
         }
         
+        public function setAnimatedState(state_:String=null):void {
+            if (state_) gotoAndPlay(type + state_);
+            else gotoAndPlay(type);
+        }
+        
         public function getCollider():DisplayObject {
             return costume_collider;
         }

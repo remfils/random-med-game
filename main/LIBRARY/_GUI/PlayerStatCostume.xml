@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1435416480" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1437770564" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="PlayerStatCostume" currentFrame="71">
+    <DOMTimeline name="PlayerStatCostume">
       <layers>
         <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
