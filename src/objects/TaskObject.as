@@ -14,6 +14,8 @@ package src.objects {
         public static const PURPLE_TASK_COLOR_STATE:String = "_purple";
         public static const INDIGO_TASK_COLOR_STATE:String = "_indigo";
         
+        public static const REMOVE_STATE:String = "_remove";
+        
         protected static var FLAG_POSITION_X:int = 0;
         static var FLAG_POSITION_Y:int = 0;
         
@@ -22,6 +24,7 @@ package src.objects {
         
         public var is_active = true;
         public var active_area:DisplayObject;
+        public var color_object:DecorCostume;
         
         public function TaskObject() {
             super();
@@ -71,14 +74,13 @@ package src.objects {
             if ( costume is ActiveObjectCostume ) active_area = ActiveObjectCostume(costume).getActiveArea();
         }
         
-        public function createColorObject(color:String):DecorCostume {
-            var decorFlag:DecorCostume = new DecorCostume();
-            decorFlag.setType(DecorCostume.TASK_FLAG_TYPE);
-            decorFlag.setState("_" + color);
-            decorFlag.x = 0;
-            decorFlag.y = 0;
-            costume.addChild(decorFlag);
-            return decorFlag;
+        public function createColorObject(color:String):void {
+            color_object = new DecorCostume();
+            color_object.setType(DecorCostume.TASK_FLAG_TYPE);
+            color_object.setState("_" + color);
+            color_object.x = 0;
+            color_object.y = 0;
+            costume.addChild(color_object);
         }
         
         public function show():void {
@@ -87,6 +89,11 @@ package src.objects {
         
         public function hide():void {
             costume.visible = false;
+        }
+        
+        public function remove():void {
+            costume.setAnimatedState(REMOVE_STATE);
+            destroy();
         }
         
         override public function destroy():void {

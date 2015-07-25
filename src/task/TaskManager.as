@@ -3,6 +3,7 @@ package src.task {
     import src.events.SubmitTaskEvent;
     import src.Game;
     import src.levels.Room;
+    import src.objects.TaskDoorLock;
     import src.objects.TaskObject;
     import src.util.AbstractManager;
     import src.util.ComboManager;
@@ -14,9 +15,11 @@ package src.task {
         
         public var events:Array;// D!
         private var tasks:Vector.<Task>;
+        private var task_objects:Vector.<TaskObject>
         
         public function TaskManager() {
             tasks = new Vector.<Task>();
+            task_objects = new Vector.<TaskObject>();
             events = new Array();
             Task.taskManager = this;
         }
@@ -83,6 +86,8 @@ package src.task {
                     task.complete();
                     game.player.addToStats(task.reward);
                     
+                    replaceTaskObjectsWithGoods(task.id);
+                    
                     tasks.splice(task_index, 1);
                     
                     var room:Room = task.room;
@@ -133,6 +138,7 @@ package src.task {
             return false;
         }
         
+        // D!
         public function getTaskColor(id:int):uint {
             var i:int = tasks.length;
             while ( i-- ) {
@@ -163,6 +169,30 @@ package src.task {
             return resultXML;
         }
         
+        public function addTaskObject(obj:TaskObject):void {
+            if ( obj is TaskDoorLock) return;
+            task_objects.push(obj);
+        }
+        
+        public function removeTaskObject(obj:TaskObject):void {
+            var i:int = task_objects.length;
+            while ( i-- ) {
+                if ( task_objects[i] == obj ) {
+                    task_objects.splice(i, 1);
+                    break;
+                }
+            }
+        }
+        
+        public function replaceTaskObjectsWithGoods(task_id:int):void {
+            var i:int = task_objects.length;
+            while ( i-- ) {
+                if ( task_objects[i].task_id == task_id ) {
+                    task_objects[i].remove();
+                    task_objects.splice(i, 1);
+                }
+            }
+        }
     }
 
 }

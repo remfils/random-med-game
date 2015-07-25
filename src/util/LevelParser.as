@@ -152,6 +152,7 @@ package src.util {
             var taskId:int = activeObjectsXML.@taskId;
             var taskObj:TaskObject;
             var objName:String;
+            var task_manager:TaskManager = game.taskManager;
             
             for each ( var object:XML in activeObjectsXML.* ) {
                 objName = object.name();
@@ -172,6 +173,7 @@ package src.util {
                 taskObj.readXMLParams(object);
                 
                 room.addActiveObject(taskObj);
+                task_manager.addTaskObject(taskObj);
                 //tintObjectsArray.push(taskObj);
             }
         }

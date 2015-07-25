@@ -1,0 +1,65 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/levers/Lever_break_remove" itemID="55b3bbc8-0000033d" symbolType="graphic" lastModified="1437842493">
+  <timeline>
+    <DOMTimeline name="Lever_break_remove">
+      <layers>
+        <DOMLayer name="smoke2" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-1" d="1.1419677734375" tx="15.25" ty="-2.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.5" y="0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="smoke1" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix d="1.1419677734375" tx="-31.15" ty="-2.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.5" y="0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/LeverGr" symbolType="graphic" firstFrame="36" loop="single frame">
+                  <matrix>
+                    <Matrix tx="-6.3" ty="6.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.2" y="-14.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

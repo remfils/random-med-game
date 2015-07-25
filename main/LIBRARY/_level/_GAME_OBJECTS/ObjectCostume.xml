@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1437309804" lastUniqueIdentifier="12">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1437840819" lastUniqueIdentifier="12">
   <timeline>
-    <DOMTimeline name="ObjectCostume" currentFrame="125">
+    <DOMTimeline name="ObjectCostume" currentFrame="236">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -64,7 +64,13 @@
             <DOMFrame index="309" duration="21" name="SmallMP_drop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="330" duration="30" name="SmallMP_pickup" labelType="name" keyMode="9728">
+            <DOMFrame index="330" duration="14" name="SmallMP_pickup" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="344" duration="17" name="Emerald_drop" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="361" duration="68" name="Emerald_pickup" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -86,12 +92,12 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="179" duration="181" keyMode="9728">
+            <DOMFrame index="179" duration="250" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#4FFF4F" autoNamed="false">
+        <DOMLayer name="actions" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements/>
@@ -270,6 +276,19 @@ visible = false;]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
+            <DOMFrame index="360" duration="17" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="377" duration="52" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="collider" color="#FF800A" locked="true" autoNamed="false">
@@ -334,7 +353,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="194" duration="166" keyMode="9728">
+            <DOMFrame index="194" duration="235" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-8.7">
                   <matrix>
@@ -348,7 +367,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="obj" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="obj" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements>
@@ -551,7 +570,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="236" duration="35" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/exit/Exit" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/exit/Exit" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="1.7" y="-63.85"/>
                   </transformationPoint>
@@ -582,8 +601,32 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="336" duration="24" keyMode="9728">
+            <DOMFrame index="336" duration="8" keyMode="9728">
               <elements/>
+            </DOMFrame>
+            <DOMFrame index="344" duration="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_drop" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.237594604492188" d="0.237594604492188" ty="-1.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="361" duration="68" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_pickup" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.237594604492188" d="0.237594604492188" ty="-1.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1436350968" lastUniqueIdentifier="4">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1437845822" lastUniqueIdentifier="4">
   <timeline>
-    <DOMTimeline name="DecorObject" currentFrame="78">
+    <DOMTimeline name="DecorObject" currentFrame="102">
       <layers>
-        <DOMLayer name="label" color="#9933CC" autoNamed="false">
+        <DOMLayer name="label" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="7" name="Shield" labelType="name" keyMode="9728">
               <elements/>
@@ -28,9 +28,26 @@
             <DOMFrame index="78" duration="16" name="TaskFlag" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
+            <DOMFrame index="94" duration="31" name="TaskFlag_Smoke" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="symbol" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="111" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="111" duration="14" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="symbol" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="7" keyMode="9728">
               <elements>
@@ -103,6 +120,21 @@
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
+            </DOMFrame>
+            <DOMFrame index="94" duration="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="play once">
+                  <matrix>
+                    <Matrix tx="-7.4" ty="-26.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="111" duration="14" keyMode="9728">
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

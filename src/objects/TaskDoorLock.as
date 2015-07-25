@@ -64,6 +64,7 @@ package src.objects {
             player.holdObject = null;
             hb.hide();
             game.deleteManager.add(hb);
+            game.taskManager.removeTaskObject(hb);
         }
         
         override public function destroy():void {

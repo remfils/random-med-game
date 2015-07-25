@@ -1,0 +1,123 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/drop/stones/Emerald" itemID="55b3a7af-00000142" symbolType="graphic" lastModified="1437837792">
+  <timeline>
+    <DOMTimeline name="Emerald">
+      <layers>
+        <DOMLayer name="блеск" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0.301960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!435 -447|909 -447!909 -447[928 -436 943 -422!943 -422[947 -418 952 -413!952 -413[965 -397 967 -379!967 -379[966 -370 963 -358!963 -358[954 -340 936 -320!936 -320[701 -218 645 -95!645 -95|592 167!592 167|-320 167!-320 167|-61 -91!-61
+ -91[126 -228 368 -322!368 -322[490 -390 435 -447"/>
+                    <Edge fillStyle0="1" edges="
+!-692 -95|-1183 167!-1183 167|-614 167!-614 167|-260 -91!-260 -91[-98 -230 -66 -322!-66 -322[-5 -390 143 -447!143 -447|-153 -447!-153 -447[-187 -436 -224 -422!-224 -422[-234 -418 -248 -413!-248 -413[-267 -405 -290 -395!-290 -395[-308
+ -387 -325 -379!-325 -379[-343 -370 -365 -358!-365 -358[-395 -340 -424 -320!-424 -320[-476 -220 -692 -95"/>
+                    <Edge cubics="!435 -447(;435,-447 909,-447 909,-447q435 -447 909 -447);"/>
+                    <Edge cubics="!936 -320(;779,-252 682,-177 645,-95q936 -320Q701 -218q645 -95);"/>
+                    <Edge cubics="!368 -322(;450,-367 472,-409 435,-447q368 -322Q490 -390q435 -447);"/>
+                    <Edge cubics="!967 -379(;967,-373 966,-366 963,-358q967 -379Q966 -370q963 -358);"/>
+                    <Edge cubics="!909 -447(;920,-440 933,-431 943,-422q909 -447Q928 -436q943 -422);"/>
+                    <Edge cubics="!943 -422(;947,-419 949,-416 952,-413q943 -422Q947 -418q952 -413);"/>
+                    <Edge cubics="!952 -413(;961,-402 966,-391 967,-379q952 -413Q965 -397q967 -379);"/>
+                    <Edge cubics="!963 -358(;956,-346 948,-333 936,-320q963 -358Q954 -340q936 -320);"/>
+                    <Edge cubics="!645 -95(;645,-95 592,167 592,167q645 -95 592 167);"/>
+                    <Edge cubics="!-61 -91(;64,-182 208,-259 368,-322q-61 -91Q126 -228q368 -322);"/>
+                    <Edge cubics="!-320 167(;-320,167 -61,-91 -61,-91q-320 167 -61 -91);"/>
+                    <Edge cubics="!592 167(;592,167 -320,167 -320,167q592 167 -320 167);"/>
+                    <Edge cubics="!-424 -320(;-459,-253 -548,-178 -692,-95q-424 -320Q-476 -220q-692 -95);"/>
+                    <Edge cubics="!-260 -91(;-152,-184 -87,-261 -66,-322q-260 -91Q-98 -230q-66 -322);"/>
+                    <Edge cubics="!-153 -447(;-176,-440 -199,-431 -224,-422q-153 -447Q-187 -436q-224 -422);"/>
+                    <Edge cubics="!-224 -422(;-231,-419 -239,-416 -248,-413q-224 -422Q-234 -418q-248 -413);"/>
+                    <Edge cubics="!-325 -379(;-337,-373 -350,-366 -365,-358q-325 -379Q-343 -370q-365 -358);"/>
+                    <Edge cubics="!-248 -413(;-261,-408 -275,-402 -290,-395q-248 -413Q-267 -405q-290 -395);"/>
+                    <Edge cubics="!-290 -395(;-302,-390 -314,-384 -325,-379q-290 -395Q-308 -387q-325 -379);"/>
+                    <Edge cubics="!-365 -358(;-385,-346 -405,-333 -424,-320q-365 -358Q-395 -340q-424 -320);"/>
+                    <Edge cubics="!-1183 167(;-1183,167 -614,167 -614,167q-1183 167 -614 167);"/>
+                    <Edge cubics="!-614 167(;-614,167 -260,-91 -260,-91q-614 167 -260 -91);"/>
+                    <Edge cubics="!-692 -95(;-692,-95 -1183,167 -1183,167q-692 -95 -1183 167);"/>
+                    <Edge cubics="!143 -447(;143,-447 -153,-447 -153,-447q143 -447 -153 -447);"/>
+                    <Edge cubics="!-66 -322(;-25,-367 44,-409 143,-447q-66 -322Q-5 -390q143 -447);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#188309"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#063C00"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#239513"/>
+                    </FillStyle>
+                    <FillStyle index="4">
+                      <SolidColor color="#0D5603"/>
+                    </FillStyle>
+                    <FillStyle index="5">
+                      <SolidColor color="#12A800"/>
+                    </FillStyle>
+                    <FillStyle index="6">
+                      <SolidColor color="#18D001"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="
+!-1292 155|-1345 511"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="
+!-1345 511|1345 511"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="
+!1345 511|1292 155"/>
+                    <Edge fillStyle0="3" fillStyle1="6" edges="
+!1292 155|0 167!0 167|-1292 155"/>
+                    <Edge fillStyle0="2" fillStyle1="4" edges="
+!-1345 511|-1182 750"/>
+                    <Edge fillStyle0="2" edges="
+!-1182 750|1182 750"/>
+                    <Edge fillStyle0="2" fillStyle1="4" edges="
+!1182 750|1345 511"/>
+                    <Edge fillStyle0="5" edges="
+!-1039 -447|-1638 208!-1638 208|-1638 492"/>
+                    <Edge fillStyle0="5" fillStyle1="1" edges="
+!-1638 492|-1292 155"/>
+                    <Edge fillStyle0="5" fillStyle1="6" edges="
+!-1292 155|-1039 -447"/>
+                    <Edge fillStyle0="4" edges="
+!-1638 492|-1182 750"/>
+                    <Edge fillStyle0="4" fillStyle1="1" edges="
+!-1345 511|-1638 492"/>
+                    <Edge fillStyle1="5" edges="
+!1039 -447|1638 208!1638 208|1638 492"/>
+                    <Edge fillStyle1="4" edges="
+!1638 492|1182 750"/>
+                    <Edge fillStyle0="1" fillStyle1="4" edges="
+!1345 511|1638 492"/>
+                    <Edge fillStyle0="1" fillStyle1="5" edges="
+!1638 492|1292 155"/>
+                    <Edge fillStyle0="5" fillStyle1="6" edges="
+!1039 -447|1292 155"/>
+                    <Edge fillStyle1="6" edges="
+!-1039 -447|1039 -447"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

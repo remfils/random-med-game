@@ -1,0 +1,75 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/keys/TaskKey_remove" itemID="55b3c0df-00000403" symbolType="graphic" lastModified="1437843767">
+  <timeline>
+    <DOMTimeline name="TaskKey_remove" currentFrame="16">
+      <layers>
+        <DOMLayer name="sm2" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.272216796875" d="0.272216796875" tx="1.5" ty="5.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.8" y="-9.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="sm2" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.220901489257813" d="0.220901489257813" tx="-3.15" ty="-0.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" duration="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.456771850585938" d="0.456771850585938" tx="-4" ty="-15.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.75" y="-9.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/TaskKeyGr" symbolType="graphic" firstFrame="11" loop="single frame">
+                  <matrix>
+                    <Matrix tx="0.05" ty="-0.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -7,6 +7,8 @@ package src.util {
     public class MagicBag extends AbstractManager {
         public static const SMALL_HP_STAT_OBJ:Object = { "HEALTH": 1 };
         public static const SMALL_MP_STAT_OBJ:Object = { "MANA": 2 };
+        public static const COIN_STAT_OBJ:Object = { "MONEY": 1 };
+        public static const EMERALD_STAT_OBJ:Object = { "MONEY": 20 };
         
         public static const DROP_STATE:String = "_drop";
         public static const PICKUP_STATE:String = "_pickup";
@@ -41,7 +43,7 @@ package src.util {
         public function open():ObjectCostume {
             if (is_empty) return null;
             
-            costume.setState(DROP_STATE);
+            costume.setAnimatedState(DROP_STATE);
             collider = costume.getCollider();
             
             not_active = false;
@@ -53,7 +55,8 @@ package src.util {
             
             if ( collider.hitTestObject(player.collider) ) {
                 not_active = true;
-                costume.setState(PICKUP_STATE);
+                costume.setAnimatedState(PICKUP_STATE);
+                game.deleteManager.add(this);
                 
                 switch (costume.type) {
                     case ObjectCostume.SMALLHP_TYPE:
@@ -64,6 +67,12 @@ package src.util {
                     break;
                     case ObjectCostume.EXIT_TYPE:
                         game.finishLevel();
+                    break;
+                    case ObjectCostume.COIN_TYPE:
+                        player.addToStats(COIN_STAT_OBJ);
+                    break;
+                    case ObjectCostume.EMERALD_TYPE:
+                        player.addToStats(EMERALD_STAT_OBJ);
                     break;
                     default:
                 }

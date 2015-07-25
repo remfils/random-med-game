@@ -142,11 +142,10 @@
             task_id = paramsXML.@task_id;
         }
         
-        override public function createColorObject(color:String):DecorCostume {
-            var costume:DecorCostume = super.createColorObject(color);
-            costume.x = -42;
-            costume.y = 1;
-            return costume;
+        override public function createColorObject(color:String):void {
+            super.createColorObject(color);
+            color_object.x = -42;
+            color_object.y = 1;
         }
         
         override public function setTint(color:uint):void {

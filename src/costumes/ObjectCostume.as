@@ -19,6 +19,7 @@ package src.costumes {
         public static const EXIT_TYPE:String = "Exit";
         public static const SMALLMP_TYPE:String = "SmallMP";
         public static const SMALLHP_TYPE:String = "SmallHP";
+        public static const EMERALD_TYPE:String = "Emerald";
         
         // TASK OBJECTS
         

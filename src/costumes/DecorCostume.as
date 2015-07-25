@@ -9,6 +9,7 @@ package src.costumes {
         public static const WEB_TYPE:String = "Web";
         public static const SHIELD_TYPE:String = "Shield";
         public static const TASK_FLAG_TYPE:String = "TaskFlag";
+        public static const TASK_FLAG_SMOKE_TYPE:String = "TaskFlag_Smoke";
         
         public function DecorCostume() {
             
