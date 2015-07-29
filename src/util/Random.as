@@ -12,6 +12,7 @@
          * @return число 1, 2 или 3
          */
         public static function getOneFromThree():Number {
+            return 1;
             return getOneFrom(3);
         }
         

@@ -1,6 +1,8 @@
 package src.objects {
     import flash.display.DisplayObject;
     import flash.events.Event;
+    import flash.events.TimerEvent;
+    import flash.utils.Timer;
     import src.Game;
     import src.Player;
     import src.util.Collider;
@@ -13,6 +15,8 @@ package src.objects {
         public static const LOCK_TYPE:String = "DoorLock";
         public static const BREAK_KEY_STATE:String = "_break";
         public static const UNLOCK_STATE:String = "_unlock";
+        
+        private static const KEY_UNLOCK_DELAY:int = 1533;
         
         private var key:TaskKey;
         
@@ -30,26 +34,34 @@ package src.objects {
             
             if ( active_area.hitTestObject(player.collider) ) {
                 var holdObject:Object = player.holdObject;
-                
                 if ( holdObject ) {
                     if ( holdObject is TaskKey ) {
-                        eatPlayerKey();
+                        trace("lock hit test in update");
                         key = TaskKey(holdObject);
                         id = key.id;
+                        eatPlayerKey();
                         submitAnswer();
                     }
                 }
-            }
-            
-            if ( !costume.visible ) {
-                destroy();
             }
         }
         
         override public function positiveOutcome():void {
             costume.setState(UNLOCK_STATE);
+            deactivate();
+            var timer:Timer = new Timer(KEY_UNLOCK_DELAY);
+            timer.addEventListener(TimerEvent.TIMER, destroyAfterTimePasses);
+            timer.start();
         }
         
+        private function destroyAfterTimePasses(e:TimerEvent):void {
+            var a:Timer = e.target as Timer;
+            a.removeEventListener(TimerEvent.TIMER, destroyAfterTimePasses);
+            
+            destroy();
+        }
+        
+        // D!
         public function removeCorpse():void {
             game.deleteManager.add(this);
         }
@@ -61,10 +73,14 @@ package src.objects {
         private function eatPlayerKey():void {
             var player:Player = game.player;
             var hb:TaskObject = player.holdObject;
-            player.holdObject = null;
             hb.hide();
-            game.deleteManager.add(hb);
+            hb.destroy();
             game.taskManager.removeTaskObject(hb);
+            player.holdObject = null;
+        }
+        
+        override public function deactivate():void {
+            is_active = false;
         }
         
         override public function destroy():void {

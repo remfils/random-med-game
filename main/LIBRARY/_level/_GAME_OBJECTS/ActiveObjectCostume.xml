@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ActiveObjectCostume" itemID="55928eb3-00000133" linkageExportForAS="true" linkageClassName="src.costumes.ActiveObjectCostume" lastModified="1437845551" lastUniqueIdentifier="10">
   <timeline>
-    <DOMTimeline name="ActiveObjectCostume" currentFrame="67">
+    <DOMTimeline name="ActiveObjectCostume" currentFrame="113">
       <layers>
         <DOMLayer name="labels" color="#4FFFFF" autoNamed="false">
           <frames>
@@ -45,7 +45,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
+        <DOMLayer name="actions" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements/>
@@ -234,11 +234,11 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="flag_g" color="#9933CC" current="true" isSelected="true" autoNamed="false" layerType="guide">
+        <DOMLayer name="flag_g" color="#9933CC" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" duration="99" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/DecorObject" selected="true" symbolType="graphic" firstFrame="29" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/DecorObject" symbolType="graphic" firstFrame="29" loop="single frame">
                   <matrix>
                     <Matrix tx="-15.85" ty="8.55"/>
                   </matrix>
@@ -347,7 +347,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="122" duration="12" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/TaskKeyGr" selected="true" symbolType="graphic" firstFrame="19" loop="play once">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/keys/TaskKeyGr" symbolType="graphic" firstFrame="19" loop="play once">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

@@ -23,7 +23,7 @@
         
         private static const COLOR_OBJ_DISSAPEAR_FRAME:int = 8;
         
-        private var state:String = "";
+        public var state:String = "";
         
         private var testFun:Function; // D!
         private var frame_counter:int = 0;
@@ -73,6 +73,7 @@
         
         override public function remove():void {
             costume.setAnimatedState(state + REMOVE_STATE);
+            destroy();
             
             if ( ! color_object ) return;
             
@@ -84,12 +85,9 @@
             
             frame_counter = 0;
             flag_smoke.addEventListener(Event.ENTER_FRAME, smokeFrameListener);
-            
-            destroy();
         }
         
         private function smokeFrameListener(e:Event):void {
-            trace(frame_counter);
             if ( frame_counter++ >= COLOR_OBJ_DISSAPEAR_FRAME ) {
                 costume.removeChild(color_object);
                 var target:DecorCostume = DecorCostume(e.target);

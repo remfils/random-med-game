@@ -1,10 +1,11 @@
 package src.util {
     import flash.display.DisplayObject;
     import src.costumes.ObjectCostume;
+    import src.interfaces.Update;
     import src.Player;
 
 
-    public class MagicBag extends AbstractManager {
+    public class MagicBag extends AbstractManager implements Update {
         public static const SMALL_HP_STAT_OBJ:Object = { "HEALTH": 1 };
         public static const SMALL_MP_STAT_OBJ:Object = { "MANA": 2 };
         public static const COIN_STAT_OBJ:Object = { "MONEY": 1 };
@@ -26,6 +27,11 @@ package src.util {
             player = game.player;
         }
         
+        public function setType(str:String):void {
+            costume.setType(str);
+            is_empty = false;
+        }
+        
         public function readXML(objectsXML:XMLList):void {
             var randomP:Number = Math.random();
             var p:Number = 0;
@@ -44,7 +50,7 @@ package src.util {
             if (is_empty) return null;
             
             costume.setAnimatedState(DROP_STATE);
-            collider = costume.getCollider();
+            collider = costume.getCollider(); 
             
             not_active = false;
             return costume;

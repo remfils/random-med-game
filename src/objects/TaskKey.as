@@ -45,7 +45,7 @@ package src.objects {
             }
             
         }
-        
+        // D!
         public function changePlace():void {
             /*is_active = true;
             //gotoAndPlay("show");
@@ -83,16 +83,12 @@ package src.objects {
             
             return createBodyReq;
         }
-        
+        // D!
         override public function setTint(color:uint):void {
             var col:Color = new Color();
             col.setTint(color, 0.5);
             var tintObject:DisplayObject = costume.getChildByName("tintObject_mc");
             tintObject.transform.colorTransform = col;
-        }
-        
-        override public function destroy():void {
-            super.destroy();
         }
         
         override public function show():void {

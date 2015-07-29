@@ -6,9 +6,10 @@ package src.objects {
     import src.costumes.DecorCostume;
     import src.events.SubmitTaskEvent;
     import src.interfaces.Updatable;
+    import src.interfaces.Update;
     import src.util.Collider;
     
-    public class TaskObject extends AbstractObject {
+    public class TaskObject extends AbstractObject implements Update {
         public static const RED_TASK_COLOR_STATE:String = "_red";
         public static const GREEN_TASK_COLOR_STATE:String = "_green";
         public static const PURPLE_TASK_COLOR_STATE:String = "_purple";
@@ -100,6 +101,7 @@ package src.objects {
             super.destroy();
             game.deleteManager.add(costume);
             game.deleteManager.add(body);
+            game.cRoom.remove(this);
         }
     }
 

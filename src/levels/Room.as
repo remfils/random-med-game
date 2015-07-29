@@ -7,6 +7,8 @@
     import src.*;
     import src.costumes.ObjectCostume;
     import src.enemy.*;
+    import src.interfaces.Updatable;
+    import src.interfaces.Update;
     import src.objects.*;
     import src.task.*;
     import src.util.*;
@@ -43,6 +45,7 @@
         var _doors:Array = new Array(); // deleteme
         var _activeAreas:Vector.<DisplayObject> = new Vector.<DisplayObject>();
         var _gameObjects:Array = new Array();
+        var _updates:Vector.<Update>;
         var _enemies:Array = new Array();
         public var drops:Array = new Array();
         
@@ -70,7 +73,7 @@
             addDoors();
             
             magic_bag = new MagicBag();
-            
+            _updates = new Vector.<Update>();
             if (Game.TEST_MODE) setDebugDraw();
         }
         
@@ -176,6 +179,33 @@
             return obj;
         }
         
+        public function add(obj:Object):void {
+            if ( obj is Update ) {
+                _updates.push(obj);
+            }
+            if ( obj is TaskObject ) {
+                var t_o:TaskObject = TaskObject(obj);
+                gameObjectPanel.addChild(t_o.costume);
+                if ( !t_o.body ) {
+                    t_o.requestBodyAt(world);
+                }
+            }
+        }
+        
+        public function remove(obj):void {
+            var i:int;
+            if ( obj is Update ) {
+                i = _updates.length;
+                while (i--) {
+                    if ( _updates[i] == obj ) {
+                        trace("removed from updates");
+                        _updates.splice(i, 1);
+                        break;
+                    }
+                }
+            }
+        }
+        
         public function init():void {
             playerBody.SetAwake(false);
             playerBody.SetPosition(new b2Vec2(_player.x / Game.WORLD_SCALE, _player.y / Game.WORLD_SCALE));
@@ -271,7 +301,7 @@
                 }
             }
         }
-        
+        // D!
         public function addObstacle(obstacle:Obstacle):void {
             if ( obstacle.active ) _gameObjects.push(obstacle);
             gameObjectPanel.addChild(obstacle.costume);
@@ -293,6 +323,7 @@
         }
         
         public function update () {
+            var i:int;
             world.Step(TIME_STEP, 5, 5);
             world.ClearForces();
             
@@ -301,6 +332,11 @@
             updateGameObjects();
             
             gameObjectPanel.update();
+            
+            i = _updates.length;
+            while ( i-- ) {
+                _updates[i].update();
+            }
             
             if ( magic_bag ) magic_bag.update();
             

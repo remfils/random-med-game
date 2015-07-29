@@ -28,7 +28,7 @@
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_torch" itemID="551d3efe-00000161"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/door_lock" itemID="54675e4e-000001f3"/>
@@ -42,7 +42,7 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/stones" itemID="55b3a7bd-00000149" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys/_parts" itemID="559298bf-000001b7"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
@@ -61,8 +61,8 @@
           <DOMFolderItem name="src" itemID="53afd2e7-00000077" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
           <DOMFontItem name="MagicFont" itemID="54380457-000000e7" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
+          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
      </fonts>
      <media>
           <DOMBitmapItem name="_bosses/clone/Untitled-1.jpg" itemID="551d3a50-0000012d" sourceExternalFilepath="../main/LIBRARY/_bosses/clone/Untitled-1.jpg" sourceLastImported="1427978743" externalFileCRC32="543492954" externalFileSize="382310" quality="50" href="_bosses/clone/Untitled-1.jpg" bitmapDataHRef="M 4 1407974788.dat" frameRight="32000" frameBottom="32000" isJPEG="true"/>
@@ -210,7 +210,7 @@
           <Include href="_level/_GAME_OBJECTS/levers/Lever_open_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3bfe5-000003b1" lastModified="1437843472"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3c036-000003de" lastModified="1437843538"/>
           <Include href="_level/_GAME_OBJECTS/levers/LeverGr.xml" itemIcon="1" loadImmediate="false" itemID="5592914a-00000150" lastModified="1435674650"/>
-          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1437840819"/>
+          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1438074130"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemIcon="1" loadImmediate="false" itemID="5406cba1-000002bd" lastModified="1428224304"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop.xml" itemIcon="1" loadImmediate="false" itemID="541aeeed-000002fd" lastModified="1411051268"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/part001.xml" itemIcon="1" loadImmediate="false" itemID="541aefb9-00000312" lastModified="1411051449"/>
@@ -1053,25 +1053,25 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="1237810" publishTime="1437846849" publishDebug="true"/>
-          <PublishItem publishSize="1237922" publishTime="1437846594" publishDebug="true"/>
-          <PublishItem publishSize="1237910" publishTime="1437846490" publishDebug="true"/>
-          <PublishItem publishSize="837280" publishTime="1437846465" publishDebug="true"/>
-          <PublishItem publishSize="837280" publishTime="1437846423" publishDebug="true"/>
-          <PublishItem publishSize="1236623" publishTime="1437845014" publishDebug="true"/>
-          <PublishItem publishSize="1236627" publishTime="1437844901" publishDebug="true"/>
-          <PublishItem publishSize="1218830" publishTime="1437840008" publishDebug="true"/>
-          <PublishItem publishSize="1218765" publishTime="1437839854" publishDebug="true"/>
-          <PublishItem publishSize="1218764" publishTime="1437839737" publishDebug="true"/>
-          <PublishItem publishSize="1212670" publishTime="1437827750" publishDebug="true"/>
-          <PublishItem publishSize="1212651" publishTime="1437827626" publishDebug="true"/>
-          <PublishItem publishSize="814802" publishTime="1437827223" publishDebug="true"/>
-          <PublishItem publishSize="1212680" publishTime="1437827081" publishDebug="true"/>
-          <PublishItem publishSize="814802" publishTime="1437827028" publishDebug="true"/>
-          <PublishItem publishSize="814802" publishTime="1437826940" publishDebug="true"/>
-          <PublishItem publishSize="1064449" publishTime="1437822261"/>
-          <PublishItem publishSize="1064978" publishTime="1437822191"/>
-          <PublishItem publishSize="1064616" publishTime="1437822130"/>
-          <PublishItem publishSize="1064611" publishTime="1437822096"/>
+          <PublishItem publishSize="1239219" publishTime="1438184100" publishDebug="true"/>
+          <PublishItem publishSize="1239341" publishTime="1438183996" publishDebug="true"/>
+          <PublishItem publishSize="722458" publishTime="1438183958" publishDebug="true"/>
+          <PublishItem publishSize="1239132" publishTime="1438183289" publishDebug="true"/>
+          <PublishItem publishSize="1239235" publishTime="1438183220" publishDebug="true"/>
+          <PublishItem publishSize="1239189" publishTime="1438182995" publishDebug="true"/>
+          <PublishItem publishSize="1239155" publishTime="1438182527" publishDebug="true"/>
+          <PublishItem publishSize="1239177" publishTime="1438182439" publishDebug="true"/>
+          <PublishItem publishSize="1238858" publishTime="1438181966" publishDebug="true"/>
+          <PublishItem publishSize="837198" publishTime="1438181915" publishDebug="true"/>
+          <PublishItem publishSize="1238707" publishTime="1438181005" publishDebug="true"/>
+          <PublishItem publishSize="1238842" publishTime="1438180828" publishDebug="true"/>
+          <PublishItem publishSize="837198" publishTime="1438180795" publishDebug="true"/>
+          <PublishItem publishSize="1238787" publishTime="1438180548" publishDebug="true"/>
+          <PublishItem publishSize="1238684" publishTime="1438074591" publishDebug="true"/>
+          <PublishItem publishSize="1238782" publishTime="1437989573" publishDebug="true"/>
+          <PublishItem publishSize="1238722" publishTime="1437989355" publishDebug="true"/>
+          <PublishItem publishSize="1238848" publishTime="1437989237" publishDebug="true"/>
+          <PublishItem publishSize="1238772" publishTime="1437989074" publishDebug="true"/>
+          <PublishItem publishSize="837198" publishTime="1437989050" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

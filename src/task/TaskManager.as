@@ -1,12 +1,17 @@
 package src.task {
+    import fl.motion.Keyframe;
     import flash.events.Event;
+    import src.costumes.ObjectCostume;
     import src.events.SubmitTaskEvent;
     import src.Game;
     import src.levels.Room;
     import src.objects.TaskDoorLock;
+    import src.objects.TaskKey;
+    import src.objects.TaskLever;
     import src.objects.TaskObject;
     import src.util.AbstractManager;
     import src.util.ComboManager;
+    import src.util.MagicBag;
     import src.util.Recorder;
 
     public class TaskManager extends AbstractManager {
@@ -86,7 +91,7 @@ package src.task {
                     task.complete();
                     game.player.addToStats(task.reward);
                     
-                    replaceTaskObjectsWithGoods(task.id);
+                    replaceTaskObjectsWithGoods(task.id, task.guessCount);
                     
                     tasks.splice(task_index, 1);
                     
@@ -184,12 +189,38 @@ package src.task {
             }
         }
         
-        public function replaceTaskObjectsWithGoods(task_id:int):void {
+        public function replaceTaskObjectsWithGoods(task_id:int, guess_count:int):void {
             var i:int = task_objects.length;
+            var task_object:TaskObject, obj:ObjectCostume;
+            var magic_bag:MagicBag;
+            var bag_costume:ObjectCostume;
+            
             while ( i-- ) {
                 if ( task_objects[i].task_id == task_id ) {
-                    task_objects[i].remove();
+                    task_object = task_objects[i];
+                    task_object.remove();
+                    
+                    if ( guess_count <= 2 ) {
+                        magic_bag = new MagicBag();
+                        magic_bag.setType(ObjectCostume.COIN_TYPE);
+                    }
+                    
+                    if ( task_object is TaskLever && guess_count == 1 ) {
+                        if ( TaskLever(task_object).state == TaskLever.OPEN_STATE ) {
+                            magic_bag.setType(ObjectCostume.EMERALD_TYPE);
+                        }
+                    }
+                    
+                    if ( magic_bag ) {
+                        bag_costume = magic_bag.open();
+                        bag_costume.x = task_object.x;
+                        bag_costume.y = task_object.y;
+                        game.cRoom.gameObjectPanel.addChild(bag_costume);
+                        game.cRoom.add(magic_bag);
+                    }
+                    
                     task_objects.splice(i, 1);
+                    magic_bag = null;
                 }
             }
         }

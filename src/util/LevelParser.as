@@ -172,7 +172,8 @@ package src.util {
                 }
                 taskObj.readXMLParams(object);
                 
-                room.addActiveObject(taskObj);
+                //room.addActiveObject(taskObj);
+                room.add(taskObj);
                 task_manager.addTaskObject(taskObj);
                 //tintObjectsArray.push(taskObj);
             }
