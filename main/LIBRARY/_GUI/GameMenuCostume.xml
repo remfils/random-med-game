@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1437776307" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1438330678" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="GameMenuCostume">
+    <DOMTimeline name="GameMenuCostume" currentFrame="99">
       <layers>
         <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>

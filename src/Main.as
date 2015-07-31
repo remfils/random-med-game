@@ -43,6 +43,7 @@
                 flashVars['viewer_id'] = 18524077;
                 flashVars['sid'] = "5d01022e7987c20447c1bad1921ae0d7ab656198b89b610e1d1c97875cbd51f72d115368d06319b1006da";
                 flashVars['secret'] = "f84ad7a82e";
+                AbstractMenu.user.sid = 1;
             }
             
             if ( TEST_MODE && flashVars['viewer_id'] != 18524077 ) {

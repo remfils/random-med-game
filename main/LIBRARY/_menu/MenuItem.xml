@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1435321956" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1438330706" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="MenuItem" currentFrame="2">
+    <DOMTimeline name="MenuItem" currentFrame="79">
       <layers>
         <DOMLayer name="label" color="#4F80FF" autoNamed="false">
           <frames>
@@ -120,7 +120,7 @@
             </DOMFrame>
             <DOMFrame index="47" duration="33" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/ItemPlaceHolder_clip" selected="true" symbolType="graphic" firstFrame="29" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/ItemPlaceHolder_clip" symbolType="graphic" firstFrame="29" loop="single frame">
                   <transformationPoint>
                     <Point x="45" y="40.4"/>
                   </transformationPoint>

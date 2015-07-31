@@ -29,6 +29,7 @@ package src {
             
             // create BG
             var BG:MenuSprites = new MenuSprites();
+            BG.x = -35.85;
             BG.setSprite(MenuSprites.BG);
             addChild(BG);
             

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1435326614" lastUniqueIdentifier="45">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1438330682" lastUniqueIdentifier="45">
   <timeline>
     <DOMTimeline name="playerStat">
       <layers>
