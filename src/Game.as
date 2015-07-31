@@ -454,6 +454,12 @@ package src {
             player.clearInput();
         }
         
+        public function resume():void {
+            PAUSED = isTransition = false;
+            addEventListeners();
+            stopAllLoopClipsIn(this, true);
+        }
+        
         private function stopAllLoopClipsIn( obj:DisplayObjectContainer, setToPlay:Boolean=false ):void {
             var i:uint = obj.numChildren
             while ( i-- ) {
@@ -508,13 +514,6 @@ package src {
         public function exit():void {
             var event:ExitLevelEvent = new ExitLevelEvent();
             dispatchEvent(event);
-        }
-        
-        public function resume():void {
-            PAUSED = false;
-            stopAllLoopClipsIn(this, true);
-            addEventListeners();
-            removeEventListener(GameEvent.RESUME_EVENT, resume, true);
         }
         
         public function destroy():void {

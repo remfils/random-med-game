@@ -1,5 +1,6 @@
 package src.util {
     import flash.events.Event;
+    import flash.events.IOErrorEvent;
     import flash.net.*;
     import flash.text.StyleSheet;
     import flash.text.TextField;
@@ -50,6 +51,7 @@ package src.util {
             
             //dataLoadIsCompleteCallback = callback;
             loader.addEventListener(Event.COMPLETE, gameDataLoadComplete);
+            loader.addEventListener(IOErrorEvent.IO_ERROR, serverConnectErrorListener);
             
             Output.add("sending start_game req to " + path);
             
@@ -59,6 +61,7 @@ package src.util {
         private function gameDataLoadComplete(e:Event):void {
             var loader:URLLoader = e.target as URLLoader;
             loader.removeEventListener(Event.COMPLETE, gameDataLoadComplete);
+            loader.removeEventListener(IOErrorEvent.IO_ERROR, serverConnectErrorListener);
             Output.add('server response\n' + loader.data);
             
             data = new XML(loader.data);
@@ -71,6 +74,10 @@ package src.util {
             }
             
             main.dispatchEvent(new Event(Main.DATA_LOADED_EVENT, true));
+        }
+        
+        private function serverConnectErrorListener(e:IOErrorEvent):void {
+            main.showOutOfOrder();
         }
         
         private function startGettingUserData(e:Event):void {

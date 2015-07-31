@@ -114,6 +114,14 @@ package src {
             if (parent) parent.removeChild(this);
         }
         
+        public function hide():void {
+            visible = false;
+            
+            var i:int = menus.length;
+            while ( i-- ) {
+                AbstractMenu(menus[i]).deactivate();
+            }
+        }
     }
 
 }

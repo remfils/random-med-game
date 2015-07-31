@@ -32,6 +32,7 @@
         
         private function init():void {
             removeEventListener(Event.ADDED_TO_STAGE, init);
+            stage.color = 0x333333;
             
             AbstractMenu.user = new User();
             Game.TEST_MODE = TEST_MODE;
@@ -41,8 +42,8 @@
             if ( TEST_MODE || !flashVars.api_id ) {
                 flashVars['api_id'] = 4700251;
                 flashVars['viewer_id'] = 18524077;
-                flashVars['sid'] = "5d01022e7987c20447c1bad1921ae0d7ab656198b89b610e1d1c97875cbd51f72d115368d06319b1006da";
-                flashVars['secret'] = "f84ad7a82e";
+                flashVars['sid'] = "eb7c258ba81961cc32c161729ccea427b7b1148fdca05781f6ecefe96eb02245466e656a6509162d12f4d";
+                flashVars['secret'] = "4092d88adb";
                 AbstractMenu.user.sid = 1;
             }
             
@@ -62,7 +63,7 @@
             addEventListener(ExitLevelEvent.EXIT_LEVEL_EVENT, exitLevel, true);
         }
         
-        private function showOutOfOrder():void {
+        public function showOutOfOrder():void {
             var gameError:ErrorScreen = new ErrorScreen();
             addChild(gameError);
             gameError.x += gameError.width / 2 + ( stage.stageWidth - gameError.width ) / 2;
@@ -79,7 +80,7 @@
             tf.selectable = true;
             
             addChild(tf);
-            
+            tf.visible = TEST_MODE;
             Output.init(tf);
         }
         
@@ -126,7 +127,7 @@
             
             game.init();
             
-            mainMenu.destroy();
+            mainMenu.hide();
         }
         
         public function exitLevel(e:ExitLevelEvent):void {

@@ -41,7 +41,8 @@
             var walls:Sprite = new Sprite();
             walls.graphics.clear();
             walls.graphics.beginFill(wall_color);
-            walls.graphics.drawRect(13, 15, 723, 473);
+            // walls.graphics.drawRect(15.15, 16.15, 724.15, 472.50);
+            walls.graphics.drawRect(0, 0, width, height);
             addChildAt(walls, 0);
         }
         

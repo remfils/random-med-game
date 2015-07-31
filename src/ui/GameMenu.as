@@ -120,7 +120,7 @@ package src.ui {
                 break;
                 case END_LEVEL_TYPE:
                     exitButton.addEventListener(MouseEvent.CLICK, exitGame);
-                    resumeButton.addEventListener(MouseEvent.CLICK, nextLevel);
+                    resumeButton.addEventListener(MouseEvent.CLICK, exitGame); // TMP!
                 break;
                 case DEATH_TYPE:
                     exitButton.addEventListener(MouseEvent.CLICK, exitGame);
@@ -185,7 +185,7 @@ package src.ui {
             tween.addEventListener(TweenEvent.MOTION_FINISH, menuIsHiddenHandler);
             
             if ( type == GAME_MENU_TYPE ) {
-                Recorder.add(new Record(Record.GAMEMENU_ENTER_TYPE));
+                Recorder.add(new Record(Record.GAMEMENU_LEAVE_TYPE));
             }
         }
         
@@ -194,7 +194,9 @@ package src.ui {
             tween.removeEventListener(TweenEvent.MOTION_FINISH, menuIsHiddenHandler);
             
             deactivate();
-            game.resume();
+            if ( type == GAME_MENU_TYPE ) {
+                game.resume();
+            }
         }
         
         override public function destroy():void {

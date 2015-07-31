@@ -84,19 +84,8 @@ package src.levels {
                     return;
                 }
                 
-                if ( bullet.bulletDef.damage >= MAX_DOOR_DAMAGE && userData.object is Door ) {
-                    if ( Door(userData.object).isSecret ) {
-                        Door(userData.object).specialLock = false;
-                        Door(userData.object).unlock();
-                    }
-                }
-                
                 if ( userData.object is Enemy ) {
                     Enemy(userData.object).makeHit(bullet.bulletDef.damage);
-                }
-                
-                if ( userData.object is Obstacle && bullet.bulletDef.damage >= MAX_DOOR_DAMAGE ) {
-                    Obstacle(userData.object).breakObject();
                 }
             }
             
