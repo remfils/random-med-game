@@ -111,7 +111,7 @@ package src.task {
                 else {
                     task_object.negativeOutcome();
                 }
-                Recorder.recordTask(task);
+                Recorder.recordTaskGuess(task, task_object.id);
             }
         }
         

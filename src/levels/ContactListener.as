@@ -18,6 +18,8 @@ package src.levels {
     import src.objects.DropObject;
     import src.objects.Obstacle;
     import src.Player;
+    import src.task.Record;
+    import src.util.Recorder;
 
     public class ContactListener extends b2ContactListener {
         private var game:Game;
@@ -106,13 +108,14 @@ package src.levels {
                 if ( userData.object is Enemy ) return;
                 
                 if ( userData.object is Player ) {
-                    game.hitPlayer(bullet.damage);
+                    var dmg = game.hitPlayer(bullet.damage);
+                    Recorder.recordPlayerDmg(2, dmg);
                 }
             }
             bullet.die();
         }
         
-        
+        // D!
         private function checkExitCollide(userDataA:Object, userDataB:Object):void {
             if ( userDataA.object is Player || userDataB.object is Player ) {
                 /*if ( userDataA.object is Door ) {
@@ -124,6 +127,7 @@ package src.levels {
             }
         }
         
+        // D!
         private function checkPlayerDropCollision(userDataA:Object, userDataB:Object):void {
             if ( userDataA.object is Player || userDataB.object is Player ) {
                 if ( userDataA.object is DropObject ) {
@@ -171,7 +175,8 @@ package src.levels {
             dr.Subtract(enemyBody.GetPosition());
             dr.Multiply(3);
             playerBod.ApplyImpulse( dr , playerBod.GetWorldCenter());
-            game.hitPlayer(dmg);
+            var d:Number = game.hitPlayer(dmg);
+            Recorder.recordPlayerDmg(2, dmg);
         }
         
     }

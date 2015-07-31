@@ -17,8 +17,10 @@
     import src.objects.Door;
     import src.objects.Obstacle;
     import src.Player;
+    import src.task.Record;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
+    import src.util.Recorder;
     
     public class Bullet extends AbstractObject implements LoopClip {
         private var gws:Number = Game.WORLD_SCALE;
@@ -133,7 +135,8 @@
                     }
                     
                     if ( obj is Player ) {
-                        game.hitPlayer(2);
+                        var dmg:Number = game.hitPlayer(2);
+                        Recorder.recordPlayerDmg(1, dmg);
                     }
                     
                     if ( obj is Bullet ) {

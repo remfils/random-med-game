@@ -13,6 +13,8 @@ package src.ui {
     import src.costumes.GameMenuCostume;
     import src.events.ExitLevelEvent;
     import src.events.GameEvent;
+    import src.task.Record;
+    import src.util.Recorder;
     
     public class GameMenu extends AbstractMenu {
         public static const GAME_MENU_TYPE:int = 1;
@@ -171,12 +173,20 @@ package src.ui {
             var tween:Tween = new Tween(this, "alpha", Strong.easeIn, 0, MAX_MENU_STRANPARENCY, 10);
             tween = new Tween (costume,"x", Strong.easeInOut, -costume.width, game.stage.stageWidth / 2, 10);
             super.show();
+            
+            if ( type == GAME_MENU_TYPE ) {
+                Recorder.add(new Record(Record.GAMEMENU_ENTER_TYPE));
+            }
         }
         
         override public function hide():void {
             var tween:Tween = new Tween(this, "alpha", Strong.easeIn, MAX_MENU_STRANPARENCY, 0, 10);
             tween = new Tween (costume,"x", Strong.easeInOut, game.stage.stageWidth / 2, -costume.width, 10);
             tween.addEventListener(TweenEvent.MOTION_FINISH, menuIsHiddenHandler);
+            
+            if ( type == GAME_MENU_TYPE ) {
+                Recorder.add(new Record(Record.GAMEMENU_ENTER_TYPE));
+            }
         }
         
         private function menuIsHiddenHandler(e:Event):void {

@@ -63,7 +63,7 @@
                     taskObject.negativeOutcome();
                     is_complete = false;
                 }
-                Recorder.recordTask(this);
+                // Recorder.recordTaskGuess(this);
             }
             return is_complete;
         }

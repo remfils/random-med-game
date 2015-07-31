@@ -15,13 +15,18 @@ package src.util {
 
     public class DataManager extends AbstractManager {
         public const server_name = "http://game.home";
+        private const START_GAME_PAGE = "/start_game.php";
+        private const RECORD_PAGE = "/record.php";
+        
+        private const GET_UID:String = "uid=";
+        private const GET_SID:String = "sid=";
+        
         public var flashVars:Object = null;
         public var user:User;
         public var vkID:int = 0;
         
         private static var data:XML = null;
         private var styleSheet:StyleSheet;
-        private var testMode:Boolean = true;
         private var dataLoadIsCompleteCallback:Function;
         
         public var main:Main;
@@ -33,16 +38,15 @@ package src.util {
             user = AbstractMenu.user;
             user.uid = flashVars['viewer_id'];
             
-            if ( testMode ) {
-                startSettingGameStats();
-            }
+            Recorder.server = this;
         }
         
         public function startGameDataLoading(callback:Function):void {
             var path:String;
             var loader:URLLoader = new URLLoader();
             
-            path = server_name + "/start_game.php?user_vk_id=" + flashVars['viewer_id'];
+            path = server_name + START_GAME_PAGE + "?" + GET_UID + user.uid;
+            if ( user.sid ) path += "&" + GET_SID + user.sid;
             
             //dataLoadIsCompleteCallback = callback;
             loader.addEventListener(Event.COMPLETE, gameDataLoadComplete);
@@ -60,27 +64,13 @@ package src.util {
             data = new XML(loader.data);
             
             if ( data.BaseData.length() > 0 ) {
-                formUser();
+                user.setDataFromXML(data.BaseData.User);
             }
             else {
                 startGettingUserData(new Event(Event.ACTIVATE));
             }
             
             main.dispatchEvent(new Event(Main.DATA_LOADED_EVENT, true));
-        }
-        
-        public function setGameData():void {
-            //user.setPlayerInventory();
-        }
-        
-        private function formUser():void {
-            user.setDataFromXML(data.BaseData.User);
-        }
-        
-        private function CSSLoadedListener(e:Event):void {
-            var loader:URLLoader = e.target as URLLoader;
-            styleSheet = new StyleSheet();
-            styleSheet.parseCSS(loader.data);
         }
         
         private function startGettingUserData(e:Event):void {
@@ -90,9 +80,10 @@ package src.util {
         
         private function sendCreateUserRequest(allUsersData:Object):void {
             var loader:URLLoader = new URLLoader();
-            Output.add("sending create_player req");
             var req:URLRequest = new URLRequest(server_name + "/create_player.php");
             req.method = URLRequestMethod.POST;
+            
+            Output.add("sending create_player req");
             
             var urlVars:URLVariables = new URLVariables();
             
@@ -108,9 +99,7 @@ package src.util {
             loader.addEventListener(Event.COMPLETE, gameDataLoadComplete);
         }
         
-        private function checkError(e:Object):void {
-            
-        }
+        private function checkError(e:Object):void {}
         
         public function getMainMenuData():Object {
             return {
@@ -122,6 +111,20 @@ package src.util {
         
         public function getLevelURL(level_id:int):URLRequest {
             return new URLRequest(server_name + '/' + data.GameData.levels.level.(id == "" + level_id).src + "?" + (new Date()).getTime());
+        }
+        
+// RECORD
+        
+        public function sendRecordedData(recordsXML:XML):void {
+            var url_vars:URLVariables = new URLVariables();
+            url_vars.events = recordsXML;
+            
+            var req:URLRequest = new URLRequest(server_name + RECORD_PAGE + '?' + GET_SID + user.sid);
+            req.data = url_vars
+            req.method = URLRequestMethod.POST;
+            
+            var urlLoader:URLLoader = new URLLoader();
+            urlLoader.load(req);
         }
         
 // SAVE DATA

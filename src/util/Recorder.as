@@ -1,9 +1,11 @@
 package src.util {
+    import flash.geom.Point;
     import src.task.Record;
     import src.task.Task;
 
 
     public class Recorder extends AbstractManager {
+        public static var server:DataManager;
         
         private static var _recordings:Vector.<Record> = new Vector.<Record>();
         
@@ -11,23 +13,49 @@ package src.util {
             super();
         }
         
-        public static function recordTask(task:Task):void {
-            newRecord(task.type, task.id, task.is_complete);
+        public static function recordTaskGuess(task:Task, task_obj_id:int = 0):void {
+            add(new Record(task.type, task.id, task_obj_id, task.is_complete));
+            // newRecord(task.type, task.id, task.is_complete);
         }
         
-        public static function newRecord(type_id_:int = 0, id_:int = 0, task_complete_:Boolean = false):void {
+        public static function recordPlayerDmg(from_id:int, dmg:int):void {
+            if ( dmg ) {
+                add(new Record(Record.PLAYERLOOSE_HEALTH_TYPE, from_id, dmg));
+            }
+        }
+        
+        public static function recordEnterRoom(room_point:Point):void {
+            add(new Record(Record.ROOM_ENTER_TYPE, room_point.x, room_point.y));
+        }
+        
+        /*public static function newRecord(type_id_:int = 0, id_:int = 0, result:Boolean = false):void {
             var rec:Record = new Record();
             rec.type_id = type_id_;
             rec.id = id_;
-            rec.task_complete = task_complete_;
+            rec.result = result;
             
             add(rec);
-        }
+        }*/
         
         public static function add(record:Record):void {
             _recordings.push(record);
         }
         
+        public static function send():void {
+            var record:Record;
+            var resultXML:XML = <events></events>;
+            var i:int = 0;
+            
+            if ( !_recordings.length ) return;
+            
+            while ( _recordings.length ) {
+                record = _recordings.pop();
+                resultXML.*[i++] = record.toXML();
+            }
+            trace(resultXML);
+            
+            server.sendRecordedData(resultXML);
+        }
     }
 
 }

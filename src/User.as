@@ -5,7 +5,8 @@ package src {
     import src.util.AbstractManager;
 
     public class User extends AbstractManager {
-        public var uid:uint=0;
+        public var uid:uint = 0;
+        public var sid:uint = 0;
         public var name:String = "";
         public var surname:String = "";
         public var levelsCompleted:int = 0;

@@ -85,6 +85,7 @@ package src {
             
             TestModePanel = new Sprite();
             
+            Recorder.add(new Record(Record.LEVEL_START_TYPE, levelId));
             //player = new Player();
         }
         
@@ -326,17 +327,20 @@ package src {
                     break;
                 // SPACE
                 case 32 :
-                    hitPlayer(1);
+                    var dmg:Number = hitPlayer(1);
+                    Recorder.recordPlayerDmg(0, dmg);
                     break;
             }
         }
         
-        public function hitPlayer(hitNumber:int ):void {
+        public function hitPlayer(hitNumber:int ):Number {
             if ( player.makeHit(hitNumber) ) {
                 playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
                 
                 if ( player.HEALTH <= 0 ) {
                     stopTheGame();
+                    Recorder.add(new Record(Record.PLAYER_DEAD_TYPE));
+                    Recorder.send();
                     
                     var gr:Graphics = glassPanel.graphics;
                     gr.beginFill(0x000000);
@@ -352,7 +356,10 @@ package src {
                     timer.addEventListener(TimerEvent.TIMER_COMPLETE, playerDeathAnimationListener);
                     timer.start();
                 }
+                
+                return hitNumber;
             }
+            return 0;
         }
         
         private function playerDeathAnimationListener(e:TimerEvent) :void {
@@ -370,6 +377,8 @@ package src {
             var directionB:int;
             var destination:Point = new Point();
             var roomWasSecret:Boolean = cRoom.isSecret;
+            
+            Recorder.send();
             
             glassPanel.addChild(player.costume);
             
@@ -401,6 +410,7 @@ package src {
             }
             
             cRoom = getCurrentLevel();
+            Recorder.recordEnterRoom(player.currentRoom);
             var doorB:Door = cRoom.getDoorByDirection(directionB);
             
             destination.x += doorB.x;
