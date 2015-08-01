@@ -1,6 +1,7 @@
 package src.util {
     import flash.events.Event;
     import flash.events.IOErrorEvent;
+    import flash.events.SecurityErrorEvent;
     import flash.net.*;
     import flash.text.StyleSheet;
     import flash.text.TextField;
@@ -16,6 +17,7 @@ package src.util {
 
     public class DataManager extends AbstractManager {
         public const server_name = "http://game.home";
+        //public const server_name = "http://5.1.53.16/magicworld";
         private const START_GAME_PAGE = "/start_game.php";
         private const RECORD_PAGE = "/record.php";
         
@@ -36,6 +38,9 @@ package src.util {
             super();
             this.flashVars = flashVars;
             
+            Security.allowDomain("http://5.1.53.16");
+            Security.allowDomain("http://5.1.53.16/magicworld");
+            
             user = AbstractMenu.user;
             user.uid = flashVars['viewer_id'];
             
@@ -52,6 +57,7 @@ package src.util {
             //dataLoadIsCompleteCallback = callback;
             loader.addEventListener(Event.COMPLETE, gameDataLoadComplete);
             loader.addEventListener(IOErrorEvent.IO_ERROR, serverConnectErrorListener);
+            loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, serverSecurityErrorListener);
             
             Output.add("sending start_game req to " + path);
             
@@ -62,6 +68,7 @@ package src.util {
             var loader:URLLoader = e.target as URLLoader;
             loader.removeEventListener(Event.COMPLETE, gameDataLoadComplete);
             loader.removeEventListener(IOErrorEvent.IO_ERROR, serverConnectErrorListener);
+            loader.removeEventListener(SecurityErrorEvent.SECURITY_ERROR, serverSecurityErrorListener);
             Output.add('server response\n' + loader.data);
             
             data = new XML(loader.data);
@@ -78,6 +85,12 @@ package src.util {
         
         private function serverConnectErrorListener(e:IOErrorEvent):void {
             main.showOutOfOrder();
+            Output.add(e.text);
+        }
+        
+        private function serverSecurityErrorListener(e:SecurityErrorEvent):void {
+            main.showOutOfOrder();
+            Output.add("security error" + e.toString());
         }
         
         private function startGettingUserData(e:Event):void {

@@ -1068,6 +1068,19 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1090585" publishTime="1438421774"/>
+          <PublishItem publishSize="1090568" publishTime="1438347623"/>
+          <PublishItem publishSize="1090559" publishTime="1438343148"/>
+          <PublishItem publishSize="1090584" publishTime="1438342990"/>
+          <PublishItem publishSize="1090492" publishTime="1438342300"/>
+          <PublishItem publishSize="1090503" publishTime="1438341814"/>
+          <PublishItem publishSize="837145" publishTime="1438341754"/>
+          <PublishItem publishSize="1091111" publishTime="1438340250"/>
+          <PublishItem publishSize="1091108" publishTime="1438340152"/>
+          <PublishItem publishSize="1091108" publishTime="1438340036"/>
+          <PublishItem publishSize="1090990" publishTime="1438338872"/>
+          <PublishItem publishSize="1090992" publishTime="1438338706"/>
+          <PublishItem publishSize="1090979" publishTime="1438338647"/>
           <PublishItem publishSize="1090250" publishTime="1438338119"/>
           <PublishItem publishSize="1090252" publishTime="1438338015"/>
           <PublishItem publishSize="1090319" publishTime="1438337978"/>
@@ -1075,18 +1088,5 @@
           <PublishItem publishSize="1240728" publishTime="1438337312" publishDebug="true"/>
           <PublishItem publishSize="1240677" publishTime="1438337168" publishDebug="true"/>
           <PublishItem publishSize="1240771" publishTime="1438336978" publishDebug="true"/>
-          <PublishItem publishSize="1240884" publishTime="1438336712" publishDebug="true"/>
-          <PublishItem publishSize="1240725" publishTime="1438336533" publishDebug="true"/>
-          <PublishItem publishSize="1240731" publishTime="1438336337" publishDebug="true"/>
-          <PublishItem publishSize="1240624" publishTime="1438336183" publishDebug="true"/>
-          <PublishItem publishSize="1240713" publishTime="1438336031" publishDebug="true"/>
-          <PublishItem publishSize="1240758" publishTime="1438335259" publishDebug="true"/>
-          <PublishItem publishSize="1240621" publishTime="1438335223" publishDebug="true"/>
-          <PublishItem publishSize="1240620" publishTime="1438335166" publishDebug="true"/>
-          <PublishItem publishSize="1240720" publishTime="1438335098" publishDebug="true"/>
-          <PublishItem publishSize="1240699" publishTime="1438334971" publishDebug="true"/>
-          <PublishItem publishSize="1240578" publishTime="1438334444" publishDebug="true"/>
-          <PublishItem publishSize="1240298" publishTime="1438332096" publishDebug="true"/>
-          <PublishItem publishSize="1240393" publishTime="1438331766" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>
