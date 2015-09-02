@@ -25,6 +25,7 @@ package src.objects {
         public var extruded:Boolean = false;
         public var has_drop:Boolean = false;
         public var active:Boolean = false;
+        public var is_break:Boolean = true;
         
         public function Obstacle() {
             costume = new ObjectCostume();
@@ -38,13 +39,19 @@ package src.objects {
             switch (type) {
                 case ObjectCostume.VASE_TYPE:
                     extruded = true;
+                    is_break = false;
+                    is_static = true;
                 break;
                 case ObjectCostume.STONE_TYPE:
                     is_static = true;
                 break;
                 case ObjectCostume.BARELL_TYPE:
                     extruded = true;
+                    active = true;
+                    has_drop = true;
+                    break;
                 case ObjectCostume.BOX_TYPE:
+                    extruded = true;
                     active = true;
                     has_drop = true;
             }
@@ -97,9 +104,12 @@ package src.objects {
         }
         
         public function breakObject():void {
+            if ( !is_break ) return;
+            
             active = false;
             body.SetActive(active);
             costume.setState(DESTROY_STATE);
+            game.cRoom.addChild(costume);
         }
         
         override public function destroy():void {

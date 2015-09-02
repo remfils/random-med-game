@@ -65,6 +65,7 @@ package src.util {
                 }
                 
                 if ( roomXML.@first_level == "true" ) {
+                    trace(roomXML);
                     game.player.currentRoom.x = roomXML.@x;
                     game.player.currentRoom.y = roomXML.@y;
                     

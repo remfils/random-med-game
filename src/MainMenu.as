@@ -11,7 +11,7 @@ package src {
     import src.ui.LevelSelectMenu;
     import src.ui.MageShopMenu;
     import src.ui.TitleMenu;
-    import src.util.TweenPool;
+    import src.util.ObjectPool;
     
 
     public class MainMenu extends Sprite {
@@ -90,7 +90,7 @@ package src {
         public function switchToMenu(MENU_NAME:uint):void {
             currentMenu.deactivate();
             
-            var tween:Tween = TweenPool.getTween(menuContainer, "y", Strong.easeInOut, menuContainer.y, -menus[MENU_NAME].y, 25);
+            var tween:Tween = ObjectPool.getTween(menuContainer, "y", Strong.easeInOut, menuContainer.y, -menus[MENU_NAME].y, 25);
             
             currentMenu = AbstractMenu(menus[MENU_NAME]);
             currentMenu.activate();

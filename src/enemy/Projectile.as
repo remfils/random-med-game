@@ -4,6 +4,7 @@ package src.enemy {
     import Box2D.Dynamics.b2Body;
     import flash.display.DisplayObject;
     import flash.geom.Point;
+    import src.costumes.CostumeEnemy;
     import src.Game;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
@@ -12,11 +13,9 @@ package src.enemy {
         private var speed:b2Vec2;
         private var SPEED:Number = 4;
         
-        public static const GREEN_BULLET_TYPE:String = "EnemyBullet";
-        
         public function Projectile() {
             super();
-            costume.setType(GREEN_BULLET_TYPE);
+            costume.setType(CostumeEnemy.GREEN_BULLET_TYPE);
             activate();
         }
         

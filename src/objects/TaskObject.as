@@ -103,6 +103,10 @@ package src.objects {
             game.deleteManager.add(body);
             game.cRoom.remove(this);
         }
+        
+        override public function getID():int {
+            return id;
+        }
     }
 
 }

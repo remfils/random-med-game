@@ -1,4 +1,5 @@
 package src {
+    import src.costumes.PlayerCostume;
     import src.objects.AbstractObject;
     import src.ui.mageShop.InventoryItem;
     import src.ui.playerStat.PlayerStat;
@@ -11,11 +12,21 @@ package src {
         public var surname:String = "";
         public var levelsCompleted:int = 0;
         
+        private const backup_var_names:Array = [
+            "HEALTH",
+            "MAX_HEALTH",
+            "MANA",
+            "MAX_MANA",
+            "MONEY",
+            "EXP"
+        ];
+        
         public var inventory:Array = new Array(); // D!
         public var playerInventory:Vector.<InventoryItem>;
         
         public var player:Player;
         public var playerData:Object;
+        public var backup_player:Object;
         
         public function User() {
             playerData = new Object();
@@ -150,6 +161,25 @@ package src {
             while (inventory.length) {
                 inventory.pop();
             }
+        }
+        
+        public function backupPlayer():void {
+            if ( backup_player ) {
+                // remove object
+            }
+            backup_player = new Object();
+            
+            for each ( var p in backup_var_names ) {
+                backup_player[p] = player[p];
+            }
+        }
+        
+        public function resetPlayer():void {
+            for each ( var prop in backup_var_names ) {
+                player[prop] = backup_player[prop];
+            }
+            
+            player.costume.setType(PlayerCostume.STAND_TYPE);
         }
     }
 

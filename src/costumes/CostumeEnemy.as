@@ -5,6 +5,7 @@ package src.costumes {
         public static const MONK:String = "Monk";
         public static const GHOST:String = "Ghost";
         public static const RAT:String = "Rat";
+        public static const GREEN_BULLET_TYPE:String = "EnemyBullet";
         
         public function CostumeEnemy() {
             super();

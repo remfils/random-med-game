@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1438333121" lastUniqueIdentifier="12">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1441171139" lastUniqueIdentifier="12">
   <timeline>
-    <DOMTimeline name="ObjectCostume" currentFrame="274">
+    <DOMTimeline name="ObjectCostume">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -13,74 +13,74 @@
             <DOMFrame index="27" duration="11" name="Box_stand" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="38" duration="13" name="Box_destroy" labelType="name" keyMode="9728">
+            <DOMFrame index="38" duration="20" name="Box_destroy" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="51" duration="11" name="Stone_stand" labelType="name" keyMode="9728">
+            <DOMFrame index="58" duration="11" name="Stone_stand" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="62" duration="16" name="Stone_destroy" labelType="name" keyMode="9728">
+            <DOMFrame index="69" duration="16" name="Stone_destroy" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="78" duration="13" name="Vase_stand" labelType="name" keyMode="9728">
+            <DOMFrame index="85" duration="13" name="Vase_stand" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="91" duration="17" name="Vase_destroy" labelType="name" keyMode="9728">
+            <DOMFrame index="98" duration="17" name="Vase_destroy" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="108" duration="17" name="Door_lock" labelType="name" keyMode="9728">
+            <DOMFrame index="115" duration="17" name="Door_lock" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="125" duration="14" name="Door_unlock" labelType="name" keyMode="9728">
+            <DOMFrame index="132" duration="14" name="Door_unlock" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="139" duration="21" name="DoorSecret_lock" labelType="name" keyMode="9728">
+            <DOMFrame index="146" duration="21" name="DoorSecret_lock" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="160" duration="19" name="DoorSecret_unlock" labelType="name" keyMode="9728">
+            <DOMFrame index="167" duration="19" name="DoorSecret_unlock" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="179" duration="15" name="DoorEnter" labelType="name" keyMode="9728">
+            <DOMFrame index="186" duration="15" name="DoorEnter" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="194" duration="27" name="Coin_drop" labelType="name" keyMode="9728">
+            <DOMFrame index="201" duration="27" name="Coin_drop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="221" duration="15" name="Coin_pickup" labelType="name" keyMode="9728">
+            <DOMFrame index="228" duration="15" name="Coin_pickup" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="236" duration="24" name="Exit_drop" labelType="name" keyMode="9728">
+            <DOMFrame index="243" duration="24" name="Exit_drop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="260" duration="15" name="Exit_pickup" labelType="name" keyMode="9728">
+            <DOMFrame index="267" duration="15" name="Exit_pickup" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="275" duration="21" name="SmallHP_drop" labelType="name" keyMode="9728">
+            <DOMFrame index="282" duration="21" name="SmallHP_drop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="296" duration="13" name="SmallHP_pickup" labelType="name" keyMode="9728">
+            <DOMFrame index="303" duration="13" name="SmallHP_pickup" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="309" duration="21" name="SmallMP_drop" labelType="name" keyMode="9728">
+            <DOMFrame index="316" duration="21" name="SmallMP_drop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="330" duration="14" name="SmallMP_pickup" labelType="name" keyMode="9728">
+            <DOMFrame index="337" duration="14" name="SmallMP_pickup" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="344" duration="17" name="Emerald_drop" labelType="name" keyMode="9728">
+            <DOMFrame index="351" duration="17" name="Emerald_drop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="361" duration="68" name="Emerald_pickup" labelType="name" keyMode="9728">
+            <DOMFrame index="368" duration="68" name="Emerald_pickup" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="task_obj_g" color="#9933CC" autoNamed="false" layerType="guide">
           <frames>
-            <DOMFrame index="0" duration="108" keyMode="9728">
+            <DOMFrame index="0" duration="115" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="108" duration="71" keyMode="9728">
+            <DOMFrame index="115" duration="71" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/DecorObject" symbolType="graphic" firstFrame="29" loop="single frame">
                   <matrix>
@@ -92,12 +92,12 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="179" duration="250" keyMode="9728">
+            <DOMFrame index="186" duration="250" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="actions" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements/>
@@ -114,182 +114,182 @@
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="38" duration="12" keyMode="9728">
+            <DOMFrame index="38" duration="19" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="50" duration="12" keyMode="9728">
+            <DOMFrame index="57" duration="12" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="62" duration="15" keyMode="9728">
+            <DOMFrame index="69" duration="15" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="77" duration="14" keyMode="9728">
+            <DOMFrame index="84" duration="14" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="91" duration="16" keyMode="9728">
+            <DOMFrame index="98" duration="16" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="107" keyMode="9728">
+            <DOMFrame index="114" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="108" duration="16" keyMode="9728">
+            <DOMFrame index="115" duration="16" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="124" keyMode="9728">
+            <DOMFrame index="131" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="125" duration="13" keyMode="9728">
+            <DOMFrame index="132" duration="13" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="138" keyMode="9728">
+            <DOMFrame index="145" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="139" duration="21" keyMode="9728">
+            <DOMFrame index="146" duration="21" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="160" duration="18" keyMode="9728">
+            <DOMFrame index="167" duration="18" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="178" duration="16" keyMode="9728">
+            <DOMFrame index="185" duration="16" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="194" duration="21" keyMode="9728">
+            <DOMFrame index="201" duration="21" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="215" duration="6" keyMode="9728">
+            <DOMFrame index="222" duration="6" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="221" duration="11" keyMode="9728">
+            <DOMFrame index="228" duration="11" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="232" duration="4" keyMode="9728">
+            <DOMFrame index="239" duration="4" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="236" duration="16" keyMode="9728">
+            <DOMFrame index="243" duration="16" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="252" duration="22" keyMode="9728">
+            <DOMFrame index="259" duration="22" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="274" keyMode="9728">
+            <DOMFrame index="281" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="275" duration="14" keyMode="9728">
+            <DOMFrame index="282" duration="14" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="289" duration="7" keyMode="9728">
+            <DOMFrame index="296" duration="7" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="296" duration="6" keyMode="9728">
+            <DOMFrame index="303" duration="6" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="302" duration="7" keyMode="9728">
+            <DOMFrame index="309" duration="7" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="309" duration="13" keyMode="9728">
+            <DOMFrame index="316" duration="13" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="322" duration="8" keyMode="9728">
+            <DOMFrame index="329" duration="8" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="330" duration="6" keyMode="9728">
+            <DOMFrame index="337" duration="6" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="336" duration="24" keyMode="9728">
+            <DOMFrame index="343" duration="24" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="360" duration="17" keyMode="9728">
+            <DOMFrame index="367" duration="17" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="377" duration="52" keyMode="9728">
+            <DOMFrame index="384" duration="52" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
@@ -312,7 +312,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="27" duration="24" keyMode="9728">
+            <DOMFrame index="27" duration="31" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-16.55" centerPoint3DY="-5">
                   <matrix>
@@ -324,7 +324,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="51" duration="27" keyMode="9728">
+            <DOMFrame index="58" duration="27" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-16.55" centerPoint3DY="-5">
                   <matrix>
@@ -336,7 +336,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="78" duration="30" keyMode="9728">
+            <DOMFrame index="85" duration="30" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-15.95" centerPoint3DY="-5.4">
                   <matrix>
@@ -348,7 +348,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="108" duration="86" keyMode="9728">
+            <DOMFrame index="115" duration="86" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-18.5">
                   <matrix>
@@ -360,7 +360,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="194" duration="235" keyMode="9728">
+            <DOMFrame index="201" duration="235" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-8.7">
                   <matrix>
@@ -374,7 +374,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="obj" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="obj" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements>
@@ -402,7 +402,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="27" duration="11" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Box" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/Box" symbolType="graphic" loop="single frame">
                   <matrix>
                     <Matrix tx="0.1" ty="0.35"/>
                   </matrix>
@@ -412,9 +412,9 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="38" duration="13" keyMode="9728">
+            <DOMFrame index="38" duration="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Box" symbolType="graphic" firstFrame="1" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/Box_des2" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="0.1" ty="0.35"/>
                   </matrix>
@@ -424,7 +424,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="51" duration="11" keyMode="9728">
+            <DOMFrame index="58" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Stone" symbolType="graphic" loop="single frame">
                   <matrix>
@@ -436,9 +436,9 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="62" duration="16" keyMode="9728">
+            <DOMFrame index="69" duration="16" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Stone" selected="true" symbolType="graphic" firstFrame="1" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Stone" symbolType="graphic" firstFrame="1" loop="loop">
                   <matrix>
                     <Matrix tx="0.6" ty="0.45"/>
                   </matrix>
@@ -448,7 +448,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="78" duration="13" keyMode="9728">
+            <DOMFrame index="85" duration="13" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Vase" symbolType="graphic" loop="single frame">
                   <matrix>
@@ -460,9 +460,9 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="91" duration="17" keyMode="9728">
+            <DOMFrame index="98" duration="17" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Vase" symbolType="graphic" firstFrame="1" loop="play once">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/Vase_des" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix ty="0.4"/>
                   </matrix>
@@ -472,7 +472,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="108" duration="11" keyMode="9728">
+            <DOMFrame index="115" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" loop="loop">
                   <matrix>
@@ -484,7 +484,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="119" duration="6" keyMode="9728">
+            <DOMFrame index="126" duration="6" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="11" loop="single frame">
                   <matrix>
@@ -496,7 +496,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="125" duration="9" keyMode="9728">
+            <DOMFrame index="132" duration="9" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="11" loop="loop">
                   <matrix>
@@ -508,7 +508,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="134" duration="5" keyMode="9728">
+            <DOMFrame index="141" duration="5" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="20" loop="single frame">
                   <matrix>
@@ -520,10 +520,10 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="139" duration="21" keyMode="9728">
+            <DOMFrame index="146" duration="21" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="160" duration="19" keyMode="9728">
+            <DOMFrame index="167" duration="19" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/doors/Door" symbolType="graphic" firstFrame="32" loop="loop">
                   <matrix>
@@ -535,7 +535,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="179" duration="15" keyMode="9728">
+            <DOMFrame index="186" duration="15" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" symbolType="graphic" loop="loop">
                   <matrix>
@@ -563,7 +563,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="194" duration="38" keyMode="9728">
+            <DOMFrame index="201" duration="38" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/coin/DropCoin" symbolType="graphic" loop="loop">
                   <transformationPoint>
@@ -572,10 +572,10 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="232" duration="4" keyMode="9728">
+            <DOMFrame index="239" duration="4" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="236" duration="35" keyMode="9728">
+            <DOMFrame index="243" duration="35" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/exit/Exit" symbolType="graphic" loop="loop">
                   <transformationPoint>
@@ -584,10 +584,10 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="271" duration="4" keyMode="9728">
+            <DOMFrame index="278" duration="4" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="275" duration="27" keyMode="9728">
+            <DOMFrame index="282" duration="27" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/health/DropHP" symbolType="graphic" loop="loop">
                   <transformationPoint>
@@ -596,10 +596,10 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="302" duration="7" keyMode="9728">
+            <DOMFrame index="309" duration="7" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="309" duration="27" keyMode="9728">
+            <DOMFrame index="316" duration="27" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/mana/DropMana" symbolType="graphic" loop="loop">
                   <transformationPoint>
@@ -608,10 +608,10 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="336" duration="8" keyMode="9728">
+            <DOMFrame index="343" duration="8" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="344" duration="17" keyMode="9728">
+            <DOMFrame index="351" duration="17" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_drop" symbolType="graphic" loop="loop">
                   <matrix>
@@ -623,7 +623,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="361" duration="68" keyMode="9728">
+            <DOMFrame index="368" duration="68" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_pickup" symbolType="graphic" loop="loop">
                   <matrix>

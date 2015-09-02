@@ -44,8 +44,8 @@
         
         public static var fixtureDef:b2FixtureDef;
 //invincibility
-        static var immune:Boolean = false;
-        public static var invincibilityDelay:Number = 140;
+        public var immune:Boolean = false;
+        public static var invincibility_delay:Number = 140;
         var invincibilityTimer:Timer;
         
         static public var instance:Player = null; // D!
@@ -91,7 +91,7 @@
             // delete me
             collider = costume.getCollider();
             
-            invincibilityTimer = new Timer(invincibilityDelay,6);
+            invincibilityTimer = new Timer(invincibility_delay,6);
             
             definePlayerFixture();
         }
@@ -113,6 +113,10 @@
         public function set HEALTH (hp:Number):void {
             if ( hp > MAX_HEALTH ) _HEALTH = MAX_HEALTH;
             else _HEALTH = hp;
+            
+            if ( hp <= 0 ) {
+                hp = 0;
+            }
         }
         
         public function get HEALTH ():Number {
@@ -329,6 +333,37 @@
             }
         }
         
+        public function changeStat(change:ChangePlayerStatObject):Boolean {
+            var stat:String = change.stat_name;
+            if ( this.hasOwnProperty(stat) ) {
+                switch (stat) {
+                    case ChangePlayerStatObject.HEALTH_STAT:
+                        if ( change.is_enemy ) {
+                            if ( immune ) return false;
+                            immune = true;
+                            startInvincibilityTimer();
+                            Recorder.recordPlayerDmg(change.id, -change.delta);
+                        }
+                        else {
+                            if ( _HEALTH == MAX_HEALTH ) return false;
+                        }
+                    break;
+                    case ChangePlayerStatObject.MANA_STAT:
+                        if ( change.delta < 0 ) {
+                            if ( Math.abs(change.delta) > _MANA ) return false;
+                            // Recorder.record mana
+                        }
+                        else {
+                            if ( _MANA == MAX_MANA ) return false;
+                        }
+                    break;
+                }
+                this[change.stat_name] += change.delta;
+                return true;
+            }
+            return false;
+        }
+        
         public function addToStats(statObject:Object):Boolean {
             for ( var stat in statObject ) {
                 if ( this.hasOwnProperty(stat) ) {
@@ -379,7 +414,7 @@
         }
         
         public static function isImmune():Boolean {
-            return immune;
+            return false;
         }
         
         public function die() {

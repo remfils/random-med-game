@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1436263114" lastUniqueIdentifier="30">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1438530217" lastUniqueIdentifier="30">
   <timeline>
-    <DOMTimeline name="EnemyCostume" currentFrame="255">
+    <DOMTimeline name="EnemyCostume">
       <layers>
         <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>

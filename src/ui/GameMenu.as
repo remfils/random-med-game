@@ -120,7 +120,7 @@ package src.ui {
                 break;
                 case END_LEVEL_TYPE:
                     exitButton.addEventListener(MouseEvent.CLICK, exitGame);
-                    resumeButton.addEventListener(MouseEvent.CLICK, exitGame); // TMP!
+                    resumeButton.addEventListener(MouseEvent.CLICK, startNextLevelListener); // TMP!
                 break;
                 case DEATH_TYPE:
                     exitButton.addEventListener(MouseEvent.CLICK, exitGame);
@@ -153,8 +153,7 @@ package src.ui {
             dispatchEvent(event);
         }
         
-        private function nextLevel(e:MouseEvent):void {
-            destroy();
+        private function startNextLevelListener(e:MouseEvent):void {
             dispatchEvent(new ExitLevelEvent(ExitLevelEvent.NEXT_LEVEL_CMD));
         }
         

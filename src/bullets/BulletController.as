@@ -38,7 +38,7 @@
             null,
             new BulletDef(BulletCostume.SPARK_TYPE, 50, 10, 0, 500),
             new BulletDef(BulletCostume.POWER_SPELL_TYPE, 100, 10, 1, 500),
-            new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 3, 1000)
+            new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 3, 1000, true)
         ];
 
         public function BulletController(stage:DisplayObjectContainer) {

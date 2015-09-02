@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ActiveObjectCostume" itemID="55928eb3-00000133" linkageExportForAS="true" linkageClassName="src.costumes.ActiveObjectCostume" lastModified="1437845551" lastUniqueIdentifier="10">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ActiveObjectCostume" itemID="55928eb3-00000133" linkageExportForAS="true" linkageClassName="src.costumes.ActiveObjectCostume" lastModified="1438530272" lastUniqueIdentifier="10">
   <timeline>
-    <DOMTimeline name="ActiveObjectCostume" currentFrame="113">
+    <DOMTimeline name="ActiveObjectCostume" currentFrame="249">
       <layers>
         <DOMLayer name="labels" color="#4FFFFF" autoNamed="false">
           <frames>
@@ -45,7 +45,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements/>
@@ -253,7 +253,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="graph" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="graph" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>

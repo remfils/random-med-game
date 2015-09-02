@@ -1,15 +1,16 @@
 package src.util {
     import flash.display.DisplayObject;
     import src.costumes.ObjectCostume;
+    import src.Ids;
     import src.interfaces.Update;
     import src.Player;
 
 
     public class MagicBag extends AbstractManager implements Update {
-        public static const SMALL_HP_STAT_OBJ:Object = { "HEALTH": 1 };
-        public static const SMALL_MP_STAT_OBJ:Object = { "MANA": 2 };
-        public static const COIN_STAT_OBJ:Object = { "MONEY": 1 };
-        public static const EMERALD_STAT_OBJ:Object = { "MONEY": 20 };
+        public static const SMALL_HP_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, 1, Ids.ITEM_POTION_HEALTH_ID);
+        public static const SMALL_MP_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MANA_STAT, 2, Ids.ITEM_POTION_MANA_ID);
+        public static const COIN_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MONEY_STAT, 1, Ids.ITEM_COIN_ID);
+        public static const EMERALD_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MONEY_STAT, 10, Ids.ITEM_EMERALD_ID);
         
         public static const DROP_STATE:String = "_drop";
         public static const PICKUP_STATE:String = "_pickup";
@@ -60,27 +61,34 @@ package src.util {
             if ( not_active ) return;
             
             if ( collider.hitTestObject(player.collider) ) {
-                not_active = true;
-                costume.setAnimatedState(PICKUP_STATE);
-                game.deleteManager.add(this);
+                var change:ChangePlayerStatObject;
                 
                 switch (costume.type) {
                     case ObjectCostume.SMALLHP_TYPE:
-                        player.addToStats(SMALL_HP_STAT_OBJ);
+                        change = SMALL_HP_STAT_OBJ;
                     break;
                     case ObjectCostume.SMALLMP_TYPE:
-                        player.addToStats(SMALL_MP_STAT_OBJ);
+                        change = SMALL_MP_STAT_OBJ;
                     break;
                     case ObjectCostume.EXIT_TYPE:
+                        costume.setState(PICKUP_STATE);
                         game.finishLevel();
                     break;
                     case ObjectCostume.COIN_TYPE:
-                        player.addToStats(COIN_STAT_OBJ);
+                        change = COIN_STAT_OBJ;
                     break;
                     case ObjectCostume.EMERALD_TYPE:
-                        player.addToStats(EMERALD_STAT_OBJ);
+                        change = EMERALD_STAT_OBJ;
                     break;
-                    default:
+                }
+                
+                if ( change ) {
+                    if ( game.changePlayerStat(change) ) {
+                        Recorder.recordPickUpItem(change.id);
+                        not_active = true;
+                        costume.setAnimatedState(PICKUP_STATE);
+                        game.deleteManager.add(this);
+                    }
                 }
             }
         }

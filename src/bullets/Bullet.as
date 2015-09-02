@@ -12,12 +12,14 @@
     import src.costumes.BulletCostume;
     import src.enemy.Enemy;
     import src.Game;
+    import src.Ids;
     import src.interfaces.*;
     import src.objects.AbstractObject;
     import src.objects.Door;
     import src.objects.Obstacle;
     import src.Player;
     import src.task.Record;
+    import src.util.ChangePlayerStatObject;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
     import src.util.Recorder;
@@ -55,11 +57,6 @@
         }
         
         public function setType(type_:String):void {
-            switch (type_) {
-                case BulletCostume.NUKELINO_TYPE:
-                    is_explosion = true;
-                break;
-            }
             costume.setType(type_);
             costume.setState(DEFAULT_STATE);
         }
@@ -135,8 +132,7 @@
                     }
                     
                     if ( obj is Player ) {
-                        var dmg:Number = game.hitPlayer(2);
-                        Recorder.recordPlayerDmg(1, dmg);
+                        game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -2));
                     }
                     
                     if ( obj is Bullet ) {

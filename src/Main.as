@@ -3,10 +3,12 @@
     import flash.display.Sprite;
     import flash.net.URLLoader;
     import flash.net.URLRequest;
+    import flash.system.Security;
     import flash.text.StyleSheet;
     import flash.text.TextField;
     import src.Game;
     import src.MainMenu;
+    import src.task.Record;
     import src.ui.AbstractMenu;
     import src.util.DataManager;
     import src.util.LevelParser;
@@ -14,7 +16,7 @@
     import src.util.*;
 
     public class Main extends Sprite {
-        private const TEST_MODE:Boolean = false;
+        private const TEST_MODE:Boolean = true;
         
         var mainMenu:MainMenu;
         var game:Game;
@@ -125,22 +127,24 @@
             var levelCreator:LevelParser = new LevelParser();
             levelCreator.createLevelFromXML(game, XML(levelLoader.data));
             
+            AbstractMenu.user.backupPlayer();
+            
             game.init();
             
             mainMenu.hide();
         }
         
         public function exitLevel(e:ExitLevelEvent):void {
+            Recorder.add(new Record(Record.LEVEL_END_TYPE, game.levelId, e.cmd, int(e.level_completed)));
+            Recorder.send();
+            
             if ( !e.level_completed ) {
                 var user:User = dataManager.user;
                 var player:Player = game.player;
                 
-                player.EXP = user.playerData.EXP;
-                player.MONEY = user.playerData.MONEY;
+                user.resetPlayer();
                 
-                if ( !player.HEALTH ) {
-                    player.HEALTH = 1;
-                }
+                game.rating = 0;
             }
             
             switch (e.cmd) {

@@ -1,16 +1,16 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="750" height="600" frameRate="30" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" rulerVisible="true" timelineLabelWidth="258" viewAngle3D="70.7391536835427" nextSceneIdentifier="6" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="750" height="600" frameRate="30" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" rulerVisible="true" objectsSnapTo="false" timelineLabelWidth="258" viewAngle3D="70.7391536835427" nextSceneIdentifier="6" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
           <DOMFolderItem name="_bosses" itemID="5421a1c8-00000102"/>
           <DOMFolderItem name="_bosses/clone" itemID="53ebfd94-000000af"/>
           <DOMFolderItem name="_bosses/clone/_части тела" itemID="53ebfe9c-00000297"/>
           <DOMFolderItem name="_bosses/mad" itemID="54956214-000001ff"/>
           <DOMFolderItem name="_bosses/mad/room" itemID="54956219-00000203"/>
-          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103" isExpanded="true"/>
+          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103"/>
           <DOMFolderItem name="_bullets/_nukelino" itemID="553a0697-00000142"/>
           <DOMFolderItem name="_bullets/_powerspell" itemID="553a0788-0000016a"/>
           <DOMFolderItem name="_bullets/_spark" itemID="553a0843-00000193"/>
           <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104"/>
-          <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110" isExpanded="true"/>
+          <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110"/>
           <DOMFolderItem name="_enemies/_Ghost" itemID="5419fc21-000000d2"/>
           <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
@@ -24,13 +24,14 @@
           <DOMFolderItem name="_GUI/_PlayerStatCostume" itemID="558d50b7-000003b2"/>
           <DOMFolderItem name="_GUI/_spells" itemID="53c4f211-00000073"/>
           <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
-          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_torch" itemID="551d3efe-00000161"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/decor/paintings" itemID="55c37849-000001c9"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/door_lock" itemID="54675e4e-000001f3"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/doors" itemID="53af5331-000000b5"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/doors/_graph" itemID="53af52a9-000000a0"/>
@@ -44,11 +45,13 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys/_parts" itemID="559298bf-000001b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_box" itemID="55e5f2a6-00000171"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_vase" itemID="55e69aff-00000522" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
-          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
+          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107" isExpanded="true"/>
           <DOMFolderItem name="_menu/_btns" itemID="55409dea-00000160"/>
           <DOMFolderItem name="_menu/_MenuCostume" itemID="553cd222-0000013c"/>
           <DOMFolderItem name="_menu/_MenuCostume/_magesShop" itemID="5470a581-00000125"/>
@@ -84,7 +87,7 @@
           <Include href="_bullets/_spark/Spark.xml" loadImmediate="false" itemID="552eb1c8-000002b7" lastModified="1429123538"/>
           <Include href="_bullets/_spark/Spark_default.xml" loadImmediate="false" itemID="553a084e-0000019e" lastModified="1429866633"/>
           <Include href="_bullets/_spark/Spark_destroy.xml" itemIcon="1" loadImmediate="false" itemID="553a088f-000001a9" lastModified="1429866659"/>
-          <Include href="_bullets/BulletCostume.xml" itemID="553a05be-0000012e" lastModified="1435487868"/>
+          <Include href="_bullets/BulletCostume.xml" itemID="553a05be-0000012e" lastModified="1438431240"/>
           <Include href="_enemies/_EnemyBullet/EnemyBullet.xml" loadImmediate="false" itemID="545f54ee-00000469" lastModified="1429367400"/>
           <Include href="_enemies/_EnemyBullet/EnemyBullet_death.xml" loadImmediate="false" itemID="54647d16-00000150" lastModified="1415873350"/>
           <Include href="_enemies/_EnemyBullet/EnemyBullet_normal.xml" loadImmediate="false" itemID="546474eb-0000010a" lastModified="1415871679"/>
@@ -122,7 +125,7 @@
           <Include href="_enemies/_Rat/rat_walk_002.xml" loadImmediate="false" itemID="542eb3aa-000000ef" lastModified="1412349263"/>
           <Include href="_enemies/_Rat/rat_walk_down.xml" loadImmediate="false" itemID="5454b48e-0000014e" lastModified="1415094279"/>
           <Include href="_enemies/enemy_flight_test.xml" loadImmediate="false" itemID="53e9f4e6-000000a2" lastModified="1428865390"/>
-          <Include href="_enemies/EnemyCostume.xml" itemID="5527ddce-0000024c" lastModified="1436263114"/>
+          <Include href="_enemies/EnemyCostume.xml" itemID="5527ddce-0000024c" lastModified="1438530217"/>
           <Include href="_GUI/_coins/coin.xml" loadImmediate="false" itemID="53af5237-00000097" lastModified="1403998775"/>
           <Include href="_GUI/_coins/icoCoin.xml" loadImmediate="false" itemID="53cb1a9c-000001a0" lastModified="1416501447"/>
           <Include href="_GUI/_healthBars/healthBar.xml" loadImmediate="false" itemID="53b9771c-0000007b" lastModified="1404755544"/>
@@ -147,12 +150,12 @@
           <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1438330682"/>
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1407526163"/>
           <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1438330700"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1438338486"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1438876578"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
           <Include href="_level/_Decorations/знамя.xml" itemIcon="1" loadImmediate="false" itemID="535cfbdb-0000009e" lastModified="1398602812"/>
-          <Include href="_level/_GAME_OBJECTS/ActiveObjectCostume.xml" itemID="55928eb3-00000133" lastModified="1437845551"/>
+          <Include href="_level/_GAME_OBJECTS/ActiveObjectCostume.xml" itemID="55928eb3-00000133" lastModified="1438530272"/>
           <Include href="_level/_GAME_OBJECTS/chests/chest.xml" loadImmediate="false" itemID="53af531a-000000b4" lastModified="1416500644"/>
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/sheild_stars.xml" itemIcon="1" loadImmediate="false" itemID="5400695d-000002ca" lastModified="1409313117"/>
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/sheild_stars_3d.xml" itemIcon="1" loadImmediate="false" itemID="54006957-000002c9" lastModified="1409314754"/>
@@ -210,14 +213,21 @@
           <Include href="_level/_GAME_OBJECTS/levers/Lever_open_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3bfe5-000003b1" lastModified="1437843472"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3c036-000003de" lastModified="1437843538"/>
           <Include href="_level/_GAME_OBJECTS/levers/LeverGr.xml" itemIcon="1" loadImmediate="false" itemID="5592914a-00000150" lastModified="1435674650"/>
-          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1438333121"/>
+          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1441171139"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemIcon="1" loadImmediate="false" itemID="5406cba1-000002bd" lastModified="1428224304"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop.xml" itemIcon="1" loadImmediate="false" itemID="541aeeed-000002fd" lastModified="1411051268"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/part001.xml" itemIcon="1" loadImmediate="false" itemID="541aefb9-00000312" lastModified="1411051449"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/smallPart.xml" itemIcon="1" loadImmediate="false" itemID="541af728-0000034a" lastModified="1411053352"/>
-          <Include href="_level/_GAME_OBJECTS/obstacles/Box.xml" itemIcon="1" loadImmediate="false" itemID="545e00f5-00000225" lastModified="1428224354"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_box/Box.xml" itemIcon="1" loadImmediate="false" itemID="545e00f5-00000225" lastModified="1441133246"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_box/Box_des2.xml" itemIcon="1" loadImmediate="false" itemID="55e68222-00000163" lastModified="1441170729"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_box/box_p002.xml" itemIcon="1" loadImmediate="false" itemID="55e5ec6b-00000156" lastModified="1441131627"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_box/box_p003.xml" itemIcon="1" loadImmediate="false" itemID="55e5ec8d-0000015e" lastModified="1441131661"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_box/box_p004.xml" itemIcon="1" loadImmediate="false" itemID="55e5eca4-00000165" lastModified="1441131684"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_box/box_top.xml" itemIcon="1" loadImmediate="false" itemID="55e68246-00000165" lastModified="1441170105"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_vase/vase_top.xml" itemIcon="1" loadImmediate="false" itemID="55e68714-0000031a" lastModified="1441171239"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/Stone.xml" itemIcon="1" loadImmediate="false" itemID="542fd1c8-000000e4" lastModified="1428224394"/>
-          <Include href="_level/_GAME_OBJECTS/obstacles/Vase.xml" itemIcon="1" loadImmediate="false" itemID="54142a25-000000ef" lastModified="1428224426"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Vase.xml" itemIcon="1" loadImmediate="false" itemID="54142a25-000000ef" lastModified="1441171249"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/Vase_des.xml" itemIcon="1" loadImmediate="false" itemID="55e686be-00000318" lastModified="1441176329"/>
           <Include href="_level/_GAME_OBJECTS/scrolls/scroll.xml" itemIcon="1" loadImmediate="false" itemID="53af534c-000000bd" lastModified="1403999052"/>
           <Include href="_level/_Helpers/стена.xml" itemIcon="1" loadImmediate="false" itemID="535cf702-00000059" lastModified="1398601475"/>
           <Include href="_level/пропасть001.xml" itemIcon="1" loadImmediate="false" itemID="53771b08-0000003d" lastModified="1412063639"/>
@@ -305,6 +315,7 @@
           <Include href="spike.xml" itemIcon="1" loadImmediate="false" itemID="54984796-000001f4" lastModified="1419268257"/>
           <Include href="SpikePlane.xml" loadImmediate="false" itemID="54984f3e-0000023b" lastModified="1419268125"/>
           <Include href="src/collider.xml" loadImmediate="false" itemID="53afd0c0-0000005a" lastModified="1436955508"/>
+          <Include href="картина_001.xml" itemIcon="1" loadImmediate="false" itemID="55c37a01-000001cb" lastModified="1438875676"/>
      </symbols>
      <timelines>
           <DOMTimeline name="start_menu">
@@ -920,6 +931,9 @@
                     <SolidSwatchItem color="#188309" hue="75" saturation="211" brightness="66"/>
                     <SolidSwatchItem color="#12A800" hue="76" saturation="239" brightness="79"/>
                     <SolidSwatchItem color="#18D001" hue="76" saturation="238" brightness="99"/>
+                    <SolidSwatchItem color="#ECCC8F" hue="26" saturation="170" brightness="179"/>
+                    <SolidSwatchItem color="#493607" hue="28" saturation="196" brightness="38"/>
+                    <SolidSwatchItem color="#6E3100" hue="18" saturation="239" brightness="52"/>
                </swatches>
           </swatchList>
      </swatchLists>
@@ -1058,6 +1072,12 @@
                          <GradientEntry alpha="0" ratio="0"/>
                          <GradientEntry alpha="0.2" ratio="1"/>
                     </LinearGradientSwatchItem>
+                    <RadialGradientSwatchItem>
+                         <GradientEntry color="#FFFFFF" alpha="0.4" ratio="0.101960784313725"/>
+                         <GradientEntry color="#6D6D6D" alpha="0.298039215686275" ratio="0.666666666666667"/>
+                         <GradientEntry color="#464646" alpha="0.2" ratio="0.862745098039216"/>
+                         <GradientEntry alpha="0" ratio="1"/>
+                    </RadialGradientSwatchItem>
                </swatches>
           </swatchList>
      </extendedSwatchLists>
@@ -1068,25 +1088,25 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="1090585" publishTime="1438421774"/>
-          <PublishItem publishSize="1090568" publishTime="1438347623"/>
-          <PublishItem publishSize="1090559" publishTime="1438343148"/>
-          <PublishItem publishSize="1090584" publishTime="1438342990"/>
-          <PublishItem publishSize="1090492" publishTime="1438342300"/>
-          <PublishItem publishSize="1090503" publishTime="1438341814"/>
-          <PublishItem publishSize="837145" publishTime="1438341754"/>
-          <PublishItem publishSize="1091111" publishTime="1438340250"/>
-          <PublishItem publishSize="1091108" publishTime="1438340152"/>
-          <PublishItem publishSize="1091108" publishTime="1438340036"/>
-          <PublishItem publishSize="1090990" publishTime="1438338872"/>
-          <PublishItem publishSize="1090992" publishTime="1438338706"/>
-          <PublishItem publishSize="1090979" publishTime="1438338647"/>
-          <PublishItem publishSize="1090250" publishTime="1438338119"/>
-          <PublishItem publishSize="1090252" publishTime="1438338015"/>
-          <PublishItem publishSize="1090319" publishTime="1438337978"/>
-          <PublishItem publishSize="1240671" publishTime="1438337497" publishDebug="true"/>
-          <PublishItem publishSize="1240728" publishTime="1438337312" publishDebug="true"/>
-          <PublishItem publishSize="1240677" publishTime="1438337168" publishDebug="true"/>
-          <PublishItem publishSize="1240771" publishTime="1438336978" publishDebug="true"/>
+          <PublishItem publishSize="1252543" publishTime="1441172320" publishDebug="true"/>
+          <PublishItem publishSize="1244909" publishTime="1441028984" publishDebug="true"/>
+          <PublishItem publishSize="1244856" publishTime="1441028285" publishDebug="true"/>
+          <PublishItem publishSize="1244967" publishTime="1441028175" publishDebug="true"/>
+          <PublishItem publishSize="1244881" publishTime="1441028132" publishDebug="true"/>
+          <PublishItem publishSize="1244874" publishTime="1441027257" publishDebug="true"/>
+          <PublishItem publishSize="1244993" publishTime="1441027196" publishDebug="true"/>
+          <PublishItem publishSize="1244853" publishTime="1441024768" publishDebug="true"/>
+          <PublishItem publishSize="1244875" publishTime="1441024704" publishDebug="true"/>
+          <PublishItem publishSize="1244980" publishTime="1441024564" publishDebug="true"/>
+          <PublishItem publishSize="1244908" publishTime="1441024487" publishDebug="true"/>
+          <PublishItem publishSize="1244994" publishTime="1441024323" publishDebug="true"/>
+          <PublishItem publishSize="1244965" publishTime="1441024269" publishDebug="true"/>
+          <PublishItem publishSize="1244864" publishTime="1441024095" publishDebug="true"/>
+          <PublishItem publishSize="1244880" publishTime="1441023569" publishDebug="true"/>
+          <PublishItem publishSize="1244663" publishTime="1441021764" publishDebug="true"/>
+          <PublishItem publishSize="1244700" publishTime="1441021356" publishDebug="true"/>
+          <PublishItem publishSize="1244564" publishTime="1441021181" publishDebug="true"/>
+          <PublishItem publishSize="1244658" publishTime="1441021022" publishDebug="true"/>
+          <PublishItem publishSize="1244624" publishTime="1441014438" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

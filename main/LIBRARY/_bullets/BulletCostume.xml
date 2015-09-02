@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/BulletCostume" itemID="553a05be-0000012e" linkageExportForAS="true" linkageClassName="src.costumes.BulletCostume" lastModified="1435487868" lastUniqueIdentifier="9">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/BulletCostume" itemID="553a05be-0000012e" linkageExportForAS="true" linkageClassName="src.costumes.BulletCostume" lastModified="1438431240" lastUniqueIdentifier="9">
   <timeline>
-    <DOMTimeline name="BulletCostume" currentFrame="83">
+    <DOMTimeline name="BulletCostume" currentFrame="147">
       <layers>
         <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>

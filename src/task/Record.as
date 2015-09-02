@@ -21,9 +21,9 @@ package src.task {
         public var type_id:int;
         public var dataA:int = 0;
         public var dataB:int = 0;
-        public var result:Boolean = false;
+        public var result:int = 0;
         
-        public function Record(type_id_:int = ROOM_ENTER_TYPE, dataA_:int = 0, dataB_:int = 0, result_:Boolean = false ) {
+        public function Record(type_id_:int = ROOM_ENTER_TYPE, dataA_:int = 0, dataB_:int = 0, result_:int = 0 ) {
             type_id = type_id_;
             dataA = dataA_;
             dataB = dataB_;
@@ -32,7 +32,7 @@ package src.task {
         }
         
         public function toXML():XML {
-            return <event type_id={type_id} result={result?1:0} date={Math.round(date.valueOf()/1000)} dataA={dataA} dataB={dataB} />;
+            return <event type_id={type_id} result={result} date={Math.round(date.valueOf()/1000)} dataA={dataA} dataB={dataB} />;
         }
     }
 

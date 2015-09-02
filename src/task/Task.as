@@ -90,6 +90,9 @@
             is_complete = true;
             if (external) room.unlockDoorsWithTaskID(id);
             
+            TaskManager.failed_guess_count += guessCount - 1;
+            TaskManager.total_guess_count += 3;
+            
             generateReward();
         }
         

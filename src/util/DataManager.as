@@ -16,8 +16,8 @@ package src.util {
     import flash.system.Security;
 
     public class DataManager extends AbstractManager {
+        // public const server_name = "http://5.1.53.16/magicworld";
         public const server_name = "http://game.home";
-        //public const server_name = "http://5.1.53.16/magicworld";
         private const START_GAME_PAGE = "/start_game.php";
         private const RECORD_PAGE = "/record.php";
         
@@ -38,8 +38,10 @@ package src.util {
             super();
             this.flashVars = flashVars;
             
-            Security.allowDomain("http://5.1.53.16");
-            Security.allowDomain("http://5.1.53.16/magicworld");
+            // Security.allowDomain("http://5.1.53.16");
+            // Security.allowDomain("http://5.1.53.16/magicworld");
+            // Security.allowDomain(server_name);
+            // Security.loadPolicyFile(server_name + "/crossdomain.xml");
             
             user = AbstractMenu.user;
             user.uid = flashVars['viewer_id'];
@@ -134,7 +136,6 @@ package src.util {
         }
         
 // RECORD
-        
         public function sendRecordedData(recordsXML:XML):void {
             var url_vars:URLVariables = new URLVariables();
             url_vars.events = recordsXML;

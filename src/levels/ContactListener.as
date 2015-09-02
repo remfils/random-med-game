@@ -13,12 +13,14 @@ package src.levels {
     import src.enemy.Projectile;
     import src.events.RoomEvent;
     import src.Game;
+    import src.Ids;
     import src.interfaces.Breakable;
     import src.objects.Door;
     import src.objects.DropObject;
     import src.objects.Obstacle;
     import src.Player;
     import src.task.Record;
+    import src.util.ChangePlayerStatObject;
     import src.util.Recorder;
 
     public class ContactListener extends b2ContactListener {
@@ -55,7 +57,7 @@ package src.levels {
                     asymetricBulletCheck(userDataA.object as Bullet, userDataB);
                     
                 if ( userDataA.object is Projectile )
-                    asymetricEnemyBulletCheck(userDataA.object, userDataB);
+                    asymetricEnemyBulletCheck(Projectile(userDataA.object), userDataB);
                     
             }
             
@@ -64,7 +66,7 @@ package src.levels {
                     asymetricBulletCheck(userDataB.object as Bullet, userDataA);
                     
                 if ( userDataB.object is Projectile )
-                    asymetricEnemyBulletCheck(userDataB.object, userDataA);
+                    asymetricEnemyBulletCheck(Projectile(userDataB.object), userDataA);
             }
         }
         
@@ -78,7 +80,7 @@ package src.levels {
                     return;
                 }
                 
-                if ( bullet.is_explosion ) {
+                if ( bullet.bulletDef.is_boom ) {
                     bullet.explode = true;
                     game.bulletController.hideBullet(bullet);
                     return;
@@ -97,8 +99,8 @@ package src.levels {
                 if ( userData.object is Enemy ) return;
                 
                 if ( userData.object is Player ) {
-                    var dmg = game.hitPlayer(bullet.damage);
-                    Recorder.recordPlayerDmg(2, dmg);
+                    if ( game.player.immune ) return;
+                    game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -bullet.damage, bullet.getID(), true));
                 }
             }
             bullet.die();
@@ -142,6 +144,8 @@ package src.levels {
         
         
         private function checkPlayerEnemyCollision(fixtureA:b2Fixture, fixtureB:b2Fixture):void {
+            if ( game.player.immune ) return;
+            
             var userDataA:Object = fixtureA.GetUserData();
             var userDataB:Object = fixtureB.GetUserData();
             
@@ -150,22 +154,21 @@ package src.levels {
                 var bodyB:b2Body = fixtureB.GetBody();
                 
                 if ( userDataA.object is Player ) {
-                    hitPlayer(bodyA, bodyB, Enemy(userDataB.object).damage);
+                    hitPlayer(bodyA, bodyB, Enemy(userDataB.object));
                 }
                 
                 if ( userDataB.object is Player ) {
-                    hitPlayer(bodyB, bodyA, Enemy(userDataA.object).damage);
+                    hitPlayer(bodyB, bodyA, Enemy(userDataA.object));
                 }
             }
         }
         
-        private function hitPlayer(playerBod:b2Body, enemyBody:b2Body, dmg:Number):void {
+        private function hitPlayer(playerBod:b2Body, enemyBody:b2Body, enemy:Enemy):void {
             var dr:b2Vec2 = playerBod.GetPosition().Copy();
             dr.Subtract(enemyBody.GetPosition());
             dr.Multiply(3);
             playerBod.ApplyImpulse( dr , playerBod.GetWorldCenter());
-            var d:Number = game.hitPlayer(dmg);
-            Recorder.recordPlayerDmg(2, dmg);
+            game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -enemy.damage, enemy.getID(), true));
         }
         
     }

@@ -60,7 +60,8 @@ package src.ui {
                 rating_i:int = 0,
                 levelCounter:int = 0,
                 ammendX:Number = 0,
-                ammendY:Number = 0;
+                ammendY:Number = 0,
+                is_last_level = true;
             
             btn = new MenuButtonCostume();
             btn.setState(MenuButtonCostume.LEVEL_SELECT_BTN);
@@ -83,8 +84,15 @@ package src.ui {
                 btn.y = 200 + j * (btn.height + 10);
                 btn.x = 110 + stage.width * k + 140 * i++;
                 
-                if ( levelCounter++ > user.levelsCompleted ) {
-                    btn.mouseEnabled = false;
+                if ( level.rating == 0 ) {
+                    if ( is_last_level ) is_last_level = false;
+                    else {
+                        btn.name = "";
+                        btn.mouseEnabled = false;
+                        btn.useHandCursor = false;
+                        btn.buttonMode = false;
+                        btn.alpha = 0.5;
+                    }
                 }
                 
                 // rating
@@ -130,8 +138,8 @@ package src.ui {
                 case MOVE_LEVELS_RIGHT_BTN:
                     moveAllLevelsContainerLeft();
                     break;
-                case null:
-                    return;
+                case "":
+                    break;
                 default:
                     dispatchEvent(new MenuItemSelectedEvent(MenuItemSelectedEvent.LEVEL_SELECTED, int(objectName)));
             }

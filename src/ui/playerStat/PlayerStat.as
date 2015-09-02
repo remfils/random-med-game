@@ -14,7 +14,7 @@
     import src.ui.playerStat.StatPoint;
     import src.bullets.*;
     import flash.utils.*;
-    import src.util.TweenPool;
+    import src.util.ObjectPool;
     
     public class PlayerStat extends AbstractMenu {
         public static const FIRE_BTN_ID:int = 1;
@@ -135,11 +135,11 @@
                 break;
                 case HEALTH_BAR_ID:
                     healthBar.updatePoints();
-                    var tween:Tween = TweenPool.getTween(healthBar,"alpha", Elastic.easeOut, 0, 1, 40);
+                    var tween:Tween = ObjectPool.getTween(healthBar,"alpha", Elastic.easeOut, 0, 1, 40);
                 break;
                 case MANA_BAR_ID:
                     manaBar.updatePoints();
-                    var tween:Tween = TweenPool.getTween(manaBar,"alpha", Elastic.easeOut, 0, 1, 40);
+                    var tween:Tween = ObjectPool.getTween(manaBar,"alpha", Elastic.easeOut, 0, 1, 40);
                 break;
             }
         }

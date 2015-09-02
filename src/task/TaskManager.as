@@ -18,6 +18,12 @@ package src.task {
         public static const ENEMY_TYPE:String = "enemies";
         public static const LEVER_TYPE:String = "levers";
         
+        public static const THREE_STARS_THRESHOLD:Number = 0.52;
+        public static const TWO_STARS_THRESHOLD:Number = 0.8;
+        
+        public static var failed_guess_count:int = 0;
+        public static var total_guess_count:int = 0;
+        
         public var events:Array;// D!
         private var tasks:Vector.<Task>;
         private var task_objects:Vector.<TaskObject>
@@ -111,7 +117,7 @@ package src.task {
                 else {
                     task_object.negativeOutcome();
                 }
-                Recorder.recordTaskGuess(task, task_object.id);
+                Recorder.recordTaskGuess(task, task_object.getID());
             }
         }
         
@@ -223,6 +229,14 @@ package src.task {
                     magic_bag = null;
                 }
             }
+        }
+        
+        public function gradeLevel():Number {
+            var res:Number = Number(failed_guess_count) / total_guess_count;
+            
+            if ( res < THREE_STARS_THRESHOLD ) return 3;
+            if ( res < TWO_STARS_THRESHOLD ) return 2;
+            return 1;
         }
     }
 

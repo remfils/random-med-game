@@ -18,7 +18,7 @@ package src {
     import src.util.*;
     
     public class Game extends Sprite {
-        public static const VERSION:String = "0.42";
+        public static const VERSION:String = "0.43-beta";
         public static var TEST_MODE:Boolean = true;
         
         public var levelId:int = 0;
@@ -31,6 +31,8 @@ package src {
         
         public static var PLAYER_START_X:Number;
         public static var PLAYER_START_Y:Number;
+        
+        private const ROOM_TRANSITION_TIME:int = 18;
         
         public static const ROOM_MIN_X:int = 61;
         public static const ROOM_MAX_X:int = 695.65;
@@ -45,6 +47,7 @@ package src {
         
         private var isTransition:Boolean = false;
         
+        public static const FRAMES_PER_MILLISECOND:Number = 30 / 1000;
         public static const TO_RAD:Number = Math.PI / 180;
         public static const WORLD_SCALE:Number = 30;
         public static const TIME_STEP:Number = 1 / 30;
@@ -243,6 +246,7 @@ package src {
         }
         
         public function initCurrentLevel() {
+            Recorder.recordEnterRoom(player.currentRoom);
             bulletController.changeLevel(cRoom);
             cRoom.init();
         }
@@ -327,12 +331,49 @@ package src {
                     break;
                 // SPACE
                 case 32 :
-                    var dmg:Number = hitPlayer(1);
-                    Recorder.recordPlayerDmg(0, dmg);
                     break;
             }
         }
         
+        public function changePlayerStat(change:ChangePlayerStatObject):Boolean {
+            var result:Boolean = player.changeStat(change);
+            
+            if ( result ) {
+                switch ( change.stat_name ) {
+                    case ChangePlayerStatObject.HEALTH_STAT:
+                        playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
+                        break;
+                    case ChangePlayerStatObject.MANA_STAT:
+                        playerStat.flashElementByID(PlayerStat.MANA_BAR_ID);
+                        break;
+                }
+                playerStat.update();
+            }
+            
+            if ( player.HEALTH <= 0 ) {
+                stopTheGame();
+                Recorder.add(new Record(Record.PLAYER_DEAD_TYPE));
+                Recorder.send();
+                
+                var gr:Graphics = glassPanel.graphics;
+                gr.beginFill(0x000000);
+                gr.drawRect(0, 0,stage.stageWidth, stage.stageHeight);
+                gr.endFill();
+                glassPanel.alpha = 0.7;
+                
+                glassPanel.addChild(player.costume);
+                player.die();
+                player.costume.alpha = 1 + glassPanel.alpha;
+                
+                var timer:Timer = new Timer(2000, 1);
+                timer.addEventListener(TimerEvent.TIMER_COMPLETE, playerDeathAnimationListener);
+                timer.start();
+            }
+            
+            return result;
+        }
+        
+        // D!
         public function hitPlayer(hitNumber:int ):Number {
             if ( player.makeHit(hitNumber) ) {
                 playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
@@ -410,7 +451,6 @@ package src {
             }
             
             cRoom = getCurrentLevel();
-            Recorder.recordEnterRoom(player.currentRoom);
             var doorB:Door = cRoom.getDoorByDirection(directionB);
             
             destination.x += doorB.x;
@@ -421,19 +461,28 @@ package src {
                 doorB.specialLock = false;
                 doorB.unlock();
             }
+            // animate level movement
+            var tween:Tween = ObjectPool.getTween(levelMap, "x", Strong.easeInOut, levelMap.x, -cRoom.x, ROOM_TRANSITION_TIME);
+            ObjectPool.getTween(levelMap, "y",Strong.easeInOut, levelMap.y, -cRoom.y , ROOM_TRANSITION_TIME);
             
-            var tweenX:Tween = new Tween (levelMap, "x",Strong.easeInOut, levelMap.x, -cRoom.x, 18);
-            var tweenY:Tween = new Tween (levelMap, "y",Strong.easeInOut, levelMap.y, -cRoom.y , 18);
-            tweenX.start();
+            // animate player movement
+            ObjectPool.getTween(player, "x", Strong.easeInOut, player.x, destination.x, ROOM_TRANSITION_TIME);
+            ObjectPool.getTween(player, "y", Strong.easeInOut, player.y, destination.y, ROOM_TRANSITION_TIME);
+            
+            tween.addEventListener(TweenEvent.MOTION_FINISH, roomTweenFinished);
+            
+            // var tweenX:Tween = new Tween (levelMap, "x",Strong.easeInOut, levelMap.x, -cRoom.x, 18);
+            // var tweenY:Tween = new Tween (levelMap, "y",Strong.easeInOut, levelMap.y, -cRoom.y , 18);
+            // tweenX.start();
             
             
-            var playerXTween:Tween = new Tween (player, "x", Strong.easeInOut, player.x, destination.x, 18 );
-            var playerYTween:Tween = new Tween (player, "y", Strong.easeInOut, player.y, destination.y, 18 );
+            // var playerXTween:Tween = new Tween (player, "x", Strong.easeInOut, player.x, destination.x, 18 );
+            // var playerYTween:Tween = new Tween (player, "y", Strong.easeInOut, player.y, destination.y, 18 );
             
             var map = playerStat.getMapMC();
             map.update(_LEVEL);
 
-            tweenX.addEventListener(TweenEvent.MOTION_FINISH, roomTweenFinished);
+            //tweenX.addEventListener(TweenEvent.MOTION_FINISH, roomTweenFinished);
         }
         
         private function roomTweenFinished  (e:Event) {
@@ -477,11 +526,7 @@ package src {
         public function finishLevel():void {
             removeEventListeners();
             
-            rating = 2;
-            
-            if ( SECRET_ROOM_FOUND ) {
-                rating += 1;
-            }
+            rating = taskManager.gradeLevel();
             
             player.clearInput();
             player.body = null;

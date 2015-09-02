@@ -83,6 +83,10 @@ package src.objects {
             costume.readXMLParams(paramsXML);
         }
         
+        public function getID():int {
+            return 0;
+        }
+        
     }
 
 }

@@ -1,0 +1,355 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/obstacles/_box/Box_des2" itemID="55e68222-00000163" symbolType="graphic" lastModified="1441170729" lastUniqueIdentifier="4">
+  <timeline>
+    <DOMTimeline name="Box_des2" currentFrame="15">
+      <layers>
+        <DOMLayer name="box_top" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="5" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.4858"/>
+                  <Point x="0.4837" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_top" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.996917724609375" b="0.0784454345703125" c="-0.0784454345703125" d="0.996917724609375" tx="-0.1" ty="-11.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" duration="9" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5467"/>
+                  <Point x="0.5081" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_top" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.16535949707031" b="-0.2144775390625" c="0.2144775390625" d="1.16535949707031" tx="-0.4" ty="-19.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_top" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.767730712890625" b="-0.425140380859375" c="0.425140380859375" d="0.767730712890625" tx="0.5" ty="9.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_p004" color="#808080" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p004" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.139511108398438" b="0.75433349609375" c="-0.863418579101563" d="-0.159683227539063" tx="-17" ty="-6.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p004" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.1224365234375" b="0.662002563476563" c="-0.757736206054688" d="-0.14013671875" tx="-30.35" ty="-1.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_p004" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p004" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.342498779296875" b="-0.686416625976563" c="0.785675048828125" d="0.39202880859375" tx="19.8" ty="12.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p004" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.300567626953125" b="-0.602401733398438" c="0.689498901367188" d="0.344039916992188" tx="31.85" ty="20.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_p003" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p003" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.1373291015625" b="-0.580581665039063" c="0.973129272460938" d="-0.230209350585938" tx="20.2" ty="-9.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p003" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.120513916015625" b="-0.509521484375" c="0.854019165039063" d="-0.2020263671875" tx="28.85" ty="1.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_p003" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p003" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.999969482421875" b="-0.008636474609375" c="0.008636474609375" d="0.999969482421875" tx="6.3" ty="15.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p003" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.866317749023438" b="-0.140213012695313" c="0.140213012695313" d="0.866317749023438" tx="7.7" ty="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_p002" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p002" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.965652465820313" b="0.259750366210938" c="-0.259750366210938" d="0.965652465820313" tx="3.5" ty="-15.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p002" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.847457885742188" b="0.227951049804688" c="-0.227951049804688" d="0.847457885742188" tx="3.2" ty="-11.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_p002" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p002" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.994049072265625" b="0.10894775390625" c="-0.10894775390625" d="-0.994049072265625" tx="-6" ty="13.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p002" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.866241455078125" b="-0.140716552734375" c="0.140716552734375" d="-0.866241455078125" tx="-8.2" ty="34.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_p003" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p003" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.436569213867188" b="0.169540405273438" c="-0.362014770507813" d="-0.932159423828125" tx="-15.05" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_p003" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0407562255859375" b="0.408981323242188" c="-0.873260498046875" d="0.0870208740234375" tx="-25.6" ty="18.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="box_top" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="14" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.5874"/>
+                  <Point x="0.4411" y="1"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_top" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.887603759765625" d="0.887603759765625" ty="10.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color brightness="-0.59"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_top" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.887603759765625" d="0.887603759765625" ty="10.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

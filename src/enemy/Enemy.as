@@ -6,9 +6,11 @@
     import src.costumes.CostumeEnemy;
     import src.events.SubmitTaskEvent;
     import src.Game;
+    import src.Ids;
     import src.levels.Room;
     import src.objects.TaskObject;
     import src.Player;
+    import src.util.ChangePlayerStatObject;
     import src.util.CreateBodyRequest;
     
     public class Enemy extends TaskObject {
@@ -136,6 +138,27 @@
 
         override public function getActiveArea():DisplayObject {
             return costume;
+        }
+        
+        override public function getID():int {
+            var costume_type:String = costume.type;
+            
+            switch(costume_type) {
+                case CostumeEnemy.GHOST:
+                    return Ids.ENEMY_GHOST_ID;
+                break;
+                case CostumeEnemy.MONK:
+                    return Ids.ENEMY_MONK_ID;
+                break;
+                case CostumeEnemy.RAT:
+                    return Ids.ENEMY_PROJECTILE_ID;
+                break;
+                case CostumeEnemy.GREEN_BULLET_TYPE:
+                    return Ids.ENEMY_PROJECTILE_ID;
+                break;
+                default:
+                    return super.getID();
+            }
         }
     }
     
