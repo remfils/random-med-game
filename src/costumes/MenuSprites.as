@@ -16,6 +16,8 @@ package src.costumes {
         public static const SPELL_HOLDER:String = "spell_holder";
         public static const SPELL_HOLDER_LOCKED:String = "spell_holder_locked";
         
+        public static const LOADING_CIRCLE:String = "loading_circle";
+        
         public function MenuSprites() {
             super();
         }

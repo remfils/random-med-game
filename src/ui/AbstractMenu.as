@@ -8,10 +8,12 @@ package src.ui {
     import flash.text.TextField;
     import flash.text.TextFormat;
     import src.Game;
+    import src.Main;
     import src.MainMenu;
     import src.User;
 
     public class AbstractMenu extends Sprite {
+        public static var main:Main;
         public static var game:Game;
         public static var user:User;
         

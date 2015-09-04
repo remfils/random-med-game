@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/levers/Lever_break_remove" itemID="55b3bbc8-0000033d" symbolType="graphic" lastModified="1437842493">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/levers/Lever_break_remove" itemID="55b3bbc8-0000033d" symbolType="graphic" lastModified="1441182234">
   <timeline>
-    <DOMTimeline name="Lever_break_remove">
+    <DOMTimeline name="Lever_break_remove" currentFrame="16">
       <layers>
         <DOMLayer name="smoke2" color="#FF800A" autoNamed="false">
           <frames>

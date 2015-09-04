@@ -3,6 +3,7 @@ package src.objects {
     import Box2D.Dynamics.b2Body;
     import flash.display.DisplayObject;
     import src.costumes.ActiveObjectCostume;
+    import src.costumes.Costume;
     import src.costumes.DecorCostume;
     import src.events.SubmitTaskEvent;
     import src.interfaces.Updatable;
@@ -63,6 +64,8 @@ package src.objects {
         override public function readXMLParams(paramsXML:XML):void {
             super.readXMLParams(paramsXML);
             
+            costume_remove_delay = Costume.SMOKE_ANIMATION_DELAY;
+            
             task_id = paramsXML.@task_id;
             
             if ( paramsXML.@id ) {
@@ -99,8 +102,6 @@ package src.objects {
         
         override public function destroy():void {
             super.destroy();
-            game.deleteManager.add(costume);
-            game.deleteManager.add(body);
             game.cRoom.remove(this);
         }
         

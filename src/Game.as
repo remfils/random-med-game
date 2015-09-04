@@ -570,6 +570,8 @@ package src {
                 deleteManager.add(getChildAt(i));
             }
             
+            deleteManager
+            
             deleteManager.destroy();
             deleteManager = null;
         }

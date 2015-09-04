@@ -9,6 +9,7 @@
     import src.Game;
     import src.util.AbstractManager;
     import src.util.Output;
+    import src.util.Recorder;
     
     import src.levels.Room;
     import src.Player;
@@ -16,7 +17,7 @@
     public class BulletController extends AbstractManager {
         private var _bullets:Array = new Array();
         private var _bulletsToRemove:Array = new Array();
-        private var _bulletToHide:Vector.<Bullet> = new Vector.<Bullet>();
+        private var _bullets_to_deactivate:Vector.<Bullet> = new Vector.<Bullet>();
         private var fire:Boolean;
         
         public var bullet_type:String;
@@ -36,9 +37,9 @@
         
         private static const allSpells:Vector.<BulletDef> = new <BulletDef>[
             null,
-            new BulletDef(BulletCostume.SPARK_TYPE, 50, 10, 0, 500),
-            new BulletDef(BulletCostume.POWER_SPELL_TYPE, 100, 10, 1, 500),
-            new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 3, 1000, true)
+            new BulletDef(BulletCostume.SPARK_TYPE, 50, 10, 0, 500, 5 / Game.FRAMES_PER_MILLISECOND),
+            new BulletDef(BulletCostume.POWER_SPELL_TYPE, 100, 10, 1, 500, 10 / Game.FRAMES_PER_MILLISECOND),
+            new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 3, 1000, 16 / Game.FRAMES_PER_MILLISECOND, true)
         ];
 
         public function BulletController(stage:DisplayObjectContainer) {
@@ -70,6 +71,7 @@
                 if ( b ) {
                     game.player.MANA -= currentSpellDef.manaCost;
                     game.playerStat.update();
+                    Recorder.recordManaUse(currentSpellDef.spell_id, currentSpellDef.manaCost, game.player.MANA);
                 }
             }
             
@@ -78,10 +80,9 @@
                 _bullets[i].update();
             }
             
-            while (i = _bulletToHide.length) {
-                _bulletToHide[i-1].detachBody();
-                _bulletToHide[i-1].setState(Bullet.DESTOY_STATE);
-                _bulletToHide.pop();
+            while (i = _bullets_to_deactivate.length) {
+                _bullets_to_deactivate[i-1].detachBody();
+                _bullets_to_deactivate.pop();
             }
             
             i = _bulletsToRemove.length;
@@ -147,8 +148,8 @@
             return new Bullet(currentSpellDef);
         }
         
-        public function hideBullet (B:Bullet) {
-            _bulletToHide.push(B);
+        public function safeDeactivateBullet (B:Bullet) {
+            _bullets_to_deactivate.push(B);
         }
         
         public function nextSpell():void {

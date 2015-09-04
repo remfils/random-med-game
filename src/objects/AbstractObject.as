@@ -5,15 +5,20 @@ package src.objects {
     import fl.motion.Color;
     import flash.display.DisplayObject;
 	import flash.display.MovieClip;
+    import flash.events.TimerEvent;
     import flash.geom.Point;
+    import flash.utils.Timer;
     import src.costumes.Costume;
     import src.Game;
     import src.util.CreateBodyRequest;
+    import src.util.ObjectPool;
 	
     public class AbstractObject {
         public static var game:Game;
         public var body:b2Body;
         public var costume:Costume;
+        
+        protected var costume_remove_delay:Number = 0;
         
         public function AbstractObject() {
             super();
@@ -71,6 +76,15 @@ package src.objects {
         
         public function destroy():void {
             game.deleteManager.add(body);
+            var timer:Timer = ObjectPool.getTimer(costume_remove_delay);
+            timer.addEventListener(TimerEvent.TIMER_COMPLETE, removeCostume);
+        }
+        
+        private function removeCostume(e:TimerEvent):void {
+            var t:Timer = Timer(e.target);
+            t.removeEventListener(TimerEvent.TIMER_COMPLETE, removeCostume);
+            
+            game.deleteManager.add(costume);
         }
         
         public function setTint(color:uint):void {

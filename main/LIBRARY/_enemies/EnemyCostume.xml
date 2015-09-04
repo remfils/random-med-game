@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1438530217" lastUniqueIdentifier="30">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1441273425" lastUniqueIdentifier="30">
   <timeline>
-    <DOMTimeline name="EnemyCostume">
+    <DOMTimeline name="EnemyCostume" currentFrame="345">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="14" name="Ghost_stand" labelType="name" keyMode="9728">
               <elements/>
@@ -10,111 +10,47 @@
             <DOMFrame index="14" duration="15" name="Ghost_active" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="29" duration="23" name="Ghost_death" labelType="name" keyMode="9728">
+            <DOMFrame index="29" duration="28" name="Ghost_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="52" duration="15" name="Rat_walk_hor" labelType="name" keyMode="9728">
+            <DOMFrame index="57" duration="15" name="Rat_walk_hor" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="67" duration="14" name="Rat_walk_vert" labelType="name" keyMode="9728">
+            <DOMFrame index="72" duration="14" name="Rat_walk_vert" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="81" duration="14" name="Rat_charge_hor" labelType="name" keyMode="9728">
+            <DOMFrame index="86" duration="14" name="Rat_charge_hor" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="95" duration="16" name="Rat_charge_vert" labelType="name" keyMode="9728">
+            <DOMFrame index="100" duration="16" name="Rat_charge_vert" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="111" duration="18" name="Rat_death" labelType="name" keyMode="9728">
+            <DOMFrame index="116" duration="24" name="Rat_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="129" duration="13" name="Monk_stand" labelType="name" keyMode="9728">
+            <DOMFrame index="140" duration="13" name="Monk_stand" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="142" duration="15" name="Monk_active" labelType="name" keyMode="9728">
+            <DOMFrame index="153" duration="15" name="Monk_active" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="157" duration="55" name="Monk_shoot" labelType="name" keyMode="9728">
+            <DOMFrame index="168" duration="55" name="Monk_shoot" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="212" duration="43" name="Monk_death" labelType="name" keyMode="9728">
+            <DOMFrame index="223" duration="48" name="Monk_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="255" duration="16" name="EnemyBullet" labelType="name" keyMode="9728">
+            <DOMFrame index="271" duration="16" name="EnemyBullet" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="271" duration="59" name="EnemyBullet_death" labelType="name" keyMode="9728">
+            <DOMFrame index="287" duration="59" name="EnemyBullet_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="29" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="29" duration="22" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="51" duration="60" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();
-visible = false;]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="111" duration="17" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="128" duration="29" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();
-visible = false;]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="157" duration="54" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="211" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="212" duration="42" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="254" duration="17" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();
-visible = false;]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="271" duration="12" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="283" duration="47" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[stop();
-visible = false;]]></script>
-              </Actionscript>
+            <DOMFrame index="0" duration="346" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -124,14 +60,14 @@ visible = false;]]></script>
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="14" duration="316" keyMode="9728">
+            <DOMFrame index="14" duration="332" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="collider" color="#FF800A" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="52" keyMode="9728">
+            <DOMFrame index="0" duration="57" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
@@ -143,7 +79,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="52" duration="77" keyMode="9728">
+            <DOMFrame index="57" duration="83" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
@@ -155,7 +91,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="129" duration="201" keyMode="9728">
+            <DOMFrame index="140" duration="206" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
@@ -169,7 +105,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F">
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements>
@@ -195,9 +131,9 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="29" duration="23" keyMode="9728">
+            <DOMFrame index="29" duration="28" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_death" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_enemies/_Ghost/Ghost_death" symbolType="graphic" loop="play once">
                   <matrix>
                     <Matrix tx="-0.25" ty="0.3"/>
                   </matrix>
@@ -207,7 +143,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="52" duration="15" keyMode="9728">
+            <DOMFrame index="57" duration="15" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk" centerPoint3DX="86.25" centerPoint3DY="28.55">
                   <matrix>
@@ -219,7 +155,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="67" duration="14" keyMode="9728">
+            <DOMFrame index="72" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk_down" centerPoint3DX="87.85" centerPoint3DY="27.9">
                   <matrix>
@@ -231,7 +167,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="81" duration="14" keyMode="9728">
+            <DOMFrame index="86" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_charge" centerPoint3DX="86.25" centerPoint3DY="28.55">
                   <matrix>
@@ -243,7 +179,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="95" duration="16" keyMode="9728">
+            <DOMFrame index="100" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_attack_down" centerPoint3DX="87.85" centerPoint3DY="27.9">
                   <matrix>
@@ -255,9 +191,9 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="111" duration="18" keyMode="9728">
+            <DOMFrame index="116" duration="24" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_death" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_death" symbolType="graphic" loop="play once">
                   <matrix>
                     <Matrix a="0.194931030273438" d="0.194931030273438" tx="-1.35" ty="0.55"/>
                   </matrix>
@@ -267,7 +203,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="129" duration="13" keyMode="9728">
+            <DOMFrame index="140" duration="13" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_normal" centerPoint3DX="1.4" centerPoint3DY="-24.7">
                   <matrix>
@@ -279,7 +215,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="142" duration="15" keyMode="9728">
+            <DOMFrame index="153" duration="15" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_active" selected="true" centerPoint3DX="1.4" centerPoint3DY="-24.7">
                   <matrix>
@@ -291,7 +227,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="157" duration="55" keyMode="9728">
+            <DOMFrame index="168" duration="55" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_shoot" symbolType="graphic" loop="loop">
                   <matrix>
@@ -303,7 +239,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="212" duration="43" keyMode="9728">
+            <DOMFrame index="223" duration="48" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_death" symbolType="graphic" loop="loop">
                   <matrix>
@@ -315,7 +251,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="255" duration="16" keyMode="9728">
+            <DOMFrame index="271" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_normal" centerPoint3DX="-0.2" centerPoint3DY="-30.4">
                   <matrix>
@@ -327,9 +263,9 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="271" duration="59" keyMode="9728">
+            <DOMFrame index="287" duration="59" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_death" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_death" symbolType="graphic" loop="play once">
                   <matrix>
                     <Matrix a="1.77641296386719" d="1.77641296386719" tx="-0.2" ty="-46.1"/>
                   </matrix>

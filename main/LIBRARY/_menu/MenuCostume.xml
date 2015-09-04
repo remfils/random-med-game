@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1435320909" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1441281474" lastUniqueIdentifier="3">
   <timeline>
-    <DOMTimeline name="MenuCostume">
+    <DOMTimeline name="MenuCostume" currentFrame="124">
       <layers>
         <DOMLayer name="label" color="#9933CC" autoNamed="false">
           <frames>
@@ -20,6 +20,9 @@
               <elements/>
             </DOMFrame>
             <DOMFrame index="65" duration="19" name="spell_holder_locked" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="84" duration="41" name="loading_circle" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -79,6 +82,15 @@
                 <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/ItemPlaceHolder_clip" symbolType="graphic" firstFrame="19" loop="single frame">
                   <transformationPoint>
                     <Point x="45" y="40.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="84" duration="41" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="loading_cic" selected="true" centerPoint3DX="-42.25">
+                  <transformationPoint>
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

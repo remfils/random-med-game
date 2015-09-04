@@ -30,7 +30,7 @@ package src.util {
         
         private static var data:XML = null;
         private var styleSheet:StyleSheet;
-        private var dataLoadIsCompleteCallback:Function;
+        private var data_load_complete_callback:Function;
         
         public var main:Main;
         
@@ -158,7 +158,7 @@ package src.util {
             req.method = URLRequestMethod.POST;
             
             loader.addEventListener(Event.COMPLETE, onGameDataSaved);
-            this.dataLoadIsCompleteCallback = callback;
+            this.data_load_complete_callback = callback;
             loader.load(req);
         }
         
@@ -169,15 +169,17 @@ package src.util {
                 <UserData>
                     {user.toXML()}
                 </UserData>
-                <LevelData>
-                    <level>
-                        <id>{game.levelId}</id>
-                        <rating>{game.rating}</rating>
-                    </level>
-                </LevelData>
+                <LevelData/>
                 
                 {game.taskManager.eventsToXML()}
             </Data>;
+            
+            if ( game.rating ) {
+                resultXML.LevelData = <level>
+                        <id>{game.levelId}</id>
+                        <rating>{game.rating}</rating>
+                    </level>;
+            }
             
             Output.add(resultXML);
             
@@ -192,9 +194,9 @@ package src.util {
             
             Output.add('server response:\n' + loader.data);
             
-            if ( dataLoadIsCompleteCallback ) {
-                dataLoadIsCompleteCallback();
-                dataLoadIsCompleteCallback = null;
+            if ( data_load_complete_callback ) {
+                data_load_complete_callback();
+                data_load_complete_callback = null;
             }
             
         }

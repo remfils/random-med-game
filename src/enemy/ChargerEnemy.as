@@ -2,9 +2,12 @@ package src.enemy {
     import Box2D.Common.Math.b2Vec2;
     import Box2D.Dynamics.b2World;
     import flash.geom.Point;
+    import src.Game;
     import src.util.CreateBodyRequest;
     
     public class ChargerEnemy extends Enemy {
+        private static const RAT_DEATH_DELAY:Number = 18 / Game.FRAMES_PER_MILLISECOND;
+        
         public static const ATTACK_HORIZONTAL_STATE:String = "_charge_hor";
         public static const ATTACK_VERTICAL_STATE:String = "_charge_vert";
         public static const WALK_HORIZONTAL_STATE:String = "_walk_hor";
@@ -22,6 +25,12 @@ package src.enemy {
             super();
             speed = new b2Vec2(SPEED, 0);
             agroDistance = 200;
+        }
+        
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            
+            costume_remove_delay = RAT_DEATH_DELAY;
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {

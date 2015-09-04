@@ -36,7 +36,6 @@ package src.objects {
                 var holdObject:Object = player.holdObject;
                 if ( holdObject ) {
                     if ( holdObject is TaskKey ) {
-                        trace("lock hit test in update");
                         key = TaskKey(holdObject);
                         id = key.id;
                         eatPlayerKey();

@@ -4,10 +4,13 @@ package src.enemy {
     import Box2D.Dynamics.b2Body;
     import flash.display.DisplayObject;
     import flash.geom.Point;
+    import src.Game;
     import src.util.Collider;
     import src.util.CreateBodyRequest;
 
     public class Sniper extends Enemy {
+        public static const MONK_DEATH_DELAY:Number = 43 / Game.FRAMES_PER_MILLISECOND;
+        
         public static const ACTIVE_STATE:String = "_active";
         public static const STAND_STATE:String = "_stand";
         public static const SHOOT_STATE:String = "_shoot";
@@ -24,6 +27,12 @@ package src.enemy {
             super();
             agroDistance = 300;
             exp = 10;
+        }
+        
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            
+            costume_remove_delay = MONK_DEATH_DELAY;
         }
         
         override public function activate():void {
@@ -64,7 +73,7 @@ package src.enemy {
         public function startShoot():void {
             bulletFired = true;
             framesToShoot = TOTAL_CHARGE_FRAMES;
-            costume.setState(SHOOT_STATE);
+            costume.setAnimatedState(SHOOT_STATE);
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {

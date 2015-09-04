@@ -95,6 +95,8 @@ package src {
                     //if ( item.onPlayer ) playerInventory[playerInventory.length - 1] = item;
                 }
             }
+            
+            trace(player.MONEY);
         }
         
         public function getEXPToNextLevel():int {

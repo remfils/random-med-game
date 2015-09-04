@@ -72,38 +72,38 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="6" edges="!39 -204|0 -152"/>
-                    <Edge fillStyle0="4" edges="!0 -152|-39 -204"/>
+                    <Edge fillStyle0="5" fillStyle1="4" edges="!0 -152|-23 -120"/>
+                    <Edge fillStyle0="13" fillStyle1="4" edges="!-23 -120/-93 -120"/>
+                    <Edge fillStyle0="3" fillStyle1="4" edges="!-93 -120|-39 -204"/>
                     <Edge fillStyle0="3" edges="!-39 -204/-157 -204"/>
-                    <Edge fillStyle0="3" fillStyle1="5" edges="!-157 -204|-93 -120"/>
-                    <Edge fillStyle0="13" fillStyle1="5" edges="!-93 -120/-138 -64"/>
-                    <Edge fillStyle0="10" fillStyle1="5" edges="!-138 -64|-157 -204"/>
                     <Edge fillStyle0="10" edges="!-157 -204/-235 -109"/>
-                    <Edge fillStyle0="10" fillStyle1="12" edges="!-235 -109|-138 -64!-138 -64|-235 -10"/>
-                    <Edge fillStyle1="12" edges="!-235 -10/-235 -109"/>
+                    <Edge fillStyle0="12" edges="!-235 -109/-235 -10"/>
+                    <Edge fillStyle0="12" fillStyle1="10" edges="!-235 -10|-138 -64!-138 -64|-235 -109"/>
                     <Edge fillStyle0="6" fillStyle1="13" edges="!23 -120/93 -120"/>
-                    <Edge fillStyle0="7" fillStyle1="13" edges="!93 -120/138 -64"/>
-                    <Edge fillStyle0="9" fillStyle1="1" edges="!138 -64|235 -10"/>
-                    <Edge fillStyle1="1" edges="!235 -10/136.5 80!136.5 80/0 205"/>
-                    <Edge fillStyle0="2" fillStyle1="1" edges="!0 205|138 -6"/>
-                    <Edge fillStyle0="13" fillStyle1="1" edges="!138 -6/138 -64"/>
-                    <Edge fillStyle0="8" fillStyle1="9" edges="!138 -64|235 -109"/>
-                    <Edge fillStyle1="9" edges="!235 -109/235 -10"/>
-                    <Edge fillStyle0="5" fillStyle1="13" edges="!-23 -120|0 -89!0 -89|23 -120"/>
+                    <Edge fillStyle0="3" fillStyle1="7" edges="!93 -120|157 -204"/>
                     <Edge fillStyle0="3" edges="!157 -204/39 -204"/>
+                    <Edge fillStyle0="5" fillStyle1="13" edges="!-23 -120|0 -89!0 -89|23 -120"/>
+                    <Edge fillStyle0="13" fillStyle1="1" edges="!138 -6/138 -64"/>
+                    <Edge fillStyle0="9" fillStyle1="1" edges="!138 -64|235 -10"/>
+                    <Edge fillStyle0="9" edges="!235 -10/235 -109"/>
+                    <Edge fillStyle0="9" fillStyle1="8" edges="!235 -109|138 -64"/>
+                    <Edge fillStyle0="7" fillStyle1="8" edges="!138 -64|157 -204"/>
+                    <Edge fillStyle0="7" fillStyle1="13" edges="!93 -120/138 -64"/>
                     <Edge fillStyle0="3" fillStyle1="6" edges="!39 -204|93 -120"/>
                     <Edge fillStyle0="6" fillStyle1="5" edges="!0 -152|23 -120"/>
-                    <Edge fillStyle0="7" fillStyle1="3" edges="!157 -204|93 -120"/>
-                    <Edge fillStyle0="7" fillStyle1="8" edges="!138 -64|157 -204"/>
                     <Edge fillStyle0="8" edges="!235 -109/157 -204"/>
-                    <Edge fillStyle0="2" fillStyle1="13" edges="!138 -6/44 80!44 80/0 120"/>
                     <Edge fillStyle0="2" fillStyle1="11" edges="!0 120|0 205"/>
-                    <Edge fillStyle0="10" fillStyle1="13" edges="!-138 -6/-138 -64"/>
-                    <Edge fillStyle0="4" fillStyle1="3" edges="!-39 -204|-93 -120"/>
-                    <Edge fillStyle0="4" fillStyle1="13" edges="!-93 -120/-23 -120"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!0 205|138 -6"/>
+                    <Edge fillStyle0="2" fillStyle1="13" edges="!138 -6/44 80!44 80/0 120"/>
                     <Edge fillStyle0="11" fillStyle1="13" edges="!0 120/-44 80!-44 80/-138 -6"/>
+                    <Edge fillStyle0="10" fillStyle1="13" edges="!-138 -6/-138 -64"/>
+                    <Edge fillStyle1="1" edges="!235 -10/136.5 80!136.5 80/0 205"/>
+                    <Edge fillStyle0="10" fillStyle1="11" edges="!0 205|-138 -6"/>
+                    <Edge fillStyle0="10" fillStyle1="5" edges="!-138 -64|-157 -204"/>
+                    <Edge fillStyle0="3" fillStyle1="5" edges="!-157 -204|-93 -120"/>
+                    <Edge fillStyle0="13" fillStyle1="5" edges="!-93 -120/-138 -64"/>
                     <Edge fillStyle1="10" edges="!0 205/-136.5 80!-136.5 80/-235 -10"/>
-                    <Edge fillStyle0="11" fillStyle1="10" edges="!-138 -6|0 205"/>
-                    <Edge fillStyle0="4" fillStyle1="5" edges="!-23 -120|0 -152"/>
+                    <Edge fillStyle0="4" edges="!0 -152|-39 -204"/>
                     <Edge cubics="!93 -120(;93,-120 138,-64 138,-64q93 -120 138 -64);"/>
                     <Edge cubics="!0 -89(;0,-89 23,-120 23,-120q0 -89 23 -120);"/>
                     <Edge cubics="!23 -120(;23,-120 0,-152 0,-152q23 -120 0 -152);"/>
@@ -185,26 +185,26 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="8" edges="!0 205/235 -10!235 -10/235 -109!235 -109/157 -204!157 -204/39 -204!39 -204|0 -152"/>
                     <Edge fillStyle0="8" fillStyle1="3" edges="!0 -152|0 -89"/>
-                    <Edge fillStyle0="7" fillStyle1="3" edges="!0 -89|-23 -120"/>
-                    <Edge fillStyle0="2" fillStyle1="3" edges="!-23 -120|0 -152"/>
-                    <Edge fillStyle0="8" fillStyle1="5" edges="!0 120|0 205"/>
-                    <Edge fillStyle0="4" fillStyle1="5" edges="!0 205|-138 -6"/>
-                    <Edge fillStyle0="7" fillStyle1="5" edges="!-138 -6/-44 80!-44 80/0 120"/>
                     <Edge fillStyle0="8" fillStyle1="7" edges="!0 -89|0 120"/>
-                    <Edge fillStyle0="6" edges="!-235 -109/-235 -10"/>
-                    <Edge fillStyle0="4" edges="!-235 -10/-136.5 80!-136.5 80/0 205"/>
-                    <Edge fillStyle0="1" edges="!-39 -204/-157 -204"/>
-                    <Edge fillStyle0="1" fillStyle1="3" edges="!-157 -204|-93 -120"/>
-                    <Edge fillStyle0="7" fillStyle1="3" edges="!-93 -120/-138 -64"/>
-                    <Edge fillStyle0="4" fillStyle1="3" edges="!-138 -64|-157 -204"/>
-                    <Edge fillStyle0="4" edges="!-157 -204/-235 -109"/>
-                    <Edge fillStyle0="4" fillStyle1="6" edges="!-235 -109|-138 -64!-138 -64|-235 -10"/>
-                    <Edge fillStyle0="4" fillStyle1="7" edges="!-138 -6/-138 -64"/>
-                    <Edge fillStyle0="2" fillStyle1="1" edges="!-39 -204|-93 -120"/>
-                    <Edge fillStyle0="2" fillStyle1="7" edges="!-93 -120/-23 -120"/>
+                    <Edge fillStyle0="5" fillStyle1="7" edges="!0 120/-44 80!-44 80/-138 -6"/>
+                    <Edge fillStyle0="5" fillStyle1="4" edges="!-138 -6|0 205"/>
+                    <Edge fillStyle0="5" fillStyle1="8" edges="!0 205|0 120"/>
+                    <Edge fillStyle0="8" edges="!0 205/235 -10!235 -10/235 -109!235 -109/157 -204!157 -204/39 -204!39 -204|0 -152"/>
                     <Edge fillStyle0="2" edges="!0 -152|-39 -204"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!-39 -204|-93 -120"/>
+                    <Edge fillStyle0="7" fillStyle1="3" edges="!-93 -120/-138 -64"/>
+                    <Edge fillStyle0="7" fillStyle1="4" edges="!-138 -64/-138 -6"/>
+                    <Edge fillStyle0="6" edges="!-235 -109/-235 -10"/>
+                    <Edge fillStyle0="6" fillStyle1="4" edges="!-235 -10|-138 -64!-138 -64|-235 -109"/>
+                    <Edge fillStyle1="4" edges="!-235 -109/-157 -204"/>
+                    <Edge fillStyle0="3" fillStyle1="4" edges="!-157 -204|-138 -64"/>
+                    <Edge fillStyle0="2" fillStyle1="7" edges="!-93 -120/-23 -120"/>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="!-23 -120|0 -152"/>
+                    <Edge fillStyle0="1" fillStyle1="3" edges="!-157 -204|-93 -120"/>
+                    <Edge fillStyle0="1" edges="!-39 -204/-157 -204"/>
+                    <Edge fillStyle0="4" edges="!-235 -10/-136.5 80!-136.5 80/0 205"/>
+                    <Edge fillStyle0="7" fillStyle1="3" edges="!0 -89|-23 -120"/>
                     <Edge cubics="!0 -89(;0,-89 23,-120 23,-120q0 -89 23 -120);"/>
                     <Edge cubics="!23 -120(;23,-120 0,-152 0,-152q23 -120 0 -152);"/>
                     <Edge cubics="!235 -10(;235,-10 235,-109 235,-109q235 -10 235 -109);"/>

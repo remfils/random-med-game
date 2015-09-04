@@ -1,75 +1,39 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/BulletCostume" itemID="553a05be-0000012e" linkageExportForAS="true" linkageClassName="src.costumes.BulletCostume" lastModified="1438431240" lastUniqueIdentifier="9">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/BulletCostume" itemID="553a05be-0000012e" linkageExportForAS="true" linkageClassName="src.costumes.BulletCostume" lastModified="1441179725" lastUniqueIdentifier="9">
   <timeline>
-    <DOMTimeline name="BulletCostume" currentFrame="147">
+    <DOMTimeline name="BulletCostume">
       <layers>
         <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="15" name="Nukelino_default" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="15" duration="16" name="Nukelino_destroy" labelType="name" keyMode="9728">
+            <DOMFrame index="15" duration="22" name="Nukelino_destroy" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="31" duration="16" name="PowerSpell_default" labelType="name" keyMode="9728">
+            <DOMFrame index="37" duration="16" name="PowerSpell_default" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="47" duration="18" name="PowerSpell_destroy" labelType="name" keyMode="9728">
+            <DOMFrame index="53" duration="18" name="PowerSpell_destroy" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="65" duration="14" name="Spark_default" labelType="name" keyMode="9728">
+            <DOMFrame index="71" duration="14" name="Spark_default" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="79" duration="69" name="Spark_destroy" labelType="name" keyMode="9728">
+            <DOMFrame index="85" duration="69" name="Spark_destroy" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="15" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="15" duration="15" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="30" duration="17" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[visible = false;]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="47" duration="9" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="56" duration="23" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[visible = false;]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="79" duration="4" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[play();]]></script>
-              </Actionscript>
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="83" duration="65" keyMode="9728">
-              <Actionscript>
-                <script><![CDATA[visible = false;]]></script>
-              </Actionscript>
+            <DOMFrame index="0" duration="154" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="collider" color="#FF800A" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="31" keyMode="9728">
+            <DOMFrame index="0" duration="37" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-0.3" centerPoint3DY="0.05">
                   <matrix>
@@ -81,7 +45,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="31" duration="34" keyMode="9728">
+            <DOMFrame index="37" duration="34" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-0.3" centerPoint3DY="0.05">
                   <matrix>
@@ -93,7 +57,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="65" duration="83" keyMode="9728">
+            <DOMFrame index="71" duration="83" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
@@ -107,7 +71,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="main" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="main" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="15" keyMode="9728">
               <elements>
@@ -118,16 +82,16 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="15" duration="16" keyMode="9728">
+            <DOMFrame index="15" duration="22" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_bullets/_nukelino/Nukelino_destroy" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_bullets/_nukelino/Nukelino_destroy" symbolType="graphic" loop="play once">
                   <transformationPoint>
                     <Point x="-4.2" y="-67.55"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="31" duration="16" keyMode="9728">
+            <DOMFrame index="37" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bullets/_powerspell/PowerSpell_default" centerPoint3DX="-0.05" centerPoint3DY="-29.65">
                   <transformationPoint>
@@ -136,7 +100,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="47" duration="9" keyMode="9728">
+            <DOMFrame index="53" duration="9" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bullets/_powerspell/PowerSpell_destroy" symbolType="graphic" loop="loop">
                   <transformationPoint>
@@ -145,10 +109,10 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="56" duration="9" keyMode="9728">
+            <DOMFrame index="62" duration="9" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="65" duration="14" keyMode="9728">
+            <DOMFrame index="71" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bullets/_spark/Spark_default" centerPoint3DX="-0.1" centerPoint3DY="-35.5">
                   <transformationPoint>
@@ -157,16 +121,16 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="79" duration="4" keyMode="9728">
+            <DOMFrame index="85" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_bullets/_spark/Spark_destroy" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_bullets/_spark/Spark_destroy" selected="true" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="-0.2" y="-35.1"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="83" duration="65" keyMode="9728">
+            <DOMFrame index="89" duration="65" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>

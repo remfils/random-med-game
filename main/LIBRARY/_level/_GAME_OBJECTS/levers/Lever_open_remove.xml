@@ -8,7 +8,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix a="-1" c="-0.176361083984375" d="1.47724914550781" tx="15.4" ty="-11.65"/>
+                    <Matrix a="-1" c="-0.176361083984375" d="1.47723388671875" tx="15.4" ty="-11.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="6.5" y="0.8"/>

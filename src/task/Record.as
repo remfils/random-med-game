@@ -16,6 +16,7 @@ package src.task {
         public static const GAMEMENU_ENTER_TYPE:int = 12; // игрок поставил игру на паузу.
         public static const GAMEMENU_LEAVE_TYPE:int = 13; // игрок возобнил игру после паузы.
         public static const KEY_USED_TYPE:int = 14; // использовал ключ. dataA = task_id, dataB = object_id, result
+        public static const SECRET_ROOM_UNLOCKED:int = 15;
         
         public var date:Date;
         public var type_id:int;

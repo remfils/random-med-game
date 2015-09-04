@@ -5,9 +5,12 @@
     import Box2D.Dynamics.Joints.b2MouseJoint;
     import Box2D.Dynamics.Joints.b2MouseJointDef;
     import src.costumes.CostumeEnemy;
+    import src.Game;
     import src.util.CreateBodyRequest;
     
     public class FlyingEnemy extends Enemy {
+        private static const GHOST_DEATH_DELAY:Number = 23 / Game.FRAMES_PER_MILLISECOND;
+        
         public static const STAND_STATE:String = "_stand";
         public static const ATTACK_STATE:String = "_active";
         
@@ -20,6 +23,12 @@
         public function FlyingEnemy() {
             super();
             agroDistance = 230;
+        }
+        
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            
+            costume_remove_delay = GHOST_DEATH_DELAY;
         }
         
         override public function update():void {

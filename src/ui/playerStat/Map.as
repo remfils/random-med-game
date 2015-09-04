@@ -40,12 +40,19 @@
                 }
             }
             
-            WIDTH = width / (max_x+1) - 2;
-            HEIGHT = WIDTH / 1.5;
+            WIDTH = width / (max_x-min_x+1) - 2;
+            HEIGHT = height / (max_y -min_y + 1) - 2;
             
-            miniMap.x = (width - WIDTH * (max_x+1))/2 ;
+            if ( max_x - min_x > max_y - min_y ) {
+                HEIGHT = WIDTH / 1.5;
+            }
+            else {
+                WIDTH = HEIGHT * 1.5;
+            }
+            
+            miniMap.x = (width - WIDTH * (max_x - min_x+1))/2 ;
 
-            miniMap.y += (height - HEIGHT * (max_y + 1))/2;
+            miniMap.y += (height - HEIGHT * (max_y-min_y+1))/2;
             
             redrawCurrentRoom();
         }

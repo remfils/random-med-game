@@ -125,11 +125,9 @@
             hitColor.setTint(0, 0);
             hitFrames = 0;
             cRoom.removeEnemy(this);
-            game.deleteManager.add(body);
-            game.deleteManager.add(costume);
-            //costume.dispatchEvent(new SubmitTaskEvent(task_id, SubmitTaskEvent.ENEMY_TYPE));
-            costume.setState(DEATH_STATE);
+            costume.setAnimatedState(DEATH_STATE);
             submitAnswer();
+            destroy();
         }
         
         override public function destroy():void {
@@ -151,7 +149,7 @@
                     return Ids.ENEMY_MONK_ID;
                 break;
                 case CostumeEnemy.RAT:
-                    return Ids.ENEMY_PROJECTILE_ID;
+                    return Ids.ENEMY_RAT_ID;
                 break;
                 case CostumeEnemy.GREEN_BULLET_TYPE:
                     return Ids.ENEMY_PROJECTILE_ID;

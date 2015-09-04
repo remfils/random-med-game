@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/_powerspell/PowerSpell_destroy" itemID="553a07ac-0000017d" symbolType="graphic" lastModified="1429866445" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="PowerSpell_destroy" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-12&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="PowerSpell_destroy" currentFrame="9" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-12&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
         <DOMLayer name="circle copy 3" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>

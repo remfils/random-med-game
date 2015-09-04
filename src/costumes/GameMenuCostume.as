@@ -4,6 +4,7 @@ package src.costumes {
     public class GameMenuCostume extends Costume {
         public static const RED_STATE:String = "red";
         public static const GREEN_STATE:String = "green";
+        public static const LOADING_STATE:String = "loading";
         
         public var title_txt:TextField;
         public var main_txt:TextField;

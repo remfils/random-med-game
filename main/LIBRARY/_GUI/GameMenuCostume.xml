@@ -1,13 +1,16 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1438330678" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1441281194" lastUniqueIdentifier="2">
   <timeline>
-    <DOMTimeline name="GameMenuCostume" currentFrame="99">
+    <DOMTimeline name="GameMenuCostume">
       <layers>
-        <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
+        <DOMLayer name="labels" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="19" name="red" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="19" duration="81" name="green" labelType="name" keyMode="9728">
+            <DOMFrame index="19" duration="37" name="green" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="56" duration="44" name="loading" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -19,7 +22,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="title_txt" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="title_txt" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="19" keyMode="9728">
               <elements>
@@ -43,7 +46,7 @@
             </DOMFrame>
             <DOMFrame index="19" duration="81" keyMode="9728">
               <elements>
-                <DOMDynamicText name="title_txt" left="0.45" width="300" height="103.75" isSelectable="false" lineType="multiline">
+                <DOMDynamicText name="title_txt" left="0.45" width="300" height="139" isSelectable="false" lineType="multiline">
                   <matrix>
                     <Matrix a="1.01708984375" tx="-153" ty="146.35"/>
                   </matrix>
@@ -52,7 +55,7 @@
                   </transformationPoint>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>ОШИБКА&#xD;УРОВЕНЬ ПРОЙДЕН</characters>
+                      <characters>ОШИБКА&#xD;УРОВЕНЬ ПРОЙДЕН&#xD;ЗАГРУЗКА</characters>
                       <textAttrs>
                         <DOMTextAttrs alignment="center" aliasText="false" size="30" bitmapSize="600" face="TimesNewRomanPS-BoldMT" fillColor="#FFE000"/>
                       </textAttrs>
@@ -67,7 +70,7 @@
           <frames>
             <DOMFrame index="0" duration="100" keyMode="9728">
               <elements>
-                <DOMDynamicText name="main_txt" left="-168.7" width="481.4" height="68.5" autoExpand="true" isSelectable="false" lineType="multiline">
+                <DOMDynamicText name="main_txt" left="68.9" width="6.2" height="68.5" autoExpand="true" isSelectable="false" lineType="multiline">
                   <matrix>
                     <Matrix a="0.624664306640625" d="0.624664306640625" tx="-44.95" ty="224.35"/>
                   </matrix>
@@ -76,7 +79,7 @@
                   </transformationPoint>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>Игра в данный момент не доступна</characters>
+                      <characters></characters>
                       <textAttrs>
                         <DOMTextAttrs alignment="center" aliasText="false" size="30" bitmapSize="600" face="TimesNewRomanPS-BoldMT" fillColor="#FFFFFF"/>
                       </textAttrs>
@@ -98,9 +101,18 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="19" duration="81" keyMode="9728">
+            <DOMFrame index="19" duration="37" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/GameMenuBG_gr" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/GameMenuBG_gr" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point x="0.2" y="314.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="56" duration="44" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/GameMenuBG_gr" symbolType="graphic" firstFrame="1" loop="single frame">
                   <transformationPoint>
                     <Point x="0.2" y="314.3"/>
                   </transformationPoint>

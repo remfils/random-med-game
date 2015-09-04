@@ -80,18 +80,18 @@ package src.levels {
                     return;
                 }
                 
-                if ( bullet.bulletDef.is_boom ) {
+                /*if ( bullet.bulletDef.is_boom ) {
                     bullet.explode = true;
                     game.bulletController.hideBullet(bullet);
                     return;
-                }
+                }*/
                 
                 if ( userData.object is Enemy ) {
                     Enemy(userData.object).makeHit(bullet.bulletDef.damage);
                 }
             }
-            
-            game.bulletController.hideBullet(bullet);
+            bullet.breakBullet();
+            // game.bulletController.hideBullet(bullet);
         }
         
         private function asymetricEnemyBulletCheck(bullet:Projectile, userData:Object):void {

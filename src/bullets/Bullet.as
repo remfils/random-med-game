@@ -8,7 +8,10 @@
     import Box2D.Dynamics.b2World;
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
+    import flash.events.Event;
+    import flash.events.TimerEvent;
     import flash.geom.Point;
+    import flash.utils.Timer;
     import src.costumes.BulletCostume;
     import src.enemy.Enemy;
     import src.Game;
@@ -22,6 +25,7 @@
     import src.util.ChangePlayerStatObject;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
+    import src.util.ObjectPool;
     import src.util.Recorder;
     
     public class Bullet extends AbstractObject implements LoopClip {
@@ -36,7 +40,6 @@
         private var active = true;
         private var bodyHidden:Boolean = false;
         
-        public var is_explosion:Boolean = false;
         public var explode:Boolean = false;
         private var powder_power:Number = 2;
         private var explosion_rad:Number = 2;
@@ -121,6 +124,7 @@
                     if ( obj is Door && Door(obj).isSecret ) {
                         Door(obj).specialLock = false;
                         Door(obj).unlock();
+                        Recorder.recordSecretRoomFound();
                     }
                     
                     if ( obj is Obstacle ) {
@@ -186,6 +190,28 @@
             this.x = X;
             this.y = Y;
             body.SetPosition(new b2Vec2(X / gws, Y / gws));
+        }
+        
+        public function breakBullet():void {
+            costume.setAnimatedState(DESTOY_STATE);
+            
+            if ( bulletDef.is_boom ) {
+                explode = true;
+            }
+            
+            var timer:Timer = ObjectPool.getTimer(bulletDef.end_animation_delay);
+            timer.addEventListener(TimerEvent.TIMER_COMPLETE, bulletIsFinishedPlaying);
+            
+            game.bulletController.safeDeactivateBullet(this);
+        }
+        
+        private function bulletIsFinishedPlaying(e:TimerEvent):void {
+            var t:Timer = Timer(e.target);
+            t.removeEventListener(TimerEvent.TIMER_COMPLETE, bulletIsFinishedPlaying);
+            
+            active = false;
+            costume.visible = false;
+            costume.stop();
         }
 
     }

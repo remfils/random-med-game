@@ -4,6 +4,7 @@ package src.ui {
     import fl.transitions.Tween;
     import fl.transitions.TweenEvent;
     import flash.automation.StageCaptureEvent;
+    import flash.display.DisplayObject;
     import flash.display.SimpleButton;
     import flash.display.Sprite;
     import flash.events.*;
@@ -11,6 +12,7 @@ package src.ui {
     import flash.text.TextField;
     import flash.text.TextFormat;
     import src.costumes.GameMenuCostume;
+    import src.costumes.MenuSprites;
     import src.events.ExitLevelEvent;
     import src.events.GameEvent;
     import src.task.Record;
@@ -20,8 +22,9 @@ package src.ui {
         public static const GAME_MENU_TYPE:int = 1;
         public static const END_LEVEL_TYPE:int = 2;
         public static const DEATH_TYPE:int = 3;
+        public static const LOADING_TYPE:int = 4;
         
-        private static const MAX_MENU_STRANPARENCY:Number = 0.7;
+        private var MAX_MENU_STRANPARENCY:Number = 0.7;
         
         private static const LEFT_BTN_X:Number = -150;
         private static const RIGHT_CORNER_X:Number = 156;
@@ -35,11 +38,22 @@ package src.ui {
         protected var menuBG:Sprite = new GameMenuBG(); // D!
         private var costume:GameMenuCostume;
         
-        public function GameMenu(type_:int = 1) {
+        public function GameMenu(type_:int = 1, stage_:DisplayObject = null) {
             super();
             
             graphics.beginFill(0x000000);
-            graphics.drawRect(0, 0, game.stage.stageWidth, game.stage.stageHeight);
+            
+            if ( type_ == LOADING_TYPE ) {
+                MAX_MENU_STRANPARENCY = 1;
+            }
+            
+            if ( stage_ ) {
+                graphics.drawRect(0, 0, stage_.width, stage_.height);
+            }
+            else {
+                graphics.drawRect(0, 0, game.stage.stageWidth, game.stage.stageHeight);
+            }
+            
             graphics.endFill();
             
             costume = new GameMenuCostume();
@@ -87,6 +101,15 @@ package src.ui {
                     resumeButton.y = exitButton.y;
                     menuBG.addChild(resumeButton);
                 break;
+                case LOADING_TYPE:
+                    costume.setState(GameMenuCostume.LOADING_STATE);
+                    costume.setTitle("ЗАГРУЗКА");
+                    
+                    var ball:MenuSprites = new MenuSprites();
+                    ball.setSprite(MenuSprites.LOADING_CIRCLE);
+                    ball.x = 0;
+                    ball.y = FOOTER_Y;
+                    costume.addChild(ball);
                 default:
                     resumeButton = new SimpleButton();
                     exitButton = new SimpleButton();
@@ -109,23 +132,21 @@ package src.ui {
         
         override public function activate():void {
             //super.activate();
-            resumeButton.visible = true;
-            exitButton.visible = true;
             
             switch (type) {
                 case GAME_MENU_TYPE:
                     game.stage.addEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
                     resumeButton.addEventListener(MouseEvent.CLICK, resumeGame);
                     exitButton.addEventListener(MouseEvent.CLICK, exitGame);
-                break;
+                    break;
                 case END_LEVEL_TYPE:
                     exitButton.addEventListener(MouseEvent.CLICK, exitGame);
-                    resumeButton.addEventListener(MouseEvent.CLICK, startNextLevelListener); // TMP!
-                break;
+                    resumeButton.addEventListener(MouseEvent.CLICK, startNextLevelListener);
+                    break;
                 case DEATH_TYPE:
                     exitButton.addEventListener(MouseEvent.CLICK, exitGame);
                     resumeButton.addEventListener(MouseEvent.CLICK, restartLevelListener);
-                break;
+                    break;
             }
             activateElements();
         }
@@ -142,35 +163,46 @@ package src.ui {
         }
         
         private function exitGame(e:MouseEvent):void {
+            hide();
             var event:ExitLevelEvent = new ExitLevelEvent(ExitLevelEvent.EXIT_TO_MENU_CMD);
             if ( type == GAME_MENU_TYPE ) event.level_completed = false;
             dispatchEvent(event);
         }
         
         private function restartLevelListener(e:MouseEvent):void {
+            hide();
             var event:ExitLevelEvent = new ExitLevelEvent(ExitLevelEvent.RESTART_LEVEL_CMD);
             event.level_completed = false;
             dispatchEvent(event);
         }
         
         private function startNextLevelListener(e:MouseEvent):void {
+            hide();
             dispatchEvent(new ExitLevelEvent(ExitLevelEvent.NEXT_LEVEL_CMD));
         }
         
         override public function deactivate():void {
             active = false;
             
-            game.stage.removeEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
+            if ( game && game.stage ) {
+                game.stage.removeEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
+            }
             resumeButton.removeEventListener(MouseEvent.CLICK, resumeGame);
             exitButton.removeEventListener(MouseEvent.CLICK, exitGame);
-            
-            resumeButton.visible = false;
-            exitButton.visible = false;
         }
         
         override public function show():void {
+            if ( game && game.stage ) {
+                game.addChild(this);
+            }
+            else {
+                main.addChild(this);
+            }
+            
+            
             var tween:Tween = new Tween(this, "alpha", Strong.easeIn, 0, MAX_MENU_STRANPARENCY, 10);
-            tween = new Tween (costume,"x", Strong.easeInOut, -costume.width, game.stage.stageWidth / 2, 10);
+            tween = new Tween (costume,"x", Strong.easeInOut, -costume.width, stage.stageWidth / 2, 10);
+            
             super.show();
             
             if ( type == GAME_MENU_TYPE ) {
@@ -180,7 +212,7 @@ package src.ui {
         
         override public function hide():void {
             var tween:Tween = new Tween(this, "alpha", Strong.easeIn, MAX_MENU_STRANPARENCY, 0, 10);
-            tween = new Tween (costume,"x", Strong.easeInOut, game.stage.stageWidth / 2, -costume.width, 10);
+            tween = new Tween (costume,"x", Strong.easeInOut, stage.stageWidth / 2, -costume.width, 10);
             tween.addEventListener(TweenEvent.MOTION_FINISH, menuIsHiddenHandler);
             
             if ( type == GAME_MENU_TYPE ) {
@@ -193,9 +225,12 @@ package src.ui {
             tween.removeEventListener(TweenEvent.MOTION_FINISH, menuIsHiddenHandler);
             
             deactivate();
-            if ( type == GAME_MENU_TYPE ) {
+            if ( game && game.stage && type == GAME_MENU_TYPE ) {
                 game.resume();
             }
+            
+            if ( parent == main ) main.removeChild(this);
+            else if ( parent == game ) game.removeChild(this);
         }
         
         override public function destroy():void {

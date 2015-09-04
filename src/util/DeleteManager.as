@@ -47,7 +47,7 @@ package src.util {
                 }
                 
                 if ( objectsToRemove[i] is Costume ) {
-                    if ( objectsToRemove[i].visible ) continue;
+                    // if ( objectsToRemove[i].visible ) continue;
                 }
                 
                 if ( objectsToRemove[i] is DisplayObject ) {

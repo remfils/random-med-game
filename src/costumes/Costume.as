@@ -1,8 +1,11 @@
 package src.costumes {
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
+    import src.Game;
 
     public class Costume extends MovieClip {
+        public static const SMOKE_ANIMATION_DELAY:Number = 17 / Game.FRAMES_PER_MILLISECOND;
+
         protected static const COLLIDER_NAME:String = "costume_collider";
         public var costume_collider:DisplayObject;
         
