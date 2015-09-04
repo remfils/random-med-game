@@ -36,6 +36,8 @@ package src.ui {
             defaultTextFormat.size = 30;
             defaultTextFormat.color = 0xffffff;
             defaultTextFormat.bold = FontStyle.BOLD;
+            
+            setUpMenu();
         }
         
         public function readData(data:Object):void {

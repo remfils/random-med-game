@@ -18,7 +18,7 @@ package src {
     import src.util.*;
     
     public class Game extends Sprite {
-        public static const VERSION:String = "0.43-beta";
+        public static const VERSION:String = "0.43-prealpha";
         public static var TEST_MODE:Boolean = true;
         
         public var levelId:int = 0;
@@ -164,8 +164,7 @@ package src {
             glassPanel.y += playerStat.height;
             addChildAt(glassPanel, getChildIndex(playerStat));
             
-            menuPanel = new GameMenu();
-            addChild(menuPanel);
+            menuPanel = new GameMenu(stage);
             
             TestModePanel.y += playerStat.height;
             addChild(TestModePanel);
@@ -407,8 +406,7 @@ package src {
             var timer:Timer = Timer(e.target);
             timer.removeEventListener(TimerEvent.TIMER_COMPLETE, playerDeathAnimationListener);
             
-            var menu:GameMenu = new GameMenu(GameMenu.DEATH_TYPE);
-            addChild(menu);
+            var menu:GameMenu = new GameDeathMenu(stage);
             menu.show();
         }
         
@@ -543,8 +541,7 @@ package src {
             timer.removeEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);
             timer.stop();
             
-            var endGameMenu:GameMenu = new GameMenu(GameMenu.END_LEVEL_TYPE);
-            addChild(endGameMenu);
+            var endGameMenu:GameMenu = new GameEndMenu(stage);
             endGameMenu.show();
         }
         // D!
@@ -570,7 +567,7 @@ package src {
                 deleteManager.add(getChildAt(i));
             }
             
-            deleteManager
+            deleteManager.add(menuPanel);
             
             deleteManager.destroy();
             deleteManager = null;

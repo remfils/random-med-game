@@ -11,6 +11,7 @@
     import src.MainMenu;
     import src.task.Record;
     import src.ui.AbstractMenu;
+    import src.ui.GameLoadingMenu;
     import src.ui.GameMenu;
     import src.util.DataManager;
     import src.util.LevelParser;
@@ -42,7 +43,7 @@
             removeEventListener(Event.ADDED_TO_STAGE, init);
             stage.color = 0x333333;
             
-            loading_screen = new GameMenu(GameMenu.LOADING_TYPE, stage);
+            loading_screen = new GameLoadingMenu(stage);
             
             AbstractMenu.main = this;
             AbstractMenu.user = new User();
@@ -72,9 +73,9 @@
         }
         
         private function loadGameData():void {
-            loading_screen.show();
-            
             dataManager.startGameDataLoading(createMainMenu);
+            
+            loading_screen.show();
             
             addEventListener(DATA_LOADED_EVENT, dataLoadedFromServer);
             addEventListener(MenuItemSelectedEvent.LEVEL_SELECTED, MenuItemSelectedListener);
@@ -123,15 +124,17 @@
         private function createMainMenu():void {
             mainMenu = new MainMenu();
             mainMenu.visible = false;
-            addChildAt(mainMenu,1);
+            addChild(mainMenu);
             
             mainMenu.render( dataManager.getMainMenuData() );
         }
         
         private function MenuItemSelectedListener(e:MenuItemSelectedEvent):void {
-            loading_screen.show();
+            loading_screen.menu_is_shown_callback = function() {
+                startLevelLoading(e.id);
+            }
             
-            startLevelLoading(e.id);
+            loading_screen.show();
             //game.player.setInventory(dataManager.user.inventory);
         }
         
@@ -153,7 +156,7 @@
             
             Output.add(levelLoader.data);
             
-            addChildAt(game,1);
+            addChild(game);
             
             var levelCreator:LevelParser = new LevelParser();
             levelCreator.createLevelFromXML(game, XML(levelLoader.data));
@@ -176,6 +179,8 @@
         }
         
         public function exitLevel(e:ExitLevelEvent):void {
+            return;
+            
             Recorder.add(new Record(Record.LEVEL_END_TYPE, game.levelId, e.cmd, int(e.level_completed)));
             Recorder.send();
             
@@ -207,14 +212,50 @@
             removeChild(game);
         }
         
+        public function exitGame(exit_cmd:int, level_completed:Boolean):void {
+            Recorder.add(new Record(Record.LEVEL_END_TYPE, game.levelId, exit_cmd, int(level_completed)));
+            Recorder.send();
+            
+            loading_screen.menu_is_shown_callback = function() {
+                if ( !level_completed ) {
+                    var user:User = dataManager.user;
+                    var player:Player = game.player;
+                    
+                    user.resetPlayer();
+                    
+                    game.rating = 0;
+                }
+                
+                switch (exit_cmd) {
+                    case ExitLevelEvent.EXIT_TO_MENU_CMD:
+                        dataManager.saveGameData(loadGameData);
+                    break;
+                    case ExitLevelEvent.NEXT_LEVEL_CMD:
+                        dataManager.saveGameData(function(){startLevelLoading(game.levelId + 1);});
+                    break;
+                    case ExitLevelEvent.RESTART_LEVEL_CMD:
+                        dataManager.saveGameData(function(){startLevelLoading(game.levelId);});
+                    break;
+                    default:
+                }
+                
+                game.destroy();
+                removeChild(game);
+                
+                trace("hello");
+            }
+            
+            loading_screen.show();
+        }
+        
         private function exitToMainMenu():void {
-            game.destroy();
-            removeChild(game);
+            /*game.destroy();
+            removeChild(game);*/
         }
         
         private function destroyGame():void {
-            game.destroy();
-            removeChild(game);
+            /*game.destroy();
+            removeChild(game);*/
         }
     }
 
