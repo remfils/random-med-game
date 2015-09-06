@@ -5,7 +5,7 @@ package src.util {
 
 
     public class Recorder extends AbstractManager {
-        public static var server:DataManager;
+        public static var server:Server;
         
         private static var _recordings:Vector.<Record> = new Vector.<Record>();
         

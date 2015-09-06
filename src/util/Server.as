@@ -15,7 +15,7 @@ package src.util {
     import vk.APIConnection;
     import flash.system.Security;
 
-    public class DataManager extends AbstractManager {
+    public class Server extends AbstractManager {
         //public const server_name = "http://5.1.53.16/magicworld";
         public const server_name = "http://game.home";
         private const START_GAME_PAGE = "/start_game.php";
@@ -34,7 +34,7 @@ package src.util {
         
         public var main:Main;
         
-        public function DataManager(flashVars:Object):void {
+        public function Server(flashVars:Object):void {
             super();
             this.flashVars = flashVars;
             

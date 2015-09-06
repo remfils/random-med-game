@@ -13,7 +13,7 @@
     import src.ui.AbstractMenu;
     import src.ui.GameLoadingMenu;
     import src.ui.GameMenu;
-    import src.util.DataManager;
+    import src.util.Server;
     import src.util.LevelParser;
     import src.events.*;
     import src.util.*;
@@ -25,7 +25,7 @@
         
         var mainMenu:MainMenu;
         var game:Game;
-        private var dataManager:DataManager;
+        private var server:Server;
         
         public var level_counter:int;
         
@@ -68,18 +68,17 @@
             
             createErrorTextField();
             
-            dataManager = new DataManager(flashVars);
-            dataManager.main = this;
+            server = new Server(flashVars);
+            server.main = this;
             
             loadGameData();
         }
         
         private function loadGameData():void {
-            dataManager.startGameDataLoading(dataLoadedCallback);
+            server.startGameDataLoading(dataLoadedCallback);
             
             loading_screen.show();
             
-            addEventListener(DATA_LOADED_EVENT, dataLoadedCallback);
             addEventListener(MenuItemSelectedEvent.LEVEL_SELECTED, MenuItemSelectedListener);
             addEventListener(ExitLevelEvent.EXIT_LEVEL_EVENT, exitLevel, true);
         }
@@ -110,7 +109,7 @@
             mainMenu.visible = false;
             addChild(mainMenu);
             
-            var data:Object = dataManager.getMainMenuData();
+            var data:Object = server.getMainMenuData();
             
             mainMenu.render( data );
             mainMenu.switchToMenu(mainMenu.TITLE_MENU);
@@ -143,12 +142,12 @@
             var levelLoader = new URLLoader();
             levelLoader.addEventListener(Event.COMPLETE, levelDataLoaded);
             
-            Output.add("starting to load level: " + dataManager.getLevelURL(levelId));
+            Output.add("starting to load level: " + server.getLevelURL(levelId));
             
             game = new Game(levelId);
-            game.getDataFromUser(dataManager.user);
+            game.getDataFromUser(server.user);
             
-            levelLoader.load(dataManager.getLevelURL(levelId));
+            levelLoader.load(server.getLevelURL(levelId));
         }
         
         private function levelDataLoaded(e:Event) {
@@ -188,7 +187,7 @@
             loading_screen.show();
             
             if ( !e.level_completed ) {
-                var user:User = dataManager.user;
+                var user:User = server.user;
                 var player:Player = game.player;
                 
                 user.resetPlayer();
@@ -198,13 +197,13 @@
             
             switch (e.cmd) {
                 case ExitLevelEvent.EXIT_TO_MENU_CMD:
-                    dataManager.saveGameData(loadGameData);
+                    server.saveGameData(loadGameData);
                 break;
                 case ExitLevelEvent.NEXT_LEVEL_CMD:
-                    dataManager.saveGameData(function(){startLevelLoading(game.levelId + 1);});
+                    server.saveGameData(function(){startLevelLoading(game.levelId + 1);});
                 break;
                 case ExitLevelEvent.RESTART_LEVEL_CMD:
-                    dataManager.saveGameData(function(){startLevelLoading(game.levelId);});
+                    server.saveGameData(function(){startLevelLoading(game.levelId);});
                 break;
                 default:
             }
@@ -221,7 +220,7 @@
                 trace(game.rating);
                 
                 if ( !level_completed ) {
-                    var user:User = dataManager.user;
+                    var user:User = server.user;
                     var player:Player = game.player;
                     
                     user.resetPlayer();
@@ -233,13 +232,13 @@
                 
                 switch (exit_cmd) {
                     case ExitLevelEvent.EXIT_TO_MENU_CMD:
-                        dataManager.saveGameData(loadGameData);
+                        server.saveGameData(loadGameData);
                     break;
                     case ExitLevelEvent.NEXT_LEVEL_CMD:
-                        dataManager.saveGameData(function(){startLevelLoading(game.levelId + 1);});
+                        server.saveGameData(function(){startLevelLoading(game.levelId + 1);});
                     break;
                     case ExitLevelEvent.RESTART_LEVEL_CMD:
-                        dataManager.saveGameData(function(){startLevelLoading(game.levelId);});
+                        server.saveGameData(function(){startLevelLoading(game.levelId);});
                     break;
                     default:
                 }
