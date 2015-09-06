@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1437845822" lastUniqueIdentifier="4">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1441489273" lastUniqueIdentifier="4">
   <timeline>
-    <DOMTimeline name="DecorObject" currentFrame="102">
+    <DOMTimeline name="DecorObject" currentFrame="159">
       <layers>
-        <DOMLayer name="label" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="label" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="7" name="Shield" labelType="name" keyMode="9728">
               <elements/>
@@ -28,7 +28,13 @@
             <DOMFrame index="78" duration="16" name="TaskFlag" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="94" duration="31" name="TaskFlag_Smoke" labelType="name" keyMode="9728">
+            <DOMFrame index="94" duration="30" name="TaskFlag_Smoke" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="124" duration="35" name="Shelf1" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="159" duration="13" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -38,7 +44,7 @@
             <DOMFrame index="0" duration="111" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="111" duration="14" keyMode="9728">
+            <DOMFrame index="111" duration="61" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
@@ -47,7 +53,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="symbol" color="#4FFF4F" autoNamed="false">
+        <DOMLayer name="symbol" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="7" keyMode="9728">
               <elements>
@@ -133,8 +139,32 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="111" duration="14" keyMode="9728">
+            <DOMFrame index="111" duration="13" keyMode="9728">
               <elements/>
+            </DOMFrame>
+            <DOMFrame index="124" duration="35" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="полки" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.85" ty="-1.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="159" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Holes" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="0.65" ty="-0.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.55" y="0.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

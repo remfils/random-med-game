@@ -16,7 +16,7 @@ package src.util {
     import flash.system.Security;
 
     public class DataManager extends AbstractManager {
-        // public const server_name = "http://5.1.53.16/magicworld";
+        //public const server_name = "http://5.1.53.16/magicworld";
         public const server_name = "http://game.home";
         private const START_GAME_PAGE = "/start_game.php";
         private const RECORD_PAGE = "/record.php";
@@ -175,10 +175,10 @@ package src.util {
             </Data>;
             
             if ( game.rating ) {
-                resultXML.LevelData = <level>
+                resultXML.LevelData.appendChild(<level>
                         <id>{game.levelId}</id>
                         <rating>{game.rating}</rating>
-                    </level>;
+                    </level>);
             }
             
             Output.add(resultXML);

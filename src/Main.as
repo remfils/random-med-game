@@ -27,6 +27,8 @@
         var game:Game;
         private var dataManager:DataManager;
         
+        public var level_counter:int;
+        
         var loading_screen:GameMenu;
         
         // events
@@ -54,8 +56,8 @@
             if ( TEST_MODE || !flashVars.api_id ) {
                 flashVars['api_id'] = 4700251;
                 flashVars['viewer_id'] = 18524077;
-                flashVars['sid'] = "eb7c258ba81961cc32c161729ccea427b7b1148fdca05781f6ecefe96eb02245466e656a6509162d12f4d";
-                flashVars['secret'] = "4092d88adb";
+                flashVars['sid'] = "17cc0211c20d4f000d947426bebd64dbb2a0203d9cc3106e61747328302228b71be7ff5caa6ce5f251f37";
+                flashVars['secret'] = "11f0eec60d";
                 //AbstractMenu.user.sid = 1;
             }
             
@@ -73,11 +75,11 @@
         }
         
         private function loadGameData():void {
-            dataManager.startGameDataLoading(createMainMenu);
+            dataManager.startGameDataLoading(dataLoadedCallback);
             
             loading_screen.show();
             
-            addEventListener(DATA_LOADED_EVENT, dataLoadedFromServer);
+            addEventListener(DATA_LOADED_EVENT, dataLoadedCallback);
             addEventListener(MenuItemSelectedEvent.LEVEL_SELECTED, MenuItemSelectedListener);
             addEventListener(ExitLevelEvent.EXIT_LEVEL_EVENT, exitLevel, true);
         }
@@ -103,10 +105,17 @@
             Output.init(tf);
         }
         
-        private function dataLoadedFromServer(e:Event):void {
-            createMainMenu();
+        private function dataLoadedCallback(e:Event=null):void {
+            mainMenu = new MainMenu();
+            mainMenu.visible = false;
+            addChild(mainMenu);
             
+            var data:Object = dataManager.getMainMenuData();
+            
+            mainMenu.render( data );
             mainMenu.switchToMenu(mainMenu.TITLE_MENU);
+            
+            level_counter = data.levels.level.length();
             
             var t:Timer = ObjectPool.getTimer(LOAD_SCREEN_DELAY);
             t.addEventListener(TimerEvent.TIMER_COMPLETE, dellayedShowMenu);
@@ -119,14 +128,6 @@
             mainMenu.visible = true;
             
             loading_screen.hide();
-        }
-        
-        private function createMainMenu():void {
-            mainMenu = new MainMenu();
-            mainMenu.visible = false;
-            addChild(mainMenu);
-            
-            mainMenu.render( dataManager.getMainMenuData() );
         }
         
         private function MenuItemSelectedListener(e:MenuItemSelectedEvent):void {
@@ -217,6 +218,8 @@
             Recorder.send();
             
             loading_screen.menu_is_shown_callback = function() {
+                trace(game.rating);
+                
                 if ( !level_completed ) {
                     var user:User = dataManager.user;
                     var player:Player = game.player;
@@ -225,6 +228,8 @@
                     
                     game.rating = 0;
                 }
+                
+                trace(game.rating);
                 
                 switch (exit_cmd) {
                     case ExitLevelEvent.EXIT_TO_MENU_CMD:
