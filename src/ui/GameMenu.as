@@ -112,7 +112,6 @@ package src.ui {
         }
         
         protected function exitGame(e:MouseEvent):void {
-            destroy();
             main.exitGame(ExitLevelEvent.EXIT_TO_MENU_CMD, false);
         }
         

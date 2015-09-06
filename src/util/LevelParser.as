@@ -24,17 +24,17 @@ package src.util {
     
     public class LevelParser {
         private var game:Game;
-        private var gameTaskManager:TaskManager;
+        private var task_manager:TaskManager;
         private var floorCounter:int = 0;
         private var tintObjectsArray:Array = new Array();
         
-        public function LevelParser() {
+        public function LevelParser(game:Game) {
+            task_manager = game.taskManager;
+            this.game = game;
         }
         
-        public function createLevelFromXML (game:Game, levelData:XML):void {
-            gameTaskManager = game.taskManager;
-            this.game = game;
-            game.setLevel(createFloorArray(levelData));
+        public function parseXML (levelData:XML):Array {
+            return createFloorArray(levelData);
         }
         
         private function createFloorArray(xmlLevel:XML):Array {
@@ -145,7 +145,7 @@ package src.util {
                         continue;
                 }
                 task.readXML(taskXML);
-                gameTaskManager.assignTaskToRoom(task, room);
+                task_manager.assignTaskToRoom(task, room);
             }
         }
         
@@ -301,7 +301,7 @@ package src.util {
             var i:int = tintObjectsArray.length;
             var colorNumber:uint = 0;
             while ( i-- ) {
-                colorNumber = gameTaskManager.getTaskColor(tintObjectsArray[i].taskId);
+                colorNumber = task_manager.getTaskColor(tintObjectsArray[i].taskId);
                 if ( colorNumber ) {
                     AbstractObject(tintObjectsArray[i]).setTint(colorNumber);
                 }

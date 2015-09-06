@@ -109,7 +109,6 @@ package src.ui {
                     btn.addChild(star);
                 }
                 
-                
                 if ( i == 4 ) {
                     i = 0;
                     j++;
@@ -135,7 +134,7 @@ package src.ui {
                 case MOVE_LEVELS_RIGHT_BTN:
                     moveAllLevelsContainerRight();
                     break;
-                case MOVE_LEVELS_RIGHT_BTN:
+                case MOVE_LEVELS_LEFT_BTN:
                     moveAllLevelsContainerLeft();
                     break;
                 case "":

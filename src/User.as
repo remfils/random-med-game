@@ -6,6 +6,8 @@ package src {
     import src.util.AbstractManager;
 
     public class User extends AbstractManager {
+        public var game:Game;
+        
         public var uid:uint = 0;
         public var sid:uint = 0;
         public var name:String = "";
@@ -28,43 +30,13 @@ package src {
         public var playerData:Object;
         public var backup_player:Object;
         
-        public function User() {
+        public function User(game_:Game) {
             playerData = new Object();
             playerInventory = new <InventoryItem>[];
             player = new Player();
             
-        }
-        
-        // D!
-        public function putSpellAt ( position:int, Spell:Class ):void {
-            /*if ( position >= maxSpells || spells.length == maxSpells ) {
-                throw new RangeError("You can't any more spells", 1);
-            }
-            if ( position == -1 ) {
-            }
-            else {
-                spells[position] = Spell;
-            }*/
-        }
-        // D!
-        public function addToPlayerInventory():void {
-            
-        }
-        
-        public function setPlayerInventory():void {
-            trace("ran: User.setPlayerInvetory");
-            /*var item:InventoryItem;
-            player.spells = [];
-            
-            for ( var i:int = 0; i < inventory.length; i++ ) {
-                item = inventory[i];
-                if ( item.onPlayer ) {
-                    if ( item.isSpell ) {
-                        player.spells.push(item.getClassFromName());
-                    }
-                }
-            }*/
-            
+            game = game_;
+            game.player = player;
         }
         
         public function setDataFromXML (userXML:XMLList):void {
@@ -95,8 +67,6 @@ package src {
                     //if ( item.onPlayer ) playerInventory[playerInventory.length - 1] = item;
                 }
             }
-            
-            trace(player.MONEY);
         }
         
         public function getEXPToNextLevel():int {
@@ -121,8 +91,8 @@ package src {
                 item:InventoryItem;
             var player:Player = game.player;
             
-            if ( levelsCompleted < AbstractObject.game.levelId ) {
-                levelsCompleted = AbstractObject.game.levelId;
+            if ( levelsCompleted < AbstractObject.game.level_id ) {
+                levelsCompleted = AbstractObject.game.level_id;
             }
             
             result =  <User>
@@ -150,13 +120,6 @@ package src {
             }
             
             return result;
-        }
-        
-        // D!
-        public function updateData():void {
-            if ( levelsCompleted < AbstractObject.game.levelId ) {
-                levelsCompleted = AbstractObject.game.levelId;
-            }
         }
         
         public function clearInventory():void {

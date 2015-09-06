@@ -18,10 +18,10 @@ package src {
     import src.util.*;
     
     public class Game extends Sprite {
-        public static const VERSION:String = "0.43-prealpha";
+        public static var VERSION:String = "0.431-prealpha";
         public static var TEST_MODE:Boolean = true;
         
-        public var levelId:int = 0;
+        public var level_id:int = 0;
         public var rating:int = 0;
         
         private static var i:uint;
@@ -77,9 +77,9 @@ package src {
         
         private var SECRET_ROOM_FOUND:Boolean = false;
         
-        public function Game(levelId:int) {
+        public function Game() {
             super();
-            this.levelId = levelId;
+            // this.levelId = levelId;
             
             AbstractObject.game = this;
             AbstractManager.game = this;
@@ -88,10 +88,11 @@ package src {
             
             TestModePanel = new Sprite();
             
-            Recorder.add(new Record(Record.LEVEL_START_TYPE, levelId));
+            Recorder.add(new Record(Record.LEVEL_START_TYPE, level_id));
             //player = new Player();
         }
         
+        // D!
         public function setLevel(level:Array):void {
             _LEVEL = level;
         }
@@ -100,8 +101,6 @@ package src {
             var userInventory:Array = user.inventory;
             var i:int, invLength:int = userInventory.length;
             var item:InventoryItem;
-            
-            player = user.player;
             
             for (i = 0; i < invLength; i++) {
                 item = InventoryItem(userInventory[i]);
@@ -120,8 +119,10 @@ package src {
             }
         }
         
-        public function init() {
+        public function init(level:Array) {
             this.stage.focus = this;
+            
+            _LEVEL = level;
             
             player.x = PLAYER_START_X;
             player.y = PLAYER_START_Y;
@@ -341,6 +342,7 @@ package src {
                 switch ( change.stat_name ) {
                     case ChangePlayerStatObject.HEALTH_STAT:
                         playerStat.flashElementByID(PlayerStat.HEALTH_BAR_ID);
+                        Recorder.recordPlayerDmg(change.id, -change.delta);
                         break;
                     case ChangePlayerStatObject.MANA_STAT:
                         playerStat.flashElementByID(PlayerStat.MANA_BAR_ID);

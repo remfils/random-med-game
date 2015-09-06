@@ -15,7 +15,6 @@ package src.util {
         
         public static function recordTaskGuess(task:Task, task_obj_id:int = 0):void {
             add(new Record(task.type, task.id, task_obj_id, int(task.is_complete)));
-            // newRecord(task.type, task.id, task.is_complete);
         }
         
         public static function recordPlayerDmg(from_id:int, dmg:int):void {

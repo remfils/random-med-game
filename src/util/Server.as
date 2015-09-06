@@ -16,10 +16,10 @@ package src.util {
     import flash.system.Security;
 
     public class Server extends AbstractManager {
-        //public const server_name = "http://5.1.53.16/magicworld";
-        public const server_name = "http://game.home";
+        private var server_name:String;
         private const START_GAME_PAGE = "/start_game.php";
         private const RECORD_PAGE = "/record.php";
+        private const SAVE_GAME_PAGE = "/save_game.php";
         
         private const GET_UID:String = "uid=";
         private const GET_SID:String = "sid=";
@@ -30,12 +30,16 @@ package src.util {
         
         private static var data:XML = null;
         private var styleSheet:StyleSheet;
+        
         private var data_load_complete_callback:Function;
+        private var game_is_saved_callback:Function;
+        private var level_loaded_callback:Function;
         
         public var main:Main;
         
-        public function Server(flashVars:Object):void {
+        public function Server(server_name:String, flashVars:Object ):void {
             super();
+            this.server_name = server_name;
             this.flashVars = flashVars;
             
             // Security.allowDomain("http://5.1.53.16");
@@ -52,6 +56,8 @@ package src.util {
         public function startGameDataLoading(callback:Function):void {
             var path:String;
             var loader:URLLoader = new URLLoader();
+            
+            data_load_complete_callback = callback;
             
             path = server_name + START_GAME_PAGE + "?" + GET_UID + user.uid;
             if ( user.sid ) path += "&" + GET_SID + user.sid;
@@ -82,7 +88,10 @@ package src.util {
                 startGettingUserData(new Event(Event.ACTIVATE));
             }
             
-            main.dispatchEvent(new Event(Main.DATA_LOADED_EVENT, true));
+            if ( data_load_complete_callback ) {
+                data_load_complete_callback();
+                data_load_complete_callback = null;
+            }
         }
         
         private function serverConnectErrorListener(e:IOErrorEvent):void {
@@ -118,7 +127,7 @@ package src.util {
             req.data = urlVars;
             
             loader.load(req);
-            loader.addEventListener(Event.COMPLETE, gameDataLoadComplete);
+            loader.addEventListener(Event.COMPLETE, gameDataLoadComplete); // rewrite so users can be created normally
         }
         
         private function checkError(e:Object):void {}
@@ -131,8 +140,33 @@ package src.util {
             };
         }
         
+// LEVEL LOAD
+        public function startLevelLoading(level_id:int, callback:Function = null):void {
+            level_loaded_callback = callback;
+            
+            var url_req:URLRequest = new URLRequest(server_name + '/' + data.GameData.levels.level.(id == "" + level_id).src + "?" + (new Date()).getTime());
+            
+            var level_loader = new URLLoader();
+            level_loader.addEventListener(Event.COMPLETE, levelLoadedHandler);
+            
+            Output.add("starting to load level: " + url_req.url);
+            level_loader.load(url_req);
+        }
+        
         public function getLevelURL(level_id:int):URLRequest {
             return new URLRequest(server_name + '/' + data.GameData.levels.level.(id == "" + level_id).src + "?" + (new Date()).getTime());
+        }
+        
+        private function levelLoadedHandler(e:Event):void {
+            var t:URLLoader = URLLoader(e.target);
+            t.removeEventListener(Event.COMPLETE, levelLoadedHandler);
+            
+            var level_data:XML = XML(t.data);
+            
+            if ( level_loaded_callback ) {
+                level_loaded_callback(level_data);
+                level_loaded_callback = null;
+            }
         }
         
 // RECORD
@@ -150,15 +184,17 @@ package src.util {
         
 // SAVE DATA
         public function saveGameData(callback:Function=null):void {
+            game_is_saved_callback = callback;
+            
             var urlVars:URLVariables = createSaveDataVariable();
             
             var loader:URLLoader = new URLLoader();
-            var req:URLRequest = new URLRequest(server_name + "/save_game.php");
+            var req:URLRequest = new URLRequest(server_name + SAVE_GAME_PAGE);
             req.data = urlVars;
             req.method = URLRequestMethod.POST;
             
             loader.addEventListener(Event.COMPLETE, onGameDataSaved);
-            this.data_load_complete_callback = callback;
+            
             loader.load(req);
         }
         
@@ -176,7 +212,7 @@ package src.util {
             
             if ( game.rating ) {
                 resultXML.LevelData.appendChild(<level>
-                        <id>{game.levelId}</id>
+                        <id>{game.level_id}</id>
                         <rating>{game.rating}</rating>
                     </level>);
             }
@@ -194,11 +230,10 @@ package src.util {
             
             Output.add('server response:\n' + loader.data);
             
-            if ( data_load_complete_callback ) {
-                data_load_complete_callback();
-                data_load_complete_callback = null;
+            if ( game_is_saved_callback ) {
+                game_is_saved_callback();
+                game_is_saved_callback = null;
             }
-            
         }
         
         private function setRatingOfLevel(rating:int, levelId:int):void {

@@ -342,7 +342,6 @@
                             if ( immune ) return false;
                             immune = true;
                             startInvincibilityTimer();
-                            Recorder.recordPlayerDmg(change.id, -change.delta);
                         }
                         else {
                             if ( _HEALTH == MAX_HEALTH ) return false;
@@ -351,7 +350,6 @@
                     case ChangePlayerStatObject.MANA_STAT:
                         if ( change.delta < 0 ) {
                             if ( Math.abs(change.delta) > _MANA ) return false;
-                            // Recorder.record mana
                         }
                         else {
                             if ( _MANA == MAX_MANA ) return false;
