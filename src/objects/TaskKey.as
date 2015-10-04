@@ -21,6 +21,8 @@ package src.objects {
             super();
             costume.setType(KEY_TYPE);
             costume.setState();
+            
+            properties = 0;
         }
         
         override public function update():void {

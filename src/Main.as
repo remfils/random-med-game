@@ -23,12 +23,12 @@
         private static const RELEASE_TEST_MODE:int = 2;
         private static const RELEASE_MODE:int = 3;
         
-        private var mode:int = HOME_TEST_MODE;
+        private var mode:int = RELEASE_MODE;
         
         private const HOME_SERVER:String = "http://game.home";
         private const PUBLIC_SERVER:String = "http://5.1.53.16/magicworld";
         
-        private static var LOAD_SCREEN_DELAY:int = 1000;
+        private static var LOAD_SCREEN_DELAY:int = 500;
         
         private const TEST_MODE:Boolean = false;
         
@@ -89,6 +89,7 @@
                     break;
                 case RELEASE_TEST_MODE:
                     LOAD_SCREEN_DELAY = 0;
+                    Game.TEST_MODE = true;
                     
                     Game.VERSION += "-T";
                     
@@ -98,7 +99,6 @@
                     }
                     break;
                 case RELEASE_MODE:
-                    server_name = HOME_SERVER;
                     Game.TEST_MODE = false;
                     break;
                 default:

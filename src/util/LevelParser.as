@@ -119,7 +119,7 @@ package src.util {
             for each (var obstacle:XML in obstaclesXMLList) {
                 obst = new Obstacle();
                 obst.readXMLParams(obstacle);
-                cRoom.addObstacle(obst);
+                cRoom.add(obst);
             }
         }
         

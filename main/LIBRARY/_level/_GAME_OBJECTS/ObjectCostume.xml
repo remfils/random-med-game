@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1441171139" lastUniqueIdentifier="12">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1442060274" lastUniqueIdentifier="13">
   <timeline>
-    <DOMTimeline name="ObjectCostume">
+    <DOMTimeline name="ObjectCostume" currentFrame="456">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -70,7 +70,46 @@
             <DOMFrame index="351" duration="17" name="Emerald_drop" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="368" duration="68" name="Emerald_pickup" labelType="name" keyMode="9728">
+            <DOMFrame index="368" duration="22" name="Emerald_pickup" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="390" duration="14" name="Hole_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="404" duration="16" name="HoleCorner_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="420" duration="21" name="HoleTunnelEnd_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="441" duration="15" name="HoleTunnel_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="456" duration="13" name="HoleSide_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="469" duration="21" name="HoleSideCorner_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="490" duration="25" name="HoleCorneredCorner_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="515" duration="18" name="HoleCorners2_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="533" duration="18" name="HoleCorners3_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="551" duration="18" name="HoleCorners4_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="569" duration="28" name="HoleCorners2Diagonal_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="597" duration="16" name="HoleEmpty_stand" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="613" duration="116" name="HoleCorners1_stand" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -92,7 +131,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="186" duration="250" keyMode="9728">
+            <DOMFrame index="186" duration="542" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -289,7 +328,7 @@ visible = false;]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="384" duration="52" keyMode="9728">
+            <DOMFrame index="384" duration="344" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
@@ -298,7 +337,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="collider" color="#FF800A" locked="true" autoNamed="false">
+        <DOMLayer name="collider" color="#FF800A" locked="true" outline="true" useOutlineView="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="27" keyMode="9728">
               <elements>
@@ -360,11 +399,23 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="201" duration="235" keyMode="9728">
+            <DOMFrame index="201" duration="189" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-8.7">
                   <matrix>
                     <Matrix a="1.5792236328125" d="1.10202026367188" ty="-0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="390" duration="338" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-8.7">
+                  <matrix>
+                    <Matrix a="4.17352294921875" d="4.17185974121094" ty="0.1"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -623,12 +674,129 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="368" duration="68" keyMode="9728">
+            <DOMFrame index="368" duration="22" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_pickup" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_pickup" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.237594604492188" d="0.237594604492188" ty="-1.6"/>
                   </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="390" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="404" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="1" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="420" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="2" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="441" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="3" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="456" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="4" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="469" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="5" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="490" duration="25" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="6" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="515" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="8" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="533" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="9" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="551" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="10" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="569" duration="28" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="11" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="597" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="12" loop="single frame">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="613" duration="115" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="13" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

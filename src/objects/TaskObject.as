@@ -31,6 +31,8 @@ package src.objects {
         public function TaskObject() {
             super();
             costume = new ActiveObjectCostume();
+            
+            properties = IS_STATIC | IS_EXTRUDED;
         }
         
         public function getActiveArea():DisplayObject {

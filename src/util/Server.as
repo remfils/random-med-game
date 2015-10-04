@@ -20,6 +20,7 @@ package src.util {
         private const START_GAME_PAGE = "/start_game.php";
         private const RECORD_PAGE = "/record.php";
         private const SAVE_GAME_PAGE = "/save_game.php";
+        private const CREATE_PLAYER_PAGE = "/create_player.php";
         
         private const GET_UID:String = "uid=";
         private const GET_SID:String = "sid=";
@@ -53,6 +54,10 @@ package src.util {
             Recorder.server = this;
         }
         
+        private function get GET_TIME_VAR():String {
+            return "time=" + (new Date()).getTime();
+        }
+        
         public function startGameDataLoading(callback:Function):void {
             var path:String;
             var loader:URLLoader = new URLLoader();
@@ -61,6 +66,7 @@ package src.util {
             
             path = server_name + START_GAME_PAGE + "?" + GET_UID + user.uid;
             if ( user.sid ) path += "&" + GET_SID + user.sid;
+            path += "&" + GET_TIME_VAR;
             
             //dataLoadIsCompleteCallback = callback;
             loader.addEventListener(Event.COMPLETE, gameDataLoadComplete);
@@ -83,14 +89,14 @@ package src.util {
             
             if ( data.BaseData.length() > 0 ) {
                 user.setDataFromXML(data.BaseData.User);
+                
+                if ( data_load_complete_callback ) {
+                    data_load_complete_callback();
+                    data_load_complete_callback = null;
+                }
             }
             else {
-                startGettingUserData(new Event(Event.ACTIVATE));
-            }
-            
-            if ( data_load_complete_callback ) {
-                data_load_complete_callback();
-                data_load_complete_callback = null;
+                startGettingUserData();
             }
         }
         
@@ -104,14 +110,14 @@ package src.util {
             Output.add("security error" + e.toString());
         }
         
-        private function startGettingUserData(e:Event):void {
+        private function startGettingUserData():void {
             var VK:APIConnection = new APIConnection(flashVars);
             VK.api("users.get", { user_ids: flashVars["viewer_id"]}, sendCreateUserRequest, checkError);
         }
         
         private function sendCreateUserRequest(allUsersData:Object):void {
             var loader:URLLoader = new URLLoader();
-            var req:URLRequest = new URLRequest(server_name + "/create_player.php");
+            var req:URLRequest = new URLRequest(server_name + CREATE_PLAYER_PAGE);
             req.method = URLRequestMethod.POST;
             
             Output.add("sending create_player req");
@@ -126,8 +132,18 @@ package src.util {
             
             req.data = urlVars;
             
+            loader.addEventListener(Event.COMPLETE, userWasCreatedListener);
+            
             loader.load(req);
-            loader.addEventListener(Event.COMPLETE, gameDataLoadComplete); // rewrite so users can be created normally
+        }
+        
+        private function userWasCreatedListener(e:Event):void {
+            var target:URLLoader = URLLoader(e.target);
+            target.removeEventListener(Event.COMPLETE, userWasCreatedListener);
+            
+            Output.add("user was created\n" + target.data);
+            
+            startGameDataLoading(data_load_complete_callback);
         }
         
         private function checkError(e:Object):void {}
@@ -144,7 +160,7 @@ package src.util {
         public function startLevelLoading(level_id:int, callback:Function = null):void {
             level_loaded_callback = callback;
             
-            var url_req:URLRequest = new URLRequest(server_name + '/' + data.GameData.levels.level.(id == "" + level_id).src + "?" + (new Date()).getTime());
+            var url_req:URLRequest = new URLRequest(server_name + '/' + data.GameData.levels.level.(id == "" + level_id)[0].src + "?" + GET_TIME_VAR);
             
             var level_loader = new URLLoader();
             level_loader.addEventListener(Event.COMPLETE, levelLoadedHandler);
@@ -154,7 +170,7 @@ package src.util {
         }
         
         public function getLevelURL(level_id:int):URLRequest {
-            return new URLRequest(server_name + '/' + data.GameData.levels.level.(id == "" + level_id).src + "?" + (new Date()).getTime());
+            return new URLRequest(server_name + '/' + data.GameData.levels.level.(id == "" + level_id).src + "?" + GET_TIME_VAR);
         }
         
         private function levelLoadedHandler(e:Event):void {

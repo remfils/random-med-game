@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1441489273" lastUniqueIdentifier="4">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1441610206" lastUniqueIdentifier="5">
   <timeline>
-    <DOMTimeline name="DecorObject" currentFrame="159">
+    <DOMTimeline name="DecorObject" currentFrame="192">
       <layers>
         <DOMLayer name="label" color="#9933CC" autoNamed="false">
           <frames>
@@ -34,7 +34,10 @@
             <DOMFrame index="124" duration="35" name="Shelf1" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="159" duration="13" keyMode="9728">
+            <DOMFrame index="159" duration="19" name="WindowHole" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="178" duration="48" name="EntryBanner" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -44,7 +47,7 @@
             <DOMFrame index="0" duration="111" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="111" duration="61" keyMode="9728">
+            <DOMFrame index="111" duration="115" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
@@ -154,9 +157,9 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="159" duration="13" keyMode="9728">
+            <DOMFrame index="159" duration="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Holes" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="Holes" selected="true" symbolType="graphic" firstFrame="9" loop="single frame">
                   <matrix>
                     <Matrix tx="0.65" ty="-0.45"/>
                   </matrix>
@@ -165,6 +168,21 @@ visible = false;]]></script>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
+            </DOMFrame>
+            <DOMFrame index="178" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" selected="true" centerPoint3DX="2.85" centerPoint3DY="-3.65">
+                  <matrix>
+                    <Matrix tx="2.85" ty="-3.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="192" duration="34" keyMode="9728">
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

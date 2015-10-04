@@ -11,10 +11,11 @@ package src.objects {
     import src.Game;
     import src.interfaces.SolidBody;
     import src.interfaces.Updatable;
+    import src.interfaces.Update;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
 
-    public class Obstacle extends AbstractObject {
+    public class Obstacle extends AbstractObject implements Update {
         
         public static const NORMAL_STATE:String = "_stand";
         public static const DESTROY_STATE:String = "_destroy";
@@ -38,43 +39,35 @@ package src.objects {
             var type:String = paramsXML.name();
             switch (type) {
                 case ObjectCostume.VASE_TYPE:
-                    extruded = true;
-                    is_break = false;
-                    is_static = true;
+                    properties = IS_STATIC | IS_EXTRUDED;
                 break;
                 case ObjectCostume.STONE_TYPE:
-                    is_static = true;
+                    properties = IS_STATIC | IS_BREAKABLE;
                 break;
                 case ObjectCostume.BARELL_TYPE:
-                    extruded = true;
-                    active = true;
-                    has_drop = true;
+                    properties = IS_BREAKABLE | HAS_DROP | IS_EXTRUDED;
                     break;
                 case ObjectCostume.BOX_TYPE:
-                    extruded = true;
-                    active = true;
-                    has_drop = true;
+                    properties = IS_BREAKABLE | HAS_DROP | IS_ACTIVE;
+                    break;
+                case ObjectCostume.HOLE_TYPE:
+                case ObjectCostume.HOLE_CORNER_TYPE:
+                case ObjectCostume.HOLE_TUNNEL_TYPE:
+                case ObjectCostume.HOLE_TUNNEL_END_TYPE:
+                case ObjectCostume.HOLE_SIDE_TYPE:
+                case ObjectCostume.HOLE_SIDE_CORNER_TYPE:
+                case ObjectCostume.HOLE_CORNERED_CORNER_TYPE:
+                case ObjectCostume.HOLE_CORNERS2_TYPE:
+                case ObjectCostume.HOLE_CORNERS3_TYPE:
+                case ObjectCostume.HOLE_CORNERS4_TYPE:
+                case ObjectCostume.HOLE_CORNERS2_DIAGONAL_TYPE:
+                case ObjectCostume.HOLE_EMPTY_TYPE:
+                case ObjectCostume.HOLE_CORNERS1_TYPE:
+                    properties = IS_STATIC;
+                    break;
             }
-        }
-        
-        // D!
-        public function setType(name_:String):void {
-            costume.name = name_;
             
-            switch (name_) {
-                case "Vase":
-                    extruded = true;
-                break;
-                case "Barell":
-                    extruded = true;
-                case "Box":
-                    is_static = false;
-                    active = true;
-                    has_drop = true;
-                default:
-            }
-            costume.setType(name_);
-            //setState(NORMAL_STATE);
+            active = !isStatic();
         }
         
         private function setState(state_:int):void {
@@ -90,7 +83,7 @@ package src.objects {
             
             createBodyReq.bodyDef.linearDamping = 3;
             
-            if ( is_static ) createBodyReq.setAsStaticBody();
+            if ( isStatic() ) createBodyReq.setAsStaticBody();
             else createBodyReq.setAsDynamicBody();
             
             return createBodyReq;
@@ -104,7 +97,7 @@ package src.objects {
         }
         
         public function breakObject():void {
-            if ( !is_break ) return;
+            if ( !isBreakable() ) return;
             
             active = false;
             body.SetActive(active);
@@ -114,8 +107,6 @@ package src.objects {
         
         override public function destroy():void {
             super.destroy();
-            //if ( has_drop ) ItemDropper.dropSmallFromObject(this);
-            //setState(DESTROY_STATE);
         }
         
         public function isActive():Boolean {

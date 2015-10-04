@@ -136,7 +136,7 @@
                     }
                     
                     if ( obj is Player ) {
-                        game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -2));
+                        game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -2, 0, true));
                     }
                     
                     if ( obj is Bullet ) {

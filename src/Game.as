@@ -18,7 +18,7 @@ package src {
     import src.util.*;
     
     public class Game extends Sprite {
-        public static var VERSION:String = "0.431-prealpha";
+        public static var VERSION:String = "0.432";
         public static var TEST_MODE:Boolean = true;
         
         public var level_id:int = 0;
@@ -87,8 +87,6 @@ package src {
             Room.game = this;
             
             TestModePanel = new Sprite();
-            
-            Recorder.add(new Record(Record.LEVEL_START_TYPE, level_id));
             //player = new Player();
         }
         
@@ -121,6 +119,8 @@ package src {
         
         public function init(level:Array) {
             this.stage.focus = this;
+            
+            Recorder.add(new Record(Record.LEVEL_START_TYPE, level_id));
             
             _LEVEL = level;
             
@@ -286,8 +286,8 @@ package src {
             player.handleInput(e.keyCode);
             
             switch (e.keyCode) {
-                // E key
-                case 69:
+                case 13: // enter key
+                case 69: // E key
                     ACTION_PRESSED = true;
                 break;
                 // J key
@@ -310,12 +310,14 @@ package src {
             }
         }
         
-        public function keyUp_fun (E:KeyboardEvent) {
-            player.handleInput(E.keyCode, false);
+        public function keyUp_fun (e:KeyboardEvent) {
+            //trace(e.keyCode);
             
-            switch (E.keyCode) {
-                // E key
-                case 69:
+            player.handleInput(e.keyCode, false);
+            
+            switch (e.keyCode) {
+                case 13: // enter key
+                case 69: // E key
                     ACTION_PRESSED = false;
                     //var to:TaskObject = cRoom.getTaskObjectNearPlayer();
                     //if (to) {
@@ -325,12 +327,10 @@ package src {
                 case 74:
                     bulletController.stopBulletSpawn();
                     break;
-                // ESC
-                case 27:
+                case 27:// ESC
                     PAUSED = true;
                     break;
-                // SPACE
-                case 32 :
+                case 32 :// SPACE
                     break;
             }
         }

@@ -18,6 +18,14 @@ package src.objects {
         public var body:b2Body;
         public var costume:Costume;
         
+        protected static const IS_STATIC:int = 0x0000001;
+        protected static const IS_EXTRUDED:int = 0x0000010;
+        protected static const IS_ACTIVE:int = 0x0000100;
+        protected static const IS_BREAKABLE:int = 0x0001000;
+        protected static const HAS_DROP:int = 0x0010000;
+        
+        protected var properties:int = 0;
+        
         protected var costume_remove_delay:Number = 0;
         
         public function AbstractObject() {
@@ -38,6 +46,22 @@ package src.objects {
         
         public function get y ():Number {
             return costume.y;
+        }
+        
+        public function isStatic ():Boolean {
+            return properties & IS_STATIC;
+        }
+        
+        public function isExtruded ():Boolean {
+            return properties & IS_EXTRUDED;
+        }
+        
+        public function hasDrop ():Boolean {
+            return properties & HAS_DROP;
+        }
+        
+        public function isBreakable ():Boolean {
+            return properties & IS_BREAKABLE;
         }
         
         public function requestBodyAt(world:b2World):CreateBodyRequest {

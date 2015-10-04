@@ -183,12 +183,14 @@
             if ( obj is Update ) {
                 _updates.push(obj);
             }
-            if ( obj is TaskObject ) {
-                var t_o:TaskObject = TaskObject(obj);
-                gameObjectPanel.addChild(t_o.costume);
-                if ( !t_o.body ) {
-                    t_o.requestBodyAt(world);
-                }
+            
+            if ( obj is AbstractObject ) {
+                var a_o:AbstractObject = AbstractObject(obj);
+                
+                if ( !a_o.body ) a_o.requestBodyAt(world);
+                
+                if ( a_o.isExtruded() ) gameObjectPanel.addChild(a_o.costume);
+                else addChild(a_o.costume);
             }
         }
         

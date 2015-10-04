@@ -26,6 +26,8 @@ package src.objects {
             costume.setState();
             
             is_active = true;
+            
+            properties = 0;
         }
         
         override public function update():void {
