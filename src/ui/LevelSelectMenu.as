@@ -14,7 +14,7 @@ package src.ui {
         public static const MOVE_LEVELS_LEFT_BTN:String = "MoveLeft";
         public static const MOVE_LEVELS_RIGHT_BTN:String = "MoveRight";
         
-        private var allLevelsContainer:Sprite;
+        private var all_levels_container:Sprite;
         
         public function LevelSelectMenu() {
             super();
@@ -72,8 +72,8 @@ package src.ui {
             ammendX = btn.width / 2 - star.width * 3 / 2;
             ammendY = - star.height / 2;
             
-            allLevelsContainer = new Sprite();
-            addChild(allLevelsContainer);
+            all_levels_container = new Sprite();
+            addChild(all_levels_container);
             
             for each ( var level:XML in levels.* ) {
                 btn = new MenuButtonCostume();
@@ -120,7 +120,7 @@ package src.ui {
                     k++;
                 }
                 
-                allLevelsContainer.addChild(btn);
+                all_levels_container.addChild(btn);
             }
         }
         
@@ -145,14 +145,14 @@ package src.ui {
         }
         
         private function moveAllLevelsContainerLeft () {
-            if (allLevelsContainer.x < -10) {
-                var tween:Tween = new Tween (allLevelsContainer, "x", Strong.easeInOut, allLevelsContainer.x, allLevelsContainer.x + 750, 18 );
+            if (all_levels_container.x < -10) {
+                var tween:Tween = new Tween (all_levels_container, "x", Strong.easeInOut, all_levels_container.x, all_levels_container.x + 750, 18 );
             }
         }
         
         private function moveAllLevelsContainerRight () {
-            if (Math.abs(allLevelsContainer.x - 750) <= allLevelsContainer.width) {
-                var tween:Tween = new Tween (allLevelsContainer, "x", Strong.easeInOut, allLevelsContainer.x, allLevelsContainer.x - 750, 18 );
+            if (Math.abs(all_levels_container.x - 750) <= all_levels_container.width) {
+                var tween:Tween = new Tween (all_levels_container, "x", Strong.easeInOut, all_levels_container.x, all_levels_container.x - 750, 18 );
             }
         }
         
@@ -166,8 +166,8 @@ package src.ui {
                 if ( child is MenuButtonCostume ) MenuButtonCostume(child).destroy();
             }
             DeleteManager.stripDisplayObject(this);
-            DeleteManager.stripDisplayObject(allLevelsContainer)
-            allLevelsContainer = null;
+            DeleteManager.stripDisplayObject(all_levels_container)
+            all_levels_container = null;
         }
     }
 

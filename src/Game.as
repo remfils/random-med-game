@@ -90,6 +90,10 @@ package src {
             //player = new Player();
         }
         
+        public function setAsFocus():void {
+            this.stage.focus = this;
+        }
+        
         // D!
         public function setLevel(level:Array):void {
             _LEVEL = level;
@@ -118,7 +122,7 @@ package src {
         }
         
         public function init(level:Array) {
-            this.stage.focus = this;
+            setAsFocus();
             
             Recorder.add(new Record(Record.LEVEL_START_TYPE, level_id));
             

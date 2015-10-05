@@ -23,7 +23,7 @@
         private static const RELEASE_TEST_MODE:int = 2;
         private static const RELEASE_MODE:int = 3;
         
-        private var mode:int = RELEASE_MODE;
+        private var mode:int = HOME_TEST_MODE;
         
         private const HOME_SERVER:String = "http://game.home";
         private const PUBLIC_SERVER:String = "http://5.1.53.16/magicworld";
@@ -224,7 +224,7 @@
             switch (exit_cmd) {
                 case ExitLevelEvent.EXIT_TO_MENU_CMD:
                     server.saveGameData(loadGameData);
-                break;
+                    break;
                 case ExitLevelEvent.NEXT_LEVEL_CMD:
                     var level_id:int = game.level_id + 1;
                     if ( level_id > level_counter ) {
@@ -233,10 +233,10 @@
                     else {
                         server.saveGameData(function(){startLevelLoading(level_id);});
                     }
-                break;
+                    break;
                 case ExitLevelEvent.RESTART_LEVEL_CMD:
                     server.saveGameData(function(){startLevelLoading(game.level_id);});
-                break;
+                    break;
                 default:
             }
             

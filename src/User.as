@@ -57,6 +57,8 @@ package src {
             }
             
             if ( userXML.INVENTORY ) {
+                clearInventory();
+                
                 for each ( var itemXML:XML in userXML.INVENTORY.* ) {
                     item = new InventoryItem();
                     //item.setParams(itemXML.@iid, itemXML.@name, itemXML.@nameRus, itemXML.@dsc, itemXML.@isSpell == "true", itemXML.@onPlayer == "true");

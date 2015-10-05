@@ -211,8 +211,8 @@ package src.task {
                         magic_bag.setType(ObjectCostume.COIN_TYPE);
                     }
                     
-                    if ( task_object is TaskLever && guess_count == 1 ) {
-                        if ( TaskLever(task_object).state == TaskLever.OPEN_STATE ) {
+                    if ( guess_count == 1 ) {
+                        if ( task_object is TaskLever && TaskLever(task_object).state == TaskLever.OPEN_STATE ) {
                             magic_bag.setType(ObjectCostume.EMERALD_TYPE);
                         }
                     }
