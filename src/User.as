@@ -1,4 +1,5 @@
 package src {
+    import src.bullets.BulletController;
     import src.costumes.PlayerCostume;
     import src.objects.AbstractObject;
     import src.ui.mageShop.InventoryItem;
@@ -12,7 +13,7 @@ package src {
         public var sid:uint = 0;
         public var name:String = "";
         public var surname:String = "";
-        public var levelsCompleted:int = 0;
+        public var levels_completed:int = 0;
         
         private const backup_var_names:Array = [
             "HEALTH",
@@ -30,13 +31,10 @@ package src {
         public var playerData:Object;
         public var backup_player:Object;
         
-        public function User(game_:Game) {
+        public function User() {
             playerData = new Object();
             playerInventory = new <InventoryItem>[];
             player = new Player();
-            
-            game = game_;
-            game.player = player;
         }
         
         public function setDataFromXML (userXML:XMLList):void {
@@ -91,11 +89,6 @@ package src {
         public function toXML():XML {
             var result:XML,
                 item:InventoryItem;
-            var player:Player = game.player;
-            
-            if ( levelsCompleted < AbstractObject.game.level_id ) {
-                levelsCompleted = AbstractObject.game.level_id;
-            }
             
             result =  <User>
                 <uid>{this.uid}</uid>
@@ -107,7 +100,7 @@ package src {
                 <MAX_MANA>{player.MAX_MANA}</MAX_MANA>
                 <EXP>{player.EXP}</EXP>
                 <MONEY>{player.MONEY}</MONEY>
-                <levelsCompleted>{this.levelsCompleted}</levelsCompleted>
+                <levelsCompleted>{this.levels_completed}</levelsCompleted>
                 <MAX_SPELLS>{player.MAX_SPELLS}</MAX_SPELLS>
                 <MAX_ITEMS>{player.MAX_ITEMS}</MAX_ITEMS>
                 <INVENTORY></INVENTORY>
@@ -127,6 +120,25 @@ package src {
         public function clearInventory():void {
             while (inventory.length) {
                 inventory.pop();
+            }
+        }
+        
+        public function preparePlayerForGame():void {
+            var i:int, inv_length:int = inventory.length;
+            var item:InventoryItem;
+            
+            var spells:Array = player.spells;
+            while ( spells.length ) {
+                spells.pop();
+            }
+            
+            for (i = 0; i < inv_length; i++) {
+                item = InventoryItem(inventory[i]);
+                if (item.onPlayer) {
+                    if (item.isSpell ){
+                        player.spells.push(BulletController.getIndexOfBulletByName(item.item_name));
+                    }
+                }
             }
         }
         

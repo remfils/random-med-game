@@ -77,7 +77,7 @@ package src {
         
         private var SECRET_ROOM_FOUND:Boolean = false;
         
-        public function Game() {
+        public function Game(player:Player) {
             super();
             // this.levelId = levelId;
             
@@ -87,7 +87,8 @@ package src {
             Room.game = this;
             
             TestModePanel = new Sprite();
-            //player = new Player();
+            
+            this.player = player;
         }
         
         public function setAsFocus():void {
@@ -99,7 +100,9 @@ package src {
             _LEVEL = level;
         }
         
+        // D!
         public function getDataFromUser(user:User):void {
+            return;
             var userInventory:Array = user.inventory;
             var i:int, invLength:int = userInventory.length;
             var item:InventoryItem;

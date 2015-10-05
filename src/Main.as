@@ -59,9 +59,7 @@
             loading_screen = new GameLoadingMenu(stage);
             loading_screen.show();
             
-            game = new Game();
-            
-            user = new User(game);
+            user = new User();
             
             AbstractMenu.main = this;
             AbstractMenu.user = user;
@@ -151,8 +149,6 @@
             
             level_counter = data.levels.level.length();
             
-            game.getDataFromUser(server.user);
-            
             var t:Timer = ObjectPool.getTimer(LOAD_SCREEN_DELAY);
             t.addEventListener(TimerEvent.TIMER_COMPLETE, dellayedShowMenu);
         }
@@ -174,12 +170,15 @@
                 e = null;
             }
             
-            game.level_id = e.id;
-            
             loading_screen.show();
         }
         
         private function startLevelLoading(level_id:int):void {
+            user.preparePlayerForGame();
+            
+            game = new Game(user.player);
+            game.level_id = level_id;
+            
             server.startLevelLoading(level_id, levelDataLoaded);
         }
         
@@ -219,6 +218,11 @@
                 user.resetPlayer();
                 
                 game.rating = 0;
+            }
+            else {
+                if ( game.level_id > user.levels_completed ) {
+                    user.levels_completed = game.level_id;
+                }
             }
             
             switch (exit_cmd) {
