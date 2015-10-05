@@ -23,7 +23,7 @@
           <DOMFolderItem name="_GUI/_map" itemID="53c4f221-00000078"/>
           <DOMFolderItem name="_GUI/_PlayerStatCostume" itemID="558d50b7-000003b2"/>
           <DOMFolderItem name="_GUI/_spells" itemID="53c4f211-00000073"/>
-          <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
+          <DOMFolderItem name="_level" itemID="5421a1d2-00000105"/>
           <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
@@ -51,7 +51,7 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_vase" itemID="55e69aff-00000522" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
-          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
+          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107" isExpanded="true"/>
           <DOMFolderItem name="_menu/_btns" itemID="55409dea-00000160"/>
           <DOMFolderItem name="_menu/_MenuCostume" itemID="553cd222-0000013c"/>
           <DOMFolderItem name="_menu/_MenuCostume/_magesShop" itemID="5470a581-00000125"/>
@@ -264,7 +264,7 @@
           <Include href="_menu/_MenuCostume/Star_gr.xml" itemIcon="1" loadImmediate="false" itemID="553cd250-00000144" lastModified="1430049360"/>
           <Include href="_menu/MenuButton.xml" itemID="5540a554-00000187" lastModified="1435324186"/>
           <Include href="_menu/MenuCostume.xml" itemID="553b9f00-0000014d" lastModified="1441281474"/>
-          <Include href="_menu/MenuItem.xml" itemID="55424c97-000002b0" lastModified="1441276604"/>
+          <Include href="_menu/MenuItem.xml" itemID="55424c97-000002b0" lastModified="1444050397"/>
           <Include href="_menu/название игры.xml" itemIcon="1" loadImmediate="false" itemID="53d0448d-000000b4" lastModified="1416138485"/>
           <Include href="_player/parts/_головы/голова_В.xml" itemIcon="1" loadImmediate="false" itemID="537753f0-00000050" lastModified="1405453824"/>
           <Include href="_player/parts/_головы/голова_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad4e2-000002a0" lastModified="1406145125"/>
@@ -1117,6 +1117,15 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1135886" publishTime="1444045012"/>
+          <PublishItem publishSize="1288378" publishTime="1444044744" publishDebug="true"/>
+          <PublishItem publishSize="1288279" publishTime="1444044280" publishDebug="true"/>
+          <PublishItem publishSize="1288106" publishTime="1444041463" publishDebug="true"/>
+          <PublishItem publishSize="1288226" publishTime="1444040809" publishDebug="true"/>
+          <PublishItem publishSize="1288206" publishTime="1443980740" publishDebug="true"/>
+          <PublishItem publishSize="1288126" publishTime="1443980365" publishDebug="true"/>
+          <PublishItem publishSize="1288198" publishTime="1443980301" publishDebug="true"/>
+          <PublishItem publishSize="1135774" publishTime="1443977066"/>
           <PublishItem publishSize="1135727" publishTime="1443502306"/>
           <PublishItem publishSize="1135727" publishTime="1443502190"/>
           <PublishItem publishSize="1135711" publishTime="1443501759"/>
@@ -1128,14 +1137,5 @@
           <PublishItem publishSize="761186" publishTime="1442235573" publishDebug="true"/>
           <PublishItem publishSize="761186" publishTime="1442235551" publishDebug="true"/>
           <PublishItem publishSize="761186" publishTime="1442235506" publishDebug="true"/>
-          <PublishItem publishSize="761186" publishTime="1442235490" publishDebug="true"/>
-          <PublishItem publishSize="761186" publishTime="1442235466" publishDebug="true"/>
-          <PublishItem publishSize="1287866" publishTime="1442231883" publishDebug="true"/>
-          <PublishItem publishSize="1287958" publishTime="1442230199" publishDebug="true"/>
-          <PublishItem publishSize="1287900" publishTime="1442229025" publishDebug="true"/>
-          <PublishItem publishSize="1287841" publishTime="1442228756" publishDebug="true"/>
-          <PublishItem publishSize="1287666" publishTime="1442228156" publishDebug="true"/>
-          <PublishItem publishSize="1287728" publishTime="1442227417" publishDebug="true"/>
-          <PublishItem publishSize="1287636" publishTime="1442227310" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

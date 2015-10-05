@@ -3,13 +3,13 @@
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""
             xmlns:xmp="http://ns.adobe.com/xap/1.0/">
-         <xmp:MetadataDate>2015-09-29T07:35:18+03:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2015-09-29T07:35:18+03:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2015-10-05T13:26:26+03:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2015-10-05T13:26:26+03:00</xmp:ModifyDate>
       </rdf:Description>
       <rdf:Description rdf:about=""
             xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
             xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#">
-         <xmpMM:InstanceID>xmp.iid:8D33C37C6366E5118B0ED481448DE617</xmpMM:InstanceID>
+         <xmpMM:InstanceID>xmp.iid:3814D0884B6BE511B9B0FB761FAA56DB</xmpMM:InstanceID>
          <xmpMM:DocumentID>xmp.did:21B08E3F79EAE4119072F728578B4E66</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:21B08E3F79EAE4119072F728578B4E66</xmpMM:OriginalDocumentID>
          <xmpMM:History>
@@ -378,6 +378,18 @@
                   <stEvt:action>created</stEvt:action>
                   <stEvt:instanceID>xmp.iid:8D33C37C6366E5118B0ED481448DE617</stEvt:instanceID>
                   <stEvt:when>2015-09-29T07:35:18+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:880E7D1FB76AE511999FEBDCF24B1F17</stEvt:instanceID>
+                  <stEvt:when>2015-10-04T19:44:04+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:3814D0884B6BE511B9B0FB761FAA56DB</stEvt:instanceID>
+                  <stEvt:when>2015-10-05T13:26:26+03:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
                </rdf:li>
             </rdf:Seq>
