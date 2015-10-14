@@ -77,7 +77,7 @@
             fixtureDef.friction = 0;
             fixtureDef.restitution = 0;
             
-            createBodyReq.setAsDynamicBody();
+            createBodyReq.setAsDynamicSensor();
             
             createBodyReq.velocity = new b2Vec2 ( speed.x * bulletDef.speed, speed.y * bulletDef.speed );
             

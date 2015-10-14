@@ -63,7 +63,7 @@ package src.objects {
                 case ObjectCostume.HOLE_CORNERS2_DIAGONAL_TYPE:
                 case ObjectCostume.HOLE_EMPTY_TYPE:
                 case ObjectCostume.HOLE_CORNERS1_TYPE:
-                    properties = IS_STATIC;
+                    properties = IS_STATIC | IS_BULLET_TRANSPARENT;
                     break;
             }
             

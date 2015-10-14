@@ -39,13 +39,13 @@ package src.levels {
             
             checkBulletCollision(userDataA, userDataB);
             
-            if ( userDataA == null  || userDataB == null) return;
+            /*if ( userDataA == null  || userDataB == null) return;
             
             if ( contact.GetFixtureA().IsSensor() || contact.GetFixtureB().IsSensor() ) {
                 checkExitCollide(userDataA, userDataB);
             
                 checkPlayerDropCollision(userDataA, userDataB);
-            }
+            }*/
             
         }
         
@@ -78,6 +78,12 @@ package src.levels {
                 
                 if ( userData.object is Player ) {
                     return;
+                }
+                
+                if ( userData.object is Obstacle) {
+                    if ( Obstacle(userData.object).isBulletTransparent() ) {
+                        return;
+                    }
                 }
                 
                 /*if ( bullet.bulletDef.is_boom ) {

@@ -23,6 +23,7 @@ package src.objects {
         protected static const IS_ACTIVE:int = 0x0000100;
         protected static const IS_BREAKABLE:int = 0x0001000;
         protected static const HAS_DROP:int = 0x0010000;
+        protected static const IS_BULLET_TRANSPARENT:int = 0x0100000;
         
         protected var properties:int = 0;
         
@@ -62,6 +63,10 @@ package src.objects {
         
         public function isBreakable ():Boolean {
             return properties & IS_BREAKABLE;
+        }
+        
+        public function isBulletTransparent():Boolean {
+            return properties & IS_BULLET_TRANSPARENT;
         }
         
         public function requestBodyAt(world:b2World):CreateBodyRequest {
