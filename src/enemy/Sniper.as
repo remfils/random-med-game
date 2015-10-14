@@ -25,7 +25,7 @@ package src.enemy {
         
         public function Sniper() {
             super();
-            agroDistance = 300;
+            agroDistance = 400;
             exp = 10;
         }
         
