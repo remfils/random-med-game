@@ -104,6 +104,12 @@ package src.levels {
             if ( userData is Object ) {
                 if ( userData.object is Enemy ) return;
                 
+                if ( userData.object is Obstacle) {
+                    if ( Obstacle(userData.object).isBulletTransparent() ) {
+                        return;
+                    }
+                }
+                
                 if ( userData.object is Player ) {
                     if ( game.player.immune ) return;
                     game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -bullet.damage, bullet.getID(), true));
