@@ -33,6 +33,11 @@ package src.ui {
             resume_button.addEventListener(MouseEvent.CLICK, restartLevelListener);
         }
         
+        override protected function exitGame(e:MouseEvent):void {
+            hide();
+            main.exitGame(ExitLevelEvent.EXIT_TO_MENU_CMD, false);
+        }
+        
         protected function restartLevelListener(e:MouseEvent):void {
             hide();
             main.exitGame(ExitLevelEvent.RESTART_LEVEL_CMD, false);

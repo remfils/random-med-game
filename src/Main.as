@@ -220,6 +220,7 @@
                 game.rating = 0;
             }
             else {
+                var user:User = server.user;
                 if ( game.level_id > user.levels_completed ) {
                     user.levels_completed = game.level_id;
                 }

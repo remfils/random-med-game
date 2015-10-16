@@ -461,12 +461,46 @@
             return false;
         }
         
+        var NUDGE:int = 20;
+        
         public function createDrop():void {
             if (magic_bag.is_empty) return;
             
             var costume:ObjectCostume = magic_bag.open();
             costume.x = CENTER_X;
             costume.y = CENTER_Y;
+            
+            var p1:b2Vec2,
+                p2:b2Vec2,
+                fix:b2Fixture,
+                drop_aabb:b2AABB;
+            p1 = new b2Vec2();
+            p2 = new b2Vec2();
+            
+            var i:int = 1;
+            
+            var searchDropQueryCallback:Function = function (fix:b2Fixture):Boolean {
+                if ( fix ) {
+                    costume.x += NUDGE * i;
+                    costume.y -= NUDGE * i;
+                    
+                    i = - ( i + i/Math.abs(i));
+                    
+                    var drop_aabb:b2AABB = new b2AABB();
+                    drop_aabb.lowerBound = new b2Vec2((costume.x - costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y - costume.costume_collider.height / 2) / Game.WORLD_SCALE);
+                    drop_aabb.upperBound = new b2Vec2((costume.x + costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y + costume.costume_collider.height / 2) / Game.WORLD_SCALE);
+                    
+                    world.QueryAABB(searchDropQueryCallback, drop_aabb);
+                }
+                return true;
+            }
+            
+            drop_aabb = new b2AABB();
+            drop_aabb.lowerBound = new b2Vec2((costume.x - costume.width / 2) / Game.WORLD_SCALE, (costume.y - costume.height / 2) / Game.WORLD_SCALE);
+            drop_aabb.upperBound = new b2Vec2((costume.x + costume.width/2) / Game.WORLD_SCALE, (costume.y + costume.height / 2) / Game.WORLD_SCALE);
+            
+            world.QueryAABB(searchDropQueryCallback, drop_aabb);
+            
             gameObjectPanel.addChild(costume);
         }
         
