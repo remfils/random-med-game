@@ -4,7 +4,10 @@
     import Box2D.Common.Math.*;
     import Box2D.Dynamics.*;
     import flash.display.*;
+    import flash.events.TimerEvent;
+    import flash.utils.Timer;
     import src.*;
+    import src.costumes.Costume;
     import src.costumes.ObjectCostume;
     import src.enemy.*;
     import src.interfaces.Updatable;
@@ -47,7 +50,7 @@
         var _gameObjects:Array = new Array();
         var _updates:Vector.<Update>;
         var _enemies:Array = new Array();
-        public var drops:Array = new Array();
+        public var drops:Array = new Array(); // D!
         
         var _tasks:Array = new Array(); // deleteme
         public var currentTask:Task = null;
@@ -426,7 +429,7 @@
             
             if ( currentTask == null ) {
                 unlock();
-                ItemDropper.dropAtPointFrom(drops, 387, 267);
+                ItemDropper.dropAtPointFrom(drops, 387, 267); // doesn't work
             }
         }
         
@@ -470,6 +473,17 @@
             costume.x = CENTER_X;
             costume.y = CENTER_Y;
             
+            if ( costume.type == ObjectCostume.EXIT_TYPE ) {
+                startDeadCenterDrop(costume);
+            }
+            else {
+                spiralDrop(costume);
+            }
+            
+            gameObjectPanel.addChild(costume);
+        }
+        
+        private function spiralDrop(costume:Costume):void {
             var p1:b2Vec2,
                 p2:b2Vec2,
                 fix:b2Fixture,
@@ -500,8 +514,12 @@
             drop_aabb.upperBound = new b2Vec2((costume.x + costume.width/2) / Game.WORLD_SCALE, (costume.y + costume.height / 2) / Game.WORLD_SCALE);
             
             world.QueryAABB(searchDropQueryCallback, drop_aabb);
+        }
+        
+        private function startDeadCenterDrop(costume:Costume):void {
             
-            gameObjectPanel.addChild(costume);
+            
+            
         }
         
         public function createExplosion(power:Number, center:b2Vec2, radius:Number):void {

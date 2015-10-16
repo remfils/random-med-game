@@ -92,7 +92,7 @@ package src.util {
                 
                 addEnemiesToRoom(cRoom, roomXML.enemies);
                 
-                addDropsToRoom(cRoom, roomXML.drop);
+                // addDropsToRoom(cRoom, roomXML.drop);
                 
                 cRoom.setParametersFromXML(roomXML.@ * );
                 
