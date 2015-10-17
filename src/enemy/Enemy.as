@@ -65,7 +65,7 @@
             }
             else {
                 if ( agroDistance < playerDistance ) {
-                    deactivate();
+                    //deactivate();
                 }
             }
         }

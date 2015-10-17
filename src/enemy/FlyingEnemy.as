@@ -1,4 +1,5 @@
 ﻿package src.enemy {
+    import Box2D.Collision.b2Point;
     import Box2D.Common.Math.b2Vec2;
     import Box2D.Dynamics.b2Body;
     import Box2D.Dynamics.b2World;
@@ -35,12 +36,26 @@
             super.update();
             
             if ( isActive() ) {
-                if ( leashJoint ) {
+                
+                var point:b2Vec2 = player.body.GetPosition().Copy();
+                point.Subtract(body.GetPosition());
+                
+                var impulse:b2Vec2 = body.GetLinearVelocity();
+                impulse.Normalize();
+                impulse.Multiply(-1);
+                
+                impulse.Add(point);
+                impulse.Normalize();
+                impulse.Multiply(0.5);
+                
+                body.ApplyImpulse(impulse, point);
+                
+                /*if ( leashJoint ) {
                     leashJoint.SetTarget(target.GetPosition());
                 }
                 else {
                     createLeashJoint();
-                }
+                }*/
             }
         }
         
