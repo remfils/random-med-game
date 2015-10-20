@@ -24,6 +24,7 @@
         private static const RELEASE_MODE:int = 3;
         
         private var mode:int = HOME_TEST_MODE;
+        Game.VERSION = "0.44";
         
         private const HOME_SERVER:String = "http://game.home";
         private const PUBLIC_SERVER:String = "http://5.1.53.16/magicworld";

@@ -18,7 +18,7 @@ package src {
     import src.util.*;
     
     public class Game extends Sprite {
-        public static var VERSION:String = "0.432";
+        public static var VERSION:String;
         public static var TEST_MODE:Boolean = true;
         
         public var level_id:int = 0;
