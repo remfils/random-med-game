@@ -688,7 +688,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="390" duration="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -697,7 +697,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="404" duration="16" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="1" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="1" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -706,7 +706,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="420" duration="21" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="2" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="2" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -715,7 +715,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="441" duration="15" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="3" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="3" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -724,7 +724,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="456" duration="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="4" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="4" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -733,7 +733,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="469" duration="21" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="5" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="5" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -742,7 +742,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="490" duration="25" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="6" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="6" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -751,7 +751,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="515" duration="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="8" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="8" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -760,7 +760,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="533" duration="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="9" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="9" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -769,7 +769,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="551" duration="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="10" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="10" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -778,7 +778,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="569" duration="28" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="11" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="11" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -787,7 +787,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="597" duration="16" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="12" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="12" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -796,7 +796,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="613" duration="115" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="FloorHoles" symbolType="graphic" firstFrame="13" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/FloorHoles" symbolType="graphic" firstFrame="13" loop="single frame">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

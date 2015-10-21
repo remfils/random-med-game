@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="cheatsheet_inventory" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/cheatsheet_inventory" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="375" y="300"/>
                   </transformationPoint>

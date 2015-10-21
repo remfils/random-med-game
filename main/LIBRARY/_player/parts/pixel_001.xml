@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="pixel_001" itemID="55b3688a-00000374" symbolType="graphic" lastModified="1437821184">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/parts/pixel_001" itemID="55b3688a-00000374" symbolType="graphic" lastModified="1437821184">
   <timeline>
     <DOMTimeline name="pixel_001" currentFrame="22">
       <layers>
@@ -24,7 +24,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!18 -20|18 18!18 18|-20 18!-20 18|-20 -20!-20 -20|18 -20"/>
+                    <Edge fillStyle1="1" edges="!18 18|-20 18!-20 18|-20 -20!-20 -20|18 -20!18 -20|18 18"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -49,7 +49,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!62 60|-63 60!-63 60|-63 -65!-63 -65|62 -65!62 -65|62 60"/>
+                    <Edge fillStyle1="1" edges="!62 -65|62 60!62 60|-63 60!-63 60|-63 -65!-63 -65|62 -65"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -119,7 +119,7 @@
               <elements>
                 <DOMShape selected="true" isFloating="true">
                   <matrix>
-                    <Matrix a="1.32258605957031" d="1.05769348144531" ty="-0.15"/>
+                    <Matrix a="1.32257080078125" d="1.05767822265625" ty="-0.15"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="-0.05" y="-0.05"/>
@@ -130,7 +130,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!30 51S2|-31 51!-31 51|-31 -53!-31 -53|30 -53!30 -53|30 51"/>
+                    <Edge fillStyle1="1" edges="!30 -53S2|30 51!30 51|-31 51!-31 51|-31 -53!-31 -53|30 -53"/>
                   </edges>
                 </DOMShape>
               </elements>

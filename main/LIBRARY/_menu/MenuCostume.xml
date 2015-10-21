@@ -88,7 +88,7 @@
             </DOMFrame>
             <DOMFrame index="84" duration="41" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="loading_cic" selected="true" centerPoint3DX="-42.25">
+                <DOMSymbolInstance libraryItemName="_GUI/loading/loading_cic" selected="true" centerPoint3DX="-42.25">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

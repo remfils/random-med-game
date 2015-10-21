@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="loading_ball" itemID="55e82440-0000018c" symbolType="graphic" lastModified="1441276992">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/loading/loading_ball" itemID="55e82440-0000018c" symbolType="graphic" lastModified="1441276992">
   <timeline>
     <DOMTimeline name="loading_ball">
       <layers>

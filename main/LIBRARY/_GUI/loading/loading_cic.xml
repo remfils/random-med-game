@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="loading_cic" itemID="55e823cb-00000188" lastModified="1441281451">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/loading/loading_cic" itemID="55e823cb-00000188" lastModified="1441281451">
   <timeline>
     <DOMTimeline name="loading_cic" currentFrame="13">
       <layers>
@@ -36,7 +36,7 @@
                 </CustomEase>
               </tweens>
               <elements>
-                <DOMSymbolInstance libraryItemName="loading_ball" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/loading/loading_ball" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="25.9"/>
                   </matrix>
@@ -46,9 +46,9 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="13" keyMode="15872">
+            <DOMFrame index="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="loading_ball" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/loading/loading_ball" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="-25.95"/>
                   </matrix>
@@ -72,7 +72,7 @@
                 </CustomEase>
               </tweens>
               <elements>
-                <DOMSymbolInstance libraryItemName="loading_ball" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/loading/loading_ball" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-1" d="-1" tx="-26.2"/>
                   </matrix>
@@ -84,7 +84,7 @@
             </DOMFrame>
             <DOMFrame index="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="loading_ball" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/loading/loading_ball" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="-1" d="-1" tx="25.65"/>
                   </matrix>

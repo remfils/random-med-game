@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" duration="15" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="SpikePlane" name="spike_plane_1" centerPoint3DX="89" centerPoint3DY="-83.5">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_spikes/SpikePlane" name="spike_plane_1" centerPoint3DX="89" centerPoint3DY="-83.5">
                   <matrix>
                     <Matrix tx="89" ty="-83.5"/>
                   </matrix>
@@ -14,7 +14,7 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="SpikePlane" name="spike_plane_2" centerPoint3DX="281" centerPoint3DY="-83.5">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_spikes/SpikePlane" name="spike_plane_2" centerPoint3DX="281" centerPoint3DY="-83.5">
                   <matrix>
                     <Matrix tx="281" ty="-83.5"/>
                   </matrix>
@@ -22,7 +22,7 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="SpikePlane" name="spike_plane_3" centerPoint3DX="474.5" centerPoint3DY="-83.5">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_spikes/SpikePlane" name="spike_plane_3" centerPoint3DX="474.5" centerPoint3DY="-83.5">
                   <matrix>
                     <Matrix tx="474.5" ty="-83.5"/>
                   </matrix>
@@ -88,15 +88,16 @@
                     <Edge fillStyle1="1" strokeStyle="2" edges="!3592 1|0 1!0 1|0 -3339!0 -3339|3 -3339"/>
                     <Edge fillStyle1="1" strokeStyle="1" edges="!3 -3339|3592 -3339!3592 -3339|3592 1"/>
                     <Edge strokeStyle="2" edges="!3820 1|3817 1!3817 1|3817 -3339!3817 -3339|3820 -3339"/>
-                    <Edge fillStyle1="2" strokeStyle="1" edges="!3820 -3339|7472 -3339!7472 -3339|7472 1"/>
-                    <Edge fillStyle1="2" strokeStyle="2" edges="!7472 1|3820 1"/>
-                    <Edge fillStyle1="2" edges="!3820 1|3820 -3339"/>
+                    <Edge fillStyle0="2" edges="!3820 -3339|3820 1"/>
+                    <Edge fillStyle0="2" strokeStyle="2" edges="!3820 1|7472 1"/>
+                    <Edge fillStyle0="2" strokeStyle="1" edges="!7472 1|7472 -3339!7472 -3339|3820 -3339"/>
                     <Edge strokeStyle="2" edges="!7715 1|7712 1!7712 1|7712 -3339!7712 -3339|7715 -3339"/>
-                    <Edge fillStyle1="3" strokeStyle="1" edges="!7715 -3339|11292 -3339"/>
-                    <Edge strokeStyle="1" edges="!11292 -3339|11304 -3339!11304 -3339|11304 1"/>
-                    <Edge strokeStyle="2" edges="!11304 1|11292 1"/>
-                    <Edge fillStyle1="3" strokeStyle="2" edges="!11292 1|7715 1"/>
-                    <Edge fillStyle1="3" edges="!7715 1|7715 -3339!11292 -3339|11292 1"/>
+                    <Edge fillStyle0="3" edges="!7715 -3339|7715 1"/>
+                    <Edge fillStyle0="3" strokeStyle="2" edges="!7715 1|11292 1"/>
+                    <Edge strokeStyle="2" edges="!11292 1|11304 1"/>
+                    <Edge strokeStyle="1" edges="!11304 1|11304 -3339!11304 -3339|11292 -3339"/>
+                    <Edge fillStyle0="3" strokeStyle="1" edges="!11292 -3339|7715 -3339"/>
+                    <Edge fillStyle1="3" edges="!11292 -3339|11292 1"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -555,10 +556,10 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!7603 -3479|11436 -3479!11436 -3479|11436 141!11436 141|7603 141!7603 141|3707 141!3707 141|-143 141!-143 141|-143 -3479!-143 -3479|3707 -3479"/>
-                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!3707 -3479|3707 141"/>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!3707 -3479|7603 -3479"/>
-                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!7603 -3479|7603 141"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!3707 141|-143 141!-143 141|-143 -3479!-143 -3479|3707 -3479!3707 -3479|7603 -3479!7603 -3479|11436 -3479!11436 -3479|11436 141!11436 141|7603 141"/>
+                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!7603 141|7603 -3479"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!7603 141|3707 141"/>
+                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!3707 141|3707 -3479"/>
                     <Edge cubics="!7603 -3479(7603,-3479;7603,-3479 7603,141 7603,141q7603 -3479 7603 141);"/>
                     <Edge cubics="!3707 -3479(3707,-3479;3707,-3479 3707,141 3707,141q3707 -3479 3707 141);"/>
                     <Edge cubics="!7603 -3479(;7603,-3479 11436,-3479 11436,-3479q7603 -3479 11436 -3479);"/>

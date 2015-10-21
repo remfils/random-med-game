@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="pixel" itemID="55b35071-00000167" symbolType="graphic" lastModified="1437820645">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/parts/pixel" itemID="55b35071-00000167" symbolType="graphic" lastModified="1437820645">
   <timeline>
     <DOMTimeline name="pixel" currentFrame="10">
       <layers>
@@ -24,7 +24,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!18 -20|18 18!18 18|-20 18!-20 18|-20 -20!-20 -20|18 -20"/>
+                    <Edge fillStyle1="1" edges="!18 18|-20 18!-20 18|-20 -20!-20 -20|18 -20!18 -20|18 18"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -49,7 +49,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!62 60|-63 60!-63 60|-63 -65!-63 -65|62 -65!62 -65|62 60"/>
+                    <Edge fillStyle1="1" edges="!62 -65|62 60!62 60|-63 60!-63 60|-63 -65!-63 -65|62 -65"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -124,7 +124,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!30 51|-31 51!-31 51|-31 -152!-31 -152|30 -152!30 -152|30 51"/>
+                    <Edge fillStyle1="1" edges="!30 -152|30 51!30 51|-31 51!-31 51|-31 -152!-31 -152|30 -152"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -177,7 +177,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!41 42[24 59 -1 59!-1 59[-25 59 -42 42!-42 42[-59 25 -59 0!-59 0[-59 -25 -42 -42!-42 -42[-25 -59 -1 -59!-1 -59[24 -59 41 -42!41 -42[59 -25 59 0!59 0[59 25 41 42"/>
+                    <Edge fillStyle1="1" edges="!-1 -59[24 -59 41 -42!41 -42[59 -25 59 0!59 0[59 25 41 42!41 42[24 59 -1 59!-1 59[-25 59 -42 42!-42 42[-59 25 -59 0!-59 0[-59 -25 -42 -42!-42 -42[-25 -59 -1 -59"/>
                   </edges>
                 </DOMShape>
               </elements>

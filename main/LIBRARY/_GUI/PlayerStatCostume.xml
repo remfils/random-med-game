@@ -170,7 +170,7 @@
             </DOMFrame>
             <DOMFrame index="130" duration="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="help_btn" symbolType="button">
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/help_btn" symbolType="button">
                   <matrix>
                     <Matrix tx="-20.3" ty="20.1"/>
                   </matrix>
@@ -182,7 +182,7 @@
             </DOMFrame>
             <DOMFrame index="143" duration="15" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="cheatsheet_controls" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/cheatsheet_controls" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="375" y="300"/>
                   </transformationPoint>
@@ -191,7 +191,7 @@
             </DOMFrame>
             <DOMFrame index="158" duration="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="cheatsheet_inventory" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/cheatsheet_inventory" selected="true" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="375" y="300"/>
                   </transformationPoint>

@@ -15,7 +15,7 @@
           <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd" isExpanded="true"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
-          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8" isExpanded="true"/>
+          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
           <DOMFolderItem name="_GUI/_coins" itemID="53c4f206-00000070"/>
           <DOMFolderItem name="_GUI/_healthBars" itemID="53c4f20b-00000071"/>
           <DOMFolderItem name="_GUI/_hearts" itemID="53c4f20e-00000072"/>
@@ -23,12 +23,13 @@
           <DOMFolderItem name="_GUI/_map" itemID="53c4f221-00000078"/>
           <DOMFolderItem name="_GUI/_PlayerStatCostume" itemID="558d50b7-000003b2"/>
           <DOMFolderItem name="_GUI/_spells" itemID="53c4f211-00000073"/>
-          <DOMFolderItem name="_level" itemID="5421a1d2-00000105"/>
-          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
+          <DOMFolderItem name="_GUI/loading" itemID="5627bdc0-00001348"/>
+          <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_torch" itemID="551d3efe-00000161"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/paintings" itemID="55c37849-000001c9"/>
@@ -45,18 +46,19 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys/_parts" itemID="559298bf-000001b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_box" itemID="55e5f2a6-00000171"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_vase" itemID="55e69aff-00000522" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_spikes" itemID="5627be51-0000134e"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_vase" itemID="55e69aff-00000522"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/scrolls" itemID="53af5347-000000bc"/>
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
-          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107" isExpanded="true"/>
+          <DOMFolderItem name="_menu" itemID="5421a1e7-00000107"/>
           <DOMFolderItem name="_menu/_btns" itemID="55409dea-00000160"/>
           <DOMFolderItem name="_menu/_MenuCostume" itemID="553cd222-0000013c"/>
           <DOMFolderItem name="_menu/_MenuCostume/_magesShop" itemID="5470a581-00000125"/>
           <DOMFolderItem name="_menu/_MenuCostume/_деревья" itemID="553b66de-00000142"/>
-          <DOMFolderItem name="_player" itemID="552fc5f9-00000169" isExpanded="true"/>
+          <DOMFolderItem name="_player" itemID="552fc5f9-00000169"/>
           <DOMFolderItem name="_player/parts" itemID="552fc2f1-0000013e"/>
           <DOMFolderItem name="_player/parts/_головы" itemID="53d0124e-000000d3"/>
           <DOMFolderItem name="_player/parts/_руки" itemID="53d01255-000000d7"/>
@@ -64,9 +66,9 @@
           <DOMFolderItem name="src" itemID="53afd2e7-00000077" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="MagicFont copy" itemID="56278f8b-00000e8f" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="5" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
-          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
           <DOMFontItem name="MagicFont" itemID="56278f8b-00000e8e" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
+          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
+          <DOMFontItem name="MagicFont copy" itemID="56278f8b-00000e8f" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="5" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
      </fonts>
      <media>
           <DOMBitmapItem name="_bosses/clone/Untitled-1.jpg" itemID="551d3a50-0000012d" sourceExternalFilepath="../main/LIBRARY/_bosses/clone/Untitled-1.jpg" sourceLastImported="1427978743" externalFileCRC32="543492954" externalFileSize="382310" quality="50" href="_bosses/clone/Untitled-1.jpg" bitmapDataHRef="M 4 1407974788.dat" frameRight="32000" frameBottom="32000" isJPEG="true"/>
@@ -138,6 +140,9 @@
           <Include href="_GUI/_mana/stat_mana.xml" itemIcon="1" loadImmediate="false" itemID="558d5330-000003e2" lastModified="1435325232"/>
           <Include href="_GUI/_mana/StatMana.xml" itemID="5417444c-000000b7" lastModified="1411205265"/>
           <Include href="_GUI/_map/map.xml" itemID="53c4f23d-0000007a" lastModified="1410647007"/>
+          <Include href="_GUI/_PlayerStatCostume/cheatsheet_controls.xml" itemIcon="1" loadImmediate="false" itemID="5627726e-00000320" lastModified="1445429588"/>
+          <Include href="_GUI/_PlayerStatCostume/cheatsheet_inventory.xml" itemIcon="1" loadImmediate="false" itemID="56278f8b-00000e8c" lastModified="1445440586"/>
+          <Include href="_GUI/_PlayerStatCostume/help_btn.xml" itemIcon="0" loadImmediate="false" itemID="56276edb-000002fc" lastModified="1445440426"/>
           <Include href="_GUI/_PlayerStatCostume/SpellMenu.xml" itemIcon="1" loadImmediate="false" itemID="541332c6-000000d2" lastModified="1435324888"/>
           <Include href="_GUI/_PlayerStatCostume/SpellSelecButton.xml" itemIcon="1" loadImmediate="false" itemID="54133284-000000c8" lastModified="1435326596"/>
           <Include href="_GUI/_spells/ItemLogoCostume.xml" itemID="558d4423-00000391" lastModified="1435321970"/>
@@ -148,6 +153,8 @@
           <Include href="_GUI/GameMenuBG_gr.xml" itemIcon="1" loadImmediate="false" itemID="55b2a48f-0000014e" lastModified="1441276711"/>
           <Include href="_GUI/GameMenuCostume.xml" itemID="55b2a344-00000139" lastModified="1441281194"/>
           <Include href="_GUI/icoScore.xml" loadImmediate="false" itemID="53cb1c73-000001aa" lastModified="1411378689"/>
+          <Include href="_GUI/loading/loading_ball.xml" itemIcon="1" loadImmediate="false" itemID="55e82440-0000018c" lastModified="1441276992"/>
+          <Include href="_GUI/loading/loading_cic.xml" loadImmediate="false" itemID="55e823cb-00000188" lastModified="1441281451"/>
           <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1445428161"/>
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1445429130"/>
           <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1445440477"/>
@@ -165,6 +172,7 @@
           <Include href="_level/_GAME_OBJECTS/decor/_torch/Torch.xml" loadImmediate="false" itemID="5406f304-000002c9" lastModified="1427979999"/>
           <Include href="_level/_GAME_OBJECTS/decor/DecorObject.xml" itemID="551d3e33-00000134" lastModified="1441610206"/>
           <Include href="_level/_GAME_OBJECTS/decor/entry_flag.xml" loadImmediate="false" itemID="538b5538-0000004b" lastModified="1401640248"/>
+          <Include href="_level/_GAME_OBJECTS/decor/flags.xml" itemIcon="1" loadImmediate="false" itemID="559cf6a7-00000155" lastModified="1436350946"/>
           <Include href="_level/_GAME_OBJECTS/decor/remove_smoke.xml" itemIcon="1" loadImmediate="false" itemID="55b3b6f3-00000324" lastModified="1437842568"/>
           <Include href="_level/_GAME_OBJECTS/decor/Web.xml" loadImmediate="false" itemID="542a61f6-000000ee" lastModified="1427979994"/>
           <Include href="_level/_GAME_OBJECTS/door_lock/CastleDoorLock.xml" loadImmediate="false" itemID="546765d6-0000024f" lastModified="1429366627"/>
@@ -225,7 +233,10 @@
           <Include href="_level/_GAME_OBJECTS/obstacles/_box/box_p003.xml" itemIcon="1" loadImmediate="false" itemID="55e5ec8d-0000015e" lastModified="1441131661"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_box/box_p004.xml" itemIcon="1" loadImmediate="false" itemID="55e5eca4-00000165" lastModified="1441131684"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_box/box_top.xml" itemIcon="1" loadImmediate="false" itemID="55e68246-00000165" lastModified="1441170105"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_spikes/spike.xml" itemIcon="1" loadImmediate="false" itemID="54984796-000001f4" lastModified="1419268257"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/_spikes/SpikePlane.xml" loadImmediate="false" itemID="54984f3e-0000023b" lastModified="1419268125"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_vase/vase_top.xml" itemIcon="1" loadImmediate="false" itemID="55e68714-0000031a" lastModified="1441171239"/>
+          <Include href="_level/_GAME_OBJECTS/obstacles/FloorHoles.xml" itemIcon="1" loadImmediate="false" itemID="55ed3a52-000001b0" lastModified="1442059391"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/Stone.xml" itemIcon="1" loadImmediate="false" itemID="542fd1c8-000000e4" lastModified="1428224394"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/Vase.xml" itemIcon="1" loadImmediate="false" itemID="54142a25-000000ef" lastModified="1441171249"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/Vase_des.xml" itemIcon="1" loadImmediate="false" itemID="55e686be-00000318" lastModified="1441178364"/>
@@ -281,6 +292,8 @@
           <Include href="_player/parts/_руки/рука1.xml" itemIcon="1" loadImmediate="false" itemID="53cc285b-00000103" lastModified="1406145091"/>
           <Include href="_player/parts/_руки/рука2.xml" itemIcon="1" loadImmediate="false" itemID="53cc286b-0000010b" lastModified="1406145091"/>
           <Include href="_player/parts/_руки/рука3.xml" itemIcon="1" loadImmediate="false" itemID="53cc28ce-0000010d" lastModified="1406145091"/>
+          <Include href="_player/parts/pixel.xml" itemIcon="1" loadImmediate="false" itemID="55b35071-00000167" lastModified="1437820645"/>
+          <Include href="_player/parts/pixel_001.xml" itemIcon="1" loadImmediate="false" itemID="55b3688a-00000374" lastModified="1437821184"/>
           <Include href="_player/parts/нога_В.xml" itemIcon="1" loadImmediate="false" itemID="53775411-00000059" lastModified="1406145125"/>
           <Include href="_player/parts/нога_С.xml" itemIcon="1" loadImmediate="false" itemID="537755a5-0000008b" lastModified="1406145125"/>
           <Include href="_player/parts/нога2.xml" itemIcon="1" loadImmediate="false" itemID="537755c9-00000092" lastModified="1406145125"/>
@@ -309,19 +322,8 @@
           <Include href="_player/states/stand_up.xml" loadImmediate="false" itemID="552fc251-00000136" lastModified="1435165196"/>
           <Include href="_player/states/up.xml" loadImmediate="false" itemID="552fc260-00000139" lastModified="1435165178"/>
           <Include href="bolt.xml" itemIcon="1" loadImmediate="false" itemID="5498517e-0000025e" lastModified="1419268478"/>
-          <Include href="cheatsheet_controls.xml" itemIcon="1" loadImmediate="false" itemID="5627726e-00000320" lastModified="1445429588"/>
-          <Include href="cheatsheet_inventory.xml" itemIcon="1" loadImmediate="false" itemID="56278f8b-00000e8c" lastModified="1445440586"/>
-          <Include href="flags.xml" itemIcon="1" loadImmediate="false" itemID="559cf6a7-00000155" lastModified="1436350946"/>
-          <Include href="FloorHoles.xml" itemIcon="1" loadImmediate="false" itemID="55ed3a52-000001b0" lastModified="1442059391"/>
-          <Include href="help_btn.xml" itemIcon="0" loadImmediate="false" itemID="56276edb-000002fc" lastModified="1445440426"/>
           <Include href="Holes.xml" itemIcon="1" loadImmediate="false" itemID="55eb4a06-000001c0" lastModified="1441609765"/>
-          <Include href="loading_ball.xml" itemIcon="1" loadImmediate="false" itemID="55e82440-0000018c" lastModified="1441276992"/>
-          <Include href="loading_cic.xml" loadImmediate="false" itemID="55e823cb-00000188" lastModified="1441281451"/>
           <Include href="MagicWall.xml" loadImmediate="false" itemID="54985b97-00000298" lastModified="1419271397"/>
-          <Include href="pixel.xml" itemIcon="1" loadImmediate="false" itemID="55b35071-00000167" lastModified="1437820645"/>
-          <Include href="pixel_001.xml" itemIcon="1" loadImmediate="false" itemID="55b3688a-00000374" lastModified="1437821184"/>
-          <Include href="spike.xml" itemIcon="1" loadImmediate="false" itemID="54984796-000001f4" lastModified="1419268257"/>
-          <Include href="SpikePlane.xml" loadImmediate="false" itemID="54984f3e-0000023b" lastModified="1419268125"/>
           <Include href="src/collider.xml" loadImmediate="false" itemID="53afd0c0-0000005a" lastModified="1436955508"/>
           <Include href="test&amp;#058cheat-invent.xml" itemIcon="1" loadImmediate="false" itemID="5627900a-00000ed4" lastModified="1445434275"/>
           <Include href="картина_001.xml" itemIcon="1" loadImmediate="false" itemID="55c37a01-000001cb" lastModified="1438875676"/>
