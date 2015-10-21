@@ -22,7 +22,7 @@
         public var color:uint = 0;
         var answer:uint;
         
-        var combo:Number = 1;
+        static private var combo:Number = 1;
         
         public var end_time:Date;// D!
 
@@ -47,9 +47,13 @@
         }
         
         public function checkAnswer(task_object:TaskObject):Boolean {
-            trace(answer, task_object.id);
+            var res:Boolean = answer == task_object.id;
+            
+            if ( !res && combo > 1 )
+                game.player.displayMessage("комбо сбито");
+            
             guessCount ++;
-            return answer == task_object.id;
+            return res;
         }
         
         // D!
@@ -104,7 +108,7 @@
                 case 1:
                     total += 5;
                     incMultiplier();
-                break;
+                    break;
                 case 2:
                     total += 1;
                 default:
@@ -119,12 +123,12 @@
             combo ++;
             
             if ( combo > 4 ) combo = 4;
-            else game.player.displayMessage( "комбо x" + (combo - 1)  );
+            
+            game.player.displayMessage( "комбо x" + combo );
         }
         
         public function resetMultiplier():void {
             combo = 1;
-            game.player.displayMessage("КОМБО СБОСС!");
         }
 
     }

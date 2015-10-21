@@ -10,6 +10,8 @@ package src.ui {
 
 
     public class StatChangeMessage extends AbstractMenu {
+        private var is_busy:Boolean = false;
+        
         private var deltas_to_display:Vector.<ChangePlayerStatObject>;
         private var messages:Vector.<String>;
         
@@ -35,34 +37,37 @@ package src.ui {
         }
         
         public function requestDisplayDelta(change:ChangePlayerStatObject):void {
-            if ( !deltas_to_display.length )
+            if ( is_busy )
+                deltas_to_display.push(change);
+            else
                 dispayDelta(change);
-            
-            deltas_to_display.push(change);
         }
         
         public function requestDisplayMessage(str:String):void {
-            if ( !deltas_to_display.length ) {
+            if ( is_busy )
+                messages.push(str);
+            else
                 displayMessage(str);
-            }
-            
-            messages.push(str);
         }
         
         private function displayMessage(str:String): void {
+            is_busy = true;
+            
             text_field.text = "";
-            text_field.filters = [];
+            text_field.filters = [new GlowFilter(0,0.5,10,5,5)];
             text_field.text = str;
             
             text_field.x = -text_field.textWidth / 2;
             
-            var tween:Tween = ObjectPool.getTween(text_field, "y", Linear.easeInOut, 0, -20, 30);
-            tween = ObjectPool.getTween(text_field, "alpha", Strong.easeIn, 1, 0, 30);
+            var tween:Tween = ObjectPool.getTween(text_field, "y", Linear.easeInOut, 0, -20, 50);
+            tween = ObjectPool.getTween(text_field, "alpha", Strong.easeIn, 1, 0, 50);
             
             tween.addEventListener(TweenEvent.MOTION_FINISH, textIsHiddenListener);
         }
         
         private function dispayDelta(change:ChangePlayerStatObject):void {
+            is_busy = true;
+            
             text_field.text = "";
             text_field.filters = [];
             
@@ -109,18 +114,13 @@ package src.ui {
         }
         
         private function textIsHiddenListener(e:TweenEvent):void {
-            if ( deltas_to_display.length ) {
-                deltas_to_display.shift();
-            }
-            else if ( messages.length ) {
-                messages.shift();
-            }
+            is_busy = false;
             
-            if ( deltas_to_display.length ) {
-                dispayDelta(deltas_to_display[0]);
+            if ( messages.length ) {
+                displayMessage(messages.shift());
             }
-            else if ( messages.length ) {
-                displayMessage(messages[0]);
+            else if ( deltas_to_display.length ) {
+                dispayDelta(deltas_to_display.shift());
             }
         }
     }
