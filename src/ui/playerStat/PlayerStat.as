@@ -4,6 +4,7 @@
     import fl.motion.easing.Elastic;
     import fl.transitions.Tween;
     import flash.display.MovieClip;
+    import flash.events.MouseEvent;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
     import src.costumes.ItemLogoCostume;
@@ -40,7 +41,7 @@
         var hearts:Array = new Array();
         
         private var spell_logo:ItemLogoCostume;
-        private var spell_place, spell_change_left, spell_change_right :PlayerStatCostume;
+        private var spell_place, spell_change_left, spell_change_right, help_button :PlayerStatCostume;
         
         public var spellPic_mc, spellFire_mc, spellLeft_mc, spellRight_mc :MovieClip;
         public var level_txt, money_txt, exp_txt: TextField;
@@ -76,6 +77,16 @@
             exp_txt = getChildByName("exp_txt") as TextField;
             
             createSpellMenu();
+            
+            help_button = new PlayerStatCostume();
+            help_button.setType(PlayerStatCostume.HELP_BUTTON_TYPE);
+            help_button.setState();
+            help_button.buttonMode = true;
+            help_button.mouseEnabled = true;
+            help_button.x = this.width;
+            addChild(help_button);
+            
+            help_button.addEventListener(MouseEvent.CLICK, toggleCheatSheet);
         }
         
         private function createSpellMenu():void {
@@ -106,6 +117,10 @@
             spell_logo.x = SPELL_MENU_CENTER_X - spell_logo.width / 2;
             spell_logo.y = SPELL_MENU_CENTER_Y - spell_logo.height / 2;
             addChild(spell_logo);
+        }
+        
+        private function toggleCheatSheet(e:MouseEvent):void {
+            game.toggleControlCheatSheet();
         }
         
         public function setSpellLogo(spellType_:String):void {

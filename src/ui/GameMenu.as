@@ -53,7 +53,7 @@ package src.ui {
             graphics.endFill();
             
             costume.alpha = 1 + MAX_MENU_STRANPARENCY;
-            addChild(costume);
+            //addChild(costume);
             
             alpha = 0;
             deactivate();
@@ -117,6 +117,7 @@ package src.ui {
         }
         
         override public function deactivate():void {
+            stage.addChildAt(this, 0);
             active = false;
             stage.removeEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
             resume_button.removeEventListener(MouseEvent.CLICK, resumeGame);

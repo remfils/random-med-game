@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1441281474" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1445433332" lastUniqueIdentifier="3">
   <timeline>
-    <DOMTimeline name="MenuCostume" currentFrame="124">
+    <DOMTimeline name="MenuCostume" currentFrame="53">
       <layers>
         <DOMLayer name="label" color="#9933CC" autoNamed="false">
           <frames>
@@ -61,7 +61,7 @@
             </DOMFrame>
             <DOMFrame index="34" duration="14" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MagesShop_clip" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MagesShop_clip" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="324.35" y="223.25"/>
                   </transformationPoint>

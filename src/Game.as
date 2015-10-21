@@ -7,6 +7,8 @@ package src {
     import flash.utils.*;
     import src.bullets.*;
     import src.costumes.BulletCostume;
+    import src.costumes.Costume;
+    import src.costumes.PlayerStatCostume;
     import src.events.*;
     import src.interfaces.*;
     import src.levels.*;
@@ -60,6 +62,8 @@ package src {
         public var gamePanel:Sprite;
         var playerPanel:Sprite; // for bullets
         private var glassPanel:Sprite;
+        
+        private var control_cheat_sheet:Costume;
         
         public var player:Player;
 
@@ -153,7 +157,9 @@ package src {
             
             createGamePanel();
             
-            addPlayerStat();
+            playerStat = new PlayerStat();
+            addChild (playerStat);
+            playerStat.update();
             
             //bodyCreator = new BodyCreator();
             deleteManager = new DeleteManager();
@@ -178,6 +184,8 @@ package src {
             
             TestModePanel.y += playerStat.height;
             addChild(TestModePanel);
+            
+            addChild(playerStat);
         }
         
         private function addBulletController() {
@@ -220,15 +228,6 @@ package src {
             panel.addChild(playerPanel);
         }
         
-        private function addPlayerStat() {
-            playerStat = new PlayerStat();
-            playerStat.x = 0;
-            playerStat.y = 0;
-            addChild (playerStat);
-            
-            playerStat.update();
-        }
-        
         private function setUpLevelMapPosition() {
             levelMap.x -= player.currentRoom.x * cRoom.width;
             levelMap.y -= player.currentRoom.y * cRoom.height;
@@ -258,6 +257,21 @@ package src {
             Recorder.recordEnterRoom(player.currentRoom);
             bulletController.changeLevel(cRoom);
             cRoom.init();
+        }
+        
+        public function toggleControlCheatSheet():void {
+            if ( PAUSED ) {
+                removeChild(control_cheat_sheet);
+                resume();
+            }
+            else {
+                control_cheat_sheet = new PlayerStatCostume();
+                control_cheat_sheet.setType(PlayerStatCostume.CHEAT_CONTROLLS);
+                control_cheat_sheet.setState();
+                addChild(control_cheat_sheet);
+                
+                stopTheGame();
+            }
         }
 
         public function update (e:Event) {
@@ -505,9 +519,8 @@ package src {
         
         // ВЫЗОВ ИГРОВОГО МЕНЮ
         public function stopTheGame():void {
-            isTransition = true;
+            PAUSED = isTransition = true;
             removeEventListeners();
-            addEventListener(GameEvent.RESUME_EVENT, resume, true); // D!
             stopAllLoopClipsIn(this);
             player.clearInput();
         }

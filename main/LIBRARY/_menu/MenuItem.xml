@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1444050397" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1445435484" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="MenuItem">
+    <DOMTimeline name="MenuItem" currentFrame="62">
       <layers>
         <DOMLayer name="label" color="#4F80FF" autoNamed="false">
           <frames>
@@ -24,7 +24,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#808080" outline="true" useOutlineView="true">
+        <DOMLayer name="Layer 6" color="#808080" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
@@ -52,7 +52,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="name" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="name" color="#4FFFFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
@@ -62,7 +62,7 @@
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>Name</characters>
+                      <characters>Название</characters>
                       <textAttrs>
                         <DOMTextAttrs aliasText="false" autoKern="false" size="14" bitmapSize="280" face="MagicFont*" fillColor="#F0D685"/>
                       </textAttrs>

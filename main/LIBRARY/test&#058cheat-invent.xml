@@ -1,0 +1,109 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="test:cheat-invent" itemID="5627900a-00000ed4" symbolType="graphic" lastModified="1445434275">
+  <timeline>
+    <DOMTimeline name="test:cheat-invent">
+      <layers>
+        <DOMLayer name="bg" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="cheatsheet_inventory" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point x="375" y="300"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="spells" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" firstFrame="47" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.649307250976563" d="0.64947509765625" tx="486" ty="403"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" firstFrame="34" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.649307250976563" d="0.64947509765625" tx="480.5" ty="320.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" firstFrame="34" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.649307250976563" d="0.64947509765625" tx="479" ty="248"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" firstFrame="62" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.649307250976563" d="0.64947509765625" tx="558.5" ty="352"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" firstFrame="21" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.649307250976563" d="0.64947509765625" tx="549" ty="226"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.996719360351563" d="0.996978759765625" tx="91.2" ty="220.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.996719360351563" d="0.996978759765625" tx="91.2" ty="313.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" symbolType="graphic" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.996719360351563" d="0.996978759765625" tx="91.2" ty="405.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="45.15" y="40.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MagesShop_clip" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="55" ty="197.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="324.35" y="223.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

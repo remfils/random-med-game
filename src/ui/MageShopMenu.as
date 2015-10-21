@@ -10,6 +10,7 @@ package src.ui {
     import src.costumes.MenuButtonCostume;
     import src.costumes.MenuItemCostume;
     import src.costumes.MenuSprites;
+    import src.costumes.PlayerStatCostume;
     import src.Player;
     import src.ui.mageShop.MageShopContainer;
     import src.ui.mageShop.InventoryItem;
@@ -23,6 +24,9 @@ package src.ui {
         private var dragTarget:MovieClip;
         private var place_holders:Vector.<MenuItemCostume>;
         private var menu_items:Vector.<MenuItemCostume>;
+        
+        private var inv_cheat_sheet:PlayerStatCostume;
+        private var help_button:PlayerStatCostume;
         
         public function MageShopMenu() {
             super();
@@ -44,6 +48,27 @@ package src.ui {
             place_holders = new <MenuItemCostume>[];
             menu_items = new <MenuItemCostume>[];
             
+            help_button = new PlayerStatCostume();
+            help_button.setType(PlayerStatCostume.HELP_BUTTON_TYPE);
+            help_button.setState();
+            help_button.x = width;
+            help_button.mouseEnabled = help_button.buttonMode = true;
+            addChild(help_button);
+            
+            help_button.addEventListener(MouseEvent.CLICK, toggleCheatSheet);
+            
+            inv_cheat_sheet = new PlayerStatCostume();
+            inv_cheat_sheet.setType(PlayerStatCostume.CHEAT_INV);
+            inv_cheat_sheet.setState();
+        }
+        
+        private function toggleCheatSheet(e:MouseEvent):void {
+            if ( inv_cheat_sheet.parent ) {
+                removeChild(inv_cheat_sheet);
+            }
+            else {
+                addChild(inv_cheat_sheet);
+            }
         }
         
         override public function readData(data:Object):void {
@@ -52,6 +77,8 @@ package src.ui {
             addPlaceholders();
             
             addItems();
+            
+            help_button.x = stage.stageWidth;
         }
         
         private function addPlaceholders():void {

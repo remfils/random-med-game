@@ -6,6 +6,10 @@ package src.costumes {
         // spell buttons
         public static const SPELL_CHANGE_TYPE:String = "spell_change";
         public static const SPELL_PLACE_TYPE :String = "spell_place";
+        public static const HELP_BUTTON_TYPE:String = "help_button";
+        
+        public static const CHEAT_CONTROLLS:String = "cheat_controls";
+        public static const CHEAT_INV:String = "cheat_inv";
         
         public static const FLASH_STATE:String = "_flash";
         
