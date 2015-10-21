@@ -39,7 +39,7 @@
             null,
             new BulletDef(BulletCostume.SPARK_TYPE, 50, 10, 0, 500, 5 / Game.FRAMES_PER_MILLISECOND),
             new BulletDef(BulletCostume.POWER_SPELL_TYPE, 100, 10, 1, 500, 10 / Game.FRAMES_PER_MILLISECOND),
-            new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 3, 1000, 16 / Game.FRAMES_PER_MILLISECOND, true)
+            new BulletDef(BulletCostume.NUKELINO_TYPE, 120, 10, 1, 1000, 16 / Game.FRAMES_PER_MILLISECOND, true)
         ];
 
         public function BulletController(stage:DisplayObjectContainer) {

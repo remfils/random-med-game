@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1441273425" lastUniqueIdentifier="30">
   <timeline>
-    <DOMTimeline name="EnemyCostume" currentFrame="345">
+    <DOMTimeline name="EnemyCostume">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -229,7 +229,7 @@
             </DOMFrame>
             <DOMFrame index="168" duration="55" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_shoot" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_shoot" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.3265380859375" d="0.3265380859375" tx="1.45" ty="0.9"/>
                   </matrix>

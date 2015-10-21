@@ -12,7 +12,7 @@
           <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104"/>
           <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110"/>
           <DOMFolderItem name="_enemies/_Ghost" itemID="5419fc21-000000d2"/>
-          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
+          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd" isExpanded="true"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
           <DOMFolderItem name="_GUI" itemID="53af5370-000000c8" isExpanded="true"/>
@@ -103,11 +103,11 @@
           <Include href="_enemies/_Monk/crystal.xml" itemIcon="1" loadImmediate="false" itemID="545e3ec1-00000243" lastModified="1415520142"/>
           <Include href="_enemies/_Monk/crystal_deactivated.xml" itemIcon="1" loadImmediate="false" itemID="545f2023-00000131" lastModified="1415521053"/>
           <Include href="_enemies/_Monk/crystal_shoot.xml" itemIcon="1" loadImmediate="false" itemID="545f2258-00000220" lastModified="1415539551"/>
-          <Include href="_enemies/_Monk/Monk.xml" loadImmediate="false" itemID="545f1fce-00000100" lastModified="1428865377"/>
+          <Include href="_enemies/_Monk/Monk.xml" loadImmediate="false" itemID="545f1fce-00000100" lastModified="1445439859"/>
           <Include href="_enemies/_Monk/monk_active.xml" loadImmediate="false" itemID="545f1fc4-000000fe" lastModified="1415520206"/>
           <Include href="_enemies/_Monk/monk_death.xml" loadImmediate="false" itemID="5461bbec-000001f1" lastModified="1415696172"/>
           <Include href="_enemies/_Monk/monk_normal.xml" loadImmediate="false" itemID="545f2017-00000129" lastModified="1415520786"/>
-          <Include href="_enemies/_Monk/monk_shoot.xml" loadImmediate="false" itemID="545f223b-00000218" lastModified="1415539738"/>
+          <Include href="_enemies/_Monk/monk_shoot.xml" loadImmediate="false" itemID="545f223b-00000218" lastModified="1445439930"/>
           <Include href="_enemies/_Rat/parts/arm1.xml" itemIcon="1" loadImmediate="false" itemID="5421b47d-00000131" lastModified="1411495580"/>
           <Include href="_enemies/_Rat/parts/body.xml" itemIcon="1" loadImmediate="false" itemID="5421a940-0000011d" lastModified="1411495853"/>
           <Include href="_enemies/_Rat/parts/body top.xml" itemIcon="1" loadImmediate="false" itemID="5454b330-00000126" lastModified="1414837177"/>
@@ -150,7 +150,7 @@
           <Include href="_GUI/icoScore.xml" loadImmediate="false" itemID="53cb1c73-000001aa" lastModified="1411378689"/>
           <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1445428161"/>
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1445429130"/>
-          <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1445434988"/>
+          <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1445440477"/>
           <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1442221390"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
@@ -310,10 +310,10 @@
           <Include href="_player/states/up.xml" loadImmediate="false" itemID="552fc260-00000139" lastModified="1435165178"/>
           <Include href="bolt.xml" itemIcon="1" loadImmediate="false" itemID="5498517e-0000025e" lastModified="1419268478"/>
           <Include href="cheatsheet_controls.xml" itemIcon="1" loadImmediate="false" itemID="5627726e-00000320" lastModified="1445429588"/>
-          <Include href="cheatsheet_inventory.xml" itemIcon="1" loadImmediate="false" itemID="56278f8b-00000e8c" lastModified="1445435921"/>
+          <Include href="cheatsheet_inventory.xml" itemIcon="1" loadImmediate="false" itemID="56278f8b-00000e8c" lastModified="1445440586"/>
           <Include href="flags.xml" itemIcon="1" loadImmediate="false" itemID="559cf6a7-00000155" lastModified="1436350946"/>
           <Include href="FloorHoles.xml" itemIcon="1" loadImmediate="false" itemID="55ed3a52-000001b0" lastModified="1442059391"/>
-          <Include href="help_btn.xml" itemIcon="1" loadImmediate="false" itemID="56276edb-000002fc" lastModified="1445424939"/>
+          <Include href="help_btn.xml" itemIcon="0" loadImmediate="false" itemID="56276edb-000002fc" lastModified="1445440426"/>
           <Include href="Holes.xml" itemIcon="1" loadImmediate="false" itemID="55eb4a06-000001c0" lastModified="1441609765"/>
           <Include href="loading_ball.xml" itemIcon="1" loadImmediate="false" itemID="55e82440-0000018c" lastModified="1441276992"/>
           <Include href="loading_cic.xml" loadImmediate="false" itemID="55e823cb-00000188" lastModified="1441281451"/>
@@ -1129,6 +1129,12 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1304466" publishTime="1445440621" publishDebug="true"/>
+          <PublishItem publishSize="1150779" publishTime="1445440498"/>
+          <PublishItem publishSize="1150807" publishTime="1445440452"/>
+          <PublishItem publishSize="1303491" publishTime="1445440133" publishDebug="true"/>
+          <PublishItem publishSize="1149870" publishTime="1445439962"/>
+          <PublishItem publishSize="1150004" publishTime="1445435945"/>
           <PublishItem publishSize="1303715" publishTime="1445435812" publishDebug="true"/>
           <PublishItem publishSize="1303802" publishTime="1445435745" publishDebug="true"/>
           <PublishItem publishSize="1303824" publishTime="1445435714" publishDebug="true"/>
@@ -1143,11 +1149,5 @@
           <PublishItem publishSize="1300262" publishTime="1445431706" publishDebug="true"/>
           <PublishItem publishSize="1300278" publishTime="1445431603" publishDebug="true"/>
           <PublishItem publishSize="1300342" publishTime="1445430843" publishDebug="true"/>
-          <PublishItem publishSize="1300272" publishTime="1445430728" publishDebug="true"/>
-          <PublishItem publishSize="1300371" publishTime="1445430485" publishDebug="true"/>
-          <PublishItem publishSize="1300428" publishTime="1445430267" publishDebug="true"/>
-          <PublishItem publishSize="1300901" publishTime="1445430033" publishDebug="true"/>
-          <PublishItem publishSize="1300952" publishTime="1445429820" publishDebug="true"/>
-          <PublishItem publishSize="1300919" publishTime="1445429680" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

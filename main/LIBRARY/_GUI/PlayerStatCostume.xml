@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1445434988" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1445440477" lastUniqueIdentifier="1">
   <timeline>
     <DOMTimeline name="PlayerStatCostume">
       <layers>
@@ -170,7 +170,7 @@
             </DOMFrame>
             <DOMFrame index="130" duration="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="help_btn" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="help_btn" symbolType="button">
                   <matrix>
                     <Matrix tx="-20.3" ty="20.1"/>
                   </matrix>
@@ -182,7 +182,7 @@
             </DOMFrame>
             <DOMFrame index="143" duration="15" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="cheatsheet_controls" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="cheatsheet_controls" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="375" y="300"/>
                   </transformationPoint>

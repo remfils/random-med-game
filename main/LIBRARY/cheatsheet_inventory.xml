@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="cheatsheet_inventory" itemID="56278f8b-00000e8c" symbolType="graphic" lastModified="1445435921" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="cheatsheet_inventory" itemID="56278f8b-00000e8c" symbolType="graphic" lastModified="1445440586" lastUniqueIdentifier="5">
   <timeline>
     <DOMTimeline name="cheatsheet_inventory">
       <layers>
@@ -299,7 +299,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="подписи_графич_интерфейс" color="#FF4FFF" parentLayerIndex="0" autoNamed="false">
+        <DOMLayer name="подписи_графич_интерфейс" color="#FF4FFF" parentLayerIndex="0" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -354,7 +354,7 @@
                 </DOMShape>
                 <DOMStaticText left="8.7" width="126.6" height="9.6" autoExpand="true" isSelectable="false">
                   <matrix>
-                    <Matrix a="1.82147216796875" d="1.82147216796875" tx="455.8" ty="21.5"/>
+                    <Matrix a="1.82147216796875" d="1.82147216796875" tx="462.5" ty="13.85"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -440,7 +440,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="обьекты" color="#9933CC" parentLayerIndex="0" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="обьекты" color="#9933CC" parentLayerIndex="0" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

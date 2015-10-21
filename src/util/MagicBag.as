@@ -7,7 +7,7 @@ package src.util {
 
 
     public class MagicBag extends AbstractManager implements Update {
-        public static const SMALL_HP_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, 1, Ids.ITEM_POTION_HEALTH_ID);
+        public static const SMALL_HP_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, 2, Ids.ITEM_POTION_HEALTH_ID);
         public static const SMALL_MP_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MANA_STAT, 2, Ids.ITEM_POTION_MANA_ID);
         public static const COIN_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MONEY_STAT, 1, Ids.ITEM_COIN_ID);
         public static const EMERALD_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MONEY_STAT, 10, Ids.ITEM_EMERALD_ID);

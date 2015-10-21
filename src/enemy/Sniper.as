@@ -16,12 +16,12 @@ package src.enemy {
         public static const SHOOT_STATE:String = "_shoot";
         
         public var charge:Boolean = false;
-        public var chargeTime:Number = 0;
-        public var chargeDelay:Number = 100;
+        public var charge_time:Number = 0;
+        public var charge_delay:Number = 50;
         
-        protected var framesToShoot:int = 0;
-        protected var bulletFired:Boolean = false;
-        protected var TOTAL_CHARGE_FRAMES:int = 47;
+        protected var frames_to_shoot:int = 0;
+        protected var bullet_fired:Boolean = false;
+        protected var TOTAL_CHARGE_FRAMES:int = 30;
         
         public function Sniper() {
             super();
@@ -41,8 +41,8 @@ package src.enemy {
         }
         
         override public function deactivate():void {
-            charge = bulletFired = is_active = false;
-            chargeTime = framesToShoot = 0;
+            charge = bullet_fired = is_active = false;
+            charge_time = frames_to_shoot = 0;
             costume.setState(STAND_STATE);
         }
         
@@ -52,27 +52,27 @@ package src.enemy {
             super.update();
             
             if ( is_active ) {
-                if ( !chargeTime ) {
+                if ( !charge_time ) {
                     startShoot();
-                    chargeTime = chargeDelay;
+                    charge_time = charge_delay;
                 }
                 else {
-                    chargeTime --;
+                    charge_time --;
                 }
-                if ( bulletFired ) {
-                    if ( !framesToShoot-- ) {
-                        bulletFired = false;
+                if ( bullet_fired ) {
+                    if ( !frames_to_shoot-- ) {
+                        bullet_fired = false;
                         costume.setState(ACTIVE_STATE);
                         shoot();
-                        framesToShoot = 0;
+                        frames_to_shoot = 0;
                     }
                 }
             }
         }
         
         public function startShoot():void {
-            bulletFired = true;
-            framesToShoot = TOTAL_CHARGE_FRAMES;
+            bullet_fired = true;
+            frames_to_shoot = TOTAL_CHARGE_FRAMES;
             costume.setAnimatedState(SHOOT_STATE);
         }
         
