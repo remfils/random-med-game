@@ -95,7 +95,7 @@ package src.task {
                 if ( task.checkAnswer(task_object) ) {
                     task_object.positiveOutcome();
                     task.complete();
-                    game.player.addToStats(task.reward);
+                    game.player.changeStat(task.reward);
                     
                     replaceTaskObjectsWithGoods(task.id, task.guessCount);
                     

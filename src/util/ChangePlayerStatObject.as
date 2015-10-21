@@ -11,6 +11,7 @@ package src.util {
         public static const MONEY_STAT:String = "MONEY";
         public static const MAX_SPELLS_STAT:String = "MAX_SPELLS";
         public static const MAX_ITEMS_STAT:String = "MAX_ITEMS";
+        public static const GUESS_COMBO_STAT:String = "guess_combo";
         
         public var stat_name:String;
         public var delta:int;

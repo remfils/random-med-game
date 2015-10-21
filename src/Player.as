@@ -12,6 +12,7 @@
     import src.interfaces.*;
     import src.objects.*;
     import src.ui.mageShop.*;
+    import src.ui.StatChangeMessage;
     import src.util.*;
     
     
@@ -39,6 +40,7 @@
         public var MONEY:int = 0;
         public var MAX_SPELLS:int = 2;
         public var MAX_ITEMS:int = 1;
+        public var guess_combo:int = 0;
         
         public var spells:Array = [];
         
@@ -78,6 +80,8 @@
         public static const HOLD_OBJECT_X:Number = -15;
         public static const HOLD_OBJECT_Y:Number = -30;
         
+        private var messager:StatChangeMessage;
+        
         public var currentRoom:Point = new Point(0,0);
         
         public function Player():void {
@@ -94,6 +98,8 @@
             invincibilityTimer = new Timer(invincibility_delay,6);
             
             definePlayerFixture();
+            
+            messager = new StatChangeMessage();
         }
         
         private function definePlayerFixture():void {
@@ -159,6 +165,10 @@
             return level;
         }
         
+        public function init():void {
+            messager.init();
+        }
+        
         static public function getInstance():Player {
             if ( instance == null ) instance = new Player();
             return instance;
@@ -185,6 +195,10 @@
                     spells[spells.length - 1] = InventoryItem().item_name;
                 }
             }*/
+        }
+        
+        public function displayMessage(str:String):void {
+            messager.requestDisplayMessage(str);
         }
         
         public function startPickingUp():void {
@@ -356,6 +370,11 @@
                         }
                     break;
                 }
+                
+                if ( change.delta > 0 ) {
+                    messager.requestDisplayDelta(change);
+                }
+                
                 this[change.stat_name] += change.delta;
                 return true;
             }

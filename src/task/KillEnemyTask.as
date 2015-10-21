@@ -17,7 +17,7 @@ package src.task {
         }
         
         override protected function generateReward():void {
-            reward.EXP = answer;
+            reward.delta = answer;
         }
         
     }

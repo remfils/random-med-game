@@ -145,6 +145,8 @@ package src {
                 }
             }
             
+            player.init();
+            
             Room.taskManager = taskManager; // D!
             
             cRoom = getCurrentLevel();

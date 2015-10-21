@@ -2,12 +2,14 @@
     
     import src.levels.Room;
     import src.objects.TaskObject;
+    import src.util.AbstractManager;
+    import src.util.ChangePlayerStatObject;
     import src.util.ComboManager;
     import src.util.Random;
     import src.util.Recorder;
     
-    public class Task {
-        public var reward:Object = { "EXP": 0 };
+    public class Task extends AbstractManager{
+        public var reward:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.EXP_STAT, 10);
         
         public static var taskManager:TaskManager; // D!
         
@@ -110,16 +112,19 @@
             }
             
             total *= MULT;
-            reward.EXP = total;
+            reward.delta = total;
         }
         
         public function incMultiplier():void {
             combo ++;
+            
             if ( combo > 4 ) combo = 4;
+            else game.player.displayMessage( "комбо x" + (combo - 1)  );
         }
         
         public function resetMultiplier():void {
             combo = 1;
+            game.player.displayMessage("КОМБО СБОСС!");
         }
 
     }
