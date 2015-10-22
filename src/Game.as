@@ -523,12 +523,15 @@ package src {
             removeEventListeners();
             stopAllLoopClipsIn(this);
             player.clearInput();
+            
+            ACTION_PRESSED = false;
         }
         
         public function resume():void {
             PAUSED = isTransition = false;
             addEventListeners();
             stopAllLoopClipsIn(this, true);
+            setAsFocus();
         }
         
         private function stopAllLoopClipsIn( obj:DisplayObjectContainer, setToPlay:Boolean=false ):void {

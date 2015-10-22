@@ -18,6 +18,8 @@ package src.costumes {
         
         public static const LOADING_CIRCLE:String = "loading_circle";
         
+        public static const CLOSE_BUTTON:String = "close_btn";
+        
         public function MenuSprites() {
             super();
         }

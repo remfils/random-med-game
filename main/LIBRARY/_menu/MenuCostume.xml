@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1445433332" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1445513090" lastUniqueIdentifier="4">
   <timeline>
-    <DOMTimeline name="MenuCostume" currentFrame="53">
+    <DOMTimeline name="MenuCostume" currentFrame="99">
       <layers>
-        <DOMLayer name="label" color="#9933CC" autoNamed="false">
+        <DOMLayer name="label" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="12" name="star_empty" labelType="name" keyMode="9728">
               <elements/>
@@ -22,12 +22,15 @@
             <DOMFrame index="65" duration="19" name="spell_holder_locked" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="84" duration="41" name="loading_circle" labelType="name" keyMode="9728">
+            <DOMFrame index="84" duration="15" name="loading_circle" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="99" duration="26" name="close_btn" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="main" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="main" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="12" keyMode="9728">
               <elements>
@@ -86,9 +89,21 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="84" duration="41" keyMode="9728">
+            <DOMFrame index="84" duration="15" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/loading/loading_cic" selected="true" centerPoint3DX="-42.25">
+                <DOMSymbolInstance libraryItemName="_GUI/loading/loading_cic" centerPoint3DX="-42.25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="99" duration="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/close_btn" symbolType="button">
+                  <matrix>
+                    <Matrix tx="-5.75" ty="6"/>
+                  </matrix>
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

@@ -5,6 +5,7 @@ package src.costumes {
         public static const RED_STATE:String = "red";
         public static const GREEN_STATE:String = "green";
         public static const LOADING_STATE:String = "loading";
+        public static const LETTER_STATE:String = "reading_letter";
         
         public var title_txt:TextField;
         public var main_txt:TextField;

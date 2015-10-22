@@ -109,7 +109,6 @@ package src.ui {
         
         protected function resumeGame(e:MouseEvent):void {
             hide();
-            game.setAsFocus();
         }
         
         protected function exitGame(e:MouseEvent):void {

@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ActiveObjectCostume" itemID="55928eb3-00000133" linkageExportForAS="true" linkageClassName="src.costumes.ActiveObjectCostume" lastModified="1441184517" lastUniqueIdentifier="10">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ActiveObjectCostume" itemID="55928eb3-00000133" linkageExportForAS="true" linkageClassName="src.costumes.ActiveObjectCostume" lastModified="1445511043" lastUniqueIdentifier="12">
   <timeline>
-    <DOMTimeline name="ActiveObjectCostume" currentFrame="132">
+    <DOMTimeline name="ActiveObjectCostume" currentFrame="286">
       <layers>
-        <DOMLayer name="labels" color="#4FFFFF" autoNamed="false">
+        <DOMLayer name="labels" color="#4FFFFF" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" name="Lever" labelType="name" keyMode="9728">
               <elements/>
@@ -40,12 +40,18 @@
             <DOMFrame index="168" duration="55" name="DoorLock_break" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="223" duration="108" name="DoorLock_unlock" labelType="name" keyMode="9728">
+            <DOMFrame index="223" duration="59" name="DoorLock_unlock" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="282" duration="16" name="Letter_unread" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="298" duration="33" name="Letter_read" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#FF800A" autoNamed="false">
+        <DOMLayer name="actions" color="#FF800A" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements/>
@@ -180,11 +186,23 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="155" duration="176" keyMode="9728">
+            <DOMFrame index="155" duration="127" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="active_area_mc" centerPoint3DX="1.5" centerPoint3DY="-1.05">
                   <matrix>
                     <Matrix a="6.10130310058594" d="1.30056762695313"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="282" duration="49" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="active_area_mc" centerPoint3DX="1.5" centerPoint3DY="-1.05">
+                  <matrix>
+                    <Matrix a="1.83375549316406" d="1.42848205566406"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -220,7 +238,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="155" duration="176" keyMode="9728">
+            <DOMFrame index="155" duration="127" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="-3.1">
                   <matrix>
@@ -232,9 +250,21 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
+            <DOMFrame index="282" duration="49" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="-3.1">
+                  <matrix>
+                    <Matrix a="1.83184814453125" d="1.36370849609375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="flag_g" color="#9933CC" autoNamed="false" layerType="guide">
+        <DOMLayer name="flag_g" color="#9933CC" locked="true" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" duration="99" keyMode="9728">
               <elements>
@@ -402,8 +432,35 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="280" duration="51" keyMode="9728">
+            <DOMFrame index="280" duration="2" keyMode="9728">
               <elements/>
+            </DOMFrame>
+            <DOMFrame index="282" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Letter" symbolType="graphic" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.306396484375" d="0.306396484375" tx="-17.15" ty="-11.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="56.3" y="38.2"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="298" duration="33" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Letter" symbolType="graphic" firstFrame="9" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.306396484375" d="0.306396484375" tx="-17.15" ty="-11.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="56.3" y="38.2"/>
+                  </transformationPoint>
+                  <color>
+                    <Color brightness="-0.31"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1441281194" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1445516349" lastUniqueIdentifier="4">
   <timeline>
-    <DOMTimeline name="GameMenuCostume">
+    <DOMTimeline name="GameMenuCostume" currentFrame="79">
       <layers>
-        <DOMLayer name="labels" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="19" name="red" labelType="name" keyMode="9728">
               <elements/>
@@ -10,7 +10,10 @@
             <DOMFrame index="19" duration="37" name="green" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="56" duration="44" name="loading" labelType="name" keyMode="9728">
+            <DOMFrame index="56" duration="23" name="loading" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="79" duration="21" name="reading_letter" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -22,7 +25,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="title_txt" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="title_txt" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="19" keyMode="9728">
               <elements>
@@ -44,7 +47,7 @@
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
-            <DOMFrame index="19" duration="81" keyMode="9728">
+            <DOMFrame index="19" duration="60" keyMode="9728">
               <elements>
                 <DOMDynamicText name="title_txt" left="0.45" width="300" height="139" isSelectable="false" lineType="multiline">
                   <matrix>
@@ -64,11 +67,31 @@
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
+            <DOMFrame index="79" duration="21" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title_txt" left="0.45" width="431.5" height="258.25" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix a="1.01708984375" tx="-216.95" ty="157.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="213.3" y="-7.95"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Hello world</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="justify" aliasText="false" indent="31.8" size="20" bitmapSize="400" face="MagicFont*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="main_txt" color="#4FFFFF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="100" keyMode="9728">
+            <DOMFrame index="0" duration="79" keyMode="9728">
               <elements>
                 <DOMDynamicText name="main_txt" left="68.9" width="6.2" height="68.5" autoExpand="true" isSelectable="false" lineType="multiline">
                   <matrix>
@@ -82,6 +105,26 @@
                       <characters></characters>
                       <textAttrs>
                         <DOMTextAttrs alignment="center" aliasText="false" size="30" bitmapSize="600" face="TimesNewRomanPS-BoldMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="79" duration="21" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="main_txt" left="30.35" width="708.65" height="35.95" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.624664306640625" d="0.624664306640625" tx="-237.9" ty="445.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="697.4" y="-18.65"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Автор</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" size="30" bitmapSize="600" face="MagicFont*" fillColor="#AD0000"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -110,11 +153,23 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="56" duration="44" keyMode="9728">
+            <DOMFrame index="56" duration="23" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_GUI/GameMenuBG_gr" symbolType="graphic" firstFrame="1" loop="single frame">
                   <transformationPoint>
                     <Point x="0.2" y="314.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="79" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="LetterMenu" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-263.15" ty="123.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="262.3" y="184.95"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

@@ -1,5 +1,6 @@
 package src.util {
     import flash.utils.*;
+    import src.costumes.ActiveObjectCostume;
     import src.costumes.CostumeEnemy;
     import src.costumes.DecorCostume;
     import src.enemy.ChargerEnemy;
@@ -12,6 +13,7 @@ package src.util {
     import src.levels.Room;
     import src.objects.AbstractObject;
     import src.objects.Door;
+    import src.objects.Letter;
     import src.objects.Obstacle;
     import src.objects.TaskDoorLock;
     import src.objects.TaskKey;
@@ -87,7 +89,7 @@ package src.util {
                 addObstaclesToRoom(cRoom, roomXML.obstacles.*);
                 
                 addTasksToRoom(cRoom, roomXML);
-                addTaskObjectsToRoom(cRoom, roomXML.active);
+                addActiveObjectsToRoom(cRoom, roomXML.active);
                 addTasksToDoors(cRoom, roomXML.Door);
                 
                 addEnemiesToRoom(cRoom, roomXML.enemies);
@@ -149,33 +151,35 @@ package src.util {
             }
         }
         
-        private function addTaskObjectsToRoom (room:Room, activeObjectsXML:XMLList) {
-            var taskId:int = activeObjectsXML.@taskId;
-            var taskObj:TaskObject;
-            var objName:String;
+        private function addActiveObjectsToRoom (room:Room, activeObjectsXML:XMLList) {
+            var obj:AbstractObject;
+            var obj_name:String;
             var task_manager:TaskManager = game.taskManager;
             
             for each ( var object:XML in activeObjectsXML.* ) {
-                objName = object.name();
-                switch (objName) {
+                obj_name = object.name();
+                switch (obj_name) {
                     case TaskLever.LEVER_TYPE:
-                        taskObj = new TaskLever();
+                        obj = new TaskLever();
                     break;
                     case TaskKey.KEY_TYPE:
-                        taskObj = new TaskKey();
+                        obj = new TaskKey();
                     break;
                     case TaskDoorLock.LOCK_TYPE:
-                        taskObj = new TaskDoorLock();
+                        obj = new TaskDoorLock();
+                    break;
+                case ActiveObjectCostume.LETTER_TYPE:
+                    obj = new Letter();
                     break;
                 default:
-                    Output.add("object " +objName + " not found when creating taskobjects");
+                    Output.add("object " +obj_name + " not found when creating taskobjects");
                     return;
                 }
-                taskObj.readXMLParams(object);
+                obj.readXMLParams(object);
                 
                 //room.addActiveObject(taskObj);
-                room.add(taskObj);
-                task_manager.addTaskObject(taskObj);
+                room.add(obj);
+                //task_manager.addTaskObject(obj);
                 //tintObjectsArray.push(taskObj);
             }
         }

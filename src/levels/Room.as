@@ -195,6 +195,10 @@
                 if ( a_o.isExtruded() ) gameObjectPanel.addChild(a_o.costume);
                 else addChild(a_o.costume);
             }
+            
+            if ( obj is TaskObject ) {
+                game.taskManager.addTaskObject(TaskObject(obj));
+            }
         }
         
         public function remove(obj):void {
