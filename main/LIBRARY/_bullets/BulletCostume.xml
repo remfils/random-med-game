@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/BulletCostume" itemID="553a05be-0000012e" linkageExportForAS="true" linkageClassName="src.costumes.BulletCostume" lastModified="1441179725" lastUniqueIdentifier="9">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bullets/BulletCostume" itemID="553a05be-0000012e" linkageExportForAS="true" linkageClassName="src.costumes.BulletCostume" lastModified="1445505160" lastUniqueIdentifier="10">
   <timeline>
-    <DOMTimeline name="BulletCostume">
+    <DOMTimeline name="BulletCostume" currentFrame="85">
       <layers>
         <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>
@@ -123,7 +123,7 @@
             </DOMFrame>
             <DOMFrame index="85" duration="4" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_bullets/_spark/Spark_destroy" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_bullets/_spark/Spark_destroy" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="-0.2" y="-35.1"/>
                   </transformationPoint>
