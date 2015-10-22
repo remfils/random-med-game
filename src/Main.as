@@ -20,10 +20,11 @@
 
     public class Main extends Sprite {
         private static const HOME_TEST_MODE:int = 1;
+        private static const HOME_RELEASE_MODE:int = 4;
         private static const RELEASE_TEST_MODE:int = 2;
         private static const RELEASE_MODE:int = 3;
         
-        private var mode:int = HOME_TEST_MODE;
+        private var mode:int = HOME_RELEASE_MODE;
         Game.VERSION = "0.44";
         
         private const HOME_SERVER:String = "http://game.home";
@@ -86,9 +87,15 @@
                     Game.VERSION += "-H";
                     
                     break;
+                case HOME_RELEASE_MODE:
+                    Game.TEST_MODE = false;
+                    LOAD_SCREEN_DELAY = 0;
+                    server_name = HOME_SERVER;
+                    Game.VERSION += "-HR";
+                    break;
                 case RELEASE_TEST_MODE:
                     LOAD_SCREEN_DELAY = 0;
-                    Game.TEST_MODE = true;
+                    Game.TEST_MODE = false;
                     
                     Game.VERSION += "-T";
                     
