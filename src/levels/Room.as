@@ -477,11 +477,8 @@
             costume.x = CENTER_X;
             costume.y = CENTER_Y;
             
-            if ( costume.type == ObjectCostume.EXIT_TYPE ) {
-                startDeadCenterDrop(costume);
-            }
-            else {
-                spiralDrop(costume);
+            if ( !(costume.type == ObjectCostume.EXIT_TYPE) ) {
+                circleDrop(costume);
             }
             
             gameObjectPanel.addChild(costume);
@@ -520,10 +517,38 @@
             world.QueryAABB(searchDropQueryCallback, drop_aabb);
         }
         
-        private function startDeadCenterDrop(costume:Costume):void {
+        private function circleDrop(costume:Costume):void {
+            var drop_aabb:b2AABB;
             
+            var i:int = 1;
+            var phi:Number = 0;
             
+            var searchDropQueryCallback:Function = function (fix:b2Fixture):Boolean {
+                if ( fix ) {
+                    costume.x = CENTER_X + costume.costume_collider.width * i * Math.cos(phi * Math.PI / 4);
+                    costume.y = CENTER_Y + costume.costume_collider.height * i * Math.sin(phi * Math.PI / 4);
+                    
+                    phi ++;
+                    
+                    if ( phi >= 8 ) {
+                        i ++;
+                        phi = 0;
+                    }
+                    
+                    var drop_aabb:b2AABB = new b2AABB();
+                    drop_aabb.lowerBound = new b2Vec2((costume.x - costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y - costume.costume_collider.height / 2) / Game.WORLD_SCALE);
+                    drop_aabb.upperBound = new b2Vec2((costume.x + costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y + costume.costume_collider.height / 2) / Game.WORLD_SCALE);
+                    
+                    world.QueryAABB(searchDropQueryCallback, drop_aabb);
+                }
+                return true;
+            }
             
+            drop_aabb = new b2AABB();
+            drop_aabb.lowerBound = new b2Vec2((costume.x - costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y - costume.costume_collider.height / 2) / Game.WORLD_SCALE);
+            drop_aabb.upperBound = new b2Vec2((costume.x + costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y + costume.costume_collider.height / 2) / Game.WORLD_SCALE);
+            
+            world.QueryAABB(searchDropQueryCallback, drop_aabb);
         }
         
         public function createExplosion(power:Number, center:b2Vec2, radius:Number):void {
