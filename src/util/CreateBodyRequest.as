@@ -99,6 +99,10 @@ package src.util {
             bodyDef = null;
             fixtureDef = null;
             userData = null;
+            
+            while ( fixture_defs.length ) {
+                fixture_defs.pop();
+            }
         }
         
     }
