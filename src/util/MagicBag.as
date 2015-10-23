@@ -15,6 +15,8 @@ package src.util {
         public static const DROP_STATE:String = "_drop";
         public static const PICKUP_STATE:String = "_pickup";
         
+        public static const MAP_PICKUP_DELLAY:Number = 700;
+        
         public var is_empty:Boolean = true;
         public var not_active:Boolean = true;
         
@@ -72,7 +74,7 @@ package src.util {
                     break;
                     case ObjectCostume.EXIT_TYPE:
                         costume.setState(PICKUP_STATE);
-                        game.finishLevel();
+                        game.finishLevel(MAP_PICKUP_DELLAY);
                     break;
                     case ObjectCostume.COIN_TYPE:
                         change = COIN_STAT_OBJ;

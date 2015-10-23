@@ -548,7 +548,7 @@ package src {
             return;
         }
         
-        public function finishLevel():void {
+        public function finishLevel(delay:Number = 0):void {
             removeEventListeners();
             
             rating = taskManager.gradeLevel();
@@ -558,7 +558,7 @@ package src {
             player.costume.setType(Player.END_STATE);
             player.costume.setState();
             
-            var timer:Timer = new Timer(700);
+            var timer:Timer = new Timer(delay);
             timer.addEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);
             timer.start();
         }

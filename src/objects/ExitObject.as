@@ -18,7 +18,7 @@ package src.objects {
         
         override public function pickUp():void {
             //gotoAndPlay("pickup");
-            game.finishLevel();
+            game.finishLevel(700);
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {

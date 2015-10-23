@@ -15,6 +15,7 @@ package src.util {
     import src.objects.Door;
     import src.objects.Letter;
     import src.objects.Obstacle;
+    import src.objects.StairwayExit;
     import src.objects.TaskDoorLock;
     import src.objects.TaskKey;
     import src.objects.TaskLever;
@@ -170,6 +171,9 @@ package src.util {
                     break;
                 case ActiveObjectCostume.LETTER_TYPE:
                     obj = new Letter();
+                    break;
+                case ActiveObjectCostume.STAIRWAY_TYPE:
+                    obj = new StairwayExit();
                     break;
                 default:
                     Output.add("object " +obj_name + " not found when creating taskobjects");

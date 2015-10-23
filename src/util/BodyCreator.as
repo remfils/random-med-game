@@ -23,11 +23,8 @@ package src.util {
                 var i:int = bodies.length;
                 while ( i-- ) {
                     var request:CreateBodyRequest = bodies[i];
-                    var body:b2Body = request.world.CreateBody(request.bodyDef);
                     
-                    body.CreateFixture(request.fixtureDef);
-                    body.SetLinearVelocity(request.velocity);
-                    AbstractObject(request.actor).body = body;
+                    request.create();
                     
                     //request.actor.removeChild(request.collider);
                     request.destroy();

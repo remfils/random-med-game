@@ -63,11 +63,11 @@
         
 // направление персонажа
         public static const END_STATE:String = "end";
-        private static const STAND_STATE:String = "stand_";
-        private static const DIR_LEFT_STATE:String = "_left";
-        private static const DIR_RIGHT_STATE:String = "_right";
-        private static const DIR_UP_STATE:String = "_up";
-        private static const DIR_DOWN_STATE:String = "_down";
+        public static const STAND_STATE:String = "stand_";
+        public static const DIR_LEFT_STATE:String = "_left";
+        public static const DIR_RIGHT_STATE:String = "_right";
+        public static const DIR_UP_STATE:String = "_up";
+        public static const DIR_DOWN_STATE:String = "_down";
         
         private var state_label:String = DIR_UP_STATE;
         
@@ -167,6 +167,8 @@
         
         public function init():void {
             messager.init();
+            
+            costume.scaleX = costume.scaleY = 1;
         }
         
         static public function getInstance():Player {

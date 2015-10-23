@@ -20,6 +20,7 @@ package src.util {
         public var actor:AbstractObject;
         
         public var bodyDef:b2BodyDef;
+        public var fixture_defs:Vector.<b2FixtureDef>;
         public var fixtureDef:b2FixtureDef;
         public var velocity:b2Vec2;
         
@@ -41,9 +42,13 @@ package src.util {
             var shape:b2PolygonShape = new b2PolygonShape();
             shape.SetAsBox(collider.width / 2 / Game.WORLD_SCALE, collider.height / 2 / Game.WORLD_SCALE);
             
+            fixture_defs = new Vector.<b2FixtureDef>();
+            
             fixtureDef = new b2FixtureDef();
             fixtureDef.shape = shape;
             fixtureDef.userData = this.userData;
+            
+            fixture_defs.push(fixtureDef);
             
             velocity = new b2Vec2(0, 0);
         }
@@ -73,6 +78,18 @@ package src.util {
         
         public function setBodyPosition(position:Point):void {
             bodyDef.position.Set(position.x / Game.WORLD_SCALE, position.y / Game.WORLD_SCALE);
+        }
+        
+        public function create():void {
+            var body:b2Body = world.CreateBody(bodyDef);
+            
+            for each (var fixture:b2FixtureDef in fixture_defs) {
+                body.CreateFixture(fixture);
+            }
+            
+            body.SetLinearVelocity(velocity);
+            
+            actor.body = body;
         }
         
         public function destroy():void {
