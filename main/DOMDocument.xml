@@ -66,9 +66,9 @@
           <DOMFolderItem name="src" itemID="53afd2e7-00000077" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="MagicFont copy" itemID="56278f8b-00000e8f" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="5" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
-          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
           <DOMFontItem name="MagicFont" itemID="56278f8b-00000e8e" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
+          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
+          <DOMFontItem name="MagicFont copy" itemID="56278f8b-00000e8f" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="5" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
      </fonts>
      <media>
           <DOMBitmapItem name="_bosses/clone/Untitled-1.jpg" itemID="551d3a50-0000012d" sourceExternalFilepath="../main/LIBRARY/_bosses/clone/Untitled-1.jpg" sourceLastImported="1427978743" externalFileCRC32="543492954" externalFileSize="382310" quality="50" href="_bosses/clone/Untitled-1.jpg" bitmapDataHRef="M 4 1407974788.dat" frameRight="32000" frameBottom="32000" isJPEG="true"/>
@@ -141,7 +141,7 @@
           <Include href="_GUI/_mana/StatMana.xml" itemID="5417444c-000000b7" lastModified="1411205265"/>
           <Include href="_GUI/_map/map.xml" itemID="53c4f23d-0000007a" lastModified="1410647007"/>
           <Include href="_GUI/_PlayerStatCostume/cheatsheet_controls.xml" itemIcon="1" loadImmediate="false" itemID="5627726e-00000320" lastModified="1445429588"/>
-          <Include href="_GUI/_PlayerStatCostume/cheatsheet_inventory.xml" itemIcon="1" loadImmediate="false" itemID="56278f8b-00000e8c" lastModified="1445440586"/>
+          <Include href="_GUI/_PlayerStatCostume/cheatsheet_inventory.xml" itemIcon="1" loadImmediate="false" itemID="56278f8b-00000e8c" lastModified="1445592680"/>
           <Include href="_GUI/_PlayerStatCostume/help_btn.xml" itemIcon="0" loadImmediate="false" itemID="56276edb-000002fc" lastModified="1445440426"/>
           <Include href="_GUI/_PlayerStatCostume/SpellMenu.xml" itemIcon="1" loadImmediate="false" itemID="541332c6-000000d2" lastModified="1435324888"/>
           <Include href="_GUI/_PlayerStatCostume/SpellSelecButton.xml" itemIcon="1" loadImmediate="false" itemID="54133284-000000c8" lastModified="1435326596"/>
@@ -275,7 +275,7 @@
           <Include href="_menu/_MenuCostume/MagesShop_clip.xml" itemIcon="1" loadImmediate="false" itemID="553cd28f-000005bb" lastModified="1430499113"/>
           <Include href="_menu/_MenuCostume/MenuBackground_gr.xml" itemIcon="1" loadImmediate="false" itemID="553cd254-00000145" lastModified="1430049364"/>
           <Include href="_menu/_MenuCostume/Star_gr.xml" itemIcon="1" loadImmediate="false" itemID="553cd250-00000144" lastModified="1430049360"/>
-          <Include href="_menu/MenuButton.xml" itemID="5540a554-00000187" lastModified="1445360340"/>
+          <Include href="_menu/MenuButton.xml" itemID="5540a554-00000187" lastModified="1445592838"/>
           <Include href="_menu/MenuCostume.xml" itemID="553b9f00-0000014d" lastModified="1445513090"/>
           <Include href="_menu/MenuItem.xml" itemID="55424c97-000002b0" lastModified="1445435484"/>
           <Include href="_menu/название игры.xml" itemIcon="1" loadImmediate="false" itemID="53d0448d-000000b4" lastModified="1416138485"/>
@@ -974,7 +974,7 @@
                     <SolidSwatchItem color="#5B5B5B" brightness="86"/>
                     <SolidSwatchItem color="#E2DBCC" hue="27" saturation="67" brightness="203"/>
                     <SolidSwatchItem color="#D9D0BF" hue="27" saturation="60" brightness="192"/>
-                    <SolidSwatchItem alpha="0.101960784313725"/>
+                    <SolidSwatchItem alpha="0.0980392156862745"/>
                     <SolidSwatchItem color="#464646" brightness="66"/>
                </swatches>
           </swatchList>
@@ -1142,6 +1142,7 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1157898" publishTime="1445592895"/>
           <PublishItem publishSize="1158907" publishTime="1445517430"/>
           <PublishItem publishSize="1313511" publishTime="1445517407" publishDebug="true"/>
           <PublishItem publishSize="1313398" publishTime="1445516598" publishDebug="true"/>
@@ -1161,6 +1162,5 @@
           <PublishItem publishSize="1313403" publishTime="1445514595" publishDebug="true"/>
           <PublishItem publishSize="1313133" publishTime="1445513990" publishDebug="true"/>
           <PublishItem publishSize="894086" publishTime="1445513875" publishDebug="true"/>
-          <PublishItem publishSize="1308985" publishTime="1445509478" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

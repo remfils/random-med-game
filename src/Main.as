@@ -24,7 +24,7 @@
         private static const RELEASE_TEST_MODE:int = 2;
         private static const RELEASE_MODE:int = 3;
         
-        private var mode:int = RELEASE_TEST_MODE;
+        private var mode:int = HOME_RELEASE_MODE;
         Game.VERSION = "0.44";
         
         private const HOME_SERVER:String = "http://game.home";
