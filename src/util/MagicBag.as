@@ -45,7 +45,18 @@ package src.util {
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {
-            // return super.requestBodyAt(world);
+            /*var req:CreateBodyRequest = super.requestBodyAt(world);
+            
+            if ( costume ) {
+                if ( costume.type != ObjectCostume.EXIT_TYPE ) {
+                    req.setAsDynamicBody();
+                }
+                else {
+                    req.setAsStaticSensor();
+                }
+            }
+            
+            return req;*/
             return null;
         }
         

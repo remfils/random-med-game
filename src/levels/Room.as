@@ -5,6 +5,7 @@
     import Box2D.Dynamics.*;
     import flash.display.*;
     import flash.events.TimerEvent;
+    import flash.geom.Point;
     import flash.utils.Timer;
     import src.*;
     import src.costumes.Costume;
@@ -50,7 +51,10 @@
         var _gameObjects:Array = new Array();
         var _updates:Vector.<Update>;
         var _enemies:Array = new Array();
-        public var drops:Array = new Array(); // D!
+        
+        var _abstract_objects:Vector.<AbstractObject>;
+        
+        // public var drops:Array = new Array(); // D!
         
         var _tasks:Array = new Array(); // deleteme
         public var currentTask:Task = null;
@@ -59,7 +63,8 @@
         private var playerBody:b2Body;
         public var gameObjectPanel:GameObjectPanel;
         
-        public var magic_bag:MagicBag;
+        public var magic_bag:MagicBag; // D?
+        public var drops:Vector.<MagicBag>;
 
         public function Room() {
             world = new b2World(gravity, true);
@@ -77,6 +82,11 @@
             
             magic_bag = new MagicBag();
             _updates = new Vector.<Update>();
+            
+            drops = new Vector.<MagicBag>();
+            
+            _abstract_objects = new Vector.<AbstractObject>();
+            
             if (Game.TEST_MODE) setDebugDraw();
         }
         
@@ -194,6 +204,8 @@
                 
                 if ( a_o.isExtruded() ) gameObjectPanel.addChild(a_o.costume);
                 else addChild(a_o.costume);
+                
+                _abstract_objects.push(a_o);
             }
             
             if ( obj is TaskObject ) {
@@ -404,6 +416,17 @@
             unlockDoorsWithoutTasks();
         }
         
+        public function setDropFromXML(dropXML:XMLList):void {
+            var i:int = dropXML.hasOwnProperty("@count") ? dropXML.@count : 1;
+            var bag:MagicBag;
+            
+            while ( i-- ) {
+                bag = new MagicBag();
+                bag.readDropXML(dropXML);
+                drops.push(bag);
+            }
+        }
+        
         public function setParametersFromXML (paramsXML:XMLList):void {
             var param:String = paramsXML.(name() == "type").toString();
             
@@ -433,11 +456,11 @@
             
             if ( currentTask == null ) {
                 unlock();
-                ItemDropper.dropAtPointFrom(drops, 387, 267); // doesn't work
+                //ItemDropper.dropAtPointFrom(drops, 387, 267); // doesn't work
             }
         }
         
-        public function checkOverlapGameObjects(object:DisplayObject):Boolean {
+        public function checkOverlapGameObjects(object:DisplayObject):Boolean { // D!
             var i:int = gameObjectPanel.numChildren;
             while ( i-- ) {
                 if ( gameObjectPanel.getChildAt(i).hitTestObject(object) ) {
@@ -471,17 +494,28 @@
         var NUDGE:int = 20;
         
         public function createDrop():void {
-            if (magic_bag.is_empty) return;
+            var bag:MagicBag;
+            var costume:Costume;
             
-            var costume:Costume = magic_bag.open();
-            costume.x = CENTER_X;
-            costume.y = CENTER_Y;
+            trace(drops.length);
             
-            if ( !(costume.type == ObjectCostume.EXIT_TYPE) ) {
-                circleDrop(costume);
+            while ( bag = drops.pop() ) {
+                if ( bag.is_empty ) continue;
+                
+                costume = bag.open();
+                
+                costume.x = CENTER_X;
+                costume.y = CENTER_Y;
+                
+                addChild(costume);
+                
+                if ( !(costume.type == ObjectCostume.EXIT_TYPE) ) {
+                    circleDrop(costume);
+                }
+                
+                add(bag);
+                //gameObjectPanel.addChild(costume);
             }
-            
-            gameObjectPanel.addChild(costume);
         }
         
         private function spiralDrop(costume:Costume):void {
@@ -518,37 +552,41 @@
         }
         
         private function circleDrop(costume:Costume):void {
-            var drop_aabb:b2AABB;
-            
-            var i:int = 1;
+            var i:int;
             var phi:Number = 0;
+            var count:int = 1;
+            var collisions_found:Boolean;
+            const phase:Number = Math.PI / 4;
+            var collider:DisplayObject = costume.costume_collider;
+            var col_width:Number = collider.width;
+            var col_height:Number = collider.height;
             
-            var searchDropQueryCallback:Function = function (fix:b2Fixture):Boolean {
-                if ( fix ) {
-                    costume.x = CENTER_X + costume.costume_collider.width * i * Math.cos(phi * Math.PI / 4);
-                    costume.y = CENTER_Y + costume.costume_collider.height * i * Math.sin(phi * Math.PI / 4);
-                    
-                    phi ++;
-                    
-                    if ( phi >= 8 ) {
-                        i ++;
-                        phi = 0;
+            while ( true ) {
+                i = _abstract_objects.length;
+                
+                collisions_found = false;
+                
+                while ( i-- ) {
+                    if ( collider.hitTestObject(_abstract_objects[i].costume.costume_collider) ) {
+                        costume.x = CENTER_X + col_width * count * Math.cos(phi * phase);
+                        costume.y = CENTER_Y + col_height * count * Math.sin(phi * phase);
+                        
+                        collisions_found = true;
+                        
+                        phi ++;
+                        if ( phi == 8 ) {
+                            phi = 0;
+                            count ++;
+                        }
+                        
+                        break;
                     }
-                    
-                    var drop_aabb:b2AABB = new b2AABB();
-                    drop_aabb.lowerBound = new b2Vec2((costume.x - costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y - costume.costume_collider.height / 2) / Game.WORLD_SCALE);
-                    drop_aabb.upperBound = new b2Vec2((costume.x + costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y + costume.costume_collider.height / 2) / Game.WORLD_SCALE);
-                    
-                    world.QueryAABB(searchDropQueryCallback, drop_aabb);
                 }
-                return true;
+                
+                if ( !collisions_found ) {
+                    break;
+                }
             }
-            
-            drop_aabb = new b2AABB();
-            drop_aabb.lowerBound = new b2Vec2((costume.x - costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y - costume.costume_collider.height / 2) / Game.WORLD_SCALE);
-            drop_aabb.upperBound = new b2Vec2((costume.x + costume.costume_collider.width / 2) / Game.WORLD_SCALE, (costume.y + costume.costume_collider.height / 2) / Game.WORLD_SCALE);
-            
-            world.QueryAABB(searchDropQueryCallback, drop_aabb);
         }
         
         public function createExplosion(power:Number, center:b2Vec2, radius:Number):void {

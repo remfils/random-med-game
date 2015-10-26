@@ -99,7 +99,8 @@ package src.util {
                 
                 cRoom.setParametersFromXML(roomXML.@ * );
                 
-                cRoom.magic_bag.readDropXML(roomXML.drop);
+                //cRoom.magic_bag.readDropXML(roomXML.drop);
+                cRoom.setDropFromXML(roomXML.drop);
                 
                 rooms[roomXML.@x][roomXML.@y] = cRoom;
             }
@@ -230,7 +231,7 @@ package src.util {
         }
         
         private function addDropsToRoom(cRoom:Room, dropsXML:XMLList):void {
-            var drops:Array = new Array();
+            /*var drops:Array = new Array();
             
             for each ( var drop:XML in dropsXML.* ) {
                 switch ( drop.name().toString() ) {
@@ -248,7 +249,7 @@ package src.util {
                 }
             }
             
-            cRoom.drops = drops;
+            cRoom.drops = drops;*/
         }
         
         private function createParameters(roomParams):Object {

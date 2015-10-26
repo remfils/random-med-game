@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1445624783" lastUniqueIdentifier="13">
   <timeline>
-    <DOMTimeline name="ObjectCostume" currentFrame="282">
+    <DOMTimeline name="ObjectCostume" currentFrame="368">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -337,7 +337,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="collider" color="#FF800A" outline="true" current="true" isSelected="true" useOutlineView="true" autoNamed="false">
+        <DOMLayer name="collider" color="#FF800A" outline="true" useOutlineView="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="27" keyMode="9728">
               <elements>
@@ -401,7 +401,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="201" duration="189" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DX="-23.3" centerPoint3DY="-8.7">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-23.3" centerPoint3DY="-8.7">
                   <matrix>
                     <Matrix a="1.5792236328125" d="1.10202026367188" ty="-0.3"/>
                   </matrix>
@@ -425,7 +425,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="obj" color="#FF4FFF" autoNamed="false">
+        <DOMLayer name="obj" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements>
@@ -676,7 +676,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="368" duration="22" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_pickup" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/drop/stones/Emerald_pickup" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.237594604492188" d="0.237594604492188" ty="-1.6"/>
                   </matrix>
