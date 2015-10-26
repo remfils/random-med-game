@@ -1,12 +1,21 @@
 package src.util {
+    import Box2D.Dynamics.b2World;
     import flash.display.DisplayObject;
+    import flash.events.Event;
+    import flash.events.TimerEvent;
+    import flash.utils.Timer;
+    import src.costumes.Costume;
     import src.costumes.ObjectCostume;
+    import src.Game;
     import src.Ids;
     import src.interfaces.Update;
+    import src.objects.AbstractObject;
     import src.Player;
 
 
-    public class MagicBag extends AbstractManager implements Update {
+    public class MagicBag extends AbstractObject implements Update {
+        public static const MAGIC_BAG_TYPE:String = "MagicBag";
+        
         public static const SMALL_HP_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, 2, Ids.ITEM_POTION_HEALTH_ID);
         public static const SMALL_MP_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MANA_STAT, 2, Ids.ITEM_POTION_MANA_ID);
         public static const COIN_STAT_OBJ:ChangePlayerStatObject = new ChangePlayerStatObject(ChangePlayerStatObject.MONEY_STAT, 1, Ids.ITEM_COIN_ID);
@@ -20,7 +29,7 @@ package src.util {
         public var is_empty:Boolean = true;
         public var not_active:Boolean = true;
         
-        public var costume:ObjectCostume;
+        //public var costume:ObjectCostume;
         public var collider:DisplayObject;
         private var player:Player;
         
@@ -35,21 +44,36 @@ package src.util {
             is_empty = false;
         }
         
-        public function readXML(objectsXML:XMLList):void {
+        override public function requestBodyAt(world:b2World):CreateBodyRequest {
+            // return super.requestBodyAt(world);
+            return null;
+        }
+        
+        public function readDropXML(objectsXML:XMLList):void {
             var randomP:Number = Math.random();
             var p:Number = 0;
             
             for each (var item:XML in objectsXML.*) {
                 p += Number(item.@p) || 1;
                 if ( p > randomP ) {
-                    costume.setType(item.name());
-                    is_empty = false;
+                    setType(item.name());
                     break;
                 }
             }
         }
         
-        public function open():ObjectCostume {
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            
+            setType(paramsXML.@type);
+            
+            costume.setState(DROP_STATE);
+            collider = costume.getCollider();
+            
+            not_active = false;
+        }
+        
+        public function open():Costume {
             if (is_empty) return null;
             
             costume.setAnimatedState(DROP_STATE);
@@ -64,24 +88,26 @@ package src.util {
             
             if ( collider.hitTestObject(player.collider) ) {
                 var change:ChangePlayerStatObject;
+                var pickup_dellay:Number = 7 / Game.FRAMES_PER_MILLISECOND;;
                 
                 switch (costume.type) {
                     case ObjectCostume.SMALLHP_TYPE:
                         change = SMALL_HP_STAT_OBJ;
-                    break;
+                        
+                        break;
                     case ObjectCostume.SMALLMP_TYPE:
                         change = SMALL_MP_STAT_OBJ;
-                    break;
+                        break;
                     case ObjectCostume.EXIT_TYPE:
                         costume.setState(PICKUP_STATE);
                         game.finishLevel(MAP_PICKUP_DELLAY);
-                    break;
+                        break;
                     case ObjectCostume.COIN_TYPE:
                         change = COIN_STAT_OBJ;
-                    break;
+                        break;
                     case ObjectCostume.EMERALD_TYPE:
                         change = EMERALD_STAT_OBJ;
-                    break;
+                        break;
                 }
                 
                 if ( change ) {
@@ -89,10 +115,18 @@ package src.util {
                         Recorder.recordPickUpItem(change.id);
                         not_active = true;
                         costume.setAnimatedState(PICKUP_STATE);
-                        game.deleteManager.add(this);
+                        
+                        var timer:Timer = ObjectPool.getTimer(pickup_dellay);
+                        timer.addEventListener(TimerEvent.TIMER_COMPLETE, dellayedDestoyListener);
                     }
                 }
             }
+        }
+        
+        private function dellayedDestoyListener(e:TimerEvent):void {
+            var timer:Timer = Timer(e.target);
+            timer.removeEventListener(TimerEvent.TIMER_COMPLETE, dellayedDestoyListener);
+            destroy();
         }
     }
 

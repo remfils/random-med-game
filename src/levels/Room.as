@@ -473,7 +473,7 @@
         public function createDrop():void {
             if (magic_bag.is_empty) return;
             
-            var costume:ObjectCostume = magic_bag.open();
+            var costume:Costume = magic_bag.open();
             costume.x = CENTER_X;
             costume.y = CENTER_Y;
             

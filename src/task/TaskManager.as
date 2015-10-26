@@ -1,6 +1,7 @@
 package src.task {
     import fl.motion.Keyframe;
     import flash.events.Event;
+    import src.costumes.Costume;
     import src.costumes.ObjectCostume;
     import src.events.SubmitTaskEvent;
     import src.Game;
@@ -199,7 +200,7 @@ package src.task {
             var i:int = task_objects.length;
             var task_object:TaskObject, obj:ObjectCostume;
             var magic_bag:MagicBag;
-            var bag_costume:ObjectCostume;
+            var bag_costume:Costume;
             
             while ( i-- ) {
                 if ( task_objects[i].task_id == task_id ) {

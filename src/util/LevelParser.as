@@ -99,7 +99,7 @@ package src.util {
                 
                 cRoom.setParametersFromXML(roomXML.@ * );
                 
-                cRoom.magic_bag.readXML(roomXML.drop);
+                cRoom.magic_bag.readDropXML(roomXML.drop);
                 
                 rooms[roomXML.@x][roomXML.@y] = cRoom;
             }
@@ -174,6 +174,9 @@ package src.util {
                     break;
                 case ActiveObjectCostume.STAIRWAY_TYPE:
                     obj = new StairwayExit();
+                    break;
+                case MagicBag.MAGIC_BAG_TYPE:
+                    obj = new MagicBag();
                     break;
                 default:
                     Output.add("object " +obj_name + " not found when creating taskobjects");
