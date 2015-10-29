@@ -84,7 +84,7 @@
           <frames>
             <DOMFrame index="0" duration="10" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/states/left" selected="true" centerPoint3DX="3.05" centerPoint3DY="-22.5">
+                <DOMSymbolInstance libraryItemName="_player/states/left" centerPoint3DX="3.05" centerPoint3DY="-22.5">
                   <matrix>
                     <Matrix a="1.656982421875" d="1.656982421875" tx="3.3" ty="-15.35"/>
                   </matrix>

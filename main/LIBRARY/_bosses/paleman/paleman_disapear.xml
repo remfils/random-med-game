@@ -1,0 +1,1027 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/paleman/paleman_disapear" itemID="56322b9f-000001d4" symbolType="graphic" lastModified="1446129798">
+  <timeline>
+    <DOMTimeline name="paleman_disapear">
+      <layers>
+        <DOMLayer name="рука2 левая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="-24.7" centerPoint3DY="9.5">
+                  <matrix>
+                    <Matrix a="0.399642944335938" b="0.916656494140625" c="0.62896728515625" d="-0.274215698242188" tx="-28.2" ty="11.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="-13.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="-24.7" centerPoint3DY="9.5">
+                  <matrix>
+                    <Matrix a="0.399642944335938" b="0.916656494140625" c="0.62896728515625" d="-0.274215698242188" tx="-28.2" ty="11.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="-13.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="-23.4" centerPoint3DY="14.45">
+                  <matrix>
+                    <Matrix a="0.0671234130859375" b="0.997726440429688" c="0.684585571289063" d="-0.046051025390625" tx="-27.5" ty="15.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="-20.6" centerPoint3DY="13.5">
+                  <matrix>
+                    <Matrix a="-0.128997802734375" b="0.991622924804688" c="0.680389404296875" d="0.0885162353515625" tx="-24.35" ty="13.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.1" y="-13.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="27" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="-23.05" centerPoint3DY="13.35">
+                  <matrix>
+                    <Matrix a="0.0671234130859375" b="0.997726440429688" c="0.684585571289063" d="-0.046051025390625" tx="-27.15" ty="14.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кисть правая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="-14.85" centerPoint3DY="5.2">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" tx="-15.25" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="-14.85" centerPoint3DY="5.2">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" tx="-15.25" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="-14.85" centerPoint3DY="12">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" tx="-15.25" ty="12.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="-10.75" centerPoint3DY="13.25">
+                  <matrix>
+                    <Matrix a="0.195266723632813" b="-0.980743408203125" c="0.980743408203125" d="0.195266723632813" tx="-11.7" ty="12.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="27" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="-14.5" centerPoint3DY="10.9">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" tx="-14.9" ty="11.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="тертадь" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#C2C2C2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!73 -186[80 -186 79 -152!79 -152[78 -126 82 -74!82 -74|78 45!78 45[79 80 77 153!77 153[73 251 65 262!65 262[51 279 -58 311!-58 311|-142 309!-142 309|-151 306!-151 306|-238 301!-238 301[-256 306 -265 293!-265 293[-280 282 -291 207!-291
+ 207[-296 170 -305 70!-305 70[-334 -117 -332 -150!-332 -150[-332 -170 -319 -178!-319 -178[-316 -180 -313 -179!-313 -179[-305 -183 -293 -185!-293 -185[-229 -189 -168 -196!-168 -196|-82 -194!-82 -194|-55 -197!-55 -197|63 -194!63 -194[71
+ -190 73 -186"/>
+                    <Edge cubics="!-305 70(;-305,60 -334,-117 -332,-150q-305 70Q-334 -117q-332 -150);"/>
+                    <Edge cubics="!-55 -197(;-55,-197 63,-194 63,-194p-55 -197q63 -194);"/>
+                    <Edge cubics="!-168 -196(;-168,-196 -82,-194 -82,-194q-168 -196 -82 -194);"/>
+                    <Edge cubics="!-82 -194(;-81,-194 -63,-197 -55,-197q-82 -194 -55 -197);"/>
+                    <Edge cubics="!82 -74(;82,-74 78,45 78,45q82 -74 78 45);"/>
+                    <Edge cubics="!78 45(;79,80 77,146 77,153q78 45Q79 80q77 153);"/>
+                    <Edge cubics="!77 153(;72,277 93,267 -58,311q77 153Q73 251q65 262Q51 279q-58 311);"/>
+                    <Edge cubics="!-58 311(;-58,311 -142,309 -142,309q-58 311 -142 309);"/>
+                    <Edge cubics="!-142 309(;-142,309 -151,306 -151,306q-142 309 -151 306);"/>
+                    <Edge cubics="!-151 306(;-151,306 -238,301 -238,301q-151 306 -238 301);"/>
+                    <Edge cubics="!79 -152(;78,-127 80,-100 82,-74q79 -152Q78 -126q82 -74);"/>
+                    <Edge cubics="!73 -186(;78,-186 80,-175 79,-152q73 -186Q80 -186q79 -152);"/>
+                    <Edge cubics="!63 -194(;68,-191 71,-189 73,-186q63 -194Q71 -190q73 -186);"/>
+                    <Edge cubics="!-293 -185(;-250,-188 -209,-191 -168,-196q-293 -185Q-229 -189q-168 -196);"/>
+                    <Edge cubics="!-313 -179(;-308,-182 -301,-184 -293,-185q-313 -179Q-305 -183q-293 -185);"/>
+                    <Edge cubics="!-319 -178(;-317,-179 -315,-180 -313,-179q-319 -178Q-316 -180q-313 -179)-313,-179;"/>
+                    <Edge cubics="!-332 -150(;-332,-163 -328,-173 -319,-178q-332 -150Q-332 -170q-319 -178);"/>
+                    <Edge cubics="!-265 293(;-276,285 -284,257 -291,207q-265 293Q-280 282q-291 207);"/>
+                    <Edge cubics="!-238 301(-238,301;-250,304 -259,302 -265,293q-238 301Q-256 306q-265 293);"/>
+                    <Edge cubics="!-291 207(-291,207;-295,182 -299,137 -305,70q-291 207Q-296 170q-305 70)-305,70;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="shape" keyMode="17922">
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="-1.296875, -0.5859375" startPointB="-1.296875, -0.0546875" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="0">
+                    <MorphCurves controlPointA="-1.296875, -0.6640625" anchorPointA="#FFFFFE.C1, -0.6953125" controlPointB="-1.296875, -0.1328125" anchorPointB="#FFFFFE.C1, -0.1640625"/>
+                    <MorphCurves controlPointA="-1.234375, -0.703125" anchorPointA="#FFFFFE.C7, #FFFFFF.4D" controlPointB="-1.234375, -0.171875" anchorPointB="#FFFFFE.C7, #FFFFFF.D5"/>
+                    <MorphCurves controlPointA="#FFFFFE.CF, #FFFFFF.49" anchorPointA="#FFFFFE.DB, #FFFFFF.47" controlPointB="#FFFFFE.CF, #FFFFFF.D1" anchorPointB="#FFFFFE.DB, #FFFFFF.CF"/>
+                    <MorphCurves controlPointA="#FFFFFF.1B, #FFFFFF.43" anchorPointA="-0.65625, -0.765625" controlPointB="#FFFFFF.1B, #FFFFFF.CB" anchorPointB="-0.65625, -0.234375"/>
+                    <MorphCurves controlPointA="#FFFFFF.83, #FFFFFF.3D" anchorPointA="-0.3203125, -0.7578125" controlPointB="#FFFFFF.83, #FFFFFF.C5" anchorPointB="-0.3203125, -0.2265625" isLine="true"/>
+                    <MorphCurves controlPointA="-0.265625, #FFFFFF.3D" anchorPointA="#FFFFFF.C9, #FFFFFF.3B" controlPointB="-0.265625, #FFFFFF.C5" anchorPointB="#FFFFFF.C9, #FFFFFF.C3" isLine="true"/>
+                    <MorphCurves controlPointA="#0.04, #FFFFFF.3D" anchorPointA="#0.3F, -0.7578125" controlPointB="#0.04, #FFFFFF.C5" anchorPointB="#0.3F, -0.2265625" isLine="true"/>
+                    <MorphCurves controlPointA="#0.47, -0.7421875" anchorPointA="#0.49, -0.7265625" controlPointB="#0.47, -0.2109375" anchorPointB="#0.49, -0.1953125"/>
+                    <MorphCurves controlPointA="#0.5, -0.7265625" anchorPointA="#0.4F, -0.59375" controlPointB="#0.5, -0.1953125" anchorPointB="#0.4F, -0.0625"/>
+                    <MorphCurves controlPointA="#0.4E, -0.4921875" anchorPointA="#0.52, -0.2890625" controlPointB="#0.4E, #0.0A" anchorPointB="#0.52, #0.3E"/>
+                    <MorphCurves controlPointA="#0.5, -0.0546875" anchorPointA="#0.4E, #0.2D" controlPointB="#0.5, #0.7A" anchorPointB="#0.4E, #0.B5" isLine="true"/>
+                    <MorphCurves controlPointA="#0.4F, #0.5" anchorPointA="#0.4D, #0.99" controlPointB="#0.4F, #0.D8" anchorPointB="#0.4D, #1.21"/>
+                    <MorphCurves controlPointA="#0.49, #0.FB" anchorPointA="#0.41, #1.06" controlPointB="#0.49, #1.83" anchorPointB="#0.41, #1.8E"/>
+                    <MorphCurves controlPointA="#0.33, #1.17" anchorPointA="-0.2265625, #1.37" controlPointB="#0.33, #1.9F" anchorPointB="-0.2265625, #1.BF"/>
+                    <MorphCurves controlPointA="-0.390625, #1.36" anchorPointA="-0.5546875, #1.35" controlPointB="-0.390625, #1.BE" anchorPointB="-0.5546875, #1.BD" isLine="true"/>
+                    <MorphCurves controlPointA="-0.5703125, #1.34" anchorPointA="#FFFFFF.69, #1.32" controlPointB="-0.5703125, #1.BC" anchorPointB="#FFFFFF.69, #1.BA" isLine="true"/>
+                    <MorphCurves controlPointA="-0.7578125, #1.3" anchorPointA="-0.9296875, #1.2D" controlPointB="-0.7578125, #1.B8" anchorPointB="-0.9296875, #1.B5" isLine="true"/>
+                    <MorphCurves controlPointA="-1, #1.32" anchorPointA="#FFFFFE.F7, #1.25" controlPointB="-1, #1.BA" anchorPointB="#FFFFFE.F7, #1.AD"/>
+                    <MorphCurves controlPointA="-1.09375, #1.1A" anchorPointA="#FFFFFE.DD, #0.CF" controlPointB="-1.09375, #1.A2" anchorPointB="#FFFFFE.DD, #1.57"/>
+                    <MorphCurves controlPointA="-1.15625, #0.AA" anchorPointA="#FFFFFE.CF, #0.46" controlPointB="-1.15625, #1.32" anchorPointB="#FFFFFE.CF, #0.CE"/>
+                    <MorphCurves controlPointA="-1.3046875, #FFFFFF.8B" anchorPointA="-1.296875, -0.5859375" controlPointB="-1.3046875, #0.13" anchorPointB="-1.296875, -0.0546875"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#C2C2C2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!79 -152[78 -126 82 -74!82 -74|78 45!78 45[79 80 77 153!77 153[73 251 65 262!65 262[51 279 -58 311!-58 311|-142 309!-142 309|-151 306!-151 306|-238 301!-238 301[-256 306 -265 293!-265 293[-280 282 -291 207!-291 207[-296 170 -305 70!-305
+ 70[-334 -117 -332 -150!-332 -150[-332 -170 -319 -178!-319 -178[-316 -180 -313 -179!-313 -179[-305 -183 -293 -185!-293 -185[-229 -189 -168 -196!-168 -196|-82 -194!-82 -194|-55 -197!-55 -197|63 -194!63 -194[71 -190 73 -186!73 -186[80 -186
+ 79 -152"/>
+                    <Edge cubics="!-305 70(;-305,60 -334,-117 -332,-150q-305 70Q-334 -117q-332 -150);"/>
+                    <Edge cubics="!-55 -197(;-55,-197 63,-194 63,-194p-55 -197q63 -194);"/>
+                    <Edge cubics="!-168 -196(;-168,-196 -82,-194 -82,-194q-168 -196 -82 -194);"/>
+                    <Edge cubics="!-82 -194(;-81,-194 -63,-197 -55,-197q-82 -194 -55 -197);"/>
+                    <Edge cubics="!82 -74(;82,-74 78,45 78,45q82 -74 78 45);"/>
+                    <Edge cubics="!78 45(;79,80 77,146 77,153q78 45Q79 80q77 153);"/>
+                    <Edge cubics="!77 153(;72,277 93,267 -58,311q77 153Q73 251q65 262Q51 279q-58 311);"/>
+                    <Edge cubics="!-58 311(;-58,311 -142,309 -142,309q-58 311 -142 309);"/>
+                    <Edge cubics="!-142 309(;-142,309 -151,306 -151,306q-142 309 -151 306);"/>
+                    <Edge cubics="!-151 306(;-151,306 -238,301 -238,301q-151 306 -238 301);"/>
+                    <Edge cubics="!79 -152(;78,-127 80,-100 82,-74q79 -152Q78 -126q82 -74);"/>
+                    <Edge cubics="!73 -186(;78,-186 80,-175 79,-152q73 -186Q80 -186q79 -152);"/>
+                    <Edge cubics="!63 -194(;68,-191 71,-189 73,-186q63 -194Q71 -190q73 -186);"/>
+                    <Edge cubics="!-293 -185(;-250,-188 -209,-191 -168,-196q-293 -185Q-229 -189q-168 -196);"/>
+                    <Edge cubics="!-313 -179(;-308,-182 -301,-184 -293,-185q-313 -179Q-305 -183q-293 -185);"/>
+                    <Edge cubics="!-319 -178(;-317,-179 -315,-180 -313,-179q-319 -178Q-316 -180q-313 -179)-313,-179;"/>
+                    <Edge cubics="!-332 -150(;-332,-163 -328,-173 -319,-178q-332 -150Q-332 -170q-319 -178);"/>
+                    <Edge cubics="!-265 293(;-276,285 -284,257 -291,207q-265 293Q-280 282q-291 207);"/>
+                    <Edge cubics="!-238 301(-238,301;-250,304 -259,302 -265,293q-238 301Q-256 306q-265 293);"/>
+                    <Edge cubics="!-291 207(-291,207;-295,182 -299,137 -305,70q-291 207Q-296 170q-305 70)-305,70;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#C2C2C2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!73 -50[80 -50 79 -16!79 -16[78 10 82 62!82 62|78 181!78 181[79 216 77 289!77 289[73 387 65 398!65 398[51 415 -58 447!-58 447|-142 445!-142 445|-151 442!-151 442|-238 437!-238 437[-256 442 -265 429!-265 429[-280 418 -291 343!-291 343
+[-296 306 -305 206!-305 206[-334 19 -332 -14!-332 -14[-332 -34 -319 -42!-319 -42[-316 -44 -313 -43!-313 -43[-305 -47 -293 -49!-293 -49[-229 -53 -168 -60!-168 -60|-82 -58!-82 -58|-55 -61!-55 -61|63 -58!63 -58[71 -54 73 -50"/>
+                    <Edge cubics="!-305 206(;-305,196 -334,19 -332,-14q-305 206Q-334 19q-332 -14);"/>
+                    <Edge cubics="!-55 -61(;-55,-61 63,-58 63,-58p-55 -61q63 -58);"/>
+                    <Edge cubics="!-168 -60(;-168,-60 -82,-58 -82,-58q-168 -60 -82 -58);"/>
+                    <Edge cubics="!-82 -58(;-81,-58 -63,-61 -55,-61q-82 -58 -55 -61);"/>
+                    <Edge cubics="!82 62(;82,62 78,181 78,181q82 62 78 181);"/>
+                    <Edge cubics="!78 181(;79,216 77,282 77,289q78 181Q79 216q77 289);"/>
+                    <Edge cubics="!77 289(;72,413 93,403 -58,447q77 289Q73 387q65 398Q51 415q-58 447);"/>
+                    <Edge cubics="!-58 447(;-58,447 -142,445 -142,445q-58 447 -142 445);"/>
+                    <Edge cubics="!-142 445(;-142,445 -151,442 -151,442q-142 445 -151 442);"/>
+                    <Edge cubics="!-151 442(;-151,442 -238,437 -238,437q-151 442 -238 437);"/>
+                    <Edge cubics="!79 -16(;78,9 80,36 82,62q79 -16Q78 10q82 62);"/>
+                    <Edge cubics="!73 -50(;78,-50 80,-39 79,-16q73 -50Q80 -50q79 -16);"/>
+                    <Edge cubics="!63 -58(;68,-55 71,-53 73,-50q63 -58Q71 -54q73 -50);"/>
+                    <Edge cubics="!-293 -49(;-250,-52 -209,-55 -168,-60q-293 -49Q-229 -53q-168 -60);"/>
+                    <Edge cubics="!-313 -43(;-308,-46 -301,-48 -293,-49q-313 -43Q-305 -47q-293 -49);"/>
+                    <Edge cubics="!-319 -42(;-317,-43 -315,-44 -313,-43q-319 -42Q-316 -44q-313 -43)-313,-43;"/>
+                    <Edge cubics="!-332 -14(;-332,-27 -328,-37 -319,-42q-332 -14Q-332 -34q-319 -42);"/>
+                    <Edge cubics="!-265 429(;-276,421 -284,393 -291,343q-265 429Q-280 418q-291 343);"/>
+                    <Edge cubics="!-238 437(-238,437;-250,440 -259,438 -265,429q-238 437Q-256 442q-265 429);"/>
+                    <Edge cubics="!-291 343(-291,343;-295,318 -299,273 -305,206q-291 343Q-296 306q-305 206)-305,206;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#C2C2C2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!182 153|156 270!156 270[150 303 134 375!134 375[111 470 100 479!100 479[83 492 -29 503!-29 503|-112 484!-112 484|-119 479!-119 479|-205 459!-205 459[-223 459 -229 445!-229 445[-241 432 -238 355!-238 355[-235 318 -225 218!-225 218[-217
+ 30 -209 -3!-209 -3[-205 -23 -190 -28!-190 -28[-186 -30 -184 -28!-184 -28[-176 -30 -163 -30!-163 -30[-99 -21 -38 -16!-38 -16|46 3!46 3|73 5!73 5|188 31!188 31[195 37 196 41!196 41[204 42 195 76!195 76[189 101 182 153"/>
+                    <Edge cubics="!-225 218(;-223,209 -217,30 -209,-3q-225 218Q-217 30q-209 -3);"/>
+                    <Edge cubics="!73 5(;73,5 188,31 188,31p73 5q188 31);"/>
+                    <Edge cubics="!-38 -16(;-38,-16 46,3 46,3q-38 -16 46 3);"/>
+                    <Edge cubics="!46 3(;46,3 64,3 73,5q46 3 73 5);"/>
+                    <Edge cubics="!182 153(;182,153 156,270 156,270q182 153 156 270);"/>
+                    <Edge cubics="!156 270(;150,303 135,368 134,375q156 270Q150 303q134 375);"/>
+                    <Edge cubics="!134 375(;104,496 127,490 -29,503q134 375Q111 470q100 479Q83 492q-29 503);"/>
+                    <Edge cubics="!-29 503(;-29,503 -112,484 -112,484q-29 503 -112 484);"/>
+                    <Edge cubics="!-112 484(;-112,484 -119,479 -119,479q-112 484 -119 479);"/>
+                    <Edge cubics="!-119 479(;-119,479 -205,459 -205,459q-119 479 -205 459);"/>
+                    <Edge cubics="!195 76(;189,100 187,127 182,153q195 76Q189 101q182 153);"/>
+                    <Edge cubics="!196 41(;201,42 201,53 195,76q196 41Q204 42q195 76);"/>
+                    <Edge cubics="!188 31(;192,35 194,38 196,41q188 31Q195 37q196 41);"/>
+                    <Edge cubics="!-163 -30(;-121,-24 -79,-20 -38,-16q-163 -30Q-99 -21q-38 -16);"/>
+                    <Edge cubics="!-184 -28(;-179,-30 -171,-30 -163,-30q-184 -28Q-176 -30q-163 -30);"/>
+                    <Edge cubics="!-190 -28(;-188,-28 -186,-29 -184,-28q-190 -28Q-186 -30q-184 -28)-184,-28;"/>
+                    <Edge cubics="!-209 -3(;-206,-15 -201,-24 -190,-28q-209 -3Q-205 -23q-190 -28);"/>
+                    <Edge cubics="!-229 445(;-238,435 -241,406 -238,355q-229 445Q-241 432q-238 355);"/>
+                    <Edge cubics="!-205 459(-205,459;-218,459 -225,455 -229,445q-205 459Q-223 459q-229 445);"/>
+                    <Edge cubics="!-238 355(-238,355;-236,330 -232,285 -225,218q-238 355Q-235 318q-225 218)-225,218;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="27" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#C2C2C2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!86 -38[85 -12 89 40!89 40|85 159!85 159[86 194 84 267!84 267[80 365 72 376!72 376[58 393 -51 425!-51 425|-135 423!-135 423|-144 420!-144 420|-231 415!-231 415[-249 420 -258 407!-258 407[-273 396 -284 321!-284 321[-289 284 -298 184!-298
+ 184[-327 -3 -325 -36!-325 -36[-325 -56 -312 -64!-312 -64[-309 -66 -306 -65!-306 -65[-298 -69 -286 -71!-286 -71[-222 -75 -161 -82!-161 -82|-75 -80!-75 -80|-48 -83!-48 -83|70 -80!70 -80[78 -76 80 -72!80 -72[87 -72 86 -38"/>
+                    <Edge cubics="!-298 184(;-298,174 -327,-3 -325,-36q-298 184Q-327 -3q-325 -36);"/>
+                    <Edge cubics="!-48 -83(;-48,-83 70,-80 70,-80p-48 -83q70 -80);"/>
+                    <Edge cubics="!-161 -82(;-161,-82 -75,-80 -75,-80q-161 -82 -75 -80);"/>
+                    <Edge cubics="!-75 -80(;-74,-80 -56,-83 -48,-83q-75 -80 -48 -83);"/>
+                    <Edge cubics="!89 40(;89,40 85,159 85,159q89 40 85 159);"/>
+                    <Edge cubics="!85 159(;86,194 84,260 84,267q85 159Q86 194q84 267);"/>
+                    <Edge cubics="!84 267(;79,391 100,381 -51,425q84 267Q80 365q72 376Q58 393q-51 425);"/>
+                    <Edge cubics="!-51 425(;-51,425 -135,423 -135,423q-51 425 -135 423);"/>
+                    <Edge cubics="!-135 423(;-135,423 -144,420 -144,420q-135 423 -144 420);"/>
+                    <Edge cubics="!-144 420(;-144,420 -231,415 -231,415q-144 420 -231 415);"/>
+                    <Edge cubics="!86 -38(;85,-13 87,14 89,40q86 -38Q85 -12q89 40);"/>
+                    <Edge cubics="!80 -72(;85,-72 87,-61 86,-38q80 -72Q87 -72q86 -38);"/>
+                    <Edge cubics="!70 -80(;75,-77 78,-75 80,-72q70 -80Q78 -76q80 -72);"/>
+                    <Edge cubics="!-286 -71(;-243,-74 -202,-77 -161,-82q-286 -71Q-222 -75q-161 -82);"/>
+                    <Edge cubics="!-306 -65(;-301,-68 -294,-70 -286,-71q-306 -65Q-298 -69q-286 -71);"/>
+                    <Edge cubics="!-312 -64(;-310,-65 -308,-66 -306,-65q-312 -64Q-309 -66q-306 -65)-306,-65;"/>
+                    <Edge cubics="!-325 -36(;-325,-49 -321,-59 -312,-64q-325 -36Q-325 -56q-312 -64);"/>
+                    <Edge cubics="!-258 407(;-269,399 -277,371 -284,321q-258 407Q-273 396q-284 321);"/>
+                    <Edge cubics="!-231 415(-231,415;-243,418 -252,416 -258,407q-231 415Q-249 420q-258 407);"/>
+                    <Edge cubics="!-284 321(-284,321;-288,296 -292,251 -298,184q-284 321Q-289 284q-298 184)-298,184;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="свет от планшета" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.03558349609375" d="0.03558349609375" tx="-2.95" ty="-6.8"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.4" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!510 -136[510 99 343 266!343 266[177 433 -59 433!-59 433[-294 433 -461 266!-461 266[-628 99 -628 -136!-628 -136[-628 -371 -461 -538!-461 -538[-294 -705 -59 -705!-59 -705[177 -705 343 -538!343 -538[510 -371 510 -136"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="shape" keyMode="17922">
+              <MorphShape>
+                <morphSegments>
+                  <MorphSegment startPointA="-2.453125, -0.53125" startPointB="-2.453125, #0.2D" strokeIndex1="0" strokeIndex2="0" fillIndex1="0" fillIndex2="1">
+                    <MorphCurves controlPointA="-2.453125, #FFFFFE.8D" anchorPointA="#FFFFFE.33, -2.1015625" controlPointB="-2.453125, -0.7421875" anchorPointB="#FFFFFE.33, #FFFFFE.9B"/>
+                    <MorphCurves controlPointA="-1.1484375, #FFFFFD.3F" anchorPointA="#FFFFFF.C5, #FFFFFD.3F" controlPointB="-1.1484375, -2.046875" anchorPointB="#FFFFFF.C5, -2.046875"/>
+                    <MorphCurves controlPointA="#0.B1, #FFFFFD.3F" anchorPointA="#1.57, -2.1015625" controlPointB="#0.B1, -2.046875" anchorPointB="#1.57, #FFFFFE.9B"/>
+                    <MorphCurves controlPointA="#1.FE, #FFFFFE.8D" anchorPointA="#1.FE, -0.53125" controlPointB="#1.FE, -0.7421875" anchorPointB="#1.FE, #0.2D"/>
+                    <MorphCurves controlPointA="#1.FE, #0.63" anchorPointA="#1.57, #1.0A" controlPointB="#1.FE, #1.18" anchorPointB="#1.57, #1.BF"/>
+                    <MorphCurves controlPointA="#0.B1, #1.B1" anchorPointA="#FFFFFF.C5, #1.B1" controlPointB="#0.B1, #2.66" anchorPointB="#FFFFFF.C5, #2.66"/>
+                    <MorphCurves controlPointA="-1.1484375, #1.B1" anchorPointA="#FFFFFE.33, #1.0A" controlPointB="-1.1484375, #2.66" anchorPointB="#FFFFFE.33, #1.BF"/>
+                    <MorphCurves controlPointA="-2.453125, #0.63" anchorPointA="-2.453125, -0.53125" controlPointB="-2.453125, #1.18" anchorPointB="-2.453125, #0.2D"/>
+                  </MorphSegment>
+                </morphSegments>
+                <morphHintsList/>
+              </MorphShape>
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.03558349609375" d="0.03558349609375" tx="-2.95" ty="-6.8"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0.4" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!510 -136[510 99 343 266!343 266[177 433 -59 433!-59 433[-294 433 -461 266!-461 266[-628 99 -628 -136!-628 -136[-628 -371 -461 -538!-461 -538[-294 -705 -59 -705!-59 -705[177 -705 343 -538!343 -538[510 -371 510 -136"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="31" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.03558349609375" d="0.03558349609375" tx="-2.95" ty="2.25"/>
+                        </matrix>
+                        <GradientEntry color="#FFFFFF" alpha="0" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" alpha="0" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!343 447[177 614 -59 614!-59 614[-294 614 -461 447!-461 447[-628 280 -628 45!-628 45[-628 -190 -461 -357!-461 -357[-294 -524 -59 -524!-59 -524[177 -524 343 -357!343 -357[510 -190 510 45!510 45[510 280 343 447"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="голова" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/голова/голова_disapear" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.6" ty="-33.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/голова/голова_disapear" selected="true" symbolType="graphic" firstFrame="4" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.6" ty="-33.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="31" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/голова/голова_disapear" symbolType="graphic" firstFrame="9" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.6" ty="-38.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="халат перед" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/тело" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2" ty="37.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/тело" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2" ty="37.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="31" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/тело" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2" ty="37.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука1 правая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="-34.5" centerPoint3DY="3.25">
+                  <matrix>
+                    <Matrix a="-0.915557861328125" b="-0.402206420898438" c="-0.402206420898438" d="0.915557861328125" tx="-34.8" ty="4.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="-34.5" centerPoint3DY="3.25">
+                  <matrix>
+                    <Matrix a="-0.915557861328125" b="-0.402206420898438" c="-0.402206420898438" d="0.915557861328125" tx="-34.8" ty="4.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="-33.65" centerPoint3DY="4.15">
+                  <matrix>
+                    <Matrix a="-0.939804077148438" b="-0.341751098632813" c="-0.341751098632813" d="0.939804077148438" tx="-34" ty="4.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="-31.8" centerPoint3DY="5.6">
+                  <matrix>
+                    <Matrix a="-0.981643676757813" b="-0.190826416015625" c="-0.169387817382813" d="0.871307373046875" tx="-31.7" ty="4.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="27" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="-33.75" centerPoint3DY="4.95">
+                  <matrix>
+                    <Matrix a="-0.939544677734375" b="-0.34246826171875" c="-0.34246826171875" d="0.939544677734375" tx="-34.05" ty="5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука2 левая" color="#0000FF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="28.45" centerPoint3DY="33.15">
+                  <matrix>
+                    <Matrix a="0.993682861328125" b="-0.112213134765625" c="0.112213134765625" d="0.993682861328125" tx="28.45" ty="33.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="28.45" centerPoint3DY="33.15">
+                  <matrix>
+                    <Matrix a="0.993682861328125" b="-0.112213134765625" c="0.112213134765625" d="0.993682861328125" tx="28.45" ty="33.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" selected="true" centerPoint3DX="28.45" centerPoint3DY="33.15">
+                  <matrix>
+                    <Matrix a="0.993682861328125" b="-0.112213134765625" c="0.112213134765625" d="0.993682861328125" tx="28.45" ty="33.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" selected="true" centerPoint3DX="28.45" centerPoint3DY="33.15">
+                  <matrix>
+                    <Matrix a="0.993682861328125" b="-0.112213134765625" c="0.112213134765625" d="0.993682861328125" tx="28.45" ty="33.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="41.6" centerPoint3DY="26.7">
+                  <matrix>
+                    <Matrix a="0.710830688476563" b="-0.701034545898438" c="0.652969360351563" d="0.662078857421875" tx="41.6" ty="26.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="54.45" centerPoint3DY="14.75">
+                  <matrix>
+                    <Matrix a="0.343170166015625" b="-0.93927001953125" c="0.810470581054688" d="0.296112060546875" tx="53.05" ty="14.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-13.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.3333" y="0.3333"/>
+                  <Point x="0.9736" y="0.3425"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="54.45" centerPoint3DY="14.75">
+                  <matrix>
+                    <Matrix a="0.343170166015625" b="-0.93927001953125" c="0.810470581054688" d="0.296112060546875" tx="53.05" ty="14.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="-13.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="40" centerPoint3DY="25.4">
+                  <matrix>
+                    <Matrix a="0.573654174804688" b="-0.8980712890625" c="0.479598999023438" d="0.306320190429688" tx="35.8" ty="22.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука1 левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="25.4" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix a="0.988449096679688" b="-0.15155029296875" c="0.15155029296875" d="0.988449096679688" tx="25.2" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="25.4" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix a="0.988449096679688" b="-0.15155029296875" c="0.15155029296875" d="0.988449096679688" tx="25.2" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" selected="true" centerPoint3DX="25.4" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix a="0.988449096679688" b="-0.15155029296875" c="0.15155029296875" d="0.988449096679688" tx="25.2" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" selected="true" centerPoint3DX="25.4" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix a="0.988449096679688" b="-0.15155029296875" c="0.15155029296875" d="0.988449096679688" tx="25.2" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="31.95" centerPoint3DY="0.85">
+                  <matrix>
+                    <Matrix a="0.708602905273438" b="-0.705596923828125" c="0.628158569335938" d="0.612884521484375" tx="31.7" ty="0.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.3333" y="0.3333"/>
+                  <Point x="0.9736" y="0.3425"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="31.95" centerPoint3DY="0.85">
+                  <matrix>
+                    <Matrix a="0.708602905273438" b="-0.705596923828125" c="0.628158569335938" d="0.612884521484375" tx="31.7" ty="0.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="25.1" centerPoint3DY="5.05">
+                  <matrix>
+                    <Matrix a="0.991058349609375" b="-0.133438110351563" c="0.133438110351563" d="0.991058349609375" tx="25" ty="5.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кисть левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="29.75" centerPoint3DY="50.2">
+                  <matrix>
+                    <Matrix tx="29.75" ty="50.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="29.75" centerPoint3DY="50.2">
+                  <matrix>
+                    <Matrix tx="29.75" ty="50.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" selected="true" centerPoint3DX="29.75" centerPoint3DY="50.2">
+                  <matrix>
+                    <Matrix tx="29.75" ty="50.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" selected="true" centerPoint3DX="29.75" centerPoint3DY="50.2">
+                  <matrix>
+                    <Matrix tx="29.75" ty="50.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="56.2" centerPoint3DY="38.45">
+                  <matrix>
+                    <Matrix a="0.785736083984375" b="-0.616012573242188" c="0.616012573242188" d="0.785736083984375" tx="56.2" ty="38.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" duration="3" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="68.7" centerPoint3DY="17.1">
+                  <matrix>
+                    <Matrix a="0.238601684570313" b="-0.971115112304688" c="0.971115112304688" d="0.238601684570313" tx="68.8" ty="17.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.3333" y="0.3333"/>
+                  <Point x="0.9736" y="0.3425"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="68.7" centerPoint3DY="17.1">
+                  <matrix>
+                    <Matrix a="0.238601684570313" b="-0.971115112304688" c="0.971115112304688" d="0.238601684570313" tx="68.8" ty="17.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="46.95" centerPoint3DY="29.05">
+                  <matrix>
+                    <Matrix a="0.238601684570313" b="-0.971115112304688" c="0.971115112304688" d="0.238601684570313" tx="47.05" ty="29"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="нога левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0000CC"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!438 1805|362 700!362 700|-97 722!-97 722|-536 701!-536 701|-584 1806!-584 1806|-110 1847!-110 1847|-87 1007!-87 1007|6 1858!6 1858|438 1805"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0000CC"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!438 1805|362 700!362 700|-97 722!-97 722|-536 701!-536 701|-584 1806!-584 1806|-110 1847!-110 1847|-87 1007!-87 1007|6 1858!6 1858|438 1805"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="31" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0000CC"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!438 1805|362 700!362 700|-97 722!-97 722|-536 701!-536 701|-584 1806!-584 1806|-110 1847!-110 1847|-87 1007!-87 1007|6 1858!6 1858|438 1805"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ботинок левый" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!369 1979[493 1979 527 1949!527 1949[538 1939 538 1908!538 1908[538 1844 425 1785!425 1785[329 1735 272 1735!272 1735[264 1735 247 1726!247 1726[230 1717 165 1717!165 1717[83 1717 37 1760!37 1760[6 1789 6 1812!6 1812[6 1863 72 1910!72
+ 1910[170 1979 369 1979"/>
+                    <Edge fillStyle1="1" edges="
+!-628 1908[-628 1844 -515 1785!-515 1785[-419 1735 -362 1735!-362 1735[-354 1735 -337 1726!-337 1726[-320 1717 -255 1717!-255 1717[-173 1717 -127 1760!-127 1760[-96 1789 -96 1812!-96 1812[-96 1863 -162 1910!-162 1910[-260 1979 -459 1979
+!-459 1979[-583 1979 -617 1949!-617 1949[-628 1939 -628 1908"/>
+                    <Edge cubics="!-362 1735(-362,1735;-327,1735 -366,1717 -255,1717q-362 1735Q-354 1735q-337 1726Q-320 1717q-255 1717)-255,1717;"/>
+                    <Edge cubics="!-255 1717(-255,1717;-126,1717 -96,1800 -96,1812q-255 1717Q-173 1717q-127 1760Q-96 1789q-96 1812)-96,1812;"/>
+                    <Edge cubics="!-96 1812(-96,1812;-96,1850 -151,1979 -459,1979q-96 1812Q-96 1863q-162 1910Q-260 1979q-459 1979)-459,1979;"/>
+                    <Edge cubics="!-459 1979(-459,1979;-655,1979 -628,1922 -628,1908q-459 1979Q-583 1979q-617 1949Q-628 1939q-628 1908)-628,1908;"/>
+                    <Edge cubics="!-628 1908(-628,1908;-628,1811 -416,1735 -362,1735q-628 1908Q-628 1844q-515 1785Q-419 1735q-362 1735)-362,1735;"/>
+                    <Edge cubics="!272 1735(272,1735;237,1735 276,1717 165,1717q272 1735Q264 1735q247 1726Q230 1717q165 1717)165,1717;"/>
+                    <Edge cubics="!165 1717(165,1717;36,1717 6,1800 6,1812q165 1717Q83 1717q37 1760Q6 1789q6 1812)6,1812;"/>
+                    <Edge cubics="!6 1812(6,1812;6,1850 61,1979 369,1979q6 1812Q6 1863q72 1910Q170 1979q369 1979)369,1979;"/>
+                    <Edge cubics="!369 1979(369,1979;565,1979 538,1922 538,1908q369 1979Q493 1979q527 1949Q538 1939q538 1908)538,1908;"/>
+                    <Edge cubics="!538 1908(538,1908;538,1811 326,1735 272,1735q538 1908Q538 1844q425 1785Q329 1735q272 1735)272,1735;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!369 1979[493 1979 527 1949!527 1949[538 1939 538 1908!538 1908[538 1844 425 1785!425 1785[329 1735 272 1735!272 1735[264 1735 247 1726!247 1726[230 1717 165 1717!165 1717[83 1717 37 1760!37 1760[6 1789 6 1812!6 1812[6 1863 72 1910!72
+ 1910[170 1979 369 1979"/>
+                    <Edge fillStyle1="1" edges="
+!-628 1908[-628 1844 -515 1785!-515 1785[-419 1735 -362 1735!-362 1735[-354 1735 -337 1726!-337 1726[-320 1717 -255 1717!-255 1717[-173 1717 -127 1760!-127 1760[-96 1789 -96 1812!-96 1812[-96 1863 -162 1910!-162 1910[-260 1979 -459 1979
+!-459 1979[-583 1979 -617 1949!-617 1949[-628 1939 -628 1908"/>
+                    <Edge cubics="!-362 1735(-362,1735;-327,1735 -366,1717 -255,1717q-362 1735Q-354 1735q-337 1726Q-320 1717q-255 1717)-255,1717;"/>
+                    <Edge cubics="!-255 1717(-255,1717;-126,1717 -96,1800 -96,1812q-255 1717Q-173 1717q-127 1760Q-96 1789q-96 1812)-96,1812;"/>
+                    <Edge cubics="!-96 1812(-96,1812;-96,1850 -151,1979 -459,1979q-96 1812Q-96 1863q-162 1910Q-260 1979q-459 1979)-459,1979;"/>
+                    <Edge cubics="!-459 1979(-459,1979;-655,1979 -628,1922 -628,1908q-459 1979Q-583 1979q-617 1949Q-628 1939q-628 1908)-628,1908;"/>
+                    <Edge cubics="!-628 1908(-628,1908;-628,1811 -416,1735 -362,1735q-628 1908Q-628 1844q-515 1785Q-419 1735q-362 1735)-362,1735;"/>
+                    <Edge cubics="!272 1735(272,1735;237,1735 276,1717 165,1717q272 1735Q264 1735q247 1726Q230 1717q165 1717)165,1717;"/>
+                    <Edge cubics="!165 1717(165,1717;36,1717 6,1800 6,1812q165 1717Q83 1717q37 1760Q6 1789q6 1812)6,1812;"/>
+                    <Edge cubics="!6 1812(6,1812;6,1850 61,1979 369,1979q6 1812Q6 1863q72 1910Q170 1979q369 1979)369,1979;"/>
+                    <Edge cubics="!369 1979(369,1979;565,1979 538,1922 538,1908q369 1979Q493 1979q527 1949Q538 1939q538 1908)538,1908;"/>
+                    <Edge cubics="!538 1908(538,1908;538,1811 326,1735 272,1735q538 1908Q538 1844q425 1785Q329 1735q272 1735)272,1735;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="31" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!369 1979[493 1979 527 1949!527 1949[538 1939 538 1908!538 1908[538 1844 425 1785!425 1785[329 1735 272 1735!272 1735[264 1735 247 1726!247 1726[230 1717 165 1717!165 1717[83 1717 37 1760!37 1760[6 1789 6 1812!6 1812[6 1863 72 1910!72
+ 1910[170 1979 369 1979"/>
+                    <Edge fillStyle1="1" edges="
+!-628 1908[-628 1844 -515 1785!-515 1785[-419 1735 -362 1735!-362 1735[-354 1735 -337 1726!-337 1726[-320 1717 -255 1717!-255 1717[-173 1717 -127 1760!-127 1760[-96 1789 -96 1812!-96 1812[-96 1863 -162 1910!-162 1910[-260 1979 -459 1979
+!-459 1979[-583 1979 -617 1949!-617 1949[-628 1939 -628 1908"/>
+                    <Edge cubics="!-362 1735(-362,1735;-327,1735 -366,1717 -255,1717q-362 1735Q-354 1735q-337 1726Q-320 1717q-255 1717)-255,1717;"/>
+                    <Edge cubics="!-255 1717(-255,1717;-126,1717 -96,1800 -96,1812q-255 1717Q-173 1717q-127 1760Q-96 1789q-96 1812)-96,1812;"/>
+                    <Edge cubics="!-96 1812(-96,1812;-96,1850 -151,1979 -459,1979q-96 1812Q-96 1863q-162 1910Q-260 1979q-459 1979)-459,1979;"/>
+                    <Edge cubics="!-459 1979(-459,1979;-655,1979 -628,1922 -628,1908q-459 1979Q-583 1979q-617 1949Q-628 1939q-628 1908)-628,1908;"/>
+                    <Edge cubics="!-628 1908(-628,1908;-628,1811 -416,1735 -362,1735q-628 1908Q-628 1844q-515 1785Q-419 1735q-362 1735)-362,1735;"/>
+                    <Edge cubics="!272 1735(272,1735;237,1735 276,1717 165,1717q272 1735Q264 1735q247 1726Q230 1717q165 1717)165,1717;"/>
+                    <Edge cubics="!165 1717(165,1717;36,1717 6,1800 6,1812q165 1717Q83 1717q37 1760Q6 1789q6 1812)6,1812;"/>
+                    <Edge cubics="!6 1812(6,1812;6,1850 61,1979 369,1979q6 1812Q6 1863q72 1910Q170 1979q369 1979)369,1979;"/>
+                    <Edge cubics="!369 1979(369,1979;565,1979 538,1922 538,1908q369 1979Q493 1979q527 1949Q538 1939q538 1908)538,1908;"/>
+                    <Edge cubics="!538 1908(538,1908;538,1811 326,1735 272,1735q538 1908Q538 1844q425 1785Q329 1735q272 1735)272,1735;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

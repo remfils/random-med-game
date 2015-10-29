@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1441610206" lastUniqueIdentifier="5">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1446133305" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="DecorObject" currentFrame="192">
+    <DOMTimeline name="DecorObject" currentFrame="199">
       <layers>
         <DOMLayer name="label" color="#9933CC" autoNamed="false">
           <frames>
@@ -37,7 +37,10 @@
             <DOMFrame index="159" duration="19" name="WindowHole" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="178" duration="48" name="EntryBanner" labelType="name" keyMode="9728">
+            <DOMFrame index="178" duration="14" name="EntryBanner" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="192" duration="63" name="Paleman" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -47,7 +50,7 @@
             <DOMFrame index="0" duration="111" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="111" duration="115" keyMode="9728">
+            <DOMFrame index="111" duration="144" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
@@ -181,8 +184,17 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="192" duration="34" keyMode="9728">
-              <elements/>
+            <DOMFrame index="192" duration="63" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/Paleman_disappear" symbolType="graphic" loop="play once">
+                  <matrix>
+                    <Matrix a="1.1195068359375" d="1.1195068359375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.3" y="-50.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

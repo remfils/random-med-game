@@ -36,7 +36,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/obstacles/_box/box_top" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix a="1.16535949707031" b="-0.2144775390625" c="0.2144775390625" d="1.16535949707031" tx="-0.4" ty="-19.7"/>
+                    <Matrix a="1.16534423828125" b="-0.2144775390625" c="0.2144775390625" d="1.16534423828125" tx="-0.4" ty="-19.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point y="-0.1"/>

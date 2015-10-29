@@ -983,7 +983,7 @@
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.69183349609375" b="-0.453323364257813" c="0.453323364257813" d="1.69183349609375" tx="-10.2" ty="-30.55"/>
                   </matrix>
@@ -995,7 +995,7 @@
             </DOMFrame>
             <DOMFrame index="9" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="2.84159851074219" b="-0.5135498046875" c="0.311492919921875" d="1.72357177734375" tx="-7.55" ty="-30.85"/>
                   </matrix>
@@ -1007,7 +1007,7 @@
             </DOMFrame>
             <DOMFrame index="10" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="3.33209228515625" b="0.496688842773438" c="-0.258224487304688" d="1.73236083984375" tx="1.95" ty="-29.4"/>
                   </matrix>
@@ -1019,7 +1019,7 @@
             </DOMFrame>
             <DOMFrame index="11" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.5433349609375" b="0.828216552734375" c="-0.828216552734375" d="1.5433349609375" tx="10.6" ty="-26"/>
                   </matrix>
@@ -1031,7 +1031,7 @@
             </DOMFrame>
             <DOMFrame index="13" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.383544921875" b="0.788162231445313" c="-0.86700439453125" d="1.52189636230469" tx="11.45" ty="-25.5"/>
                   </matrix>
@@ -1043,7 +1043,7 @@
             </DOMFrame>
             <DOMFrame index="14" duration="5" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.5433349609375" b="0.828216552734375" c="-0.828216552734375" d="1.5433349609375" tx="10.6" ty="-26"/>
                   </matrix>
@@ -1055,7 +1055,7 @@
             </DOMFrame>
             <DOMFrame index="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" selected="true" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="2.03843688964844" b="-0.3599853515625" c="0.304595947265625" d="1.72482299804688" tx="-7.5" ty="-30.85"/>
                   </matrix>
@@ -1067,7 +1067,7 @@
             </DOMFrame>
             <DOMFrame index="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.97872924804688" b="0.313079833984375" c="-0.273712158203125" d="1.72998046875" tx="4.35" ty="-28.6"/>
                   </matrix>
@@ -1079,7 +1079,7 @@
             </DOMFrame>
             <DOMFrame index="21" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_player/parts/ручка" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="1.9444580078125" b="0.482147216796875" c="-0.421524047851563" d="1.70001220703125" tx="5.5" ty="-28.6"/>
                   </matrix>

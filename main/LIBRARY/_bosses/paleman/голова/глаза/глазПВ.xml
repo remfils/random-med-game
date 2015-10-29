@@ -1,0 +1,80 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/paleman/голова/глаза/глазПВ" itemID="509fb95c-00000387" symbolType="graphic" lastModified="1352644959">
+  <timeline>
+    <DOMTimeline name="глазПВ">
+      <layers>
+        <DOMLayer name="морщины" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EEB84C"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!35 92[-6 121 -26 121!-26 121[-71 121 -71 114!-71 114[-10 112 24 90!24 90[54 65 74 58!74 58[70 66 35 92!68 81[49 105 -14 172!-14 172|-23 171!-23 171[-7 151 24 119!24 119[59 84 68 81"/>
+                    <Edge cubics="!74 58(;71,65 5,121 -26,121q74 58Q70 66q35 92Q-6 121q-26 121);"/>
+                    <Edge cubics="!-26 121(;-41,121 -71,120 -71,114q-26 121Q-71 121q-71 114);"/>
+                    <Edge cubics="!-71 114(;30,111 34,72 74,58q-71 114Q-10 112q24 90Q54 65q74 58);"/>
+                    <Edge cubics="!68 81(68,81;51,103 4,153 -14,172q68 81Q49 105q-14 172);"/>
+                    <Edge cubics="!-14 172(;-14,172 -23,171 -23,171q-14 172 -23 171);"/>
+                    <Edge cubics="!-23 171(;-5,148 55,85 68,81q-23 171Q-7 151q24 119Q59 84q68 81);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="зрачок" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!17 -69[30 -69 32 -55!32 -55[32 -50 28 -46!28 -46[24 -40 18 -40!18 -40[0 -40 0 -59!0 -59[0 -62 5 -66!5 -66[10 -69 17 -69"/>
+                    <Edge cubics="!17 -69(;30,-69 32,-55 32,-55q17 -69Q30 -69q32 -55);"/>
+                    <Edge cubics="!32 -55(;32,-50 28,-40 18,-40q32 -55Q32 -50q28 -46Q24 -40q18 -40);"/>
+                    <Edge cubics="!18 -40(;0,-40 0,-59 0,-59q18 -40Q0 -40q0 -59);"/>
+                    <Edge cubics="!0 -59(0,-59;0,-63 7,-69 17,-69q0 -59Q0 -62q5 -66Q10 -69q17 -69);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="белок" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!73 -127[104 -96 104 -53!104 -53[104 -10 73 20!73 20[43 51 0 51!0 51[-43 51 -73 20!-73 20[-104 -10 -104 -53!-104 -53[-104 -96 -73 -127!-73 -127[-43 -157 0 -157!0 -157[43 -157 73 -127"/>
+                    <Edge cubics="!-73 -127(;-53,-147 -29,-157 0,-157q-73 -127Q-43 -157q0 -157);"/>
+                    <Edge cubics="!0 -157(;29,-157 53,-147 73,-127q0 -157Q43 -157q73 -127);"/>
+                    <Edge cubics="!104 -53(;104,-24 94,0 73,20q104 -53Q104 -10q73 20);"/>
+                    <Edge cubics="!73 20(;53,40 29,51 0,51q73 20Q43 51q0 51);"/>
+                    <Edge cubics="!0 51(;-29,51 -53,40 -73,20q0 51Q-43 51q-73 20);"/>
+                    <Edge cubics="!-73 20(-73,20;-94,0 -104,-24 -104,-53q-73 20Q-104 -10q-104 -53);"/>
+                    <Edge cubics="!-104 -53(;-104,-82 -94,-107 -73,-127q-104 -53Q-104 -96q-73 -127);"/>
+                    <Edge cubics="!73 -127(;94,-107 104,-82 104,-53q73 -127Q104 -96q104 -53);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

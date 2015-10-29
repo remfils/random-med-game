@@ -1,0 +1,246 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/paleman/ПейлманВ" itemID="509fb3d0-000001ce" symbolType="graphic" lastModified="1373826900">
+  <timeline>
+    <DOMTimeline name="ПейлманВ">
+      <layers>
+        <DOMLayer name="рукаП" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-355 -482|-416 1841!-416 1841|-721 1846!-721 1846|-476 -447!-476 -447|-355 -482"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кистьП" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFCC66"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-379 1921[-379 1975 -406 2020!-406 2020[-449 2093 -545 2093!-545 2093[-660 2093 -702 2018!-702 2018[-715 1994 -719 1965!-719 1965[-721 1940 -721 1939!-721 1939[-721 1870 -668 1826!-668 1826[-619 1786 -550 1782!-550 1782[-480 1778 -432
+ 1813!-432 1813[-379 1851 -379 1921"/>
+                    <Edge cubics="!-379 1921(;-379,1956 -395,2093 -545,2093q-379 1921Q-379 1975q-406 2020Q-449 2093q-545 2093);"/>
+                    <Edge cubics="!-545 2093(;-728,2093 -721,1944 -721,1939q-545 2093Q-660 2093q-702 2018Q-715 1994q-719 1965Q-721 1940q-721 1939);"/>
+                    <Edge cubics="!-721 1939(;-721,1743 -379,1723 -379,1921q-721 1939Q-721 1870q-668 1826Q-619 1786q-550 1782Q-480 1778q-432 1813Q-379 1851q-379 1921);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рукаЛ" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!1021 -456|1239 1744!1239 1744|948 1702!948 1702|794 -525!794 -525|1021 -456"/>
+                    <Edge cubics="!948 1702(948,1702;948,1702 820,-157 820,-157q948 1702 820 -157);"/>
+                    <Edge cubics="!820 -157(;820,-157 794,-525 794,-525q820 -157 794 -525);"/>
+                    <Edge cubics="!794 -525(;794,-525 1021,-456 1021,-456q794 -525 1021 -456);"/>
+                    <Edge cubics="!1239 1744(1239,1744;1239,1744 948,1702 948,1702q1239 1744 948 1702);"/>
+                    <Edge cubics="!1021 -456(;1021,-456 1051,-157 1051,-157q1021 -456 1051 -157);"/>
+                    <Edge cubics="!1051 -157(;1051,-157 1239,1744 1239,1744q1051 -157 1239 1744);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кистьЛ" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFCC66"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!1073 1664[1143 1660 1191 1695!1191 1695[1244 1733 1244 1803!1244 1803[1244 1857 1217 1902!1217 1902[1174 1975 1078 1975!1078 1975[963 1975 921 1900!921 1900[908 1876 904 1847!904 1847[902 1822 902 1821!902 1821[902 1752 955 1708!955
+ 1708[1004 1668 1073 1664"/>
+                    <Edge cubics="!1244 1803(;1244,1838 1228,1975 1078,1975q1244 1803Q1244 1857q1217 1902Q1174 1975q1078 1975);"/>
+                    <Edge cubics="!1078 1975(;895,1975 902,1826 902,1821q1078 1975Q963 1975q921 1900Q908 1876q904 1847Q902 1822q902 1821);"/>
+                    <Edge cubics="!902 1821(;902,1625 1244,1605 1244,1803q902 1821Q902 1752q955 1708Q1004 1668q1073 1664Q1143 1660q1191 1695Q1244 1733q1244 1803);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="халатЛ" color="#FF0000" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/халат/халатЛВ" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="37.15" ty="69.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="халатП" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/халат/халатЛВ" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.913497924804688" tx="-11.8" ty="70.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="голова" color="#00FF00" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/голова/головаВ" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="5.55" ty="-61.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="шея" color="#00FF00" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/голова/шея/шеяА" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.995803833007813" b="0.0915069580078125" c="-0.0915069580078125" d="0.995803833007813" tx="11.75" ty="-35.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ногаЛ" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0000CC"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!924 1771|927 3633!927 3633|419 3634!419 3634|262 1786!262 1786|924 1771"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ботинокЛ" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/ботинки/ботинокА" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.911956787109375" tx="35.25" ty="185.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="тело" color="#00FF00" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/телоВ" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="9.85" ty="23.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ногаП" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0000CC"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!243 3618|-275 3618!-275 3618|-528 1556!-528 1556|341 1828!341 1828|243 3618"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ботинокП" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/ботинки/ботинокА" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.1" ty="184.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

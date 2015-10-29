@@ -137,7 +137,7 @@
           <frames>
             <DOMFrame index="0" duration="19" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/ErrorScreen_gr" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/MenuBG/ErrorScreen_gr" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="0.2" y="314.3"/>
                   </transformationPoint>
@@ -146,7 +146,7 @@
             </DOMFrame>
             <DOMFrame index="19" duration="37" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/GameMenuBG_gr" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_GUI/MenuBG/GameMenuBG_gr" symbolType="graphic" loop="single frame">
                   <transformationPoint>
                     <Point x="0.2" y="314.3"/>
                   </transformationPoint>
@@ -155,7 +155,7 @@
             </DOMFrame>
             <DOMFrame index="56" duration="23" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/GameMenuBG_gr" symbolType="graphic" firstFrame="1" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_GUI/MenuBG/GameMenuBG_gr" symbolType="graphic" firstFrame="1" loop="single frame">
                   <transformationPoint>
                     <Point x="0.2" y="314.3"/>
                   </transformationPoint>
@@ -164,7 +164,7 @@
             </DOMFrame>
             <DOMFrame index="79" duration="21" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="LetterMenu" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/MenuBG/LetterMenu" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="-263.15" ty="123.3"/>
                   </matrix>

@@ -15,6 +15,7 @@ package src.util {
     import src.objects.Door;
     import src.objects.Letter;
     import src.objects.Obstacle;
+    import src.objects.PalemanDisappear;
     import src.objects.StairwayExit;
     import src.objects.TaskDoorLock;
     import src.objects.TaskExplosiveLever;
@@ -68,6 +69,8 @@ package src.util {
                     rooms[roomXML.@x] = new Array();
                 }
                 
+                cRoom.setParametersFromXML(roomXML.@ * );
+                
                 if ( roomXML.@first_level == "true" ) {
                     trace(roomXML);
                     game.player.currentRoom.x = roomXML.@x;
@@ -97,8 +100,6 @@ package src.util {
                 addEnemiesToRoom(cRoom, roomXML.enemies);
                 
                 // addDropsToRoom(cRoom, roomXML.drop);
-                
-                cRoom.setParametersFromXML(roomXML.@ * );
                 
                 //cRoom.magic_bag.readDropXML(roomXML.drop);
                 cRoom.setDropFromXML(roomXML.drop);
@@ -182,6 +183,9 @@ package src.util {
                     break;
                 case MagicBag.MAGIC_BAG_TYPE:
                     obj = new MagicBag();
+                    break;
+                case DecorCostume.PALEMAN_TYPE:
+                    obj = new PalemanDisappear();
                     break;
                 default:
                     Output.add("object " +obj_name + " not found when creating taskobjects");

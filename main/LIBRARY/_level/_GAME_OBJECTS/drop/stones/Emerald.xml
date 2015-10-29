@@ -75,40 +75,42 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="6" edges="
-!-1039 -447|1039 -447"/>
-                    <Edge fillStyle1="5" edges="
-!1039 -447|1638 208!1638 208|1638 492"/>
-                    <Edge fillStyle1="4" edges="
-!1638 492|1182 750"/>
-                    <Edge fillStyle1="2" edges="
-!1182 750|-1182 750"/>
-                    <Edge fillStyle1="4" edges="
-!-1182 750|-1638 492"/>
-                    <Edge fillStyle1="5" edges="
-!-1638 492|-1638 208!-1638 208|-1039 -447"/>
-                    <Edge fillStyle0="2" fillStyle1="4" edges="
-!1182 750|1345 511"/>
-                    <Edge fillStyle0="2" fillStyle1="3" edges="
-!1345 511|-1345 511"/>
-                    <Edge fillStyle0="2" fillStyle1="4" edges="
-!-1345 511|-1182 750"/>
-                    <Edge fillStyle0="3" fillStyle1="1" edges="
-!1345 511|1292 155"/>
-                    <Edge fillStyle0="3" fillStyle1="6" edges="
-!1292 155|0 167!0 167|-1292 155"/>
                     <Edge fillStyle0="3" fillStyle1="1" edges="
 !-1292 155|-1345 511"/>
-                    <Edge fillStyle0="1" fillStyle1="5" edges="
-!1638 492|1292 155"/>
+                    <Edge fillStyle0="2" fillStyle1="4" edges="
+!-1345 511|-1182 750"/>
+                    <Edge fillStyle1="4" edges="
+!-1182 750|-1638 492"/>
+                    <Edge fillStyle0="5" fillStyle1="1" edges="
+!-1638 492|-1292 155"/>
+                    <Edge fillStyle1="5" edges="
+!-1638 492|-1638 208!-1638 208|-1039 -447"/>
+                    <Edge fillStyle1="6" edges="
+!-1039 -447|1039 -447"/>
+                    <Edge fillStyle0="5" fillStyle1="6" edges="
+!1039 -447|1292 155"/>
+                    <Edge fillStyle0="5" fillStyle1="1" edges="
+!1292 155|1638 492"/>
+                    <Edge fillStyle1="4" edges="
+!1638 492|1182 750"/>
+                    <Edge fillStyle0="2" fillStyle1="4" edges="
+!1182 750|1345 511"/>
                     <Edge fillStyle0="1" fillStyle1="4" edges="
 !1345 511|1638 492"/>
                     <Edge fillStyle0="4" fillStyle1="1" edges="
 !-1345 511|-1638 492"/>
-                    <Edge fillStyle0="5" fillStyle1="1" edges="
-!-1638 492|-1292 155"/>
+                    <Edge fillStyle1="5" edges="
+!1039 -447|1638 208!1638 208|1638 492"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="
+!1345 511|1292 155"/>
+                    <Edge fillStyle0="3" fillStyle1="6" edges="
+!1292 155|0 167!0 167|-1292 155"/>
                     <Edge fillStyle0="5" fillStyle1="6" edges="
-!-1292 155|-1039 -447!1039 -447|1292 155"/>
+!-1292 155|-1039 -447"/>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="
+!1345 511|-1345 511"/>
+                    <Edge fillStyle1="2" edges="
+!1182 750|-1182 750"/>
                   </edges>
                 </DOMShape>
               </elements>

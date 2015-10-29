@@ -11,6 +11,7 @@
     import src.costumes.Costume;
     import src.costumes.ObjectCostume;
     import src.enemy.*;
+    import src.interfaces.Init;
     import src.interfaces.Updatable;
     import src.interfaces.Update;
     import src.objects.*;
@@ -51,6 +52,7 @@
         var _gameObjects:Array = new Array();
         var _updates:Vector.<Update>;
         var _enemies:Array = new Array();
+        var _objects_to_init:Vector.<Init>;
         
         var _abstract_objects:Vector.<AbstractObject>;
         
@@ -81,6 +83,7 @@
             addDoors();
             
             magic_bag = new MagicBag();
+            _objects_to_init = new Vector.<Init>();
             _updates = new Vector.<Update>();
             
             drops = new Vector.<MagicBag>();
@@ -197,6 +200,10 @@
                 _updates.push(obj);
             }
             
+            if ( obj is Init ) {
+                _objects_to_init.push(obj);
+            }
+            
             if ( obj is AbstractObject ) {
                 var a_o:AbstractObject = AbstractObject(obj);
                 
@@ -227,6 +234,30 @@
             }
         }
         
+        public function setParametersFromXML (paramsXML:XMLList):void {
+            var param:String = paramsXML.(name() == "type").toString();
+            
+            switch ( param ) {
+                case "start_room":
+                    gotoAndStop("start_room");
+                break;
+                case "secret_room":
+                    gotoAndStop("secret_room");
+                    isSecret = true;
+                    for each (var door:Door in _doors) {
+                        door.setType(Door.DOOR_SECRET_TYPE);
+                    }
+                break;
+                case "end_room" :
+                    gotoAndStop("end_room");
+                break;
+                default:
+                    gotoAndStop("normal_room");
+            }
+            
+            setChildIndex(gameObjectPanel, numChildren-1);
+        }
+        
         public function init():void {
             playerBody.SetAwake(false);
             playerBody.SetPosition(new b2Vec2(_player.x / Game.WORLD_SCALE, _player.y / Game.WORLD_SCALE));
@@ -243,6 +274,12 @@
             
             if ( hasTask() ) {
                 lock();
+            }
+            
+            var obj:Init;
+            while ( _objects_to_init.length ) {
+                obj = _objects_to_init.pop();
+                obj.init();
             }
         }
         
@@ -425,30 +462,6 @@
                 bag.readDropXML(dropXML);
                 drops.push(bag);
             }
-        }
-        
-        public function setParametersFromXML (paramsXML:XMLList):void {
-            var param:String = paramsXML.(name() == "type").toString();
-            
-            switch ( param ) {
-                case "start_room":
-                    gotoAndStop("start_room");
-                break;
-                case "secret_room":
-                    gotoAndStop("secret_room");
-                    isSecret = true;
-                    for each (var door:Door in _doors) {
-                        door.setType(Door.DOOR_SECRET_TYPE);
-                    }
-                break;
-                case "end_room" :
-                    gotoAndStop("end_room");
-                break;
-                default:
-                    gotoAndStop("normal_room");
-            }
-            
-            setChildIndex(gameObjectPanel, numChildren-1);
         }
         
         public function assignTask(task:Task) {

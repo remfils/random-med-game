@@ -1,0 +1,236 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/levers/Lever_barbie_size" itemID="56322c57-00000288" symbolType="graphic" lastModified="1446129851" lastUniqueIdentifier="9">
+  <timeline>
+    <DOMTimeline name="Lever_barbie_size" currentFrame="21">
+      <layers>
+        <DOMLayer name="Layer 5" color="#4FFFFF">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/_graph/шестеренка" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.16131591796875" d="0.16131591796875" tx="0.15" ty="-1.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#FF4FFF">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.301960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!104 -28[100 -28 98 -34!98 -34[97 -38 97 -41!97 -41[97 -54 105 -54!105 -54[114 -53 114 -44!114 -44[114 -41 112 -35!112 -35[108 -28 104 -28!129 -92[138 -61 155 45!155 45[155 49 152 50!152 50[150 51 130 53!130 53|126 53!126 53|125 52!125
+ 52|107 52!107 52[104 51 104 48!104 48[104 44 105 43!105 43|142 43!142 43|149 45!149 45|151 44!151 44[146 17 139 -24!139 -24[131 -72 128 -92!128 -92|129 -92!85 17[82 27 78 27!78 27[72 27 71 22!71 22[70 20 70 17!70 17[70 6 78 4!78 4[85
+ 3 85 17!-112 -34[-114 -34 -115 -38!-115 -38[-116 -41 -116 -43!-116 -43[-116 -46 -115 -47!-115 -47[-112 -51 -111 -52!-111 -52[-107 -51 -107 -43!-107 -43[-107 -34 -112 -34!-128 39[-128 44 -131 51!-131 51|-134 51!-134 51[-139 49 -139 43
+!-139 43[-139 34 -132 34!-132 34[-128 34 -128 39"/>
+                    <Edge cubics="!129 -92(;138,-61 155,40 155,45q129 -92Q138 -61q155 45);"/>
+                    <Edge cubics="!155 45(155,45;155,51 154,50 130,53q155 45Q155 49q152 50Q150 51q130 53);"/>
+                    <Edge cubics="!130 53(;130,53 126,53 126,53q130 53 126 53);"/>
+                    <Edge cubics="!126 53(;126,53 125,52 125,52q126 53 125 52);"/>
+                    <Edge cubics="!125 52(;125,52 107,52 107,52q125 52 107 52);"/>
+                    <Edge cubics="!107 52(107,52;103,51 104,49 104,48q107 52Q104 51q104 48);"/>
+                    <Edge cubics="!104 48(104,48;104,47 103,44 105,43q104 48Q104 44q105 43);"/>
+                    <Edge cubics="!105 43(;105,43 142,43 142,43q105 43 142 43);"/>
+                    <Edge cubics="!142 43(;146,44 149,44 149,45q142 43Q149 45q149 45);"/>
+                    <Edge cubics="!149 45(;149,45 151,44 151,44q149 45 151 44);"/>
+                    <Edge cubics="!151 44(151,44;141,-6 136,-43 128,-92q151 44Q146 17q139 -24Q131 -72q128 -92);"/>
+                    <Edge cubics="!128 -92(128,-92;128,-92 129,-92 129,-92q128 -92 129 -92);"/>
+                    <Edge cubics="!114 -44(;114,-42 111,-28 104,-28q114 -44Q114 -41q112 -35Q108 -28q104 -28);"/>
+                    <Edge cubics="!104 -28(;98,-28 97,-40 97,-41q104 -28Q100 -28q98 -34Q97 -38q97 -41);"/>
+                    <Edge cubics="!97 -41(;97,-60 114,-55 114,-44q97 -41Q97 -54q105 -54Q114 -53q114 -44);"/>
+                    <Edge cubics="!85 17(;85,18 82,27 78,27q85 17Q82 27q78 27);"/>
+                    <Edge cubics="!78 27(;69,27 70,18 70,17q78 27Q72 27q71 22Q70 20q70 17);"/>
+                    <Edge cubics="!70 17(;70,4 85,-3 85,17q70 17Q70 6q78 4Q85 3q85 17);"/>
+                    <Edge cubics="!-111 -52(;-107,-51 -107,-44 -107,-43q-111 -52Q-107 -51q-107 -43);"/>
+                    <Edge cubics="!-107 -43(-107,-43;-107,-42 -107,-34 -112,-34q-107 -43Q-107 -34q-112 -34);"/>
+                    <Edge cubics="!-112 -34(;-115,-34 -116,-42 -116,-43q-112 -34Q-114 -34q-115 -38Q-116 -41q-116 -43);"/>
+                    <Edge cubics="!-116 -43(-116,-43;-116,-49 -115,-46 -111,-52q-116 -43Q-116 -46q-115 -47Q-112 -51q-111 -52);"/>
+                    <Edge cubics="!-132 34(-132,34;-128,34 -128,38 -128,39q-132 34Q-128 34q-128 39);"/>
+                    <Edge cubics="!-128 39(-128,39;-128,44 -130,48 -131,51q-128 39Q-128 44q-131 51);"/>
+                    <Edge cubics="!-131 51(;-131,51 -134,51 -134,51q-131 51 -134 51);"/>
+                    <Edge cubics="!-134 51(-134,51;-140,49 -139,46 -139,43q-134 51Q-139 49q-139 43);"/>
+                    <Edge cubics="!-139 43(;-139,40 -138,34 -132,34q-139 43Q-139 34q-132 34);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#FF4F4F">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!118 -10|116 124!116 124[148 120 148 146!148 146[148 178 98 178!98 178[64 178 68 152!68 152[68 132 102 126!102 126[98 90 100 16!100 16|100.5 -58!100.5 -58|118 -58!118 -58[118 #FFFFDC.BF 118 -10"/>
+                    <Edge fillStyle0="1" edges="
+!-100 -58[-100 -54.03125 -100 -50!-100 -50|-98 128!-98 128[-128 130 -128 152!-128 152[-128 162 -114 172!-114 172[-96 182 -72 182!-72 182[-60 182 -52 172!-52 172[-46 164 -46 158!-46 158[-46 132 -80 128!-80 128|-80 56!-80 56[-76 38 -76
+ -14!-76 -14|-76.5 -58!-76.5 -58|-100 -58"/>
+                    <Edge cubics="!-90 -259(-90,-259;-76,-239 -82,-206 -78,-178q-90 -259Q-82 -247q-80 -221Q-80 -206q-78 -178);"/>
+                    <Edge cubics="!-76 -14(;-76,10 -74,30 -80,56q-76 -14Q-76 38q-80 56);"/>
+                    <Edge cubics="!-100 -50(;-100,-118 -100,-190 -94,-259q-100 -50Q-100 -190q-94 -259);"/>
+                    <Edge cubics="!-94 -259(;-94,-259 -90,-259 -90,-259q-94 -259 -90 -259);"/>
+                    <Edge cubics="!110 -231(;116,-184 118,-136 118,-90q110 -231 118 -90);"/>
+                    <Edge cubics="!118 -90(;118,-62 118,-36 118,-10q118 -90 118 -10);"/>
+                    <Edge cubics="!102 -162(;108,-186 100,-214 110,-231q102 -162Q104 -172q104 -198Q104 -223q110 -231);"/>
+                    <Edge cubics="!-46 158(;-46,162 -52,182 -72,182q-46 158Q-46 164q-52 172Q-60 182q-72 182);"/>
+                    <Edge cubics="!-72 182(;-108,182 -128,164 -128,152q-72 182Q-96 182q-114 172Q-128 162q-128 152);"/>
+                    <Edge cubics="!148 146(;148,160 134,178 98,178q148 146Q148 178q98 178);"/>
+                    <Edge cubics="!98 178(;64,178 68,154 68,152q98 178Q64 178q68 152);"/>
+                    <Edge cubics="!118 -10(118,-10;118,-10 116,124 116,124q118 -10 116 124);"/>
+                    <Edge cubics="!102 126(102,126;100,102 98,66 100,16q102 126Q98 90q100 16);"/>
+                    <Edge cubics="!-98 128(;-98,128 -100,-50 -100,-50q-98 128 -100 -50);"/>
+                    <Edge cubics="!-80 56(-80,56;-80,56 -80,128 -80,128q-80 56 -80 128);"/>
+                    <Edge cubics="!-80 128(;-58,130 -46,140 -46,158q-80 128Q-46 132q-46 158);"/>
+                    <Edge cubics="!68 152(;68,138 80,130 102,126q68 152Q68 132q102 126);"/>
+                    <Edge cubics="!116 124(;138,122 148,128 148,146q116 124Q148 120q148 146);"/>
+                    <Edge cubics="!-128 152(;-128,138 -118,130 -98,128q-128 152Q-128 130q-98 128);"/>
+                    <Edge cubics="!100 16(100,16;100,16 101,-90 101,-90q100 16 101 -90);"/>
+                    <Edge cubics="!101 -90(101,-90;101,-90 102,-162 102,-162q101 -90 102 -162);"/>
+                    <Edge cubics="!-78 -178(;-78,-178 -77,-90 -77,-90q-78 -178 -77 -90);"/>
+                    <Edge cubics="!-77 -90(;-77,-90 -76,-14 -76,-14q-77 -90 -76 -14);"/>
+                    <Edge cubics="!-102 -90(-102,-90;-102,-90 118,-90 118,-90q-102 -90 118 -90);"/>
+                    <Edge cubics="!118 -90(118,-90;118,-90 215,-90 215,-90q118 -90 215 -90);"/>
+                    <Edge cubics="!215 -90(;229,-81 231,-82 231,-74q215 -90Q222 -85q228 -82Q231 -79q231 -74);"/>
+                    <Edge cubics="!231 -74(231,-74;231,-67 229,-63 215,-58q231 -74Q231 -64q215 -58);"/>
+                    <Edge cubics="!215 -58(;215,-58 118,-58 118,-58q215 -58 118 -58);"/>
+                    <Edge cubics="!118 -58(;118,-58 -102,-58 -102,-58q118 -58 -102 -58);"/>
+                    <Edge cubics="!-102 -58(-102,-58;-116,-60 -118,-69 -118,-74q-102 -58Q-118 -60q-118 -74);"/>
+                    <Edge cubics="!-118 -74(;-118,-79 -116,-87 -102,-90q-118 -74Q-118 -87q-102 -90);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#808080">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/_graph/base" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.469467163085938" d="0.469467163085938" tx="0.1" ty="-0.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ручка" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix b="0.0011444091796875" c="-0.0011444091796875" tx="0.15" ty="-16.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="15.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.3333" y="0.3333"/>
+                  <Point x="0.9" y="0.226"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix b="0.0011444091796875" c="-0.0011444091796875" tx="0.15" ty="-16.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="15.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="22" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/ручка" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.910659790039063" b="-0.41314697265625" c="0.41314697265625" d="0.910659790039063" tx="-6.1" ty="-15.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="15.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ободка_стат" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="тень" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="44" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.2"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!223 112|-223 112!-223 112|-150 28!-150 28|157 28!157 28|223 112"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

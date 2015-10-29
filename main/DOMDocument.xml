@@ -1,18 +1,25 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="750" height="600" frameRate="30" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" rulerVisible="true" timelineLabelWidth="258" viewAngle3D="70.7391536835427" nextSceneIdentifier="6" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="750" height="600" frameRate="30" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Windows" versionInfo="Saved by Adobe Flash Windows 12.0 build 481" majorVersion="12" buildNumber="481" rulerVisible="true" objectsSnapTo="false" timelineLabelWidth="258" viewAngle3D="70.7391536835427" nextSceneIdentifier="6" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
-          <DOMFolderItem name="_bosses" itemID="5421a1c8-00000102"/>
+          <DOMFolderItem name="_bosses" itemID="5421a1c8-00000102" isExpanded="true"/>
           <DOMFolderItem name="_bosses/clone" itemID="53ebfd94-000000af"/>
           <DOMFolderItem name="_bosses/clone/_части тела" itemID="53ebfe9c-00000297"/>
           <DOMFolderItem name="_bosses/mad" itemID="54956214-000001ff"/>
           <DOMFolderItem name="_bosses/mad/room" itemID="54956219-00000203"/>
-          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103" isExpanded="true"/>
+          <DOMFolderItem name="_bosses/paleman" itemID="5631ff41-00000171"/>
+          <DOMFolderItem name="_bosses/paleman/ботинки" itemID="50793973-000000d1"/>
+          <DOMFolderItem name="_bosses/paleman/голова" itemID="51df0eab-0000004b"/>
+          <DOMFolderItem name="_bosses/paleman/голова/глаза" itemID="51e00b4d-00000252"/>
+          <DOMFolderItem name="_bosses/paleman/голова/шея" itemID="50793996-000000e0"/>
+          <DOMFolderItem name="_bosses/paleman/тело" itemID="51e00b64-0000025b"/>
+          <DOMFolderItem name="_bosses/paleman/тело/халат" itemID="50793989-000000db"/>
+          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103"/>
           <DOMFolderItem name="_bullets/_nukelino" itemID="553a0697-00000142" isExpanded="true"/>
           <DOMFolderItem name="_bullets/_powerspell" itemID="553a0788-0000016a"/>
           <DOMFolderItem name="_bullets/_spark" itemID="553a0843-00000193"/>
           <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104"/>
           <DOMFolderItem name="_enemies/_EnemyBullet" itemID="546474fd-00000110"/>
           <DOMFolderItem name="_enemies/_Ghost" itemID="5419fc21-000000d2"/>
-          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd" isExpanded="true"/>
+          <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
           <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
@@ -21,15 +28,16 @@
           <DOMFolderItem name="_GUI/_hearts" itemID="53c4f20e-00000072"/>
           <DOMFolderItem name="_GUI/_mana" itemID="53c4fe6d-000001a0"/>
           <DOMFolderItem name="_GUI/_map" itemID="53c4f221-00000078"/>
-          <DOMFolderItem name="_GUI/_PlayerStatCostume" itemID="558d50b7-000003b2" isExpanded="true"/>
+          <DOMFolderItem name="_GUI/_PlayerStatCostume" itemID="558d50b7-000003b2"/>
           <DOMFolderItem name="_GUI/_spells" itemID="53c4f211-00000073"/>
           <DOMFolderItem name="_GUI/loading" itemID="5627bdc0-00001348"/>
+          <DOMFolderItem name="_GUI/MenuBG" itemID="56320754-000005c7"/>
           <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
-          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_torch" itemID="551d3efe-00000161"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/paintings" itemID="55c37849-000001c9"/>
@@ -39,14 +47,16 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop" itemID="541c84dd-000000c6"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/coin" itemID="546e1575-00000110"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/exit" itemID="5427c13d-000000df"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/health" itemID="5426d98e-00000132" isExpanded="true"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/mana" itemID="541c84e1-000000ca"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/stones" itemID="55b3a7bd-00000149" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/health" itemID="5426d98e-00000132"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/mana" itemID="541c84e1-000000ca" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/drop/stones" itemID="55b3a7bd-00000149"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/exits" itemID="5632071f-000005ba"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys/_parts" itemID="559298bf-000001b7"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/letters" itemID="56320739-000005c3"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_box" itemID="55e5f2a6-00000171"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_spikes" itemID="5627be51-0000134e"/>
@@ -58,7 +68,7 @@
           <DOMFolderItem name="_menu/_MenuCostume" itemID="553cd222-0000013c"/>
           <DOMFolderItem name="_menu/_MenuCostume/_magesShop" itemID="5470a581-00000125"/>
           <DOMFolderItem name="_menu/_MenuCostume/_деревья" itemID="553b66de-00000142"/>
-          <DOMFolderItem name="_player" itemID="552fc5f9-00000169"/>
+          <DOMFolderItem name="_player" itemID="552fc5f9-00000169" isExpanded="true"/>
           <DOMFolderItem name="_player/parts" itemID="552fc2f1-0000013e"/>
           <DOMFolderItem name="_player/parts/_головы" itemID="53d0124e-000000d3"/>
           <DOMFolderItem name="_player/parts/_руки" itemID="53d01255-000000d7"/>
@@ -81,6 +91,20 @@
           <Include href="_bosses/clone/_части тела/тело.xml" itemIcon="1" loadImmediate="false" itemID="53ec6d15-000000b2" lastModified="1408016159"/>
           <Include href="_bosses/clone/clone001.xml" itemIcon="1" loadImmediate="false" itemID="53ebfdaf-000000b8" lastModified="1408015661"/>
           <Include href="_bosses/mad/MadBoss.xml" loadImmediate="false" itemID="5498474d-000001ef" lastModified="1419271253"/>
+          <Include href="_bosses/paleman/paleman_disapear.xml" itemIcon="1" loadImmediate="false" itemID="56322b9f-000001d4" lastModified="1446129798"/>
+          <Include href="_bosses/paleman/paleman_front.xml" itemIcon="1" loadImmediate="false" itemID="5631ffaf-000001a2" lastModified="1446128375"/>
+          <Include href="_bosses/paleman/ботинки/ботинокА.xml" itemIcon="1" loadImmediate="false" itemID="5079497e-000001b9" lastModified="1350125950"/>
+          <Include href="_bosses/paleman/голова/глаза/глазЛВ.xml" itemIcon="1" loadImmediate="false" itemID="509fb965-00000393" lastModified="1352644970"/>
+          <Include href="_bosses/paleman/голова/глаза/глазПВ.xml" itemIcon="1" loadImmediate="false" itemID="509fb95c-00000387" lastModified="1352644959"/>
+          <Include href="_bosses/paleman/голова/голова.xml" itemIcon="1" loadImmediate="false" itemID="56320060-00000548" lastModified="1446128422"/>
+          <Include href="_bosses/paleman/голова/голова_disapear.xml" itemIcon="1" loadImmediate="false" itemID="56322e25-000002cf" lastModified="1446129615"/>
+          <Include href="_bosses/paleman/голова/головаВ.xml" itemIcon="1" loadImmediate="false" itemID="509fb542-00000222" lastModified="1352657946"/>
+          <Include href="_bosses/paleman/голова/шея/шеяА.xml" itemIcon="1" loadImmediate="false" itemID="50794993-000001bd" lastModified="1350125971"/>
+          <Include href="_bosses/paleman/ПейлманВ.xml" itemIcon="1" loadImmediate="false" itemID="509fb3d0-000001ce" lastModified="1373826900"/>
+          <Include href="_bosses/paleman/тело/тело.xml" itemIcon="1" loadImmediate="false" itemID="5632033f-00000554" lastModified="1446128175"/>
+          <Include href="_bosses/paleman/тело/телоВ.xml" itemIcon="1" loadImmediate="false" itemID="509fb40a-00000202" lastModified="1352643683"/>
+          <Include href="_bosses/paleman/тело/халат/пряжкаА.xml" itemIcon="1" loadImmediate="false" itemID="50794964-000001b4" lastModified="1350125924"/>
+          <Include href="_bosses/paleman/тело/халат/халатЛВ.xml" itemIcon="1" loadImmediate="false" itemID="509fb3e2-000001f5" lastModified="1373826891"/>
           <Include href="_bullets/_nukelino/Nukelino.xml" loadImmediate="false" itemID="552eb1fd-000002b9" lastModified="1429866139"/>
           <Include href="_bullets/_nukelino/Nukelino_default.xml" loadImmediate="false" itemID="553a06de-0000014d" lastModified="1445505049"/>
           <Include href="_bullets/_nukelino/Nukelino_destroy.xml" itemIcon="1" loadImmediate="false" itemID="553a0706-00000158" lastModified="1429866293"/>
@@ -145,20 +169,22 @@
           <Include href="_GUI/_PlayerStatCostume/help_btn.xml" itemIcon="0" loadImmediate="false" itemID="56276edb-000002fc" lastModified="1445440426"/>
           <Include href="_GUI/_PlayerStatCostume/SpellMenu.xml" itemIcon="1" loadImmediate="false" itemID="541332c6-000000d2" lastModified="1435324888"/>
           <Include href="_GUI/_PlayerStatCostume/SpellSelecButton.xml" itemIcon="1" loadImmediate="false" itemID="54133284-000000c8" lastModified="1435326596"/>
+          <Include href="_GUI/_PlayerStatCostume/test&amp;#058cheat-invent.xml" itemIcon="1" loadImmediate="false" itemID="5627900a-00000ed4" lastModified="1445434275"/>
           <Include href="_GUI/_spells/ItemLogoCostume.xml" itemID="558d4423-00000391" lastModified="1435321970"/>
           <Include href="_GUI/_spells/spellPic.xml" loadImmediate="false" itemID="53b9b6ff-000000b5" lastModified="1430474802"/>
           <Include href="_GUI/ErrorScreen.xml" itemID="553a5836-0000013b" lastModified="1441276612"/>
-          <Include href="_GUI/ErrorScreen_gr.xml" itemIcon="1" loadImmediate="false" itemID="55b2a3a7-00000144" lastModified="1437771008"/>
           <Include href="_GUI/GameMenuBG.xml" itemID="5419c6f9-000000cb" lastModified="1441276608"/>
-          <Include href="_GUI/GameMenuBG_gr.xml" itemIcon="1" loadImmediate="false" itemID="55b2a48f-0000014e" lastModified="1441276711"/>
           <Include href="_GUI/GameMenuCostume.xml" itemID="55b2a344-00000139" lastModified="1445516349"/>
           <Include href="_GUI/icoScore.xml" loadImmediate="false" itemID="53cb1c73-000001aa" lastModified="1411378689"/>
           <Include href="_GUI/loading/loading_ball.xml" itemIcon="1" loadImmediate="false" itemID="55e82440-0000018c" lastModified="1441276992"/>
           <Include href="_GUI/loading/loading_cic.xml" loadImmediate="false" itemID="55e823cb-00000188" lastModified="1441281451"/>
+          <Include href="_GUI/MenuBG/ErrorScreen_gr.xml" itemIcon="1" loadImmediate="false" itemID="55b2a3a7-00000144" lastModified="1437771008"/>
+          <Include href="_GUI/MenuBG/GameMenuBG_gr.xml" itemIcon="1" loadImmediate="false" itemID="55b2a48f-0000014e" lastModified="1441276711"/>
+          <Include href="_GUI/MenuBG/LetterMenu.xml" itemIcon="1" loadImmediate="false" itemID="5628c0cf-00000b54" lastModified="1445511768"/>
           <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1445428161"/>
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1445429130"/>
           <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1445440477"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1445605024"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446132843"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
@@ -170,9 +196,10 @@
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/ShieldStars.xml" loadImmediate="false" itemID="54171c8b-000000b8" lastModified="1427980003"/>
           <Include href="_level/_GAME_OBJECTS/decor/_torch/fire001.xml" loadImmediate="false" itemID="540071c0-000002d5" lastModified="1409316871"/>
           <Include href="_level/_GAME_OBJECTS/decor/_torch/Torch.xml" loadImmediate="false" itemID="5406f304-000002c9" lastModified="1427979999"/>
-          <Include href="_level/_GAME_OBJECTS/decor/DecorObject.xml" itemID="551d3e33-00000134" lastModified="1441610206"/>
+          <Include href="_level/_GAME_OBJECTS/decor/DecorObject.xml" itemID="551d3e33-00000134" lastModified="1446133305"/>
           <Include href="_level/_GAME_OBJECTS/decor/entry_flag.xml" loadImmediate="false" itemID="538b5538-0000004b" lastModified="1401640248"/>
           <Include href="_level/_GAME_OBJECTS/decor/flags.xml" itemIcon="1" loadImmediate="false" itemID="559cf6a7-00000155" lastModified="1436350946"/>
+          <Include href="_level/_GAME_OBJECTS/decor/Paleman_disappear.xml" itemIcon="1" loadImmediate="false" itemID="56323330-00000339" lastModified="1446132342"/>
           <Include href="_level/_GAME_OBJECTS/decor/remove_smoke.xml" itemIcon="1" loadImmediate="false" itemID="55b3b6f3-00000324" lastModified="1437842568"/>
           <Include href="_level/_GAME_OBJECTS/decor/Web.xml" loadImmediate="false" itemID="542a61f6-000000ee" lastModified="1427979994"/>
           <Include href="_level/_GAME_OBJECTS/door_lock/CastleDoorLock.xml" loadImmediate="false" itemID="546765d6-0000024f" lastModified="1429366627"/>
@@ -203,6 +230,8 @@
           <Include href="_level/_GAME_OBJECTS/drop/stones/Emerald.xml" itemIcon="1" loadImmediate="false" itemID="55b3a7af-00000142" lastModified="1437837792"/>
           <Include href="_level/_GAME_OBJECTS/drop/stones/Emerald_drop.xml" itemIcon="1" loadImmediate="false" itemID="55b3aa94-00000165" lastModified="1437839004"/>
           <Include href="_level/_GAME_OBJECTS/drop/stones/Emerald_pickup.xml" itemIcon="1" loadImmediate="false" itemID="55b3af41-000002d1" lastModified="1437839248"/>
+          <Include href="_level/_GAME_OBJECTS/exits/Stairway.xml" itemIcon="1" loadImmediate="false" itemID="562a01d8-000002ea" lastModified="1445597207"/>
+          <Include href="_level/_GAME_OBJECTS/exits/Stairway2.xml" itemIcon="1" loadImmediate="false" itemID="562a157f-00000429" lastModified="1445614704"/>
           <Include href="_level/_GAME_OBJECTS/keys/_parts/key_gr.xml" itemIcon="1" loadImmediate="false" itemID="54673214-000001ad" lastModified="1416049172"/>
           <Include href="_level/_GAME_OBJECTS/keys/_parts/key_gr_appear.xml" itemIcon="1" loadImmediate="false" itemID="546c702b-00000136" lastModified="1435670959"/>
           <Include href="_level/_GAME_OBJECTS/keys/_parts/key_gr_keyHolder.xml" itemIcon="1" loadImmediate="false" itemID="546c79be-0000051c" lastModified="1416395301"/>
@@ -213,6 +242,7 @@
           <Include href="_level/_GAME_OBJECTS/keys/TaskKey_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3c0df-00000403" lastModified="1437843767"/>
           <Include href="_level/_GAME_OBJECTS/keys/TaskKeyGr.xml" itemIcon="1" loadImmediate="false" itemID="559298ba-000001b3" lastModified="1435671013"/>
           <Include href="_level/_GAME_OBJECTS/keys/tintObj.xml" loadImmediate="false" itemID="54673303-000001db" lastModified="1416049412"/>
+          <Include href="_level/_GAME_OBJECTS/letters/Letter.xml" itemIcon="1" loadImmediate="false" itemID="5628afc8-00000b3e" lastModified="1445507891"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/base.xml" loadImmediate="false" itemID="54215b71-000000c9" lastModified="1411472241"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/взрывная шестеренка.xml" itemIcon="1" loadImmediate="false" itemID="56311ff2-00000556" lastModified="1446060323"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/ручка_0.5.xml" loadImmediate="false" itemID="53b6c199-000000a9" lastModified="1404486146"/>
@@ -221,11 +251,14 @@
           <Include href="_level/_GAME_OBJECTS/levers/ExplosiveLever.xml" itemIcon="1" loadImmediate="false" itemID="56311fa2-00000542" lastModified="1446105551"/>
           <Include href="_level/_GAME_OBJECTS/levers/ExplosiveLever_open_remove copy.xml" itemIcon="1" loadImmediate="false" itemID="5631d487-00000abf" lastModified="1446106353"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever.xml" loadImmediate="false" itemID="540741fa-0000028b" lastModified="1429366706"/>
+          <Include href="_level/_GAME_OBJECTS/levers/Lever_barbie_size.xml" itemIcon="1" loadImmediate="false" itemID="56322c57-00000288" lastModified="1446129851"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_break_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3bbc8-0000033d" lastModified="1441182234"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_open_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3bfe5-000003b1" lastModified="1437843472"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3c036-000003de" lastModified="1437843538"/>
           <Include href="_level/_GAME_OBJECTS/levers/LeverGr.xml" itemIcon="1" loadImmediate="false" itemID="5592914a-00000150" lastModified="1435674650"/>
-          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1445624783"/>
+          <Include href="_level/_GAME_OBJECTS/levers/взрывная ручка.xml" itemIcon="1" loadImmediate="false" itemID="56311fd0-0000054a" lastModified="1446060002"/>
+          <Include href="_level/_GAME_OBJECTS/levers/ручка.xml" itemIcon="1" loadImmediate="false" itemID="53777229-000000ec" lastModified="1406145125"/>
+          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1446133234"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemIcon="1" loadImmediate="false" itemID="5406cba1-000002bd" lastModified="1428224304"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop.xml" itemIcon="1" loadImmediate="false" itemID="541aeeed-000002fd" lastModified="1411051268"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/part001.xml" itemIcon="1" loadImmediate="false" itemID="541aefb9-00000312" lastModified="1411051449"/>
@@ -298,7 +331,6 @@
           <Include href="_player/parts/_руки/рука3.xml" itemIcon="1" loadImmediate="false" itemID="53cc28ce-0000010d" lastModified="1406145091"/>
           <Include href="_player/parts/pixel.xml" itemIcon="1" loadImmediate="false" itemID="55b35071-00000167" lastModified="1437820645"/>
           <Include href="_player/parts/pixel_001.xml" itemIcon="1" loadImmediate="false" itemID="55b3688a-00000374" lastModified="1437821184"/>
-          <Include href="_player/parts/взрывная ручка.xml" itemIcon="1" loadImmediate="false" itemID="56311fd0-0000054a" lastModified="1446060002"/>
           <Include href="_player/parts/нога_В.xml" itemIcon="1" loadImmediate="false" itemID="53775411-00000059" lastModified="1406145125"/>
           <Include href="_player/parts/нога_С.xml" itemIcon="1" loadImmediate="false" itemID="537755a5-0000008b" lastModified="1406145125"/>
           <Include href="_player/parts/нога2.xml" itemIcon="1" loadImmediate="false" itemID="537755c9-00000092" lastModified="1406145125"/>
@@ -306,7 +338,6 @@
           <Include href="_player/parts/плечи_С.xml" itemIcon="1" loadImmediate="false" itemID="5377560b-000000ad" lastModified="1406145125"/>
           <Include href="_player/parts/посох.xml" itemIcon="1" loadImmediate="false" itemID="53ca9df9-00000074" lastModified="1445454161"/>
           <Include href="_player/parts/рука.xml" itemIcon="1" loadImmediate="false" itemID="537753af-00000045" lastModified="1406145125"/>
-          <Include href="_player/parts/ручка.xml" itemIcon="1" loadImmediate="false" itemID="53777229-000000ec" lastModified="1406145125"/>
           <Include href="_player/parts/тело_В.xml" itemIcon="1" loadImmediate="false" itemID="537753bb-00000049" lastModified="1406145125"/>
           <Include href="_player/parts/тело_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad5e5-000002a8" lastModified="1445504507"/>
           <Include href="_player/parts/тело_лево_2.xml" itemIcon="1" loadImmediate="false" itemID="53cac5bf-0000018a" lastModified="1406145125"/>
@@ -328,17 +359,15 @@
           <Include href="_player/states/up.xml" loadImmediate="false" itemID="552fc260-00000139" lastModified="1445505801"/>
           <Include href="bolt.xml" itemIcon="1" loadImmediate="false" itemID="5498517e-0000025e" lastModified="1419268478"/>
           <Include href="Holes.xml" itemIcon="1" loadImmediate="false" itemID="55eb4a06-000001c0" lastModified="1441609765"/>
-          <Include href="Letter.xml" itemIcon="1" loadImmediate="false" itemID="5628afc8-00000b3e" lastModified="1445507891"/>
-          <Include href="LetterMenu.xml" itemIcon="1" loadImmediate="false" itemID="5628c0cf-00000b54" lastModified="1445511768"/>
           <Include href="MagicWall.xml" loadImmediate="false" itemID="54985b97-00000298" lastModified="1419271397"/>
           <Include href="point_croos.xml" itemIcon="0" loadImmediate="false" itemID="562a270a-000004c0" lastModified="1445603114"/>
           <Include href="src/collider.xml" loadImmediate="false" itemID="53afd0c0-0000005a" lastModified="1436955508"/>
-          <Include href="Stairway.xml" itemIcon="1" loadImmediate="false" itemID="562a01d8-000002ea" lastModified="1445597207"/>
-          <Include href="Stairway2.xml" itemIcon="1" loadImmediate="false" itemID="562a157f-00000429" lastModified="1445614704"/>
-          <Include href="test&amp;#058cheat-invent.xml" itemIcon="1" loadImmediate="false" itemID="5627900a-00000ed4" lastModified="1445434275"/>
           <Include href="картина_001.xml" itemIcon="1" loadImmediate="false" itemID="55c37a01-000001cb" lastModified="1438875676"/>
+          <Include href="кисть.xml" loadImmediate="false" itemID="56322a60-000001a2" lastModified="1446128224"/>
           <Include href="кристаллы.xml" itemIcon="1" loadImmediate="false" itemID="55eaa341-000001ca" lastModified="1441441231"/>
           <Include href="полки.xml" itemIcon="1" loadImmediate="false" itemID="55ea9e47-0000016b" lastModified="1441611889"/>
+          <Include href="рука2.xml" loadImmediate="false" itemID="563229f5-00000195" lastModified="1446128140"/>
+          <Include href="рукав.xml" itemIcon="1" loadImmediate="false" itemID="56322837-00000630" lastModified="1446128094"/>
      </symbols>
      <timelines>
           <DOMTimeline name="start_menu">
@@ -375,7 +404,24 @@
                     <DOMLayer name="main" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
-                                   <elements/>
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="_player/PlayerCostume" centerPoint3DX="232.3" centerPoint3DY="175.35">
+                                             <matrix>
+                                                  <Matrix a="2.91452026367188" d="2.91452026367188" tx="283.9" ty="385.6"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.15" y="-37"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="_bosses/paleman/paleman_front" selected="true" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="485" ty="293.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
@@ -988,6 +1034,9 @@
                     <SolidSwatchItem alpha="0.694117647058824"/>
                     <SolidSwatchItem color="#56370F" hue="23" saturation="169" brightness="48"/>
                     <SolidSwatchItem color="#4F0F00" hue="8" saturation="239" brightness="37"/>
+                    <SolidSwatchItem color="#F6C259" hue="27" saturation="217" brightness="158"/>
+                    <SolidSwatchItem color="#CBCBCB" brightness="191"/>
+                    <SolidSwatchItem color="#EEB84C" hue="27" saturation="198" brightness="148"/>
                </swatches>
           </swatchList>
      </swatchLists>
@@ -1154,6 +1203,11 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1305791" publishTime="1446133163" publishDebug="true"/>
+          <PublishItem publishSize="1305759" publishTime="1446132464" publishDebug="true"/>
+          <PublishItem publishSize="1305874" publishTime="1446131720" publishDebug="true"/>
+          <PublishItem publishSize="1305816" publishTime="1446131609" publishDebug="true"/>
+          <PublishItem publishSize="880358" publishTime="1446131578" publishDebug="true"/>
           <PublishItem publishSize="1324064" publishTime="1446112388" publishDebug="true"/>
           <PublishItem publishSize="1324075" publishTime="1446112219" publishDebug="true"/>
           <PublishItem publishSize="1323777" publishTime="1446110783" publishDebug="true"/>
@@ -1169,10 +1223,5 @@
           <PublishItem publishSize="1318122" publishTime="1445876858" publishDebug="true"/>
           <PublishItem publishSize="1318458" publishTime="1445867341" publishDebug="true"/>
           <PublishItem publishSize="1318456" publishTime="1445867174" publishDebug="true"/>
-          <PublishItem publishSize="1318455" publishTime="1445867026" publishDebug="true"/>
-          <PublishItem publishSize="896415" publishTime="1445866997" publishDebug="true"/>
-          <PublishItem publishSize="896421" publishTime="1445866955" publishDebug="true"/>
-          <PublishItem publishSize="1318348" publishTime="1445846266" publishDebug="true"/>
-          <PublishItem publishSize="1318313" publishTime="1445845950" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

@@ -503,7 +503,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="282" duration="16" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Letter" symbolType="graphic" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/letters/Letter" symbolType="graphic" loop="single frame">
                   <matrix>
                     <Matrix a="0.306396484375" d="0.306396484375" tx="-17.15" ty="-11.85"/>
                   </matrix>
@@ -515,7 +515,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="298" duration="23" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Letter" symbolType="graphic" firstFrame="9" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/letters/Letter" symbolType="graphic" firstFrame="9" loop="single frame">
                   <matrix>
                     <Matrix a="0.306396484375" d="0.306396484375" tx="-17.15" ty="-11.85"/>
                   </matrix>
@@ -530,7 +530,7 @@ visible = false;]]></script>
             </DOMFrame>
             <DOMFrame index="321" duration="22" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Stairway2" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/exits/Stairway2" selected="true" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

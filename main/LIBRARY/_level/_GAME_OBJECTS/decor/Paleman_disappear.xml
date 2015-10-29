@@ -1,0 +1,196 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/Paleman_disappear" itemID="56323330-00000339" symbolType="graphic" lastModified="1446132342" lastUniqueIdentifier="2">
+  <timeline>
+    <DOMTimeline name="Paleman_disappear" currentFrame="44">
+      <layers>
+        <DOMLayer name="boss" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="23" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/paleman_disapear" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.437545776367188" d="0.437545776367188" tx="2.2" ty="-39.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.1" y="9.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/Lever_barbie_size" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="32.3" ty="-4.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.15" y="-0.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="23" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/paleman_disapear" selected="true" symbolType="graphic" firstFrame="23" loop="loop">
+                  <matrix>
+                    <Matrix a="0.437545776367188" d="0.437545776367188" tx="2.2" ty="-39.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.1" y="9.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/Lever_barbie_size" selected="true" symbolType="graphic" firstFrame="23" loop="loop">
+                  <matrix>
+                    <Matrix tx="32.3" ty="-4.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.15" y="-0.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="21.1" ty="-22.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="26" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/paleman_disapear" symbolType="graphic" firstFrame="26" loop="loop">
+                  <matrix>
+                    <Matrix a="0.437545776367188" d="0.437545776367188" tx="2.2" ty="-39.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.1" y="9.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/levers/Lever_barbie_size" symbolType="graphic" firstFrame="26" loop="loop">
+                  <matrix>
+                    <Matrix tx="32.3" ty="-4.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.15" y="-0.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="3" loop="loop">
+                  <matrix>
+                    <Matrix tx="21.1" ty="-22.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.47535705566406" tx="-8.35" ty="-24.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="2.10763549804688" tx="-12.35" ty="-58.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="31" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/paleman_disapear" symbolType="graphic" firstFrame="31" loop="loop">
+                  <matrix>
+                    <Matrix a="0.437545776367188" d="0.437545776367188" tx="2.2" ty="-39.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-3.1" y="9.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="5" loop="loop">
+                  <matrix>
+                    <Matrix a="1.47535705566406" tx="-8.35" ty="-24.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="5" loop="loop">
+                  <matrix>
+                    <Matrix a="2.10763549804688" tx="-12.35" ty="-58.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="8" loop="loop">
+                  <matrix>
+                    <Matrix tx="21.1" ty="-22.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="34" duration="25" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="11" loop="play once">
+                  <matrix>
+                    <Matrix tx="21.1" ty="-22.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="8" loop="play once">
+                  <matrix>
+                    <Matrix a="1.475341796875" tx="-8.35" ty="-24.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="8" loop="play once">
+                  <matrix>
+                    <Matrix a="2.10763549804688" tx="-12.35" ty="-58.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="8.85" y="-9.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="shadow" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="34" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.032470703125" d="0.01153564453125" tx="0.95" ty="0.3"/>
+                        </matrix>
+                        <GradientEntry alpha="0.4" ratio="0.274509803921569"/>
+                        <GradientEntry alpha="0" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!482 -72[532 -38 532 6!532 6[532 48 482 85!482 85[445 111 378 133!378 133[314 156 239 170!239 170[137 188 19 188!19 188[-196 188 -345 133!-345 133[-494 81 -494 6!-494 6[-494 -70 -345 -123!-345 -123[-196 -176 19 -176!19 -176[137 -176 239
+ -159!239 -159[314 -146 378 -123!378 -123[445 -100 482 -72"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="34" duration="25" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

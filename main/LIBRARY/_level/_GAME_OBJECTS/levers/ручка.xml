@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/parts/взрывная ручка" itemID="56311fd0-0000054a" symbolType="graphic" lastModified="1446060002">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/levers/ручка" itemID="53777229-000000ec" symbolType="graphic" lastModified="1406145125">
   <timeline>
-    <DOMTimeline name="взрывная ручка">
+    <DOMTimeline name="ручка">
       <layers>
         <DOMLayer name="блики" color="#FF4FFF" autoNamed="false">
           <frames>
@@ -81,10 +81,10 @@
                 <DOMShape>
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#410D00"/>
+                      <SolidColor color="#A67E1C"/>
                     </FillStyle>
                     <FillStyle index="2">
-                      <SolidColor/>
+                      <SolidColor color="#CDBF9A"/>
                     </FillStyle>
                   </fills>
                   <strokes>

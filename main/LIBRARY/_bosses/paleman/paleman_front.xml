@@ -1,0 +1,199 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/paleman/paleman_front" itemID="5631ffaf-000001a2" symbolType="graphic" lastModified="1446128375">
+  <timeline>
+    <DOMTimeline name="paleman_front">
+      <layers>
+        <DOMLayer name="голова" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/голова/голова" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.6" ty="-37"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="тень" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="халат перед" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/тело" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2" ty="37.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука правая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука2 левая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="-34.6" centerPoint3DY="33.15">
+                  <matrix>
+                    <Matrix a="-0.993682861328125" b="-0.112213134765625" c="-0.112213134765625" d="0.993682861328125" tx="-34.6" ty="33.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука1 правая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="-31.55" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix a="-0.988449096679688" b="-0.15155029296875" c="-0.15155029296875" d="0.988449096679688" tx="-31.35" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кисть правая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="-36.25" centerPoint3DY="50.2">
+                  <matrix>
+                    <Matrix tx="-36.25" ty="50.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука2" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="25.4" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix a="0.988449096679688" b="-0.15155029296875" c="0.15155029296875" d="0.988449096679688" tx="25.2" ty="5.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.05" y="-13.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="28.45" centerPoint3DY="33.15">
+                  <matrix>
+                    <Matrix a="0.993682861328125" b="-0.112213134765625" c="0.112213134765625" d="0.993682861328125" tx="28.45" ty="33.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-13.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кисть левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="29.75" centerPoint3DY="50.2">
+                  <matrix>
+                    <Matrix tx="29.75" ty="50.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="нога левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0000CC"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!438 1805|362 700!362 700|-97 722!-97 722|-536 701!-536 701|-584 1806!-584 1806|-110 1847!-110 1847|-87 1007!-87 1007|6 1858!6 1858|438 1805"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ботинок левый" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!369 1979[493 1979 527 1949!527 1949[538 1939 538 1908!538 1908[538 1844 425 1785!425 1785[329 1735 272 1735!272 1735[264 1735 247 1726!247 1726[230 1717 165 1717!165 1717[83 1717 37 1760!37 1760[6 1789 6 1812!6 1812[6 1863 72 1910!72
+ 1910[170 1979 369 1979"/>
+                    <Edge fillStyle1="1" edges="
+!-628 1908[-628 1844 -515 1785!-515 1785[-419 1735 -362 1735!-362 1735[-354 1735 -337 1726!-337 1726[-320 1717 -255 1717!-255 1717[-173 1717 -127 1760!-127 1760[-96 1789 -96 1812!-96 1812[-96 1863 -162 1910!-162 1910[-260 1979 -459 1979
+!-459 1979[-583 1979 -617 1949!-617 1949[-628 1939 -628 1908"/>
+                    <Edge cubics="!-362 1735(-362,1735;-327,1735 -366,1717 -255,1717q-362 1735Q-354 1735q-337 1726Q-320 1717q-255 1717)-255,1717;"/>
+                    <Edge cubics="!-255 1717(-255,1717;-126,1717 -96,1800 -96,1812q-255 1717Q-173 1717q-127 1760Q-96 1789q-96 1812)-96,1812;"/>
+                    <Edge cubics="!-96 1812(-96,1812;-96,1850 -151,1979 -459,1979q-96 1812Q-96 1863q-162 1910Q-260 1979q-459 1979)-459,1979;"/>
+                    <Edge cubics="!-459 1979(-459,1979;-655,1979 -628,1922 -628,1908q-459 1979Q-583 1979q-617 1949Q-628 1939q-628 1908)-628,1908;"/>
+                    <Edge cubics="!-628 1908(-628,1908;-628,1811 -416,1735 -362,1735q-628 1908Q-628 1844q-515 1785Q-419 1735q-362 1735)-362,1735;"/>
+                    <Edge cubics="!272 1735(272,1735;237,1735 276,1717 165,1717q272 1735Q264 1735q247 1726Q230 1717q165 1717)165,1717;"/>
+                    <Edge cubics="!165 1717(165,1717;36,1717 6,1800 6,1812q165 1717Q83 1717q37 1760Q6 1789q6 1812)6,1812;"/>
+                    <Edge cubics="!6 1812(6,1812;6,1850 61,1979 369,1979q6 1812Q6 1863q72 1910Q170 1979q369 1979)369,1979;"/>
+                    <Edge cubics="!369 1979(369,1979;565,1979 538,1922 538,1908q369 1979Q493 1979q527 1949Q538 1939q538 1908)538,1908;"/>
+                    <Edge cubics="!538 1908(538,1908;538,1811 326,1735 272,1735q538 1908Q538 1844q425 1785Q329 1735q272 1735)272,1735;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
