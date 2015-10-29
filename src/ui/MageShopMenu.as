@@ -18,6 +18,8 @@ package src.ui {
 
     public class MageShopMenu extends AbstractMenu {
         
+        public static var show_tutorial:Boolean = false;
+        
         private var menu:MovieClip;
         private var itemContainer:Sprite;
         
@@ -55,14 +57,18 @@ package src.ui {
             help_button.mouseEnabled = help_button.buttonMode = true;
             addChild(help_button);
             
-            help_button.addEventListener(MouseEvent.CLICK, toggleCheatSheet);
+            help_button.addEventListener(MouseEvent.CLICK, cheatsheetButtonListener);
             
             inv_cheat_sheet = new PlayerStatCostume();
             inv_cheat_sheet.setType(PlayerStatCostume.CHEAT_INV);
             inv_cheat_sheet.setState();
         }
         
-        private function toggleCheatSheet(e:MouseEvent):void {
+        private function cheatsheetButtonListener(e:MouseEvent):void {
+            toggleCheatSheet();
+        }
+        
+        private function toggleCheatSheet():void {
             if ( inv_cheat_sheet.parent ) {
                 removeChild(inv_cheat_sheet);
             }
@@ -190,6 +196,11 @@ package src.ui {
             addEventListener(MouseEvent.MOUSE_UP, mouseUpListener);
             addEventListener(MouseEvent.MOUSE_OVER, mouseOverListener);
             addEventListener(MouseEvent.MOUSE_OUT, mouseOutListener);
+            
+            if ( show_tutorial ) {
+                show_tutorial = false;
+                toggleCheatSheet();
+            }
         }
         
         private function mouseDownListener(e:MouseEvent):void {

@@ -191,6 +191,11 @@ package src {
             addChild(TestModePanel);
             
             addChild(playerStat);
+            
+            if ( show_tutorial ) {
+                show_tutorial = false;
+                toggleControlCheatSheet();
+            }
         }
         
         private function addBulletController() {

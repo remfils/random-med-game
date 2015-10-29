@@ -13,6 +13,7 @@
     import src.ui.AbstractMenu;
     import src.ui.GameLoadingMenu;
     import src.ui.GameMenu;
+    import src.ui.MageShopMenu;
     import src.util.Server;
     import src.util.LevelParser;
     import src.events.*;
@@ -72,8 +73,8 @@
             if ( TEST_MODE || !flash_vars.api_id ) {
                 flash_vars['api_id'] = 4700251;
                 flash_vars['viewer_id'] = 18524077;
-                flash_vars['sid'] = "17cc0211c20d4f000d947426bebd64dbb2a0203d9cc3106e61747328302228b71be7ff5caa6ce5f251f37";
-                flash_vars['secret'] = "11f0eec60d";
+                flash_vars['sid'] = "933e9ee89b34cd9b12a1fbea0d18519785b1b60f7b889e5f32a65eb1b660c824f9eae7ca348dad47816c1";
+                flash_vars['secret'] = "9f0550db1a";
                 //AbstractMenu.user.sid = 1;
             }
             
@@ -128,6 +129,7 @@
         
         public function setToTutorialMode():void {
             Game.show_tutorial = true;
+            MageShopMenu.show_tutorial = true;
         }
         
         private function createErrorTextField():void {
