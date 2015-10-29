@@ -21,6 +21,8 @@ package src.objects {
         override public function positiveOutcome():void {
             costume.setAnimatedState(OPEN_STATE + REMOVE_STATE);
             
+            state = OPEN_STATE;
+            
             _frame_dellay = OPEN_FAME_COUNT;
             
             costume.addEventListener(Event.ENTER_FRAME, destroyAfterFrameDellay);
@@ -30,6 +32,8 @@ package src.objects {
             costume.setAnimatedState(BREAK_STATE);
             
             _frame_dellay = EXPLOSION_FRAME_COUNT;
+            
+            state = BREAK_STATE;
             
             costume.addEventListener(Event.ENTER_FRAME, destroyAfterFrameDellay);
             
@@ -54,6 +58,11 @@ package src.objects {
         
         override public function remove():void {
             //super.remove();
+            if ( !_frame_dellay ) {
+                _frame_dellay = 17;
+                costume.addEventListener(Event.ENTER_FRAME, destroyAfterFrameDellay);
+                costume.setAnimatedState(REMOVE_STATE);
+            }
             
             startRemovingFlag();
         }

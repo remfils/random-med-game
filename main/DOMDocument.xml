@@ -33,11 +33,11 @@
           <DOMFolderItem name="_GUI/loading" itemID="5627bdc0-00001348"/>
           <DOMFolderItem name="_GUI/MenuBG" itemID="56320754-000005c7"/>
           <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
-          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_torch" itemID="551d3efe-00000161"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/paintings" itemID="55c37849-000001c9"/>
@@ -184,19 +184,19 @@
           <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1445428161"/>
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1445429130"/>
           <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1445440477"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446132843"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446134659"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
           <Include href="_level/_Decorations/знамя.xml" itemIcon="1" loadImmediate="false" itemID="535cfbdb-0000009e" lastModified="1398602812"/>
-          <Include href="_level/_GAME_OBJECTS/ActiveObjectCostume.xml" itemID="55928eb3-00000133" lastModified="1446106377"/>
+          <Include href="_level/_GAME_OBJECTS/ActiveObjectCostume.xml" itemID="55928eb3-00000133" lastModified="1446134603"/>
           <Include href="_level/_GAME_OBJECTS/chests/chest.xml" loadImmediate="false" itemID="53af531a-000000b4" lastModified="1416500644"/>
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/sheild_stars.xml" itemIcon="1" loadImmediate="false" itemID="5400695d-000002ca" lastModified="1409313117"/>
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/sheild_stars_3d.xml" itemIcon="1" loadImmediate="false" itemID="54006957-000002c9" lastModified="1409314754"/>
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/ShieldStars.xml" loadImmediate="false" itemID="54171c8b-000000b8" lastModified="1427980003"/>
           <Include href="_level/_GAME_OBJECTS/decor/_torch/fire001.xml" loadImmediate="false" itemID="540071c0-000002d5" lastModified="1409316871"/>
           <Include href="_level/_GAME_OBJECTS/decor/_torch/Torch.xml" loadImmediate="false" itemID="5406f304-000002c9" lastModified="1427979999"/>
-          <Include href="_level/_GAME_OBJECTS/decor/DecorObject.xml" itemID="551d3e33-00000134" lastModified="1446133305"/>
+          <Include href="_level/_GAME_OBJECTS/decor/DecorObject.xml" itemID="551d3e33-00000134" lastModified="1446134117"/>
           <Include href="_level/_GAME_OBJECTS/decor/entry_flag.xml" loadImmediate="false" itemID="538b5538-0000004b" lastModified="1401640248"/>
           <Include href="_level/_GAME_OBJECTS/decor/flags.xml" itemIcon="1" loadImmediate="false" itemID="559cf6a7-00000155" lastModified="1436350946"/>
           <Include href="_level/_GAME_OBJECTS/decor/Paleman_disappear.xml" itemIcon="1" loadImmediate="false" itemID="56323330-00000339" lastModified="1446132342"/>
@@ -250,6 +250,7 @@
           <Include href="_level/_GAME_OBJECTS/levers/_graph/шестеренка.xml" itemIcon="1" loadImmediate="false" itemID="537771a8-000000e2" lastModified="1405870990"/>
           <Include href="_level/_GAME_OBJECTS/levers/ExplosiveLever.xml" itemIcon="1" loadImmediate="false" itemID="56311fa2-00000542" lastModified="1446105551"/>
           <Include href="_level/_GAME_OBJECTS/levers/ExplosiveLever_open_remove copy.xml" itemIcon="1" loadImmediate="false" itemID="5631d487-00000abf" lastModified="1446106353"/>
+          <Include href="_level/_GAME_OBJECTS/levers/ExplosiveLever_remove.xml" itemIcon="1" loadImmediate="false" itemID="56324232-000003c9" lastModified="1446134555"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever.xml" loadImmediate="false" itemID="540741fa-0000028b" lastModified="1429366706"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_barbie_size.xml" itemIcon="1" loadImmediate="false" itemID="56322c57-00000288" lastModified="1446129851"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_break_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3bbc8-0000033d" lastModified="1441182234"/>
@@ -404,24 +405,7 @@
                     <DOMLayer name="main" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
-                                   <elements>
-                                        <DOMSymbolInstance libraryItemName="_player/PlayerCostume" centerPoint3DX="232.3" centerPoint3DY="175.35">
-                                             <matrix>
-                                                  <Matrix a="2.91452026367188" d="2.91452026367188" tx="283.9" ty="385.6"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point x="-0.15" y="-37"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="_bosses/paleman/paleman_front" selected="true" symbolType="graphic" loop="loop">
-                                             <matrix>
-                                                  <Matrix tx="485" ty="293.8"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                   </elements>
+                                   <elements/>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
@@ -1203,6 +1187,10 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1306491" publishTime="1446135057" publishDebug="true"/>
+          <PublishItem publishSize="1306446" publishTime="1446134870" publishDebug="true"/>
+          <PublishItem publishSize="1306448" publishTime="1446134591" publishDebug="true"/>
+          <PublishItem publishSize="1306507" publishTime="1446134519" publishDebug="true"/>
           <PublishItem publishSize="1305791" publishTime="1446133163" publishDebug="true"/>
           <PublishItem publishSize="1305759" publishTime="1446132464" publishDebug="true"/>
           <PublishItem publishSize="1305874" publishTime="1446131720" publishDebug="true"/>
@@ -1219,9 +1207,5 @@
           <PublishItem publishSize="1318143" publishTime="1445877737" publishDebug="true"/>
           <PublishItem publishSize="1318171" publishTime="1445877603" publishDebug="true"/>
           <PublishItem publishSize="1318162" publishTime="1445877475" publishDebug="true"/>
-          <PublishItem publishSize="1318048" publishTime="1445877288" publishDebug="true"/>
-          <PublishItem publishSize="1318122" publishTime="1445876858" publishDebug="true"/>
-          <PublishItem publishSize="1318458" publishTime="1445867341" publishDebug="true"/>
-          <PublishItem publishSize="1318456" publishTime="1445867174" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

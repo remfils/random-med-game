@@ -7,6 +7,7 @@ package src.task {
     import src.Game;
     import src.levels.Room;
     import src.objects.TaskDoorLock;
+    import src.objects.TaskExplosiveLever;
     import src.objects.TaskKey;
     import src.objects.TaskLever;
     import src.objects.TaskObject;
@@ -213,7 +214,7 @@ package src.task {
                     }
                     
                     if ( guess_count == 1 ) {
-                        if ( task_object is TaskLever && TaskLever(task_object).state == TaskLever.OPEN_STATE ) {
+                        if ( (task_object is TaskLever) && TaskLever(task_object).state == TaskLever.OPEN_STATE ) {
                             magic_bag.setType(ObjectCostume.EMERALD_TYPE);
                         }
                     }

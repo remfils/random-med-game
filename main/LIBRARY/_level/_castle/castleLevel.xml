@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_castle/castleLevel" itemID="53b73308-000000ea" linkageExportForAS="true" linkageClassName="src.levels.CastleLevel" lastModified="1446132843" lastUniqueIdentifier="189">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_castle/castleLevel" itemID="53b73308-000000ea" linkageExportForAS="true" linkageClassName="src.levels.CastleLevel" lastModified="1446134659" lastUniqueIdentifier="189">
   <timeline>
-    <DOMTimeline name="castleLevel" currentFrame="39" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;-448&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="castleLevel" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;-448&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
         <DOMLayer name="flags" color="#FF800A" autoNamed="false">
           <frames>
@@ -44,7 +44,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="colliders" color="#9933CC" autoNamed="false" layerType="guide">
+        <DOMLayer name="colliders" color="#9933CC" current="true" isSelected="true" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" duration="58" keyMode="9728">
               <elements>
@@ -154,7 +154,7 @@
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_bosses/paleman/paleman_front" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix a="0.547256469726563" d="0.547256469726563" tx="397.5" ty="106.05"/>
+                    <Matrix a="0.547256469726563" d="0.547256469726563" tx="393.85" ty="241.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -351,7 +351,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="light" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="light" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements/>
