@@ -5,8 +5,8 @@
           <DOMFolderItem name="_bosses/clone/_части тела" itemID="53ebfe9c-00000297"/>
           <DOMFolderItem name="_bosses/mad" itemID="54956214-000001ff"/>
           <DOMFolderItem name="_bosses/mad/room" itemID="54956219-00000203"/>
-          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103"/>
-          <DOMFolderItem name="_bullets/_nukelino" itemID="553a0697-00000142"/>
+          <DOMFolderItem name="_bullets" itemID="5421a1cb-00000103" isExpanded="true"/>
+          <DOMFolderItem name="_bullets/_nukelino" itemID="553a0697-00000142" isExpanded="true"/>
           <DOMFolderItem name="_bullets/_powerspell" itemID="553a0788-0000016a"/>
           <DOMFolderItem name="_bullets/_spark" itemID="553a0843-00000193"/>
           <DOMFolderItem name="_enemies" itemID="5421a1ce-00000104"/>
@@ -44,7 +44,7 @@
           <DOMFolderItem name="_level/_GAME_OBJECTS/drop/stones" itemID="55b3a7bd-00000149" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys" itemID="53af5340-000000b7"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/keys/_parts" itemID="559298bf-000001b7"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS/levers" itemID="53af52f1-000000ab" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/levers/_graph" itemID="53af52fb-000000af"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles" itemID="5414cb71-000000b9" isExpanded="true"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/obstacles/_Barell" itemID="5421a18b-00000100"/>
@@ -163,7 +163,7 @@
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
           <Include href="_level/_Decorations/знамя.xml" itemIcon="1" loadImmediate="false" itemID="535cfbdb-0000009e" lastModified="1398602812"/>
-          <Include href="_level/_GAME_OBJECTS/ActiveObjectCostume.xml" itemID="55928eb3-00000133" lastModified="1445844984"/>
+          <Include href="_level/_GAME_OBJECTS/ActiveObjectCostume.xml" itemID="55928eb3-00000133" lastModified="1446106377"/>
           <Include href="_level/_GAME_OBJECTS/chests/chest.xml" loadImmediate="false" itemID="53af531a-000000b4" lastModified="1416500644"/>
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/sheild_stars.xml" itemIcon="1" loadImmediate="false" itemID="5400695d-000002ca" lastModified="1409313117"/>
           <Include href="_level/_GAME_OBJECTS/decor/_Shield/sheild_stars_3d.xml" itemIcon="1" loadImmediate="false" itemID="54006957-000002c9" lastModified="1409314754"/>
@@ -214,9 +214,12 @@
           <Include href="_level/_GAME_OBJECTS/keys/TaskKeyGr.xml" itemIcon="1" loadImmediate="false" itemID="559298ba-000001b3" lastModified="1435671013"/>
           <Include href="_level/_GAME_OBJECTS/keys/tintObj.xml" loadImmediate="false" itemID="54673303-000001db" lastModified="1416049412"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/base.xml" loadImmediate="false" itemID="54215b71-000000c9" lastModified="1411472241"/>
+          <Include href="_level/_GAME_OBJECTS/levers/_graph/взрывная шестеренка.xml" itemIcon="1" loadImmediate="false" itemID="56311ff2-00000556" lastModified="1446060323"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/ручка_0.5.xml" loadImmediate="false" itemID="53b6c199-000000a9" lastModified="1404486146"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/ручка_0.5_2.xml" loadImmediate="false" itemID="53b6c1a7-000000ad" lastModified="1404486127"/>
           <Include href="_level/_GAME_OBJECTS/levers/_graph/шестеренка.xml" itemIcon="1" loadImmediate="false" itemID="537771a8-000000e2" lastModified="1405870990"/>
+          <Include href="_level/_GAME_OBJECTS/levers/ExplosiveLever.xml" itemIcon="1" loadImmediate="false" itemID="56311fa2-00000542" lastModified="1446105551"/>
+          <Include href="_level/_GAME_OBJECTS/levers/ExplosiveLever_open_remove copy.xml" itemIcon="1" loadImmediate="false" itemID="5631d487-00000abf" lastModified="1446106353"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever.xml" loadImmediate="false" itemID="540741fa-0000028b" lastModified="1429366706"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_break_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3bbc8-0000033d" lastModified="1441182234"/>
           <Include href="_level/_GAME_OBJECTS/levers/Lever_open_remove.xml" itemIcon="1" loadImmediate="false" itemID="55b3bfe5-000003b1" lastModified="1437843472"/>
@@ -295,6 +298,7 @@
           <Include href="_player/parts/_руки/рука3.xml" itemIcon="1" loadImmediate="false" itemID="53cc28ce-0000010d" lastModified="1406145091"/>
           <Include href="_player/parts/pixel.xml" itemIcon="1" loadImmediate="false" itemID="55b35071-00000167" lastModified="1437820645"/>
           <Include href="_player/parts/pixel_001.xml" itemIcon="1" loadImmediate="false" itemID="55b3688a-00000374" lastModified="1437821184"/>
+          <Include href="_player/parts/взрывная ручка.xml" itemIcon="1" loadImmediate="false" itemID="56311fd0-0000054a" lastModified="1446060002"/>
           <Include href="_player/parts/нога_В.xml" itemIcon="1" loadImmediate="false" itemID="53775411-00000059" lastModified="1406145125"/>
           <Include href="_player/parts/нога_С.xml" itemIcon="1" loadImmediate="false" itemID="537755a5-0000008b" lastModified="1406145125"/>
           <Include href="_player/parts/нога2.xml" itemIcon="1" loadImmediate="false" itemID="537755c9-00000092" lastModified="1406145125"/>
@@ -977,12 +981,13 @@
                     <SolidSwatchItem color="#5B5B5B" brightness="86"/>
                     <SolidSwatchItem color="#E2DBCC" hue="27" saturation="67" brightness="203"/>
                     <SolidSwatchItem color="#D9D0BF" hue="27" saturation="60" brightness="192"/>
-                    <SolidSwatchItem alpha="0.0901960784313725"/>
+                    <SolidSwatchItem alpha="0.0862745098039216"/>
                     <SolidSwatchItem color="#464646" brightness="66"/>
                     <SolidSwatchItem color="#795C38" hue="22" saturation="88" brightness="84"/>
                     <SolidSwatchItem color="#80613B" hue="22" saturation="87" brightness="88"/>
                     <SolidSwatchItem alpha="0.694117647058824"/>
                     <SolidSwatchItem color="#56370F" hue="23" saturation="169" brightness="48"/>
+                    <SolidSwatchItem color="#4F0F00" hue="8" saturation="239" brightness="37"/>
                </swatches>
           </swatchList>
      </swatchLists>
@@ -1149,6 +1154,12 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1323777" publishTime="1446110783" publishDebug="true"/>
+          <PublishItem publishSize="1323640" publishTime="1446110357" publishDebug="true"/>
+          <PublishItem publishSize="1323605" publishTime="1446108423" publishDebug="true"/>
+          <PublishItem publishSize="1323578" publishTime="1446108229" publishDebug="true"/>
+          <PublishItem publishSize="899925" publishTime="1446108188" publishDebug="true"/>
+          <PublishItem publishSize="1321209" publishTime="1446106074" publishDebug="true"/>
           <PublishItem publishSize="1318143" publishTime="1445877737" publishDebug="true"/>
           <PublishItem publishSize="1318171" publishTime="1445877603" publishDebug="true"/>
           <PublishItem publishSize="1318162" publishTime="1445877475" publishDebug="true"/>
@@ -1163,11 +1174,5 @@
           <PublishItem publishSize="1318313" publishTime="1445845950" publishDebug="true"/>
           <PublishItem publishSize="1318278" publishTime="1445845846" publishDebug="true"/>
           <PublishItem publishSize="1318310" publishTime="1445845785" publishDebug="true"/>
-          <PublishItem publishSize="1318082" publishTime="1445845251" publishDebug="true"/>
-          <PublishItem publishSize="1318051" publishTime="1445845106" publishDebug="true"/>
-          <PublishItem publishSize="1318062" publishTime="1445845059" publishDebug="true"/>
-          <PublishItem publishSize="1318048" publishTime="1445844949" publishDebug="true"/>
-          <PublishItem publishSize="1318009" publishTime="1445844853" publishDebug="true"/>
-          <PublishItem publishSize="896421" publishTime="1445844817" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

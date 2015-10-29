@@ -233,11 +233,13 @@ package src.task {
         }
         
         public function gradeLevel():Number {
-            var res:Number = Number(failed_guess_count) / total_guess_count;
+            var res:int = 1;
             
-            if ( res < THREE_STARS_THRESHOLD ) return 3;
-            if ( res < TWO_STARS_THRESHOLD ) return 2;
-            return 1;
+            if ( game.secret_room_found ) res ++;
+            
+            if ( Number(failed_guess_count) / total_guess_count < 0.6 ) res ++;
+            
+            return res;
         }
     }
 

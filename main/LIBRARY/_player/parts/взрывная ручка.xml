@@ -1,0 +1,138 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_player/parts/взрывная ручка" itemID="56311fd0-0000054a" symbolType="graphic" lastModified="1446060002">
+  <timeline>
+    <DOMTimeline name="взрывная ручка">
+      <layers>
+        <DOMLayer name="блики" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#F7F7F7"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!21 -305[20 -266 21 -227!21 -227[21 -188 20 -149!20 -149[19 -128 23 -106!23 -106[12 -143 12 -186!12 -186[11 -226 12 -266!12 -266[13 -289 21 -305"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#BDBDBD" alpha="0.988235294117647"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor color="#626262"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!35.5 13[#8.8E #8.C2 -13 -3!-13 -3[#FFFFE3.FA #FFFFF5.05 -36 -20.5"/>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!-36 -20.5[#FFFFDB.DE #FFFFFA.F1 -36 21.5"/>
+                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="!-36 21.5[-29.21875 #1E.6B -19 38!-19 38[#4.2A #37.EF 34 60.5"/>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!34 60.5[#22.7E #30.92 35 34!35 34[#23.66 #16.91 35.5 13"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!-36 -20.5[#FFFFDC.23 #FFFFDD.52 -35.5 -39.5!-35.5 -39.5[#FFFFDD.1F -51 -1 -51!-1 -51[#20.E3 -50 35 -41.5!35 -41.5[#24.F #FFFFDD.8D 35.5 13!34 60.5[#21.2C #53.09 32.5 96!32.5 96[#20.3F #6B.9D 32 111.5!32 111.5[#1F.1C 122 0 122!0 122[#FFFFE0.E1
+ 122 -33.5 112!-33.5 112[#FFFFDC.C5 #67.E7 -36 59.5!-36 59.5[#FFFFDC.12 #31.5B -36 37!-36 37[#FFFFDB.F5 #1C.F7 -36 21.5"/>
+                    <Edge fillStyle0="1" fillStyle1="1" strokeStyle="1" edges="
+!32.5 96[#15.36 #5F.7A 9 90!9 90[#FFFFEF.BB #4D.BA -36 59.5"/>
+                    <Edge cubics="!32 112(;31,119 21,122 0,122q32 112Q31 122q0 122);"/>
+                    <Edge cubics="!-35 -39(;-35,-47 -24,-51 -1,-51q-35 -39Q-35 -51q-1 -51);"/>
+                    <Edge cubics="!0 122(;-21,122 -32,119 -33,112q0 122Q-31 122q-33 112);"/>
+                    <Edge cubics="!-1 -51(;22,-50 34,-47 35,-41q-1 -51Q33 -50q35 -41);"/>
+                    <Edge cubics="!36 13(;35,20 35,27 35,34q36 13Q35 23q35 34);"/>
+                    <Edge cubics="!35 34(;34,44 34,53 34,61q35 34Q34 49q34 61);"/>
+                    <Edge cubics="!9 90(;17,93 25,95 33,96q9 90Q21 95q33 96);"/>
+                    <Edge cubics="!33 96(;32,104 32,109 32,112q33 96Q32 108q32 112);"/>
+                    <Edge cubics="!34 61(;33,76 33,87 33,96q34 61Q33 83q33 96);"/>
+                    <Edge cubics="!35 -41(;36,-36 37,-18 36,13q35 -41Q37 -34q36 13);"/>
+                    <Edge cubics="!-36 -20(;-31,-14 -23,-8 -13,-3q-36 -20Q-28 -11q-13 -3);"/>
+                    <Edge cubics="!-36 -20(;-36,-30 -36,-36 -35,-39q-36 -20Q-36 -35q-35 -39);"/>
+                    <Edge cubics="!-36 22(;-31,27 -26,33 -19,38q-36 22Q-29 30q-19 38);"/>
+                    <Edge cubics="!-36 37(;-36,32 -36,27 -36,22q-36 37Q-36 29q-36 22);"/>
+                    <Edge cubics="!-36 60(;-36,53 -36,45 -36,37q-36 60Q-36 49q-36 37);"/>
+                    <Edge cubics="!-33 112(;-34,107 -35,89 -36,60q-33 112Q-35 104q-36 60);"/>
+                    <Edge cubics="!-36 22(;-36,4 -36,-10 -36,-20q-36 22Q-36 -5q-36 -20);"/>
+                    <Edge cubics="!-13 -3(;2,5 18,10 36,13q-13 -3Q9 9q36 13);"/>
+                    <Edge cubics="!-19 38(;-4,50 14,58 34,61q-19 38Q4 56q34 61);"/>
+                    <Edge cubics="!-36 60(;-23,72 -8,82 9,90q-36 60Q-16 78q9 90);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#410D00"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor color="#4D4945"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="2">
+                      <SolidStroke scaleMode="normal" weight="0.1">
+                        <fill>
+                          <SolidColor color="#4A390D"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="2" strokeStyle="1" edges="
+!-30 -88|-36 -88!-36 -88|-36 -330!-36 -330|36 -330!36 -330|36 -88!36 -88|30 -88"/>
+                    <Edge fillStyle1="1" strokeStyle="2" edges="
+!30 -88|30 329!30 329|-30 329!-30 329|-30 -88"/>
+                    <Edge fillStyle0="2" fillStyle1="1" strokeStyle="1" edges="
+!-30 -88|30 -88"/>
+                    <Edge cubics="!36 -330(;36,-330 36,-88 36,-88q36 -330 36 -88);"/>
+                    <Edge cubics="!36 -88(36,-88;36,-88 30,-88 30,-88q36 -88 30 -88);"/>
+                    <Edge cubics="!-30 -88(-30,-88;-30,-88 -36,-88 -36,-88q-30 -88 -36 -88);"/>
+                    <Edge cubics="!-36 -88(-36,-88;-36,-88 -36,-330 -36,-330q-36 -88 -36 -330);"/>
+                    <Edge cubics="!30 -88(;30,-88 -30,-88 -30,-88q30 -88 -30 -88);"/>
+                    <Edge cubics="!-36 -330(;-36,-330 36,-330 36,-330q-36 -330 36 -330);"/>
+                    <Edge cubics="!-30 329(;-30,329 -30,-88 -30,-88q-30 329 -30 -88);"/>
+                    <Edge cubics="!30 329(;30,329 -30,329 -30,329q30 329 -30 329);"/>
+                    <Edge cubics="!30 -88(;30,-88 30,329 30,329q30 -88 30 329);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="обводка" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

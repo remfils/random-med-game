@@ -102,7 +102,8 @@
                 aabb.lowerBound.Subtract(new b2Vec2(explosion_rad, explosion_rad));
                 aabb.upperBound = body.GetPosition().Copy();
                 aabb.upperBound.Add(new b2Vec2(explosion_rad, explosion_rad));
-                game.cRoom.world.QueryAABB(queryAABBCallback, aabb);
+                
+                game.cRoom.world.QueryAABB(game.createExposionQuerryAABBCallback(body.GetPosition(), bulletDef.damage, 2), aabb);
                 
                 explode = false;
             }

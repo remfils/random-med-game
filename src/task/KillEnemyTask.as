@@ -16,6 +16,14 @@ package src.task {
             return !room.checkEnemiesForTask(id);
         }
         
+        override public function complete():void {
+            //super.complete();
+            
+            is_complete = true;
+            
+            generateReward();
+        }
+        
         override protected function generateReward():void {
             reward.delta = answer;
         }

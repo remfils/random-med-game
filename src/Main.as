@@ -27,6 +27,8 @@
         private var mode:int = HOME_TEST_MODE;
         Game.VERSION = "0.44";
         
+        public var is_first_time:Boolean = false;
+        
         private const HOME_SERVER:String = "http://game.home";
         private const PUBLIC_SERVER:String = "http://5.1.53.16/magicworld";
         
@@ -122,6 +124,10 @@
             var gameError:ErrorScreen = new ErrorScreen();
             addChild(gameError);
             gameError.x += gameError.width / 2 + ( stage.stageWidth - gameError.width ) / 2;
+        }
+        
+        public function setToTutorialMode():void {
+            Game.show_tutorial = true;
         }
         
         private function createErrorTextField():void {

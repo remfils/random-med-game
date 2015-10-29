@@ -135,6 +135,8 @@ package src.util {
             loader.addEventListener(Event.COMPLETE, userWasCreatedListener);
             
             loader.load(req);
+            
+            main.setToTutorialMode();
         }
         
         private function userWasCreatedListener(e:Event):void {

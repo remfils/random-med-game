@@ -1,4 +1,6 @@
 package src {
+    import Box2D.Common.Math.b2Vec2;
+    import Box2D.Dynamics.b2Fixture;
     import fl.transitions.*;
     import fl.transitions.easing.*;
     import flash.display.*;
@@ -9,6 +11,7 @@ package src {
     import src.costumes.BulletCostume;
     import src.costumes.Costume;
     import src.costumes.PlayerStatCostume;
+    import src.enemy.Enemy;
     import src.events.*;
     import src.interfaces.*;
     import src.levels.*;
@@ -22,6 +25,8 @@ package src {
     public class Game extends Sprite {
         public static var VERSION:String;
         public static var TEST_MODE:Boolean = true;
+        
+        public static var show_tutorial:Boolean = false;
         
         public var level_id:int = 0;
         public var rating:int = 0;
@@ -79,7 +84,7 @@ package src {
         public var deleteManager:DeleteManager;
         public var bodyCreator:BodyCreator = new BodyCreator();
         
-        private var SECRET_ROOM_FOUND:Boolean = false;
+        public var secret_room_found:Boolean = false;
         
         public function Game(player:Player) {
             super();
@@ -397,6 +402,49 @@ package src {
             return result;
         }
         
+        public function createExposionQuerryAABBCallback(explosion_center:b2Vec2, enemy_damage:Number, player_damage:Number):Function {
+            var callback:Function = function (fixture:b2Fixture):Boolean {
+                var userData:Object = fixture.GetUserData();
+                var object_name:String = "object";
+                
+                if ( userData && userData.hasOwnProperty(object_name) ) {
+                    if ( userData[object_name] is AbstractObject ) {
+                        var obj:AbstractObject = AbstractObject(userData[object_name]);
+                        var obj_impulse:b2Vec2 = obj.body.GetPosition().Copy();
+                        obj_impulse.Subtract(explosion_center);
+                        obj_impulse.Multiply(10);
+                        
+                        if ( obj is Door && Door(obj).isSecret ) {
+                            Door(obj).specialLock = false;
+                            Door(obj).unlock();
+                            Recorder.recordSecretRoomFound();
+                        }
+                        
+                        if ( obj is Obstacle ) {
+                            Obstacle(obj).breakObject();
+                        }
+                        
+                        if ( obj is Enemy ) {
+                            Enemy(obj).makeHit(enemy_damage);
+                        }
+                        
+                        if ( obj is Player ) {
+                            changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -player_damage, 0, true));
+                        }
+                        
+                        if ( obj is Bullet ) {
+                            return true;
+                        }
+                        
+                        obj.body.ApplyImpulse( obj_impulse, obj.body.GetWorldCenter());
+                    }
+                }
+                return true;
+            }
+            
+            return callback;
+        }
+        
         // D!
         public function hitPlayer(hitNumber:int ):Number {
             if ( player.makeHit(hitNumber) ) {
@@ -480,7 +528,7 @@ package src {
             destination.y += doorB.y;
             
             if ( (cRoom.isSecret || roomWasSecret ) && doorB.specialLock ) {
-                SECRET_ROOM_FOUND = true;
+                secret_room_found = true;
                 doorB.specialLock = false;
                 doorB.unlock();
             }

@@ -8,6 +8,7 @@ package src.costumes {
         public static const KEY_TYPE:String = "TaskKey";
         public static const LETTER_TYPE:String = "Letter";
         public static const STAIRWAY_TYPE:String = "Stairway";
+        public static const EXPLOSIVE_LEVER_TYPE:String = "ExplosiveLever";
         
         private static const ACTIVE_AREA_NAME:String = "active_area_mc";
         public var active_area_mc:DisplayObject;

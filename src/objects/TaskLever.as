@@ -75,6 +75,10 @@
             costume.setAnimatedState(state + REMOVE_STATE);
             destroy();
             
+            startRemovingFlag();
+        }
+        
+        protected function startRemovingFlag():void {
             if ( ! color_object ) return;
             
             var flag_smoke:DecorCostume = new DecorCostume();

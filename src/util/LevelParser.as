@@ -17,6 +17,7 @@ package src.util {
     import src.objects.Obstacle;
     import src.objects.StairwayExit;
     import src.objects.TaskDoorLock;
+    import src.objects.TaskExplosiveLever;
     import src.objects.TaskKey;
     import src.objects.TaskLever;
     import src.objects.TaskObject;
@@ -161,14 +162,17 @@ package src.util {
             for each ( var object:XML in activeObjectsXML.* ) {
                 obj_name = object.name();
                 switch (obj_name) {
-                    case TaskLever.LEVER_TYPE:
-                        obj = new TaskLever();
+                case TaskLever.LEVER_TYPE:
+                    obj = new TaskLever();
                     break;
-                    case TaskKey.KEY_TYPE:
-                        obj = new TaskKey();
+                case ActiveObjectCostume.EXPLOSIVE_LEVER_TYPE:
+                    obj = new TaskExplosiveLever();
                     break;
-                    case TaskDoorLock.LOCK_TYPE:
-                        obj = new TaskDoorLock();
+                case TaskKey.KEY_TYPE:
+                    obj = new TaskKey();
+                    break;
+                case TaskDoorLock.LOCK_TYPE:
+                    obj = new TaskDoorLock();
                     break;
                 case ActiveObjectCostume.LETTER_TYPE:
                     obj = new Letter();
