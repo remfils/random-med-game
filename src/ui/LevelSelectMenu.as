@@ -82,7 +82,7 @@ package src.ui {
                 btn.level_name.text = level.name;
                 
                 btn.y = 200 + j * (btn.height + 10);
-                btn.x = 110 + stage.width * k + 140 * i++;
+                btn.x = 90 + stage.stageWidth * k + 140 * i++;
                 
                 if ( level.rating == 0 ) {
                     if ( is_last_level ) is_last_level = false;

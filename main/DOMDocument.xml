@@ -1187,6 +1187,9 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1178862" publishTime="1446504430"/>
+          <PublishItem publishSize="1336281" publishTime="1446504296" publishDebug="true"/>
+          <PublishItem publishSize="1336368" publishTime="1446504253" publishDebug="true"/>
           <PublishItem publishSize="1336294" publishTime="1446503274" publishDebug="true"/>
           <PublishItem publishSize="1336149" publishTime="1446501379" publishDebug="true"/>
           <PublishItem publishSize="1336115" publishTime="1446501238" publishDebug="true"/>
@@ -1204,8 +1207,5 @@
           <PublishItem publishSize="1335795" publishTime="1446497700" publishDebug="true"/>
           <PublishItem publishSize="1335732" publishTime="1446497596" publishDebug="true"/>
           <PublishItem publishSize="1335752" publishTime="1446497458" publishDebug="true"/>
-          <PublishItem publishSize="1335715" publishTime="1446497412" publishDebug="true"/>
-          <PublishItem publishSize="1178442" publishTime="1446496666"/>
-          <PublishItem publishSize="1178440" publishTime="1446496619"/>
      </publishHistory>
 </DOMDocument>
