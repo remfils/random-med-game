@@ -238,7 +238,12 @@ package src.task {
             
             if ( game.secret_room_found ) res ++;
             
-            if ( Number(failed_guess_count) / total_guess_count < 0.6 ) res ++;
+            if ( total_guess_count ) {
+                if ( Number(failed_guess_count) / total_guess_count < 0.6 ) res ++;
+            }
+            else {
+                res ++;
+            }
             
             return res;
         }
