@@ -33,8 +33,8 @@ package src.ui {
         }
         
         override protected function exitGame(e:MouseEvent):void {
-           destroy();
-           main.exitGame(ExitLevelEvent.EXIT_TO_MENU_CMD, true);
+            hide();
+            main.exitGame(ExitLevelEvent.EXIT_TO_MENU_CMD, true);
         }
         
         private function startNextLevelListener(e:MouseEvent):void {
@@ -43,6 +43,8 @@ package src.ui {
         }
         
         override public function deactivate():void {
+            stage.addChildAt(this, 0);
+            active = false;
             exit_button.removeEventListener(MouseEvent.CLICK, exitGame);
             resume_button.removeEventListener(MouseEvent.CLICK, startNextLevelListener);
         }
