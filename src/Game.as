@@ -323,8 +323,8 @@ package src {
                 case 69: // E key
                     ACTION_PRESSED = true;
                 break;
-                // J key
-                case 74 :
+                case 32: // SPACE
+                case 74: // J key
                     bulletController.startBulletSpawn();
                     playerStat.flashElementByID(PlayerStat.FIRE_BTN_ID);
                 break;
@@ -334,8 +334,7 @@ package src {
                     playerStat.flashElementByID(PlayerStat.SPELL_LEFT_BTN_ID);
                     playerStat.setSpellLogo(bulletController.currentSpellDef.name);
                 break;
-                // K key
-                case 75:
+                case 75: // K key
                     bulletController.nextSpell();
                     playerStat.flashElementByID(PlayerStat.SPELL_RIGHT_BTN_ID);
                     playerStat.setSpellLogo(bulletController.currentSpellDef.name);
@@ -363,7 +362,17 @@ package src {
                 case 27:// ESC
                     PAUSED = true;
                     break;
-                case 32 :// SPACE
+                case 49: // 1
+                    bulletController.setSpell(0);
+                    playerStat.setSpellLogo(bulletController.currentSpellDef.name);
+                    break;
+                case 50: // 2
+                    bulletController.setSpell(1);
+                    playerStat.setSpellLogo(bulletController.currentSpellDef.name);
+                    break;
+                case 51: // 3
+                    bulletController.setSpell(2);
+                    playerStat.setSpellLogo(bulletController.currentSpellDef.name);
                     break;
             }
         }

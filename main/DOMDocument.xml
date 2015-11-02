@@ -184,7 +184,7 @@
           <Include href="_GUI/playerStat.xml" itemID="53b8fed9-0000005c" lastModified="1445428161"/>
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1445429130"/>
           <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1445440477"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446496646"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446502786"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
@@ -259,7 +259,7 @@
           <Include href="_level/_GAME_OBJECTS/levers/LeverGr.xml" itemIcon="1" loadImmediate="false" itemID="5592914a-00000150" lastModified="1435674650"/>
           <Include href="_level/_GAME_OBJECTS/levers/взрывная ручка.xml" itemIcon="1" loadImmediate="false" itemID="56311fd0-0000054a" lastModified="1446060002"/>
           <Include href="_level/_GAME_OBJECTS/levers/ручка.xml" itemIcon="1" loadImmediate="false" itemID="53777229-000000ec" lastModified="1406145125"/>
-          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1446133234"/>
+          <Include href="_level/_GAME_OBJECTS/ObjectCostume.xml" itemID="552fcae7-0000016c" lastModified="1446502895"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/Barell.xml" itemIcon="1" loadImmediate="false" itemID="5406cba1-000002bd" lastModified="1428224304"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/BarellTop.xml" itemIcon="1" loadImmediate="false" itemID="541aeeed-000002fd" lastModified="1411051268"/>
           <Include href="_level/_GAME_OBJECTS/obstacles/_Barell/part001.xml" itemIcon="1" loadImmediate="false" itemID="541aefb9-00000312" lastModified="1411051449"/>
@@ -1187,6 +1187,18 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1336294" publishTime="1446503274" publishDebug="true"/>
+          <PublishItem publishSize="1336149" publishTime="1446501379" publishDebug="true"/>
+          <PublishItem publishSize="1336115" publishTime="1446501238" publishDebug="true"/>
+          <PublishItem publishSize="1336180" publishTime="1446501165" publishDebug="true"/>
+          <PublishItem publishSize="909577" publishTime="1446501132" publishDebug="true"/>
+          <PublishItem publishSize="1335874" publishTime="1446500664" publishDebug="true"/>
+          <PublishItem publishSize="1335822" publishTime="1446499858" publishDebug="true"/>
+          <PublishItem publishSize="1335895" publishTime="1446499734" publishDebug="true"/>
+          <PublishItem publishSize="1335763" publishTime="1446499558" publishDebug="true"/>
+          <PublishItem publishSize="1335895" publishTime="1446499195" publishDebug="true"/>
+          <PublishItem publishSize="1335861" publishTime="1446499011" publishDebug="true"/>
+          <PublishItem publishSize="1335835" publishTime="1446498854" publishDebug="true"/>
           <PublishItem publishSize="1335810" publishTime="1446498134" publishDebug="true"/>
           <PublishItem publishSize="1335859" publishTime="1446497772" publishDebug="true"/>
           <PublishItem publishSize="1335795" publishTime="1446497700" publishDebug="true"/>
@@ -1195,17 +1207,5 @@
           <PublishItem publishSize="1335715" publishTime="1446497412" publishDebug="true"/>
           <PublishItem publishSize="1178442" publishTime="1446496666"/>
           <PublishItem publishSize="1178440" publishTime="1446496619"/>
-          <PublishItem publishSize="1335648" publishTime="1446496526" publishDebug="true"/>
-          <PublishItem publishSize="1335381" publishTime="1446496342" publishDebug="true"/>
-          <PublishItem publishSize="1335450" publishTime="1446496148" publishDebug="true"/>
-          <PublishItem publishSize="909335" publishTime="1446496124" publishDebug="true"/>
-          <PublishItem publishSize="1334965" publishTime="1446476820" publishDebug="true"/>
-          <PublishItem publishSize="1334959" publishTime="1446476627" publishDebug="true"/>
-          <PublishItem publishSize="1177852" publishTime="1446475876"/>
-          <PublishItem publishSize="1177815" publishTime="1446475806"/>
-          <PublishItem publishSize="1334757" publishTime="1446469825" publishDebug="true"/>
-          <PublishItem publishSize="1177800" publishTime="1446135316"/>
-          <PublishItem publishSize="1306491" publishTime="1446135057" publishDebug="true"/>
-          <PublishItem publishSize="1306446" publishTime="1446134870" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

@@ -168,6 +168,14 @@
             currentSpellDef = allSpells[spells[currentSpellIndex]];
         }
         
+        public function setSpell(spell_index:int):void {
+            var spells:Array = game.player.spells;
+            if ( spell_index >= 0 && spell_index < spells.length ) {
+                currentSpellIndex = spell_index;
+            }
+            currentSpellDef = allSpells[spells[currentSpellIndex]];
+        }
+        
         private function deleteBullet(b:Bullet) {
             b.moveTo(-100, -100);
             currentRoom.world.DestroyBody(b.body);

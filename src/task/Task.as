@@ -104,6 +104,8 @@
         
         protected function generateReward():void {
             var total:Number = 0;
+            var prev_combo:int = combo;
+            
             switch ( guessCount ) {
                 case 1:
                     total += 5;
@@ -115,16 +117,18 @@
                     resetMultiplier();
             }
             
-            total *= MULT;
+            total *= prev_combo;
             reward.delta = total;
         }
         
         public function incMultiplier():void {
+            if ( combo != 1 )
+                game.player.displayMessage( "комбо x" + combo );
+            
             combo ++;
             
-            if ( combo > 4 ) combo = 4;
-            
-            game.player.displayMessage( "комбо x" + combo );
+            if ( combo > 4 )
+                combo = 4;
         }
         
         public function resetMultiplier():void {

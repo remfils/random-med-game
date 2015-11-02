@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1446133234" lastUniqueIdentifier="13">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/ObjectCostume" itemID="552fcae7-0000016c" linkageExportForAS="true" linkageClassName="src.costumes.ObjectCostume" lastModified="1446502895" lastUniqueIdentifier="13">
   <timeline>
-    <DOMTimeline name="ObjectCostume" currentFrame="201">
+    <DOMTimeline name="ObjectCostume" currentFrame="351">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -136,7 +136,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#4FFF4F" autoNamed="false">
+        <DOMLayer name="actions" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements/>
@@ -315,10 +315,16 @@ visible = false;]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="343" duration="24" keyMode="9728">
+            <DOMFrame index="343" duration="8" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="351" duration="16" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[play();]]></script>
               </Actionscript>
               <elements/>
             </DOMFrame>
@@ -425,7 +431,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="obj" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="obj" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="11" keyMode="9728">
               <elements>
