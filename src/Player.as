@@ -30,6 +30,8 @@
         
         public static const _STATE:String = "";*/
         
+        public static const MAP_PICKUP_DURATION:Number = 700;
+        
 //stats
         public var MAX_HEALTH:uint = 6;
         public var MAX_MANA:uint = 14;

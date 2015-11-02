@@ -609,7 +609,9 @@ package src {
             player.clearInput();
             player.body = null;
             player.costume.setType(Player.END_STATE);
-            player.costume.setState();
+            
+            if ( delay == Player.MAP_PICKUP_DURATION ) player.costume.setAnimatedState();
+            else player.costume.setState();
             
             var timer:Timer = new Timer(delay);
             timer.addEventListener(TimerEvent.TIMER, timeoutAfterLevelFinished);

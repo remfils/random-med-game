@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1446134117" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_level/_GAME_OBJECTS/decor/DecorObject" itemID="551d3e33-00000134" linkageExportForAS="true" linkageClassName="src.costumes.DecorCostume" lastModified="1446476287" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="DecorObject" currentFrame="199">
+    <DOMTimeline name="DecorObject" currentFrame="19">
       <layers>
-        <DOMLayer name="label" color="#9933CC" autoNamed="false">
+        <DOMLayer name="label" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="7" name="Shield" labelType="name" keyMode="9728">
               <elements/>
@@ -10,47 +10,50 @@
             <DOMFrame index="7" duration="6" name="Torch" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="13" duration="7" name="Web" labelType="name" keyMode="9728">
+            <DOMFrame index="13" duration="6" name="Web" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="20" duration="12" name="TaskFlag_red" labelType="name" keyMode="9728">
+            <DOMFrame index="19" duration="11" name="TaskFlag" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="32" duration="16" name="TaskFlag_green" labelType="name" keyMode="9728">
+            <DOMFrame index="30" duration="12" name="TaskFlag_red" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="48" duration="16" name="TaskFlag_purple" labelType="name" keyMode="9728">
+            <DOMFrame index="42" duration="16" name="TaskFlag_green" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="64" duration="14" name="TaskFlag_indigo" labelType="name" keyMode="9728">
+            <DOMFrame index="58" duration="16" name="TaskFlag_purple" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="78" duration="16" name="TaskFlag" labelType="name" keyMode="9728">
+            <DOMFrame index="74" duration="14" name="TaskFlag_indigo" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="94" duration="30" name="TaskFlag_Smoke" labelType="name" keyMode="9728">
+            <DOMFrame index="88" duration="16" name="TaskFlag_white" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="124" duration="35" name="Shelf1" labelType="name" keyMode="9728">
+            <DOMFrame index="104" duration="30" name="TaskFlag_Smoke" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="159" duration="19" name="WindowHole" labelType="name" keyMode="9728">
+            <DOMFrame index="134" duration="35" name="Shelf1" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="178" duration="14" name="EntryBanner" labelType="name" keyMode="9728">
+            <DOMFrame index="169" duration="19" name="WindowHole" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="192" duration="63" name="Paleman" labelType="name" keyMode="9728">
+            <DOMFrame index="188" duration="14" name="EntryBanner" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="202" duration="63" name="Paleman" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="actions" color="#FF800A" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="111" keyMode="9728">
+            <DOMFrame index="0" duration="121" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="111" duration="144" keyMode="9728">
+            <DOMFrame index="121" duration="144" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[stop();
 visible = false;]]></script>
@@ -59,7 +62,7 @@ visible = false;]]></script>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="symbol" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="symbol" color="#4FFF4F" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="7" keyMode="9728">
               <elements>
@@ -79,16 +82,16 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="13" duration="7" keyMode="9728">
+            <DOMFrame index="13" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/Web" centerPoint3DX="5.95" centerPoint3DY="3.75">
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/Web" selected="true" centerPoint3DX="5.95" centerPoint3DY="3.75">
                   <transformationPoint>
                     <Point x="5.95" y="3.75"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="20" duration="12" keyMode="9728">
+            <DOMFrame index="19" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/flags" symbolType="graphic" loop="single frame">
                   <transformationPoint>
@@ -97,7 +100,16 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="32" duration="16" keyMode="9728">
+            <DOMFrame index="30" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/flags" symbolType="graphic" loop="single frame">
+                  <transformationPoint>
+                    <Point x="-0.05" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="42" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/flags" symbolType="graphic" firstFrame="1" loop="single frame">
                   <transformationPoint>
@@ -106,7 +118,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="48" duration="16" keyMode="9728">
+            <DOMFrame index="58" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/flags" symbolType="graphic" firstFrame="2" loop="single frame">
                   <transformationPoint>
@@ -115,7 +127,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="64" duration="14" keyMode="9728">
+            <DOMFrame index="74" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/flags" symbolType="graphic" firstFrame="3" loop="single frame">
                   <transformationPoint>
@@ -124,7 +136,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="78" duration="16" keyMode="9728">
+            <DOMFrame index="88" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/flags" symbolType="graphic" firstFrame="4" loop="single frame">
                   <transformationPoint>
@@ -133,7 +145,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="94" duration="17" keyMode="9728">
+            <DOMFrame index="104" duration="17" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="play once">
                   <matrix>
@@ -145,10 +157,10 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="111" duration="13" keyMode="9728">
+            <DOMFrame index="121" duration="13" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="124" duration="35" keyMode="9728">
+            <DOMFrame index="134" duration="35" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="полки" symbolType="graphic" loop="loop">
                   <matrix>
@@ -160,7 +172,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="159" duration="19" keyMode="9728">
+            <DOMFrame index="169" duration="19" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="Holes" selected="true" symbolType="graphic" firstFrame="9" loop="single frame">
                   <matrix>
@@ -172,7 +184,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="178" duration="14" keyMode="9728">
+            <DOMFrame index="188" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/entry_flag" selected="true" centerPoint3DX="2.85" centerPoint3DY="-3.65">
                   <matrix>
@@ -184,7 +196,7 @@ visible = false;]]></script>
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="192" duration="63" keyMode="9728">
+            <DOMFrame index="202" duration="63" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/Paleman_disappear" symbolType="graphic" loop="play once">
                   <matrix>
