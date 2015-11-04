@@ -27,7 +27,7 @@ package src.ui {
         
         override public function deactivate():void {
             active = false;
-            stage.addChildAt(this, 0);
+            //stage.addChildAt(this, 0);
         }
        
         override public function activate():void {

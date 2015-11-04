@@ -56,7 +56,7 @@ package src.ui {
             //addChild(costume);
             
             alpha = 0;
-            deactivate();
+            // deactivate();
             
             //menuBG.alpha = 2;
             //addChild(menuBG);
@@ -127,7 +127,7 @@ package src.ui {
             if ( active ) return;
             
             super.show();
-            stage.addChild(this);
+            // stage.addChild(this);
             addChild(costume);
             
             var tween:Tween = ObjectPool.getTween(this, "alpha", Strong.easeIn, 0, MAX_MENU_STRANPARENCY, 10);
@@ -155,10 +155,7 @@ package src.ui {
             var tween:Tween = e.target as Tween;
             tween.removeEventListener(TweenEvent.MOTION_FINISH, menuIsHiddenHandler);
             
-            deactivate();
-            visible = false;
-            
-            removeChild(costume);
+            destroy();
             
             if ( menu_is_hidden_callback ) {
                 menu_is_hidden_callback();

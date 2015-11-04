@@ -43,8 +43,6 @@ package src.ui {
         }
         
         override public function deactivate():void {
-            stage.addChildAt(this, 0);
-            active = false;
             exit_button.removeEventListener(MouseEvent.CLICK, exitGame);
             resume_button.removeEventListener(MouseEvent.CLICK, startNextLevelListener);
         }

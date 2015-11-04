@@ -25,7 +25,7 @@
         private static const RELEASE_TEST_MODE:int = 2;
         private static const RELEASE_MODE:int = 3;
         
-        private var mode:int = RELEASE_MODE;
+        private var mode:int = HOME_TEST_MODE;
         Game.VERSION = "0.44";
         
         public var is_first_time:Boolean = false;
@@ -181,6 +181,8 @@
         private function MenuItemSelectedListener(e:MenuItemSelectedEvent):void {
             removeEventListener(MenuItemSelectedEvent.LEVEL_SELECTED, MenuItemSelectedListener);
             
+            loading_screen = new GameLoadingMenu(stage);
+            
             loading_screen.menu_is_shown_callback = function() {
                 startLevelLoading(e.id);
                 e = null;
@@ -225,6 +227,7 @@
             Recorder.add(new Record(Record.LEVEL_END_TYPE, game.level_id, exit_cmd, int(level_completed)));
             Recorder.send();
             
+            loading_screen = new GameLoadingMenu(stage);
             loading_screen.show();
             
             if ( !level_completed ) {

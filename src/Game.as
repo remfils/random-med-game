@@ -63,7 +63,7 @@ package src {
         public static const OBJECT_ACTIVATE_EVENT = "object_activate";
         public static var TestModePanel:Sprite;
 
-        private var menuPanel:GameMenu;
+        // private var menuPanel:GameMenu;
         public var gamePanel:Sprite;
         var playerPanel:Sprite; // for bullets
         private var glassPanel:Sprite;
@@ -185,7 +185,7 @@ package src {
             glassPanel.y += playerStat.height;
             addChildAt(glassPanel, getChildIndex(playerStat));
             
-            menuPanel = new GameMenu(stage);
+            //menuPanel = new GameMenu(stage);
             
             TestModePanel.y += playerStat.height;
             addChild(TestModePanel);
@@ -287,7 +287,9 @@ package src {
         public function update (e:Event) {
             if (PAUSED) {
                 stopTheGame();
-                menuPanel.show();
+                // menuPanel.show();
+                var gm:GameMenu = new GameMenu(this.stage);
+                gm.show();
                 return;
             }
             if (isTransition) return;
@@ -658,7 +660,7 @@ package src {
                 deleteManager.add(getChildAt(i));
             }
             
-            deleteManager.add(menuPanel);
+            // deleteManager.add(menuPanel);
             
             deleteManager.destroy();
             deleteManager = null;
