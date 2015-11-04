@@ -358,7 +358,8 @@ package src {
                     //    to.submitAnswer();
                     //}
                 break;
-                case 74:
+                case 32: // SPACE
+                case 74: // J
                     bulletController.stopBulletSpawn();
                     break;
                 case 27:// ESC
