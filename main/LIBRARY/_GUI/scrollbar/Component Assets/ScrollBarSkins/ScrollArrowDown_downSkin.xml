@@ -1,0 +1,69 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_downSkin" itemID="4399b4a4-00008e29" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageIdentifier="ScrollArrowDown_downSkin" linkageClassName="ScrollArrowDown_downSkin" lastModified="1446900062" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="ScrollArrowDown_downSkin">
+      <layers>
+        <DOMLayer name="icon" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#B8AD98" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!233 86[211 117 203 138!203 138[186 177 181 193!181 193[167 248 159 248!159 248[156 248 154 246!154 246[153 253 145 253!145 253[137 253 128 220!128 220[115 169 103 143!103 143[98 132 74 91!74 91|47 38!47 38[52 33 54 33!54 33[61 33 114
+ 136!114 136[118 142 124 163!124 163[128 179 137 189!137 189[141 194 148 214!148 214[152 226 154 234!154 234[159 207 196 134!196 134[208 112 229 85!229 85[241 69 269 33!269 33|270 34!270 34[245 68 233 86!160.5 0[#A2.8E #3.36 163 9!163
+ 9[163 23 163 24!163 24[162 127 154 162!154 162[153 157 149 102!149 102[145 43 145 25!145 25[145 #6.C4 148.5 0"/>
+                    <Edge fillStyle0="2" edges="
+!148.5 0|0 0!0 0|0 280!0 280|300 280!300 280|300 0!300 0|160.5 0"/>
+                    <Edge fillStyle1="1" edges="
+!148.5 0|160.5 0"/>
+                    <Edge cubics="!300 0(;300,0 161,0 161,0q300 0 161 0);"/>
+                    <Edge cubics="!300 280(;300,280 300,0 300,0q300 280 300 0);"/>
+                    <Edge cubics="!0 280(;0,280 300,280 300,280q0 280 300 280);"/>
+                    <Edge cubics="!0 0(;0,0 0,280 0,280q0 0 0 280);"/>
+                    <Edge cubics="!196 134(;216,99 239,73 269,33q196 134Q208 112q229 85Q241 69q269 33);"/>
+                    <Edge cubics="!269 33(;269,33 270,34 270,34q269 33 270 34);"/>
+                    <Edge cubics="!270 34(270,34;248,68 216,103 203,138q270 34Q245 68q233 86Q211 117q203 138);"/>
+                    <Edge cubics="!203 138(;197,155 186,177 181,193q203 138Q186 177q181 193);"/>
+                    <Edge cubics="!181 193(181,193;178,205 169,248 159,248q181 193Q167 248q159 248);"/>
+                    <Edge cubics="!145 253(145,253;130,253 129,201 103,143q145 253Q137 253q128 220Q115 169q103 143);"/>
+                    <Edge cubics="!103 143(;96,127 84,108 74,91q103 143Q98 132q74 91);"/>
+                    <Edge cubics="!74 91(74,91;67,78 56,55 47,38q74 91 47 38);"/>
+                    <Edge cubics="!47 38(;48,37 52,33 54,33q47 38Q52 33q54 33);"/>
+                    <Edge cubics="!54 33(54,33;59,33 98,105 114,136q54 33Q61 33q114 136);"/>
+                    <Edge cubics="!114 136(;124,154 122,172 137,189q114 136Q118 142q124 163Q128 179q137 189);"/>
+                    <Edge cubics="!159 248(159,248;157,248 155,247 154,246q159 248Q156 248q154 246);"/>
+                    <Edge cubics="!137 189(;140,192 143,201 148,214q137 189Q141 194q148 214);"/>
+                    <Edge cubics="!148 214(148,214;151,222 153,229 154,234q148 214Q152 226q154 234);"/>
+                    <Edge cubics="!154 246(;153,251 150,253 145,253q154 246Q153 253q145 253);"/>
+                    <Edge cubics="!154 234(154,234;157,216 171,183 196,134q154 234Q159 207q196 134);"/>
+                    <Edge cubics="!154 162(154,162;153,157 145,52 145,25q154 162Q153 157q149 102Q145 43q145 25);"/>
+                    <Edge cubics="!163 24(163,24;163,32 162,127 154,162q163 24Q162 127q154 162);"/>
+                    <Edge cubics="!161 0(161,0;161,0 149,0 149,0q161 0 149 0);"/>
+                    <Edge cubics="!161 0(;162,2 163,5 163,9q161 0Q163 3q163 9);"/>
+                    <Edge cubics="!145 25(145,25;145,13 146,5 149,0q145 25Q145 7q149 0);"/>
+                    <Edge cubics="!163 9(;163,18 163,23 163,24q163 9Q163 23q163 24);"/>
+                    <Edge cubics="!149 0(;149,0 0,0 0,0q149 0 0 0);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="fill" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

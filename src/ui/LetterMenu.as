@@ -1,5 +1,5 @@
 package src.ui {
-    //import fl.controls.UIScrollBar;
+    import fl.controls.UIScrollBar;
 	import flash.display.DisplayObjectContainer;
     import flash.events.KeyboardEvent;
     import flash.events.MouseEvent;
@@ -14,11 +14,11 @@ package src.ui {
     public class LetterMenu extends GameMenu {
         
         var close_btn:MenuSprites;
-        //var scroll_bar:UIScrollBar;
+        var scroll_bar:UIScrollBar;
         
         private var letter:Letter;
         
-        private const DEFAULT_MESSAGE_WIDTH:Number = 450;
+        private const DEFAULT_MESSAGE_WIDTH:Number = 420;
         
         public function LetterMenu(letter_:Letter) {
             super(letter_.costume.stage);
@@ -55,15 +55,17 @@ package src.ui {
             close_btn.buttonMode = true;
             costume.addChild(close_btn);
             
-            /*scroll_bar = new UIScrollBar();
+            scroll_bar = new UIScrollBar();
             scroll_bar.direction = "vertical";
             
             var title_txt:TextField = costume.title_txt;
             
             scroll_bar.setSize(title_txt.width, title_txt.height);
-            scroll_bar.move(title_txt.x + title_txt.width, title_txt.y);
+            scroll_bar.move(title_txt.x + title_txt.width + 15, title_txt.y);
             
-            addChild(scroll_bar);*/
+            scroll_bar.scrollTarget = title_txt;
+            
+            costume.addChild(scroll_bar);
         }
        
         override public function activate():void {

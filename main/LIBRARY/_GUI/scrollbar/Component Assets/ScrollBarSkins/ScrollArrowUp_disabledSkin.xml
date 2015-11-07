@@ -1,0 +1,58 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_disabledSkin" itemID="4399b493-00008d74" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageIdentifier="ScrollArrowUp_disabledSkin" linkageClassName="ScrollArrowUp_disabledSkin" lastModified="1446900053">
+  <timeline>
+    <DOMTimeline name="ScrollArrowUp_disabledSkin">
+      <layers>
+        <DOMLayer name="skin" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!227 208[227 230 210 252!210 252[187 280 149 280!149 280[116 280 98 255!98 255[86 238 86 225!86 225[86 197 97 178!97 178[101 169 117 158!117 158[126 151 131 150!131 150|153 147!153 147|166 147!166 147[194 147 213 175!213 175[227 196 227
+ 208"/>
+                    <Edge cubics="!166 147(166,147;209,147 227,201 227,208q166 147Q194 147q213 175Q227 196q227 208);"/>
+                    <Edge cubics="!227 208(;227,229 207,280 149,280q227 208Q227 230q210 252Q187 280q149 280);"/>
+                    <Edge cubics="!149 280(;97,280 86,231 86,225q149 280Q116 280q98 255Q86 238q86 225);"/>
+                    <Edge cubics="!86 225(;86,208 89,192 97,178q86 225Q86 197q97 178);"/>
+                    <Edge cubics="!97 178(;101,169 105,166 117,158q97 178Q101 169q117 158);"/>
+                    <Edge cubics="!117 158(117,158;122,154 123,151 131,150q117 158Q126 151q131 150);"/>
+                    <Edge cubics="!131 150(;131,150 153,147 153,147q131 150 153 147);"/>
+                    <Edge cubics="!153 147(153,147;153,147 166,147 166,147q153 147 166 147);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#B8AD98" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!0 0|0 280!0 280|300 280!300 280|300 0!300 0|0 0"/>
+                    <Edge cubics="!300 0(;300,0 0,0 0,0q300 0 0 0);"/>
+                    <Edge cubics="!300 280(;300,280 300,0 300,0q300 280 300 0);"/>
+                    <Edge cubics="!0 280(;0,280 300,280 300,280q0 280 300 280);"/>
+                    <Edge cubics="!0 0(;0,0 0,280 0,280q0 0 0 280);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

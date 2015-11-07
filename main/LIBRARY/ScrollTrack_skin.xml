@@ -1,0 +1,71 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ScrollTrack_skin" itemID="44fdb956-000002bc" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="ScrollTrack_skin" lastModified="1446900038">
+  <timeline>
+    <DOMTimeline name="ScrollTrack_skin">
+      <layers>
+        <DOMLayer name="skin" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!145 0[#89.AF #22.F9 135 92!135 92[133 140 130 229!130 229|130 2598!130 2598[133 2643 139 2805!139 2805[#90.75 #B6C.2D 150 2997!150 2997|160 2997!160 2997[#A0.85 #B57.FC 172 2595!172 2595|172 1913!172 1913[174 1853 172 1803!172 1803|172
+ 235!172 235[170 138 168 99!168 99[#A5.03 #2C.7B 158 0!158 0|145 0"/>
+                    <Edge cubics="!172 1803(;173,1836 173,1875 172,1913q172 1803Q174 1853q172 1913);"/>
+                    <Edge cubics="!172 1913(;172,1913 172,2595 172,2595q172 1913 172 2595)172,2595;"/>
+                    <Edge cubics="!172 235(172,235;172,235 172,1803 172,1803q172 235 172 1803);"/>
+                    <Edge cubics="!130 2598(;130,2598 130,229 130,229q130 2598 130 229);"/>
+                    <Edge cubics="!145 0(;145,0 0,0 0,0q145 0 0 0);"/>
+                    <Edge cubics="!0 2997(;0,2997 150,2997 150,2997q0 2997 150 2997);"/>
+                    <Edge cubics="!300 2997(;300,2997 300,0 300,0q300 2997 300 0);"/>
+                    <Edge cubics="!0 0(;0,0 0,2997 0,2997q0 0 0 2997);"/>
+                    <Edge cubics="!158 0(;158,0 145,0 145,0q158 0 145 0);"/>
+                    <Edge cubics="!300 0(;300,0 158,0 158,0q300 0 158 0);"/>
+                    <Edge cubics="!158 0(;163,29 166,62 168,99q158 0Q165 44q168 99);"/>
+                    <Edge cubics="!135 92(;137,54 140,23 145,0q135 92Q138 35q145 0);"/>
+                    <Edge cubics="!130 229(;132,170 134,124 135,92q130 229Q133 140q135 92);"/>
+                    <Edge cubics="!168 99(;169,125 171,170 172,235q168 99Q170 138q172 235);"/>
+                    <Edge cubics="!139 2805(;135,2697 132,2628 130,2598q139 2805Q133 2643q130 2598);"/>
+                    <Edge cubics="!160 2997(;160,2997 300,2997 300,2997q160 2997 300 2997);"/>
+                    <Edge cubics="!150 2997(;150,2997 160,2997 160,2997q150 2997 160 2997);"/>
+                    <Edge cubics="!172 2595(;165,2801 161,2935 160,2997q172 2595Q161 2904q160 2997);"/>
+                    <Edge cubics="!150 2997(;146,2948 142,2884 139,2805q150 2997Q144 2924q139 2805);"/>
+                    <Edge cubics="!153 -29(;155,-20 157,-10 158,0q153 -29Q156 -15q158 0);"/>
+                    <Edge cubics="!145 0(;147,-11 150,-21 153,-29q145 0Q148 -17q153 -29);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#B8AD98" alpha="0"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!0 0|0 2997!0 2997|300 2997!300 2997|300 0!300 0|0 0"/>
+                    <Edge cubics="!300 0(;300,0 0,0 0,0q300 0 0 0);"/>
+                    <Edge cubics="!300 3007(;300,3007 300,0 300,0q300 3007 300 0);"/>
+                    <Edge cubics="!0 3007(;0,3007 300,3007 300,3007q0 3007 300 3007);"/>
+                    <Edge cubics="!0 0(;0,0 0,3007 0,3007q0 0 0 3007);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

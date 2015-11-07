@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1446837557" lastUniqueIdentifier="8">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1446897276" lastUniqueIdentifier="8">
   <timeline>
-    <DOMTimeline name="GameMenuCostume" currentFrame="79">
+    <DOMTimeline name="GameMenuCostume" currentFrame="99">
       <layers>
         <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>
@@ -69,12 +69,12 @@
             </DOMFrame>
             <DOMFrame index="79" duration="21" keyMode="9728">
               <elements>
-                <DOMDynamicText name="title_txt" left="0.45" width="431.5" height="258.25" isSelectable="false" lineType="multiline">
+                <DOMDynamicText name="title_txt" left="0.45" width="408.95" height="256.5" isSelectable="false" lineType="multiline">
                   <matrix>
                     <Matrix a="1.01708984375" tx="-216.95" ty="157.45"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="213.3" y="-7.95"/>
+                    <Point x="202.15" y="-7.9"/>
                   </transformationPoint>
                   <textRuns>
                     <DOMTextRun>
@@ -113,12 +113,12 @@
             </DOMFrame>
             <DOMFrame index="79" duration="21" keyMode="9728">
               <elements>
-                <DOMDynamicText name="main_txt" left="30.35" width="708.65" height="35.95" isSelectable="false">
+                <DOMDynamicText name="main_txt" left="30.35" width="700.35" height="35.95" isSelectable="false">
                   <matrix>
                     <Matrix a="0.624664306640625" d="0.624664306640625" tx="-237.9" ty="445.4"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="697.4" y="-18.65"/>
+                    <Point x="689.65" y="-18.4"/>
                   </transformationPoint>
                   <textRuns>
                     <DOMTextRun>

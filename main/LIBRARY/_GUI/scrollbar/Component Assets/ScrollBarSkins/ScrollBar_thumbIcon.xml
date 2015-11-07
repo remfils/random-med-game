@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollBar_thumbIcon" itemID="442a68fb-00006a9d" linkageExportForAS="true" linkageExportInFirstFrame="false" linkageClassName="ScrollBar_thumbIcon" lastModified="1446899623">
+  <timeline>
+    <DOMTimeline name="ScrollBar_thumbIcon">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#6B0F0F"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!112 20|12 20!12 20|12 0!12 0|112 0!112 0|112 20!112 60|12 60!12 60|12 40!12 40|112 40!112 40|112 60!112 100|12 100!12 100|12 80!12 80|112 80!112 80|112 100!12 120|112 120!112 120|112 140!112 140|12 140!12 140|12 120"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
