@@ -16,6 +16,9 @@ package src.util {
         
         private static var _instance:SoundManager;
         
+        [AS3][Embed(source = "assets/pickup-coin.mp3")]
+        private const SoundPickupCoin:Class;
+        
         public function SoundManager() {
             
         }
@@ -23,8 +26,13 @@ package src.util {
         public static function get instance():SoundManager {
             if ( !_instance ) {
                 _instance = new SoundManager();
+                _instance.init();
             }
             return _instance;
+        }
+        
+        public function init():void {
+            addResource(new SoundPickupCoin(), SoundManager.ACTION_PICKUP_COIN);
         }
         
         public function addResource(sound:Sound, id:int):void {
@@ -47,18 +55,14 @@ package src.util {
         }
         
         public function playBGM(music_id:int):void {
-            var sound:Sound = _tracks[id];
+            var sound:Sound = _tracks[music_id];
             if ( sound ) {
                 _channelBGM = sound.play();
             }
             else {
-                throw new Error("playBGM(): music is null with sid=" + id);
+                throw new Error("playBGM(): music is null with sid=" + music_id);
             }
         }
-        
     }
 
 }
-
-[AS3][Embed(source = "assets/pickup-coin.wav")]
-private const SoundPickupCoin:Class;

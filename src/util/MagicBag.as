@@ -117,6 +117,7 @@ package src.util {
                         break;
                     case ObjectCostume.COIN_TYPE:
                         change = COIN_STAT_OBJ;
+                        SoundManager.instance.playSFX(SoundManager.ACTION_PICKUP_COIN);
                         break;
                     case ObjectCostume.EMERALD_TYPE:
                         change = EMERALD_STAT_OBJ;
