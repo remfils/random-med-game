@@ -26,7 +26,7 @@
         private static const RELEASE_MODE:int = 3;
         
         private var mode:int = HOME_TEST_MODE;
-        Game.VERSION = "0.44";
+        Game.VERSION = "0.441";
         
         public var is_first_time:Boolean = false;
         

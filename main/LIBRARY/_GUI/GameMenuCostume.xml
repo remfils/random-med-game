@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1445516349" lastUniqueIdentifier="4">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1446837557" lastUniqueIdentifier="8">
   <timeline>
     <DOMTimeline name="GameMenuCostume" currentFrame="79">
       <layers>
@@ -113,7 +113,7 @@
             </DOMFrame>
             <DOMFrame index="79" duration="21" keyMode="9728">
               <elements>
-                <DOMDynamicText name="main_txt" left="30.35" width="708.65" height="35.95" isSelectable="false" lineType="multiline">
+                <DOMDynamicText name="main_txt" left="30.35" width="708.65" height="35.95" isSelectable="false">
                   <matrix>
                     <Matrix a="0.624664306640625" d="0.624664306640625" tx="-237.9" ty="445.4"/>
                   </matrix>

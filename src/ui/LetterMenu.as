@@ -1,4 +1,5 @@
 package src.ui {
+    //import fl.controls.UIScrollBar;
 	import flash.display.DisplayObjectContainer;
     import flash.events.KeyboardEvent;
     import flash.events.MouseEvent;
@@ -8,12 +9,12 @@ package src.ui {
     import src.costumes.MenuButtonCostume;
     import src.costumes.MenuSprites;
     import src.objects.Letter;
-	
 
 
     public class LetterMenu extends GameMenu {
         
         var close_btn:MenuSprites;
+        //var scroll_bar:UIScrollBar;
         
         private var letter:Letter;
         
@@ -53,6 +54,16 @@ package src.ui {
             close_btn.y = 124;
             close_btn.buttonMode = true;
             costume.addChild(close_btn);
+            
+            /*scroll_bar = new UIScrollBar();
+            scroll_bar.direction = "vertical";
+            
+            var title_txt:TextField = costume.title_txt;
+            
+            scroll_bar.setSize(title_txt.width, title_txt.height);
+            scroll_bar.move(title_txt.x + title_txt.width, title_txt.y);
+            
+            addChild(scroll_bar);*/
         }
        
         override public function activate():void {

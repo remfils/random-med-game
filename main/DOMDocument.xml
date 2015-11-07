@@ -22,7 +22,7 @@
           <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
-          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
+          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8" isExpanded="true"/>
           <DOMFolderItem name="_GUI/_coins" itemID="53c4f206-00000070"/>
           <DOMFolderItem name="_GUI/_healthBars" itemID="53c4f20b-00000071"/>
           <DOMFolderItem name="_GUI/_hearts" itemID="53c4f20e-00000072"/>
@@ -33,9 +33,9 @@
           <DOMFolderItem name="_GUI/loading" itemID="5627bdc0-00001348"/>
           <DOMFolderItem name="_GUI/MenuBG" itemID="56320754-000005c7"/>
           <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
-          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
-          <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc" isExpanded="true"/>
+          <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor" itemID="53cc1fe7-0000009f"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/decor/_Shield" itemID="551d3eec-0000015d"/>
@@ -73,12 +73,12 @@
           <DOMFolderItem name="_player/parts/_головы" itemID="53d0124e-000000d3"/>
           <DOMFolderItem name="_player/parts/_руки" itemID="53d01255-000000d7"/>
           <DOMFolderItem name="_player/states" itemID="552fc219-0000012e"/>
-          <DOMFolderItem name="src" itemID="53afd2e7-00000077" isExpanded="true"/>
+          <DOMFolderItem name="src" itemID="53afd2e7-00000077"/>
      </folders>
      <fonts>
-          <DOMFontItem name="MagicFont copy" itemID="56278f8b-00000e8f" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="5" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
-          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
           <DOMFontItem name="MagicFont" itemID="56278f8b-00000e8e" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
+          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
+          <DOMFontItem name="MagicFont copy" itemID="56278f8b-00000e8f" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="5" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
      </fonts>
      <media>
           <DOMBitmapItem name="_bosses/clone/Untitled-1.jpg" itemID="551d3a50-0000012d" sourceExternalFilepath="../main/LIBRARY/_bosses/clone/Untitled-1.jpg" sourceLastImported="1427978743" externalFileCRC32="543492954" externalFileSize="382310" quality="50" href="_bosses/clone/Untitled-1.jpg" bitmapDataHRef="M 4 1407974788.dat" frameRight="32000" frameBottom="32000" isJPEG="true"/>
@@ -174,7 +174,7 @@
           <Include href="_GUI/_spells/spellPic.xml" loadImmediate="false" itemID="53b9b6ff-000000b5" lastModified="1430474802"/>
           <Include href="_GUI/ErrorScreen.xml" itemID="553a5836-0000013b" lastModified="1441276612"/>
           <Include href="_GUI/GameMenuBG.xml" itemID="5419c6f9-000000cb" lastModified="1441276608"/>
-          <Include href="_GUI/GameMenuCostume.xml" itemID="55b2a344-00000139" lastModified="1445516349"/>
+          <Include href="_GUI/GameMenuCostume.xml" itemID="55b2a344-00000139" lastModified="1446837557"/>
           <Include href="_GUI/icoScore.xml" loadImmediate="false" itemID="53cb1c73-000001aa" lastModified="1411378689"/>
           <Include href="_GUI/loading/loading_ball.xml" itemIcon="1" loadImmediate="false" itemID="55e82440-0000018c" lastModified="1441276992"/>
           <Include href="_GUI/loading/loading_cic.xml" loadImmediate="false" itemID="55e823cb-00000188" lastModified="1441281451"/>
@@ -1187,25 +1187,25 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1369688" publishTime="1446894317" publishDebug="true"/>
+          <PublishItem publishSize="1375167" publishTime="1446894265" publishDebug="true"/>
+          <PublishItem publishSize="1376037" publishTime="1446894188" publishDebug="true"/>
+          <PublishItem publishSize="1375958" publishTime="1446837584" publishDebug="true"/>
+          <PublishItem publishSize="1376012" publishTime="1446837553" publishDebug="true"/>
+          <PublishItem publishSize="909341" publishTime="1446837447" publishDebug="true"/>
+          <PublishItem publishSize="909308" publishTime="1446837399"/>
+          <PublishItem publishSize="1178580" publishTime="1446635458"/>
+          <PublishItem publishSize="1336109" publishTime="1446635176" publishDebug="true"/>
+          <PublishItem publishSize="1336130" publishTime="1446633932" publishDebug="true"/>
+          <PublishItem publishSize="1336266" publishTime="1446633852" publishDebug="true"/>
+          <PublishItem publishSize="1336164" publishTime="1446633754" publishDebug="true"/>
+          <PublishItem publishSize="1336056" publishTime="1446633563" publishDebug="true"/>
+          <PublishItem publishSize="1336113" publishTime="1446632926" publishDebug="true"/>
+          <PublishItem publishSize="1336106" publishTime="1446632662" publishDebug="true"/>
+          <PublishItem publishSize="1336087" publishTime="1446632486" publishDebug="true"/>
+          <PublishItem publishSize="1336078" publishTime="1446632359" publishDebug="true"/>
+          <PublishItem publishSize="1336069" publishTime="1446632328" publishDebug="true"/>
           <PublishItem publishSize="1178862" publishTime="1446504430"/>
           <PublishItem publishSize="1336281" publishTime="1446504296" publishDebug="true"/>
-          <PublishItem publishSize="1336368" publishTime="1446504253" publishDebug="true"/>
-          <PublishItem publishSize="1336294" publishTime="1446503274" publishDebug="true"/>
-          <PublishItem publishSize="1336149" publishTime="1446501379" publishDebug="true"/>
-          <PublishItem publishSize="1336115" publishTime="1446501238" publishDebug="true"/>
-          <PublishItem publishSize="1336180" publishTime="1446501165" publishDebug="true"/>
-          <PublishItem publishSize="909577" publishTime="1446501132" publishDebug="true"/>
-          <PublishItem publishSize="1335874" publishTime="1446500664" publishDebug="true"/>
-          <PublishItem publishSize="1335822" publishTime="1446499858" publishDebug="true"/>
-          <PublishItem publishSize="1335895" publishTime="1446499734" publishDebug="true"/>
-          <PublishItem publishSize="1335763" publishTime="1446499558" publishDebug="true"/>
-          <PublishItem publishSize="1335895" publishTime="1446499195" publishDebug="true"/>
-          <PublishItem publishSize="1335861" publishTime="1446499011" publishDebug="true"/>
-          <PublishItem publishSize="1335835" publishTime="1446498854" publishDebug="true"/>
-          <PublishItem publishSize="1335810" publishTime="1446498134" publishDebug="true"/>
-          <PublishItem publishSize="1335859" publishTime="1446497772" publishDebug="true"/>
-          <PublishItem publishSize="1335795" publishTime="1446497700" publishDebug="true"/>
-          <PublishItem publishSize="1335732" publishTime="1446497596" publishDebug="true"/>
-          <PublishItem publishSize="1335752" publishTime="1446497458" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>
