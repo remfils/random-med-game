@@ -33,7 +33,7 @@
           <DOMFolderItem name="_GUI/loading" itemID="5627bdc0-00001348"/>
           <DOMFolderItem name="_GUI/MenuBG" itemID="56320754-000005c7"/>
           <DOMFolderItem name="_GUI/scrollbar" itemID="563de018-000003a9" isExpanded="true"/>
-          <DOMFolderItem name="_GUI/scrollbar/Component Assets" itemID="44e488a0-000016d6"/>
+          <DOMFolderItem name="_GUI/scrollbar/Component Assets" itemID="44e488a0-000016d6" isExpanded="true"/>
           <DOMFolderItem name="_GUI/scrollbar/Component Assets/_private" itemID="4573a4bc-000003c6"/>
           <DOMFolderItem name="_GUI/scrollbar/Component Assets/ScrollBarSkins" itemID="44ea2edf-000000a6"/>
           <DOMFolderItem name="_GUI/scrollbar/Component Assets/Shared" itemID="44f892ff-0000001e"/>
@@ -270,7 +270,7 @@
           <Include href="_GUI/_spells/spellPic.xml" loadImmediate="false" itemID="53b9b6ff-000000b5" lastModified="1430474802"/>
           <Include href="_GUI/ErrorScreen.xml" itemID="553a5836-0000013b" lastModified="1441276612"/>
           <Include href="_GUI/GameMenuBG.xml" itemID="5419c6f9-000000cb" lastModified="1441276608"/>
-          <Include href="_GUI/GameMenuCostume.xml" itemID="55b2a344-00000139" lastModified="1446896208"/>
+          <Include href="_GUI/GameMenuCostume.xml" itemID="55b2a344-00000139" lastModified="1446897276"/>
           <Include href="_GUI/icoScore.xml" loadImmediate="false" itemID="53cb1c73-000001aa" lastModified="1411378689"/>
           <Include href="_GUI/loading/loading_ball.xml" itemIcon="1" loadImmediate="false" itemID="55e82440-0000018c" lastModified="1441276992"/>
           <Include href="_GUI/loading/loading_cic.xml" loadImmediate="false" itemID="55e823cb-00000188" lastModified="1441281451"/>
@@ -281,24 +281,23 @@
           <Include href="_GUI/playerStat copy.xml" loadImmediate="false" itemID="53e52513-000000c7" lastModified="1445429130"/>
           <Include href="_GUI/PlayerStatCostume.xml" itemID="558d500f-000003ab" lastModified="1445440477"/>
           <Include href="_GUI/scrollbar/Component Assets/_private/Component_avatar.xml" loadImmediate="false" itemID="44f89322-00000020" lastModified="1168286780"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_disabledSkin.xml" itemID="4399b48a-00008d0a" lastModified="1168289950"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_downSkin.xml" itemID="4399b4a4-00008e29" lastModified="1168289961"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_disabledSkin.xml" itemID="4399b48a-00008d0a" lastModified="1446900058"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_downSkin.xml" itemID="4399b4a4-00008e29" lastModified="1446900062"/>
           <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_icon.xml" itemIcon="1" loadImmediate="false" itemID="456df1e4-00000190" lastModified="1168289966"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_overSkin.xml" itemID="4399c50b-00008f6e" lastModified="1168290195"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_upSkin.xml" itemID="4399c519-0000900f" lastModified="1168290217"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_disabledSkin.xml" itemID="4399b493-00008d74" lastModified="1168290230"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_downSkin.xml" itemID="4399c54a-00009130" lastModified="1168290244"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_overSkin.xml" itemID="4399c50b-00008f6e" lastModified="1446900065"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_upSkin.xml" itemID="4399c519-0000900f" lastModified="1446900069"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_disabledSkin.xml" itemID="4399b493-00008d74" lastModified="1446900053"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_downSkin.xml" itemID="4399c54a-00009130" lastModified="1446900050"/>
           <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_icon.xml" itemIcon="1" loadImmediate="false" itemID="456df209-00000192" lastModified="1168290248"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_overSkin.xml" itemID="4399c55c-000091cd" lastModified="1168290260"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_upSkin.xml" itemID="4399c568-00009256" lastModified="1168290275"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollBar_thumbIcon.xml" itemID="442a68fb-00006a9d" lastModified="1164927281"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_downSkin.xml" itemID="4399c5a6-000092e7" lastModified="1168290280"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_overSkin.xml" itemID="4399c5b6-00009358" lastModified="1168290288"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_upSkin.xml" itemID="4399c5d1-000093e9" lastModified="1168290292"/>
-          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollTrack_skin.xml" itemID="44fdb956-000002bc" lastModified="1168290301"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_overSkin.xml" itemID="4399c55c-000091cd" lastModified="1446900043"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_upSkin.xml" itemID="4399c568-00009256" lastModified="1446900047"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollBar_thumbIcon.xml" itemID="442a68fb-00006a9d" lastModified="1446899623"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_downSkin.xml" itemID="4399c5a6-000092e7" lastModified="1446899231"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_overSkin.xml" itemID="4399c5b6-00009358" lastModified="1446899250"/>
+          <Include href="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_upSkin.xml" itemID="4399c5d1-000093e9" lastModified="1446899236"/>
           <Include href="_GUI/scrollbar/Component Assets/Shared/arrowIcon.xml" itemIcon="1" loadImmediate="false" itemID="456df449-0000019f" lastModified="1168290350"/>
           <Include href="_GUI/scrollbar/Component Assets/Shared/focusRectSkin.xml" itemID="44d8b6f8-00000055" lastModified="1168290361"/>
-          <Include href="_GUI/scrollbar/UIScrollBar.xml" itemID="44aaa686-00000064" lastModified="1292423118"/>
+          <Include href="_GUI/scrollbar/UIScrollBar.xml" itemID="44aaa686-00000064" lastModified="1446899263"/>
           <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446502786"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
@@ -477,6 +476,7 @@
           <Include href="Holes.xml" itemIcon="1" loadImmediate="false" itemID="55eb4a06-000001c0" lastModified="1441609765"/>
           <Include href="MagicWall.xml" loadImmediate="false" itemID="54985b97-00000298" lastModified="1419271397"/>
           <Include href="point_croos.xml" itemIcon="0" loadImmediate="false" itemID="562a270a-000004c0" lastModified="1445603114"/>
+          <Include href="ScrollTrack_skin.xml" itemID="44fdb956-000002bc" lastModified="1446900038"/>
           <Include href="src/collider.xml" loadImmediate="false" itemID="53afd0c0-0000005a" lastModified="1436955508"/>
           <Include href="картина_001.xml" itemIcon="1" loadImmediate="false" itemID="55c37a01-000001cb" lastModified="1438875676"/>
           <Include href="кисть.xml" loadImmediate="false" itemID="56322a60-000001a2" lastModified="1446128224"/>
@@ -1136,6 +1136,9 @@
                     <SolidSwatchItem color="#F6C259" hue="27" saturation="217" brightness="158"/>
                     <SolidSwatchItem color="#CBCBCB" brightness="191"/>
                     <SolidSwatchItem color="#EEB84C" hue="27" saturation="198" brightness="148"/>
+                    <SolidSwatchItem color="#F7E798" hue="33" saturation="203" brightness="188"/>
+                    <SolidSwatchItem color="#B8AD98" hue="27" saturation="44" brightness="158"/>
+                    <SolidSwatchItem color="#6B0F0F" saturation="182" brightness="58"/>
                </swatches>
           </swatchList>
      </swatchLists>
@@ -1302,26 +1305,26 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1217043" publishTime="1446900095"/>
+          <PublishItem publishSize="1216961" publishTime="1446900019"/>
+          <PublishItem publishSize="1216961" publishTime="1446899852"/>
+          <PublishItem publishSize="1216964" publishTime="1446899685"/>
+          <PublishItem publishSize="1216972" publishTime="1446899574"/>
+          <PublishItem publishSize="1216780" publishTime="1446899457"/>
+          <PublishItem publishSize="1216950" publishTime="1446899191"/>
+          <PublishItem publishSize="1216783" publishTime="1446898946"/>
+          <PublishItem publishSize="1375031" publishTime="1446898855" publishDebug="true"/>
+          <PublishItem publishSize="1216771" publishTime="1446898750"/>
+          <PublishItem publishSize="1216887" publishTime="1446898127"/>
+          <PublishItem publishSize="1216759" publishTime="1446897921"/>
+          <PublishItem publishSize="1375120" publishTime="1446897780" publishDebug="true"/>
+          <PublishItem publishSize="1375038" publishTime="1446897633" publishDebug="true"/>
+          <PublishItem publishSize="1216761" publishTime="1446897473"/>
+          <PublishItem publishSize="1216758" publishTime="1446897402"/>
+          <PublishItem publishSize="1374839" publishTime="1446897049" publishDebug="true"/>
           <PublishItem publishSize="1375279" publishTime="1446896339" publishDebug="true"/>
           <PublishItem publishSize="1375233" publishTime="1446896249" publishDebug="true"/>
           <PublishItem publishSize="1375179" publishTime="1446896121" publishDebug="true"/>
-          <PublishItem publishSize="1375172" publishTime="1446895878" publishDebug="true"/>
-          <PublishItem publishSize="1375220" publishTime="1446895691" publishDebug="true"/>
-          <PublishItem publishSize="1344741" publishTime="1446895016" publishDebug="true"/>
-          <PublishItem publishSize="909341" publishTime="1446894877" publishDebug="true"/>
-          <PublishItem publishSize="909341" publishTime="1446894827" publishDebug="true"/>
-          <PublishItem publishSize="909341" publishTime="1446894756" publishDebug="true"/>
-          <PublishItem publishSize="909341" publishTime="1446894653" publishDebug="true"/>
-          <PublishItem publishSize="909341" publishTime="1446894562" publishDebug="true"/>
-          <PublishItem publishSize="1369688" publishTime="1446894317" publishDebug="true"/>
-          <PublishItem publishSize="1375167" publishTime="1446894265" publishDebug="true"/>
-          <PublishItem publishSize="1376037" publishTime="1446894188" publishDebug="true"/>
-          <PublishItem publishSize="1375958" publishTime="1446837584" publishDebug="true"/>
-          <PublishItem publishSize="1376012" publishTime="1446837553" publishDebug="true"/>
-          <PublishItem publishSize="909341" publishTime="1446837447" publishDebug="true"/>
-          <PublishItem publishSize="909308" publishTime="1446837399"/>
-          <PublishItem publishSize="1178580" publishTime="1446635458"/>
-          <PublishItem publishSize="1336109" publishTime="1446635176" publishDebug="true"/>
      </publishHistory>
      <swcCache>
           <Swc hashKey="k718tUOF1.A1OSpQnqdJJ0" href="m001axeqz8.swc">

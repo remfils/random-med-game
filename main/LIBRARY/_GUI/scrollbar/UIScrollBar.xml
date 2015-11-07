@@ -1,6 +1,6 @@
-<DOMComponentItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/scrollbar/UIScrollBar" itemID="44aaa686-00000064" linkageExportForAS="true" linkageClassName="fl.controls.UIScrollBar" lastModified="1292423118" lastUniqueIdentifier="101" tooltip="UIScrollBar" customIconID="0" actionscriptClass="fl.controls.UIScrollBar" livePreviewScmHRef="haf79x0luk.swf" livePreviewScmSourceFilename="UIScrollBar.swf" persistLivePreview11="true" livePreview11ScmHRef="6h2m4xfzs9.swf" livePreview11ScmSourceFilename="C:\Users\Влад\AppData\Local\Adobe\Flash CS6\en_US\Configuration\TMP6gw76xfzs0..swf" editFrameIndex="2" requiredMinimumPlayerVersion="9" requiredMinimumASVersion="3" parametersAreLocked="true">
+<DOMComponentItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/scrollbar/UIScrollBar" itemID="44aaa686-00000064" linkageExportForAS="true" linkageClassName="fl.controls.UIScrollBar" lastModified="1446899263" lastUniqueIdentifier="112" tooltip="UIScrollBar" customIconID="0" actionscriptClass="fl.controls.UIScrollBar" livePreviewScmHRef="haf79x0luk.swf" livePreviewScmSourceFilename="UIScrollBar.swf" persistLivePreview11="true" livePreview11ScmHRef="6h2m4xfzs9.swf" livePreview11ScmSourceFilename="C:\Users\Влад\AppData\Local\Adobe\Flash CS6\en_US\Configuration\TMP6gw76xfzs0..swf" editFrameIndex="2" requiredMinimumPlayerVersion="9" requiredMinimumASVersion="3" parametersAreLocked="true">
   <timeline>
-    <DOMTimeline name="UIScrollBar">
+    <DOMTimeline name="UIScrollBar" currentFrame="1">
       <layers>
         <DOMLayer name="assets" color="#808080" current="true" isSelected="true" autoNamed="false">
           <frames>
@@ -9,7 +9,7 @@
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/Shared/focusRectSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/Shared/focusRectSkin" centerPoint3DX="107.85" centerPoint3DY="234">
                   <matrix>
                     <Matrix tx="66.8" ty="223"/>
                   </matrix>
@@ -17,7 +17,7 @@
                     <Point x="41.05" y="11"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollTrack_skin">
+                <DOMSymbolInstance libraryItemName="ScrollTrack_skin" centerPoint3DX="292.5" centerPoint3DY="92.9">
                   <matrix>
                     <Matrix tx="285" ty="18"/>
                   </matrix>
@@ -25,7 +25,7 @@
                     <Point x="7.5" y="74"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollTrack_skin" centerPoint3DX="41.5" centerPoint3DY="92">
+                <DOMSymbolInstance libraryItemName="ScrollTrack_skin" centerPoint3DX="41.5" centerPoint3DY="92">
                   <matrix>
                     <Matrix tx="34" ty="18"/>
                   </matrix>
@@ -33,7 +33,7 @@
                     <Point x="7.5" y="74"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollTrack_skin" centerPoint3DX="128.5" centerPoint3DY="94">
+                <DOMSymbolInstance libraryItemName="ScrollTrack_skin" centerPoint3DX="128.5" centerPoint3DY="94">
                   <matrix>
                     <Matrix tx="121" ty="20"/>
                   </matrix>
@@ -41,7 +41,7 @@
                     <Point x="7.5" y="74"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollTrack_skin">
+                <DOMSymbolInstance libraryItemName="ScrollTrack_skin" centerPoint3DX="216.4" centerPoint3DY="92.65">
                   <matrix>
                     <Matrix tx="209" ty="18"/>
                   </matrix>
@@ -49,23 +49,23 @@
                     <Point x="7.5" y="74"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_downSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_downSkin" centerPoint3DX="216.5" centerPoint3DY="11.55">
                   <matrix>
-                    <Matrix tx="209" ty="18"/>
+                    <Matrix tx="209" ty="4.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_downSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_downSkin" centerPoint3DX="216.5" centerPoint3DY="173.05">
                   <matrix>
-                    <Matrix tx="209" ty="152"/>
+                    <Matrix tx="209" ty="166.05"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_downSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_downSkin" centerPoint3DX="217.5" centerPoint3DY="86">
                   <matrix>
                     <Matrix tx="209" ty="60"/>
                   </matrix>
@@ -73,15 +73,15 @@
                     <Point x="6" y="26"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_overSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_overSkin" centerPoint3DX="128.5" centerPoint3DY="174.65">
                   <matrix>
-                    <Matrix tx="121" ty="154"/>
+                    <Matrix tx="121" ty="167.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_overSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollThumb_overSkin" centerPoint3DX="129.5" centerPoint3DY="88">
                   <matrix>
                     <Matrix tx="121" ty="62"/>
                   </matrix>
@@ -89,17 +89,17 @@
                     <Point x="6" y="26"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_overSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_overSkin" centerPoint3DX="128.5" centerPoint3DY="14.2">
                   <matrix>
-                    <Matrix tx="121" ty="20"/>
+                    <Matrix tx="121" ty="7.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_upSkin" selected="true" centerPoint3DX="41.5" centerPoint3DY="25">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_upSkin" selected="true" centerPoint3DX="41.5" centerPoint3DY="11.55">
                   <matrix>
-                    <Matrix tx="34" ty="18"/>
+                    <Matrix tx="34" ty="4.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
@@ -113,25 +113,25 @@
                     <Point x="6" y="26"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_upSkin" centerPoint3DX="41.5" centerPoint3DY="159">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_upSkin" centerPoint3DX="41.5" centerPoint3DY="173.55">
                   <matrix>
-                    <Matrix tx="34" ty="152"/>
+                    <Matrix tx="34" ty="166.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_disabledSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowDown_disabledSkin" centerPoint3DX="292.5" centerPoint3DY="174.25">
                   <matrix>
-                    <Matrix tx="285" ty="152"/>
+                    <Matrix tx="285" ty="167.25"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_disabledSkin">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollArrowUp_disabledSkin" centerPoint3DX="292.5" centerPoint3DY="11.55">
                   <matrix>
-                    <Matrix tx="285" ty="18"/>
+                    <Matrix tx="285" ty="4.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="7.5" y="7"/>
@@ -153,7 +153,7 @@
                     <Point x="2.5" y="4.5"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollBar_thumbIcon">
+                <DOMSymbolInstance libraryItemName="_GUI/scrollbar/Component Assets/ScrollBarSkins/ScrollBar_thumbIcon" centerPoint3DX="216.1" centerPoint3DY="85.5">
                   <matrix>
                     <Matrix tx="213" ty="82"/>
                   </matrix>
