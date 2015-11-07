@@ -22,7 +22,7 @@
           <DOMFolderItem name="_enemies/_Monk" itemID="545f1fb6-000000fd"/>
           <DOMFolderItem name="_enemies/_Rat" itemID="5421a167-000000fb"/>
           <DOMFolderItem name="_enemies/_Rat/parts" itemID="544533ec-000000ea"/>
-          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8" isExpanded="true"/>
+          <DOMFolderItem name="_GUI" itemID="53af5370-000000c8"/>
           <DOMFolderItem name="_GUI/_coins" itemID="53c4f206-00000070"/>
           <DOMFolderItem name="_GUI/_healthBars" itemID="53c4f20b-00000071"/>
           <DOMFolderItem name="_GUI/_hearts" itemID="53c4f20e-00000072"/>
@@ -38,7 +38,7 @@
           <DOMFolderItem name="_GUI/scrollbar/Component Assets/ScrollBarSkins" itemID="44ea2edf-000000a6"/>
           <DOMFolderItem name="_GUI/scrollbar/Component Assets/Shared" itemID="44f892ff-0000001e"/>
           <DOMFolderItem name="_level" itemID="5421a1d2-00000105" isExpanded="true"/>
-          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5"/>
+          <DOMFolderItem name="_level/_castle" itemID="542a616d-000000e5" isExpanded="true"/>
           <DOMFolderItem name="_level/_Decorations" itemID="53d0129d-000000f4"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS" itemID="53af5381-000000cc"/>
           <DOMFolderItem name="_level/_GAME_OBJECTS/chests" itemID="53af5316-000000b3"/>
@@ -298,7 +298,7 @@
           <Include href="_GUI/scrollbar/Component Assets/Shared/arrowIcon.xml" itemIcon="1" loadImmediate="false" itemID="456df449-0000019f" lastModified="1168290350"/>
           <Include href="_GUI/scrollbar/Component Assets/Shared/focusRectSkin.xml" itemID="44d8b6f8-00000055" lastModified="1168290361"/>
           <Include href="_GUI/scrollbar/UIScrollBar.xml" itemID="44aaa686-00000064" lastModified="1446899263"/>
-          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446502786"/>
+          <Include href="_level/_castle/castleLevel.xml" itemID="53b73308-000000ea" lastModified="1446906159"/>
           <Include href="_level/_castle/floor.xml" loadImmediate="false" itemID="542a6153-000000e1" lastModified="1412063957"/>
           <Include href="_level/_castle/wall.xml" loadImmediate="false" itemID="542a61a5-000000e8" lastModified="1438338079"/>
           <Include href="_level/_castle/уровень001.xml" itemIcon="1" loadImmediate="false" itemID="535ab843-00000015" lastModified="1412063714"/>
@@ -1305,6 +1305,11 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1224928" publishTime="1446906702"/>
+          <PublishItem publishSize="1384276" publishTime="1446902310" publishDebug="true"/>
+          <PublishItem publishSize="1384085" publishTime="1446902051" publishDebug="true"/>
+          <PublishItem publishSize="1383995" publishTime="1446900653" publishDebug="true"/>
+          <PublishItem publishSize="1217045" publishTime="1446900183"/>
           <PublishItem publishSize="1217043" publishTime="1446900095"/>
           <PublishItem publishSize="1216961" publishTime="1446900019"/>
           <PublishItem publishSize="1216961" publishTime="1446899852"/>
@@ -1320,11 +1325,6 @@
           <PublishItem publishSize="1375120" publishTime="1446897780" publishDebug="true"/>
           <PublishItem publishSize="1375038" publishTime="1446897633" publishDebug="true"/>
           <PublishItem publishSize="1216761" publishTime="1446897473"/>
-          <PublishItem publishSize="1216758" publishTime="1446897402"/>
-          <PublishItem publishSize="1374839" publishTime="1446897049" publishDebug="true"/>
-          <PublishItem publishSize="1375279" publishTime="1446896339" publishDebug="true"/>
-          <PublishItem publishSize="1375233" publishTime="1446896249" publishDebug="true"/>
-          <PublishItem publishSize="1375179" publishTime="1446896121" publishDebug="true"/>
      </publishHistory>
      <swcCache>
           <Swc hashKey="k718tUOF1.A1OSpQnqdJJ0" href="m001axeqz8.swc">

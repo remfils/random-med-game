@@ -85,33 +85,37 @@ package src.ui {
         override public function activate():void {
             //super.activate();
             stage.addEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
-            resume_button.addEventListener(MouseEvent.CLICK, resumeGame);
+            resume_button.addEventListener(MouseEvent.CLICK, resumeBtnClickListener);
             exit_button.addEventListener(MouseEvent.CLICK, exitGame);
             
             menu_is_shown_callback = function() {
                 Recorder.add(new Record(Record.GAMEMENU_ENTER_TYPE));
             };
             
-            menu_is_hidden_callback = function() {
-                game.resume();
-                Recorder.add(new Record(Record.GAMEMENU_LEAVE_TYPE));
-            }
-            
             activateElements();
         }
         
         protected function handleMenuInput(e:KeyboardEvent):void {
             if ( e.keyCode == 27 ) {
-                hide();
+                dellayedResumeGame();
                 e.stopImmediatePropagation();
             }
         }
         
-        protected function resumeGame(e:MouseEvent):void {
+        protected function resumeBtnClickListener(e:MouseEvent):void {
+            dellayedResumeGame();
+        }
+        
+        private function dellayedResumeGame():void {
             hide();
+            menu_is_hidden_callback = function() {
+                game.resume();
+                Recorder.add(new Record(Record.GAMEMENU_LEAVE_TYPE));
+            }
         }
         
         protected function exitGame(e:MouseEvent):void {
+            hide();
             main.exitGame(ExitLevelEvent.EXIT_TO_MENU_CMD, false);
         }
         
@@ -119,7 +123,7 @@ package src.ui {
             stage.addChildAt(this, 0);
             active = false;
             stage.removeEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
-            resume_button.removeEventListener(MouseEvent.CLICK, resumeGame);
+            resume_button.removeEventListener(MouseEvent.CLICK, resumeBtnClickListener);
             exit_button.removeEventListener(MouseEvent.CLICK, exitGame);
         }
         
