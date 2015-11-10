@@ -8,6 +8,7 @@ package src.enemy {
     import src.Game;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
+    import src.util.SoundManager;
 
     public class Projectile extends Enemy {
         private var speed:b2Vec2;
@@ -50,6 +51,12 @@ package src.enemy {
             createBodyReq.setAsDynamicSensor();
             createBodyReq.setAsBullet();
             return createBodyReq;
+        }
+        
+        override public function die():void {
+            super.die();
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_HIT_ENEMY_BULLET);
         }
     }
 

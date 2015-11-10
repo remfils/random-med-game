@@ -8,6 +8,8 @@ package src.bullets {
         public var end_animation_delay:Number = 0;
         public var manaCost:Number = 0;
         public var is_boom:Boolean = false;
+        public var sfx_shoot:int = 0;
+        public var sfx_hit:int = 0;
         
         public var spell_id:int;
         
@@ -35,6 +37,10 @@ package src.bullets {
             }
         }
         
+        public function setSounds(sfx_shoot:int, sfx_hit:int):void {
+            this.sfx_shoot = sfx_shoot;
+            this.sfx_hit = sfx_hit;
+        }
     }
 
 }

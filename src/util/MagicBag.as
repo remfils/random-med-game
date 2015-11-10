@@ -106,10 +106,11 @@ package src.util {
                 switch (costume.type) {
                     case ObjectCostume.SMALLHP_TYPE:
                         change = SMALL_HP_STAT_OBJ;
-                        
+                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_POTION);
                         break;
                     case ObjectCostume.SMALLMP_TYPE:
                         change = SMALL_MP_STAT_OBJ;
+                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_POTION);
                         break;
                     case ObjectCostume.EXIT_TYPE:
                         costume.setState(PICKUP_STATE);
@@ -117,7 +118,7 @@ package src.util {
                         break;
                     case ObjectCostume.COIN_TYPE:
                         change = COIN_STAT_OBJ;
-                        SoundManager.instance.playSFX(SoundManager.ACTION_PICKUP_COIN);
+                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_COIN);
                         break;
                     case ObjectCostume.EMERALD_TYPE:
                         change = EMERALD_STAT_OBJ;
