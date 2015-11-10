@@ -12,6 +12,7 @@
     import src.Player;
     import src.util.ChangePlayerStatObject;
     import src.util.CreateBodyRequest;
+    import src.util.SoundManager;
     
     public class Enemy extends TaskObject {
         public static const DEATH_STATE:String = "_death";
@@ -31,6 +32,8 @@
         var playerDistance:Number;
         private var hitFrames:uint = 0;
         
+        protected var death_sound_id:int = 0;
+        
         private static var hitColor:Color = new Color();
         
         protected var enemyFixtureDef:b2FixtureDef; // D!
@@ -41,6 +44,8 @@
             player = game.player;
             
             costume = new CostumeEnemy();
+            
+            death_sound_id = SoundManager.SFX_SMOKE;
         }
         
         override public function update ():void {
@@ -128,6 +133,8 @@
             costume.setAnimatedState(DEATH_STATE);
             submitAnswer();
             destroy();
+            
+            SoundManager.instance.playSFX(death_sound_id);
         }
         
         override public function destroy():void {

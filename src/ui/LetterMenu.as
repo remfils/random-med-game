@@ -72,7 +72,7 @@ package src.ui {
             stage.addEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
             close_btn.addEventListener(MouseEvent.CLICK, closeButtonCliclListerner);
             
-            //SoundManager.instance.playSFX(SoundManager.SFX_SHOW_NOTE);
+            SoundManager.instance.playSFX(SoundManager.SFX_SHOW_NOTE);
         }
         
         override public function deactivate():void {
@@ -81,8 +81,6 @@ package src.ui {
             
             stage.removeEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
             close_btn.removeEventListener(MouseEvent.CLICK, closeButtonCliclListerner);
-            
-            // SoundManager.instance.playSFX(SoundManager.SFX_SHOW_NOTE);
         }
         
         private function closeButtonCliclListerner(e:MouseEvent):void {

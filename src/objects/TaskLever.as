@@ -15,6 +15,7 @@
     import src.util.Collider;
     import Box2D.Dynamics.b2Body;
     import src.util.ComboManager;
+    import src.util.SoundManager;
 
     public class TaskLever extends TaskObject {
         public static const LEVER_TYPE:String = "Lever";
@@ -37,11 +38,13 @@
         override public function positiveOutcome():void {
             costume.setState(OPEN_STATE);
             state = OPEN_STATE;
+            SoundManager.instance.playSFX(SoundManager.SFX_OPEN_LEVER);
         }
         
         override public function negativeOutcome():void {
             costume.setState(BREAK_STATE);
             state = BREAK_STATE;
+            SoundManager.instance.playSFX(SoundManager.SFX_BREAK_LEVER);
         }
         
         // D!

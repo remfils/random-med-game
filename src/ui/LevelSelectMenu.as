@@ -9,6 +9,7 @@ package src.ui {
     import src.events.MenuItemSelectedEvent;
     import src.User;
     import src.util.DeleteManager;
+    import src.util.SoundManager;
 
     public class LevelSelectMenu extends AbstractMenu {
         public static const MOVE_LEVELS_LEFT_BTN:String = "MoveLeft";
@@ -126,15 +127,17 @@ package src.ui {
         
         override protected function clickListener(e:MouseEvent):void {
             var objectName:String = DisplayObject(e.target).parent.name;
-            
             switch( objectName ) {
                 case GOTO_TITLE_BTN:
+                    SoundManager.instance.playSFX(SoundManager.SFX_KNOCK);
                     parentMenu.switchToMenu(parentMenu.TITLE_MENU);
                     break;
                 case MOVE_LEVELS_RIGHT_BTN:
+                    SoundManager.instance.playSFX(SoundManager.SFX_KNOCK);
                     moveAllLevelsContainerRight();
                     break;
                 case MOVE_LEVELS_LEFT_BTN:
+                    SoundManager.instance.playSFX(SoundManager.SFX_KNOCK);
                     moveAllLevelsContainerLeft();
                     break;
                 case "":

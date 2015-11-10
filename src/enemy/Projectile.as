@@ -18,6 +18,8 @@ package src.enemy {
             super();
             costume.setType(CostumeEnemy.GREEN_BULLET_TYPE);
             activate();
+            
+            death_sound_id = SoundManager.SFX_HIT_ENEMY_BULLET;
         }
         
         public function setSpeed(dir:b2Vec2):void {
@@ -51,12 +53,6 @@ package src.enemy {
             createBodyReq.setAsDynamicSensor();
             createBodyReq.setAsBullet();
             return createBodyReq;
-        }
-        
-        override public function die():void {
-            super.die();
-            
-            SoundManager.instance.playSFX(SoundManager.SFX_HIT_ENEMY_BULLET);
         }
     }
 

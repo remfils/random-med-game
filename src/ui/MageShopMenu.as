@@ -6,6 +6,7 @@ package src.ui {
     import flash.display.Sprite;
     import flash.events.MouseEvent;
     import flash.geom.Point;
+    import flash.media.SoundMixer;
     import src.costumes.ItemLogoCostume;
     import src.costumes.MenuButtonCostume;
     import src.costumes.MenuItemCostume;
@@ -15,6 +16,7 @@ package src.ui {
     import src.ui.mageShop.MageShopContainer;
     import src.ui.mageShop.InventoryItem;
     import src.User;
+    import src.util.SoundManager;
 
     public class MageShopMenu extends AbstractMenu {
         
@@ -210,6 +212,8 @@ package src.ui {
             if ( name == MenuItemCostume.NAME ) {
                 menuItem = MenuItemCostume(e.target);
                 
+                SoundManager.instance.playSFX(SoundManager.SFX_GUI_PICKUP_SPELL);
+                
                 if ( menuItem.isInput ) {
                     if ( menuItem.logo ) {
                         dragTarget = menuItem.logo;
@@ -234,6 +238,8 @@ package src.ui {
                 itemHolder:MenuItemCostume;
             
             if ( dragTarget ) {
+                SoundManager.instance.playSFX(SoundManager.SFX_GUI_PUTDOWN_SPELL);
+                
                 dragTarget.stopDrag();
                 
                 // check if over placeholder
@@ -304,12 +310,15 @@ package src.ui {
             var name:String = DisplayObject(e.target).parent.name;
             switch ( name ) {
                 case GOTO_TITLE_BTN:
+                    SoundManager.instance.playSFX(SoundManager.SFX_KNOCK);
+                    
                     inv = user.inventory;
                     i = inv.length;
                     while ( i-- ) {
                         item = inv[i];
                         if ( item.isSpell && item.onPlayer ) {
                             parentMenu.switchToMenu(parentMenu.TITLE_MENU);
+                            break;
                         }
                     }
                     break;
