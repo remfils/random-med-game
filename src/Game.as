@@ -435,6 +435,8 @@ package src {
                             Door(obj).specialLock = false;
                             Door(obj).unlock();
                             Recorder.recordSecretRoomFound();
+                            
+                            SoundManager.instance.playSFX(SoundManager.SFX_OPEN_SECRET_ROOM);
                         }
                         
                         if ( obj is Obstacle ) {

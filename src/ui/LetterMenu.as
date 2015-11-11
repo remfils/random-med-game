@@ -81,6 +81,8 @@ package src.ui {
             
             stage.removeEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
             close_btn.removeEventListener(MouseEvent.CLICK, closeButtonCliclListerner);
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_CLOSE_NOTE);
         }
         
         private function closeButtonCliclListerner(e:MouseEvent):void {

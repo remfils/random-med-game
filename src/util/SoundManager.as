@@ -1,7 +1,9 @@
 package src.util {
+    import flash.events.TimerEvent;
     import flash.media.Sound;
     import flash.media.SoundChannel;
     import flash.media.SoundMixer;
+    import flash.utils.Timer;
 
 
     public class SoundManager {
@@ -10,27 +12,29 @@ package src.util {
         public static const SFX_BREAK_KEY:int = 3;
         public static const SFX_BREAK_LEVER:int = 4;
         public static const SFX_CAST_SPARK:int = 5;
-        public static const SFX_DESTROY_BARREL:int = 6;
-        public static const SFX_DESTROY_CRATE:int = 7;
-        public static const SFX_DESTROY_ROCKS1:int = 8;
-        public static const SFX_DESTROY_WALL:int = 9;
-        public static const SFX_EXPLOSION:int = 10;
-        public static const SFX_GUI_MENU_WHOOSH:int = 11;
-        public static const SFX_GUI_PICKUP_SPELL:int = 12;
-        public static const SFX_GUI_PUTDOWN_SPELL:int = 13;
-        public static const SFX_HIT_ENEMY_BULLET:int = 14;
-        public static const SFX_HIT_SPARK:int = 15;
-        public static const SFX_HIT_SPELL_UNKNOWN:int = 16;
-        public static const SFX_KNOCK:int = 17;
-        public static const SFX_OPEN_DOOR:int = 18;
-        public static const SFX_OPEN_LEVER:int = 19;
-        public static const SFX_OPEN_LOCK1:int = 20;
-        public static const SFX_OPEN_SECRET_ROOM:int = 21;
-        public static const SFX_PICKUP_COIN:int = 22;
-        public static const SFX_PICKUP_POTION:int = 23;
-        public static const SFX_SHOOT_MONK:int = 24;
-        public static const SFX_SHOW_NOTE:int = 25;
-        public static const SFX_SMOKE:int = 26;
+        public static const SFX_CLOSE_NOTE:int = 6;
+        public static const SFX_DESTROY_BARREL:int = 7;
+        public static const SFX_DESTROY_CRATE:int = 8;
+        public static const SFX_DESTROY_ROCKS1:int = 9;
+        public static const SFX_DESTROY_WALL:int = 10;
+        public static const SFX_EXPLOSION:int = 11;
+        public static const SFX_GUI_MENU_WHOOSH:int = 12;
+        public static const SFX_GUI_PICKUP_SPELL:int = 13;
+        public static const SFX_GUI_PUTDOWN_SPELL:int = 14;
+        public static const SFX_HIT_ENEMY_BULLET:int = 15;
+        public static const SFX_HIT_SPARK:int = 16;
+        public static const SFX_HIT_SPELL_UNKNOWN:int = 17;
+        public static const SFX_KNOCK:int = 18;
+        public static const SFX_OPEN_DOOR:int = 19;
+        public static const SFX_OPEN_LEVER:int = 20;
+        public static const SFX_OPEN_LOCK1:int = 21;
+        public static const SFX_OPEN_SECRET_ROOM:int = 22;
+        public static const SFX_PICKUP_COIN:int = 23;
+        public static const SFX_PICKUP_OBJECT:int = 24;
+        public static const SFX_PICKUP_POTION:int = 25;
+        public static const SFX_SHOOT_MONK:int = 26;
+        public static const SFX_SHOW_NOTE:int = 27;
+        public static const SFX_SMOKE:int = 28;
         
         [AS3][Embed(source = "assets/activate_ghost.mp3")]
         private const Activate_Ghost:Class;
@@ -42,6 +46,8 @@ package src.util {
         private const Break_Lever:Class;
         [AS3][Embed(source = "assets/cast_spark.mp3")]
         private const Cast_Spark:Class;
+        [AS3][Embed(source = "assets/close_note.mp3")]
+        private const Close_Note:Class;
         [AS3][Embed(source = "assets/destroy_barrel.mp3")]
         private const Destroy_Barrel:Class;
         [AS3][Embed(source = "assets/destroy_crate.mp3")]
@@ -76,6 +82,8 @@ package src.util {
         private const Open_SecretRoom:Class;
         [AS3][Embed(source = "assets/pickup_coin.mp3")]
         private const Pickup_Coin:Class;
+        [AS3][Embed(source = "assets/pickup_object.mp3")]
+        private const Pickup_Object:Class;
         [AS3][Embed(source = "assets/pickup_potion.mp3")]
         private const Pickup_Potion:Class;
         [AS3][Embed(source = "assets/shoot_monk.mp3")]
@@ -90,6 +98,8 @@ package src.util {
         
         private var _channelSFX:SoundChannel = new SoundChannel();
         private var _channelBGM:SoundChannel = new SoundChannel();
+        
+        private var _safe_sfx_id_array:Vector.<int> = new Vector.<int>();
         
         private static var _instance:SoundManager;
         
@@ -112,6 +122,7 @@ package src.util {
             addResource(new Break_Key(), SoundManager.SFX_BREAK_KEY);
             addResource(new Break_Lever(), SoundManager.SFX_BREAK_LEVER);
             addResource(new Cast_Spark(), SoundManager.SFX_CAST_SPARK);
+            addResource(new Close_Note(), SoundManager.SFX_CLOSE_NOTE);
             addResource(new Destroy_Barrel(), SoundManager.SFX_DESTROY_BARREL);
             addResource(new Destroy_Crate(), SoundManager.SFX_DESTROY_CRATE);
             addResource(new Destroy_Rocks1(), SoundManager.SFX_DESTROY_ROCKS1);
@@ -129,6 +140,7 @@ package src.util {
             addResource(new Open_Lock1(), SoundManager.SFX_OPEN_LOCK1);
             addResource(new Open_SecretRoom(), SoundManager.SFX_OPEN_SECRET_ROOM);
             addResource(new Pickup_Coin(), SoundManager.SFX_PICKUP_COIN);
+            addResource(new Pickup_Object(), SoundManager.SFX_PICKUP_OBJECT);
             addResource(new Pickup_Potion(), SoundManager.SFX_PICKUP_POTION);
             addResource(new Shoot_Monk(), SoundManager.SFX_SHOOT_MONK);
             addResource(new Show_Note(), SoundManager.SFX_SHOW_NOTE);
@@ -145,7 +157,10 @@ package src.util {
         }
         
         public function playSFX(id:int):void {
-            if ( id == 0 ) return;
+            if ( id == 0 ) {
+                return;
+                trace("id is 0");
+            }
             
             var sound:Sound = _tracks[id];
             if ( sound ) {
@@ -154,6 +169,23 @@ package src.util {
             else {
                 throw new Error("playSFX(): sound is null with sid=" + id);
             }
+        }
+        
+        public function safePlaySFX(id:int):void {
+            if ( _safe_sfx_id_array.length == 0 ) {
+                var timer:Timer = ObjectPool.getTimer(3);
+                timer.addEventListener(TimerEvent.TIMER_COMPLETE, safePlayAfterDellayCompleteListener);
+            }
+            if ( _safe_sfx_id_array.indexOf(id) == -1 )
+                _safe_sfx_id_array.push(id);
+        }
+        
+        private function safePlayAfterDellayCompleteListener(e:TimerEvent):void {
+            var timer:Timer = Timer(e.target);
+            timer.removeEventListener(TimerEvent.TIMER_COMPLETE, safePlayAfterDellayCompleteListener);
+            
+            while ( _safe_sfx_id_array.length )
+                playSFX(_safe_sfx_id_array.pop());
         }
         
         public function playBGM(music_id:int):void {

@@ -106,11 +106,9 @@ package src.util {
                 switch (costume.type) {
                     case ObjectCostume.SMALLHP_TYPE:
                         change = SMALL_HP_STAT_OBJ;
-                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_POTION);
                         break;
                     case ObjectCostume.SMALLMP_TYPE:
                         change = SMALL_MP_STAT_OBJ;
-                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_POTION);
                         break;
                     case ObjectCostume.EXIT_TYPE:
                         costume.setState(PICKUP_STATE);
@@ -127,6 +125,13 @@ package src.util {
                 
                 if ( change ) {
                     if ( game.changePlayerStat(change) ) {
+                        switch ( change.stat_name ) {
+                            case ChangePlayerStatObject.HEALTH_STAT:
+                            case ChangePlayerStatObject.MANA_STAT:
+                                SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_POTION);
+                                break;
+                        }
+                        
                         Recorder.recordPickUpItem(change.id);
                         not_active = true;
                         costume.setAnimatedState(PICKUP_STATE);

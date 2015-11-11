@@ -127,11 +127,13 @@
                     obj_impulse.Multiply(10);
                     
                     if ( obj is Door && Door(obj).isSecret ) {
-                        Door(obj).specialLock = false;
+                        /*Door(obj).specialLock = false;
                         Door(obj).unlock();
                         Recorder.recordSecretRoomFound();
                         
-                        SoundManager.instance.playSFX(SoundManager.SFX_OPEN_SECRET_ROOM);
+                        trace("secret room open sound");
+                        
+                        SoundManager.instance.playSFX(SoundManager.SFX_OPEN_SECRET_ROOM);*/
                     }
                     
                     if ( obj is Obstacle ) {
