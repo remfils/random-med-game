@@ -9,6 +9,7 @@ package src.ui {
     import src.costumes.MenuButtonCostume;
     import src.costumes.MenuSprites;
     import src.objects.Letter;
+    import src.util.SoundManager;
 
 
     public class LetterMenu extends GameMenu {
@@ -72,6 +73,8 @@ package src.ui {
             active = true;
             stage.addEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
             close_btn.addEventListener(MouseEvent.CLICK, closeButtonCliclListerner);
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_SHOW_NOTE);
         }
         
         override public function deactivate():void {
@@ -80,6 +83,8 @@ package src.ui {
             
             stage.removeEventListener(KeyboardEvent.KEY_UP, handleMenuInput);
             close_btn.removeEventListener(MouseEvent.CLICK, closeButtonCliclListerner);
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_CLOSE_NOTE);
         }
         
         private function closeButtonCliclListerner(e:MouseEvent):void {

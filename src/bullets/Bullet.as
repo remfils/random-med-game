@@ -11,6 +11,7 @@
     import flash.events.Event;
     import flash.events.TimerEvent;
     import flash.geom.Point;
+    import flash.media.SoundMixer;
     import flash.utils.Timer;
     import src.costumes.BulletCostume;
     import src.enemy.Enemy;
@@ -27,6 +28,7 @@
     import src.util.Collider;
     import src.util.ObjectPool;
     import src.util.Recorder;
+    import src.util.SoundManager;
     
     public class Bullet extends AbstractObject implements LoopClip {
         private var gws:Number = Game.WORLD_SCALE;
@@ -106,6 +108,8 @@
                 game.cRoom.world.QueryAABB(game.createExposionQuerryAABBCallback(body.GetPosition(), bulletDef.damage, 2), aabb);
                 
                 explode = false;
+                
+                SoundManager.instance.playSFX(SoundManager.SFX_EXPLOSION);
             }
             x = body.GetPosition().x * gws;
             y = body.GetPosition().y * gws;
@@ -123,9 +127,13 @@
                     obj_impulse.Multiply(10);
                     
                     if ( obj is Door && Door(obj).isSecret ) {
-                        Door(obj).specialLock = false;
+                        /*Door(obj).specialLock = false;
                         Door(obj).unlock();
                         Recorder.recordSecretRoomFound();
+                        
+                        trace("secret room open sound");
+                        
+                        SoundManager.instance.playSFX(SoundManager.SFX_OPEN_SECRET_ROOM);*/
                     }
                     
                     if ( obj is Obstacle ) {
@@ -204,6 +212,8 @@
             timer.addEventListener(TimerEvent.TIMER_COMPLETE, bulletIsFinishedPlaying);
             
             game.bulletController.safeDeactivateBullet(this);
+            
+            SoundManager.instance.playSFX(bulletDef.sfx_hit);
         }
         
         private function bulletIsFinishedPlaying(e:TimerEvent):void {

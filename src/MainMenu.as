@@ -12,6 +12,7 @@ package src {
     import src.ui.MageShopMenu;
     import src.ui.TitleMenu;
     import src.util.ObjectPool;
+    import src.util.SoundManager;
     
 
     public class MainMenu extends Sprite {
@@ -94,6 +95,8 @@ package src {
             
             currentMenu = AbstractMenu(menus[MENU_NAME]);
             currentMenu.activate();
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_GUI_MENU_WHOOSH);
         }
         
         private function displayMenu(MENU_NAME:uint):void {

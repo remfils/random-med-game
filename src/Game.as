@@ -196,6 +196,8 @@ package src {
                 show_tutorial = false;
                 toggleControlCheatSheet();
             }
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_START_LEVEL);
         }
         
         private function addBulletController() {
@@ -435,6 +437,8 @@ package src {
                             Door(obj).specialLock = false;
                             Door(obj).unlock();
                             Recorder.recordSecretRoomFound();
+                            
+                            SoundManager.instance.playSFX(SoundManager.SFX_OPEN_SECRET_ROOM);
                         }
                         
                         if ( obj is Obstacle ) {

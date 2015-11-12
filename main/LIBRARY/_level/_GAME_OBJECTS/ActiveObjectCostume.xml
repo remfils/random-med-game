@@ -308,7 +308,7 @@ visible = false;]]></script>
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="-75.4" centerPoint3DY="51.4">
                   <matrix>
-                    <Matrix a="-0.778045654296875" d="-13.5269622802734" tx="-71.45" ty="-121.75"/>
+                    <Matrix a="-0.778045654296875" d="-13.5269470214844" tx="-71.45" ty="-121.75"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

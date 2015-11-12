@@ -6,6 +6,7 @@ package src.objects {
     import src.Game;
     import src.Player;
     import src.util.Collider;
+    import src.util.SoundManager;
     
     public class TaskDoorLock extends TaskObject {
         public var _activeArea:Collider;
@@ -53,6 +54,7 @@ package src.objects {
             var timer:Timer = new Timer(KEY_UNLOCK_DELAY);
             timer.addEventListener(TimerEvent.TIMER, destroyAfterTimePasses);
             timer.start();
+            SoundManager.instance.playSFX(SoundManager.SFX_OPEN_LOCK1);
         }
         
         private function destroyAfterTimePasses(e:TimerEvent):void {
@@ -69,6 +71,7 @@ package src.objects {
         
         override public function negativeOutcome():void {
             costume.setState(BREAK_KEY_STATE);
+            SoundManager.instance.playSFX(SoundManager.SFX_BREAK_KEY);
         }
         
         private function eatPlayerKey():void {

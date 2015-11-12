@@ -44,7 +44,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!138 -1|0 -1!0 -1|0 138!0 -139|0 -1!0 -1|-139 -1"/>
+                    <Edge strokeStyle="1" edges="!0 -139|0 -1!0 -1|0 138!138 -1|0 -1!0 -1|-139 -1"/>
                   </edges>
                 </DOMShape>
               </elements>

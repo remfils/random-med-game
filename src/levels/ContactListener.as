@@ -7,9 +7,11 @@ package src.levels {
     import Box2D.Dynamics.Contacts.b2Contact;
     import flash.display.Sprite;
     import flash.events.Event;
+    import flash.media.SoundMixer;
     import flash.net.ObjectEncoding;
     import src.bullets.Bullet;
     import src.enemy.Enemy;
+    import src.enemy.FlyingEnemy;
     import src.enemy.Projectile;
     import src.events.RoomEvent;
     import src.Game;
@@ -22,6 +24,7 @@ package src.levels {
     import src.task.Record;
     import src.util.ChangePlayerStatObject;
     import src.util.Recorder;
+    import src.util.SoundManager;
 
     public class ContactListener extends b2ContactListener {
         private var game:Game;
@@ -181,6 +184,10 @@ package src.levels {
             dr.Multiply(3);
             playerBod.ApplyImpulse( dr , playerBod.GetWorldCenter());
             game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -enemy.damage, enemy.getID(), true));
+            
+            if ( enemy is FlyingEnemy) {
+                SoundManager.instance.playSFX(SoundManager.SFX_ATTACK_GHOST);
+            }
         }
         
     }

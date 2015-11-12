@@ -80,7 +80,7 @@
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix a="1.47535705566406" tx="-8.35" ty="-24.35"/>
+                    <Matrix a="1.475341796875" tx="-8.35" ty="-24.35"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="8.85" y="-9.5"/>
@@ -108,7 +108,7 @@
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_level/_GAME_OBJECTS/decor/remove_smoke" symbolType="graphic" firstFrame="5" loop="loop">
                   <matrix>
-                    <Matrix a="1.47535705566406" tx="-8.35" ty="-24.35"/>
+                    <Matrix a="1.475341796875" tx="-8.35" ty="-24.35"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="8.85" y="-9.5"/>

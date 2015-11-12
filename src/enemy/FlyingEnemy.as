@@ -8,6 +8,7 @@
     import src.costumes.CostumeEnemy;
     import src.Game;
     import src.util.CreateBodyRequest;
+    import src.util.SoundManager;
     
     public class FlyingEnemy extends Enemy {
         private static const GHOST_DEATH_DELAY:Number = 23 / Game.FRAMES_PER_MILLISECOND;
@@ -78,7 +79,7 @@
         override public function activate():void {
             super.activate();
             costume.setState(ATTACK_STATE);
-            trace("activeated");
+            SoundManager.instance.playSFX(SoundManager.SFX_ACTIVATE_GHOST);
         }
         
         override public function deactivate():void {

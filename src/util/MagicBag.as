@@ -106,7 +106,6 @@ package src.util {
                 switch (costume.type) {
                     case ObjectCostume.SMALLHP_TYPE:
                         change = SMALL_HP_STAT_OBJ;
-                        
                         break;
                     case ObjectCostume.SMALLMP_TYPE:
                         change = SMALL_MP_STAT_OBJ;
@@ -117,15 +116,23 @@ package src.util {
                         break;
                     case ObjectCostume.COIN_TYPE:
                         change = COIN_STAT_OBJ;
-                        SoundManager.instance.playSFX(SoundManager.ACTION_PICKUP_COIN);
+                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_COIN);
                         break;
                     case ObjectCostume.EMERALD_TYPE:
                         change = EMERALD_STAT_OBJ;
+                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_EMERALD);
                         break;
                 }
                 
                 if ( change ) {
                     if ( game.changePlayerStat(change) ) {
+                        switch ( change.stat_name ) {
+                            case ChangePlayerStatObject.HEALTH_STAT:
+                            case ChangePlayerStatObject.MANA_STAT:
+                                SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_POTION);
+                                break;
+                        }
+                        
                         Recorder.recordPickUpItem(change.id);
                         not_active = true;
                         costume.setAnimatedState(PICKUP_STATE);

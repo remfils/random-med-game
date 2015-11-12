@@ -8,6 +8,7 @@ package src.enemy {
     import src.Game;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
+    import src.util.SoundManager;
 
     public class Projectile extends Enemy {
         private var speed:b2Vec2;
@@ -17,6 +18,8 @@ package src.enemy {
             super();
             costume.setType(CostumeEnemy.GREEN_BULLET_TYPE);
             activate();
+            
+            death_sound_id = SoundManager.SFX_HIT_ENEMY_BULLET;
         }
         
         public function setSpeed(dir:b2Vec2):void {
