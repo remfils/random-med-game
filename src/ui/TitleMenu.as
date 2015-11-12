@@ -4,6 +4,7 @@ package src.ui {
     import flash.display.Sprite;
     import flash.events.Event;
     import flash.events.MouseEvent;
+    import flash.media.SoundMixer;
     import flash.text.Font;
     import flash.text.FontStyle;
     import flash.text.StyleSheet;
@@ -15,6 +16,7 @@ package src.ui {
     import src.Player;
     import src.ui.playerStat.StatDescriteBar;
     import src.User;
+    import src.util.SoundManager;
 
     public class TitleMenu extends AbstractMenu {
         
@@ -119,9 +121,11 @@ package src.ui {
                 
             switch (objectName) {
             case LEVELS_BTN:
+                    //SoundManager.instance.playSFX(SoundManager.SFX_CLICK_BUTTON);
                     parentMenu.switchToMenu(parentMenu.LEVELS_MENU);
                     break;
                 case INVENTORY_BTN:
+                    //SoundManager.instance.playSFX(SoundManager.SFX_CLICK_BUTTON);
                     parentMenu.switchToMenu(parentMenu.MAGE_MENU);
                     break;
                 case ACHIVEMENTS_BTN:

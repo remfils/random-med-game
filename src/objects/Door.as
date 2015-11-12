@@ -13,6 +13,7 @@
     import src.Player;
     import src.util.Collider;
     import src.util.CreateBodyRequest;
+    import src.util.SoundManager;
     
     public class Door extends TaskObject {
         public static const LOCKED_STATE:String = "_lock";
@@ -128,6 +129,8 @@
 
         public function unlock () {
             if ( costume.visible && locked && !specialLock) {
+                SoundManager.instance.safePlaySFX(SoundManager.SFX_OPEN_DOOR);
+                
                 costume.setState(UNLOCKED_STATE);
                 
                 locked = false;

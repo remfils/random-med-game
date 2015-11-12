@@ -196,6 +196,8 @@ package src {
                 show_tutorial = false;
                 toggleControlCheatSheet();
             }
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_START_LEVEL);
         }
         
         private function addBulletController() {

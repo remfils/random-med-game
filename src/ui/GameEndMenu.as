@@ -3,6 +3,7 @@ package src.ui {
     import flash.events.MouseEvent;
     import src.costumes.GameMenuCostume;
     import src.events.ExitLevelEvent;
+    import src.util.SoundManager;
 
 
     public class GameEndMenu extends GameMenu {
@@ -28,6 +29,8 @@ package src.ui {
         }
         
         override public function activate():void {
+            SoundManager.instance.playSFX(SoundManager.SFX_FINISH_LEVEL);
+            
             exit_button.addEventListener(MouseEvent.CLICK, exitGame);
             resume_button.addEventListener(MouseEvent.CLICK, startNextLevelListener);
         }

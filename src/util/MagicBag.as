@@ -120,6 +120,7 @@ package src.util {
                         break;
                     case ObjectCostume.EMERALD_TYPE:
                         change = EMERALD_STAT_OBJ;
+                        SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_EMERALD);
                         break;
                 }
                 

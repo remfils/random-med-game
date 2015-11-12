@@ -28,6 +28,8 @@ package src.enemy {
             super();
             agroDistance = 400;
             exp = 10;
+            
+            death_sound_id = SoundManager.SFX_DESTROY_MONK;
         }
         
         override public function readXMLParams(paramsXML:XML):void {

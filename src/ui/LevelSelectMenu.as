@@ -143,6 +143,7 @@ package src.ui {
                 case "":
                     break;
                 default:
+                    SoundManager.instance.playSFX(SoundManager.SFX_CLICK_BUTTON);
                     dispatchEvent(new MenuItemSelectedEvent(MenuItemSelectedEvent.LEVEL_SELECTED, int(objectName)));
             }
         }
