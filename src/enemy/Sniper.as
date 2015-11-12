@@ -7,6 +7,7 @@ package src.enemy {
     import src.Game;
     import src.util.Collider;
     import src.util.CreateBodyRequest;
+    import src.util.SoundManager;
 
     public class Sniper extends Enemy {
         public static const MONK_DEATH_DELAY:Number = 43 / Game.FRAMES_PER_MILLISECOND;
@@ -27,6 +28,8 @@ package src.enemy {
             super();
             agroDistance = 400;
             exp = 10;
+            
+            death_sound_id = SoundManager.SFX_DESTROY_MONK;
         }
         
         override public function readXMLParams(paramsXML:XML):void {
@@ -97,6 +100,8 @@ package src.enemy {
             bullet.setPosition(new Point(x, y));
             
             cRoom.addEnemy(bullet);
+            
+            SoundManager.instance.playSFX(SoundManager.SFX_SHOOT_MONK);
             //this.cRoom.addEnenemy(bullet);
         }
         

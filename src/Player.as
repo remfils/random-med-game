@@ -206,6 +206,8 @@
         }
         
         public function startPickingUp():void {
+            SoundManager.instance.playSFX(SoundManager.SFX_PICKUP_OBJECT);
+            
             is_picking = true;
             if (holdObject) holdObject.hide();
         }

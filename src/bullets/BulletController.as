@@ -10,6 +10,7 @@
     import src.util.AbstractManager;
     import src.util.Output;
     import src.util.Recorder;
+    import src.util.SoundManager;
     
     import src.levels.Room;
     import src.Player;
@@ -48,6 +49,8 @@
             currentSpellIndex = 0;
             currentSpellDef = allSpells[game.player.spells[currentSpellIndex]];
             
+            allSpells[1].setSounds(SoundManager.SFX_CAST_SPARK, SoundManager.SFX_HIT_SPARK);
+            
             bulletDelay = new Timer(10);
             bulletDelay.addEventListener(TimerEvent.TIMER, unlockSpawn);
         }
@@ -68,7 +71,9 @@
         public function update () {
             if (fire && game.player.MANA >= currentSpellDef.manaCost) {
                 var b:Bullet = spawnBullet();
+                
                 if ( b ) {
+                    SoundManager.instance.playSFX(currentSpellDef.sfx_shoot);
                     game.player.MANA -= currentSpellDef.manaCost;
                     game.playerStat.update();
                     Recorder.recordManaUse(currentSpellDef.spell_id, currentSpellDef.manaCost, game.player.MANA);

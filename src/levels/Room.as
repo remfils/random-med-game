@@ -273,6 +273,8 @@
             unlockDoorsWithoutTasks();
             
             if ( hasTask() ) {
+                SoundManager.instance.playSFX(SoundManager.SFX_CLOSE_DOOR);
+                
                 lock();
             }
             
@@ -447,10 +449,12 @@
             var i=_doors.length;
 
             while ( i-- ) {
-                _doors[i].unlock ();
+                _doors[i].unlock();
             }
             
             unlockDoorsWithoutTasks();
+            
+            //SoundManager.instance.playSFX(SoundManager.SFX_OPEN_DOOR);
         }
         
         public function setDropFromXML(dropXML:XMLList):void {

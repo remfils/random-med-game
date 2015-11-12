@@ -14,6 +14,7 @@ package src.objects {
     import src.interfaces.Update;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
+    import src.util.SoundManager;
 
     public class Obstacle extends AbstractObject implements Update {
         
@@ -103,6 +104,19 @@ package src.objects {
             body.SetActive(active);
             costume.setState(DESTROY_STATE);
             game.cRoom.addChild(costume);
+            
+            var break_sound_id:int = 0;
+            
+            switch ( costume.type ) {
+                case ObjectCostume.BARELL_TYPE:
+                    break_sound_id = SoundManager.SFX_DESTROY_BARREL;
+                    break;
+                case ObjectCostume.STONE_TYPE:
+                    break_sound_id = SoundManager.SFX_DESTROY_ROCKS1;
+                    break;
+            }
+            
+            SoundManager.instance.safePlaySFX(break_sound_id);
         }
         
         override public function destroy():void {
