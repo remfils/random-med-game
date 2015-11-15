@@ -198,6 +198,7 @@ package src {
             }
             
             SoundManager.instance.playSFX(SoundManager.SFX_START_LEVEL);
+            SoundManager.instance.playBGM(SoundManager.BGM_MUSIC_WARCRAFT_BATTLE);
         }
         
         private function addBulletController() {

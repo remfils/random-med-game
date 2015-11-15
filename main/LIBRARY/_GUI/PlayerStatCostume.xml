@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1445440477" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1447584830" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="PlayerStatCostume">
+    <DOMTimeline name="PlayerStatCostume" currentFrame="259">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="14" name="spell_change" labelType="name" keyMode="9728">
               <elements/>
@@ -43,6 +43,21 @@
             <DOMFrame index="158" duration="20" name="cheat_inv" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
+            <DOMFrame index="178" duration="21" name="sound_on_button" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="199" duration="19" name="sound_off_button" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="218" duration="18" name="music_on_button" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="236" duration="23" name="music_off_button" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="259" duration="34" name="arrow_button" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="actions" color="#FF800A" autoNamed="false">
@@ -68,7 +83,7 @@
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="56" duration="122" keyMode="9728">
+            <DOMFrame index="56" duration="237" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[gotoAndStop("spell_place");]]></script>
               </Actionscript>
@@ -76,7 +91,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4FFF4F">
           <frames>
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements>
@@ -191,9 +206,69 @@
             </DOMFrame>
             <DOMFrame index="158" duration="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/cheatsheet_inventory" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/cheatsheet_inventory" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point x="375" y="300"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="178" duration="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/sound_btn" selected="true" symbolType="button">
+                  <matrix>
+                    <Matrix tx="-20.3" ty="20.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="199" duration="19" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/sound_off_btn" selected="true" symbolType="button">
+                  <matrix>
+                    <Matrix tx="-20.3" ty="20.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="218" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/music_on_btn" symbolType="button">
+                  <matrix>
+                    <Matrix tx="-20.3" ty="20.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="236" duration="23" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/music_off_btn" selected="true" symbolType="button">
+                  <matrix>
+                    <Matrix tx="-20.3" ty="20.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="259" duration="34" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/up_btn" symbolType="button">
+                  <matrix>
+                    <Matrix tx="-20.3" ty="20.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

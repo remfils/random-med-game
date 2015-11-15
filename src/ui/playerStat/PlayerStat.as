@@ -3,11 +3,16 @@
     import fl.motion.easing.Bounce;
     import fl.motion.easing.Elastic;
     import fl.transitions.Tween;
+    import flash.display.DisplayObject;
+    import flash.display.DisplayObjectContainer;
     import flash.display.MovieClip;
+    import flash.display.Sprite;
     import flash.events.MouseEvent;
+    import flash.media.SoundMixer;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
     import src.costumes.ItemLogoCostume;
+    import src.costumes.PlayerCostume;
     import src.costumes.PlayerStatCostume;
     import src.objects.AbstractObject;
     import src.Player;
@@ -16,6 +21,7 @@
     import src.bullets.*;
     import flash.utils.*;
     import src.util.ObjectPool;
+    import src.util.SoundManager;
     
     public class PlayerStat extends AbstractMenu {
         public static const FIRE_BTN_ID:int = 1;
@@ -33,6 +39,8 @@
         private var healthBar:StatDescriteBar;
         private var manaBar:StatDescriteBar;
         
+        private static const BUTTON_MARGIN:int = 5;
+        
         private static const HEARTS_START_X:Number = 90;
         private static const HEARTS_START_Y:Number = 29;
         private static const SPELL_MENU_CENTER_X:Number = 445.7;
@@ -41,7 +49,7 @@
         var hearts:Array = new Array();
         
         private var spell_logo:ItemLogoCostume;
-        private var spell_place, spell_change_left, spell_change_right, help_button :PlayerStatCostume;
+        private var spell_place, spell_change_left, spell_change_right, help_button, sound_toggle_btn, music_toggle_btn, volume_up_btn, volume_down_btn :PlayerStatCostume;
         
         public var spellPic_mc, spellFire_mc, spellLeft_mc, spellRight_mc :MovieClip;
         public var level_txt, money_txt, exp_txt: TextField;
@@ -87,6 +95,62 @@
             addChild(help_button);
             
             help_button.addEventListener(MouseEvent.CLICK, toggleCheatSheet);
+            
+            // up button
+            
+            volume_up_btn = new PlayerStatCostume();
+            volume_up_btn.setType(PlayerStatCostume.ARROW_BUTTON_TYPE);
+            volume_up_btn.setState();
+            
+            volume_up_btn.x = this.width;
+            volume_up_btn.y = help_button.height + help_button.getChildAt(0).y;
+            
+            volume_up_btn.addEventListener(MouseEvent.CLICK, function (e:MouseEvent){
+                SoundManager.instance.changeVolume(1);
+            });
+            
+            addChild(volume_up_btn);
+            
+            // down button
+            
+            volume_down_btn = new PlayerStatCostume();
+            volume_down_btn.setType(PlayerStatCostume.ARROW_BUTTON_TYPE);
+            volume_down_btn.setState();
+            volume_down_btn.getChildAt(0).rotation = 180;
+            
+            volume_down_btn.x = this.width;
+            volume_down_btn.y = help_button.height + help_button.getChildAt(0).y;
+            
+            volume_down_btn.addEventListener(MouseEvent.CLICK, function (e:MouseEvent){
+                SoundManager.instance.changeVolume(-1);
+            });
+            
+            addChild(volume_down_btn);
+            
+            // sfx toggle
+            
+            sound_toggle_btn = new PlayerStatCostume();
+            sound_toggle_btn.setType(PlayerStatCostume.SOUND_ON_BUTTON_TYPE);
+            sound_toggle_btn.setState();
+            
+            sound_toggle_btn.x = volume_up_btn.x - sound_toggle_btn.width - BUTTON_MARGIN;
+            sound_toggle_btn.y = volume_up_btn.y;
+            
+            sound_toggle_btn.addEventListener(MouseEvent.CLICK, toggleSoundListener);
+            
+            addChild(sound_toggle_btn);
+            
+            // bgx toggle
+            
+            music_toggle_btn = new PlayerStatCostume();
+            music_toggle_btn.x = sound_toggle_btn.x - sound_toggle_btn.width - BUTTON_MARGIN;
+            music_toggle_btn.y = sound_toggle_btn.y;
+            
+            music_toggle_btn.setType(PlayerStatCostume.MUSIC_ON_BUTTON_TYPE);
+            music_toggle_btn.setState();
+            music_toggle_btn.addEventListener(MouseEvent.CLICK, toggleMusicListener);
+            
+            addChild(music_toggle_btn);
         }
         
         private function createSpellMenu():void {
@@ -121,6 +185,34 @@
         
         private function toggleCheatSheet(e:MouseEvent):void {
             game.toggleControlCheatSheet();
+            
+            game.setAsFocus();
+        }
+        
+        private function toggleSoundListener(e:MouseEvent):void {
+            if ( SoundManager.instance.toggleSFXChannel() ) {
+                sound_toggle_btn.setType(PlayerStatCostume.SOUND_ON_BUTTON_TYPE);
+            }
+            else {
+                sound_toggle_btn.setType(PlayerStatCostume.SOUND_OFF_BUTTON_TYPE);
+            }
+            
+            sound_toggle_btn.setState();
+            
+            game.setAsFocus();
+        }
+        
+        private function toggleMusicListener(e:MouseEvent):void {
+            if ( SoundManager.instance.toggleBGMChannel() ) {
+                music_toggle_btn.setType(PlayerStatCostume.MUSIC_OFF_BUTTON_TYPE);
+            }
+            else {
+                music_toggle_btn.setType(PlayerStatCostume.MUSIC_ON_BUTTON_TYPE);
+            }
+            
+            music_toggle_btn.setState();
+            
+            game.setAsFocus();
         }
         
         public function setSpellLogo(spellType_:String):void {

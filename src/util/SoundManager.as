@@ -3,6 +3,7 @@ package src.util {
     import flash.media.Sound;
     import flash.media.SoundChannel;
     import flash.media.SoundMixer;
+    import flash.media.SoundTransform;
     import flash.utils.Timer;
 
 
@@ -29,18 +30,19 @@ package src.util {
         public static const SFX_HIT_SPARK:int = 20;
         public static const SFX_HIT_SPELL_UNKNOWN:int = 21;
         public static const SFX_KNOCK:int = 22;
-        public static const SFX_OPEN_DOOR:int = 23;
-        public static const SFX_OPEN_LEVER:int = 24;
-        public static const SFX_OPEN_LOCK1:int = 25;
-        public static const SFX_OPEN_SECRET_ROOM:int = 26;
-        public static const SFX_PICKUP_COIN:int = 27;
-        public static const SFX_PICKUP_EMERALD:int = 28;
-        public static const SFX_PICKUP_OBJECT:int = 29;
-        public static const SFX_PICKUP_POTION:int = 30;
-        public static const SFX_SHOOT_MONK:int = 31;
-        public static const SFX_SHOW_NOTE:int = 32;
-        public static const SFX_SMOKE:int = 33;
-        public static const SFX_START_LEVEL:int = 34;
+        public static const BGM_MUSIC_WARCRAFT_BATTLE:int = 23;
+        public static const SFX_OPEN_DOOR:int = 24;
+        public static const SFX_OPEN_LEVER:int = 25;
+        public static const SFX_OPEN_LOCK1:int = 26;
+        public static const SFX_OPEN_SECRET_ROOM:int = 27;
+        public static const SFX_PICKUP_COIN:int = 28;
+        public static const SFX_PICKUP_EMERALD:int = 29;
+        public static const SFX_PICKUP_OBJECT:int = 30;
+        public static const SFX_PICKUP_POTION:int = 31;
+        public static const SFX_SHOOT_MONK:int = 32;
+        public static const SFX_SHOW_NOTE:int = 33;
+        public static const SFX_SMOKE:int = 34;
+        public static const SFX_START_LEVEL:int = 35;
         
         [AS3][Embed(source = "assets/activate_ghost.mp3")]
         private const Activate_Ghost:Class;
@@ -86,6 +88,8 @@ package src.util {
         private const Hit_Spell_Unknown:Class;
         [AS3][Embed(source = "assets/knock.mp3")]
         private const Knock:Class;
+        [AS3][Embed(source = "assets/music_warcraft_battle.mp3")]
+        private const Music_Warcraft_Battle:Class;
         [AS3][Embed(source = "assets/open_door.mp3")]
         private const Open_Door:Class;
         [AS3][Embed(source = "assets/open_lever.mp3")]
@@ -111,19 +115,25 @@ package src.util {
         [AS3][Embed(source = "assets/start_level.mp3")]
         private const Start_Level:Class;
         
-        private static const MAX_TRACKS:int = 35;
+        private static const MAX_TRACKS:int = 40;
         private var _tracks:Vector.<Sound> = new Vector.<Sound>(MAX_TRACKS, true);
         
         private var _channelSFX:SoundChannel = new SoundChannel();
         private var _channelBGM:SoundChannel = new SoundChannel();
         
+        private var volume:Number = 1;
+        private var _sfx_sound_transform:SoundTransform;
         private var _safe_sfx_id_array:Vector.<int> = new Vector.<int>();
+        
+        private var _currentBGM_id:int;
+        private var _paused:Boolean;
+        private var _position:Number;
         
         private static var _instance:SoundManager;
         
         
         public function SoundManager() {
-            
+            _sfx_sound_transform = _channelSFX.soundTransform;
         }
         
         public static function get instance():SoundManager {
@@ -157,6 +167,7 @@ package src.util {
             addResource(new Hit_Spark(), SoundManager.SFX_HIT_SPARK);
             addResource(new Hit_Spell_Unknown(), SoundManager.SFX_HIT_SPELL_UNKNOWN);
             addResource(new Knock(), SoundManager.SFX_KNOCK);
+            addResource(new Music_Warcraft_Battle(), SoundManager.BGM_MUSIC_WARCRAFT_BATTLE);
             addResource(new Open_Door(), SoundManager.SFX_OPEN_DOOR);
             addResource(new Open_Lever(), SoundManager.SFX_OPEN_LEVER);
             addResource(new Open_Lock1(), SoundManager.SFX_OPEN_LOCK1);
@@ -188,7 +199,7 @@ package src.util {
             
             var sound:Sound = _tracks[id];
             if ( sound ) {
-                _channelSFX = sound.play();
+                _channelSFX = sound.play(0, 1, _channelSFX.soundTransform);
             }
             else {
                 throw new Error("playSFX(): sound is null with sid=" + id);
@@ -204,6 +215,19 @@ package src.util {
                 _safe_sfx_id_array.push(id);
         }
         
+        public function toggleSFXChannel():Boolean {
+            var is_mute:Boolean = _sfx_sound_transform.volume == 0;
+            if ( is_mute )
+                _channelSFX.soundTransform.volume = volume;
+            else {
+                _channelSFX.stop();
+                _channelSFX.soundTransform.volume = 0;
+            }
+            
+            return is_mute;
+        }
+        
+        
         private function safePlayAfterDellayCompleteListener(e:TimerEvent):void {
             var timer:Timer = Timer(e.target);
             timer.removeEventListener(TimerEvent.TIMER_COMPLETE, safePlayAfterDellayCompleteListener);
@@ -215,11 +239,49 @@ package src.util {
         public function playBGM(music_id:int):void {
             var sound:Sound = _tracks[music_id];
             if ( sound ) {
-                _channelBGM = sound.play();
+                _currentBGM_id = music_id;
+                _paused = false;
+                _channelBGM = sound.play(0,999, _channelBGM.soundTransform);
             }
             else {
                 throw new Error("playBGM(): music is null with sid=" + music_id);
             }
+        }
+        
+        public function toggleBGMChannel():Boolean {
+            _paused = !_paused;
+            
+            if ( _paused ) {
+                stopBGM();
+                _channelBGM.soundTransform.volume = 0;
+            }
+            else {
+                _channelBGM.soundTransform.volume = volume;
+                _channelBGM = _tracks[_currentBGM_id].play(_position, 999, _channelBGM.soundTransform);
+            }
+            
+            return _paused;
+        }
+        
+        public function stopBGM():void {
+            _position = _channelBGM.position;
+            _channelBGM.stop();
+        }
+        
+        public function changeVolume(number:Number):void {
+            volume += number > 0 ? 1 : -1;
+            
+            if ( volume > 10 )
+                volume = 10;
+            
+            if ( volume < 0 )
+                volume = 0;
+                
+            trace(volume);
+            var s_t:SoundTransform = new SoundTransform(0.05 * Math.exp(0.299573 * volume));
+            
+            _channelBGM.soundTransform = s_t;
+            _channelSFX.soundTransform = s_t;
         }
     }
 

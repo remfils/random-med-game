@@ -26,7 +26,7 @@
         private static const RELEASE_MODE:int = 3;
         
         private var mode:int = RELEASE_MODE;
-        Game.VERSION = "0.442";
+        Game.VERSION = "0.443";
         
         public var is_first_time:Boolean = false;
         
@@ -61,22 +61,12 @@
             
             stage.color = 0;
             
-            loading_screen = new GameLoadingMenu(stage);
-            loading_screen.show();
-            
             user = new User();
             
             AbstractMenu.main = this;
             AbstractMenu.user = user;
             
             var flash_vars:Object = stage.loaderInfo.parameters as Object;
-            if ( TEST_MODE || !flash_vars.api_id ) {
-                flash_vars['api_id'] = 4700251;
-                flash_vars['viewer_id'] = 18524077;
-                flash_vars['sid'] = "933e9ee89b34cd9b12a1fbea0d18519785b1b60f7b889e5f32a65eb1b660c824f9eae7ca348dad47816c1";
-                flash_vars['secret'] = "9f0550db1a";
-                //AbstractMenu.user.sid = 1;
-            }
             
             var server_name:String = PUBLIC_SERVER;
             
@@ -89,29 +79,50 @@
                     
                     Game.VERSION += "-H";
                     
+                    flash_vars['api_id'] = 4700251;
+                    flash_vars['viewer_id'] = 18524077;
+                    flash_vars['sid'] = "933e9ee89b34cd9b12a1fbea0d18519785b1b60f7b889e5f32a65eb1b660c824f9eae7ca348dad47816c1";
+                    flash_vars['secret'] = "9f0550db1a";
+                    
                     break;
                 case HOME_RELEASE_MODE:
                     Game.TEST_MODE = false;
                     LOAD_SCREEN_DELAY = 0;
                     server_name = HOME_SERVER;
+                    
                     Game.VERSION += "-HR";
+                    
+                    flash_vars['api_id'] = 4700251;
+                    flash_vars['viewer_id'] = 18524077;
+                    flash_vars['sid'] = "933e9ee89b34cd9b12a1fbea0d18519785b1b60f7b889e5f32a65eb1b660c824f9eae7ca348dad47816c1";
+                    flash_vars['secret'] = "9f0550db1a";
                     break;
                 case RELEASE_TEST_MODE:
                     LOAD_SCREEN_DELAY = 0;
-                    Game.TEST_MODE = false;
+                    Game.TEST_MODE = true;
                     
                     Game.VERSION += "-T";
                     
-                    if ( TEST_MODE && (flash_vars['viewer_id'] != 18524077 || flash_vars['viewer_id'] != 15976844 ) ) {
+                    var vk_id:Number = flash_vars['viewer_id'];
+                    
+                    if ( vk_id != 18524077 || vk_id  != 15976844 ) {
                         showOutOfOrder();
                         return;
                     }
                     break;
                 case RELEASE_MODE:
                     Game.TEST_MODE = false;
+                    
+                    if ( flash_vars['api_id'] != 4700251 ) {
+                        showOutOfOrder();
+                        return;
+                    }
                     break;
                 default:
             }
+            
+            loading_screen = new GameLoadingMenu(stage);
+            loading_screen.show();
             
             createErrorTextField();
             
@@ -229,6 +240,8 @@
             
             loading_screen = new GameLoadingMenu(stage);
             loading_screen.show();
+            
+            SoundManager.instance.stopBGM();
             
             if ( !level_completed ) {
                 var user:User = server.user;

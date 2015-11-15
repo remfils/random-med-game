@@ -2,7 +2,9 @@ package src.objects {
     import Box2D.Collision.b2AABB;
     import Box2D.Common.Math.b2Vec2;
     import flash.events.Event;
+    import flash.media.SoundMixer;
     import src.costumes.ActiveObjectCostume;
+    import src.util.SoundManager;
 
 
     public class TaskExplosiveLever extends TaskLever {
@@ -19,6 +21,8 @@ package src.objects {
         }
         
         override public function positiveOutcome():void {
+            SoundManager.instance.playSFX(SoundManager.SFX_OPEN_LEVER);
+            
             costume.setAnimatedState(OPEN_STATE + REMOVE_STATE);
             
             state = OPEN_STATE;
@@ -29,6 +33,8 @@ package src.objects {
         }
         
         override public function negativeOutcome():void {
+            SoundManager.instance.playSFX(SoundManager.SFX_EXPLOSION);
+            
             costume.setAnimatedState(BREAK_STATE);
             
             _frame_dellay = EXPLOSION_FRAME_COUNT;

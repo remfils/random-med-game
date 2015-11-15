@@ -29,6 +29,7 @@ package src.ui {
         }
         
         override public function activate():void {
+            SoundManager.instance.stopBGM();
             SoundManager.instance.playSFX(SoundManager.SFX_FINISH_LEVEL);
             
             exit_button.addEventListener(MouseEvent.CLICK, exitGame);
