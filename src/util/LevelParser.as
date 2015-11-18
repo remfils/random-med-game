@@ -234,7 +234,7 @@ package src.util {
                 
                 enemy.readXMLParams(object);
                 
-                room.addEnemy(enemy);
+                room.addEnemy(enemy); // add(enemy)?
             }
         }
         

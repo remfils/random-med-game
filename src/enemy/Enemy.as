@@ -46,6 +46,8 @@
             costume = new CostumeEnemy();
             
             death_sound_id = SoundManager.SFX_SMOKE;
+            
+            properties = IS_EXTRUDED | IS_ACTIVE;
         }
         
         override public function update ():void {

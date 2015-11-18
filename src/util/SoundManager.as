@@ -276,8 +276,7 @@ package src.util {
             
             if ( volume < 0 )
                 volume = 0;
-                
-            trace(volume);
+            
             var s_t:SoundTransform = new SoundTransform(0.05 * Math.exp(0.299573 * volume));
             
             _channelBGM.soundTransform = s_t;

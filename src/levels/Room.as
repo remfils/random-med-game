@@ -204,6 +204,18 @@
                 _objects_to_init.push(obj);
             }
             
+            if ( obj is Enemy ) {
+                var e:Enemy = Enemy(obj);
+                
+                _enemies.push(Enemy(e));
+                e.cRoom = this;
+                e.deactivate();
+                
+                if ( e is FlyingEnemy ) {
+                    FlyingEnemy(e).setTarget(playerBody);
+                }
+            }
+            
             if ( obj is AbstractObject ) {
                 var a_o:AbstractObject = AbstractObject(obj);
                 

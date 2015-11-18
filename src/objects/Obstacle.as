@@ -7,6 +7,7 @@ package src.objects {
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import flash.geom.Point;
+    import src.costumes.CostumeEnemy;
     import src.costumes.ObjectCostume;
     import src.enemy.ChargerEnemy;
     import src.Game;
@@ -124,7 +125,8 @@ package src.objects {
                     MagicBag(a_o).open();
                 }
                 else if ( rand < 0.4 ) { // spawn enemy
-                    // a_o = new ChargerEnemy();
+                    a_o = new ChargerEnemy();
+                    a_o.costume.setType(CostumeEnemy.RAT);
                 }
                 
                 if ( a_o ) {

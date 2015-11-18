@@ -25,12 +25,23 @@ package src.enemy {
             super();
             speed = new b2Vec2(SPEED, 0);
             agroDistance = 200;
+            
+            costume_remove_delay = RAT_DEATH_DELAY;
         }
         
         override public function readXMLParams(paramsXML:XML):void {
             super.readXMLParams(paramsXML);
             
-            costume_remove_delay = RAT_DEATH_DELAY;
+            var rot:Number = costume.rotation;
+            costume.rotation = 0;
+            
+            if ( rot == 90 || rot == -90 ) {
+                horizontal = true;
+                
+                if ( rot < 0 ) {
+                    flip();
+                }
+            }
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {
