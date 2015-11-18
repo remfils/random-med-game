@@ -8,12 +8,14 @@ package src.objects {
     import flash.display.MovieClip;
     import flash.geom.Point;
     import src.costumes.ObjectCostume;
+    import src.enemy.ChargerEnemy;
     import src.Game;
     import src.interfaces.SolidBody;
     import src.interfaces.Updatable;
     import src.interfaces.Update;
     import src.util.CreateBodyRequest;
     import src.util.Collider;
+    import src.util.MagicBag;
     import src.util.SoundManager;
 
     public class Obstacle extends AbstractObject implements Update {
@@ -106,6 +108,31 @@ package src.objects {
             game.cRoom.addChild(costume);
             
             var break_sound_id:int = 0;
+            
+            if ( hasDrop() ) {
+                var a_o:AbstractObject;
+                var rand:Number = Math.random();
+                
+                if ( rand < 0.15 ) { // drop mana
+                    a_o = new MagicBag();
+                    MagicBag(a_o).setType(ObjectCostume.SMALLMP_TYPE);
+                    MagicBag(a_o).open();
+                }
+                else if ( rand < 0.3 ) { // drop health
+                    a_o = new MagicBag();
+                    MagicBag(a_o).setType(ObjectCostume.SMALLHP_TYPE);
+                    MagicBag(a_o).open();
+                }
+                else if ( rand < 0.4 ) { // spawn enemy
+                    // a_o = new ChargerEnemy();
+                }
+                
+                if ( a_o ) {
+                    a_o.x = x;
+                    a_o.y = y;
+                    game.cRoom.add(a_o);
+                }
+            }
             
             switch ( costume.type ) {
                 case ObjectCostume.BARELL_TYPE:
