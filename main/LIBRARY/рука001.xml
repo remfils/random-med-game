@@ -1,0 +1,35 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="рука001" itemID="5649d4c2-00000409" symbolType="graphic" lastModified="1447679170">
+  <timeline>
+    <DOMTimeline name="рука001">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#213A4A"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!135 -208S2[160 59 124 322!124 322|92 203!92 203[75 264 20 318!20 318[52 206 -20 131!-20 131[-114 256 -120 417!-120 417[-165 111 -131 -207!-131 -207[-54 -414 66 -417!66 -417[123 -388 136 -314!136 -314[143 -270 135 -208"/>
+                    <Edge cubics="!-131 -207(;-80,-345 -14,-415 66,-417q-131 -207Q-54 -414q66 -417);"/>
+                    <Edge cubics="!66 -417(;104,-398 128,-363 136,-314q66 -417Q123 -388q136 -314);"/>
+                    <Edge cubics="!136 -314(;140,-285 140,-249 135,-208q136 -314Q143 -270q135 -208);"/>
+                    <Edge cubics="!124 322(;124,322 92,203 92,203q124 322 92 203);"/>
+                    <Edge cubics="!92 203(;81,244 56,283 20,318q92 203Q75 264q20 318);"/>
+                    <Edge cubics="!135 -208(;151,-30 148,147 124,322q135 -208Q160 59q124 322);"/>
+                    <Edge cubics="!-120 417(;-150,212 -154,4 -131,-207q-120 417Q-165 111q-131 -207);"/>
+                    <Edge cubics="!20 318(;42,244 27,181 -20,131q20 318Q52 206q-20 131);"/>
+                    <Edge cubics="!-20 131(;-83,215 -117,310 -120,417q-20 131Q-114 256q-120 417);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

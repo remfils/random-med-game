@@ -3,6 +3,7 @@ package src.util {
     import src.costumes.ActiveObjectCostume;
     import src.costumes.CostumeEnemy;
     import src.costumes.DecorCostume;
+    import src.enemy.BossOverseer;
     import src.enemy.ChargerEnemy;
     import src.enemy.Enemy;
     import src.enemy.FlyingEnemy;
@@ -215,26 +216,36 @@ package src.util {
         private function addEnemiesToRoom (room:Room, enemiesXML:XMLList) {
             var taskId:uint = enemiesXML.@task_id;
             var enemy:Enemy;
-            var enemyName:String;
+            var enemy_name:String;
             
             for each ( var object:XML in enemiesXML.* ) {
-                enemyName = object.name();
-                switch ( enemyName ) {
+                enemy_name = object.name();
+                switch ( enemy_name ) {
                     case CostumeEnemy.GHOST:
                         enemy = new FlyingEnemy();
-                    break;
+                        break;
                     case CostumeEnemy.RAT:
                         enemy = new ChargerEnemy();
-                    break;
+                        break;
                     case CostumeEnemy.MONK:
                         enemy = new Sniper();
+                        break;
+                    case "Boss":
+                        var type:String = object.@type;
+                        switch ( type ) {
+                            case CostumeEnemy.OVERSEER_TYPE:
+                                enemy = new BossOverseer();
+                                break;
+                            default:
+                                continue;
+                        }
                         break;
                     default: continue;
                 }
                 
                 enemy.readXMLParams(object);
                 
-                room.addEnemy(enemy); // add(enemy)?
+                room.add(enemy);
             }
         }
         

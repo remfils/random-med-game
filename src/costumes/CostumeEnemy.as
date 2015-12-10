@@ -7,6 +7,9 @@ package src.costumes {
         public static const RAT:String = "Rat";
         public static const GREEN_BULLET_TYPE:String = "EnemyBullet";
         
+        
+        public static const OVERSEER_TYPE:String = "Overseer";
+        
         public function CostumeEnemy() {
             super();
         }

@@ -1,0 +1,95 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="портал" itemID="564a1d96-00000397" symbolType="graphic" lastModified="1447698661">
+  <timeline>
+    <DOMTimeline name="портал">
+      <layers>
+        <DOMLayer name="полоска 4" color="#808080" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="полоска 4" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="вихрь" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.254470825195313" b="-0.770889282226563" c="0.343734741210938" d="0.5706787109375" tx="-0.85" ty="6.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.7" y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="полоска 3" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="вихрь" symbolType="graphic" firstFrame="3" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.427688598632813" d="-0.959152221679688" tx="-0.4" ty="5.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.7" y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="полоска2" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="вихрь" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.427688598632813" d="-0.959152221679688" tx="-0.4" ty="5.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.7" y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="полоски" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F" locked="true">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <RadialGradient>
+                        <matrix>
+                          <Matrix a="0.0318603515625" d="0.080078125" tx="3.45" ty="1.1"/>
+                        </matrix>
+                        <GradientEntry color="#DD98FF" ratio="0.172549019607843"/>
+                        <GradientEntry color="#A700C6" ratio="0.780392156862745"/>
+                        <GradientEntry color="#37003A" ratio="1"/>
+                      </RadialGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!394 -900[558 -528 558 0!558 0[558 526 394 898!394 898[231 1271 0 1271!0 1271[-231 1271 -395 898!-395 898[-558 526 -558 0!-558 0[-558 -528 -395 -900!-395 -900[-231 -1271 0 -1271!0 -1271[231 -1271 394 -900"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

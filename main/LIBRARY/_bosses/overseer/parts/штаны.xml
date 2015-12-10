@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/overseer/parts/штаны" itemID="5649bdee-000003b9" symbolType="graphic" lastModified="1447673439">
+  <timeline>
+    <DOMTimeline name="штаны">
+      <layers>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0C212E"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!162 479|69 -37!69 -37|-78 421!-78 421[-147 312 -122 202!-122 202[-207 303 -215 416!-215 416|-248 192!-248 192[-349 277 -357 369!-357 369[-403 313 -406 239!-406 239[-457 358 -469 484!-469 484[-468 59 -381 -407!-381 -407|444 -416!444 -416
+[489 0 475 415!475 415[469 347 423 279!423 279[431 336 400 392!400 392[388 341 354 245!354 245[348 359 267 472!267 472[276 358 227 288!227 288[238 391 162 479"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

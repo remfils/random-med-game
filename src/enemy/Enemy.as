@@ -128,6 +128,11 @@
             
         }
         
+        override public function remove():void {
+            //super.remove();
+            //die();
+        }
+        
         public function die():void {
             hitColor.setTint(0, 0);
             hitFrames = 0;

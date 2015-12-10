@@ -184,7 +184,7 @@
             debugDraw.SetDrawScale(Game.WORLD_SCALE);
             debugDraw.SetFillAlpha(0.3);
             debugDraw.SetAlpha(0.3);
-            debugDraw.SetFlags(b2DebugDraw.e_shapeBit | b2DebugDraw.e_pairBit | b2DebugDraw.e_jointBit);
+            debugDraw.SetFlags(b2DebugDraw.e_shapeBit | b2DebugDraw.e_pairBit | b2DebugDraw.e_jointBit | b2DebugDraw.e_controllerBit);
             
             world.SetDebugDraw(debugDraw);
         }
@@ -204,18 +204,6 @@
                 _objects_to_init.push(obj);
             }
             
-            if ( obj is Enemy ) {
-                var e:Enemy = Enemy(obj);
-                
-                _enemies.push(Enemy(e));
-                e.cRoom = this;
-                e.deactivate();
-                
-                if ( e is FlyingEnemy ) {
-                    FlyingEnemy(e).setTarget(playerBody);
-                }
-            }
-            
             if ( obj is AbstractObject ) {
                 var a_o:AbstractObject = AbstractObject(obj);
                 
@@ -228,7 +216,20 @@
             }
             
             if ( obj is TaskObject ) {
-                game.taskManager.addTaskObject(TaskObject(obj));
+                if ( obj is Enemy ) {
+                    var e:Enemy = Enemy(obj);
+                    
+                    _enemies.push(Enemy(e));
+                    e.cRoom = this;
+                    e.deactivate();
+                    
+                    if ( e is FlyingEnemy ) {
+                        FlyingEnemy(e).setTarget(playerBody);
+                    }
+                }
+                else {
+                    game.taskManager.addTaskObject(TaskObject(obj));
+                }
             }
         }
         
@@ -399,7 +400,7 @@
             world.Step(TIME_STEP, 5, 5);
             world.ClearForces();
             
-            updateEnemies();
+            //updateEnemies();
             
             updateGameObjects();
             
@@ -415,12 +416,13 @@
             if (Game.TEST_MODE) world.DrawDebugData();
         }
         
-        private function updateEnemies() {
+        /*private function updateEnemies() {
+            return;
             var i = _enemies.length;
             while (i--) {
                 _enemies[i].update();
             }
-        }
+        }*/
         
         private function updateGameObjects():void {
             var i = _gameObjects.length;

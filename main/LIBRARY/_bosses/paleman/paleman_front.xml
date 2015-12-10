@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_bosses/paleman/голова/голова" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/голова/голова" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="-3.6" ty="-37"/>
                   </matrix>
@@ -29,7 +29,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_bosses/paleman/тело/тело" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/тело/тело" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix tx="-2" ty="37.45"/>
                   </matrix>
@@ -52,7 +52,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="-34.6" centerPoint3DY="33.15">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/рука2" centerPoint3DX="-34.6" centerPoint3DY="33.15">
                   <matrix>
                     <Matrix a="-0.993682861328125" b="-0.112213134765625" c="-0.112213134765625" d="0.993682861328125" tx="-34.6" ty="33.15"/>
                   </matrix>
@@ -68,7 +68,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="-31.55" centerPoint3DY="4.5">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/рукав" centerPoint3DX="-31.55" centerPoint3DY="4.5">
                   <matrix>
                     <Matrix a="-0.988449096679688" b="-0.15155029296875" c="-0.15155029296875" d="0.988449096679688" tx="-31.35" ty="5.55"/>
                   </matrix>
@@ -84,7 +84,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="-36.25" centerPoint3DY="50.2">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/кисть" centerPoint3DX="-36.25" centerPoint3DY="50.2">
                   <matrix>
                     <Matrix tx="-36.25" ty="50.2"/>
                   </matrix>
@@ -107,7 +107,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="рукав" centerPoint3DX="25.4" centerPoint3DY="4.5">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/рукав" centerPoint3DX="25.4" centerPoint3DY="4.5">
                   <matrix>
                     <Matrix a="0.988449096679688" b="-0.15155029296875" c="0.15155029296875" d="0.988449096679688" tx="25.2" ty="5.55"/>
                   </matrix>
@@ -115,7 +115,7 @@
                     <Point x="0.05" y="-13.65"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="рука2" centerPoint3DX="28.45" centerPoint3DY="33.15">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/рука2" centerPoint3DX="28.45" centerPoint3DY="33.15">
                   <matrix>
                     <Matrix a="0.993682861328125" b="-0.112213134765625" c="0.112213134765625" d="0.993682861328125" tx="28.45" ty="33.15"/>
                   </matrix>
@@ -131,7 +131,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="кисть" centerPoint3DX="29.75" centerPoint3DY="50.2">
+                <DOMSymbolInstance libraryItemName="_bosses/paleman/parts/кисть" centerPoint3DX="29.75" centerPoint3DY="50.2">
                   <matrix>
                     <Matrix tx="29.75" ty="50.2"/>
                   </matrix>
