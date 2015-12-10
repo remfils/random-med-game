@@ -29,7 +29,10 @@ package src.enemy {
         private const LEFT_X:Number = 156.8;
         private const RIGHT_X:Number = 592.25;
         
-        private var movement_speed:Number = 15;
+        public static var _movement_speed:Number = 15; // D!
+        public static var MOVEMENT_START_ACCELERATION:Number = 0.7;
+        public static var DENSITY = 0.5;
+        public static var FRICTION = 0.8;
         
         private static const INIT_STATE:String = "_init";
         private static const SWING_STATE:String = "_charge";
@@ -168,7 +171,7 @@ package src.enemy {
             body.SetAwake(true);
             
             _movement_force = p.Copy();
-            _movement_force.Multiply( -0.7);
+            _movement_force.Multiply(-MOVEMENT_START_ACCELERATION);
         }
         
         private function hitArmInitAttack():void {
@@ -214,8 +217,8 @@ package src.enemy {
             
             req.setAsDynamicBody();
             
-            req.fixture_defs[0].friction = 0.8;
-            req.fixture_defs[0].density = 0.5;
+            req.fixture_defs[0].friction = DENSITY;
+            req.fixture_defs[0].density = FRICTION;
             
             var fix:b2FixtureDef = new b2FixtureDef();
             fix.shape = req.fixtureDef.shape;

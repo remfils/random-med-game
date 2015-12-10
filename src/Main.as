@@ -7,6 +7,7 @@
     import flash.text.StyleSheet;
     import flash.text.TextField;
     import flash.utils.Timer;
+    import flash.utils.getDefinitionByName;
     import src.Game;
     import src.MainMenu;
     import src.task.Record;
@@ -84,6 +85,8 @@
                     flash_vars['sid'] = "933e9ee89b34cd9b12a1fbea0d18519785b1b60f7b889e5f32a65eb1b660c824f9eae7ca348dad47816c1";
                     flash_vars['secret'] = "9f0550db1a";
                     
+                    setupStaticClassVariablesFromXML();
+                    
                     break;
                 case HOME_RELEASE_MODE:
                     Game.TEST_MODE = false;
@@ -130,6 +133,32 @@
             server.main = this;
             
             loadGameData();
+        }
+        
+        private function setupStaticClassVariablesFromXML():void {
+            var loader:URLLoader = new URLLoader(new URLRequest(HOME_SERVER + "/Constants.xml"));
+            loader.addEventListener(Event.COMPLETE, setupConststantsFileLoadedListener);
+        }
+        
+        private function setupConststantsFileLoadedListener(e:Event):void {
+            var loader:URLLoader = URLLoader(e.target);
+            loader.removeEventListener(Event.COMPLETE, setupConststantsFileLoadedListener);
+            
+            var data:XML = new XML(loader.data);
+            
+            trace(data);
+            
+            for each ( var classXML in data.Class.* ) {
+                var class_name:String = classXML.name();
+                var obj_class:Class = Class(getDefinitionByName(class_name));
+                
+                for each ( var propXML in classXML.* ) {
+                    if ( obj_class.hasOwnProperty(propXML.name()) ) {
+                        trace(class_name, ": ", propXML.name(), " ", propXML.@value);
+                        obj_class[propXML.name()] = propXML.@value;
+                    }
+                }
+            }
         }
         
         public function showOutOfOrder():void {
