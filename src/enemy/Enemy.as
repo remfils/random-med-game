@@ -37,6 +37,9 @@
         private static var hitColor:Color = new Color();
         
         protected var enemyFixtureDef:b2FixtureDef; // D!
+        
+        protected var current_frame:int = 0;
+        protected var current_state:String = DEATH_STATE;
 
         public function Enemy():void {
             super();
@@ -48,6 +51,27 @@
             death_sound_id = SoundManager.SFX_SMOKE;
             
             properties = IS_EXTRUDED | IS_ACTIVE;
+        }
+        
+        public function set currentFrame(a:int):void {
+            current_frame = a;
+            
+            if ( current_frame > 1000 )
+                current_frame = 0;
+        }
+        
+        public function get currentFrame():int {
+            return current_frame; 
+        }
+        
+        protected function setState(state:String, is_animated:Boolean = false):void {
+            // trace("setState(): to ", state);
+            
+            currentFrame = 0;
+            current_state = state;
+            
+            if ( is_animated ) costume.setAnimatedState(state);
+            else costume.setState(state);
         }
         
         override public function update ():void {

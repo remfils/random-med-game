@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="рука001" itemID="5649d4c2-00000409" symbolType="graphic" lastModified="1447679170">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="рука001" itemID="5649d4c2-00000409" symbolType="graphic" lastModified="1450103567">
   <timeline>
     <DOMTimeline name="рука001">
       <layers>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!135 -208S2[160 59 124 322!124 322|92 203!92 203[75 264 20 318!20 318[52 206 -20 131!-20 131[-114 256 -120 417!-120 417[-165 111 -131 -207!-131 -207[-54 -414 66 -417!66 -417[123 -388 136 -314!136 -314[143 -270 135 -208"/>
+                    <Edge fillStyle1="1" edges="!135 -208[160 59 124 322!124 322|92 203!92 203[75 264 20 318!20 318[52 206 -20 131!-20 131[-114 256 -120 417!-120 417[-165 111 -131 -207!-131 -207[-54 -414 66 -417!66 -417[123 -388 136 -314!136 -314[143 -270 135 -208"/>
                     <Edge cubics="!-131 -207(;-80,-345 -14,-415 66,-417q-131 -207Q-54 -414q66 -417);"/>
                     <Edge cubics="!66 -417(;104,-398 128,-363 136,-314q66 -417Q123 -388q136 -314);"/>
                     <Edge cubics="!136 -314(;140,-285 140,-249 135,-208q136 -314Q143 -270q135 -208);"/>

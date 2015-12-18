@@ -1,0 +1,158 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/overseer/overseer_opennEyes" itemID="566ed4de-000003fe" symbolType="graphic" lastModified="1450104030">
+  <timeline>
+    <DOMTimeline name="overseer_opennEyes" currentFrame="29">
+      <layers>
+        <DOMLayer name="рука левая" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.997573852539063" b="0.069610595703125" c="0.05767822265625" d="0.826675415039063" tx="25.6" ty="-11.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.85" y="-15.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="шупальце левое" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!519 -514[537 -508 545 -499!545 -499[549 -494 558 -479!558 -479[580 -445 582 -410!582 -410[594 -320 595 -274!595 -274[595 -262 607 -139!607 -139[619 -20 619 -1!619 -1[663 319 663 434!663 434[663 466 642 634!642 634[619 817 604 873!604
+ 873[601 885 572 1101!572 1101[538 1310 507 1310!507 1310[489 1310 486 1225!486 1225[486 1217 492 1194!492 1194[498 1172 498 1151!498 1151|490 1032!490 1032|498 736!498 736[498 687 492 605!492 605[484 496 483 476!483 476|483 345!483 345
+[480 252 483 65!483 65[483 -4 473 -141!473 -141[462 -278 462 -346!462 -346[462 -349 464 -421!464 -421[467 -491 475 -491!475 -491[476 -491 488 -508!488 -508[503 -523 519 -514"/>
+                    <Edge cubics="!619 -1(;619,6 663,319 663,434q619 -1Q663 319q663 434);"/>
+                    <Edge cubics="!663 434(;663,465 627,789 604,873q663 434Q663 466q642 634Q619 817q604 873);"/>
+                    <Edge cubics="!604 873(;598,897 557,1310 507,1310q604 873Q601 885q572 1101Q538 1310q507 1310);"/>
+                    <Edge cubics="!507 1310(;489,1310 486,1225 486,1225q507 1310Q489 1310q486 1225);"/>
+                    <Edge cubics="!486 1225(;486,1205 498,1188 498,1151q486 1225Q486 1217q492 1194Q498 1172q498 1151);"/>
+                    <Edge cubics="!498 1151(498,1151;498,1143 490,1040 490,1032q498 1151 490 1032);"/>
+                    <Edge cubics="!490 1032(;490,1025 498,743 498,736q490 1032 498 736)498,736;"/>
+                    <Edge cubics="!498 736(498,736;498,652 487,558 483,476q498 736Q498 687q492 605Q484 496q483 476)483,476;"/>
+                    <Edge cubics="!483 476(483,476;483,476 483,345 483,345q483 476 483 345);"/>
+                    <Edge cubics="!483 345(483,345;480,252 483,72 483,65q483 345Q480 252q483 65)483,65;"/>
+                    <Edge cubics="!483 65(483,65;483,-73 462,-210 462,-346q483 65Q483 -4q473 -141Q462 -278q462 -346)462,-346;"/>
+                    <Edge cubics="!462 -346(462,-346;462,-353 462,-491 475,-491q462 -346Q462 -349q464 -421Q467 -491q475 -491)475,-491;"/>
+                    <Edge cubics="!475 -491(475,-491;477,-491 493,-529 519,-514q475 -491Q476 -491q488 -508Q503 -523q519 -514)519,-514;"/>
+                    <Edge cubics="!519 -514(519,-514;547,-505 546,-496 558,-479q519 -514Q537 -508q545 -499Q549 -494q558 -479);"/>
+                    <Edge cubics="!558 -479(558,-479;572,-458 581,-433 582,-410q558 -479Q580 -445q582 -410)582,-410;"/>
+                    <Edge cubics="!582 -410(582,-410;586,-368 594,-320 595,-274q582 -410Q594 -320q595 -274)595,-274;"/>
+                    <Edge cubics="!595 -274(595,-274;596,-244 619,-36 619,-1q595 -274Q595 -262q607 -139Q619 -20q619 -1)619,-1;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="рука правая" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="рука001" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.997573852539063" b="0.069610595703125" c="-0.069610595703125" d="0.997573852539063" tx="-22.75" ty="-8.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.85" y="-15.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="шупальце правое" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-441 -412[-406 -368 -406 -300!-406 -300[-406 -229 -423 -130!-423 -130[-441 -31 -441 43!-441 43[-441 135 -430 180!-430 180|-430 436!-430 436[-424 459 -424 502!-424 502[-428 719 -447 930!-447 930[-486 1351 -564 1351!-564 1351[-586 1351
+ -586 1331!-586 1331[-586 1312 -560 1184!-560 1184[-534 1056 -534 938!-534 938[-542 712 -543 598!-543 598[-544 531 -556 424!-556 424[-568 321 -568 264!-568 264[-568 201 -561 42!-561 42[-553 -123 -549 -138!-549 -138[-540 -170 -540 -237
+!-540 -237[-539 -301 -528 -336!-528 -336[-484 -464 -441 -412"/>
+                    <Edge cubics="!-406 -300(;-406,-157 -441,-104 -441,43q-406 -300Q-406 -229q-423 -130Q-441 -31q-441 43);"/>
+                    <Edge cubics="!-441 43(;-441,58 -441,135 -430,180q-441 43Q-441 135q-430 180);"/>
+                    <Edge cubics="!-430 180(;-430,180 -430,436 -430,436q-430 180 -430 436);"/>
+                    <Edge cubics="!-430 436(;-424,459 -424,487 -424,502q-430 436Q-424 459q-424 502);"/>
+                    <Edge cubics="!-424 502(;-424,512 -439,1351 -564,1351q-424 502Q-428 719q-447 930Q-486 1351q-564 1351);"/>
+                    <Edge cubics="!-564 1351(;-589,1351 -586,1333 -586,1331q-564 1351Q-586 1351q-586 1331);"/>
+                    <Edge cubics="!-586 1331(;-586,1260 -534,1141 -534,938q-586 1331Q-586 1312q-560 1184Q-534 1056q-534 938);"/>
+                    <Edge cubics="!-534 938(;-534,923 -542,712 -543,598q-534 938Q-542 712q-543 598);"/>
+                    <Edge cubics="!-543 598(;-545,465 -568,378 -568,264q-543 598Q-544 531q-556 424Q-568 321q-568 264);"/>
+                    <Edge cubics="!-568 264(;-568,186 -555,-117 -549,-138q-568 264Q-568 201q-561 42Q-553 -123q-549 -138);"/>
+                    <Edge cubics="!-549 -138(-549,-138;-531,-205 -550,-270 -528,-336q-549 -138Q-540 -170q-540 -237Q-539 -301q-528 -336)-528,-336;"/>
+                    <Edge cubics="!-528 -336(-528,-336;-460,-534 -406,-352 -406,-300q-528 -336Q-484 -464q-441 -412Q-406 -368q-406 -300);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="глаз" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/overseer/parts/eye_openEyes" selected="true" symbolType="graphic" loop="play once">
+                  <matrix>
+                    <Matrix tx="3.35" ty="-48.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="тело" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/overseer/parts/тело" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="0.8" ty="-1.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="штаны" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_bosses/overseer/parts/штаны" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-1.5" ty="31.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

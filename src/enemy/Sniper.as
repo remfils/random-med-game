@@ -99,7 +99,7 @@ package src.enemy {
             bullet.setSpeed(direction);
             bullet.setPosition(new Point(x, y));
             
-            cRoom.addEnemy(bullet);
+            cRoom.add(bullet);
             
             SoundManager.instance.playSFX(SoundManager.SFX_SHOOT_MONK);
             //this.cRoom.addEnenemy(bullet);

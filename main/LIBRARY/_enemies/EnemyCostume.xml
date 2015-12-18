@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1449742945" lastUniqueIdentifier="36">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1450104352" lastUniqueIdentifier="40">
   <timeline>
-    <DOMTimeline name="EnemyCostume" currentFrame="421">
+    <DOMTimeline name="EnemyCostume" currentFrame="433">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="14" name="Ghost_stand" labelType="name" keyMode="9728">
               <elements/>
@@ -58,17 +58,29 @@
             <DOMFrame index="407" duration="26" name="Overseer_armHit" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="433" duration="50" keyMode="9728">
+            <DOMFrame index="433" duration="50" name="Overseer_openEyes" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="483" duration="102" name="Overseer_death" labelType="name" keyMode="9728">
+            <DOMFrame index="483" duration="106" name="Overseer_death" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="589" duration="31" name="WallEye_init" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="620" duration="47" name="WallEye_open" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="667" duration="28" name="WallEye_remove" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="695" duration="41" name="WallEye_removeInit" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="585" keyMode="9728">
+            <DOMFrame index="0" duration="736" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -78,7 +90,7 @@
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="14" duration="571" keyMode="9728">
+            <DOMFrame index="14" duration="722" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -145,7 +157,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="411" duration="174" keyMode="9728">
+            <DOMFrame index="411" duration="178" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="28.5">
                   <matrix>
@@ -157,9 +169,45 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
+            <DOMFrame index="589" duration="42" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="20.6">
+                  <matrix>
+                    <Matrix a="9.86471557617188" d="2.78965759277344" ty="-7.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="631" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="56.85">
+                  <matrix>
+                    <Matrix a="10.5728759765625" d="23.4180297851563" ty="201.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="637" duration="99" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="20.6">
+                  <matrix>
+                    <Matrix a="9.86471557617188" d="2.78965759277344" ty="-7.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4FFF4F">
           <frames>
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements>
@@ -379,7 +427,7 @@
             </DOMFrame>
             <DOMFrame index="433" duration="50" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_swing" symbolType="graphic" firstFrame="13" loop="play once">
+                <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_opennEyes" symbolType="graphic" loop="play once">
                   <matrix>
                     <Matrix tx="-1.25" ty="-7.1"/>
                   </matrix>
@@ -389,7 +437,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="483" duration="102" keyMode="9728">
+            <DOMFrame index="483" duration="106" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_death" symbolType="graphic" loop="play once">
                   <matrix>
@@ -397,6 +445,42 @@
                   </matrix>
                   <transformationPoint>
                     <Point x="2.4" y="1.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="589" duration="31" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_init" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="620" duration="47" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_open" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="667" duration="28" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_remove" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="695" duration="41" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_initRemove" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

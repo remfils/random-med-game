@@ -136,7 +136,7 @@
         }
         
         private function setupStaticClassVariablesFromXML():void {
-            var loader:URLLoader = new URLLoader(new URLRequest(HOME_SERVER + "/Constants.xml"));
+            var loader:URLLoader = new URLLoader(new URLRequest(HOME_SERVER + "/Constants.xml?a=" + Math.random()));
             loader.addEventListener(Event.COMPLETE, setupConststantsFileLoadedListener);
         }
         

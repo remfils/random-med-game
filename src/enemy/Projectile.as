@@ -26,6 +26,8 @@ package src.enemy {
             dir.Normalize();
             dir.Multiply(SPEED / Game.WORLD_SCALE);
             speed = dir;
+            
+            trace("speed set to", dir.x, dir.y, body);
         }
         
         override public function update():void {
