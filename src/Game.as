@@ -66,7 +66,7 @@ package src {
         // private var menuPanel:GameMenu;
         public var gamePanel:Sprite;
         var playerPanel:Sprite; // for bullets
-        private var glassPanel:Sprite;
+        public var glassPanel:Sprite;
         
         private var control_cheat_sheet:Costume;
         

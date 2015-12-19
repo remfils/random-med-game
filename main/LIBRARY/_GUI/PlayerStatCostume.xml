@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1447584830" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1450457513" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="PlayerStatCostume" currentFrame="259">
+    <DOMTimeline name="PlayerStatCostume" currentFrame="279">
       <layers>
         <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
@@ -55,7 +55,10 @@
             <DOMFrame index="236" duration="23" name="music_off_button" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="259" duration="34" name="arrow_button" labelType="name" keyMode="9728">
+            <DOMFrame index="259" duration="20" name="arrow_button" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="279" duration="14" name="boss_hp_bar" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -261,12 +264,21 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="259" duration="34" keyMode="9728">
+            <DOMFrame index="259" duration="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/up_btn" symbolType="button">
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/up_btn" selected="true" symbolType="button">
                   <matrix>
                     <Matrix tx="-20.3" ty="20.1"/>
                   </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="279" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BossHealthBar" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

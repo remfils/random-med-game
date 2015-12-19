@@ -226,6 +226,9 @@
                     if ( e is FlyingEnemy ) {
                         FlyingEnemy(e).setTarget(playerBody);
                     }
+                    else if ( e is EnemyLaser ) {
+                        game.glassPanel.addChild(e.costume);
+                    }
                 }
                 else {
                     game.taskManager.addTaskObject(TaskObject(obj));

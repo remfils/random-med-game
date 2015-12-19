@@ -108,7 +108,7 @@
                     
                     var vk_id:Number = flash_vars['viewer_id'];
                     
-                    if ( vk_id != 18524077 || vk_id  != 15976844 ) {
+                    if ( !(vk_id == 18524077 || vk_id  == 15976844) ) {
                         showOutOfOrder();
                         return;
                     }

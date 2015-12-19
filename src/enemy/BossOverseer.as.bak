@@ -34,13 +34,13 @@ public class BossOverseer extends Enemy implements Init {
         public static var RIGHT_X:Number = 592.25;
         
         public static var _movement_speed:Number = 15; // D!
-        public static var MOVEMENT_START_ACCELERATION:Number  = 1;
-        public static var DENSITY:Number  = 0;
-        public static var FRICTION:Number  = 0;
-        public static var TMP_FORCE_MULTIPLIER:Number  = 3.2;
+        public static var MOVEMENT_START_ACCELERATION:Number = 0.7;
+        public static var DENSITY:Number = 0.5;
+        public static var FRICTION:Number = 0.8;
+        public static var TMP_FORCE_MULTIPLIER:Number = 2;
         public static var MAX_HEALTH:int = 500;
-        public static var TMP_FORCE_MAX_LENGTH:Number  = 15;
-        public static var LINEAR_DAMPING:Number  = 0.2;
+        public static var TMP_FORCE_MAX_LENGTH:Number = 3;
+        public static var LINEAR_DAMPING:Number = 0;
         
         private const HEALTH_AT_FIRST_TEST:int = MAX_HEALTH - MAX_HEALTH / 4;
         private const HEALTH_AT_SECOND_TEST:int = MAX_HEALTH - 3 * MAX_HEALTH / 4;
@@ -57,13 +57,13 @@ public class BossOverseer extends Enemy implements Init {
         private static const FRAME_HIT_ARM_ATTACK_START:int = 3;
         private static const FRAME_HIT_ARM_END:int = 15;
         private static const FRAME_HIT_ARM_ATTACK_END:int = 5;
-        public static var FRAME_OPEN_EYES_DELLAY:int = 15 + 80;
+        private static const FRAME_OPEN_EYES_DELLAY:int = 15 + 20;
         private static const FRAME_OPEN_EYES_END:int = 14;
-        private static const FRAME_FIRE_EYES_END:int = 14;
+        private static const FRAME_FIRE_EYES_END:int = 14 + 20;
         public static var FRAME_ATTACK_DELLAY:int = 15;
         private static const FRAME_DEATH_END:int = 103;
-        public static var FRAME_TMP_FORCE_ACT_END:int  = 20;
-        public static var FRAME_EYES_CLOSED:int  = 14;
+        public static var FRAME_TMP_FORCE_ACT_END:int = 10;
+        public static var FRAME_EYES_CLOSED:int = 15;
         
         private static const FRAME_SHOOT_CHARGED:int = 46;
         private static const FRAME_SHOOT_LASER:int = 60;
@@ -303,7 +303,6 @@ public class BossOverseer extends Enemy implements Init {
                             cRoom.add(eye);
                         }
                     }
-                    current_frame = 0;
                     
                     sub_state = WAIT_BEFORE_OPEN_EYES;
                     break;
@@ -376,18 +375,11 @@ public class BossOverseer extends Enemy implements Init {
                         
                         var rad_angle:Number = 0;
                         
-                        if ( player.x != laser.x ) {
-                            rad_angle = Math.atan(( laser.y - _player_position.y + player.costume.height / 2) / (laser.x - _player_position.x));
-                            
-                            if ( laser.x > _player_position.x ) {
-                                rad_angle += Math.PI;
-                            }
+                        if ( player.x != 3 + this.x ) {
+                            rad_angle = Math.atan(( laser.y - _player_position.y) / (laser.x - _player_position.x));
                         }
-                        else {
-                            rad_angle = Math.PI / 2;
-                            if ( player.y > this.y ) {
-                                rad_angle *= -1;
-                            }
+                        if ( laser.x > player.x ) {
+                            rad_angle += Math.PI;
                         }
                         
                         laser.costume.rotation = rad_angle * 180 / Math.PI;

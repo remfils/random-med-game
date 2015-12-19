@@ -27,6 +27,9 @@ package src.costumes {
         public static const HALF_STATE:String = "_half";
         public static const EMPTY_STATE:String = "_empty";
         
+        
+        public static const BOSS_HP_BAR:String = "boss_hp_bar";
+        
         public function PlayerStatCostume() {
             super();
         }
