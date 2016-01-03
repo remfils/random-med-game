@@ -1,5 +1,7 @@
 package src.ui {
+    import fl.motion.Color;
     import flash.display.DisplayObject;
+    import flash.display.Graphics;
     import flash.display.SimpleButton;
     import flash.display.Sprite;
     import flash.events.Event;
@@ -9,16 +11,22 @@ package src.ui {
     import flash.text.FontStyle;
     import flash.text.StyleSheet;
     import flash.text.TextField;
+    import flash.text.TextFieldAutoSize;
     import flash.text.TextFormat;
     import src.costumes.MenuButtonCostume;
     import src.costumes.MenuSprites;
     import src.costumes.PlayerStatCostume;
+    import src.enemy.ChargerEnemy;
     import src.Player;
     import src.ui.playerStat.StatDescriteBar;
     import src.User;
     import src.util.SoundManager;
 
     public class TitleMenu extends AbstractMenu {
+        private static const MAX_CHARS_IN_NAME:int = 30;
+        private static const MAX_CHARS_IN_NUMBER:int = 6;
+        private static const LARGE_NUMBER_END:String = "M";
+        private static const LARGE_STRING_END:String = "...";
         
         private static const LEVELS_BTN:String = "levels_btn";
         private static const INVENTORY_BTN:String = "inventory_btn";
@@ -26,7 +34,10 @@ package src.ui {
         
         private static const MENU_LEFT_PADDING:int = 20;
         
+        private static const MENU_PADDING:int = 5;
+        
         private var user_display:Sprite;
+        private var topusers_display:Sprite;
         
         public function TitleMenu() {
             
@@ -36,6 +47,8 @@ package src.ui {
             super.readData(data);
             
             drawUserData(data.user as User, data.css as StyleSheet);
+            
+            drawTopUsersData(data.topusers);
             
             // create btns
             
@@ -114,6 +127,130 @@ package src.ui {
             user_display.x = (stage.stageWidth - user_display.width) / 2;
             user_display.y = 160;
             addChild(user_display);
+        }
+        
+        private function drawTopUsersData(topusers_xml:XMLList):void {
+            var createTextColumn:Function = function (col_title:String, width_:Number, is_right_allign:Boolean = true):TextField {
+                var text_format:TextFormat;
+                var tf:TextField = new TextField();
+                tf.multiline = true;
+                tf.selectable = false;
+                
+                var magic_font:Font = new MagicFont();
+                
+                text_format = new TextFormat(magic_font.fontName, 14, 0xffffff);
+                text_format.align = is_right_allign ? "right" : "left";
+                
+                tf.defaultTextFormat = text_format;
+                
+                tf.width = width_;
+                
+                tf.text = col_title.toLocaleUpperCase();
+                
+                return tf;
+            };
+            
+            topusers_display = new Sprite();
+            
+            var padding_top:Number = 0;
+            var padding_left:Number = MENU_PADDING;
+            
+            var magic_font:Font = new MagicFont();
+            var text_format:TextFormat = new TextFormat(magic_font.fontName, 20, 0xF0D685, true);
+            text_format.align = "center";
+            var title_tf:TextField = createTextField("ТОП", text_format);
+            //title_tf.backgroundColor = 0x4F2300;
+            //title_tf.background = true;
+            
+            title_tf.x = 0;
+            title_tf.y = padding_top;
+            
+            padding_top += title_tf.textHeight + 2*MENU_PADDING;
+            
+            var user_name_col:TextField = createTextColumn("имя", 250, false);
+            var user_money_col:TextField = createTextColumn("золото", 100);
+            var user_exp_col:TextField = createTextColumn("опыт", 100);
+            
+            for each (var usr_xml:XML in topusers_xml.*) {
+                user_name_col.appendText("\n" + stripString(usr_xml.@name));
+                user_exp_col.appendText("\n" + stripNumber(usr_xml.@exp));
+                user_money_col.appendText("\n" + stripNumber(usr_xml.@money));
+            }
+            
+            user_name_col.x = padding_left;
+            user_name_col.y = padding_top;
+            user_name_col.height = user_name_col.textHeight + 10;
+            topusers_display.addChild(user_name_col);
+            
+            padding_left += MENU_PADDING + user_name_col.width;
+            
+            user_exp_col.x = padding_left;
+            user_exp_col.y = padding_top;
+            user_exp_col.height = user_exp_col.textHeight + 10;
+            topusers_display.addChild(user_exp_col);
+            
+            padding_left += MENU_PADDING + user_exp_col.width;
+            
+            user_money_col.x = padding_left;
+            user_money_col.y = padding_top;
+            user_money_col.height = user_money_col.textHeight + 10;
+            topusers_display.addChild(user_money_col);
+            
+            padding_left += MENU_PADDING + user_money_col.width;
+            
+            title_tf.width = topusers_display.width + 2 * MENU_PADDING;
+            
+            var title_bg:Sprite = new Sprite();
+            title_bg.x = title_tf.x;
+            title_bg.y = title_tf.y;
+            
+            title_tf.x = title_tf.y = 0;
+            
+            title_bg.addChild(title_tf);
+            
+            drawBlackRecktangleInSprite(title_bg);
+            
+            topusers_display.addChild(title_bg);
+            
+            drawBlackRecktangleInSprite(topusers_display);
+            
+            topusers_display.x = ( this.stage.stageWidth - topusers_display.width ) / 2;
+            topusers_display.y = user_display.y + user_display.height + 2 * MENU_PADDING;
+            addChild(topusers_display);
+        }
+        
+        private function stripString(str:String):String {
+            var res_str:String = str;
+            
+            if ( res_str.length > MAX_CHARS_IN_NAME ) {
+                res_str = str.slice(MAX_CHARS_IN_NAME) + LARGE_STRING_END;
+            }
+            
+            return res_str;
+        }
+        
+        private function drawBlackRecktangleInSprite(spr:Sprite, left_padding:Number = 0, top_padding:Number = 0):void {
+            left_padding = Math.abs(left_padding);
+            top_padding = Math.abs(top_padding);
+            
+            var g:Graphics = spr.graphics;
+            g.beginFill(0, 0.3);
+            g.drawRect(0, 0, spr.width + left_padding, spr.height + top_padding);
+            g.endFill();
+        }
+        
+        private function stripNumber(num:Number):String {
+            var res_str:String = "";
+            var res_num:Number = num;
+            var max_number:Number = Math.pow(10, MAX_CHARS_IN_NUMBER);
+            
+            while ( res_num > max_number ) {
+                res_num = Math.round( res_num / max_number );
+                res_str += LARGE_NUMBER_END;
+            }
+            
+            res_str = res_num + res_str;
+            return res_str;
         }
         
         override protected function clickListener(e:MouseEvent):void {

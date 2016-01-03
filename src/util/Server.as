@@ -154,7 +154,8 @@ package src.util {
             return {
                 "user": user,
                 "css": styleSheet,
-                "levels": data.GameData.levels
+                "levels": data.GameData.levels,
+                "topusers": data.GameData.topusers
             };
         }
         

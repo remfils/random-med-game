@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1445435484" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1451834854" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="MenuItem" currentFrame="62">
+    <DOMTimeline name="MenuItem">
       <layers>
         <DOMLayer name="label" color="#4F80FF" autoNamed="false">
           <frames>
@@ -28,7 +28,7 @@
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="block_curtain_mc" centerPoint3DX="8.95" centerPoint3DY="9.15">
+                <DOMSymbolInstance libraryItemName="src/collider" name="block_curtain_mc" selected="true" centerPoint3DX="8.95" centerPoint3DY="9.15">
                   <matrix>
                     <Matrix a="17.3442535400391" d="4.90983581542969" tx="158.5" ty="44.9"/>
                   </matrix>
