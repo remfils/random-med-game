@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuButton" itemID="5540a554-00000187" linkageExportForAS="true" linkageClassName="src.costumes.MenuButtonCostume" lastModified="1445592838" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuButton" itemID="5540a554-00000187" linkageExportForAS="true" linkageClassName="src.costumes.MenuButtonCostume" lastModified="1452078399" lastUniqueIdentifier="2">
   <timeline>
-    <DOMTimeline name="MenuButton" currentFrame="97">
+    <DOMTimeline name="MenuButton" currentFrame="41">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -10,22 +10,25 @@
             <DOMFrame index="9" duration="14" name="inventory_btn" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="23" duration="16" name="achivements_btn" labelType="name" keyMode="9728">
+            <DOMFrame index="23" duration="18" name="achivements_btn" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="39" duration="14" name="goto_title_btn" labelType="name" keyMode="9728">
+            <DOMFrame index="41" duration="34" name="shop_btn" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="53" duration="16" name="move_levels_right" labelType="name" keyMode="9728">
+            <DOMFrame index="75" duration="14" name="goto_title_btn" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="69" duration="18" name="move_levels_left" labelType="name" keyMode="9728">
+            <DOMFrame index="89" duration="16" name="move_levels_right" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="87" duration="17" name="level_select_btn" labelType="name" keyMode="9728">
+            <DOMFrame index="105" duration="18" name="move_levels_left" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="104" duration="35" keyMode="9728">
+            <DOMFrame index="123" duration="17" name="level_select_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="140" duration="35" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -43,14 +46,14 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!291 -359|291 378!291 378|-310 378!-310 378|-310 -359!-310 -359|291 -359"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!291 378|-310 378!-310 378|-310 -359!-310 -359|291 -359!291 -359|291 378"/>
                   </edges>
                 </DOMShape>
               </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="текст" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="текст" color="#FF800A" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
@@ -92,9 +95,9 @@
                 </DOMStaticText>
               </elements>
             </DOMFrame>
-            <DOMFrame index="23" duration="16" keyMode="9728">
+            <DOMFrame index="23" duration="18" keyMode="9728">
               <elements>
-                <DOMStaticText fontRenderingMode="standard" width="128.1" height="16.8" includeOutlines="true" isSelectable="false">
+                <DOMStaticText selected="true" fontRenderingMode="standard" width="128.1" height="16.8" includeOutlines="true" isSelectable="false">
                   <matrix>
                     <Matrix tx="-64.05" ty="49.8"/>
                   </matrix>
@@ -110,7 +113,7 @@
                     <DropShadowFilter blurX="6" blurY="6" distance="0"/>
                   </filters>
                 </DOMStaticText>
-                <DOMStaticText fontRenderingMode="standard" left="12.6" width="118.8" height="35.6" autoExpand="true" isSelectable="false">
+                <DOMStaticText selected="true" fontRenderingMode="standard" left="12.6" width="118.8" height="35.6" autoExpand="true" includeOutlines="true" isSelectable="false">
                   <matrix>
                     <Matrix a="0.921600341796875" d="0.921600341796875" tx="-65.65" ty="-21.9"/>
                   </matrix>
@@ -131,7 +134,27 @@
                 </DOMStaticText>
               </elements>
             </DOMFrame>
-            <DOMFrame index="39" duration="14" keyMode="9728">
+            <DOMFrame index="41" duration="34" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" width="128.1" height="16.8" includeOutlines="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-64.05" ty="49.8"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>МАГАЗИН</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" size="14" face="MagicFont*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter blurX="6" blurY="6" distance="0"/>
+                  </filters>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="75" duration="14" keyMode="9728">
               <elements>
                 <DOMStaticText fontRenderingMode="standard" left="17.45" width="109.1" height="35.95" autoExpand="true" isSelectable="false">
                   <matrix>
@@ -148,7 +171,7 @@
                 </DOMStaticText>
               </elements>
             </DOMFrame>
-            <DOMFrame index="53" duration="16" keyMode="9728">
+            <DOMFrame index="89" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_btns/PaintedArrow_clip" symbolType="graphic" centerPoint3DX="-0.1" centerPoint3DY="0.45" loop="loop">
                   <matrix>
@@ -160,7 +183,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="69" duration="18" keyMode="9728">
+            <DOMFrame index="105" duration="18" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_btns/PaintedArrow_clip" symbolType="graphic" centerPoint3DX="0.1" centerPoint3DY="0.45" loop="loop">
                   <matrix>
@@ -172,7 +195,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="87" duration="17" keyMode="9728">
+            <DOMFrame index="123" duration="17" keyMode="9728">
               <elements>
                 <DOMDynamicText name="level_name" fontRenderingMode="standard" left="45.65" width="145.8" height="80.5" isSelectable="false" lineType="multiline">
                   <matrix>
@@ -189,12 +212,12 @@
                 </DOMDynamicText>
               </elements>
             </DOMFrame>
-            <DOMFrame index="104" duration="35" keyMode="9728">
+            <DOMFrame index="140" duration="35" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F">
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>
@@ -217,9 +240,9 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="23" duration="16" keyMode="9728">
+            <DOMFrame index="23" duration="18" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_btns/GotoAchievementsButton" symbolType="button">
+                <DOMSymbolInstance libraryItemName="_menu/_btns/GotoAchievementsButton" selected="true" symbolType="button">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -229,7 +252,16 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="39" duration="14" keyMode="9728">
+            <DOMFrame index="41" duration="34" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_btns/GotoShopingButton" selected="true" symbolType="button">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="75" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_btns/TabletButton" symbolType="button">
                   <matrix>
@@ -241,7 +273,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="53" duration="16" keyMode="9728">
+            <DOMFrame index="89" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_btns/TabletButton" symbolType="button" centerPoint3DX="-4.05" centerPoint3DY="60.4">
                   <matrix>
@@ -253,7 +285,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="69" duration="18" keyMode="9728">
+            <DOMFrame index="105" duration="18" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_btns/TabletButton" symbolType="button" centerPoint3DX="4.05" centerPoint3DY="60.4">
                   <matrix>
@@ -265,7 +297,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="87" duration="17" keyMode="9728">
+            <DOMFrame index="123" duration="17" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_btns/levelSelectButton" symbolType="button">
                   <matrix>
@@ -277,7 +309,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="104" duration="35" keyMode="9728">
+            <DOMFrame index="140" duration="35" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>

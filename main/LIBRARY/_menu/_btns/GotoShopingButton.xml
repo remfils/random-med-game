@@ -1,14 +1,14 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_btns/GotoShopButton" itemID="53fb0e1b-00000199" symbolType="button" lastModified="1430299934" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/_btns/GotoShopingButton" itemID="568ceda7-000001dd" symbolType="button" lastModified="1452079532">
   <timeline>
-    <DOMTimeline name="GotoShopButton">
+    <DOMTimeline name="GotoShopingButton">
       <layers>
         <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_btns/сундук" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_btns/мешок" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix tx="-1.2" ty="-4"/>
+                    <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -18,9 +18,9 @@
             </DOMFrame>
             <DOMFrame index="1" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_btns/сундук" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_btns/мешок" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix tx="-1.2" ty="-4"/>
+                    <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -30,9 +30,9 @@
             </DOMFrame>
             <DOMFrame index="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_btns/сундук" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_btns/мешок" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix tx="-1.2" ty="-4"/>
+                    <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -45,9 +45,9 @@
             </DOMFrame>
             <DOMFrame index="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_btns/сундук" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_btns/мешок" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix tx="-1.2" ty="-4"/>
+                    <Matrix a="0.360794067382813" d="0.360794067382813" tx="0.5" ty="-1.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -57,22 +57,25 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="блики" color="#9933CC" autoNamed="false">
+        <DOMLayer name="блеск" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements/>
             </DOMFrame>
             <DOMFrame index="1" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_btns/блеск" centerPoint3DX="27.7" centerPoint3DY="-2.7">
+                <DOMSymbolInstance libraryItemName="_menu/_btns/блеск" centerPoint3DX="16.5" centerPoint3DY="-3.95">
                   <matrix>
-                    <Matrix tx="12.15" ty="-2.05"/>
+                    <Matrix tx="0.95" ty="-3.3"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="15.55" y="-0.65"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

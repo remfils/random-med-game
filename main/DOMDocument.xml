@@ -75,7 +75,7 @@
           <DOMFolderItem name="_level/_Helpers" itemID="53d012a5-000000f5"/>
           <DOMFolderItem name="_menu" itemID="5421a1e7-00000107" isExpanded="true"/>
           <DOMFolderItem name="_menu/_btns" itemID="55409dea-00000160"/>
-          <DOMFolderItem name="_menu/_MenuCostume" itemID="553cd222-0000013c" isExpanded="true"/>
+          <DOMFolderItem name="_menu/_MenuCostume" itemID="553cd222-0000013c"/>
           <DOMFolderItem name="_menu/_MenuCostume/_magesShop" itemID="5470a581-00000125"/>
           <DOMFolderItem name="_menu/_MenuCostume/_деревья" itemID="553b66de-00000142"/>
           <DOMFolderItem name="_player" itemID="552fc5f9-00000169"/>
@@ -439,6 +439,7 @@
           <Include href="_menu/_btns/GotoAchievementsButton.xml" itemIcon="0" loadImmediate="false" itemID="53fb0a0e-000000c1" lastModified="1430299924"/>
           <Include href="_menu/_btns/GotoLevelsButton.xml" itemIcon="0" loadImmediate="false" itemID="53fb09d7-000000bf" lastModified="1430299929"/>
           <Include href="_menu/_btns/GotoShopButton.xml" itemIcon="0" loadImmediate="false" itemID="53fb0e1b-00000199" lastModified="1430299934"/>
+          <Include href="_menu/_btns/GotoShopingButton.xml" itemIcon="0" loadImmediate="false" itemID="568ceda7-000001dd" lastModified="1452079532"/>
           <Include href="_menu/_btns/levelSelectButton.xml" itemIcon="0" loadImmediate="false" itemID="5540be8f-000001fe" lastModified="1430306893"/>
           <Include href="_menu/_btns/map default.xml" itemIcon="1" loadImmediate="false" itemID="53d012f7-000000ff" lastModified="1406155613"/>
           <Include href="_menu/_btns/PaintedArrow_clip.xml" itemIcon="1" loadImmediate="false" itemID="5540b728-000001d6" lastModified="1430304552"/>
@@ -448,7 +449,8 @@
           <Include href="_menu/_btns/кубок.xml" itemIcon="1" loadImmediate="false" itemID="53d03d49-00000095" lastModified="1429956504"/>
           <Include href="_menu/_btns/луч.xml" itemIcon="1" loadImmediate="false" itemID="53d01cdc-0000012e" lastModified="1406147811"/>
           <Include href="_menu/_btns/луч анимация.xml" itemIcon="1" loadImmediate="false" itemID="53d01cfd-00000132" lastModified="1406148460"/>
-          <Include href="_menu/_btns/сундук.xml" itemIcon="1" loadImmediate="false" itemID="53d030e5-00000219" lastModified="1429956587"/>
+          <Include href="_menu/_btns/мешок.xml" itemIcon="1" loadImmediate="false" itemID="568cedc6-000001e5" lastModified="1452079645"/>
+          <Include href="_menu/_btns/сундук.xml" itemIcon="1" loadImmediate="false" itemID="53d030e5-00000219" lastModified="1452079363"/>
           <Include href="_menu/_MenuCostume/_magesShop/item_ico.xml" itemIcon="1" loadImmediate="false" itemID="553bda14-000001fe" lastModified="1429985812"/>
           <Include href="_menu/_MenuCostume/_magesShop/itemPanell.xml" itemIcon="1" loadImmediate="false" itemID="5471a488-00000121" lastModified="1429890051"/>
           <Include href="_menu/_MenuCostume/_magesShop/mageDrawing.xml" itemIcon="1" loadImmediate="false" itemID="5471a476-0000011c" lastModified="1416735574"/>
@@ -466,10 +468,10 @@
           <Include href="_menu/_MenuCostume/MagesShop_clip.xml" itemIcon="1" loadImmediate="false" itemID="553cd28f-000005bb" lastModified="1451834895"/>
           <Include href="_menu/_MenuCostume/MenuBackground_gr.xml" itemIcon="1" loadImmediate="false" itemID="553cd254-00000145" lastModified="1450609569"/>
           <Include href="_menu/_MenuCostume/Star_gr.xml" itemIcon="1" loadImmediate="false" itemID="553cd250-00000144" lastModified="1430049360"/>
-          <Include href="_menu/MenuButton.xml" itemID="5540a554-00000187" lastModified="1445592838"/>
+          <Include href="_menu/MenuButton.xml" itemID="5540a554-00000187" lastModified="1452078399"/>
           <Include href="_menu/MenuCostume.xml" itemID="553b9f00-0000014d" lastModified="1445513090"/>
           <Include href="_menu/MenuItem.xml" itemID="55424c97-000002b0" lastModified="1451834854"/>
-          <Include href="_menu/test&amp;#058title_menu.xml" itemIcon="1" loadImmediate="false" itemID="56768ba1-000001d4" lastModified="1450609584"/>
+          <Include href="_menu/test&amp;#058title_menu.xml" itemIcon="1" loadImmediate="false" itemID="56768ba1-000001d4" lastModified="1452079740"/>
           <Include href="_menu/название игры.xml" itemIcon="1" loadImmediate="false" itemID="53d0448d-000000b4" lastModified="1416138485"/>
           <Include href="_player/parts/_головы/голова_В.xml" itemIcon="1" loadImmediate="false" itemID="537753f0-00000050" lastModified="1405453824"/>
           <Include href="_player/parts/_головы/голова_верх.xml" itemIcon="1" loadImmediate="false" itemID="53cad4e2-000002a0" lastModified="1406145125"/>
@@ -1192,6 +1194,13 @@
                     <SolidSwatchItem color="#0C212E" hue="135" saturation="142" brightness="27"/>
                     <SolidSwatchItem color="#6B6B6B" brightness="101"/>
                     <SolidSwatchItem color="#AD46C3" hue="193" saturation="123" brightness="125"/>
+                    <SolidSwatchItem color="#D2BD4B" hue="34" saturation="144" brightness="135"/>
+                    <SolidSwatchItem color="#351A00" hue="19" saturation="239" brightness="25"/>
+                    <SolidSwatchItem color="#ECCB17" hue="34" saturation="203" brightness="122"/>
+                    <SolidSwatchItem color="#FFE766" hue="34" saturation="239" brightness="168"/>
+                    <SolidSwatchItem color="#958738" hue="34" saturation="108" brightness="97"/>
+                    <SolidSwatchItem alpha="0.301960784313725"/>
+                    <SolidSwatchItem color="#C9B246" hue="33" saturation="131" brightness="128"/>
                </swatches>
           </swatchList>
      </swatchLists>
@@ -1382,6 +1391,14 @@
                          <GradientEntry color="#BB00FF" ratio="0.764705882352941"/>
                          <GradientEntry color="#BB00FF" alpha="0" ratio="1"/>
                     </LinearGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#3F2100" ratio="0"/>
+                         <GradientEntry color="#462600" ratio="1"/>
+                    </LinearGradientSwatchItem>
+                    <LinearGradientSwatchItem>
+                         <GradientEntry color="#593100" ratio="0"/>
+                         <GradientEntry color="#462600" ratio="1"/>
+                    </LinearGradientSwatchItem>
                </swatches>
           </swatchList>
      </extendedSwatchLists>
@@ -1392,26 +1409,26 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1360515" publishTime="1452079799"/>
+          <PublishItem publishSize="1360517" publishTime="1452079686"/>
+          <PublishItem publishSize="1360495" publishTime="1452079580"/>
+          <PublishItem publishSize="1525836" publishTime="1452079240" publishDebug="true"/>
+          <PublishItem publishSize="1525767" publishTime="1452079041" publishDebug="true"/>
+          <PublishItem publishSize="1526288" publishTime="1452078829" publishDebug="true"/>
+          <PublishItem publishSize="1520068" publishTime="1451922980" publishDebug="true"/>
+          <PublishItem publishSize="1520098" publishTime="1451922911" publishDebug="true"/>
+          <PublishItem publishSize="1520162" publishTime="1451922825" publishDebug="true"/>
+          <PublishItem publishSize="1520154" publishTime="1451922599" publishDebug="true"/>
+          <PublishItem publishSize="1031735" publishTime="1451922552" publishDebug="true"/>
+          <PublishItem publishSize="1520234" publishTime="1451922041" publishDebug="true"/>
+          <PublishItem publishSize="1520097" publishTime="1451921681" publishDebug="true"/>
+          <PublishItem publishSize="1520113" publishTime="1451921517" publishDebug="true"/>
           <PublishItem publishSize="1519990" publishTime="1451843578" publishDebug="true"/>
           <PublishItem publishSize="1519976" publishTime="1451843389" publishDebug="true"/>
           <PublishItem publishSize="1519946" publishTime="1451843301" publishDebug="true"/>
           <PublishItem publishSize="1031735" publishTime="1451843079" publishDebug="true"/>
           <PublishItem publishSize="1354423" publishTime="1451834877"/>
           <PublishItem publishSize="1519713" publishTime="1451834819" publishDebug="true"/>
-          <PublishItem publishSize="1519697" publishTime="1451834740" publishDebug="true"/>
-          <PublishItem publishSize="1519764" publishTime="1451834632" publishDebug="true"/>
-          <PublishItem publishSize="1519697" publishTime="1451834552" publishDebug="true"/>
-          <PublishItem publishSize="1519608" publishTime="1451834412" publishDebug="true"/>
-          <PublishItem publishSize="1031735" publishTime="1451834347" publishDebug="true"/>
-          <PublishItem publishSize="1519589" publishTime="1451834194" publishDebug="true"/>
-          <PublishItem publishSize="1519722" publishTime="1451834118" publishDebug="true"/>
-          <PublishItem publishSize="1519610" publishTime="1451834053" publishDebug="true"/>
-          <PublishItem publishSize="1519680" publishTime="1451833754" publishDebug="true"/>
-          <PublishItem publishSize="1519714" publishTime="1451833678" publishDebug="true"/>
-          <PublishItem publishSize="1519542" publishTime="1451833574" publishDebug="true"/>
-          <PublishItem publishSize="1519563" publishTime="1451831791" publishDebug="true"/>
-          <PublishItem publishSize="1519578" publishTime="1451831734" publishDebug="true"/>
-          <PublishItem publishSize="1519632" publishTime="1451831685" publishDebug="true"/>
      </publishHistory>
      <swcCache>
           <Swc hashKey="k718tUOF1.A1OSpQnqdJJ0" href="m001axeqz8.swc">

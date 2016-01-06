@@ -34,7 +34,7 @@ package src.ui {
         
         private static const MENU_LEFT_PADDING:int = 20;
         
-        private static const MENU_PADDING:int = 5;
+        private static const DEFAULT_MARGIN:int = 5;
         
         private var user_display:Sprite;
         private var topusers_display:Sprite;
@@ -56,21 +56,28 @@ package src.ui {
             
             var btn:MenuButtonCostume = new MenuButtonCostume();
             btn.setState(MenuButtonCostume.LEVEL_BTN);
-            btn.x = 236.25;
+            btn.x = 177.1;
             btn.y = rake_y;
             btn.name = LEVELS_BTN;
             addChild(btn);
             
             btn = new MenuButtonCostume();
             btn.setState(MenuButtonCostume.INVENTORY_BTN);
-            btn.x = 401.25;
+            btn.x = 315.4;
+            btn.y = rake_y;
+            btn.name = INVENTORY_BTN;
+            addChild(btn);
+            
+            btn = new MenuButtonCostume();
+            btn.setState(MenuButtonCostume.SHOP_BTN);
+            btn.x = 444.9;
             btn.y = rake_y;
             btn.name = INVENTORY_BTN;
             addChild(btn);
             
             btn = new MenuButtonCostume();
             btn.setState(MenuButtonCostume.ACHIVEMENTS_BTN);
-            btn.x = 544.15;
+            btn.x = 567.8;
             btn.y = rake_y;
             btn.name = ACHIVEMENTS_BTN;
             addChild(btn);
@@ -87,10 +94,13 @@ package src.ui {
             
             user_display = new Sprite();
             // user_display.x = 30;
+            var title:Sprite = createMenuTitleText("ИГРОК", 450 + 4 * DEFAULT_MARGIN);
+            
+            user_display.addChild(title);
             
             var userInfo:TextField = new TextField();
             userInfo.x = left_padding;
-            userInfo.y = 10;
+            userInfo.y = title.height + DEFAULT_MARGIN;
             
             var magicFont:Font = new MagicFont();
             var textFormat:TextFormat = new TextFormat(magicFont.fontName, 20, 0xffffff, FontStyle.BOLD);
@@ -109,23 +119,21 @@ package src.ui {
             
             // player hearts and bottels
             left_padding += MENU_LEFT_PADDING;
-            var bar:StatDescriteBar = new StatDescriteBar(user.player, PlayerStatCostume.HEART_TYPE, "HEALTH");
-            bar.x = userInfo.width + left_padding;
-            bar.y = 20;
-            user_display.addChild(bar);
+            var health_bar:StatDescriteBar = new StatDescriteBar(user.player, PlayerStatCostume.HEART_TYPE, "HEALTH");
+            health_bar.x = 450 + 2 * DEFAULT_MARGIN - health_bar.width;
+            health_bar.y = userInfo.y + 2 * DEFAULT_MARGIN;
+            user_display.addChild(health_bar);
             
-            bar = new StatDescriteBar(user.player, PlayerStatCostume.MANA_TYPE, "MANA");
-            bar.x = userInfo.width + left_padding;
-            bar.y = 20 + bar.height;
-            user_display.addChild(bar);
+            var mana_bar:StatDescriteBar = new StatDescriteBar(user.player, PlayerStatCostume.MANA_TYPE, "MANA");
+            mana_bar.x = health_bar.x;
+            mana_bar.y = health_bar.y + mana_bar.height;
+            user_display.addChild(mana_bar);
             
             // left_padding += MENU_LEFT_PADDING;
-            user_display.graphics.beginFill(0, 0.3);
-            user_display.graphics.drawRect(0, 0, user_display.width + left_padding, user_display.height);
-            user_display.graphics.endFill();
+            drawBlackRecktangleInSprite(user_display);
             
             user_display.x = (stage.stageWidth - user_display.width) / 2;
-            user_display.y = 160;
+            user_display.y = 145;
             addChild(user_display);
         }
         
@@ -153,19 +161,16 @@ package src.ui {
             topusers_display = new Sprite();
             
             var padding_top:Number = 0;
-            var padding_left:Number = MENU_PADDING;
+            var padding_left:Number = DEFAULT_MARGIN;
             
-            var magic_font:Font = new MagicFont();
-            var text_format:TextFormat = new TextFormat(magic_font.fontName, 20, 0xF0D685, true);
-            text_format.align = "center";
-            var title_tf:TextField = createTextField("ТОП", text_format);
-            //title_tf.backgroundColor = 0x4F2300;
-            //title_tf.background = true;
+            var menu_title:Sprite = createMenuTitleText("ТОП", 450 + 4 * DEFAULT_MARGIN);
             
-            title_tf.x = 0;
-            title_tf.y = padding_top;
+            menu_title.x = 0;
+            menu_title.y = padding_top;
             
-            padding_top += title_tf.textHeight + 2*MENU_PADDING;
+            topusers_display.addChild(menu_title);
+            
+            padding_top += menu_title.height + 2 * DEFAULT_MARGIN;
             
             var user_name_col:TextField = createTextColumn("имя", 250, false);
             var user_money_col:TextField = createTextColumn("золото", 100);
@@ -182,51 +187,44 @@ package src.ui {
             user_name_col.height = user_name_col.textHeight + 10;
             topusers_display.addChild(user_name_col);
             
-            padding_left += MENU_PADDING + user_name_col.width;
+            padding_left += DEFAULT_MARGIN + user_name_col.width;
             
             user_exp_col.x = padding_left;
             user_exp_col.y = padding_top;
             user_exp_col.height = user_exp_col.textHeight + 10;
             topusers_display.addChild(user_exp_col);
             
-            padding_left += MENU_PADDING + user_exp_col.width;
+            padding_left += DEFAULT_MARGIN + user_exp_col.width;
             
             user_money_col.x = padding_left;
             user_money_col.y = padding_top;
             user_money_col.height = user_money_col.textHeight + 10;
             topusers_display.addChild(user_money_col);
             
-            padding_left += MENU_PADDING + user_money_col.width;
-            
-            title_tf.width = topusers_display.width + 2 * MENU_PADDING;
-            
-            var title_bg:Sprite = new Sprite();
-            title_bg.x = title_tf.x;
-            title_bg.y = title_tf.y;
-            
-            title_tf.x = title_tf.y = 0;
-            
-            title_bg.addChild(title_tf);
-            
-            drawBlackRecktangleInSprite(title_bg);
-            
-            topusers_display.addChild(title_bg);
+            padding_left += DEFAULT_MARGIN + user_money_col.width;
             
             drawBlackRecktangleInSprite(topusers_display);
             
             topusers_display.x = ( this.stage.stageWidth - topusers_display.width ) / 2;
-            topusers_display.y = user_display.y + user_display.height + 2 * MENU_PADDING;
+            topusers_display.y = user_display.y + user_display.height + 2 * DEFAULT_MARGIN;
             addChild(topusers_display);
         }
         
-        private function stripString(str:String):String {
-            var res_str:String = str;
+        private function createMenuTitleText(title:String, titile_width:Number = 450):Sprite {
+            var container:Sprite = new Sprite();
             
-            if ( res_str.length > MAX_CHARS_IN_NAME ) {
-                res_str = str.slice(MAX_CHARS_IN_NAME) + LARGE_STRING_END;
-            }
+            var magic_font:Font = new MagicFont();
+            var text_format:TextFormat = new TextFormat(magic_font.fontName, 20, 0xFFFFFF, true);
+            text_format.align = "center";
             
-            return res_str;
+            var tf:TextField = createTextField(title, text_format);
+            tf.width = titile_width;
+            
+            container.addChild(tf);
+            
+            drawBlackRecktangleInSprite(container);
+            
+            return container;
         }
         
         private function drawBlackRecktangleInSprite(spr:Sprite, left_padding:Number = 0, top_padding:Number = 0):void {
@@ -237,6 +235,16 @@ package src.ui {
             g.beginFill(0, 0.3);
             g.drawRect(0, 0, spr.width + left_padding, spr.height + top_padding);
             g.endFill();
+        }
+        
+        private function stripString(str:String):String {
+            var res_str:String = str;
+            
+            if ( res_str.length > MAX_CHARS_IN_NAME ) {
+                res_str = str.slice(MAX_CHARS_IN_NAME) + LARGE_STRING_END;
+            }
+            
+            return res_str;
         }
         
         private function stripNumber(num:Number):String {

@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_menu/_btns/map default" selected="true" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="_menu/_btns/map default" symbolType="graphic" loop="loop">
                   <matrix>
                     <Matrix a="0.812774658203125" d="0.812606811523438" tx="-49.6" ty="-38.85"/>
                   </matrix>

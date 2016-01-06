@@ -1,11 +1,44 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/test:title_menu" itemID="56768ba1-000001d4" symbolType="graphic" lastModified="1450609584">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/test:title_menu" itemID="56768ba1-000001d4" symbolType="graphic" lastModified="1452079740" lastUniqueIdentifier="4">
   <timeline>
     <DOMTimeline name="test:title_menu">
       <layers>
         <DOMLayer name="Layer 2" color="#FF800A" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
-              <elements/>
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" loop="single frame">
+                  <matrix>
+                    <Matrix tx="177.1" ty="504.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10.7" y="-6.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" firstFrame="9" loop="single frame">
+                  <matrix>
+                    <Matrix tx="315.4" ty="504.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10.7" y="-6.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" selected="true" symbolType="graphic" firstFrame="23" loop="single frame">
+                  <matrix>
+                    <Matrix tx="567.8" ty="504.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10.7" y="-6.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" firstFrame="41" loop="single frame">
+                  <matrix>
+                    <Matrix tx="444.9" ty="504.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="10.7" y="-6.95"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -14,6 +47,9 @@
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MenuBackground_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-35.85"/>
+                  </matrix>
                   <transformationPoint>
                     <Point x="413.55" y="257.3"/>
                   </transformationPoint>
