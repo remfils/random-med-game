@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuButton" itemID="5540a554-00000187" linkageExportForAS="true" linkageClassName="src.costumes.MenuButtonCostume" lastModified="1452078399" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuButton" itemID="5540a554-00000187" linkageExportForAS="true" linkageClassName="src.costumes.MenuButtonCostume" lastModified="1453996974" lastUniqueIdentifier="2">
   <timeline>
-    <DOMTimeline name="MenuButton" currentFrame="41">
+    <DOMTimeline name="MenuButton" currentFrame="163">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -28,28 +28,11 @@
             <DOMFrame index="123" duration="17" name="level_select_btn" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="140" duration="35" keyMode="9728">
-              <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <SolidColor color="#4AFF00"/>
-                    </FillStyle>
-                  </fills>
-                  <strokes>
-                    <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal">
-                        <fill>
-                          <SolidColor color="#564931"/>
-                        </fill>
-                      </SolidStroke>
-                    </StrokeStyle>
-                  </strokes>
-                  <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!291 378|-310 378!-310 378|-310 -359!-310 -359|291 -359!291 -359|291 378"/>
-                  </edges>
-                </DOMShape>
-              </elements>
+            <DOMFrame index="140" duration="18" name="up_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="158" duration="17" name="buy_btn" labelType="name" keyMode="9728">
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
@@ -309,8 +292,26 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="140" duration="35" keyMode="9728">
-              <elements/>
+            <DOMFrame index="140" duration="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/_magesShop/scrollBtn" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="158" duration="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="buy_btn" symbolType="button">
+                  <matrix>
+                    <Matrix a="0.602615356445313" tx="25.3" ty="15.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>

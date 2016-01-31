@@ -12,6 +12,7 @@ package src.ui.mageShop {
         public var onPlayer:Boolean;
         public var isSpell:Boolean;
         public var dsc:String;
+        public var price:Number = 0;
         
         public var item_index:int;
         
@@ -37,6 +38,7 @@ package src.ui.mageShop {
             this.dsc = params.@dsc;
             this.isSpell = params.@isSpell == "true";
             this.onPlayer = params.@onPlayer == "true";
+            this.price = Number(params.@price);
         }
     }
 

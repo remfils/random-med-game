@@ -31,6 +31,7 @@ package src.ui {
         private static const LEVELS_BTN:String = "levels_btn";
         private static const INVENTORY_BTN:String = "inventory_btn";
         private static const ACHIVEMENTS_BTN:String = "achivements_btn";
+        private static const SHOP_BTN:String = "shop_btn";
         
         private static const MENU_LEFT_PADDING:int = 20;
         
@@ -39,8 +40,18 @@ package src.ui {
         private var user_display:Sprite;
         private var topusers_display:Sprite;
         
+        private var player_health_bar:StatDescriteBar;
+        private var player_mana_bar:StatDescriteBar;
+        
         public function TitleMenu() {
             
+        }
+        
+        override public function activate():void {
+            super.activate();
+            
+            player_health_bar.updatePoints();
+            player_mana_bar.updatePoints();
         }
         
         override public function readData(data:Object):void {
@@ -72,7 +83,7 @@ package src.ui {
             btn.setState(MenuButtonCostume.SHOP_BTN);
             btn.x = 444.9;
             btn.y = rake_y;
-            btn.name = INVENTORY_BTN;
+            btn.name = SHOP_BTN;
             addChild(btn);
             
             btn = new MenuButtonCostume();
@@ -119,15 +130,15 @@ package src.ui {
             
             // player hearts and bottels
             left_padding += MENU_LEFT_PADDING;
-            var health_bar:StatDescriteBar = new StatDescriteBar(user.player, PlayerStatCostume.HEART_TYPE, "HEALTH");
-            health_bar.x = 450 + 2 * DEFAULT_MARGIN - health_bar.width;
-            health_bar.y = userInfo.y + 2 * DEFAULT_MARGIN;
-            user_display.addChild(health_bar);
+            player_health_bar = new StatDescriteBar(user.player, PlayerStatCostume.HEART_TYPE, "HEALTH");
+            player_health_bar.x = 450 + 2 * DEFAULT_MARGIN - player_health_bar.width;
+            player_health_bar.y = userInfo.y + 2 * DEFAULT_MARGIN;
+            user_display.addChild(player_health_bar);
             
-            var mana_bar:StatDescriteBar = new StatDescriteBar(user.player, PlayerStatCostume.MANA_TYPE, "MANA");
-            mana_bar.x = health_bar.x;
-            mana_bar.y = health_bar.y + mana_bar.height;
-            user_display.addChild(mana_bar);
+            player_mana_bar = new StatDescriteBar(user.player, PlayerStatCostume.MANA_TYPE, "MANA");
+            player_mana_bar.x = player_health_bar.x;
+            player_mana_bar.y = player_health_bar.y + player_mana_bar.height;
+            user_display.addChild(player_mana_bar);
             
             // left_padding += MENU_LEFT_PADDING;
             drawBlackRecktangleInSprite(user_display);
@@ -227,16 +238,6 @@ package src.ui {
             return container;
         }
         
-        private function drawBlackRecktangleInSprite(spr:Sprite, left_padding:Number = 0, top_padding:Number = 0):void {
-            left_padding = Math.abs(left_padding);
-            top_padding = Math.abs(top_padding);
-            
-            var g:Graphics = spr.graphics;
-            g.beginFill(0, 0.3);
-            g.drawRect(0, 0, spr.width + left_padding, spr.height + top_padding);
-            g.endFill();
-        }
-        
         private function stripString(str:String):String {
             var res_str:String = str;
             
@@ -265,17 +266,17 @@ package src.ui {
             var objectName:String = DisplayObject(e.target).parent.name;
                 
             switch (objectName) {
-            case LEVELS_BTN:
-                    //SoundManager.instance.playSFX(SoundManager.SFX_CLICK_BUTTON);
+                case LEVELS_BTN:
                     parentMenu.switchToMenu(parentMenu.LEVELS_MENU);
                     break;
                 case INVENTORY_BTN:
-                    //SoundManager.instance.playSFX(SoundManager.SFX_CLICK_BUTTON);
                     parentMenu.switchToMenu(parentMenu.MAGE_MENU);
                     break;
                 case ACHIVEMENTS_BTN:
                     parentMenu.switchToMenu(0);
                     break;
+                case SHOP_BTN:
+                    parentMenu.switchToMenu(parentMenu.SHOP_MENU);
             }
         }
         

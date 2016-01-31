@@ -1,4 +1,5 @@
 package src.ui {
+    import flash.display.Graphics;
     import flash.display.SimpleButton;
     import flash.display.Sprite;
     import flash.events.MouseEvent;
@@ -61,6 +62,14 @@ package src.ui {
             return button;
         }
         
+        protected function createMagicTextField(title:String = ""):TextField {
+            var magic_font:Font = new MagicFont();
+            var text_format:TextFormat = new TextFormat(magic_font.fontName, 20, 0xFFFFFF, true);
+            text_format.align = "center";
+            
+            return createTextField(title, text_format);
+        }
+        
         // delete me. used above
         protected function createTextField(title:String, textFormat:TextFormat):TextField {
             var textField:TextField = new TextField();
@@ -70,6 +79,16 @@ package src.ui {
             textField.width = textField.textWidth + 4;
             textField.height = textField.textHeight + 4;
             return textField;
+        }
+        
+        protected function drawBlackRecktangleInSprite(spr:Sprite, left_padding:Number = 0, top_padding:Number = 0):void {
+            left_padding = Math.abs(left_padding);
+            top_padding = Math.abs(top_padding);
+            
+            var g:Graphics = spr.graphics;
+            g.beginFill(0, 0.3);
+            g.drawRect(0, 0, spr.width + left_padding, spr.height + top_padding);
+            g.endFill();
         }
         
         public function setUpMenu():void {

@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1445513090" lastUniqueIdentifier="4">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuCostume" itemID="553b9f00-0000014d" linkageExportForAS="true" linkageClassName="src.costumes.MenuSprites" lastModified="1453997178" lastUniqueIdentifier="5">
   <timeline>
-    <DOMTimeline name="MenuCostume" currentFrame="99">
+    <DOMTimeline name="MenuCostume" currentFrame="14">
       <layers>
         <DOMLayer name="label" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
@@ -25,7 +25,10 @@
             <DOMFrame index="84" duration="15" name="loading_circle" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="99" duration="26" name="close_btn" labelType="name" keyMode="9728">
+            <DOMFrame index="99" duration="16" name="close_btn" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="115" duration="13" name="coin" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -98,7 +101,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="99" duration="26" keyMode="9728">
+            <DOMFrame index="99" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_menu/_btns/close_btn" symbolType="button">
                   <matrix>
@@ -106,6 +109,15 @@
                   </matrix>
                   <transformationPoint>
                     <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="115" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_GUI/_coins/icoCoin" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point x="11.25" y="11.25"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

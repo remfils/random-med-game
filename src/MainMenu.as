@@ -10,6 +10,7 @@ package src {
     import src.ui.AbstractMenu;
     import src.ui.LevelSelectMenu;
     import src.ui.MageShopMenu;
+    import src.ui.ShopMenu;
     import src.ui.TitleMenu;
     import src.util.ObjectPool;
     import src.util.SoundManager;
@@ -24,6 +25,7 @@ package src {
         public const TITLE_MENU:uint = 0;
         public const LEVELS_MENU:uint = 1;
         public const MAGE_MENU:uint = 2;
+        public const SHOP_MENU:uint = 3;
         
         public function MainMenu() {
             super();
@@ -37,6 +39,7 @@ package src {
             currentMenu = menus[TITLE_MENU] = new TitleMenu();
             menus[LEVELS_MENU] = new LevelSelectMenu();
             menus[MAGE_MENU] = new MageShopMenu();
+            menus[SHOP_MENU] = new ShopMenu();
             
             menuContainer = new Sprite();
             addChild(menuContainer);
@@ -86,14 +89,19 @@ package src {
             
             spr = menus[MAGE_MENU];
             spr.y -= -2 * stage.stageHeight - height ;
+            
+            spr = menus[SHOP_MENU];
+            spr.x -= 2 * stage.stageWidth + width;
+            spr.y = menus[TITLE_MENU].y;
         }
         
-        public function switchToMenu(MENU_NAME:uint):void {
+        public function switchToMenu(menu_id:uint):void {
             currentMenu.deactivate();
             
-            var tween:Tween = ObjectPool.getTween(menuContainer, "y", Strong.easeInOut, menuContainer.y, -menus[MENU_NAME].y, 25);
+            var tween:Tween = ObjectPool.getTween(menuContainer, "y", Strong.easeInOut, menuContainer.y, -menus[menu_id].y, 25);
+            tween = ObjectPool.getTween(menuContainer, "x", Strong.easeInOut, menuContainer.x, -menus[menu_id].x, 25);
             
-            currentMenu = AbstractMenu(menus[MENU_NAME]);
+            currentMenu = AbstractMenu(menus[menu_id]);
             currentMenu.activate();
             
             SoundManager.instance.playSFX(SoundManager.SFX_GUI_MENU_WHOOSH);

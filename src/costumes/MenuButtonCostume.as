@@ -13,6 +13,7 @@ package src.costumes {
         public static const MOVE_LEVELS_LEFT:String = "move_levels_left";
         public static const MOVE_LEVELS_RIGHT:String = "move_levels_right";
         public static const LEVEL_SELECT_BTN:String = "level_select_btn";
+        public static const BUY_BTN:String = "buy_btn";
         
         public var level_name:TextField;
         

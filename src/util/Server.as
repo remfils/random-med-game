@@ -155,7 +155,8 @@ package src.util {
                 "user": user,
                 "css": styleSheet,
                 "levels": data.GameData.levels,
-                "topusers": data.GameData.topusers
+                "topusers": data.GameData.topusers,
+                "shop": data.GameData.shopitems
             };
         }
         

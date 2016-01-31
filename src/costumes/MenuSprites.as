@@ -20,6 +20,8 @@ package src.costumes {
         
         public static const CLOSE_BUTTON:String = "close_btn";
         
+        public static const COIN_GRAPHIC:String = "coin";
+        
         public function MenuSprites() {
             super();
         }

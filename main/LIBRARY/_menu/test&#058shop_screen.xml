@@ -1,0 +1,307 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/test:shop_screen" itemID="568e78f1-000003dc" symbolType="graphic" lastModified="1453997209" lastUniqueIdentifier="24">
+  <timeline>
+    <DOMTimeline name="test:shop_screen">
+      <layers>
+        <DOMLayer name="buy_txt" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" left="39.7" width="64.6" height="31.2" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.62109375" d="0.62109375" tx="334.85" ty="220.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="72.05" y="15.6"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>10000</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" alpha="0.988235294117647" size="26" bitmapSize="520" face="MagicFont copy*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMStaticText fontRenderingMode="standard" left="-23.95" width="191.9" height="31.2" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.62109375" d="0.62109375" tx="329.1" ty="311.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="72.05" y="15.6"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>купить: 10000м</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" alpha="0.988235294117647" size="26" bitmapSize="520" face="MagicFont copy*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMStaticText fontRenderingMode="standard" left="-23.95" width="191.9" height="31.2" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.62109375" d="0.62109375" tx="329.1" ty="403.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="72.05" y="15.6"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>купить: 10000м</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" alpha="0.988235294117647" size="26" bitmapSize="520" face="MagicFont copy*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMSymbolInstance libraryItemName="_menu/MenuCostume" symbolType="graphic" firstFrame="127" loop="single frame">
+                  <matrix>
+                    <Matrix a="0.57159423828125" d="0.57159423828125" tx="404.7" ty="222.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кнопка куп" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" firstFrame="163" loop="loop">
+                  <matrix>
+                    <Matrix tx="354.3" ty="215.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" firstFrame="163" loop="loop">
+                  <matrix>
+                    <Matrix tx="310.9" ty="306.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" firstFrame="163" loop="loop">
+                  <matrix>
+                    <Matrix tx="310.9" ty="398.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="товары" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" selected="true" centerPoint3DX="257.4" centerPoint3DY="260.35">
+                  <matrix>
+                    <Matrix tx="98.9" ty="215.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="158.5" y="44.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" centerPoint3DX="257.4" centerPoint3DY="351.9">
+                  <matrix>
+                    <Matrix tx="98.9" ty="307"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="158.5" y="44.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuItem" centerPoint3DX="257.4" centerPoint3DY="443.45">
+                  <matrix>
+                    <Matrix tx="98.9" ty="398.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="158.5" y="44.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="кнопки переключения" color="#4FFF4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" firstFrame="140" loop="loop">
+                  <matrix>
+                    <Matrix tx="431.5" ty="215.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_menu/MenuButton" symbolType="graphic" firstFrame="140" loop="loop">
+                  <matrix>
+                    <Matrix d="-1" tx="431.9" ty="311.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="игрок" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" left="17.3" width="109.4" height="29.45" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="180.4" ty="179.95"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>МАГАЗИН</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" alpha="0.988235294117647" size="26" bitmapSize="520" face="CourierNewPS-BoldMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMSymbolInstance libraryItemName="_menu/MenuCostume" symbolType="graphic" firstFrame="127" loop="single frame">
+                  <matrix>
+                    <Matrix tx="513" ty="307.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMStaticText fontRenderingMode="standard" left="51.75" width="40.5" height="31.2" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="498.25" ty="303.3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>304</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" alpha="0.988235294117647" size="26" bitmapSize="520" face="MagicFont copy*" fillColor="#FFB500"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMSymbolInstance libraryItemName="_GUI/_mana/StatMana" centerPoint3DX="526.2" centerPoint3DY="272.55">
+                  <matrix>
+                    <Matrix tx="526.85" ty="271.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_GUI/_mana/StatMana" centerPoint3DX="557.25" centerPoint3DY="272.55">
+                  <matrix>
+                    <Matrix tx="557.9" ty="271.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_GUI/_hearts/stat_heart" centerPoint3DX="526.2" centerPoint3DY="231.2">
+                  <matrix>
+                    <Matrix tx="526.85" ty="230.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_GUI/_hearts/StatHeart" centerPoint3DX="557.25" centerPoint3DY="231.2">
+                  <matrix>
+                    <Matrix tx="557.9" ty="230.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_GUI/_hearts/StatHeart" centerPoint3DX="589.25" centerPoint3DY="231.2">
+                  <matrix>
+                    <Matrix tx="589.9" ty="230.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.65" y="0.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMStaticText fontRenderingMode="standard" left="32.9" width="78.2" height="29.45" autoExpand="true" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="489.4" ty="179.95"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ИГРОК</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" alpha="0.988235294117647" size="26" bitmapSize="520" face="CourierNewPS-BoldMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="назв пол" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.301960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!12473 3559|12473 4141!12473 4141|9910 4141!9910 4141|9910 3559!9910 3559|12473 3559!8419 4140|1867 4140!1867 4140|1867 3558!1867 3558|8419 3558!8419 3558|8419 4140"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="фон мен" color="#808080" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor alpha="0.301960784313725"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!12473 3559|12473 6849!12473 6849|9910 6849!9910 6849|9910 3559!9910 3559|12473 3559!8419 9842|1867 9842!1867 9842|1867 3559!1867 3559|8419 3559!8419 3559|8419 9842"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="фон" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_menu/_MenuCostume/MenuBackground_gr" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-35.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="413.55" y="257.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1451834854" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1454160135" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="MenuItem">
+    <DOMTimeline name="MenuItem" currentFrame="1">
       <layers>
         <DOMLayer name="label" color="#4F80FF" autoNamed="false">
           <frames>
@@ -24,11 +24,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#808080" current="true" isSelected="true">
+        <DOMLayer name="Layer 6" color="#808080" locked="true">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="block_curtain_mc" selected="true" centerPoint3DX="8.95" centerPoint3DY="9.15">
+                <DOMSymbolInstance libraryItemName="src/collider" name="block_curtain_mc" centerPoint3DX="8.95" centerPoint3DY="9.15">
                   <matrix>
                     <Matrix a="17.3442535400391" d="4.90983581542969" tx="158.5" ty="44.9"/>
                   </matrix>
@@ -133,7 +133,7 @@
           <frames>
             <DOMFrame index="0" duration="80" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_spells/ItemLogoCostume" centerPoint3DX="46.75" centerPoint3DY="46.75">
+                <DOMSymbolInstance libraryItemName="_GUI/_spells/ItemLogoCostume" symbolType="graphic" firstFrame="70" loop="loop">
                   <matrix>
                     <Matrix tx="27.9" ty="17"/>
                   </matrix>
@@ -145,7 +145,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="item_frame" color="#9933CC" autoNamed="false">
+        <DOMLayer name="item_frame" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="21" keyMode="9728">
               <elements>
@@ -156,7 +156,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!88 1686|88 110!88 110|1480 110!1480 110|1480 1686!1480 1686|88 1686"/>
+                    <Edge fillStyle1="1" edges="!1480 110S2|1480 1686!1480 1686|88 1686!88 1686|88 110!88 110|1480 110"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -237,7 +237,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!6344 1797|-4 1797!-4 1797|-4 0!-4 0|6344 0!6344 0|6344 1797"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!6344 1797S2|-4 1797!-4 1797|-4 0!-4 0|6344 0!6344 0|6344 1797"/>
                   </edges>
                 </DOMShape>
               </elements>

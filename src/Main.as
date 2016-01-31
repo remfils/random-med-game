@@ -27,7 +27,7 @@
         private static const RELEASE_MODE:int = 3;
         
         private var mode:int = HOME_TEST_MODE;
-        Game.VERSION = "0.444";
+        Game.VERSION = "0.5";
         
         public var is_first_time:Boolean = false;
         
@@ -91,7 +91,7 @@
                 case HOME_RELEASE_MODE:
                     Game.TEST_MODE = false;
                     LOAD_SCREEN_DELAY = 0;
-                    server_name = HOME_SERVER;
+                    //server_name = HOME_SERVER;
                     
                     Game.VERSION += "-HR";
                     
