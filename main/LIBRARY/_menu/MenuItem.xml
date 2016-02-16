@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1454160135" lastUniqueIdentifier="7">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_menu/MenuItem" itemID="55424c97-000002b0" linkageExportForAS="true" linkageClassName="src.costumes.MenuItemCostume" lastModified="1455271747" lastUniqueIdentifier="7">
   <timeline>
-    <DOMTimeline name="MenuItem" currentFrame="1">
+    <DOMTimeline name="MenuItem" currentFrame="79">
       <layers>
         <DOMLayer name="label" color="#4F80FF" autoNamed="false">
           <frames>
@@ -156,7 +156,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!1480 110S2|1480 1686!1480 1686|88 1686!88 1686|88 110!88 110|1480 110"/>
+                    <Edge fillStyle1="1" edges="!1480 110|1480 1686!1480 1686|88 1686!88 1686|88 110!88 110|1480 110"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -237,7 +237,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!6344 1797S2|-4 1797!-4 1797|-4 0!-4 0|6344 0!6344 0|6344 1797"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!6344 1797|-4 1797!-4 1797|-4 0!-4 0|6344 0!6344 0|6344 1797"/>
                   </edges>
                 </DOMShape>
               </elements>

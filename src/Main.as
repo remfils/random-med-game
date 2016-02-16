@@ -1,4 +1,5 @@
 ﻿package src {
+    import fl.controls.Button;
     import flash.events.*;
     import flash.display.Sprite;
     import flash.net.URLLoader;
@@ -21,12 +22,12 @@
     import src.util.*;
 
     public class Main extends Sprite {
-        private static const HOME_TEST_MODE:int = 1;
-        private static const HOME_RELEASE_MODE:int = 4;
-        private static const RELEASE_TEST_MODE:int = 2;
-        private static const RELEASE_MODE:int = 3;
+        public static const HOME_TEST_MODE:int = 1;
+        public static const HOME_RELEASE_MODE:int = 4;
+        public static const RELEASE_TEST_MODE:int = 2;
+        public static const RELEASE_MODE:int = 3;
         
-        private var mode:int = HOME_TEST_MODE;
+        public static var mode:int = HOME_TEST_MODE;
         Game.VERSION = "0.5";
         
         public var is_first_time:Boolean = false;
@@ -60,6 +61,10 @@
         private function init():void {
             removeEventListener(Event.ADDED_TO_STAGE, init);
             
+            this.tabChildren = false;
+            this.tabEnabled = false;
+            this.stage.stageFocusRect = false;
+            
             stage.color = 0;
             
             user = new User();
@@ -82,8 +87,8 @@
                     
                     flash_vars['api_id'] = 4700251;
                     flash_vars['viewer_id'] = 18524077;
-                    flash_vars['sid'] = "933e9ee89b34cd9b12a1fbea0d18519785b1b60f7b889e5f32a65eb1b660c824f9eae7ca348dad47816c1";
-                    flash_vars['secret'] = "9f0550db1a";
+                    flash_vars['sid'] = "6dcd394db16ced03705fb2a15744fba1110055e340543ea8f506a8f01e794679b5b7ba072e1638ce2a072";
+                    flash_vars['secret'] = "db80bf5ac2";
                     
                     setupStaticClassVariablesFromXML();
                     
@@ -146,8 +151,6 @@
             
             var data:XML = new XML(loader.data);
             
-            trace(data);
-            
             for each ( var classXML in data.Class.* ) {
                 var class_name:String = classXML.name();
                 var obj_class:Class = Class(getDefinitionByName(class_name));
@@ -174,15 +177,15 @@
         
         private function createErrorTextField():void {
             var tf:TextField = new TextField();
-            tf.background = true;
-            tf.backgroundColor = 0;
+            //tf.background = true;
+            //tf.backgroundColor = 0;
             tf.textColor = 0xffffff;
             tf.width = stage.stageWidth;
             tf.height = stage.stageHeight;
             
             tf.selectable = true;
             
-            addChildAt(tf,0);
+            addChild(tf);
             tf.visible = TEST_MODE;
             Output.init(tf);
         }
@@ -216,6 +219,20 @@
             main_menu.visible = true;
             
             loading_screen.hide();
+            
+            if ( Game.TEST_MODE ) {
+                var btn_label_txt:TextField = new TextField();
+                btn_label_txt.text = "СКОПИРОВАТЬ ОТЧЕТ ОБ ОШИБКЕ";
+                btn_label_txt.background = true;
+                btn_label_txt.backgroundColor = 0xff0000;
+                btn_label_txt.width = btn_label_txt.textWidth;
+                btn_label_txt.height = btn_label_txt.textHeight;
+                btn_label_txt.y = 50;
+                
+                btn_label_txt.addEventListener(MouseEvent.CLICK, function(e:MouseEvent) { Output.copyLog(); } );
+                
+                main_menu.addChild(btn_label_txt);
+            }
         }
         
         private function MenuItemSelectedListener(e:MenuItemSelectedEvent):void {

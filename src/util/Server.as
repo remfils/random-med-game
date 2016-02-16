@@ -31,6 +31,7 @@ package src.util {
         
         private static var data:XML = null;
         private var styleSheet:StyleSheet;
+        private var users_avatars:Array;
         
         private var data_load_complete_callback:Function;
         private var game_is_saved_callback:Function;
@@ -90,13 +91,42 @@ package src.util {
             if ( data.BaseData.length() > 0 ) {
                 user.setDataFromXML(data.BaseData.User);
                 
-                if ( data_load_complete_callback ) {
-                    data_load_complete_callback();
-                    data_load_complete_callback = null;
+                var user_ids:Array = new Array();
+                user_ids.push(user.uid);
+                
+                for each ( var top_user_xml:XML in data.GameData.topusers.* ) {
+                    user_ids.push(int(top_user_xml.@id));
+                }
+                
+                if ( Main.mode == Main.HOME_TEST_MODE || Main.mode == Main.HOME_RELEASE_MODE  ) {
+                    var user_img_array:Array = [];
+                    for each (var _id:int in user_ids) {
+                        var o:Object = { "uid": _id, "photo_50": "https://thingiverse-production-new.s3.amazonaws.com/renders/16/04/2d/b5/ed/smiley_face_thumb_small.jpg" };
+                        user_img_array.push(o);
+                    }
+                    
+                    createUserLoaders(user_img_array);
+                }
+                else {
+                    startGettingAvatars(user_ids);
                 }
             }
             else {
                 startGettingUserData();
+            }
+        }
+        
+        private function startGettingAvatars(user_ids:Array):void {
+            var VK:APIConnection = new APIConnection(flashVars);
+            VK.api("users.get", { "user_ids": user_ids, "fields":["photo_50"]}, createUserLoaders, checkError);
+        }
+        
+        private function createUserLoaders(users_avatars:Object):void {
+            this.users_avatars = users_avatars as Array;
+            
+            if ( data_load_complete_callback ) {
+                data_load_complete_callback();
+                data_load_complete_callback = null;
             }
         }
         
@@ -156,7 +186,8 @@ package src.util {
                 "css": styleSheet,
                 "levels": data.GameData.levels,
                 "topusers": data.GameData.topusers,
-                "shop": data.GameData.shopitems
+                "shop": data.GameData.shopitems,
+                "users_avatars": users_avatars
             };
         }
         

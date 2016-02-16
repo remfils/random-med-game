@@ -7,6 +7,7 @@ package src.util {
     import src.enemy.ChargerEnemy;
     import src.enemy.Enemy;
     import src.enemy.FlyingEnemy;
+    import src.enemy.LaserSniper;
     import src.enemy.Sniper;
     import src.Game;
     import src.interfaces.*;
@@ -50,6 +51,10 @@ package src.util {
                 //addTasksToRoom(null, floor);
                 floors.push( createRooms(floor) );
                 floorCounter ++;
+            }
+            
+            if ( xmlLevel.hasOwnProperty("@name") ) {
+                game.level_name = xmlLevel.@name;
             }
             
             // tintObjects();
@@ -229,6 +234,9 @@ package src.util {
                         break;
                     case CostumeEnemy.MONK:
                         enemy = new Sniper();
+                        break;
+                    case CostumeEnemy.LASER_SPHERE:
+                        enemy = new LaserSniper();
                         break;
                     case "Boss":
                         var type:String = object.@type;

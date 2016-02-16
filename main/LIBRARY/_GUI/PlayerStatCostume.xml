@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1452271201" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/PlayerStatCostume" itemID="558d500f-000003ab" linkageExportForAS="true" linkageClassName="src.costumes.PlayerStatCostume" lastModified="1455210374" lastUniqueIdentifier="1">
   <timeline>
-    <DOMTimeline name="PlayerStatCostume" currentFrame="236">
+    <DOMTimeline name="PlayerStatCostume">
       <layers>
         <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
@@ -58,7 +58,10 @@
             <DOMFrame index="259" duration="20" name="arrow_button" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="279" duration="14" name="boss_hp_bar" labelType="name" keyMode="9728">
+            <DOMFrame index="279" duration="15" name="boss_hp_bar" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="294" duration="16" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -86,7 +89,7 @@
               </Actionscript>
               <elements/>
             </DOMFrame>
-            <DOMFrame index="56" duration="237" keyMode="9728">
+            <DOMFrame index="56" duration="254" keyMode="9728">
               <Actionscript>
                 <script><![CDATA[gotoAndStop("spell_place");]]></script>
               </Actionscript>
@@ -254,7 +257,7 @@
             </DOMFrame>
             <DOMFrame index="236" duration="23" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/music_off_btn" selected="true" symbolType="button">
+                <DOMSymbolInstance libraryItemName="_GUI/_PlayerStatCostume/music_off_btn" symbolType="button">
                   <matrix>
                     <Matrix tx="-20.3" ty="20.1"/>
                   </matrix>
@@ -276,14 +279,17 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="279" duration="14" keyMode="9728">
+            <DOMFrame index="279" duration="15" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BossHealthBar" symbolType="graphic" loop="loop">
+                <DOMSymbolInstance libraryItemName="BossHealthBar" selected="true" symbolType="graphic" loop="loop">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>
+            </DOMFrame>
+            <DOMFrame index="294" duration="16" keyMode="9728">
+              <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>

@@ -38,7 +38,7 @@ public class BossOverseer extends Enemy implements Init {
         public static var DENSITY:Number  = 0;
         public static var FRICTION:Number  = 0;
         public static var TMP_FORCE_MULTIPLIER:Number  = 3.2;
-        public static var MAX_HEALTH:int = 500;
+        public static var MAX_HEALTH:int = 1500;
         public static var TMP_FORCE_MAX_LENGTH:Number  = 15;
         public static var LINEAR_DAMPING:Number  = 0.2;
         
@@ -374,23 +374,7 @@ public class BossOverseer extends Enemy implements Init {
                         laser.x = 3 + this.x;
                         laser.y = -55 + this.y;
                         
-                        var rad_angle:Number = 0;
-                        
-                        if ( player.x != laser.x ) {
-                            rad_angle = Math.atan(( laser.y - _player_position.y + player.costume.height / 2) / (laser.x - _player_position.x));
-                            
-                            if ( laser.x > _player_position.x ) {
-                                rad_angle += Math.PI;
-                            }
-                        }
-                        else {
-                            rad_angle = Math.PI / 2;
-                            if ( player.y > this.y ) {
-                                rad_angle *= -1;
-                            }
-                        }
-                        
-                        laser.costume.rotation = rad_angle * 180 / Math.PI;
+                        laser.rotateTo(player);
                         
                         cRoom.add(laser);
                     }

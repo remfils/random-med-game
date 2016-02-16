@@ -3,14 +3,14 @@
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""
             xmlns:xmp="http://ns.adobe.com/xap/1.0/">
-         <xmp:MetadataDate>2016-01-30T11:59+03:00</xmp:MetadataDate>
-         <xmp:ModifyDate>2016-01-30T11:59+03:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2016-02-16T14:59:54+03:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2016-02-16T14:59:54+03:00</xmp:ModifyDate>
       </rdf:Description>
       <rdf:Description rdf:about=""
             xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
             xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
             xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#">
-         <xmpMM:InstanceID>xmp.iid:DF6045B42FC7E5118E47E8505D2A43FD</xmpMM:InstanceID>
+         <xmpMM:InstanceID>xmp.iid:B61D8CCAA4D4E5118605AC8A9EED423A</xmpMM:InstanceID>
          <xmpMM:DocumentID>xmp.did:71571F1E9D93E511BD489227BF0CF3E7</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:21B08E3F79EAE4119072F728578B4E66</xmpMM:OriginalDocumentID>
          <xmpMM:History>
@@ -800,6 +800,90 @@
                   <stEvt:action>created</stEvt:action>
                   <stEvt:instanceID>xmp.iid:DF6045B42FC7E5118E47E8505D2A43FD</stEvt:instanceID>
                   <stEvt:when>2016-01-30T11:59+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:8FED5375F8C7E5119E53F5729D9BFEA7</stEvt:instanceID>
+                  <stEvt:when>2016-01-31T11:56:03+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:B797DFC8C7C8E5119B11FC55D46CF3A6</stEvt:instanceID>
+                  <stEvt:when>2016-02-01T12:40:09+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:CB4E48B481C9E511A19E8C1D2EDD4D00</stEvt:instanceID>
+                  <stEvt:when>2016-02-02T10:51:01+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:9576122D4ACAE5118242DFF3F64B1BA6</stEvt:instanceID>
+                  <stEvt:when>2016-02-03T10:46:03+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:0C9EBDAAB8CCE511BFFF98D9A56643C4</stEvt:instanceID>
+                  <stEvt:when>2016-02-06T13:02:01+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:DACAA83FC2CFE511B03ADCFE8ABE132E</stEvt:instanceID>
+                  <stEvt:when>2016-02-10T09:48:10+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:36F756D4BED0E511B762AF2F87C242AB</stEvt:instanceID>
+                  <stEvt:when>2016-02-11T15:56:12+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:1CBE3078E9D0E5118EDA9874FD7B8388</stEvt:instanceID>
+                  <stEvt:when>2016-02-11T21:01:26+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:1DF7796E5ED1E511B8F2C79855836208</stEvt:instanceID>
+                  <stEvt:when>2016-02-12T10:58:41+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:D6CFBA795FD1E511AF74D2E45D3A5C10</stEvt:instanceID>
+                  <stEvt:when>2016-02-12T11:06:09+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:22B9A2B01AD3E511A041E14B6020ADDA</stEvt:instanceID>
+                  <stEvt:when>2016-02-14T15:58:49+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:26FFF843FDD3E5118007A86BA96D7F7B</stEvt:instanceID>
+                  <stEvt:when>2016-02-15T19:00:42+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:AE8050FA77D4E51193EAE4514B73E6EA</stEvt:instanceID>
+                  <stEvt:when>2016-02-16T09:39:07+03:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:B61D8CCAA4D4E5118605AC8A9EED423A</stEvt:instanceID>
+                  <stEvt:when>2016-02-16T14:59:54+03:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
                </rdf:li>
             </rdf:Seq>

@@ -67,9 +67,16 @@ package src.ui {
             costume.setState(GameMenuCostume.GREEN_STATE);
             costume.clearText();
             
+            var level_name_txt:TextField = createMagicTextField(game.level_name);
+            level_name_txt.textColor = 0xffff00;
+            level_name_txt.defaultTextFormat.size = 18;
+            level_name_txt.x = -level_name_txt.textWidth / 2 + 2
+            level_name_txt.y = 136;
+            costume.addChild(level_name_txt);
+            
             resume_button = createTitledButton("ПРОДОЛЖИТЬ", defaultTextFormat);
             resume_button.x = - resume_button.width / 2;
-            resume_button.y = 171;
+            resume_button.y = 200;
             costume.addChild(resume_button);
             
             exit_button = createTitledButton("ВЫХОД", defaultTextFormat);

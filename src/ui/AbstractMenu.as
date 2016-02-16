@@ -62,10 +62,10 @@ package src.ui {
             return button;
         }
         
-        protected function createMagicTextField(title:String = ""):TextField {
+        protected function createMagicTextField(title:String = "", align:String = "center"):TextField {
             var magic_font:Font = new MagicFont();
             var text_format:TextFormat = new TextFormat(magic_font.fontName, 20, 0xFFFFFF, true);
-            text_format.align = "center";
+            text_format.align = align;
             
             return createTextField(title, text_format);
         }
@@ -75,7 +75,9 @@ package src.ui {
             var textField:TextField = new TextField();
             textField.embedFonts = true;
             textField.text = title;
-            textField.setTextFormat(textFormat,-1, textField.length);
+            
+            textField.setTextFormat(textFormat);
+            
             textField.width = textField.textWidth + 4;
             textField.height = textField.textHeight + 4;
             return textField;

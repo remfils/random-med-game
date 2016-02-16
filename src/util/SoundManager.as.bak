@@ -121,7 +121,7 @@ package src.util {
         private var _channelSFX:SoundChannel = new SoundChannel();
         private var _channelBGM:SoundChannel = new SoundChannel();
         
-        private var volume:Number = 1;
+        private var _volume:Number = 6;
         private var _sfx_sound_transform:SoundTransform;
         private var _safe_sfx_id_array:Vector.<int> = new Vector.<int>();
         
@@ -182,6 +182,20 @@ package src.util {
             addResource(new Start_Level(), SoundManager.SFX_START_LEVEL);
         }
         
+        public function set volume(number:Number):void {
+            _volume += number > 0 ? 1 : -1;
+            
+            if ( _volume > 10 )
+                _volume = 10;
+            
+            if ( _volume < 0 )
+                _volume = 0;
+        }
+        
+        public function get volume():Number {
+            return  0.05 * Math.exp(0.299573 * _volume);
+        }
+        
         public function addResource(sound:Sound, id:int):void {
             if ( id < MAX_TRACKS ) {
                 _tracks[id] = sound;
@@ -216,15 +230,20 @@ package src.util {
         }
         
         public function toggleSFXChannel():Boolean {
-            var is_mute:Boolean = _sfx_sound_transform.volume == 0;
-            if ( is_mute )
-                _channelSFX.soundTransform.volume = volume;
+            var is_mute:Boolean = ! _channelSFX.soundTransform.volume > 0;
+            
+            var s_t:SoundTransform = new SoundTransform();
+            
+            if ( is_mute ) {
+                s_t.volume = volume;
+            }
             else {
-                _channelSFX.stop();
-                _channelSFX.soundTransform.volume = 0;
+                s_t.volume = 0;
             }
             
-            return is_mute;
+            _channelSFX.soundTransform = s_t;
+            
+            return !is_mute;
         }
         
         
@@ -237,10 +256,12 @@ package src.util {
         }
         
         public function playBGM(music_id:int):void {
+            if ( _paused ) return;
+            
             var sound:Sound = _tracks[music_id];
             if ( sound ) {
                 _currentBGM_id = music_id;
-                _paused = false;
+                // _paused = false;
                 _channelBGM = sound.play(0,999, _channelBGM.soundTransform);
             }
             else {
@@ -268,8 +289,8 @@ package src.util {
             _channelBGM.stop();
         }
         
-        public function changeVolume(number:Number):void {
-            volume += number > 0 ? 1 : -1;
+        public function changeVolume(number:Number):int {
+            volume += number;
             
             if ( volume > 10 )
                 volume = 10;
@@ -277,10 +298,12 @@ package src.util {
             if ( volume < 0 )
                 volume = 0;
             
-            var s_t:SoundTransform = new SoundTransform(0.05 * Math.exp(0.299573 * volume));
+            var s_t:SoundTransform = new SoundTransform(volume);
             
             _channelBGM.soundTransform = s_t;
             _channelSFX.soundTransform = s_t;
+            
+            return volume;
         }
     }
 

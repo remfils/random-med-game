@@ -106,7 +106,12 @@
             volume_up_btn.y = help_button.height + help_button.getChildAt(0).y;
             
             volume_up_btn.addEventListener(MouseEvent.CLICK, function (e:MouseEvent){
-                SoundManager.instance.changeVolume(1);
+                var volume:Number = SoundManager.instance.changeVolume(1);
+                
+                if ( volume > 0 ) {
+                    sound_toggle_btn.setType(PlayerStatCostume.SOUND_ON_BUTTON_TYPE);
+                    sound_toggle_btn.setState();
+                }
             });
             
             addChild(volume_up_btn);
@@ -122,7 +127,12 @@
             volume_down_btn.y = help_button.height + help_button.getChildAt(0).y;
             
             volume_down_btn.addEventListener(MouseEvent.CLICK, function (e:MouseEvent){
-                SoundManager.instance.changeVolume(-1);
+                var volume:Number = SoundManager.instance.changeVolume(-1);
+                
+                if ( volume == 0 ) {
+                    sound_toggle_btn.setType(PlayerStatCostume.SOUND_OFF_BUTTON_TYPE);
+                    sound_toggle_btn.setState();
+                }
             });
             
             addChild(volume_down_btn);
@@ -191,10 +201,10 @@
         
         private function toggleSoundListener(e:MouseEvent):void {
             if ( SoundManager.instance.toggleSFXChannel() ) {
-                sound_toggle_btn.setType(PlayerStatCostume.SOUND_ON_BUTTON_TYPE);
+                sound_toggle_btn.setType(PlayerStatCostume.SOUND_OFF_BUTTON_TYPE);
             }
             else {
-                sound_toggle_btn.setType(PlayerStatCostume.SOUND_OFF_BUTTON_TYPE);
+                sound_toggle_btn.setType(PlayerStatCostume.SOUND_ON_BUTTON_TYPE);
             }
             
             sound_toggle_btn.setState();

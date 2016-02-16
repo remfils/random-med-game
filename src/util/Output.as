@@ -1,4 +1,6 @@
 package src.util {
+    import flash.display.DisplayObjectContainer;
+    import flash.system.System;
     import flash.text.TextField;
 
     public class Output {
@@ -13,8 +15,14 @@ package src.util {
         }
         
         public static function add(msg:String):void {
+            /*var parent:DisplayObjectContainer = outputField.parent;
+            parent.addChild(outputField);*/
             outputField.appendText(msg + '\n');
             trace(msg);
+        }
+        
+        public static function copyLog():void {
+            System.setClipboard(outputField.text);
         }
     }
 

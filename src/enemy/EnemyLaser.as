@@ -3,6 +3,7 @@ package src.enemy {
     import flash.display.DisplayObject;
     import flash.geom.Point;
     import src.costumes.CostumeEnemy;
+    import src.objects.AbstractObject;
     import src.util.ChangePlayerStatObject;
     import src.util.CreateBodyRequest;
 
@@ -17,13 +18,25 @@ package src.enemy {
         
         private var dy:Number;
         
-        public function EnemyLaser() {
-            costume.setType(CostumeEnemy.ENEMY_LASER);
+        public static const SMALL_TYPE:int = 1;
+        public static const BOSS_TYPE:int = 2;
+        
+        
+        public function EnemyLaser( type:int = BOSS_TYPE) {
+            switch ( type ) {
+                case SMALL_TYPE:
+                    costume.setType(CostumeEnemy.ENEMY_LASER_SMALL);
+                    break;
+                case BOSS_TYPE:
+                    costume.setType(CostumeEnemy.ENEMY_LASER);
+                    break;
+            }
+            
             costume.setAnimatedState();
             
             collider = costume.getCollider();
             
-            dy = player.costume.height / 7;
+            dy = player.costume.height / 4;
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {
@@ -60,6 +73,26 @@ package src.enemy {
             if ( current_frame > FRAME_LASER_END ) {
                 die();
             }
+        }
+        
+        public function rotateTo(target:AbstractObject):void {
+            var rad_angle:Number = 0;
+            
+            if ( target.x != x ) {
+                rad_angle = Math.atan(( y - target.y + target.costume.height / 2 ) / ( x - target.x ));
+                
+                if ( x > target.x ) {
+                    rad_angle += Math.PI;
+                }
+            }
+            else {
+                rad_angle = Math.PI / 2;
+                if ( target.y > y ) {
+                    rad_angle *= -1;
+                }
+            }
+            
+            costume.rotation = rad_angle * 180 / Math.PI;
         }
         
         override public function die():void {

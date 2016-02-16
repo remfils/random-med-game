@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1446897276" lastUniqueIdentifier="8">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/GameMenuCostume" itemID="55b2a344-00000139" linkageExportForAS="true" linkageClassName="src.costumes.GameMenuCostume" lastModified="1455271736" lastUniqueIdentifier="8">
   <timeline>
-    <DOMTimeline name="GameMenuCostume" currentFrame="99">
+    <DOMTimeline name="GameMenuCostume" currentFrame="19">
       <layers>
         <DOMLayer name="labels" color="#4FFF4F" autoNamed="false">
           <frames>
@@ -18,14 +18,66 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="actions" color="#9933CC" autoNamed="false">
+        <DOMLayer name="actions" color="#9933CC" current="true" isSelected="true" autoNamed="false" visible="false">
           <frames>
-            <DOMFrame index="0" duration="100" keyMode="9728">
+            <DOMFrame index="0" duration="19" keyMode="9728">
               <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="81" keyMode="9728">
+              <elements>
+                <DOMStaticText left="0.45" width="300" height="33.25" isSelectable="false">
+                  <matrix>
+                    <Matrix a="1.01708984375" tx="-153" ty="223.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.45" y="16.6"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ПРОДОЛЖИТЬ</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="30" bitmapSize="600" face="TimesNewRomanPS-BoldMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMStaticText left="0.45" width="300" height="33.25" isSelectable="false">
+                  <matrix>
+                    <Matrix a="1.01708984375" tx="-153" ty="352.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.45" y="16.6"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ВЫХОД</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="30" bitmapSize="600" face="TimesNewRomanPS-BoldMT" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+                <DOMStaticText selected="true" left="0.45" width="300" height="19.95" isSelectable="false">
+                  <matrix>
+                    <Matrix a="1.01708984375" tx="-153" ty="138.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="150.45" y="16.6"/>
+                  </transformationPoint>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Название Уровня</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" size="18" bitmapSize="360" face="TimesNewRomanPS-BoldMT" fillColor="#FFFF00"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="title_txt" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="title_txt" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="19" keyMode="9728">
               <elements>

@@ -36,6 +36,8 @@ package src.enemy {
             super.readXMLParams(paramsXML);
             
             costume_remove_delay = MONK_DEATH_DELAY;
+            
+            setState(Sniper.STAND_STATE);
         }
         
         override public function activate():void {

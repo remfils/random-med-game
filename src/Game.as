@@ -29,6 +29,7 @@ package src {
         public static var show_tutorial:Boolean = false;
         
         public var level_id:int = 0;
+        public var level_name:String = "";
         public var rating:int = 0;
         
         private static var i:uint;

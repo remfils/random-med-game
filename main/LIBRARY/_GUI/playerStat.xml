@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1447349892" lastUniqueIdentifier="46">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/playerStat" itemID="53b8fed9-0000005c" linkageExportForAS="true" linkageClassName="src.ui.playerStat.PlayerStat" lastModified="1454752900" lastUniqueIdentifier="46">
   <timeline>
     <DOMTimeline name="playerStat">
       <layers>
@@ -141,11 +141,11 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="lvl" color="#808080" autoNamed="false">
+        <DOMLayer name="lvl" color="#808080" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="level_txt" width="8.45" height="10.4" isSelectable="false" lineType="multiline">
+                <DOMDynamicText name="level_txt" selected="true" width="8.45" height="10.4" isSelectable="false" lineType="multiline">
                   <matrix>
                     <Matrix a="1.61599731445313" d="1.61599731445313" tx="315.6" ty="59.1"/>
                   </matrix>
@@ -216,7 +216,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="полоски хп" color="#FF800A" current="true" isSelected="true" autoNamed="false" layerType="guide">
+        <DOMLayer name="полоски хп" color="#FF800A" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -244,7 +244,7 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_GUI/PlayerStatCostume" selected="true" symbolType="graphic" firstFrame="130" loop="single frame">
+                <DOMSymbolInstance libraryItemName="_GUI/PlayerStatCostume" symbolType="graphic" firstFrame="130" loop="single frame">
                   <matrix>
                     <Matrix tx="715.5" ty="35.1"/>
                   </matrix>

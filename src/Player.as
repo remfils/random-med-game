@@ -182,7 +182,7 @@
             this.body = body;
         }
         
-        private function getXPToLevel(lvl:Number):Number{
+        public function getXPToLevel(lvl:Number):Number{
             if ( lvl > 0 ) return 25 * lvl * lvl + getXPToLevel(lvl - 1);
             else return 25;
         }

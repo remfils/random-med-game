@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/_PlayerStatCostume/sound_off_btn" itemID="5644c14d-000003a2" symbolType="button" lastModified="1447346558">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_GUI/_PlayerStatCostume/sound_off_btn" itemID="5644c14d-000003a2" symbolType="button" lastModified="1455271925">
   <timeline>
     <DOMTimeline name="sound_off_btn">
       <layers>
@@ -23,7 +23,7 @@
                 <DOMShape>
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#0D3800"/>
+                      <SolidColor color="#3C3C3C"/>
                     </FillStyle>
                   </fills>
                   <edges>
@@ -48,22 +48,22 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F" locked="true">
+        <DOMLayer name="Layer 1" color="#4FFF4F">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#E8FFDB"/>
+                      <SolidColor color="#E5E5E5"/>
                     </FillStyle>
                     <FillStyle index="2">
                       <LinearGradient>
                         <matrix>
                           <Matrix a="0.0102081298828125" b="-0.0102081298828125" c="0.0102081298828125" d="0.0102081298828125" tx="-0.05" ty="0.05"/>
                         </matrix>
-                        <GradientEntry color="#328035" ratio="0"/>
-                        <GradientEntry color="#51BD56" ratio="1"/>
+                        <GradientEntry color="#7D7E7D" ratio="0"/>
+                        <GradientEntry color="#C2C2C2" ratio="1"/>
                       </LinearGradient>
                     </FillStyle>
                     <FillStyle index="3">
@@ -71,15 +71,15 @@
                         <matrix>
                           <Matrix a="0.01275634765625" d="0.01275634765625" tx="0.2" ty="-0.25"/>
                         </matrix>
-                        <GradientEntry color="#51BD56" ratio="0.215686274509804"/>
-                        <GradientEntry color="#328035" ratio="0.780392156862745"/>
+                        <GradientEntry color="#C4C4C4" ratio="0.215686274509804"/>
+                        <GradientEntry color="#7C7E7C" ratio="0.780392156862745"/>
                       </RadialGradient>
                     </FillStyle>
                   </fills>
                   <edges>
+                    <Edge fillStyle0="2" fillStyle1="3" edges="!143 -142[202 -83 202 0!202 0[202 84 143 143!143 143[84 202 0 202!0 202[-84 202 -143 143!-143 143[-202 84 -202 0!-202 0[-202 -83 -143 -142!-143 -142[-84 -202 0 -202!0 -202[84 -202 143 -142"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!167 -167[236 -98 236 0!236 0[236 98 167 167!167 167[98 236 0 236!0 236[-98 236 -167 167!-167 167[-236 98 -236 0!-236 0[-236 -98 -167 -167!-167 -167[-98 -236 0 -236!0 -236[98 -236 167 -167"/>
                     <Edge fillStyle1="1" edges="!193 -194[274 -114 274 0!274 0[274 114 193 194!193 194[113 274 0 274!0 274[-114 274 -195 194!-195 194[-274 114 -274 0!-274 0[-274 -114 -195 -194!-195 -194[-114 -274 0 -274!0 -274[113 -274 193 -194"/>
-                    <Edge fillStyle0="2" fillStyle1="3" edges="!143 -142[202 -83 202 0!202 0[202 84 143 143!143 143[84 202 0 202!0 202[-84 202 -143 143!-143 143[-202 84 -202 0!-202 0[-202 -83 -143 -142!-143 -142[-84 -202 0 -202!0 -202[84 -202 143 -142"/>
                     <Edge cubics="!202 0(202,0;202,56 182,104 143,143q202 0Q202 84q143 143);"/>
                     <Edge cubics="!274 0(274,0;274,76 247,141 193,194q274 0Q274 114q193 194);"/>
                     <Edge cubics="!236 0(236,0;236,65 213,121 167,167q236 0Q236 98q167 167);"/>
@@ -113,31 +113,31 @@
                 <DOMShape>
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#E8FFDB"/>
-                    </FillStyle>
-                    <FillStyle index="2">
                       <RadialGradient>
                         <matrix>
                           <Matrix a="0.01275634765625" d="0.01275634765625" tx="0.2" ty="-0.25"/>
                         </matrix>
-                        <GradientEntry color="#328035" ratio="0.286274509803922"/>
-                        <GradientEntry color="#51BD56" ratio="0.792156862745098"/>
+                        <GradientEntry color="#7C7E7C" ratio="0.243137254901961"/>
+                        <GradientEntry color="#C4C4C4" ratio="0.784313725490196"/>
                       </RadialGradient>
                     </FillStyle>
-                    <FillStyle index="3">
+                    <FillStyle index="2">
                       <LinearGradient>
                         <matrix>
                           <Matrix a="0.0102081298828125" b="-0.0102081298828125" c="0.0102081298828125" d="0.0102081298828125" tx="-0.05" ty="0.05"/>
                         </matrix>
-                        <GradientEntry color="#51BD56" ratio="0"/>
-                        <GradientEntry color="#328035" ratio="1"/>
+                        <GradientEntry color="#C2C2C2" ratio="0"/>
+                        <GradientEntry color="#7D7E7D" ratio="1"/>
                       </LinearGradient>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#E5E5E5"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" fillStyle1="3" edges="!167 -167[236 -98 236 0!236 0[236 98 167 167!167 167[98 236 0 236!0 236[-98 236 -167 167!-167 167[-236 98 -236 0!-236 0[-236 -98 -167 -167!-167 -167[-98 -236 0 -236!0 -236[98 -236 167 -167"/>
-                    <Edge fillStyle1="1" edges="!193 -194[274 -114 274 0!274 0[274 114 193 194!193 194[113 274 0 274!0 274[-114 274 -195 194!-195 194[-274 114 -274 0!-274 0[-274 -114 -195 -194!-195 -194[-114 -274 0 -274!0 -274[113 -274 193 -194"/>
-                    <Edge fillStyle0="3" fillStyle1="2" edges="!143 -142[202 -83 202 0!202 0[202 84 143 143!143 143[84 202 0 202!0 202[-84 202 -143 143!-143 143[-202 84 -202 0!-202 0[-202 -83 -143 -142!-143 -142[-84 -202 0 -202!0 -202[84 -202 143 -142"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!143 -142[202 -83 202 0!202 0[202 84 143 143!143 143[84 202 0 202!0 202[-84 202 -143 143!-143 143[-202 84 -202 0!-202 0[-202 -83 -143 -142!-143 -142[-84 -202 0 -202!0 -202[84 -202 143 -142"/>
+                    <Edge fillStyle1="3" edges="!193 -194[274 -114 274 0!274 0[274 114 193 194!193 194[113 274 0 274!0 274[-114 274 -195 194!-195 194[-274 114 -274 0!-274 0[-274 -114 -195 -194!-195 -194[-114 -274 0 -274!0 -274[113 -274 193 -194"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="!167 -167[236 -98 236 0!236 0[236 98 167 167!167 167[98 236 0 236!0 236[-98 236 -167 167!-167 167[-236 98 -236 0!-236 0[-236 -98 -167 -167!-167 -167[-98 -236 0 -236!0 -236[98 -236 167 -167"/>
                     <Edge cubics="!202 0(202,0;202,56 182,104 143,143q202 0Q202 84q143 143);"/>
                     <Edge cubics="!274 0(274,0;274,76 247,141 193,194q274 0Q274 114q193 194);"/>
                     <Edge cubics="!236 0(236,0;236,65 213,121 167,167q236 0Q236 98q167 167);"/>
@@ -171,31 +171,25 @@
                 <DOMShape>
                   <fills>
                     <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#E5E5E5"/>
+                    </FillStyle>
+                    <FillStyle index="3">
                       <RadialGradient>
                         <matrix>
                           <Matrix a="0.01275634765625" d="0.01275634765625" tx="0.2" ty="-0.25"/>
                         </matrix>
-                        <GradientEntry color="#FFFFFF" ratio="0.556862745098039"/>
-                        <GradientEntry color="#51BD56" ratio="1"/>
+                        <GradientEntry color="#FFFFFF" ratio="0.733333333333333"/>
+                        <GradientEntry color="#7C7E7C" ratio="1"/>
                       </RadialGradient>
-                    </FillStyle>
-                    <FillStyle index="2">
-                      <SolidColor/>
-                    </FillStyle>
-                    <FillStyle index="3">
-                      <LinearGradient>
-                        <matrix>
-                          <Matrix a="0.0102081298828125" b="-0.0102081298828125" c="0.0102081298828125" d="0.0102081298828125" tx="-0.05" ty="0.05"/>
-                        </matrix>
-                        <GradientEntry color="#235425" ratio="0"/>
-                        <GradientEntry color="#143315" ratio="1"/>
-                      </LinearGradient>
                     </FillStyle>
                   </fills>
                   <edges>
+                    <Edge fillStyle0="1" fillStyle1="3" edges="!143 -142[202 -83 202 0!202 0[202 84 143 143!143 143[84 202 0 202!0 202[-84 202 -143 143!-143 143[-202 84 -202 0!-202 0[-202 -83 -143 -142!-143 -142[-84 -202 0 -202!0 -202[84 -202 143 -142"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!167 -167[236 -98 236 0!236 0[236 98 167 167!167 167[98 236 0 236!0 236[-98 236 -167 167!-167 167[-236 98 -236 0!-236 0[-236 -98 -167 -167!-167 -167[-98 -236 0 -236!0 -236[98 -236 167 -167"/>
                     <Edge fillStyle1="2" edges="!193 -194[274 -114 274 0!274 0[274 114 193 194!193 194[113 274 0 274!0 274[-114 274 -195 194!-195 194[-274 114 -274 0!-274 0[-274 -114 -195 -194!-195 -194[-114 -274 0 -274!0 -274[113 -274 193 -194"/>
-                    <Edge fillStyle0="2" fillStyle1="3" edges="!167 -167[236 -98 236 0!236 0[236 98 167 167!167 167[98 236 0 236!0 236[-98 236 -167 167!-167 167[-236 98 -236 0!-236 0[-236 -98 -167 -167!-167 -167[-98 -236 0 -236!0 -236[98 -236 167 -167"/>
-                    <Edge fillStyle0="3" fillStyle1="1" edges="!143 -142[202 -83 202 0!202 0[202 84 143 143!143 143[84 202 0 202!0 202[-84 202 -143 143!-143 143[-202 84 -202 0!-202 0[-202 -83 -143 -142!-143 -142[-84 -202 0 -202!0 -202[84 -202 143 -142"/>
                     <Edge cubics="!202 0(202,0;202,56 182,104 143,143q202 0Q202 84q143 143);"/>
                     <Edge cubics="!274 0(274,0;274,76 247,141 193,194q274 0Q274 114q193 194);"/>
                     <Edge cubics="!236 0(236,0;236,65 213,121 167,167q236 0Q236 98q167 167);"/>
