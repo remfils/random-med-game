@@ -230,15 +230,19 @@ package src.util {
                         enemy = new FlyingEnemy();
                         break;
                     case CostumeEnemy.RAT:
+                        continue;
                         enemy = new ChargerEnemy();
                         break;
                     case CostumeEnemy.MONK:
+                        continue;
                         enemy = new Sniper();
                         break;
                     case CostumeEnemy.LASER_SPHERE:
+                        continue;
                         enemy = new LaserSniper();
                         break;
                     case "Boss":
+                        continue;
                         var type:String = object.@type;
                         switch ( type ) {
                             case CostumeEnemy.OVERSEER_TYPE:

@@ -14,6 +14,7 @@ package src.task {
     import src.util.AbstractManager;
     import src.util.ComboManager;
     import src.util.MagicBag;
+    import src.util.Output;
     import src.util.Recorder;
 
     public class TaskManager extends AbstractManager {
@@ -93,8 +94,12 @@ package src.task {
             
             task = tasks[task_index];
             
+            Output.add("guessEventListener2:\t task:" + task + "\t task_object:" + task_object);
+            
             if (task) {
+                Output.add("task was found");
                 if ( task.checkAnswer(task_object) ) {
+                    Output.add("task complete");
                     task_object.positiveOutcome();
                     task.complete();
                     game.player.changeStat(task.reward);

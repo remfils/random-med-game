@@ -20,44 +20,50 @@
         private var leashJoint:b2MouseJoint;
         private var target:b2Body;
         
+        private const ACTION_STAND_ID:int = 1;
+        private const ACTION_FOLLOW_ID:int = 2;
+        
         private var jointDef:b2MouseJointDef;
         
         public function FlyingEnemy() {
             super();
             agroDistance = 230;
+            
+            _actions[ACTION_DEATH_ID].end_animation_frame = 23;
+            
+            _actions[ACTION_STAND_ID] = new Attack( 0, standInitAction, standUpdateAction);
+            _actions[ACTION_FOLLOW_ID] = new Attack( 0, followInitAction, followUpdateAction);
         }
         
-        override public function readXMLParams(paramsXML:XML):void {
-            super.readXMLParams(paramsXML);
-            
-            costume_remove_delay = GHOST_DEATH_DELAY;
+        private function standInitAction():void {
+            setState(STAND_STATE, false);
         }
         
-        override public function update():void {
-            super.update();
-            
-            if ( isActive() ) {
-                
-                var point:b2Vec2 = player.body.GetPosition().Copy();
-                point.Subtract(body.GetPosition());
-                
-                var impulse:b2Vec2 = body.GetLinearVelocity();
-                impulse.Normalize();
-                impulse.Multiply(-1);
-                
-                impulse.Add(point);
-                impulse.Normalize();
-                impulse.Multiply(0.5);
-                
-                body.ApplyImpulse(impulse, point);
-                
-                /*if ( leashJoint ) {
-                    leashJoint.SetTarget(target.GetPosition());
-                }
-                else {
-                    createLeashJoint();
-                }*/
+        private function standUpdateAction():void {
+            if ( isPlayerInAgroRange() ) {
+                activate();
+                changeAction(ACTION_FOLLOW_ID);
             }
+        }
+        
+        private function followInitAction():void {
+            SoundManager.instance.playSFX(SoundManager.SFX_ACTIVATE_GHOST);
+            setState(ATTACK_STATE);
+        }
+        
+        private function followUpdateAction():void {
+            var point:b2Vec2 = player.body.GetPosition().Copy();
+            point.Subtract(body.GetPosition());
+            
+            var impulse:b2Vec2 = body.GetLinearVelocity();
+            impulse.Normalize();
+            impulse.Multiply(-1);
+            
+            impulse.Add(point);
+            impulse.Normalize();
+            impulse.Multiply(0.5);
+            
+            body.ApplyImpulse(impulse, point);
         }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {
@@ -68,56 +74,10 @@
             return createReq;
         }
         
-        /*override protected function activateIfPlayerIsAround():void {
-            if ( !isActive() ){
-                if ( agroDistance > playerDistance ) {
-                    activate();
-                }
-            }
-        }*/
-        
-        override public function activate():void {
-            super.activate();
-            costume.setState(ATTACK_STATE);
-            SoundManager.instance.playSFX(SoundManager.SFX_ACTIVATE_GHOST);
-        }
-        
-        override public function deactivate():void {
-            super.deactivate();
-            costume.setState(STAND_STATE);
-        }
-        
-        public function setTarget(body:b2Body):void {
-            target = body;
-        }
-        
-        private function createLeashJoint():void {
-            if (!jointDef) defineJoint();
+        override public function init():void {
+            super.init();
             
-            leashJoint = this.body.GetWorld().CreateJoint(jointDef) as b2MouseJoint;
-            leashJoint.SetTarget(target.GetPosition());
-        }
-        
-        protected function defineJoint():void {
-            jointDef = new b2MouseJointDef();
-            jointDef.bodyA = this.body.GetWorld().GetGroundBody();
-            jointDef.bodyB = this.body;
-            jointDef.target = this.body.GetPosition();
-            jointDef.maxForce = SPEED * this.body.GetMass();
-            jointDef.dampingRatio = 1;
-            jointDef.collideConnected = true;
-        }
-        
-        private function destroyLeashJoint():void {
-            if ( leashJoint ) {
-                body.GetWorld().DestroyJoint(leashJoint);
-                leashJoint = null;
-            }
-        }
-        
-        override public function destroy():void {
-            destroyLeashJoint();
-            super.destroy();
+            changeAction(ACTION_STAND_ID);
         }
     }
     

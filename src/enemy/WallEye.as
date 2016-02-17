@@ -32,7 +32,7 @@ package src.enemy {
         }
         
         override public function update():void {
-            currentFrame ++;
+            current_frame ++;
             
             switch ( current_state ) {
                 case INIT_STATE:

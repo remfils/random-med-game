@@ -223,10 +223,7 @@
                     e.cRoom = this;
                     e.deactivate();
                     
-                    if ( e is FlyingEnemy ) {
-                        FlyingEnemy(e).setTarget(playerBody);
-                    }
-                    else if ( e is EnemyLaser ) {
+                    if ( e is EnemyLaser ) {
                         game.glassPanel.addChild(e.costume);
                     }
                 }
@@ -354,9 +351,9 @@
             
             enemy.deactivate();
             
-            if ( enemy is FlyingEnemy ) {
+            /*if ( enemy is FlyingEnemy ) {
                 FlyingEnemy(enemy).setTarget(playerBody);
-            }
+            }*/
             
             // if (Game.TEST_MODE) trace("enemy added", enemy.x);
         }

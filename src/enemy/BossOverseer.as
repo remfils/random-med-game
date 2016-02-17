@@ -26,7 +26,7 @@ package src.enemy {
     import src.util.Random;
 
 
-public class BossOverseer extends Enemy implements Init {
+public class BossOverseer extends Enemy {
         public static var LEFT_WALL_EYE_X:Number = 184.85;
         public static var WALL_EYE_Y:Number = 59.75;
         public static var TOP_Y:Number = 130;
@@ -308,7 +308,7 @@ public class BossOverseer extends Enemy implements Init {
                     sub_state = WAIT_BEFORE_OPEN_EYES;
                     break;
                 case WAIT_BEFORE_OPEN_EYES:
-                    if ( currentFrame > FRAME_OPEN_EYES_DELLAY ) {
+                    if ( current_frame > FRAME_OPEN_EYES_DELLAY ) {
                         var closed_eye_index:int = Random.getOneFromThree() - 1;
                         var i:int = _wall_eyes.length;
                         
@@ -414,7 +414,7 @@ public class BossOverseer extends Enemy implements Init {
             setState(INIT_STATE);
         }
         
-        public function init():void {
+        override public function init():void {
             var timer:Timer = ObjectPool.getTimer(300);
             timer.addEventListener(TimerEvent.TIMER_COMPLETE, dellayedInitTimerListener);
             
@@ -463,7 +463,7 @@ public class BossOverseer extends Enemy implements Init {
         override public function update():void {
             if ( !is_active ) return;
             
-            currentFrame ++;
+            current_frame ++;
             
             if ( _current_attack.update_function ) {
                 _current_attack.update_function();
@@ -488,7 +488,7 @@ public class BossOverseer extends Enemy implements Init {
             super.update();
         }
         
-        private function decideWhatToDo():void {
+        override protected function decideWhatToDo():void {
             var attack:Attack;
             var num:Number;
             

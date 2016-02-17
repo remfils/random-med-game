@@ -24,6 +24,12 @@ package src.enemy {
         protected var bullet_fired:Boolean = false;
         protected var TOTAL_CHARGE_FRAMES:int = 30;
         
+        protected const WAIT_ATTACK:Attack = null;
+        protected const SHOOT_BULLET_ATTACK:Attack = null;
+        protected var current_attack:Attack;
+        
+        //protected var current_frame:int = 0;
+        
         public function Sniper() {
             super();
             agroDistance = 400;
@@ -54,23 +60,23 @@ package src.enemy {
         override protected function flip():void {}
         
         override public function update():void {
+            if ( !is_active) return;
+            
             super.update();
             
-            if ( is_active ) {
-                if ( !charge_time ) {
-                    startShoot();
-                    charge_time = charge_delay;
-                }
-                else {
-                    charge_time --;
-                }
-                if ( bullet_fired ) {
-                    if ( !frames_to_shoot-- ) {
-                        bullet_fired = false;
-                        costume.setState(ACTIVE_STATE);
-                        shoot();
-                        frames_to_shoot = 0;
-                    }
+            if ( !charge_time ) {
+                startShoot();
+                charge_time = charge_delay;
+            }
+            else {
+                charge_time --;
+            }
+            if ( bullet_fired ) {
+                if ( !frames_to_shoot-- ) {
+                    bullet_fired = false;
+                    costume.setState(ACTIVE_STATE);
+                    shoot();
+                    frames_to_shoot = 0;
                 }
             }
         }

@@ -48,7 +48,7 @@ package src.enemy {
         }
         
         override public function update():void {
-            currentFrame ++;
+            current_frame ++;
             
             if ( current_frame > FRAME_LASER_HIT_END ) {
                 //body.SetActive(false);
