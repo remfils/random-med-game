@@ -69,13 +69,19 @@
             }
         }
         
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            
+            setState();
+        }
+        
         protected function deathEndAction():void {
             destroy();
             
             submitAnswer();
         }
         
-        protected function setState(state:String, is_animated:Boolean = false):void {
+        protected function setState(state:String = "", is_animated:Boolean = false):void {
             current_state = state;
             
             if ( is_animated ) costume.setAnimatedState(state);
@@ -171,27 +177,18 @@
             hitFrames = 5;
             
             if ( health <= 0 ) {
-                changeAction(ACTION_DEATH_ID);
+                forceChangeAction(ACTION_DEATH_ID);
             }
-            
         }
         
-        protected function changeAction(action_id:int):void {
-            if ( current_action && current_action.end_function ) {
-                current_action.end_function();
-            }
+        protected function forceChangeAction(action_id:int):void {
+            current_frame = 0;
             
             current_action = _actions[action_id];
             current_action.init_function();
         }
         
-        override public function remove():void {
-            //super.remove();
-            //die();
-        }
-        
         override public function destroy():void {
-            // super.destroy();
             cRoom.remove(this);
             cRoom.removeEnemy(this);
             

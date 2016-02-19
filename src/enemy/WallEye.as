@@ -62,7 +62,7 @@ package src.enemy {
             setState(OPEN_STATE, true);
         }
         
-        override public function die():void {
+        /*override public function die():void {
             switch ( current_state ) {
                 case INIT_STATE:
                     setState(REMOVE_INIT_STATE, true);
@@ -73,7 +73,7 @@ package src.enemy {
             }
             
             cRoom.removeEnemy(this);
-        }
+        }*/
     }
 
 }

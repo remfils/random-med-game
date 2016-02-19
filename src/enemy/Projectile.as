@@ -19,7 +19,7 @@ package src.enemy {
             costume.setType(CostumeEnemy.GREEN_BULLET_TYPE);
             activate();
             
-            death_sound_id = SoundManager.SFX_HIT_ENEMY_BULLET;
+            // death_sound_id = SoundManager.SFX_HIT_ENEMY_BULLET;
         }
         
         public function setSpeed(dir:b2Vec2):void {

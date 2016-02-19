@@ -344,7 +344,7 @@ public class BossOverseer extends Enemy {
             while ( _wall_eyes.length ) {
                 eye = _wall_eyes.pop();
                 
-                eye.die();
+                // eye.die();
             }
         }
         
@@ -374,7 +374,8 @@ public class BossOverseer extends Enemy {
                         laser.x = 3 + this.x;
                         laser.y = -55 + this.y;
                         
-                        laser.rotateTo(player);
+                        var pos:Point = new Point(player.x, player.y - player.costume.height / 2);
+                        laser.rotateTo(pos);
                         
                         cRoom.add(laser);
                     }
@@ -536,14 +537,14 @@ public class BossOverseer extends Enemy {
             _current_attack.init_function();
         }
         
-        override public function die():void {
+        /*override public function die():void {
             super.die();
             
             _current_attack = _attacks[DEATH_STATE_ID];
             _current_attack.init_function();
             
             game.deleteManager.add(_health_bar.costume);
-        }
+        }*/
         
         override public function destroy():void {
             game.deleteManager.add(body);

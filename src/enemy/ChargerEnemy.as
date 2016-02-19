@@ -68,8 +68,8 @@ package src.enemy {
         }
         
         // D!
-        override protected function activateIfPlayerIsAround():void {
-            /*if ( !charge && playerDistance < agroDistance ) {
+        /*override protected function activateIfPlayerIsAround():void {
+            if ( !charge && playerDistance < agroDistance ) {
                 if ( Math.abs(y - player.y) < costume.height / 4 ) {
                     horizontal = true;
                     startCharge();
@@ -80,8 +80,8 @@ package src.enemy {
                     startCharge();
                     changeSpeed(new b2Vec2(0, player.y - y), CHARGE_SPEED);
                 }
-            }*/
-        }
+            }
+        }*/
         
         override public function deactivate():void {
             is_active = false;

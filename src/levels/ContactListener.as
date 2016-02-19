@@ -118,7 +118,7 @@ package src.levels {
                     game.changePlayerStat(new ChangePlayerStatObject(ChangePlayerStatObject.HEALTH_STAT, -bullet.damage, bullet.getID(), true));
                 }
             }
-            bullet.die();
+            // bullet.die();
         }
         
         // D!

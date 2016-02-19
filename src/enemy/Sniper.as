@@ -10,82 +10,79 @@ package src.enemy {
     import src.util.SoundManager;
 
     public class Sniper extends Enemy {
-        public static const MONK_DEATH_DELAY:Number = 43 / Game.FRAMES_PER_MILLISECOND;
-        
         public static const ACTIVE_STATE:String = "_active";
-        public static const STAND_STATE:String = "_stand";
+        public static const STAND_STATE:String = "";
         public static const SHOOT_STATE:String = "_shoot";
         
-        public var charge:Boolean = false;
-        public var charge_time:Number = 0;
-        public var charge_delay:Number = 50;
+        public static const ACTION_STAND_ID:int = 1;
+        public static const ACTION_WAIT_ID:int = 2;
+        public static const ACTION_SHOOT_ID:int = 3;
         
-        protected var frames_to_shoot:int = 0;
-        protected var bullet_fired:Boolean = false;
-        protected var TOTAL_CHARGE_FRAMES:int = 30;
+        protected var FRAME_TARGET_IS_LOCKED:int = 18;
+        protected var FRAME_SHOOT:int = 23;
         
-        protected const WAIT_ATTACK:Attack = null;
-        protected const SHOOT_BULLET_ATTACK:Attack = null;
+        protected var frame_recharge_end:int = 0;
+        
         protected var current_attack:Attack;
         
-        //protected var current_frame:int = 0;
+        protected var saved_target_position:Point;
         
         public function Sniper() {
             super();
             agroDistance = 400;
             exp = 10;
             
-            death_sound_id = SoundManager.SFX_DESTROY_MONK;
+            _actions[ACTION_STAND_ID] = new Attack(0, standInitAction, standUpdateAction);
+            _actions[ACTION_WAIT_ID] = new Attack(0, waitInitAction, waitUpdateAction);
+            _actions[ACTION_SHOOT_ID] = new Attack(37, shootInitAction, shootUpdateAction, shootEndAction);
         }
         
-        override public function readXMLParams(paramsXML:XML):void {
-            super.readXMLParams(paramsXML);
+        private function standInitAction():void {
+            setState(STAND_STATE);
+            activate();
+        }
+        
+        private function standUpdateAction():void {
+            if ( isPlayerInAgroRange() ) {
+                forceChangeAction(ACTION_WAIT_ID);
+            }
+        }
+        
+        private function waitInitAction():void {
+            setState(ACTIVE_STATE);
+        }
+        
+        private function waitUpdateAction():void {
+            if ( current_frame > frame_recharge_end ) {
+                forceChangeAction(ACTION_SHOOT_ID);
+            }
+        }
+        
+        private function shootInitAction():void {
+            setState(SHOOT_STATE, true);
+        }
+        
+        private function shootUpdateAction():void {
+            if ( current_frame == FRAME_TARGET_IS_LOCKED ) {
+                saved_target_position = new Point(player.x, player.y);
+            }
             
-            costume_remove_delay = MONK_DEATH_DELAY;
+            if ( current_frame == FRAME_SHOOT ) {
+                shootAtSavedTargetPosition();
+            }
+        }
+        
+        private function shootEndAction():void {
+            forceChangeAction(ACTION_STAND_ID);
+        }
+        
+        override public function init():void {
+            super.init();
             
-            setState(Sniper.STAND_STATE);
-        }
-        
-        override public function activate():void {
-            is_active = true;
-            costume.setState(ACTIVE_STATE);
-        }
-        
-        override public function deactivate():void {
-            charge = bullet_fired = is_active = false;
-            charge_time = frames_to_shoot = 0;
-            costume.setState(STAND_STATE);
+            forceChangeAction(ACTION_STAND_ID);
         }
         
         override protected function flip():void {}
-        
-        override public function update():void {
-            if ( !is_active) return;
-            
-            super.update();
-            
-            if ( !charge_time ) {
-                startShoot();
-                charge_time = charge_delay;
-            }
-            else {
-                charge_time --;
-            }
-            if ( bullet_fired ) {
-                if ( !frames_to_shoot-- ) {
-                    bullet_fired = false;
-                    costume.setState(ACTIVE_STATE);
-                    shoot();
-                    frames_to_shoot = 0;
-                }
-            }
-        }
-        
-        public function startShoot():void {
-            bullet_fired = true;
-            frames_to_shoot = TOTAL_CHARGE_FRAMES;
-            costume.setAnimatedState(SHOOT_STATE);
-        }
         
         override public function requestBodyAt(world:b2World):CreateBodyRequest {
             var createBodyReq:CreateBodyRequest = super.requestBodyAt(world);
@@ -93,14 +90,17 @@ package src.enemy {
             return createBodyReq;
         }
         
-        /*override public function createBodyFromCollider(world:b2World):b2Body {
-            var collider:Collider = getChildByName("collider001") as Collider;
-            body = collider.replaceWithStaticB2Body(world, {"object": this});
-            return body;
-        }*/
+        protected function shootAtSavedTargetPosition():void {
+            shootAtPoint(saved_target_position);
+        }
         
         public function shoot():void {
-            var direction:b2Vec2 = new b2Vec2(player.x - x, player.y - y);
+            shootAtPoint(new Point(player.x, player.y));
+            //this.cRoom.addEnenemy(bullet);
+        }
+        
+        protected function shootAtPoint(p:Point):void {
+            var direction:b2Vec2 = new b2Vec2(p.x - x, p.y - y);
             
             var bullet:Projectile = new Projectile();
             
@@ -110,7 +110,6 @@ package src.enemy {
             cRoom.add(bullet);
             
             SoundManager.instance.playSFX(SoundManager.SFX_SHOOT_MONK);
-            //this.cRoom.addEnenemy(bullet);
         }
         
     }

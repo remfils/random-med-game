@@ -234,11 +234,9 @@ package src.util {
                         enemy = new ChargerEnemy();
                         break;
                     case CostumeEnemy.MONK:
-                        continue;
                         enemy = new Sniper();
                         break;
                     case CostumeEnemy.LASER_SPHERE:
-                        continue;
                         enemy = new LaserSniper();
                         break;
                     case "Boss":

@@ -13,7 +13,7 @@
     public class FlyingEnemy extends Enemy {
         private static const GHOST_DEATH_DELAY:Number = 23 / Game.FRAMES_PER_MILLISECOND;
         
-        public static const STAND_STATE:String = "_stand";
+        public static const STAND_STATE:String = "";
         public static const ATTACK_STATE:String = "_active";
         
         public static var SPEED:Number = 10;
@@ -42,7 +42,7 @@
         private function standUpdateAction():void {
             if ( isPlayerInAgroRange() ) {
                 activate();
-                changeAction(ACTION_FOLLOW_ID);
+                forceChangeAction(ACTION_FOLLOW_ID);
             }
         }
         
@@ -77,7 +77,7 @@
         override public function init():void {
             super.init();
             
-            changeAction(ACTION_STAND_ID);
+            forceChangeAction(ACTION_STAND_ID);
         }
     }
     

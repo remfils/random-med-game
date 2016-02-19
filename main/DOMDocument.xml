@@ -87,9 +87,9 @@
           <DOMFolderItem name="src" itemID="53afd2e7-00000077"/>
      </folders>
      <fonts>
-          <DOMFontItem name="MagicFont" itemID="56278f8b-00000e8e" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
-          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
           <DOMFontItem name="MagicFont copy" itemID="56278f8b-00000e8f" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="5" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
+          <DOMFontItem name="gui_score" itemID="541fd7c1-00000177" font="TimesNewRomanPSMT" size="0" id="2" sourceLastImported="1411372993" embedRanges="3"/>
+          <DOMFontItem name="MagicFont" itemID="56278f8b-00000e8e" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="MagicFont" font="Mikadan" size="0" id="3" sourceLastImported="1416923810" embedRanges="9999|3|22"/>
      </fonts>
      <media>
           <DOMCompiledClipItem name="_GUI/scrollbar/Component Assets/_private/ComponentShim" itemID="4d08cfa8-000001ee" linkageExportForAS="true" linkageClassName="fl.core.ComponentShim" sourceLastImported="1292423080" displayAsComponent="false" customIconID="0" actionscriptClass="fl.core.ComponentShim" swfScmHRef="kbx0udh422.swf" swfScmSourceFilename="C:\Users\jkamerer\AppData\Local\Adobe\Flash CS5.5\en_US\Configuration\TMPkavphdh40p..swf" persistLivePreview11="true" livePreview11ScmHRef="kbx0udh4221.swf" livePreview11ScmSourceFilename="C:\Users\jkamerer\AppData\Local\Adobe\Flash CS5.5\en_US\Configuration\TMPkavphdh40p..swf" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true" swcPath="_GUI/scrollbar/Component Assets/_private/ComponentShim.xml" rootSymbolLinkageID="fl.core.ComponentShim" playerVersion="9" actionscriptVersion="3" hashKey="k718tUOF1.A1OSpQnqdJJ0">
@@ -291,7 +291,7 @@
           <Include href="_enemies/_WallEye/WallEye_open.xml" itemIcon="1" loadImmediate="false" itemID="566d9257-000006ff" lastModified="1450093850"/>
           <Include href="_enemies/_WallEye/WallEye_remove.xml" itemIcon="1" loadImmediate="false" itemID="566ead99-0000037e" lastModified="1450094107"/>
           <Include href="_enemies/enemy_flight_test.xml" loadImmediate="false" itemID="53e9f4e6-000000a2" lastModified="1428865390"/>
-          <Include href="_enemies/EnemyCostume.xml" itemID="5527ddce-0000024c" lastModified="1455627663"/>
+          <Include href="_enemies/EnemyCostume.xml" itemID="5527ddce-0000024c" lastModified="1455905066"/>
           <Include href="_GUI/_coins/coin.xml" loadImmediate="false" itemID="53af5237-00000097" lastModified="1403998775"/>
           <Include href="_GUI/_coins/icoCoin.xml" loadImmediate="false" itemID="53cb1a9c-000001a0" lastModified="1416501447"/>
           <Include href="_GUI/_healthBars/healthBar.xml" loadImmediate="false" itemID="53b9771c-0000007b" lastModified="1404755544"/>
@@ -1221,7 +1221,7 @@
                     <SolidSwatchItem color="#610085" hue="189" saturation="239" brightness="63"/>
                     <SolidSwatchItem color="#E5E5E5" brightness="216"/>
                     <SolidSwatchItem color="#3C3C3C" brightness="56"/>
-                    <SolidSwatchItem color="#FFFFFF" alpha="0.141176470588235" brightness="240"/>
+                    <SolidSwatchItem color="#FFFFFF" alpha="0.137254901960784" brightness="240"/>
                     <SolidSwatchItem alpha="0.498039215686275"/>
                </swatches>
           </swatchList>
@@ -1459,26 +1459,26 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="1590563" publishTime="1455724014" publishDebug="true"/>
-          <PublishItem publishSize="1590397" publishTime="1455723209" publishDebug="true"/>
-          <PublishItem publishSize="1590398" publishTime="1455723045" publishDebug="true"/>
-          <PublishItem publishSize="1590378" publishTime="1455722661" publishDebug="true"/>
-          <PublishItem publishSize="1090613" publishTime="1455722597" publishDebug="true"/>
-          <PublishItem publishSize="1590992" publishTime="1455722396" publishDebug="true"/>
-          <PublishItem publishSize="1591001" publishTime="1455722086" publishDebug="true"/>
-          <PublishItem publishSize="1591107" publishTime="1455721872" publishDebug="true"/>
-          <PublishItem publishSize="1090613" publishTime="1455721832" publishDebug="true"/>
-          <PublishItem publishSize="1591105" publishTime="1455721481" publishDebug="true"/>
-          <PublishItem publishSize="1591086" publishTime="1455721390" publishDebug="true"/>
-          <PublishItem publishSize="1090613" publishTime="1455721325" publishDebug="true"/>
-          <PublishItem publishSize="1090613" publishTime="1455721109" publishDebug="true"/>
-          <PublishItem publishSize="1090613" publishTime="1455721061" publishDebug="true"/>
-          <PublishItem publishSize="1590750" publishTime="1455720504" publishDebug="true"/>
-          <PublishItem publishSize="1090613" publishTime="1455720440" publishDebug="true"/>
-          <PublishItem publishSize="1090613" publishTime="1455720379" publishDebug="true"/>
-          <PublishItem publishSize="976928" publishTime="1455720248" publishDebug="true"/>
-          <PublishItem publishSize="1590642" publishTime="1455639139" publishDebug="true"/>
-          <PublishItem publishSize="1590564" publishTime="1455628091" publishDebug="true"/>
+          <PublishItem publishSize="1588623" publishTime="1455905458" publishDebug="true"/>
+          <PublishItem publishSize="1588590" publishTime="1455905309" publishDebug="true"/>
+          <PublishItem publishSize="1419907" publishTime="1455905107"/>
+          <PublishItem publishSize="1588494" publishTime="1455904929" publishDebug="true"/>
+          <PublishItem publishSize="1588429" publishTime="1455904696" publishDebug="true"/>
+          <PublishItem publishSize="1588488" publishTime="1455904144" publishDebug="true"/>
+          <PublishItem publishSize="1588520" publishTime="1455903897" publishDebug="true"/>
+          <PublishItem publishSize="1588567" publishTime="1455903425" publishDebug="true"/>
+          <PublishItem publishSize="1588499" publishTime="1455903371" publishDebug="true"/>
+          <PublishItem publishSize="1588238" publishTime="1455902328" publishDebug="true"/>
+          <PublishItem publishSize="1588221" publishTime="1455902119" publishDebug="true"/>
+          <PublishItem publishSize="1088969" publishTime="1455902002" publishDebug="true"/>
+          <PublishItem publishSize="1588360" publishTime="1455901127" publishDebug="true"/>
+          <PublishItem publishSize="1089222" publishTime="1455900858" publishDebug="true"/>
+          <PublishItem publishSize="1588752" publishTime="1455898615" publishDebug="true"/>
+          <PublishItem publishSize="1588845" publishTime="1455895657" publishDebug="true"/>
+          <PublishItem publishSize="1588889" publishTime="1455895238" publishDebug="true"/>
+          <PublishItem publishSize="1588889" publishTime="1455895057" publishDebug="true"/>
+          <PublishItem publishSize="1089222" publishTime="1455894981" publishDebug="true"/>
+          <PublishItem publishSize="1089222" publishTime="1455894923" publishDebug="true"/>
      </publishHistory>
      <swcCache>
           <Swc hashKey="k718tUOF1.A1OSpQnqdJJ0" href="m001axeqz8.swc">
