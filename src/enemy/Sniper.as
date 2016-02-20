@@ -95,7 +95,9 @@ package src.enemy {
         }
         
         public function shoot():void {
-            shootAtPoint(new Point(player.x, player.y));
+            var p:Point = new Point(player.x, player.y);
+            
+            shootAtPoint(p);
             //this.cRoom.addEnenemy(bullet);
         }
         

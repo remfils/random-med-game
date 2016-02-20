@@ -1,5 +1,6 @@
 package src.enemy {
     import flash.geom.Point;
+    import src.util.Output;
 
 
     public class LaserSniper extends Sniper {

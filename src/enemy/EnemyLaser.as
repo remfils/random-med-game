@@ -6,6 +6,7 @@ package src.enemy {
     import src.objects.AbstractObject;
     import src.util.ChangePlayerStatObject;
     import src.util.CreateBodyRequest;
+    import src.util.Output;
 
 
     public class EnemyLaser extends Enemy {
@@ -80,27 +81,12 @@ package src.enemy {
         }
         
         public function rotateTo(target:Point):void {
-            var rad_angle:Number = 0;
-            
-            if ( target.x != x ) {
-                rad_angle = Math.atan(( y - target.y ) / ( x - target.x ));
-                
-                /*if ( x > target.x ) {
-                    rad_angle += Math.PI;
-                }*/
-            }
-            else {
-                rad_angle = Math.PI / 2;
-                if ( target.y > y ) {
-                    rad_angle *= -1;
-                }
-            }
-            
-            costume.rotation = rad_angle * 180 / Math.PI;
+            costume.rotation = Math.atan2(target.y - y, target.x - x) * 180 / Math.PI;
         }
         
         override protected function updatePosition():void { }
         override protected function playHitAnimationIfNeeded():void { }
+        override protected function flip():void { }
     }
 
 }
