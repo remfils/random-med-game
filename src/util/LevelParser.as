@@ -230,7 +230,6 @@ package src.util {
                         enemy = new FlyingEnemy();
                         break;
                     case CostumeEnemy.RAT:
-                        continue;
                         enemy = new ChargerEnemy();
                         break;
                     case CostumeEnemy.MONK:

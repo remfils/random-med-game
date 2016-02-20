@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1455905066" lastUniqueIdentifier="50">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1455980518" lastUniqueIdentifier="50">
   <timeline>
-    <DOMTimeline name="EnemyCostume" currentFrame="420">
+    <DOMTimeline name="EnemyCostume" currentFrame="68">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="14" name="Ghost" labelType="name" keyMode="9728">
               <elements/>
@@ -13,98 +13,104 @@
             <DOMFrame index="29" duration="28" name="Ghost_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="57" duration="15" name="Rat" labelType="name" keyMode="9728">
+            <DOMFrame index="57" duration="11" name="Rat" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="72" duration="14" name="Rat_walk_vert" labelType="name" keyMode="9728">
+            <DOMFrame index="68" duration="14" name="Rat_walk_hor" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="86" duration="14" name="Rat_charge_hor" labelType="name" keyMode="9728">
+            <DOMFrame index="82" duration="14" name="Rat_walk_vert" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="100" duration="16" name="Rat_charge_vert" labelType="name" keyMode="9728">
+            <DOMFrame index="96" duration="14" name="Rat_charge_hor" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="116" duration="24" name="Rat_death" labelType="name" keyMode="9728">
+            <DOMFrame index="110" duration="16" name="Rat_charge_vert" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="140" duration="13" name="Monk" labelType="name" keyMode="9728">
+            <DOMFrame index="126" duration="24" name="Rat_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="153" duration="15" name="Monk_active" labelType="name" keyMode="9728">
+            <DOMFrame index="150" duration="13" name="Monk" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="168" duration="55" name="Monk_shoot" labelType="name" keyMode="9728">
+            <DOMFrame index="163" duration="15" name="Monk_active" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="223" duration="48" name="Monk_death" labelType="name" keyMode="9728">
+            <DOMFrame index="178" duration="55" name="Monk_shoot" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="271" duration="16" name="EnemyBullet" labelType="name" keyMode="9728">
+            <DOMFrame index="233" duration="48" name="Monk_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="287" duration="20" name="EnemyBullet_death" labelType="name" keyMode="9728">
+            <DOMFrame index="281" duration="16" name="EnemyBullet" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="307" duration="21" name="EnemyLaser" labelType="name" keyMode="9728">
+            <DOMFrame index="297" duration="20" name="EnemyBullet_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="328" duration="35" name="EnemyLaserSmall" labelType="name" keyMode="9728">
+            <DOMFrame index="317" duration="21" name="EnemyLaser" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="363" duration="25" name="LaserSphere" labelType="name" keyMode="9728">
+            <DOMFrame index="338" duration="35" name="EnemyLaserSmall" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="388" duration="28" name="LaserSphere_active" labelType="name" keyMode="9728">
+            <DOMFrame index="373" duration="25" name="LaserSphere" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="416" duration="65" name="LaserSphere_shoot" labelType="name" keyMode="9728">
+            <DOMFrame index="398" duration="28" name="LaserSphere_active" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="481" duration="71" name="LaserSphere_death" labelType="name" keyMode="9728">
+            <DOMFrame index="426" duration="65" name="LaserSphere_shoot" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="552" duration="67" name="Overseer_init" labelType="name" keyMode="9728">
+            <DOMFrame index="491" duration="71" name="LaserSphere_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="619" duration="18" name="Overseer_stand" labelType="name" keyMode="9728">
+            <DOMFrame index="562" duration="67" name="Overseer_init" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="637" duration="17" name="Overseer_charge" labelType="name" keyMode="9728">
+            <DOMFrame index="629" duration="18" name="Overseer_stand" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="654" duration="26" name="Overseer_armHit" labelType="name" keyMode="9728">
+            <DOMFrame index="647" duration="17" name="Overseer_charge" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="680" duration="33" name="Overseer_openEyes" labelType="name" keyMode="9728">
+            <DOMFrame index="664" duration="26" name="Overseer_armHit" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="713" duration="89" name="Overseer_shoot" labelType="name" keyMode="9728">
+            <DOMFrame index="690" duration="33" name="Overseer_openEyes" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="802" duration="106" name="Overseer_death" labelType="name" keyMode="9728">
+            <DOMFrame index="723" duration="89" name="Overseer_shoot" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="908" duration="31" name="WallEye_init" labelType="name" keyMode="9728">
+            <DOMFrame index="812" duration="106" name="Overseer_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="939" duration="47" name="WallEye_open" labelType="name" keyMode="9728">
+            <DOMFrame index="918" duration="31" name="WallEye_init" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="986" duration="28" name="WallEye_remove" labelType="name" keyMode="9728">
+            <DOMFrame index="949" duration="47" name="WallEye_open" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="1014" duration="41" name="WallEye_removeInit" labelType="name" keyMode="9728">
+            <DOMFrame index="996" duration="28" name="WallEye_remove" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1024" duration="41" name="WallEye_removeInit" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="actions" color="#FF4FFF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="363" keyMode="9728">
+            <DOMFrame index="0" duration="68" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="363" duration="692" keyMode="9728">
+            <DOMFrame index="68" duration="305" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="373" duration="692" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -114,10 +120,13 @@
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="14" duration="349" keyMode="9728">
+            <DOMFrame index="14" duration="54" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="363" duration="25" keyMode="9728">
+            <DOMFrame index="68" duration="305" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="373" duration="25" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_tent" symbolType="graphic" loop="single frame">
                   <matrix>
@@ -129,7 +138,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="388" duration="93" keyMode="9728">
+            <DOMFrame index="398" duration="93" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_tent" centerPoint3DX="2.6" centerPoint3DY="-16.9">
                   <matrix>
@@ -141,7 +150,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="481" duration="71" keyMode="9728">
+            <DOMFrame index="491" duration="71" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_tent_death" symbolType="graphic" loop="play once">
                   <matrix>
@@ -153,7 +162,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="552" duration="503" keyMode="9728">
+            <DOMFrame index="562" duration="503" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -172,7 +181,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="57" duration="83" keyMode="9728">
+            <DOMFrame index="57" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
@@ -184,7 +193,19 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="140" duration="167" keyMode="9728">
+            <DOMFrame index="68" duration="82" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
+                  <matrix>
+                    <Matrix a="1.22921752929688" d="1.00523376464844"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="150" duration="167" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider">
                   <matrix>
@@ -196,7 +217,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="307" duration="21" keyMode="9728">
+            <DOMFrame index="317" duration="21" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DX="380.7">
                   <matrix>
@@ -208,7 +229,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="328" keyMode="9728">
+            <DOMFrame index="338" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="380.7">
                   <matrix>
@@ -220,7 +241,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="329" keyMode="9728">
+            <DOMFrame index="339" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DX="380.7">
                   <matrix>
@@ -232,7 +253,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="330" keyMode="9728">
+            <DOMFrame index="340" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="457.75" centerPoint3DY="-0.15">
                   <matrix>
@@ -244,7 +265,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="331" keyMode="9728">
+            <DOMFrame index="341" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="533.85" centerPoint3DY="-0.35">
                   <matrix>
@@ -256,7 +277,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="332" keyMode="9728">
+            <DOMFrame index="342" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="609.65" centerPoint3DY="-0.5">
                   <matrix>
@@ -268,7 +289,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="333" keyMode="9728">
+            <DOMFrame index="343" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="685.15" centerPoint3DY="-0.7">
                   <matrix>
@@ -280,7 +301,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="334" duration="29" keyMode="9728">
+            <DOMFrame index="344" duration="29" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="380.7">
                   <matrix>
@@ -292,7 +313,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="363" duration="118" keyMode="9728">
+            <DOMFrame index="373" duration="118" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="15.55" centerPoint3DY="8">
                   <matrix>
@@ -304,7 +325,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="481" duration="71" keyMode="9728">
+            <DOMFrame index="491" duration="71" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DX="15.55" centerPoint3DY="8">
                   <matrix>
@@ -316,7 +337,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="552" duration="104" keyMode="9728">
+            <DOMFrame index="562" duration="104" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="27.8">
                   <matrix>
@@ -328,7 +349,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="656" duration="2" keyMode="9728">
+            <DOMFrame index="666" duration="2" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="52.3">
                   <matrix>
@@ -340,7 +361,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="658" duration="250" keyMode="9728">
+            <DOMFrame index="668" duration="250" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="28.5">
                   <matrix>
@@ -352,7 +373,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="908" duration="42" keyMode="9728">
+            <DOMFrame index="918" duration="42" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="20.6">
                   <matrix>
@@ -364,7 +385,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="950" duration="6" keyMode="9728">
+            <DOMFrame index="960" duration="6" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="56.85">
                   <matrix>
@@ -376,7 +397,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="956" duration="99" keyMode="9728">
+            <DOMFrame index="966" duration="99" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="20.6">
                   <matrix>
@@ -390,7 +411,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4FFF4F">
           <frames>
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements>
@@ -428,7 +449,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="57" duration="15" keyMode="9728">
+            <DOMFrame index="57" duration="11" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk" centerPoint3DX="86.25" centerPoint3DY="28.55">
                   <matrix>
@@ -440,7 +461,19 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="72" duration="14" keyMode="9728">
+            <DOMFrame index="68" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk" centerPoint3DX="86.25" centerPoint3DY="28.55">
+                  <matrix>
+                    <Matrix a="0.194931030273438" d="0.194931030273438" tx="-1.35" ty="0.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-27.2" y="-8.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="82" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_walk_down" centerPoint3DX="87.85" centerPoint3DY="27.9">
                   <matrix>
@@ -452,7 +485,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="86" duration="14" keyMode="9728">
+            <DOMFrame index="96" duration="14" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_charge" centerPoint3DX="86.25" centerPoint3DY="28.55">
                   <matrix>
@@ -464,7 +497,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="100" duration="16" keyMode="9728">
+            <DOMFrame index="110" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_attack_down" centerPoint3DX="87.85" centerPoint3DY="27.9">
                   <matrix>
@@ -476,7 +509,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="116" duration="24" keyMode="9728">
+            <DOMFrame index="126" duration="24" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Rat/rat_death" symbolType="graphic" loop="play once">
                   <matrix>
@@ -488,7 +521,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="140" duration="13" keyMode="9728">
+            <DOMFrame index="150" duration="13" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_normal" centerPoint3DX="1.4" centerPoint3DY="-24.7">
                   <matrix>
@@ -500,7 +533,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="153" duration="15" keyMode="9728">
+            <DOMFrame index="163" duration="15" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_active" selected="true" centerPoint3DX="1.4" centerPoint3DY="-24.7">
                   <matrix>
@@ -512,7 +545,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="168" duration="55" keyMode="9728">
+            <DOMFrame index="178" duration="55" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_shoot" symbolType="graphic" loop="play once">
                   <matrix>
@@ -524,7 +557,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="223" duration="48" keyMode="9728">
+            <DOMFrame index="233" duration="48" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_Monk/monk_death" symbolType="graphic" loop="loop">
                   <matrix>
@@ -536,7 +569,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="271" duration="16" keyMode="9728">
+            <DOMFrame index="281" duration="16" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_normal" centerPoint3DX="-0.2" centerPoint3DY="-30.4">
                   <matrix>
@@ -548,7 +581,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="287" duration="20" keyMode="9728">
+            <DOMFrame index="297" duration="20" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_EnemyBullet/EnemyBullet_death" symbolType="graphic" loop="play once">
                   <matrix>
@@ -560,7 +593,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="307" duration="21" keyMode="9728">
+            <DOMFrame index="317" duration="21" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_EnemyLaser/laser" symbolType="graphic" loop="play once">
                   <transformationPoint>
@@ -569,7 +602,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="328" duration="35" keyMode="9728">
+            <DOMFrame index="338" duration="35" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_EnemyLaser/laser_small" symbolType="graphic" loop="play once">
                   <transformationPoint>
@@ -578,7 +611,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="363" duration="25" keyMode="9728">
+            <DOMFrame index="373" duration="25" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere" symbolType="graphic" loop="loop">
                   <matrix>
@@ -590,7 +623,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="388" duration="28" keyMode="9728">
+            <DOMFrame index="398" duration="28" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="animated_woble" centerPoint3DX="2.15" centerPoint3DY="-44.3">
                   <matrix>
@@ -602,7 +635,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="416" duration="65" keyMode="9728">
+            <DOMFrame index="426" duration="65" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_shoot" symbolType="graphic" loop="play once">
                   <matrix>
@@ -614,7 +647,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="481" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017" acceleration="-4">
+            <DOMFrame index="491" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017" acceleration="-4">
               <tweens>
                 <CustomEase target="all">
                   <Point/>
@@ -634,7 +667,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="485" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="495" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_death" symbolType="graphic" firstFrame="4" loop="loop">
                   <matrix>
@@ -646,7 +679,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="488" duration="6" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+            <DOMFrame index="498" duration="6" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
               <tweens>
                 <CustomEase target="all">
                   <Point/>
@@ -666,7 +699,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="494" duration="15" tweenType="motion" motionTweenRotate="clockwise" motionTweenRotateTimes="5" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+            <DOMFrame index="504" duration="15" tweenType="motion" motionTweenRotate="clockwise" motionTweenRotateTimes="5" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
               <tweens>
                 <CustomEase target="all">
                   <Point/>
@@ -686,7 +719,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="509" duration="2" keyMode="9728">
+            <DOMFrame index="519" duration="2" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_death" symbolType="graphic" firstFrame="23" loop="loop">
                   <matrix>
@@ -698,7 +731,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="511" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+            <DOMFrame index="521" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_death" symbolType="graphic" firstFrame="25" loop="loop">
                   <matrix>
@@ -710,7 +743,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="514" keyMode="9728">
+            <DOMFrame index="524" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_LaserSphere/LaserSphere_death" symbolType="graphic" firstFrame="28" loop="loop">
                   <matrix>
@@ -725,7 +758,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="515" keyMode="9728">
+            <DOMFrame index="525" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -752,7 +785,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="516" keyMode="9728">
+            <DOMFrame index="526" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -783,7 +816,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="517" keyMode="9728">
+            <DOMFrame index="527" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -820,7 +853,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="518" keyMode="9728">
+            <DOMFrame index="528" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -863,7 +896,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="519" keyMode="9728">
+            <DOMFrame index="529" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -918,7 +951,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="520" keyMode="9728">
+            <DOMFrame index="530" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -963,7 +996,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="521" keyMode="9728">
+            <DOMFrame index="531" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -978,8 +1011,8 @@
 !1005 -323[1014 -243 1023 -175!1023 -175[1056 -177 1090 -168!1090 -168[1100 -165 1110 -162!1110 -162[1115 -169 1121 -176!1121 -176[1166 -244 1166 -316!1166 -316[1153 -401 1154 -459!1154 -459[1156 -570 1229 -570!1229 -570[1284 -570 1295
  -446!1295 -446[1300 -384 1294 -321!1294 -321[1294 -203 1272 -58!1272 -58[1264 -3 1253 39!1253 39[1254 68 1246 98!1246 98[1223 186 1145 231!1145 231[1067 276 980 254!980 254[908 235 865 179!865 179|864 179!864 179[861 176 859 173!859
  173[858 171 857 169!857 169[852 161 847 153!847 153[802 75 824 -12!824 -12[830 -36 841 -56!841 -56[842 -97 849 -125!849 -125|848 -128!848 -128[848 -160 879 -200!879 -200[884 -296 884 -316!884 -316[884 -338 899 -600!899 -600[894 -628
- 889 -660!889 -660[840 -944 840 -1026!840 -1026[840 -1114 882 -1050!1022 -996[1008 -869 1020 -790!1020 -790|1020 -700!1020 -700[1023 -703 1026 -706!1026 -706|1026 -1037!1026 -1037[1024 -1018 1022 -996!1217 -165[1217 -149 1216 -134!1216
- -134[1218 -148 1219 -153!1219 -153|1217 -165!1224 -190|1226 -190!1226 -190[1229 -211 1226 -225!1226 -225|1224 -223!1224 -223|1224 -190"/>
+ 889 -660!889 -660[840 -944 840 -1026!840 -1026[840 -1114 882 -1050!1022 -996[1008 -869 1020 -790!1020 -790|1020 -700!1020 -700[1023 -703 1026 -706!1026 -706|1026 -1037!1026 -1037[1024 -1018 1022 -996!1216 -134[1218 -148 1219 -153!1219
+ -153|1217 -165!1217 -165[1217 -149 1216 -134!1226 -190[1229 -211 1226 -225!1226 -225|1224 -223!1224 -223|1224 -190!1224 -190|1226 -190"/>
                     <Edge cubics="!1145 231(;1093,261 1038,269 980,254q1145 231Q1067 276q980 254);"/>
                     <Edge cubics="!1253 39(;1253,60 1251,79 1246,98q1253 39 1246 98);"/>
                     <Edge cubics="!1246 98(;1231,157 1197,201 1145,231q1246 98Q1223 186q1145 231);"/>
@@ -1036,7 +1069,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="522" keyMode="9728">
+            <DOMFrame index="532" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1083,7 +1116,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="523" keyMode="9728">
+            <DOMFrame index="533" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1169,7 +1202,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="524" keyMode="9728">
+            <DOMFrame index="534" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1246,7 +1279,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="525" keyMode="9728">
+            <DOMFrame index="535" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1322,7 +1355,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="526" keyMode="9728">
+            <DOMFrame index="536" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1345,7 +1378,7 @@
  -90[876 -128 882 -154!882 -154[892 -243 886 -287!886 -287|886 -339!886 -339[887 -363 913 -430!913 -430[939 -500 939 -510!939 -510[939 -521 904 -599!904 -599[868 -677 868 -759!868 -759[868 -830 891 -877!891 -877[914 -926 987 -1000!987
  -1000[993 -997 1003 -996"/>
                     <Edge fillStyle0="1" edges="
-!824 94[824 90 824 88!824 88[823 88 822 89!822 89[822 91 823 94!823 94|824 94"/>
+!824 88[823 88 822 89!822 89[822 91 823 94!823 94|824 94!824 94[824 90 824 88"/>
                     <Edge cubics="!824 -12(;831,-41 843,-67 862,-90q824 -12Q836 -57q862 -90);"/>
                     <Edge cubics="!987 -1000(987,-1000;999,-995 1009,-1002 1009,-979q987 -1000Q993 -997q1003 -996Q1009 -993q1009 -979);"/>
                     <Edge cubics="!1009 -979(;1009,-941 912,-870 912,-757q1009 -979Q1009 -969q961 -896Q912 -823q912 -757);"/>
@@ -1409,7 +1442,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="527" keyMode="9728">
+            <DOMFrame index="537" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1419,15 +1452,15 @@
                   </fills>
                   <edges>
                     <Edge fillStyle1="1" edges="
-!956 -1128[961 -1042 967 -895!967 -895[972 -761 972 -741!972 -741[963 -631 963 -572!963 -572|884 -565!884 -565[853 -510 860 -427!860 -427[874 -338 875 -295!875 -295|876 -295!876 -295[877 -272 878 -259!878 -259[880 -236 886 -224!886 -224
-[895 -204 911 -188!911 -188[915 -184 918 -180!918 -180[938 -167 949 -160!949 -160[951 -160 954 -159!954 -159[1015 -184 1082 -170!1082 -170[1096 -202 1096 -228!1096 -228[1096 -241 1092 -261!1092 -261[1087 -283 1085 -294!1085 -294|1085
- -299!1085 -299[1084 -301 1083 -303!1083 -303[1047 -363 1047 -399!1047 -399[1047 -441 1075 -459!1075 -459[1110 -481 1126 -536!1126 -536[1126 -542 1140 -597!1140 -597[1153 -651 1153 -670!1153 -670[1153 -699 1117 -755!1117 -755[1131 -775
- 1152 -775!1152 -775[1154 -772 1152 -771!1152 -771[1148 -768 1148 -755!1148 -755[1175 -676 1175 -672!1175 -672[1175 -602 1122 -495!1122 -495[1069 -401 1069 -400!1069 -400[1069 -366 1107 -311!1107 -311[1142 -261 1153 -233!1153 -233[1157
- -228 1159 -221!1159 -221[1164 -203 1166 -199!1166 -199|1187 -157!1187 -157[1192 -143 1201 -115!1201 -115[1210 -90 1221 -73!1221 -73|1221 -70!1221 -70[1222 -69 1223 -67!1223 -67[1244 -31 1251 8!1251 8[1206 -12 1173 -30!1173 -30|1107 -36
-!1107 -36[1059 -76 902 -25!902 -25[854 -9 820 7!820 7[822 -3 824 -12!824 -12[825 -16 826 -20!826 -20[831 -43 844 -109!844 -109[864 -206 862 -239!862 -239|862 -251!862 -251[856 -291 850 -354!850 -354[844 -419 844 -440!844 -440[844 -500
- 847 -519!847 -519[854 -565 882 -592!882 -592[942 -597 948 -702!948 -702[951 -759 941 -861!941 -861[939 -931 943 -1128!943 -1128|956 -1128!1284 -1073[1325 -1132 1314 -1164!1314 -1164|1327 -1164!1327 -1164[1333 -1158 1333 -1156!1333 -1156
-[1334 -1153 1334 -1137!1334 -1137[1334 -1105 1309 -1076!1309 -1076[1280 -1044 1272 -991!1272 -991[1268 -964 1274 -915!1274 -915[1281 -858 1281 -856!1281 -856[1281 -757 1247 -655!1247 -655[1214 -557 1217 -409!1217 -409|1208 -404!1208 -404
-[1197 -422 1197 -475!1197 -475[1197 -553 1219 -632!1219 -632[1249 -737 1260 -819!1260 -819[1267 -882 1251 -991!1251 -991[1244 -1014 1284 -1073"/>
+!1284 -1073[1325 -1132 1314 -1164!1314 -1164|1327 -1164!1327 -1164[1333 -1158 1333 -1156!1333 -1156[1334 -1153 1334 -1137!1334 -1137[1334 -1105 1309 -1076!1309 -1076[1280 -1044 1272 -991!1272 -991[1268 -964 1274 -915!1274 -915[1281 -858
+ 1281 -856!1281 -856[1281 -757 1247 -655!1247 -655[1214 -557 1217 -409!1217 -409|1208 -404!1208 -404[1197 -422 1197 -475!1197 -475[1197 -553 1219 -632!1219 -632[1249 -737 1260 -819!1260 -819[1267 -882 1251 -991!1251 -991[1244 -1014 1284
+ -1073!956 -1128[961 -1042 967 -895!967 -895[972 -761 972 -741!972 -741[963 -631 963 -572!963 -572|884 -565!884 -565[853 -510 860 -427!860 -427[874 -338 875 -295!875 -295|876 -295!876 -295[877 -272 878 -259!878 -259[880 -236 886 -224
+!886 -224[895 -204 911 -188!911 -188[915 -184 918 -180!918 -180[938 -167 949 -160!949 -160[951 -160 954 -159!954 -159[1015 -184 1082 -170!1082 -170[1096 -202 1096 -228!1096 -228[1096 -241 1092 -261!1092 -261[1087 -283 1085 -294!1085 -294
+|1085 -299!1085 -299[1084 -301 1083 -303!1083 -303[1047 -363 1047 -399!1047 -399[1047 -441 1075 -459!1075 -459[1110 -481 1126 -536!1126 -536[1126 -542 1140 -597!1140 -597[1153 -651 1153 -670!1153 -670[1153 -699 1117 -755!1117 -755[1131
+ -775 1152 -775!1152 -775[1154 -772 1152 -771!1152 -771[1148 -768 1148 -755!1148 -755[1175 -676 1175 -672!1175 -672[1175 -602 1122 -495!1122 -495[1069 -401 1069 -400!1069 -400[1069 -366 1107 -311!1107 -311[1142 -261 1153 -233!1153 -233
+[1157 -228 1159 -221!1159 -221[1164 -203 1166 -199!1166 -199|1187 -157!1187 -157[1192 -143 1201 -115!1201 -115[1210 -90 1221 -73!1221 -73|1221 -70!1221 -70[1222 -69 1223 -67!1223 -67[1244 -31 1251 8!1251 8[1206 -12 1173 -30!1173 -30|1107
+ -36!1107 -36[1059 -76 902 -25!902 -25[854 -9 820 7!820 7[822 -3 824 -12!824 -12[825 -16 826 -20!826 -20[831 -43 844 -109!844 -109[864 -206 862 -239!862 -239|862 -251!862 -251[856 -291 850 -354!850 -354[844 -419 844 -440!844 -440[844
+ -500 847 -519!847 -519[854 -565 882 -592!882 -592[942 -597 948 -702!948 -702[951 -759 941 -861!941 -861[939 -931 943 -1128!943 -1128|956 -1128"/>
                     <Edge cubics="!1223 -67(;1238,-42 1247,-16 1251,8q1223 -67Q1244 -31q1251 8);"/>
                     <Edge cubics="!956 -1128(;963,-1002 972,-763 972,-741q956 -1128Q961 -1042q967 -895Q972 -761q972 -741);"/>
                     <Edge cubics="!972 -741(;972,-718 963,-631 963,-572q972 -741Q963 -631q963 -572);"/>
@@ -1489,7 +1522,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="528" keyMode="9728">
+            <DOMFrame index="538" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1528,7 +1561,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="529" keyMode="9728">
+            <DOMFrame index="539" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1538,8 +1571,8 @@
                   </fills>
                   <edges>
                     <Edge fillStyle1="1" edges="
-!1114 -1014[1114 -993 1184 -799!1184 -799|1178 -792!1178 -792[1156 -811 1123 -904!1123 -904[1093 -990 1093 -1011!1093 -1011[1093 -1071 1126 -1175!1126 -1175[1173 -1322 1246 -1315!1246 -1315[1212 -1283 1160 -1147!1160 -1147[1114 -1028
- 1114 -1014!990 -1286[977 -1306 977 -1346!977 -1346[977 -1380 979 -1401!979 -1401|994 -1401!994 -1401[999 -1328 1008 -1295!1008 -1295[1006 -1290 990 -1286!900 -773[898 -774 898 -788!898 -788[898 -790 915 -814!915 -814[934 -840 944 -847
+!1126 -1175[1173 -1322 1246 -1315!1246 -1315[1212 -1283 1160 -1147!1160 -1147[1114 -1028 1114 -1014!1114 -1014[1114 -993 1184 -799!1184 -799|1178 -792!1178 -792[1156 -811 1123 -904!1123 -904[1093 -990 1093 -1011!1093 -1011[1093 -1071
+ 1126 -1175!977 -1346[977 -1380 979 -1401!979 -1401|994 -1401!994 -1401[999 -1328 1008 -1295!1008 -1295[1006 -1290 990 -1286!990 -1286[977 -1306 977 -1346!900 -773[898 -774 898 -788!898 -788[898 -790 915 -814!915 -814[934 -840 944 -847
 !944 -847|964 -845!964 -845|964 -766!964 -766[943 -725 922 -585!922 -585[902 -455 902 -385!902 -385[902 -313 914 -288!914 -288[953 -211 1090 -230!1090 -230[1116 -224 1122 -207!1122 -207[1123 -202 1123 -177!1123 -177[1123 -133 1066 -77
 !1066 -77[1015 -25 937 17!937 17|933 11!933 11[958 -19 1046 -89!1046 -89[1102 -133 1102 -178!1102 -178[1102 -192 1097 -199!1097 -199[1096 -200 1084 -208!1084 -208[934 -193 893 -276!893 -276[880 -302 880 -386!880 -386[880 -524 911 -649
 !911 -649[942 -774 942 -787!942 -787|942 -797!942 -797[942 -804 940 -808!940 -808[935 -804 924 -792!924 -792[914 -782 902 -775!902 -775[901 -772 900 -773"/>
@@ -1573,7 +1606,7 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="530" keyMode="9728">
+            <DOMFrame index="540" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
@@ -1584,8 +1617,8 @@
                   <edges>
                     <Edge fillStyle1="1" edges="
 !1108 -1170[1090 -1049 1090 -1008!1090 -1008[1090 -951 1092 -938!1092 -938[1096 -912 1117 -865!1117 -865[1115 -859 1106 -854!1106 -854[1077 -900 1071 -935!1071 -935[1068 -949 1068 -1008!1068 -1008[1068 -1070 1086 -1179!1086 -1179[1104
- -1297 1106 -1348!1106 -1348|1119 -1348!1119 -1348[1124 -1344 1125 -1339!1125 -1339[1126 -1336 1126 -1319!1126 -1319[1126 -1291 1108 -1170!1079 -384[1106 -452 1146 -475!1146 -475[1152 -484 1152 -462!1152 -462[1152 -444 1118 -382!1118
- -382[1083 -318 1064 -307!1064 -307[1060 -295 1060 -318!1060 -318[1060 -337 1079 -384"/>
+ -1297 1106 -1348!1106 -1348|1119 -1348!1119 -1348[1124 -1344 1125 -1339!1125 -1339[1126 -1336 1126 -1319!1126 -1319[1126 -1291 1108 -1170!1146 -475[1152 -484 1152 -462!1152 -462[1152 -444 1118 -382!1118 -382[1083 -318 1064 -307!1064
+ -307[1060 -295 1060 -318!1060 -318[1060 -337 1079 -384!1079 -384[1106 -452 1146 -475"/>
                     <Edge cubics="!1119 -1348(;1126,-1342 1126,-1341 1126,-1319q1119 -1348Q1124 -1344q1125 -1339Q1126 -1336q1126 -1319)1126,-1319;"/>
                     <Edge cubics="!1126 -1319(;1126,-1259 1090,-1086 1090,-1008q1126 -1319Q1126 -1291q1108 -1170Q1090 -1049q1090 -1008);"/>
                     <Edge cubics="!1090 -1008(;1090,-944 1086,-934 1117,-865q1090 -1008Q1090 -951q1092 -938Q1096 -912q1117 -865);"/>
@@ -1601,10 +1634,10 @@
                 </DOMShape>
               </elements>
             </DOMFrame>
-            <DOMFrame index="531" duration="21" keyMode="9728">
+            <DOMFrame index="541" duration="21" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="552" duration="67" keyMode="9728">
+            <DOMFrame index="562" duration="67" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_init" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1616,7 +1649,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="619" duration="18" keyMode="9728">
+            <DOMFrame index="629" duration="18" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_gr" centerPoint3DX="1.15" centerPoint3DY="-5.45">
                   <matrix>
@@ -1628,7 +1661,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="637" duration="17" keyMode="9728">
+            <DOMFrame index="647" duration="17" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_charge" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1640,7 +1673,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="654" duration="26" keyMode="9728">
+            <DOMFrame index="664" duration="26" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_swing" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1652,7 +1685,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="680" duration="33" keyMode="9728">
+            <DOMFrame index="690" duration="33" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_opennEyes" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1664,7 +1697,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="713" duration="89" keyMode="9728">
+            <DOMFrame index="723" duration="89" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_shoot" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1676,7 +1709,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="802" duration="106" keyMode="9728">
+            <DOMFrame index="812" duration="106" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_death" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1688,7 +1721,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="908" duration="31" keyMode="9728">
+            <DOMFrame index="918" duration="31" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_init" symbolType="graphic" loop="play once">
                   <transformationPoint>
@@ -1697,7 +1730,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="939" duration="47" keyMode="9728">
+            <DOMFrame index="949" duration="47" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_open" symbolType="graphic" loop="play once">
                   <transformationPoint>
@@ -1706,7 +1739,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="986" duration="28" keyMode="9728">
+            <DOMFrame index="996" duration="28" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_remove" symbolType="graphic" loop="play once">
                   <transformationPoint>
@@ -1715,7 +1748,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="1014" duration="41" keyMode="9728">
+            <DOMFrame index="1024" duration="41" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_initRemove" symbolType="graphic" loop="play once">
                   <transformationPoint>
