@@ -55,9 +55,6 @@ package src.enemy {
             
             charge = false;
             setState(STATE_WALK);
-            
-            /*speed.Normalize();
-            speed.Multiply(SPEED);*/
         }
         
         private function walkUpdateAction():void {

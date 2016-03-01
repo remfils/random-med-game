@@ -30,6 +30,7 @@
         protected var enemy_mass:Number = 0.3;
         
         protected var isFlip:Boolean = true;
+        protected var is_state_ended:Boolean = false;
         
         public var cRoom:Room;
         var player:Player;
@@ -69,20 +70,21 @@
             }
         }
         
-        override public function readXMLParams(paramsXML:XML):void {
-            super.readXMLParams(paramsXML);
-            
-            setState();
-        }
-        
         protected function deathEndAction():void {
             destroy();
             
             submitAnswer();
         }
         
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            
+            setState();
+        }
+        
         protected function setState(state:String = "", is_animated:Boolean = false):void {
             current_state = state;
+            current_frame = 0;
             
             if ( is_animated ) costume.setAnimatedState(state);
             else costume.setState(state);
@@ -113,12 +115,18 @@
             
             if ( current_action.end_animation_frame != 0 ) {
                 if ( current_frame > current_action.end_animation_frame ) {
-                    if ( current_action.end_function ) {
-                        current_action.end_function();
-                    }
-                    
-                    decideWhatToDo();
+                    is_state_ended = true;
                 }
+            }
+            
+            if ( is_state_ended ) {
+                is_state_ended = false;
+                
+                if ( current_action.end_function ) {
+                    current_action.end_function();
+                }
+                
+                decideWhatToDo();
             }
         }
         
@@ -189,8 +197,12 @@
         }
         
         override public function destroy():void {
+            trace("enemy destroyed");
             cRoom.remove(this);
             cRoom.removeEnemy(this);
+            
+            costume.stop();
+            costume.visible = false;
             
             var d_m:DeleteManager = game.deleteManager;
             d_m.add(body);

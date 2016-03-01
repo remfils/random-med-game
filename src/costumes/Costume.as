@@ -43,7 +43,14 @@ package src.costumes {
         }
         
         public function readXMLParams(paramsXML:XML):void {
-            setType(paramsXML.name());
+            var costume_type:String = paramsXML.name();
+            
+            if ( paramsXML.hasOwnProperty("@type") ) {
+                setType(paramsXML.@type);
+            }
+            else {
+                setType(costume_type);
+            }
             
             x = paramsXML.@x;
             y = paramsXML.@y;

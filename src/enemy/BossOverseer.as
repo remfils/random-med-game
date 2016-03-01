@@ -45,7 +45,7 @@ public class BossOverseer extends Enemy {
         private const HEALTH_AT_FIRST_TEST:int = MAX_HEALTH - MAX_HEALTH / 4;
         private const HEALTH_AT_SECOND_TEST:int = MAX_HEALTH - 3 * MAX_HEALTH / 4;
         
-        private static const INIT_STATE:String = "_init";
+        private static const INIT_STATE:String = "";
         private static const SWING_STATE:String = "_charge";
         private static const STAND_STATE:String = "_stand";
         private static const HIT_ARM_STATE:String = "_armHit";
@@ -100,12 +100,10 @@ public class BossOverseer extends Enemy {
         private const SUBSTATE_LASER_SHOOT:int = 9;
         private const SUBSTATE_LASER_SHOT_WAIT:int = 10;
         
-        private var change_state:Boolean = false;
+        // private var is_state_ended:Boolean = false;
         private var _destination:b2Vec2 = new b2Vec2();
         
-        private var _attacks:Vector.<Attack>;
-        
-        private var _current_attack:Attack;
+        /*private var current_action:Attack;*/
         
         private var _move_joint:b2LineJoint;
         private var _joint_def:b2LineJointDef;
@@ -122,16 +120,20 @@ public class BossOverseer extends Enemy {
         public function BossOverseer() {
             super();
             
-            _attacks = new Vector.<Attack>(20);
-            _attacks[0] = null;
-            _attacks[INIT_STATE_ID] = new Attack(FRAME_INIT_END, initInitAttack, null, initEndAttack);
-            _attacks[STAND_STATE_ID] = new Attack(100, standInitAttack);
-            _attacks[MOVE_TO_LEFT_CORNER_ID] = new Attack(0, moveLeftCornerInitAttack, moveAnyUpdateAttack, moveAnyEndAttack);
-            _attacks[MOVE_TO_RIGHT_CORNER_ID] = new Attack(0, moveRightCornerInitAttack, moveAnyUpdateAttack, moveAnyEndAttack);
-            _attacks[HIT_ARM_STATE_ID] = new Attack(0, hitArmInitAttack, hitArmUpdateAttack);
-            _attacks[SPAWN_EYES_ID] = new Attack(0, spawnEyesInitAttack, spawnEyesUpdateAttack, spawnEyesEndAttack);
-            _attacks[DEATH_STATE_ID] = new Attack(0, initDeathAttack, updateDeathAttack);
-            _attacks[SHOOT_STATE_ID] = new Attack(FRAME_SHOOT_END, initShootAttack, updateShootAttack);
+            isFlip = false;
+            
+            for ( var i:int = 1; i < 20; i++ ) {
+                _actions[i] = null;
+            }
+            
+            _actions[ACTION_DEATH_ID].end_animation_frame = 99; //= new Attack(99, initDeathAttack, updateDeathAttack);
+            _actions[INIT_STATE_ID] = new Attack(FRAME_INIT_END, initInitAttack, null, initEndAttack);
+            _actions[STAND_STATE_ID] = new Attack(100, standInitAttack);
+            _actions[HIT_ARM_STATE_ID] = new Attack(0, hitArmInitAttack, hitArmUpdateAttack);
+            _actions[MOVE_TO_LEFT_CORNER_ID] = new Attack(0, moveLeftCornerInitAttack, moveAnyUpdateAttack, moveAnyEndAttack);
+            _actions[MOVE_TO_RIGHT_CORNER_ID] = new Attack(0, moveRightCornerInitAttack, moveAnyUpdateAttack, moveAnyEndAttack);
+            _actions[SPAWN_EYES_ID] = new Attack(0, spawnEyesInitAttack, spawnEyesUpdateAttack, spawnEyesEndAttack);
+            _actions[SHOOT_STATE_ID] = new Attack(FRAME_SHOOT_END, initShootAttack, updateShootAttack);
             
             this.health = MAX_HEALTH;
             this.costume_remove_delay = FRAME_DEATH_END / Game.FRAMES_PER_MILLISECOND;
@@ -154,7 +156,7 @@ public class BossOverseer extends Enemy {
         
         private function standInitAttack():void {
             setState(STAND_STATE);
-            _attacks[STAND_STATE_ID].end_animation_frame = 30;//100 + 400 * Math.random();
+            _actions[STAND_STATE_ID].end_animation_frame = 30;
         }
         
         private function moveLeftCornerInitAttack():void {
@@ -171,7 +173,7 @@ public class BossOverseer extends Enemy {
             moveWithTemporalForce();
             
             if ( hasArrivedToDestination() ) {
-                change_state = true;
+                is_state_ended = true;
             }
         }
         
@@ -266,7 +268,7 @@ public class BossOverseer extends Enemy {
             }
             else if ( _state == ATTACK_FINISH_STATE_ID ) {
                 if ( current_frame >= FRAME_ATTACK_DELLAY ) {
-                    change_state = true;
+                    is_state_ended = true;
                 }
             }
         }
@@ -309,6 +311,7 @@ public class BossOverseer extends Enemy {
                     break;
                 case WAIT_BEFORE_OPEN_EYES:
                     if ( current_frame > FRAME_OPEN_EYES_DELLAY ) {
+                        trace("open eyes!");
                         var closed_eye_index:int = Random.getOneFromThree() - 1;
                         var i:int = _wall_eyes.length;
                         
@@ -331,7 +334,7 @@ public class BossOverseer extends Enemy {
                     break;
                 case SUBSTATE_EYES_FIRE_END:
                     if ( current_frame > FRAME_EYES_CLOSED ) {
-                        change_state = true;
+                        is_state_ended = true;
                     }
                     break;
             }
@@ -343,8 +346,7 @@ public class BossOverseer extends Enemy {
             
             while ( _wall_eyes.length ) {
                 eye = _wall_eyes.pop();
-                
-                // eye.die();
+                eye.remove();
             }
         }
         
@@ -387,10 +389,16 @@ public class BossOverseer extends Enemy {
                     break;
                 case SUBSTATE_LASER_SHOOT:
                     if ( current_frame > FRAME_SHOOT_END ) {
-                        change_state = true;
+                        is_state_ended = true;
                         _player_position = null;
                     }
             }
+        }
+        
+        override protected function deathInitAction():void {
+            super.deathInitAction();
+            
+            game.deleteManager.add(_health_bar.costume);
         }
         
 // - поведение
@@ -409,10 +417,10 @@ public class BossOverseer extends Enemy {
         }
 
         override public function readXMLParams(paramsXML:XML):void {
-            super.readXMLParams(paramsXML);
-            
             costume.setType(CostumeEnemy.OVERSEER_TYPE);
             setState(INIT_STATE);
+            
+            super.readXMLParams(paramsXML);
         }
         
         override public function init():void {
@@ -430,15 +438,16 @@ public class BossOverseer extends Enemy {
             _health_bar.costume.y = 451.5;
             
             cRoom.addChild(_health_bar.costume);
+            current_action = _actions[INIT_STATE_ID];
         }
         
         private function dellayedInitTimerListener(e:TimerEvent):void {
             var timer:Timer = Timer(e.target);
             timer.removeEventListener(TimerEvent.TIMER_COMPLETE, dellayedInitTimerListener);
         
-            _current_attack = _attacks[INIT_STATE_ID];
+            current_action = _actions[INIT_STATE_ID];
             
-            _current_attack.init_function();
+            current_action.init_function();
             
             is_active = true;
         }
@@ -457,97 +466,50 @@ public class BossOverseer extends Enemy {
             _health_bar.redrawHealth(health);
         }
         
-        private function setAttack(attack_id):void {
-            _current_attack = _attacks[attack_id];
-        }
-        
-        override public function update():void {
-            if ( !is_active ) return;
-            
-            current_frame ++;
-            
-            if ( _current_attack.update_function ) {
-                _current_attack.update_function();
-            }
-            
-            if ( _current_attack.end_animation_frame != 0 ) {
-                if ( current_frame > _current_attack.end_animation_frame ) {
-                    change_state = true;
-                }
-            }
-            
-            if ( change_state ) {
-                change_state = false;
-                
-                if ( _current_attack.end_function ) {
-                    _current_attack.end_function();
-                }
-                
-                decideWhatToDo();
-            }
-            
-            super.update();
-        }
-        
         override protected function decideWhatToDo():void {
             var attack:Attack;
             var num:Number;
             
-            attack = _current_attack;
+            attack = current_action;
             
             switch ( _test_attack_counter ) {
                 case 0:
                     if ( health < HEALTH_AT_FIRST_TEST ) {
-                        attack = _attacks[SPAWN_EYES_ID];
+                        attack = _actions[SPAWN_EYES_ID];
                         _test_attack_counter++;
                     }
                     break;
                 case 1:
                     if ( health < HEALTH_AT_SECOND_TEST ) {
-                        attack = _attacks[SPAWN_EYES_ID];
+                        attack = _actions[SPAWN_EYES_ID];
                         _test_attack_counter++;
                     }
                     break;
             }
             
-            while ( attack == _current_attack ) {
+            while ( attack == current_action ) {
                 num = Math.random();
                 
                 if ( num < 0.1 ) { // stand
-                    attack = _attacks[STAND_STATE_ID];
+                    attack = _actions[STAND_STATE_ID];
                 }
                 else if ( num < 0.2 ) { // move right corner
-                    attack = _attacks[MOVE_TO_RIGHT_CORNER_ID];
+                    attack = _actions[MOVE_TO_RIGHT_CORNER_ID];
                 }
                 else if ( num < 0.7 ) { // hit arm
                     if ( player.y > y + costume.getCollider().height / 2 ) {
-                        attack = _attacks[HIT_ARM_STATE_ID];
+                        attack = _actions[HIT_ARM_STATE_ID];
                     }
                 }
                 else if ( num < 0.9 ) { // shoot laser
-                    attack = _attacks[SHOOT_STATE_ID];
+                    attack = _actions[SHOOT_STATE_ID];
                 }
                 else { // move left corner
-                    attack = _attacks[MOVE_TO_LEFT_CORNER_ID];
+                    attack = _actions[MOVE_TO_LEFT_CORNER_ID];
                 }
             }
             
-            _current_attack = attack;
-            
-            _current_attack.init_function();
-        }
-        
-        /*override public function die():void {
-            super.die();
-            
-            _current_attack = _attacks[DEATH_STATE_ID];
-            _current_attack.init_function();
-            
-            game.deleteManager.add(_health_bar.costume);
-        }*/
-        
-        override public function destroy():void {
-            game.deleteManager.add(body);
+            forceChangeAction(_actions.indexOf(attack));
         }
     }
 

@@ -239,7 +239,6 @@ package src.util {
                         enemy = new LaserSniper();
                         break;
                     case "Boss":
-                        continue;
                         var type:String = object.@type;
                         switch ( type ) {
                             case CostumeEnemy.OVERSEER_TYPE:

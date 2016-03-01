@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1455980518" lastUniqueIdentifier="50">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/EnemyCostume" itemID="5527ddce-0000024c" linkageExportForAS="true" linkageClassName="src.costumes.CostumeEnemy" lastModified="1456850695" lastUniqueIdentifier="50">
   <timeline>
-    <DOMTimeline name="EnemyCostume" currentFrame="68">
+    <DOMTimeline name="EnemyCostume" currentFrame="1073">
       <layers>
-        <DOMLayer name="labels" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="labels" color="#9933CC" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="14" name="Ghost" labelType="name" keyMode="9728">
               <elements/>
@@ -67,37 +67,40 @@
             <DOMFrame index="491" duration="71" name="LaserSphere_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="562" duration="67" name="Overseer_init" labelType="name" keyMode="9728">
+            <DOMFrame index="562" duration="31" name="WallEye_init" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="629" duration="18" name="Overseer_stand" labelType="name" keyMode="9728">
+            <DOMFrame index="593" duration="47" name="WallEye_open" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="647" duration="17" name="Overseer_charge" labelType="name" keyMode="9728">
+            <DOMFrame index="640" duration="28" name="WallEye_remove" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="664" duration="26" name="Overseer_armHit" labelType="name" keyMode="9728">
+            <DOMFrame index="668" duration="60" name="WallEye_removeInit" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="690" duration="33" name="Overseer_openEyes" labelType="name" keyMode="9728">
+            <DOMFrame index="728" duration="63" name="Boss" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="723" duration="89" name="Overseer_shoot" labelType="name" keyMode="9728">
+            <DOMFrame index="791" duration="67" name="Overseer" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="812" duration="106" name="Overseer_death" labelType="name" keyMode="9728">
+            <DOMFrame index="858" duration="18" name="Overseer_stand" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="918" duration="31" name="WallEye_init" labelType="name" keyMode="9728">
+            <DOMFrame index="876" duration="17" name="Overseer_charge" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="949" duration="47" name="WallEye_open" labelType="name" keyMode="9728">
+            <DOMFrame index="893" duration="26" name="Overseer_armHit" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="996" duration="28" name="WallEye_remove" labelType="name" keyMode="9728">
+            <DOMFrame index="919" duration="33" name="Overseer_openEyes" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="1024" duration="41" name="WallEye_removeInit" labelType="name" keyMode="9728">
+            <DOMFrame index="952" duration="89" name="Overseer_shoot" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1041" duration="152" name="Overseer_death" labelType="name" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -110,7 +113,13 @@
             <DOMFrame index="68" duration="305" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="373" duration="692" keyMode="9728">
+            <DOMFrame index="373" duration="189" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="562" duration="229" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="791" duration="402" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -162,7 +171,10 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="562" duration="503" keyMode="9728">
+            <DOMFrame index="562" duration="229" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="791" duration="402" keyMode="9728">
               <elements/>
             </DOMFrame>
           </frames>
@@ -337,43 +349,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="562" duration="104" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="27.8">
-                  <matrix>
-                    <Matrix a="2.489990234375" d="3.45623779296875"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="666" duration="2" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="52.3">
-                  <matrix>
-                    <Matrix a="4.44931030273438" d="0.679901123046875" ty="49.9"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="668" duration="250" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="28.5">
-                  <matrix>
-                    <Matrix a="2.489990234375" d="3.45623779296875" ty="0.7"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="918" duration="42" keyMode="9728">
+            <DOMFrame index="562" duration="42" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="20.6">
                   <matrix>
@@ -385,7 +361,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="960" duration="6" keyMode="9728">
+            <DOMFrame index="604" duration="6" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="56.85">
                   <matrix>
@@ -397,9 +373,9 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="966" duration="99" keyMode="9728">
+            <DOMFrame index="610" duration="118" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="20.6">
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" selected="true" centerPoint3DY="20.6">
                   <matrix>
                     <Matrix a="9.86471557617188" d="2.78965759277344" ty="-7.2"/>
                   </matrix>
@@ -409,9 +385,48 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
+            <DOMFrame index="728" duration="63" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="791" duration="104" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="27.8">
+                  <matrix>
+                    <Matrix a="2.489990234375" d="3.45623779296875"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="895" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="52.3">
+                  <matrix>
+                    <Matrix a="4.44931030273438" d="0.679901123046875" ty="49.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="897" duration="296" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="src/collider" name="costume_collider" centerPoint3DY="28.5">
+                  <matrix>
+                    <Matrix a="2.489990234375" d="3.45623779296875" ty="0.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 1" color="#4FFF4F">
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="14" keyMode="9728">
               <elements>
@@ -1011,8 +1026,8 @@
 !1005 -323[1014 -243 1023 -175!1023 -175[1056 -177 1090 -168!1090 -168[1100 -165 1110 -162!1110 -162[1115 -169 1121 -176!1121 -176[1166 -244 1166 -316!1166 -316[1153 -401 1154 -459!1154 -459[1156 -570 1229 -570!1229 -570[1284 -570 1295
  -446!1295 -446[1300 -384 1294 -321!1294 -321[1294 -203 1272 -58!1272 -58[1264 -3 1253 39!1253 39[1254 68 1246 98!1246 98[1223 186 1145 231!1145 231[1067 276 980 254!980 254[908 235 865 179!865 179|864 179!864 179[861 176 859 173!859
  173[858 171 857 169!857 169[852 161 847 153!847 153[802 75 824 -12!824 -12[830 -36 841 -56!841 -56[842 -97 849 -125!849 -125|848 -128!848 -128[848 -160 879 -200!879 -200[884 -296 884 -316!884 -316[884 -338 899 -600!899 -600[894 -628
- 889 -660!889 -660[840 -944 840 -1026!840 -1026[840 -1114 882 -1050!1022 -996[1008 -869 1020 -790!1020 -790|1020 -700!1020 -700[1023 -703 1026 -706!1026 -706|1026 -1037!1026 -1037[1024 -1018 1022 -996!1216 -134[1218 -148 1219 -153!1219
- -153|1217 -165!1217 -165[1217 -149 1216 -134!1226 -190[1229 -211 1226 -225!1226 -225|1224 -223!1224 -223|1224 -190!1224 -190|1226 -190"/>
+ 889 -660!889 -660[840 -944 840 -1026!840 -1026[840 -1114 882 -1050!1022 -996[1008 -869 1020 -790!1020 -790|1020 -700!1020 -700[1023 -703 1026 -706!1026 -706|1026 -1037!1026 -1037[1024 -1018 1022 -996!1217 -165[1217 -149 1216 -134!1216
+ -134[1218 -148 1219 -153!1219 -153|1217 -165!1224 -223|1224 -190!1224 -190|1226 -190!1226 -190[1229 -211 1226 -225!1226 -225|1224 -223"/>
                     <Edge cubics="!1145 231(;1093,261 1038,269 980,254q1145 231Q1067 276q980 254);"/>
                     <Edge cubics="!1253 39(;1253,60 1251,79 1246,98q1253 39 1246 98);"/>
                     <Edge cubics="!1246 98(;1231,157 1197,201 1145,231q1246 98Q1223 186q1145 231);"/>
@@ -1378,7 +1393,7 @@
  -90[876 -128 882 -154!882 -154[892 -243 886 -287!886 -287|886 -339!886 -339[887 -363 913 -430!913 -430[939 -500 939 -510!939 -510[939 -521 904 -599!904 -599[868 -677 868 -759!868 -759[868 -830 891 -877!891 -877[914 -926 987 -1000!987
  -1000[993 -997 1003 -996"/>
                     <Edge fillStyle0="1" edges="
-!824 88[823 88 822 89!822 89[822 91 823 94!823 94|824 94!824 94[824 90 824 88"/>
+!823 94|824 94!824 94[824 90 824 88!824 88[823 88 822 89!822 89[822 91 823 94"/>
                     <Edge cubics="!824 -12(;831,-41 843,-67 862,-90q824 -12Q836 -57q862 -90);"/>
                     <Edge cubics="!987 -1000(987,-1000;999,-995 1009,-1002 1009,-979q987 -1000Q993 -997q1003 -996Q1009 -993q1009 -979);"/>
                     <Edge cubics="!1009 -979(;1009,-941 912,-870 912,-757q1009 -979Q1009 -969q961 -896Q912 -823q912 -757);"/>
@@ -1572,7 +1587,7 @@
                   <edges>
                     <Edge fillStyle1="1" edges="
 !1126 -1175[1173 -1322 1246 -1315!1246 -1315[1212 -1283 1160 -1147!1160 -1147[1114 -1028 1114 -1014!1114 -1014[1114 -993 1184 -799!1184 -799|1178 -792!1178 -792[1156 -811 1123 -904!1123 -904[1093 -990 1093 -1011!1093 -1011[1093 -1071
- 1126 -1175!977 -1346[977 -1380 979 -1401!979 -1401|994 -1401!994 -1401[999 -1328 1008 -1295!1008 -1295[1006 -1290 990 -1286!990 -1286[977 -1306 977 -1346!900 -773[898 -774 898 -788!898 -788[898 -790 915 -814!915 -814[934 -840 944 -847
+ 1126 -1175!994 -1401[999 -1328 1008 -1295!1008 -1295[1006 -1290 990 -1286!990 -1286[977 -1306 977 -1346!977 -1346[977 -1380 979 -1401!979 -1401|994 -1401!900 -773[898 -774 898 -788!898 -788[898 -790 915 -814!915 -814[934 -840 944 -847
 !944 -847|964 -845!964 -845|964 -766!964 -766[943 -725 922 -585!922 -585[902 -455 902 -385!902 -385[902 -313 914 -288!914 -288[953 -211 1090 -230!1090 -230[1116 -224 1122 -207!1122 -207[1123 -202 1123 -177!1123 -177[1123 -133 1066 -77
 !1066 -77[1015 -25 937 17!937 17|933 11!933 11[958 -19 1046 -89!1046 -89[1102 -133 1102 -178!1102 -178[1102 -192 1097 -199!1097 -199[1096 -200 1084 -208!1084 -208[934 -193 893 -276!893 -276[880 -302 880 -386!880 -386[880 -524 911 -649
 !911 -649[942 -774 942 -787!942 -787|942 -797!942 -797[942 -804 940 -808!940 -808[935 -804 924 -792!924 -792[914 -782 902 -775!902 -775[901 -772 900 -773"/>
@@ -1617,8 +1632,8 @@
                   <edges>
                     <Edge fillStyle1="1" edges="
 !1108 -1170[1090 -1049 1090 -1008!1090 -1008[1090 -951 1092 -938!1092 -938[1096 -912 1117 -865!1117 -865[1115 -859 1106 -854!1106 -854[1077 -900 1071 -935!1071 -935[1068 -949 1068 -1008!1068 -1008[1068 -1070 1086 -1179!1086 -1179[1104
- -1297 1106 -1348!1106 -1348|1119 -1348!1119 -1348[1124 -1344 1125 -1339!1125 -1339[1126 -1336 1126 -1319!1126 -1319[1126 -1291 1108 -1170!1146 -475[1152 -484 1152 -462!1152 -462[1152 -444 1118 -382!1118 -382[1083 -318 1064 -307!1064
- -307[1060 -295 1060 -318!1060 -318[1060 -337 1079 -384!1079 -384[1106 -452 1146 -475"/>
+ -1297 1106 -1348!1106 -1348|1119 -1348!1119 -1348[1124 -1344 1125 -1339!1125 -1339[1126 -1336 1126 -1319!1126 -1319[1126 -1291 1108 -1170!1118 -382[1083 -318 1064 -307!1064 -307[1060 -295 1060 -318!1060 -318[1060 -337 1079 -384!1079
+ -384[1106 -452 1146 -475!1146 -475[1152 -484 1152 -462!1152 -462[1152 -444 1118 -382"/>
                     <Edge cubics="!1119 -1348(;1126,-1342 1126,-1341 1126,-1319q1119 -1348Q1124 -1344q1125 -1339Q1126 -1336q1126 -1319)1126,-1319;"/>
                     <Edge cubics="!1126 -1319(;1126,-1259 1090,-1086 1090,-1008q1126 -1319Q1126 -1291q1108 -1170Q1090 -1049q1090 -1008);"/>
                     <Edge cubics="!1090 -1008(;1090,-944 1086,-934 1117,-865q1090 -1008Q1090 -951q1092 -938Q1096 -912q1117 -865);"/>
@@ -1637,7 +1652,46 @@
             <DOMFrame index="541" duration="21" keyMode="9728">
               <elements/>
             </DOMFrame>
-            <DOMFrame index="562" duration="67" keyMode="9728">
+            <DOMFrame index="562" duration="31" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_init" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="593" duration="47" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_open" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="640" duration="28" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_remove" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="668" duration="60" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_initRemove" selected="true" symbolType="graphic" loop="play once">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="728" duration="63" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="791" duration="67" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_init" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1649,7 +1703,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="629" duration="18" keyMode="9728">
+            <DOMFrame index="858" duration="18" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_gr" centerPoint3DX="1.15" centerPoint3DY="-5.45">
                   <matrix>
@@ -1661,7 +1715,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="647" duration="17" keyMode="9728">
+            <DOMFrame index="876" duration="17" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_charge" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1673,7 +1727,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="664" duration="26" keyMode="9728">
+            <DOMFrame index="893" duration="26" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_swing" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1685,7 +1739,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="690" duration="33" keyMode="9728">
+            <DOMFrame index="919" duration="33" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_opennEyes" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1697,7 +1751,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="723" duration="89" keyMode="9728">
+            <DOMFrame index="952" duration="89" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_shoot" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1709,7 +1763,7 @@
                 </DOMSymbolInstance>
               </elements>
             </DOMFrame>
-            <DOMFrame index="812" duration="106" keyMode="9728">
+            <DOMFrame index="1041" duration="152" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_bosses/overseer/overseer_death" symbolType="graphic" loop="play once">
                   <matrix>
@@ -1717,42 +1771,6 @@
                   </matrix>
                   <transformationPoint>
                     <Point x="2.4" y="1.65"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="918" duration="31" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_init" symbolType="graphic" loop="play once">
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="949" duration="47" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_open" symbolType="graphic" loop="play once">
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="996" duration="28" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_remove" symbolType="graphic" loop="play once">
-                  <transformationPoint>
-                    <Point/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="1024" duration="41" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="_enemies/_WallEye/WallEye_initRemove" symbolType="graphic" loop="play once">
-                  <transformationPoint>
-                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

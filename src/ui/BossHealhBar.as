@@ -42,7 +42,6 @@ package src.ui {
             
             g.endFill();
         }
-        
     }
 
 }
