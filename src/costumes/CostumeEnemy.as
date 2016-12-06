@@ -11,6 +11,7 @@ package src.costumes {
         public static const ENEMY_LASER_SMALL:String = "EnemyLaserSmall";
         
         public static const LASER_SPHERE:String = "LaserSphere";
+        public static const JUMP_SPIDER:String = "JumpSpider";
         
         public static const OVERSEER_TYPE:String = "Overseer";
         
