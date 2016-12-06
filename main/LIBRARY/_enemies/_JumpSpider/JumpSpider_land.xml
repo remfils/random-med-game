@@ -1,0 +1,905 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_JumpSpider/JumpSpider_land" itemID="56e1aa17-00000846" symbolType="graphic" lastModified="1457629966" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="JumpSpider_land" currentFrame="30">
+      <layers>
+        <DOMLayer name="hd" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="hd" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.08671569824219" d="1.08671569824219" tx="-2.45" ty="5.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="hd" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.08671569824219" d="1.08671569824219" tx="0.85" ty="22.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="hd" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2.45" ty="-4.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="fang right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.9873046875" b="0.454071044921875" c="-0.454071044921875" d="0.9873046875" tx="-19" ty="22.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.95" y="-3.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.9873046875" b="0.454071044921875" c="-0.454071044921875" d="0.9873046875" tx="-15.7" ty="39"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.95" y="-3.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-14.05" ty="10.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.85" y="-3.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="fang left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.987503051757813" b="0.453598022460938" c="0.453598022460938" d="0.987503051757813" tx="17" ty="20.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="-4.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.987503051757813" b="0.453598022460938" c="0.453598022460938" d="0.987503051757813" tx="20.3" ty="37.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.5" y="-4.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-1" tx="12.1" ty="9.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.55" y="-4.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="body" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="body" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.08671569824219" d="1.08671569824219" tx="-3.7" ty="-69.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="66.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="body" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.08671569824219" d="1.08671569824219" tx="-3.5" ty="-60.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="66.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="body" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.6" ty="-68.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="66.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="legs" color="#FF0000" autoNamed="false" layerType="folder"/>
+        <DOMLayer name="l1 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.467636108398438" b="1.15208435058594" c="1.15208435058594" d="0.467636108398438" tx="43" ty="-18.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.75" y="-6.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.467636108398438" b="1.15208435058594" c="1.15208435058594" d="0.467636108398438" tx="44.55" ty="-20.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.75" y="-6.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.769485473632813" b="0.638641357421875" c="0.638641357421875" d="0.769485473632813" tx="32.25" ty="-16.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.8" y="-6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k1 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.467636108398438" b="1.15208435058594" c="1.15208435058594" d="0.467636108398438" tx="79.7" ty="-8.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-19.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.267074584960938" b="1.21435546875" c="1.21435546875" d="0.267074584960938" tx="82.45" ty="-15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-19.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.769485473632813" b="0.638641357421875" c="0.638641357421875" d="0.769485473632813" tx="56.65" ty="1.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-19.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k2 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.288925170898438" b="1.00552368164063" c="1.00552368164063" d="0.288925170898438" tx="52.4" ty="-34.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.75" y="-7.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.288925170898438" b="1.00552368164063" c="1.00552368164063" d="0.288925170898438" tx="55.95" ty="-51.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.75" y="-7.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.549911499023438" b="0.452880859375" c="0.452880859375" d="0.549911499023438" tx="44.05" ty="-28"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.75" y="-7.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l2 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.288925170898438" b="1.00552368164063" c="1.00552368164063" d="0.288925170898438" tx="84.5" ty="-32.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.65" y="-17.35"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.053375244140625" b="1.04484558105469" c="1.04484558105469" d="-0.053375244140625" tx="88.1" ty="-55.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.65" y="-17.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.549911499023438" b="0.452880859375" c="0.452880859375" d="0.549911499023438" tx="61.4" ty="-14.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.7" y="-17.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k3 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.34771728515625" b="0.5655517578125" c="0.5655517578125" d="0.34771728515625" tx="52.4" ty="-51.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.8" y="-4.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.410598754882813" b="0.667831420898438" c="0.667831420898438" d="0.410598754882813" tx="56.3" ty="-76.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.8" y="-4.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.315750122070313" b="0.442230224609375" c="0.442230224609375" d="0.315750122070313" tx="44.3" ty="-37.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.65" y="-4.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l3 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.0246429443359375" b="0.663436889648438" c="0.663436889648438" d="0.0246429443359375" tx="71.85" ty="-52.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.9" y="-20.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.110427856445313" b="0.776138305664063" c="0.776138305664063" d="-0.110427856445313" tx="79.05" ty="-80.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.8" y="-20.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.315750122070313" b="0.442230224609375" c="0.442230224609375" d="0.315750122070313" tx="59.8" ty="-31.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.8" y="-20"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k1 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.770584106445313" b="1.06816101074219" c="-1.06816101074219" d="0.770584106445313" tx="-43.3" ty="-18.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5.4" y="-2.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.21711730957031" b="0.503372192382813" c="-0.503372192382813" d="1.21711730957031" tx="-46.7" ty="-12.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5.4" y="-2.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.84857177734375" b="0.529067993164063" c="-0.529067993164063" d="0.84857177734375" tx="-35.95" ty="-16.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5.45" y="-2.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l1 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.469100952148438" b="1.230712890625" c="-1.230712890625" d="0.469100952148438" tx="-82.1" ty="-6.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.75" y="-19.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.5645751953125" b="1.18991088867188" c="-1.18991088867188" d="0.5645751953125" tx="-84.8" ty="2.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.75" y="-19.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.84857177734375" b="0.529067993164063" c="-0.529067993164063" d="0.84857177734375" tx="-57.6" ty="5.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.7" y="-19.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k2 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.291656494140625" b="1.04681396484375" c="-1.04681396484375" d="0.291656494140625" tx="-57" ty="-33.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.2" y="-3.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.291656494140625" b="1.04681396484375" c="-1.04681396484375" d="0.291656494140625" tx="-59.1" ty="-45.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.2" y="-3.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.8017578125" b="0.597640991210938" c="-0.597640991210938" d="0.8017578125" tx="-38.25" ty="-31.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.15" y="-3.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l2 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.319351196289063" b="1.0386962890625" c="-1.0386962890625" d="0.319351196289063" tx="-89.3" ty="-28.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.6" y="-20.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.319351196289063" b="1.0386962890625" c="-1.0386962890625" d="0.319351196289063" tx="-91.4" ty="-40.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.6" y="-20.5"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.8017578125" b="0.597640991210938" c="-0.597640991210938" d="0.8017578125" tx="-61.65" ty="-11.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.6" y="-20.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k3 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.610122680664063" b="0.610122680664063" c="-0.610122680664063" d="0.610122680664063" tx="-52.45" ty="-51.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.537429809570313" b="0.675033569335938" c="-0.675033569335938" d="0.537429809570313" tx="-61.75" ty="-74.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.499359130859375" b="0.499359130859375" c="-0.499359130859375" d="0.499359130859375" tx="-40.9" ty="-37.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l3 right" color="#FF0000" parentLayerIndex="4" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.15" y="0.7877"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.015228271484375" b="0.862716674804688" c="-0.862716674804688" d="0.015228271484375" tx="-77.9" ty="-52.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.9" y="-21"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" tweenType="motion" motionTweenSnap="true" hasCustomEase="true" keyMode="22017">
+              <tweens>
+                <CustomEase target="all">
+                  <Point/>
+                  <Point x="0.9187"/>
+                  <Point x="0.6667" y="0.6667"/>
+                  <Point x="1" y="1"/>
+                </CustomEase>
+              </tweens>
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.0821380615234375" b="0.858932495117188" c="-0.858932495117188" d="-0.0821380615234375" tx="-86.95" ty="-78.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.9" y="-21"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.182785034179688" b="0.682144165039063" c="-0.682144165039063" d="0.182785034179688" tx="-55.7" ty="-36.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.85" y="-21"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

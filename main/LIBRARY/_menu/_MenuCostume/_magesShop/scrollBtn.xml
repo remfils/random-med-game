@@ -17,11 +17,11 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!0 0|29 32"/>
-                    <Edge fillStyle0="1" edges="!29 32|746 32!746 32|746 870"/>
+                    <Edge fillStyle1="2" edges="!29 32|29 870!29 870|746 870"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!746 870|775 902"/>
-                    <Edge fillStyle0="1" edges="!775 902|775 0!775 0|0 0"/>
                     <Edge fillStyle1="2" edges="!775 902|0 902!0 902|0 0"/>
-                    <Edge fillStyle0="2" edges="!746 870|29 870!29 870|29 32"/>
+                    <Edge fillStyle1="1" edges="!0 0|775 0!775 0|775 902"/>
+                    <Edge fillStyle0="1" edges="!29 32|746 32!746 32|746 870"/>
                     <Edge cubics="!0 0(;0,0 29,32 29,32q0 0 29 32);"/>
                     <Edge cubics="!746 870(;746,870 775,902 775,902q746 870 775 902);"/>
                     <Edge cubics="!746 870(;746,870 29,870 29,870q746 870 29 870);"/>
@@ -59,11 +59,11 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!0 0|29 32"/>
-                    <Edge fillStyle0="1" edges="!29 32|746 32!746 32|746 870"/>
+                    <Edge fillStyle1="2" edges="!29 32|29 870!29 870|746 870"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!746 870|775 902"/>
-                    <Edge fillStyle0="1" edges="!775 902|775 0!775 0|0 0"/>
-                    <Edge fillStyle0="2" edges="!746 870|29 870!29 870|29 32"/>
                     <Edge fillStyle1="2" edges="!775 902|0 902!0 902|0 0"/>
+                    <Edge fillStyle1="1" edges="!0 0|775 0!775 0|775 902"/>
+                    <Edge fillStyle0="1" edges="!29 32|746 32!746 32|746 870"/>
                     <Edge cubics="!0 0(;0,0 29,32 29,32q0 0 29 32);"/>
                     <Edge cubics="!746 870(;746,870 775,902 775,902q746 870 775 902);"/>
                     <Edge cubics="!746 870(;746,870 29,870 29,870q746 870 29 870);"/>
@@ -101,11 +101,11 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!0 0|29 32"/>
-                    <Edge fillStyle0="1" edges="!29 32|746 32!746 32|746 870"/>
+                    <Edge fillStyle1="2" edges="!29 32|29 870!29 870|746 870"/>
                     <Edge fillStyle0="1" fillStyle1="2" edges="!746 870|775 902"/>
-                    <Edge fillStyle0="1" edges="!775 902|775 0!775 0|0 0"/>
                     <Edge fillStyle1="2" edges="!775 902|0 902!0 902|0 0"/>
-                    <Edge fillStyle0="2" edges="!746 870|29 870!29 870|29 32"/>
+                    <Edge fillStyle1="1" edges="!0 0|775 0!775 0|775 902"/>
+                    <Edge fillStyle0="1" edges="!29 32|746 32!746 32|746 870"/>
                     <Edge cubics="!0 0(;0,0 29,32 29,32q0 0 29 32);"/>
                     <Edge cubics="!746 870(;746,870 775,902 775,902q746 870 775 902);"/>
                     <Edge cubics="!746 870(;746,870 29,870 29,870q746 870 29 870);"/>
@@ -140,10 +140,10 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="2" edges="!576 651|710 517!710 517|385 192!385 192|385 193!385 193|384 192!384 192|59 517"/>
-                    <Edge fillStyle0="2" fillStyle1="1" edges="!59 517|99 517"/>
-                    <Edge fillStyle0="2" fillStyle1="3" edges="!99 517|385 231!385 231|671 517!671 517|576 612!576 612|576 613"/>
-                    <Edge fillStyle0="2" fillStyle1="1" edges="!576 613|576 651"/>
-                    <Edge fillStyle1="1" edges="!576 651|385 460!385 460[310 535 235 610!235 610|193 651!193 651|59 517"/>
+                    <Edge fillStyle0="1" edges="!59 517|193 651!193 651|235 610!235 610[310 535 385 460!385 460|576 651"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!576 651|576 613"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="!576 613|576 612!576 612|671 517!671 517|385 231!385 231|99 517"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!99 517|59 517"/>
                     <Edge fillStyle0="3" fillStyle1="1" edges="!99 517|194 612!194 612|384 421!384 421|576 613"/>
                     <Edge cubics="!385 192(385,192;385,192 385,193 385,193q385 192 385 193);"/>
                     <Edge cubics="!384 192(;384,192 385,193 385,193q384 192 385 193);"/>
@@ -201,11 +201,11 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="2" edges="!576 651|710 517!710 517|385 192!385 192|385 193!385 193|384 192!384 192|59 517"/>
-                    <Edge fillStyle0="2" fillStyle1="3" edges="!59 517|99 517"/>
-                    <Edge fillStyle0="2" fillStyle1="1" edges="!99 517|385 231!385 231|671 517!671 517|576 612!576 612|576 613"/>
-                    <Edge fillStyle0="2" fillStyle1="3" edges="!576 613|576 651"/>
+                    <Edge fillStyle0="3" edges="!59 517|193 651!193 651|235 610!235 610[310 535 385 460!385 460|576 651"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="!576 651|576 613"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!576 613|576 612!576 612|671 517!671 517|385 231!385 231|99 517"/>
+                    <Edge fillStyle0="3" fillStyle1="2" edges="!99 517|59 517"/>
                     <Edge fillStyle0="1" fillStyle1="3" edges="!99 517|194 612!194 612|384 421!384 421|576 613"/>
-                    <Edge fillStyle1="3" edges="!576 651|385 460!385 460[310 535 235 610!235 610|193 651!193 651|59 517"/>
                     <Edge cubics="!385 192(385,192;385,192 385,193 385,193q385 192 385 193);"/>
                     <Edge cubics="!384 192(;384,192 385,193 385,193q384 192 385 193);"/>
                     <Edge cubics="!576 651(;576,651 710,517 710,517q576 651 710 517);"/>
@@ -262,10 +262,10 @@
                   </fills>
                   <edges>
                     <Edge fillStyle0="1" edges="!576 651|710 517!710 517|385 192!385 192|385 193!385 193|384 192!384 192|59 517"/>
-                    <Edge fillStyle0="1" fillStyle1="3" edges="!59 517|99 517"/>
-                    <Edge fillStyle0="1" fillStyle1="2" edges="!99 517|385 231!385 231|671 517!671 517|576 612!576 612|576 613"/>
-                    <Edge fillStyle0="1" fillStyle1="3" edges="!576 613|576 651"/>
-                    <Edge fillStyle1="3" edges="!576 651|385 460!385 460[310 535 235 610!235 610|193 651!193 651|59 517"/>
+                    <Edge fillStyle0="3" edges="!59 517|193 651!193 651|235 610!235 610[310 535 385 460!385 460|576 651"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="!576 651|576 613"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!576 613|576 612!576 612|671 517!671 517|385 231!385 231|99 517"/>
+                    <Edge fillStyle0="3" fillStyle1="1" edges="!99 517|59 517"/>
                     <Edge fillStyle0="2" fillStyle1="3" edges="!99 517|194 612!194 612|384 421!384 421|576 613"/>
                     <Edge cubics="!385 192(385,192;385,192 385,193 385,193q385 192 385 193);"/>
                     <Edge cubics="!384 192(;384,192 385,193 385,193q384 192 385 193);"/>

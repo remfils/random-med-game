@@ -1,0 +1,265 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_enemies/_JumpSpider/JumpSpider" itemID="56d8622c-00000267" symbolType="graphic" lastModified="1457630587" lastUniqueIdentifier="1">
+  <timeline>
+    <DOMTimeline name="JumpSpider">
+      <layers>
+        <DOMLayer name="hd" color="#FF4FFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="hd" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-2.45" ty="-4.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="fang right" color="#FF0000" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-14.05" ty="10.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.85" y="-3.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="fang left" color="#0000FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="fang" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-1" tx="12.1" ty="9.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.55" y="-4.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="body" color="#FF800A" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="body" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-3.6" ty="-68.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="-0.05" y="66.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="legs" color="#FF0000" autoNamed="false" layerType="folder"/>
+        <DOMLayer name="l1 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.769485473632813" b="0.638641357421875" c="0.638641357421875" d="0.769485473632813" tx="32.25" ty="-16.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.8" y="-6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k1 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.769485473632813" b="0.638641357421875" c="0.638641357421875" d="0.769485473632813" tx="56.65" ty="1.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-19.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k2 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.549911499023438" b="0.452880859375" c="0.452880859375" d="0.549911499023438" tx="44.05" ty="-28"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.75" y="-7.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l2 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.549911499023438" b="0.452880859375" c="0.452880859375" d="0.549911499023438" tx="61.4" ty="-14.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.7" y="-17.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k3 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.315750122070313" b="0.442230224609375" c="0.442230224609375" d="0.315750122070313" tx="44.3" ty="-37.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.65" y="-4.7"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l3 left" color="#0000FF" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="-0.315750122070313" b="0.442230224609375" c="0.442230224609375" d="0.315750122070313" tx="59.8" ty="-31.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.8" y="-20"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k1 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.84857177734375" b="0.529067993164063" c="-0.529067993164063" d="0.84857177734375" tx="-35.95" ty="-16.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5.45" y="-2.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l1 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.84857177734375" b="0.529067993164063" c="-0.529067993164063" d="0.84857177734375" tx="-57.6" ty="5.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.7" y="-19.45"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k2 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.8017578125" b="0.597640991210938" c="-0.597640991210938" d="0.8017578125" tx="-38.25" ty="-31.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.15" y="-3.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l2 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.8017578125" b="0.597640991210938" c="-0.597640991210938" d="0.8017578125" tx="-61.65" ty="-11.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="1.6" y="-20.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="k3 right" color="#FF0000" parentLayerIndex="4" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="knee" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.499359130859375" b="0.499359130859375" c="-0.499359130859375" d="0.499359130859375" tx="-40.9" ty="-37.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="l3 right" color="#FF0000" parentLayerIndex="4" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="15872">
+              <elements>
+                <DOMSymbolInstance libraryItemName="leg" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.182785034179688" b="0.682144165039063" c="-0.682144165039063" d="0.182785034179688" tx="-55.7" ty="-36.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="0.85" y="-21"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
