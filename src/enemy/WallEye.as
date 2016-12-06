@@ -1,4 +1,5 @@
 package src.enemy {
+    import flash.automation.ActionGenerator;
     import flash.display.DisplayObject;
     import src.costumes.CostumeEnemy;
     import src.interfaces.Init;
@@ -17,22 +18,63 @@ package src.enemy {
         private static const FRAME_OPEN_END:int = 34;
         private static const FRAME_REMOVE_END:int = 17;
         
+        private static const ACTION_INIT_ID:int = 1;
+        private static const ACTION_OPEN_ID:int = 2;
+        
         protected var collider:DisplayObject;
         
         public function WallEye() {
             super();
             
+            health = 10000;
+            isFlip = false;
+            
             costume.setType(CostumeEnemy.WALL_EYE);
             
-            setState(INIT_STATE, true);
+            _actions[ACTION_DEATH_ID].end_animation_frame = FRAME_REMOVE_END;
+            _actions[ACTION_INIT_ID] = new Attack(FRAME_INIT_END, initInitAction, null, initEndAction);
+            _actions[ACTION_OPEN_ID] = new Attack(FRAME_OPEN_END, openInitAction, openUpdateAction);
             
             collider = costume.getCollider();
             
-            health = 10000;
+            forceChangeAction(ACTION_INIT_ID);
         }
         
-        override public function update():void {
-            currentFrame ++;
+        private function initInitAction():void {
+            setState(INIT_STATE, true);
+        }
+        
+        private function initEndAction():void {
+            costume.stop();
+        }
+        
+        private function openInitAction():void {
+            setState(OPEN_STATE, true);
+        }
+        
+        private function openUpdateAction():void {
+            if (current_frame > FRAME_OPEN_HITFRAME_START ) {
+                if ( collider.hitTestObject(player.collider) ) {
+                    game.hitPlayer(1);
+                }
+            }
+        }
+        
+        override protected function deathInitAction():void {
+            switch ( current_state ) {
+                case INIT_STATE:
+                    setState(REMOVE_INIT_STATE, true);
+                    break;
+                case OPEN_STATE:
+                    setState(REMOVE_STATE, true);
+                    break;
+            }
+            
+            // cRoom.removeEnemy(this);
+        }
+        
+        /*override public function update():void {
+            current_frame ++;
             
             switch ( current_state ) {
                 case INIT_STATE:
@@ -56,23 +98,14 @@ package src.enemy {
                         destroy();
                     }
             }
-        }
+        }*/
         
         public function open():void {
-            setState(OPEN_STATE, true);
+            forceChangeAction(ACTION_OPEN_ID);
         }
         
-        override public function die():void {
-            switch ( current_state ) {
-                case INIT_STATE:
-                    setState(REMOVE_INIT_STATE, true);
-                    break;
-                case OPEN_STATE:
-                    setState(REMOVE_STATE, true);
-                    break;
-            }
-            
-            cRoom.removeEnemy(this);
+        override public function remove():void {
+            forceChangeAction(ACTION_DEATH_ID);
         }
     }
 

@@ -14,6 +14,7 @@ package src.task {
     import src.util.AbstractManager;
     import src.util.ComboManager;
     import src.util.MagicBag;
+    import src.util.Output;
     import src.util.Recorder;
 
     public class TaskManager extends AbstractManager {

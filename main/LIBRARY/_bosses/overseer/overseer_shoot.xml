@@ -1,12 +1,12 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_bosses/overseer/overseer_shoot" itemID="5673e6b2-00000391" symbolType="graphic" lastModified="1450437104">
   <timeline>
-    <DOMTimeline name="overseer_shoot" currentFrame="45">
+    <DOMTimeline name="overseer_shoot">
       <layers>
         <DOMLayer name="глаз" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" duration="95" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_bosses/overseer/parts/eye_shoot" selected="true" symbolType="graphic" loop="play once">
+                <DOMSymbolInstance libraryItemName="_bosses/overseer/parts/eye_shoot" symbolType="graphic" loop="play once">
                   <matrix>
                     <Matrix tx="3.35" ty="-48.35"/>
                   </matrix>

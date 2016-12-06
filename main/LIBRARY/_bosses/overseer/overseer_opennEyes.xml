@@ -4,7 +4,7 @@
       <layers>
         <DOMLayer name="рука левая" color="#0000FF" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="30" keyMode="15872">
+            <DOMFrame index="0" duration="30" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="рука001" symbolType="graphic" loop="loop">
                   <matrix>
@@ -57,7 +57,7 @@
         </DOMLayer>
         <DOMLayer name="рука правая" color="#FF0000" autoNamed="false">
           <frames>
-            <DOMFrame index="0" duration="30" keyMode="15872">
+            <DOMFrame index="0" duration="30" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="рука001" symbolType="graphic" loop="loop">
                   <matrix>

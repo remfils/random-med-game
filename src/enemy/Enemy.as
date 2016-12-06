@@ -7,15 +7,19 @@
     import src.events.SubmitTaskEvent;
     import src.Game;
     import src.Ids;
+    import src.interfaces.Init;
     import src.levels.Room;
+    import src.objects.AbstractObject;
     import src.objects.TaskObject;
     import src.Player;
     import src.util.ChangePlayerStatObject;
     import src.util.CreateBodyRequest;
+    import src.util.DeleteManager;
     import src.util.SoundManager;
     
-    public class Enemy extends TaskObject {
+    public class Enemy extends TaskObject implements Init {
         public static const DEATH_STATE:String = "_death";
+        protected static const ACTION_DEATH_ID:int = 0;
         
         public static var MAX_HEALTH:Number = 100;
         public var agroDistance:Number = 150;
@@ -26,60 +30,76 @@
         protected var enemy_mass:Number = 0.3;
         
         protected var isFlip:Boolean = true;
+        protected var is_state_ended:Boolean = false;
         
         public var cRoom:Room;
         var player:Player;
-        var playerDistance:Number;
-        private var hitFrames:uint = 0;
         
-        protected var death_sound_id:int = 0;
+        private var hitFrames:uint = 0;
         
         private static var hitColor:Color = new Color();
         
-        protected var enemyFixtureDef:b2FixtureDef; // D!
-        
         protected var current_frame:int = 0;
         protected var current_state:String = DEATH_STATE;
+        
+        protected var _actions:Vector.<Attack>;
+        protected var current_action:Attack;
 
         public function Enemy():void {
             super();
             
+            _actions = new Vector.<Attack>();
+            
+            _actions[ACTION_DEATH_ID] = new Attack(0, deathInitAction, deathUpdateAction, deathEndAction);
             player = game.player;
             
             costume = new CostumeEnemy();
             
-            death_sound_id = SoundManager.SFX_SMOKE;
-            
             properties = IS_EXTRUDED | IS_ACTIVE;
         }
         
-        public function set currentFrame(a:int):void {
-            current_frame = a;
-            
-            if ( current_frame > 1000 )
-                current_frame = 0;
+        protected function deathInitAction():void {
+            hitColor.setTint(0, 0);
+            hitFrames = 0;
+            setState(DEATH_STATE, true);
         }
         
-        public function get currentFrame():int {
-            return current_frame; 
+        protected function deathUpdateAction():void {
+            if ( body.IsActive() ) {
+                body.SetActive(false);
+            }
         }
         
-        protected function setState(state:String, is_animated:Boolean = false):void {
-            // trace("setState(): to ", state);
+        protected function deathEndAction():void {
+            destroy();
             
-            currentFrame = 0;
+            submitAnswer();
+        }
+        
+        override public function readXMLParams(paramsXML:XML):void {
+            super.readXMLParams(paramsXML);
+            
+            setState();
+        }
+        
+        protected function setState(state:String = "", is_animated:Boolean = false):void {
             current_state = state;
+            current_frame = 0;
             
             if ( is_animated ) costume.setAnimatedState(state);
             else costume.setState(state);
         }
         
+        public function init():void {
+            
+        }
+        
         override public function update ():void {
             if ( !body ) return;
             
-            calculateDistanceToPlayer();
+            current_frame ++;
             
-            activateIfPlayerIsAround();
+            updateCurrentAction();
             
             playHitAnimationIfNeeded();
             
@@ -88,17 +108,30 @@
             flip();
         }
         
-        protected function activateIfPlayerIsAround():void {
-            if ( !is_active ){
-                if ( agroDistance > playerDistance ) {
-                    activate();
+        protected function updateCurrentAction():void {
+            if ( current_action.update_function ) {
+                current_action.update_function();
+            }
+            
+            if ( current_action.end_animation_frame != 0 ) {
+                if ( current_frame > current_action.end_animation_frame ) {
+                    is_state_ended = true;
                 }
             }
-            else {
-                if ( agroDistance < playerDistance ) {
-                    //deactivate();
+            
+            if ( is_state_ended ) {
+                is_state_ended = false;
+                
+                if ( current_action.end_function ) {
+                    current_action.end_function();
                 }
+                
+                decideWhatToDo();
             }
+        }
+        
+        protected function decideWhatToDo():void {
+            
         }
         
         protected function playHitAnimationIfNeeded():void {
@@ -133,10 +166,15 @@
             return createBodyReq;
         }
         
-        protected function calculateDistanceToPlayer():void {
-            var dx = player.x - x,
-                dy = player.y - y;
-            playerDistance = Math.sqrt(dx*dx + dy*dy);
+        protected function isPlayerInAgroRange():Boolean {
+            var distance:Number = getDistanceTo(player);
+            return distance < agroDistance;
+        }
+        
+        protected function getDistanceTo(target:AbstractObject):Number {
+            var dx = target.x - x,
+                dy = target.y - y;
+            return Math.sqrt(dx*dx + dy*dy);
         }
         
         public function makeHit(damage:Number):void {
@@ -147,29 +185,28 @@
             hitFrames = 5;
             
             if ( health <= 0 ) {
-                die();
+                forceChangeAction(ACTION_DEATH_ID);
             }
-            
         }
         
-        override public function remove():void {
-            //super.remove();
-            //die();
-        }
-        
-        public function die():void {
-            hitColor.setTint(0, 0);
-            hitFrames = 0;
-            cRoom.removeEnemy(this);
-            costume.setAnimatedState(DEATH_STATE);
-            submitAnswer();
-            destroy();
+        protected function forceChangeAction(action_id:int):void {
+            current_frame = 0;
             
-            SoundManager.instance.playSFX(death_sound_id);
+            current_action = _actions[action_id];
+            current_action.init_function();
         }
         
         override public function destroy():void {
-            super.destroy();
+            trace("enemy destroyed");
+            cRoom.remove(this);
+            cRoom.removeEnemy(this);
+            
+            costume.stop();
+            costume.visible = false;
+            
+            var d_m:DeleteManager = game.deleteManager;
+            d_m.add(body);
+            d_m.add(costume);
         }
 
         override public function getActiveArea():DisplayObject {
